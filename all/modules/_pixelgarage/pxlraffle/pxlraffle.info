@@ -1,0 +1,15 @@
+name = PxlRaffle
+description = PxlRaffle - a tool to collect and raffle money
+core = 7.x
+package = Pixelgarage
+configure = admin/pxlraffle
+version = "7.x-1.0"
+
+; Dependencies
+dependencies[] = ctools
+dependencies[] = views
+dependencies[] = bundle_copy
+
+; Include files
+files[] = pxlraffle.nodes_default.inc
+

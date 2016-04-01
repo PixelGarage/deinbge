@@ -1,0 +1,22 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ralph
+ * Date: 28.03.16
+ * Time: 14:43
+ */
+
+/**
+ * Implements hook_install().
+ */
+function pxlraffle_install () {
+  //
+  // initializes all needed node types of module
+  $bundles = pxlraffle_nodes_default();
+
+  foreach ($bundles as $bundle_data) {
+    // import bundle data
+    bundle_copy_import_submit(array(), $bundle_data);
+  }
+
+}

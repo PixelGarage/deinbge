@@ -1,0 +1,354 @@
+<?php
+/**
+* @file
+* A description of what your module does.
+*/
+
+/**
+ * Defines the pxltrade platform admin menu path.
+ */
+define('PXLRAFFLE_ADMIN_MENU_PATH', 'admin/pxlraffle');
+
+/**
+ * Dummy email recipient address.
+ */
+define('PXLRAFFLE_DUMMY_EMAIL_RECIPIENT', 'test@test.tld');
+
+
+
+//
+// Addapts user profile form to support raffles
+require_once 'includes/user.profile.inc';
+
+
+
+/* --------------------------------------------------
+ * PxlRaffle session data
+ * --------------------------------------------------*/
+/**
+ * Session wide data container.
+ *
+ * @return array Returns the session data array.
+ */
+function &pxlraffle_session_data() {
+  if (!isset($_SESSION['pxlRaffle'])) {
+    $_SESSION['pxlRaffle'] = array();
+  }
+  return $_SESSION['pxlRaffle'];
+}
+
+
+/* --------------------------------------------------
+ * PxlRaffle hook implementations
+ * --------------------------------------------------*/
+
+/**
+ * Implements hook_permission().
+ */
+function pxlraffle_permission() {
+  return array(
+    'administer pixel raffle' => array(
+      'title' => t('Administer PxlRaffle'),
+      'description' => t('Allows to administer the settings for the Pixel Raffle module.'),
+    ),
+  );
+}
+
+/**
+ * Define the pxlRaffle menu as top node of the admin menu.
+ * All administration of the PxlRaffle platform is added below this menu.
+ * @return mixed
+ */
+function pxlraffle_menu() {
+  $items[PXLRAFFLE_ADMIN_MENU_PATH] = array(
+    'title' => 'Basic Income Raffle',
+    'description' => 'PxlRaffle - a tool to collect and raffle money.',
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('administer pixel raffle'),
+    'file path' => drupal_get_path('module', 'system'),
+    'file' => 'system.admin.inc',
+    'weight' => -7,
+  );
+  // renew the current raffle for specified user
+  $items['user/%/raffle/renew'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => '_pxlraffle_renew_raffle_callback',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+  );
+  // remove the specified user from a raffle
+  $items['user/%/raffle/remove'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => '_pxlraffle_remove_raffle_callback',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+
+/* --------------------------------------------------
+ * PxlRaffle callbacks
+ * --------------------------------------------------*/
+
+function _pxlraffle_renew_raffle_callback ($uid) {
+  $user = user_load($uid);
+
+  // update user raffle, if possible
+  pxlraffle_renew_user_raffle($user);
+
+  // redirect to user edit form
+  drupal_goto('user/' . $uid . '/edit', array(), 301);
+}
+
+function _pxlraffle_remove_raffle_callback ($uid) {
+  $user = user_load($uid);
+
+  // remove user from raffle, if any
+  if (!empty($user->field_current_raffle)) {
+    $user = user_save($user, array('field_current_raffle' => null));
+    $msg = t('You (@user) have been successfully removed from any raffle.', array('@user' => $user->name));
+    drupal_set_message($msg);
+  }
+
+  // redirect to user edit form
+  drupal_goto('user/' . $uid . '/edit', array(), 301);
+}
+
+
+
+/* --------------------------------------------------
+ * PxlRaffle themes
+ * --------------------------------------------------*/
+
+/**
+ * Implements hook_theme().
+ */
+function pxlraffle_theme() {
+  return array(
+    'pxlraffle_current_info' => array(
+      'variables' => array(
+        'container_id' => 'pxlraffle-current-info',
+      ),
+      'file' => 'templates/pxlraffle_current_info.vars.php',
+      'template' => 'templates/pxlraffle_current_info',
+    ),
+    'pxlraffle_next_raffle' => array(
+      'variables' => array(
+        'container_id' => 'pxlraffle-next-raffle',
+      ),
+      'file' => 'templates/pxlraffle_next_raffle.vars.php',
+      'template' => 'templates/pxlraffle_next_raffle',
+    ),
+  );
+}
+
+
+/* --------------------------------------------------
+ * PxlRaffle info block
+ * --------------------------------------------------*/
+/**
+ * Implements hook_block_info().
+ */
+function pxlraffle_block_info() {
+  $blocks['pxlraffle_current_info'] = array(
+    'info' => t('Current raffle information'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['pxlraffle_next_raffle'] = array(
+    'info' => t('Next raffle'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * Displays the current raffle information.
+ */
+function pxlraffle_block_view($delta = 0) {
+  $block = array();
+
+  switch ($delta) {
+    case 'pxlraffle_current_info':
+      $block['subject'] = null;
+      $block['content'] = theme('pxlraffle_current_info');
+      break;
+    case 'pxlraffle_next_raffle':
+      $block['subject'] = null;
+      $block['content'] = theme('pxlraffle_next_raffle');
+      break;
+  }
+  return $block;
+}
+
+
+/* --------------------------------------------------
+ * Raffle public functions
+ * --------------------------------------------------*/
+/**
+ * Returns the count of all raffles (excluding the recurring raffle).
+ */
+function pxlraffle_get_raffle_count () {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'pxl_raffle')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_raffle_state', 'value', 'reccurring', '<>')
+    ->count();
+  $count = $query->execute();
+
+  return $count;
+}
+
+
+/**
+ * Gets the raffle nodes with the given state.
+ *
+ * The returned array contains all found node id's sorted by creation time in ascending order (oldest first).
+ *
+ * @return bool|mixed
+ */
+function pxlraffle_get_raffles_with_state($state) {
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'pxl_raffle')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_raffle_state', 'value', $state)
+    ->propertyOrderBy('created', 'ASC');
+  $result = $query->execute();
+  if (isset($result['node'])) {
+    return array_keys($result['node']);
+  }
+
+  // no raffle found
+  return false;
+}
+
+/**
+ * Gets the current raffle node.
+ *
+ * There is only one active raffle, the one that is in state 'collecting'.
+ *
+ * @return bool|mixed
+ */
+function pxlraffle_get_current_raffle_nid() {
+  // get the current raffle
+  $nids = pxlraffle_get_raffles_with_state('collecting');
+  if ($nids) {
+    return $nids[0];
+  }
+  return false;
+}
+
+/**
+ * Gets the recurring raffle node id.
+ *
+ * There is only one recurring raffle (state = 'recurring'), used to hold all users with subscriptions.
+ *
+ * @return bool|mixed
+ */
+function pxlraffle_get_recurring_raffle_nid() {
+  // get the recurring raffle
+  $nids = pxlraffle_get_raffles_with_state('recurring');
+  if ($nids) {
+    return $nids[0];
+  }
+  return false;
+}
+
+/**
+ * Returns the date of the given raffle, if any or a definable message for all others.
+ */
+function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
+  $state = $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'];
+  $raffle_date = $raffle->field_raffle_date[LANGUAGE_NONE][0]['value'];
+  $raffle_time = strtotime($raffle_date);
+  $default_msg = t('@msg', array('@msg' => $undefined));
+
+  switch ($state) {
+    case 'collecting':
+    default:
+      return $default_msg;
+    case 'closed':
+      if ($raffle_time > time()) {
+        return date('j. F Y \u\m H:i', $raffle_time);
+      }
+      else {
+        return $default_msg;
+      }
+      break;
+  }
+}
+
+
+/* --------------------------------------------------
+ * User public functions
+ * --------------------------------------------------*/
+/**
+ * Returns the count of participants in the raffle.
+ */
+function pxlraffle_get_user_count_in_raffle ($raffle_nid) {
+  $recurring_nid = pxlraffle_get_recurring_raffle_nid();
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'user')
+    ->entityCondition('bundle', 'user')
+    ->propertyCondition('status', 1)
+    ->fieldCondition('field_current_raffle', 'target_id', array($raffle_nid, $recurring_nid), 'IN')
+    ->count();
+  $count = $query->execute();
+
+  return $count;
+}
+
+/**
+ * Links the current raffle to the given user, if the actual user raffle is in state 'raffled' or
+ * the user is not part of a raffle yet. If the user raffle has not been raffled (state in {recurring, collecting, closed}),
+ * no update is performed.
+ *
+ * @param $user
+ */
+function pxlraffle_renew_user_raffle ($user) {
+  $user_raffle_nid = (empty($user->field_current_raffle)) ? -1 : $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'];
+  $current_raffle_nid = pxlraffle_get_current_raffle_nid();
+  $recurring_raffle_nid = pxlraffle_get_recurring_raffle_nid();
+  $current_raffle = node_load($current_raffle_nid);
+
+  // check if user is not part of a raffle
+  if ($user_raffle_nid == -1) {
+    // add user to current raffle
+    $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
+    user_save($user);
+
+    $msg = t('You have been successfully added to @raffle.', array('@raffle' => $current_raffle->title));
+    drupal_set_message($msg);
+    return;
+  }
+  else if ($user_raffle_nid == $recurring_raffle_nid) {
+    // check if user has a subscription
+    $msg = t('You do not have to switch to another raffle. You have a subscription and participate automatically in all raffles!');
+    drupal_set_message($msg, 'warning');
+    return;
+  }
+
+  // check user raffle state
+  $user_raffle = node_load($user_raffle_nid);
+  $user_raffle_state = $user_raffle->field_raffle_state[LANGUAGE_NONE][0]['value'];
+
+  if (in_array($user_raffle_state, array('collecting', 'closed'))) {
+    $msg = t('You cannot switch to another raffle. You are part of an active raffle!');
+    drupal_set_message($msg, 'warning');
+  }
+  else {
+    //
+    // the raffle is history so the user can change to the current raffle
+    $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
+    user_save($user);
+
+    // send update message
+    $msg = t('You have successfully renewed your raffle participation. You are now participant of @raffle.', array('@raffle' => $current_raffle->title));
+    drupal_set_message($msg);
+  }
+}
