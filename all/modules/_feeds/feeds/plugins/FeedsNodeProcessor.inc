@@ -6,6 +6,12 @@
  */
 
 /**
+ * Option for handling content in Drupal but not in source data (unpublish
+ * instead of skip/delete).
+ */
+define('FEEDS_UNPUBLISH_NON_EXISTENT', 'unpublish');
+
+/**
  * Creates nodes from feed items.
  */
 class FeedsNodeProcessor extends FeedsProcessor {
@@ -30,11 +36,10 @@ class FeedsNodeProcessor extends FeedsProcessor {
    * Creates a new node in memory and returns it.
    */
   protected function newEntity(FeedsSource $source) {
-    $node = new stdClass();
+    $node = parent::newEntity($source);
     $node->type = $this->bundle();
     $node->changed = REQUEST_TIME;
     $node->created = REQUEST_TIME;
-    $node->language = LANGUAGE_NONE;
     $node->is_new = TRUE;
     node_object_prepare($node);
     // Populate properties that are set by node_object_prepare().
@@ -104,8 +109,15 @@ class FeedsNodeProcessor extends FeedsProcessor {
       }
 
       if (!$access) {
-        $message = 'User %name is not authorized to %op content type %content_type.';
-        throw new FeedsAccessException(t($message, array('%name' => $author->name, '%op' => $op, '%content_type' => $entity->type)));
+        $message = t('The user %name is not authorized to %op content of type %content_type. To import this item, either the user "@name" (author of the item) must be given the permission to @op content of type @content_type, or the option "Authorize" on the Node processor settings must be turned off.', array(
+          '%name' => $author->name,
+          '%op' => $op,
+          '%content_type' => $entity->type,
+          '@name' => $author->name,
+          '@op' => $op,
+          '@content_type' => $entity->type,
+        ));
+        throw new FeedsAccessException($message);
       }
     }
   }
@@ -114,6 +126,8 @@ class FeedsNodeProcessor extends FeedsProcessor {
    * Validates a node.
    */
   protected function entityValidate($entity) {
+    parent::entityValidate($entity);
+
     if (!isset($entity->uid) || !is_numeric($entity->uid)) {
        $entity->uid = $this->config['author'];
     }
@@ -185,9 +199,13 @@ class FeedsNodeProcessor extends FeedsProcessor {
       '#type' => 'select',
       '#title' => t('Expire nodes'),
       '#options' => $period,
-      '#description' => t('Select after how much time nodes should be deleted. The node\'s published date will be used for determining the node\'s age, see Mapping settings.'),
+      '#description' => t("Select after how much time nodes should be deleted. The node's published date will be used for determining the node's age, see Mapping settings."),
       '#default_value' => $this->config['expire'],
     );
+    // Add on the "Unpublish" option for nodes, update wording.
+    if (isset($form['update_non_existent'])) {
+      $form['update_non_existent']['#options'][FEEDS_UNPUBLISH_NON_EXISTENT] = t('Unpublish non-existent nodes');
+    }
     return $form;
   }
 
@@ -220,6 +238,12 @@ class FeedsNodeProcessor extends FeedsProcessor {
     switch ($target_element) {
       case 'created':
         $target_node->created = feeds_to_unixtime($value, REQUEST_TIME);
+        break;
+      case 'changed':
+        // The 'changed' value will be set on the node in feeds_node_presave().
+        // This is because node_save() always overwrites this value (though
+        // before invoking hook_node_presave()).
+        $target_node->feeds_item->node_changed = feeds_to_unixtime($value, REQUEST_TIME);
         break;
       case 'feeds_source':
         // Get the class of the feed node importer's fetcher and set the source
@@ -287,6 +311,10 @@ class FeedsNodeProcessor extends FeedsProcessor {
       'name' => t('Published date'),
       'description' => t('The UNIX time when a node has been published.'),
     );
+    $targets['changed'] = array(
+      'name' => t('Updated date'),
+      'description' => t('The Unix timestamp when a node has been last updated.'),
+    );
     $targets['promote'] = array(
       'name' => t('Promoted to front page'),
       'description' => t('Boolean value, whether or not node is promoted to front page. (1 = promoted, 0 = not promoted)'),
@@ -322,11 +350,7 @@ class FeedsNodeProcessor extends FeedsProcessor {
       );
     }
 
-    // Let other modules expose mapping targets.
-    self::loadMappers();
-    $entity_type = $this->entityType();
-    $bundle = $this->bundle();
-    drupal_alter('feeds_processor_targets', $targets, $entity_type, $bundle);
+    $this->getHookTargets($targets);
 
     return $targets;
   }
@@ -361,6 +385,35 @@ class FeedsNodeProcessor extends FeedsProcessor {
       }
     }
     return 0;
+  }
+
+  /**
+   * Overrides FeedsProcessor::clean().
+   *
+   * Allow unpublish instead of delete.
+   *
+   * @param FeedsState $state
+   *   The FeedsState object for the given stage.
+   */
+  protected function clean(FeedsState $state) {
+    // Delegate to parent if not unpublishing or option not set.
+    if (!isset($this->config['update_non_existent']) || $this->config['update_non_existent'] != FEEDS_UNPUBLISH_NON_EXISTENT) {
+      return parent::clean($state);
+    }
+
+    $total = count($state->removeList);
+    if ($total) {
+      $nodes = node_load_multiple($state->removeList);
+      foreach ($nodes as &$node) {
+        $this->loadItemInfo($node);
+        // Update the hash value of the feed item to ensure that the item gets
+        // updated in case it reappears in the feed.
+        $node->feeds_item->hash = $this->config['update_non_existent'];
+        node_unpublish_action($node);
+        node_save($node);
+        $state->unpublished++;
+      }
+    }
   }
 
 }
