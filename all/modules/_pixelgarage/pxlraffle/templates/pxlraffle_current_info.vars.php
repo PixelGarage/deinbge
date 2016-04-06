@@ -18,7 +18,7 @@ function template_preprocess_pxlraffle_current_info(&$vars) {
   $vars['total_amount'] = $total_amount;
   $current_amount = empty($current_raffle->field_raffle_donation) ? 0 : $current_raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'];
   $vars['current_amount'] = $current_amount;
-  $vars['fill_level'] = $current_amount / $total_amount;
+  $vars['fill_level'] = $current_amount / $total_amount * 100;
   $vars['current_fees'] = empty($current_raffle->field_club_fees) ? 0 : $current_raffle->field_club_fees[LANGUAGE_NONE][0]['value'];
 
 }

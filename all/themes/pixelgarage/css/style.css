@@ -9031,7 +9031,7 @@ form#user-login {
  * --------------------------------------------------*/
 #block-locale-language {
   display: inline-block;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaBold';
   font-size: 16px;
 }
 #block-locale-language ul.language-switcher-locale-url {
@@ -9047,25 +9047,23 @@ form#user-login {
   margin: 0 -0.25em 0 0;
   padding: 0 10px;
   line-height: 1;
-  border-right: 1px solid #333333;
 }
 #block-locale-language ul.language-switcher-locale-url > li.first {
   margin-left: 0;
   padding-left: 0;
 }
-#block-locale-language ul.language-switcher-locale-url > li.last {
-  border-right: none;
-}
 #block-locale-language ul.language-switcher-locale-url > li a.language-link {
-  text-transform: uppercase;
+  display: inline-block;
+  width: 10px;
+  text-transform: lowercase;
   text-decoration: none;
-  color: #7b6941;
+  color: #333333;
   outline: none;
 }
 #block-locale-language ul.language-switcher-locale-url > li a.language-link.active,
-#block-locale-language ul.language-switcher-locale-url > li a.language-link:hover {
-  font-family: 'ProximaNovaBold';
-  text-decoration: none;
+#block-locale-language ul.language-switcher-locale-url > li a.language-link:hover,
+#block-locale-language ul.language-switcher-locale-url > li a.language-link:focus {
+  text-transform: uppercase;
 }
 #block-locale-language ul.language-switcher-locale-url > li span.locale-untranslated {
   color: #555555;
@@ -9131,6 +9129,139 @@ form#user-login {
 #ui-datepicker-div table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   color: #fff;
   background-color: #fa6278;
+}
+/*
+ *  Block raffle info component
+ * --------------------------------------------------*/
+#pxlraffle-current-info {
+  padding: 20px 0;
+}
+#pxlraffle-current-info .current-raffle {
+  width: 100%;
+}
+#pxlraffle-current-info .current-raffle .block-header {
+  margin-bottom: 50px;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+}
+#pxlraffle-current-info .current-raffle .current-raffle-summary {
+  margin-bottom: 50px;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+}
+#pxlraffle-current-info .current-raffle .total-amount {
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  text-align: right;
+}
+#pxlraffle-current-info .current-raffle .progress {
+  margin: 0;
+  height: 30px;
+}
+#pxlraffle-current-info .current-raffle .progress .progress-bar {
+  background-color: #2bca80;
+}
+#pxlraffle-current-info .current-raffle .current-amount-container {
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  color: #2bca80;
+}
+#pxlraffle-current-info .current-raffle .current-amount-container .fa {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#pxlraffle-current-info .current-raffle .current-amount-container .current-amount {
+  display: inline-block;
+  margin-top: 20px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 768px) {
+  #pxlraffle-current-info .current-raffle {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+/*
+ *  Block next raffle component
+ * --------------------------------------------------*/
+#pxlraffle-next-raffle {
+  padding: 20px 0;
+  background-color: #efefef;
+}
+#pxlraffle-next-raffle .next-raffle {
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+}
+#pxlraffle-next-raffle .next-raffle .next-raffle-slogan {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333333;
+}
+#pxlraffle-next-raffle .next-raffle .next-raffle-label {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2bca80;
+}
+#pxlraffle-next-raffle .next-raffle .next-raffle-date {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: #333333;
+}
+#pxlraffle-next-raffle .next-raffle .next-raffle-info {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333333;
+}
+/*
+ *  Node intro video component
+ * --------------------------------------------------*/
+.node.node-intro .row div.col-sm-12 {
+  width: 100%;
+}
+.node.node-intro .row div.col-sm-12 .field-name-title h2 {
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #333333;
+}
+@media screen and (min-width: 480px) {
+  .node.node-intro .row div.col-sm-12 .field-name-title h2 {
+    font-size: 4.166667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-intro .row div.col-sm-12 .field-name-title h2 {
+    font-size: 32px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-field-video .field-item {
+  width: 100%;
+}
+.node.node-intro .row div.col-sm-12 .field-name-field-video .field-item iframe {
+  display: block;
+  margin: 0 auto;
+  min-width: 100%;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .node.node-intro .row div.col-sm-12 .field-name-field-video .field-item iframe {
+    min-width: 100%;
+  }
 }
 /*
  *  Node page component
@@ -10406,7 +10537,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  *  View call2action component
  * --------------------------------------------------*/
 .view.view-call2action {
-  margin-top: 50px;
+  margin: 0;
   width: 100%;
 }
 .view.view-call2action .view-content {
@@ -10425,35 +10556,52 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 {
   padding: 0 1.5%;
 }
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image {
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container {
+  display: block;
   position: relative;
   width: 100%;
+  height: 300px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-picture {
-  margin: 0;
-  overflow: hidden;
-  max-height: 270px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-picture .field-item img {
-  width: 100%;
-  height: auto;
-}
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-title {
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-field-weight {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   position: absolute;
-  bottom: 95px;
+  top: -25px;
+}
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-field-weight .field-item {
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0 16px;
+  width: 50px;
+  height: 50px;
+  font-family: 'ProximaNovaBold';
+  font-size: 30px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-title {
+  position: absolute;
+  bottom: 20px;
   width: 100%;
 }
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-title h2 {
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-title h2 {
   margin: 0;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaBold';
   font-size: 24px;
   text-align: center;
   color: #fff;
 }
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-icon {
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-field-icon {
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -10462,42 +10610,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   bottom: 52%;
   width: 90%;
 }
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-icon .field-item {
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-field-icon .field-item {
   display: block;
   margin: 0 auto;
   height: auto;
 }
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-icon .field-item img {
+.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-field-icon .field-item img {
   display: none;
-}
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-link {
-  position: absolute;
-  bottom: 27px;
-  width: 100%;
-}
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-link .field-item a {
-  display: block;
-  margin: 0 auto;
-  padding: 13px 0 15px;
-  width: 60%;
-  min-width: 160px;
-  height: 44px;
-  font-family: 'ProximaNovaLight';
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  letter-spacing: 0.03em;
-  color: #fff;
-  border: none;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background: #fa6278;
-  width: 50%;
-}
-.view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-link .field-item a:hover {
-  background: #ff757d;
 }
 .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .field-name-body {
   display: none;
@@ -10528,44 +10647,36 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 {
     padding: 0 4.5%;
   }
-  .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-picture {
-    max-height: 320px;
-  }
 }
 @media screen and (min-width: 992px) {
-  .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .group-image .field-name-field-icon {
+  .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container .field-name-field-icon {
     bottom: 55%;
     width: 100%;
   }
 }
-.view.view-call2action .view-content .views-row.call2action-brochure .field-name-field-icon .field-item {
-  min-height: 95px;
-  width: 30%;
-  background: url(../images/icon_broschure.svg) no-repeat top center / contain;
+.view.view-call2action .view-content .views-row.call2action-participate .call2action-container {
+  background-color: #327abd;
 }
-.view.view-call2action .view-content .views-row.call2action-beratung .field-name-field-icon .field-item {
-  min-height: 83px;
-  width: 30%;
-  background: url(../images/icon_beratung.svg) no-repeat top center / contain;
+.view.view-call2action .view-content .views-row.call2action-participate .call2action-container .field-name-field-weight .field-item {
+  background-color: #327abd;
 }
-.view.view-call2action .view-content .views-row.call2action-bildungsweg {
-  display: none;
+.view.view-call2action .view-content .views-row.call2action-raffle .call2action-container {
+  background-color: #2bca80;
 }
-@media screen and (min-width: 768px) {
-  .view.view-call2action .view-content .views-row.call2action-bildungsweg {
-    display: inline-block;
-  }
+.view.view-call2action .view-content .views-row.call2action-raffle .call2action-container .field-name-field-weight .field-item {
+  background-color: #2bca80;
 }
-.view.view-call2action .view-content .views-row.call2action-bildungsweg .field-name-field-icon .field-item {
-  min-height: 67px;
-  width: 40%;
-  background: url(../images/icon_bildungsweg.svg) no-repeat top center / contain;
+.view.view-call2action .view-content .views-row.call2action-experience .call2action-container {
+  background-color: #fa6278;
+}
+.view.view-call2action .view-content .views-row.call2action-experience .call2action-container .field-name-field-weight .field-item {
+  background-color: #fa6278;
 }
 /*
  *  Social-masonry view component
  * --------------------------------------------------*/
 .view.view-social-masonry {
-  margin-top: 126px;
+  margin-top: 0;
 }
 .view.view-social-masonry .view-filters {
   margin-bottom: 52px;
@@ -10598,7 +10709,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  border: 1px solid #333333;
+  border: 1px solid #929295;
   background-color: #fff;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio .control-label > input {
@@ -10834,7 +10945,7 @@ header#navbar {
   background: transparent none;
 }
 header#navbar .container {
-  padding: 30px 15px 10px;
+  padding: 10px 15px 10px;
 }
 header#navbar .container .navbar-header a.logo img {
   display: none;
@@ -10842,8 +10953,11 @@ header#navbar .container .navbar-header a.logo img {
   width: auto;
 }
 header#navbar .container .navbar-header a.navbar-brand {
+  margin: 0;
   padding: 0;
-  font-family: 'ProximaNovaLight';
+  max-width: 350px;
+  height: auto;
+  font-family: 'ProximaNovaBold';
   font-size: 41px;
   color: #222222;
   line-height: 1;
@@ -10851,7 +10965,13 @@ header#navbar .container .navbar-header a.navbar-brand {
 header#navbar .container .navbar-header .navbar-toggle {
   padding: 5px 10px;
 }
+header#navbar .container .navbar-collapse {
+  position: relative;
+}
 header#navbar .container .navbar-collapse nav ul.navbar-nav {
+  display: block;
+  position: static;
+  float: none;
   margin: 0;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li {
@@ -10860,8 +10980,116 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li {
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
   padding: 7px 15px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
   line-height: 1;
+  background: none;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover,
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
+  color: #fff;
+  background-color: #333333;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-participate {
+  color: #327abd;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-participate:hover,
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-participate.active {
+  color: #fff;
+  background-color: #327abd;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-raffle {
+  color: #2bca80;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-raffle:hover,
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-raffle.active {
+  color: #fff;
+  background-color: #2bca80;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-experience {
+  color: #fa6278;
+}
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-experience:hover,
+header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-experience.active {
+  color: #fff;
+  background-color: #fa6278;
+}
+header#navbar .container .navbar-collapse nav .region-navigation {
+  display: block;
+  position: static;
+  float: none;
+  margin: 0;
+}
+header#navbar .container .navbar-collapse nav .region-navigation .block-system {
+  display: block;
+}
+header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 1;
+}
+header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a {
+  padding: 7px 5px;
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  outline: none;
+}
+header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a.active,
+header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a:hover,
+header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a:focus {
+  background: none;
+}
+header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header#navbar .container .navbar-collapse nav ul.navbar-nav {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+  }
+  header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
+    text-align: left;
+  }
+  header#navbar .container .navbar-collapse nav .region-navigation {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    margin: 0 0 0 20px;
+  }
+  header#navbar .container .navbar-collapse nav .region-navigation .block-system {
+    display: inline-block;
+  }
+  header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li {
+    display: inline-block;
+    margin: 0;
+  }
+  header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a {
+    padding: 12px 5px;
+    font-family: 'ProximaNovaBold';
+    font-size: 16px;
+    text-align: left;
+  }
+  header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li.last a {
+    padding-right: 0;
+  }
+  header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
+    display: inline-block;
+    margin-right: 20px;
+  }
 }
 /*
  *  Content section (main content)
@@ -10883,6 +11111,16 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
 .container a:hover,
 .container a:focus {
   outline: none;
+}
+.container .panel-display .panel-col .panel-pane .pane-title {
+  margin: 50px auto;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+}
+.container .panel-display .panel-col .panel-separator {
+  height: 50px;
 }
 html {
   height: 100%;

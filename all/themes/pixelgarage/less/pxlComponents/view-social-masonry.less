@@ -14,7 +14,7 @@
 // General settings
 // -------------------------
 .view.view-social-masonry {
-  margin-top: 126px;
+  margin-top: 0;
 
   .view-filters {
     margin-bottom: 52px;
@@ -48,7 +48,7 @@
                   line-height: 1;
                   color: @text-color;
                   #pxl-mixins.border-radius(0);
-                  border: 1px solid @text-color;
+                  border: 1px solid @pxl-masonry-text;
                   background-color: #fff;
 
                   >input {
@@ -57,7 +57,7 @@
 
                   &:hover, &.active {
                     color: #fff;
-                    background-color: @pxl-color-text;
+                    background-color: @pxl-masonry-text;
                   }
                 }
 
@@ -141,14 +141,14 @@
         font-family: @pxl-text-font;
         font-size: 16px;
         line-height: 1;
-        color: @pxl-color-text;
+        color: @pxl-masonry-text;
         #pxl-mixins.border-radius(3px);
-        border: 1px solid @pxl-color-text;
+        border: 1px solid @pxl-masonry-text;
         background-color: #fff;
 
         &:hover, &.active {
           color: #fff;
-          background-color: @pxl-color-text;
+          background-color: @pxl-masonry-text;
         }
       }
     }

@@ -24,6 +24,23 @@
   };
 
   /**
+   * De-/activates masonry filter buttons.
+   */
+  Drupal.behaviors.activateMasonryFilters = {
+    attach: function () {
+      var $exposedForm = $('#views-exposed-form-social-masonry-panel-pane-1'),
+          $filters = $exposedForm.find('.form-radios .control-label'),
+          $selectedRadio = $exposedForm.find('input[checked=checked]');
+
+      // add active class for selected radio
+      $filters.removeClass('active');
+      $selectedRadio.parent().addClass('active');
+    }
+  };
+
+
+
+  /**
    * Allows full size clickable items.
    Drupal.behaviors.fullSizeClickableItems = {
     attach: function () {

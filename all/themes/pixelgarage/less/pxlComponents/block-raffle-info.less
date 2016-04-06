@@ -1,0 +1,79 @@
+/*
+ *  Block raffle info component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@pxl-progress-height: 30px;
+@pxl-raffle-info-text-size: 24px;
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+#pxlraffle-current-info {
+  padding: 20px 0;
+
+  .current-raffle {
+    width: 100%;
+
+    .block-header {
+      margin-bottom: 50px;
+      font-family: @pxl-text-font-bold;
+      font-size: @font-size-larger;
+      text-align: center;
+      color: @text-color;
+    }
+
+    .current-raffle-summary {
+      margin-bottom: 50px;
+      font-family: @pxl-text-font-bold;
+      font-size: @pxl-raffle-info-text-size;
+      text-align: center;
+      color: @text-color;
+    }
+
+    .total-amount {
+      font-family: @pxl-text-font-bold;
+      font-size: @font-size-base;
+      text-align: right;
+    }
+
+    .progress {
+      margin: 0;
+      height: @pxl-progress-height;
+
+      .progress-bar {
+        background-color: @pxl-color-raffle;
+      }
+    }
+
+    .current-amount-container {
+      font-family: @pxl-text-font-bold;
+      font-size: @font-size-base;
+      color: @pxl-color-raffle;
+
+      .fa {
+        display: inline-block;
+        vertical-align: top;
+        #pxl-mixins.translateX(-50%);
+      }
+
+      .current-amount {
+        display: inline-block;
+        margin-top: 20px;
+        #pxl-mixins.translateX(-50%);
+      }
+    }
+
+    @media @tablet {
+      margin: 0 auto;
+      width: 80%;
+    }
+  }
+
+}
