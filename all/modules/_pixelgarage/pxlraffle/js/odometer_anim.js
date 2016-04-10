@@ -9,11 +9,11 @@
   /**
    * Animates the odometer when shown.
    */
-  Drupal.behaviors.odometerAnim = {
+  Drupal.behaviors.pxlRaffleOdometerAnim = {
     attach: function () {
       var $odometer = $('.odometer'),
           counter = parseInt($odometer.html()),
-          animatedRange = Drupal.settings.odometer.animated_range,
+          animatedRange = Drupal.settings.pxlraffle_odometer.animated_range,
           startValue = Math.max(counter - animatedRange, 0);
 
       // set the odometer value (reduced by the range)

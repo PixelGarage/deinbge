@@ -32,15 +32,28 @@ header#navbar {
 
     .navbar-header {
       // header (branding)
+      margin: 0;
+
       a.logo {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        max-width: 70%;
+        z-index: 10;
+
         img {
-          display: none;
-          max-height: 50px;
-          width: auto;
+          display: inline-block;
+          width: 100%;
+          height: auto;
+        }
+
+        @media @tablet {
+          max-width: 50%;
         }
       }
 
       a.navbar-brand {
+        display: none;
         margin: 0;
         padding: 0;
         max-width: 350px;
@@ -126,6 +139,8 @@ header#navbar {
           float: none;
           margin: 0;
 
+          //
+          // user login menu
           .block-system {
             display: block;
 
@@ -185,7 +200,7 @@ header#navbar {
           .region-navigation {
             display: block;
             position: absolute;
-            bottom: 5px;
+            bottom: 0;
             right: 0;
             margin: 0 0 0 20px;
 
@@ -195,9 +210,10 @@ header#navbar {
                 li {
                   display: inline-block;
                   margin: 0;
+                  height: auto;
 
                   a {
-                    padding: 12px 5px;
+                    padding: 0 5px;
                     font-family: @pxl-text-font-bold;
                     font-size: @font-size-base;
                     text-align: left;

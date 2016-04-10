@@ -29,12 +29,9 @@
       color: @text-color;
     }
 
-    .current-raffle-summary {
+    .odometer-container {
       margin-bottom: 50px;
-      font-family: @pxl-text-font-bold;
-      font-size: @pxl-raffle-info-text-size;
-      text-align: center;
-      color: @text-color;
+      #pxl-mixins.odometer(#fff, @pxl-color-participate, 5px);
     }
 
     .total-amount {
@@ -48,14 +45,14 @@
       height: @pxl-progress-height;
 
       .progress-bar {
-        background-color: @pxl-color-raffle;
+        background-color: @pxl-color-participate;
       }
     }
 
     .current-amount-container {
       font-family: @pxl-text-font-bold;
       font-size: @font-size-base;
-      color: @pxl-color-raffle;
+      color: @pxl-color-participate;
 
       .fa {
         display: inline-block;
@@ -67,6 +64,15 @@
         display: inline-block;
         margin-top: 20px;
         #pxl-mixins.translateX(-50%);
+      }
+    }
+
+    .actions {
+      margin: 30px auto;
+      text-align: center;
+
+      .btn.link-participate {
+        #pxl-mixins.button-large(@pxl-color-participate, darken(@pxl-color-participate, 20%));
       }
     }
 

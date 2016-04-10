@@ -5,7 +5,7 @@
 */
 
 /**
- * Defines the pxltrade platform admin menu path.
+ * Defines the pxlraffle platform admin menu path.
  */
 define('PXLRAFFLE_ADMIN_MENU_PATH', 'admin/pxlraffle');
 
@@ -17,8 +17,16 @@ define('PXLRAFFLE_DUMMY_EMAIL_RECIPIENT', 'test@test.tld');
 
 
 //
-// Addapts user profile form to support raffles
+// Adapts user profile form to support raffles
 require_once 'includes/user.profile.inc';
+
+//
+// Adds user public functions
+require_once 'includes/user.public.inc';
+
+//
+// Adds raffle public functions
+require_once 'includes/raffle.public.inc';
 
 
 
@@ -69,19 +77,21 @@ function pxlraffle_menu() {
     'file' => 'system.admin.inc',
     'weight' => -7,
   );
-  // renew the current raffle for specified user
+  // callback: renew the current raffle for specified user
   $items['user/%/raffle/renew'] = array(
     'type' => MENU_CALLBACK,
     'page callback' => '_pxlraffle_renew_raffle_callback',
     'page arguments' => array(1),
-    'access arguments' => array('access content'),
+    'access callback' => 'user_edit_access',
+    'access arguments' => array(1),
   );
-  // remove the specified user from a raffle
+  // callback: remove the specified user from a raffle
   $items['user/%/raffle/remove'] = array(
     'type' => MENU_CALLBACK,
     'page callback' => '_pxlraffle_remove_raffle_callback',
     'page arguments' => array(1),
-    'access arguments' => array('access content'),
+    'access callback' => 'user_edit_access',
+    'access arguments' => array(1),
   );
 
   return $items;
@@ -141,6 +151,13 @@ function pxlraffle_theme() {
       'file' => 'templates/pxlraffle_next_raffle.vars.php',
       'template' => 'templates/pxlraffle_next_raffle',
     ),
+    'pxlraffle_subscriptions' => array(
+      'variables' => array(
+        'container_id' => 'pxlraffle-subscriptions',
+      ),
+      'file' => 'templates/pxlraffle_subscriptions.vars.php',
+      'template' => 'templates/pxlraffle_subscriptions',
+    ),
   );
 }
 
@@ -160,8 +177,88 @@ function pxlraffle_block_info() {
     'info' => t('Next raffle'),
     'cache' => DRUPAL_NO_CACHE,
   );
+  $blocks['pxlraffle_subscriptions'] = array(
+    'info' => t('Raffle subscriptions'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
   return $blocks;
 }
+
+/**
+ * Implements hook_block_configure().
+ */
+function pxlraffle_block_configure($delta = '') {
+  switch ($delta) {
+    case 'pxlraffle_current_info':
+    case 'pxlraffle_subscriptions':
+      return _pxlraffle_block_form($delta);
+  }
+}
+
+
+function _pxlraffle_block_form ($delta) {
+  $form['pxlraffle_odometer'] = array(
+    '#type'         => 'fieldset',
+    '#title'        => t('Odometer specific configuration'),
+    '#description'   => t('Configure the odometer specific values.'),
+    '#collapsible'  => FALSE,
+    '#collapsed'    => FALSE,
+  );
+  $form['pxlraffle_odometer']['pxlraffle_odometer_label'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Odometer label'),
+    '#default_value' => variable_get($delta . '_odometer_label', ''),
+    '#description'   => t('Sets the label for the odometer'),
+  );
+  $form['pxlraffle_odometer']['pxlraffle_odometer_label_position'] = array(
+    '#type' => 'radios',
+    '#title' => t('Position of label'),
+    '#default_value' => variable_get($delta . '_odometer_label_position', 'top'),
+    '#options' => array(
+      'top' => t('Label above odometer'),
+      'bottom' => t('Label below odometer'),
+    ),
+  );
+  $form['pxlraffle_odometer']['pxlraffle_odometer_anim_number_range'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Animated number range'),
+    '#default_value' => variable_get($delta . '_odometer_anim_number_range', 0),
+    '#description'   => t('Define the range of numbers that are animated when the odometer is shown.'),
+  );
+  $form['pxlraffle_odometer']['pxlraffle_odometer_theme'] = array(
+    '#type' => 'select',
+    '#title' => t('Theme'),
+    '#options' => array(
+      'default' => t('Default'),
+      'car' => t('Car'),
+      'train_station' => t('Train station'),
+      'digital' => t('Digital'),
+      'minimal' => t('Minimal'),
+      'plaza' => t('Plaza'),
+      'slot_machine' => t('Slot machine'),
+    ),
+    '#description' => t('Select a predefined theme. All themes can be customized in CSS.'),
+    '#default_value' => variable_get($delta . '_odometer_theme', 'default'),
+  );
+
+  return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ */
+function pxlraffle_block_save($delta = '', $edit = array()) {
+  switch ($delta) {
+    case 'pxlraffle_current_info':
+    case 'pxlraffle_subscriptions':
+      variable_set($delta . '_odometer_label', $edit['pxlraffle_odometer_label']);
+      variable_set($delta . '_odometer_label_position', $edit['pxlraffle_odometer_label_position']);
+      variable_set($delta . '_odometer_anim_number_range', $edit['pxlraffle_odometer_anim_number_range']);
+      variable_set($delta . '_odometer_theme', $edit['pxlraffle_odometer_theme']);
+      break;
+  }
+}
+
 
 /**
  * Implements hook_block_view().
@@ -180,175 +277,61 @@ function pxlraffle_block_view($delta = 0) {
       $block['subject'] = null;
       $block['content'] = theme('pxlraffle_next_raffle');
       break;
+    case 'pxlraffle_subscriptions':
+      $block['subject'] = null;
+      $block['content'] = theme('pxlraffle_subscriptions');
+      break;
   }
   return $block;
 }
 
+function pxlraffle_odometer_theme_attachments (&$vars, $delta) {
+  // set variables
+  $vars['odometer_label_on_top'] = variable_get($delta . '_odometer_label_position') == 'top';
+  $vars['odometer_label'] = t(variable_get($delta . '_odometer_label'));
 
-/* --------------------------------------------------
- * Raffle public functions
- * --------------------------------------------------*/
-/**
- * Returns the count of all raffles (excluding the recurring raffle).
- */
-function pxlraffle_get_raffle_count () {
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'pxl_raffle')
-    ->propertyCondition('status', NODE_PUBLISHED)
-    ->fieldCondition('field_raffle_state', 'value', 'reccurring', '<>')
-    ->count();
-  $count = $query->execute();
+  // add js and css files
+  $path = drupal_get_path('module', 'pxlraffle');
+  $animated_range = variable_get($delta . '_odometer_anim_number_range');
+  $theme = variable_get($delta . '_odometer_theme');
+  $css_file = $path;
 
-  return $count;
-}
-
-
-/**
- * Gets the raffle nodes with the given state.
- *
- * The returned array contains all found node id's sorted by creation time in ascending order (oldest first).
- *
- * @return bool|mixed
- */
-function pxlraffle_get_raffles_with_state($state) {
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'pxl_raffle')
-    ->propertyCondition('status', NODE_PUBLISHED)
-    ->fieldCondition('field_raffle_state', 'value', $state)
-    ->propertyOrderBy('created', 'ASC');
-  $result = $query->execute();
-  if (isset($result['node'])) {
-    return array_keys($result['node']);
-  }
-
-  // no raffle found
-  return false;
-}
-
-/**
- * Gets the current raffle node.
- *
- * There is only one active raffle, the one that is in state 'collecting'.
- *
- * @return bool|mixed
- */
-function pxlraffle_get_current_raffle_nid() {
-  // get the current raffle
-  $nids = pxlraffle_get_raffles_with_state('collecting');
-  if ($nids) {
-    return $nids[0];
-  }
-  return false;
-}
-
-/**
- * Gets the recurring raffle node id.
- *
- * There is only one recurring raffle (state = 'recurring'), used to hold all users with subscriptions.
- *
- * @return bool|mixed
- */
-function pxlraffle_get_recurring_raffle_nid() {
-  // get the recurring raffle
-  $nids = pxlraffle_get_raffles_with_state('recurring');
-  if ($nids) {
-    return $nids[0];
-  }
-  return false;
-}
-
-/**
- * Returns the date of the given raffle, if any or a definable message for all others.
- */
-function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
-  $state = $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'];
-  $raffle_date = $raffle->field_raffle_date[LANGUAGE_NONE][0]['value'];
-  $raffle_time = strtotime($raffle_date);
-  $default_msg = t('@msg', array('@msg' => $undefined));
-
-  switch ($state) {
-    case 'collecting':
+  switch ($theme) {
+    case 'car':
+      $css_file .= '/css/odometer-theme-car.css';
+      break;
+    case 'train_station':
+      $css_file .= '/css/odometer-theme-train-station.css';
+      break;
+    case 'digital':
+      $css_file .= '/css/odometer-theme-digital.css';
+      break;
+    case 'minimal':
+      $css_file .= '/css/odometer-theme-minimal.css';
+      break;
+    case 'plaza':
+      $css_file .= '/css/odometer-theme-plaza.css';
+      break;
+    case 'slot_machine':
+      $css_file .= '/css/odometer-theme-slot_machine.css';
+      break;
+    case 'default':
     default:
-      return $default_msg;
-    case 'closed':
-      if ($raffle_time > time()) {
-        return date('j. F Y \u\m H:i', $raffle_time);
-      }
-      else {
-        return $default_msg;
-      }
+      $css_file .= '/css/odometer-theme-default.css';
       break;
   }
-}
 
+  // set js settings
+  $js_settings = array(
+    'pxlraffle_odometer' => array(
+      'animated_range' => $animated_range
+    ),
+  );
 
-/* --------------------------------------------------
- * User public functions
- * --------------------------------------------------*/
-/**
- * Returns the count of participants in the raffle.
- */
-function pxlraffle_get_user_count_in_raffle ($raffle_nid) {
-  $recurring_nid = pxlraffle_get_recurring_raffle_nid();
-  $query = new EntityFieldQuery();
-  $query->entityCondition('entity_type', 'user')
-    ->entityCondition('bundle', 'user')
-    ->propertyCondition('status', 1)
-    ->fieldCondition('field_current_raffle', 'target_id', array($raffle_nid, $recurring_nid), 'IN')
-    ->count();
-  $count = $query->execute();
+  // add files
+  drupal_add_css($css_file);
+  drupal_add_js($path . '/js/odometer.min.js');
+  drupal_add_js($path . '/js/odometer_anim.js');
+  drupal_add_js($js_settings, 'setting');
 
-  return $count;
-}
-
-/**
- * Links the current raffle to the given user, if the actual user raffle is in state 'raffled' or
- * the user is not part of a raffle yet. If the user raffle has not been raffled (state in {recurring, collecting, closed}),
- * no update is performed.
- *
- * @param $user
- */
-function pxlraffle_renew_user_raffle ($user) {
-  $user_raffle_nid = (empty($user->field_current_raffle)) ? -1 : $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'];
-  $current_raffle_nid = pxlraffle_get_current_raffle_nid();
-  $recurring_raffle_nid = pxlraffle_get_recurring_raffle_nid();
-  $current_raffle = node_load($current_raffle_nid);
-
-  // check if user is not part of a raffle
-  if ($user_raffle_nid == -1) {
-    // add user to current raffle
-    $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
-    user_save($user);
-
-    $msg = t('You have been successfully added to @raffle.', array('@raffle' => $current_raffle->title));
-    drupal_set_message($msg);
-    return;
-  }
-  else if ($user_raffle_nid == $recurring_raffle_nid) {
-    // check if user has a subscription
-    $msg = t('You do not have to switch to another raffle. You have a subscription and participate automatically in all raffles!');
-    drupal_set_message($msg, 'warning');
-    return;
-  }
-
-  // check user raffle state
-  $user_raffle = node_load($user_raffle_nid);
-  $user_raffle_state = $user_raffle->field_raffle_state[LANGUAGE_NONE][0]['value'];
-
-  if (in_array($user_raffle_state, array('collecting', 'closed'))) {
-    $msg = t('You cannot switch to another raffle. You are part of an active raffle!');
-    drupal_set_message($msg, 'warning');
-  }
-  else {
-    //
-    // the raffle is history so the user can change to the current raffle
-    $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
-    user_save($user);
-
-    // send update message
-    $msg = t('You have successfully renewed your raffle participation. You are now participant of @raffle.', array('@raffle' => $current_raffle->title));
-    drupal_set_message($msg);
-  }
 }

@@ -8696,6 +8696,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
  *  Three part element mixins
  * --------------------------------------------------*/
 /*
+ *  Odometer mixins
+ * --------------------------------------------------*/
+/*
  *  Bootstrap accordion mixin
  * --------------------------------------------------*/
 /*
@@ -9146,12 +9149,60 @@ form#user-login {
   text-align: center;
   color: #333333;
 }
-#pxlraffle-current-info .current-raffle .current-raffle-summary {
+#pxlraffle-current-info .current-raffle .odometer-container {
   margin-bottom: 50px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
+  margin: 0;
   text-align: center;
+}
+#pxlraffle-current-info .current-raffle .odometer-container .odometer-label {
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  letter-spacing: 0.05em;
   color: #333333;
+}
+#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside {
+  font-family: 'ProximaNovaBold';
+  font-size: 32px;
+  line-height: 1.1;
+}
+#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  padding: 0;
+  width: 28px;
+  height: 34px;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #327abd;
+}
+#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+  margin-top: -1px;
+  padding-left: 4px;
+  text-align: left;
+}
+#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
+  display: inline-block;
+  width: 5px;
+  opacity: 0.0;
+}
+@media screen and (min-width: 768px) {
+  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside {
+    font-size: 50px;
+  }
+  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
+    width: 44px;
+    height: 52px;
+  }
+  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+    margin-top: -2px;
+    padding-left: 7.14285714px;
+  }
+  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-formatting-mark {
+    width: 6px;
+  }
 }
 #pxlraffle-current-info .current-raffle .total-amount {
   font-family: 'ProximaNovaBold';
@@ -9163,12 +9214,12 @@ form#user-login {
   height: 30px;
 }
 #pxlraffle-current-info .current-raffle .progress .progress-bar {
-  background-color: #2bca80;
+  background-color: #327abd;
 }
 #pxlraffle-current-info .current-raffle .current-amount-container {
   font-family: 'ProximaNovaBold';
   font-size: 16px;
-  color: #2bca80;
+  color: #327abd;
 }
 #pxlraffle-current-info .current-raffle .current-amount-container .fa {
   display: inline-block;
@@ -9185,6 +9236,32 @@ form#user-login {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+#pxlraffle-current-info .current-raffle .actions {
+  margin: 30px auto;
+  text-align: center;
+}
+#pxlraffle-current-info .current-raffle .actions .btn.link-participate {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 13px 15px 15px;
+  min-width: 160px;
+  height: 44px;
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #327abd;
+}
+#pxlraffle-current-info .current-raffle .actions .btn.link-participate:hover {
+  background: #1d466c;
 }
 @media screen and (min-width: 768px) {
   #pxlraffle-current-info .current-raffle {
@@ -9225,6 +9302,184 @@ form#user-login {
   margin-bottom: 50px;
   text-align: center;
   color: #333333;
+}
+/*
+ *  Block raffle subscriptions component
+ * --------------------------------------------------*/
+#pxlraffle-subscriptions {
+  padding: 20px 0;
+}
+#pxlraffle-subscriptions .subscriptions {
+  width: 100%;
+}
+#pxlraffle-subscriptions .subscriptions .block-header {
+  margin-bottom: 30px;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+}
+#pxlraffle-subscriptions .subscriptions .subscription-slogan {
+  margin-bottom: 20px;
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  text-align: center;
+}
+#pxlraffle-subscriptions .subscriptions .actions {
+  margin: 0 auto 70px;
+  text-align: center;
+}
+#pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 13px 15px 15px;
+  min-width: 160px;
+  height: 44px;
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #2bca80;
+}
+#pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:hover {
+  background: #19764b;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-users {
+  margin-bottom: 10px;
+  margin: 0;
+  text-align: center;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-users .odometer-label {
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside {
+  font-family: 'ProximaNovaBold';
+  font-size: 32px;
+  line-height: 1.1;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  padding: 0;
+  width: 28px;
+  height: 34px;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #2bca80;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+  margin-top: -1px;
+  padding-left: 4px;
+  text-align: left;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-formatting-mark {
+  display: inline-block;
+  width: 5px;
+  opacity: 0.0;
+}
+@media screen and (min-width: 768px) {
+  #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside {
+    font-size: 50px;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit {
+    width: 44px;
+    height: 52px;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+    margin-top: -2px;
+    padding-left: 7.14285714px;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-formatting-mark {
+    width: 6px;
+  }
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount {
+  margin-bottom: 20px;
+  margin: 0;
+  text-align: center;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .odometer-label {
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside {
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  line-height: 1.1;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  padding: 0;
+  width: 20px;
+  height: 26px;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #000000;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+  margin-top: -1px;
+  padding-left: 2.85714286px;
+  text-align: left;
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-formatting-mark {
+  display: inline-block;
+  width: 5px;
+  opacity: 0.0;
+}
+@media screen and (min-width: 768px) {
+  #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside {
+    font-size: 36px;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit {
+    width: 30px;
+    height: 38px;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+    margin-top: -2px;
+    padding-left: 5.14285714px;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-formatting-mark {
+    width: 6px;
+  }
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .currency {
+  vertical-align: middle;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+}
+#pxlraffle-subscriptions .subscriptions .subscription-fee-statement {
+  margin-bottom: 50px;
+  font-family: 'ProximaNovaLight';
+  font-size: 14px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #pxlraffle-subscriptions .subscriptions {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #pxlraffle-subscriptions .subscriptions .odometer-amount .currency {
+    font-size: 36px;
+  }
 }
 /*
  *  Node intro video component
@@ -10504,34 +10759,49 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 /*
  *  Node testimonials component
  * --------------------------------------------------*/
-.node.node-testimonial.node-teaser .row div.col-sm-12 {
-  position: relative;
+.node.node-quote {
+  height: 200px;
+}
+.node.node-quote .row div.col-sm-12 {
   width: 100%;
 }
-.node.node-testimonial.node-teaser .row div.col-sm-12 .field-name-field-picture .field-item img {
-  width: 100%;
-  height: auto;
+.node.node-quote .row div.col-sm-12 .field-name-body {
+  margin: 20px auto 30px;
+  width: 80%;
+  padding: 0;
 }
-.node.node-testimonial.node-teaser .row div.col-sm-12 .field-name-body {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 30px 15px;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background-color: rgba(73, 74, 79, 0.5);
-}
-.node.node-testimonial.node-teaser .row div.col-sm-12 .field-name-body .field-item p {
-  font-family: 'ProximaNovaLight';
-  font-size: 16px;
+.node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
+  font-family: 'ProximaNovaBold';
+  font-size: 18.75px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+  text-align: center;
   color: #fff;
 }
-@media screen and (min-width: 992px) {
-  .node.node-testimonial.node-teaser .row div.col-sm-12 .field-name-body .field-item p {
-    font-size: 20px;
+@media screen and (min-width: 480px) {
+  .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
+    font-size: 3.90625vw;
   }
+}
+@media screen and (min-width: 768px) {
+  .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
+    font-size: 30px;
+  }
+}
+.node.node-quote .row div.col-sm-12 .field-name-field-author {
+  margin: 20px auto 0;
+  width: 80%;
+}
+.node.node-quote .row div.col-sm-12 .field-name-field-author .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  text-align: right;
+  color: #fff;
 }
 /*
  *  View call2action component
@@ -10932,6 +11202,75 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   background-color: #929295;
 }
 /*
+ *  Quotes view component
+ * --------------------------------------------------*/
+.view.view-quotes .view-content {
+  background-color: #aa935e;
+}
+.view.view-quotes .view-content .carousel {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.view.view-quotes .view-content .carousel > .carousel-inner {
+  margin-top: 0;
+}
+.view.view-quotes .view-content .carousel > .carousel-indicators {
+  position: absolute;
+  bottom: 5px;
+  margin-left: -40%;
+  width: 80%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.view.view-quotes .view-content .carousel > .carousel-indicators li {
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  border-color: #aaa;
+}
+.view.view-quotes .view-content .carousel > .carousel-indicators li.active {
+  width: 17px;
+  height: 17px;
+}
+.view.view-quotes .view-content .carousel > a.carousel-control {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  width: 5%;
+  font-size: 50px;
+  text-shadow: none;
+  color: #333333;
+  background: none;
+}
+.view.view-quotes .view-content .carousel > a.carousel-control.left {
+  left: 0;
+}
+.view.view-quotes .view-content .carousel > a.carousel-control.left .fa {
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.view.view-quotes .view-content .carousel > a.carousel-control.right {
+  right: 0;
+}
+.view.view-quotes .view-content .carousel > a.carousel-control.right .fa {
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/*
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
@@ -10947,12 +11286,28 @@ header#navbar {
 header#navbar .container {
   padding: 10px 15px 10px;
 }
+header#navbar .container .navbar-header {
+  margin: 0;
+}
+header#navbar .container .navbar-header a.logo {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  max-width: 70%;
+  z-index: 10;
+}
 header#navbar .container .navbar-header a.logo img {
-  display: none;
-  max-height: 50px;
-  width: auto;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  header#navbar .container .navbar-header a.logo {
+    max-width: 50%;
+  }
 }
 header#navbar .container .navbar-header a.navbar-brand {
+  display: none;
   margin: 0;
   padding: 0;
   max-width: 350px;
@@ -11066,7 +11421,7 @@ header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
   header#navbar .container .navbar-collapse nav .region-navigation {
     display: block;
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     right: 0;
     margin: 0 0 0 20px;
   }
@@ -11076,9 +11431,10 @@ header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
   header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li {
     display: inline-block;
     margin: 0;
+    height: auto;
   }
   header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a {
-    padding: 12px 5px;
+    padding: 0 5px;
     font-family: 'ProximaNovaBold';
     font-size: 16px;
     text-align: left;

@@ -29,7 +29,7 @@
 
   //
   // Button styles
-  .button-normal() {
+  .button-normal(@bg-color: @pxl-bg-button; @bg-color-hover: @pxl-bg-button-hover) {
     display: block;
     margin: 0 auto;
     padding: 8px 0 10px;
@@ -45,21 +45,20 @@
     color: #fff;
     border: none;
     #pxl-mixins.border-radius(3px);
-    background: @pxl-bg-button;
+    background: @bg-color;
 
     &:hover {
-      background: @pxl-bg-button-hover;
+      background: @bg-color-hover;
     }
   }
 
-  .button-large() {
-    display: block;
+  .button-large(@bg-color: @pxl-bg-button; @bg-color-hover: @pxl-bg-button-hover) {
+    display: inline-block;
     margin: 0 auto;
-    padding: 13px 0 15px;
-    width: 60%;
+    padding: 13px 15px 15px;
     min-width: 160px;
     height: 44px;
-    font-family: @pxl-text-font;
+    font-family: @pxl-text-font-bold;
     font-size: @font-size-base;
     text-align: center;
     text-decoration: none;
@@ -67,11 +66,11 @@
     letter-spacing: @pxl-button-letter-spacing;
     color: #fff;
     border: none;
-    #pxl-mixins.border-radius(3px);
-    background: @pxl-bg-button;
+    #pxl-mixins.border-radius(5px);
+    background: @bg-color;
 
     &:hover {
-      background: @pxl-bg-button-hover;
+      background: @bg-color-hover;
     }
   }
 

@@ -20,3 +20,21 @@ function pxlraffle_install () {
   }
 
 }
+
+/**
+ * Implements hook_uninstall().
+ */
+function pxlraffle_uninstall() {
+  $delta = 'pxlraffle_current_info';
+  variable_del($delta . '_odometer_label');
+  variable_del($delta . '_odometer_label_position');
+  variable_del($delta . '_odometer_anim_number_range');
+  variable_del($delta . '_odometer_theme');
+
+  $delta = 'pxlraffle_subscriptions';
+  variable_del($delta . '_odometer_label');
+  variable_del($delta . '_odometer_label_position');
+  variable_del($delta . '_odometer_anim_number_range');
+  variable_del($delta . '_odometer_theme');
+}
+

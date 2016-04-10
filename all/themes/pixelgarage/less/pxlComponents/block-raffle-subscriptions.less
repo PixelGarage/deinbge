@@ -1,0 +1,81 @@
+/*
+ *  Block raffle subscriptions component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+#pxlraffle-subscriptions {
+  padding: 20px 0;
+
+  .subscriptions {
+    width: 100%;
+
+    .block-header {
+      margin-bottom: 30px;
+      font-family: @pxl-text-font-bold;
+      font-size: @font-size-larger;
+      text-align: center;
+      color: @text-color;
+    }
+
+    .subscription-slogan {
+      margin-bottom: 20px;
+      font-family: @pxl-text-font-bold;
+      font-size: @font-size-base + 2;
+      text-align: center;
+    }
+
+    .actions {
+      margin: 0 auto 70px;
+      text-align: center;
+
+      .btn.link-subscribe {
+        #pxl-mixins.button-large(@pxl-color-raffle, darken(@pxl-color-raffle, 20%));
+      }
+    }
+
+    .odometer-users {
+      margin-bottom: 10px;
+      #pxl-mixins.odometer(#fff, @pxl-color-raffle, 5px);
+    }
+
+    .odometer-amount {
+      margin-bottom: 20px;
+      #pxl-mixins.odometer(#fff, #000, 5px, 36px, 24px);
+
+      .currency {
+        vertical-align: middle;
+        font-family: @pxl-text-font-bold;
+        font-size: 24px;
+      }
+    }
+
+    .subscription-fee-statement {
+      margin-bottom: 50px;
+      font-family: @pxl-text-font;
+      font-size: (@font-size-base - 2);
+      text-align: center;
+    }
+
+    @media @tablet {
+      margin: 0 auto;
+      width: 80%;
+
+      .odometer-amount {
+        .currency {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+}

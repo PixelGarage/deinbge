@@ -1,0 +1,97 @@
+/*
+ *  Quotes view component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+//
+// Bootstrap carousel
+.carousel() {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+
+  > .carousel-inner {
+    margin-top: 0;
+
+    .item {
+
+      &.active {
+
+      }
+    }
+  }
+
+  > .carousel-indicators {
+    position: absolute;
+    bottom: 5px;
+    margin-left: -40%;
+    width: 80%;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    li {
+      margin: 0 5px;
+      width: 14px;
+      height: 14px;
+      border-color: #aaa;
+
+      &.active {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  > a.carousel-control {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    width: 5%;
+    font-size: 50px;
+    text-shadow: none;
+    color: @text-color;
+    background: none;
+
+    &.left {
+      left: 0;
+
+      .fa {
+        font-size: 50px;
+        color: #fff;
+        #pxl-mixins.center-vertically;
+      }
+    }
+
+    &.right {
+      right: 0;
+
+      .fa {
+        font-size: 50px;
+        color: #fff;
+        #pxl-mixins.center-vertically;
+      }
+    }
+  }
+}
+
+
+
+// General settings
+// -------------------------
+.view.view-quotes {
+  .view-content {
+    background-color: @pxl-color-main;
+
+    .carousel {
+      .carousel;
+    }
+  }
+}

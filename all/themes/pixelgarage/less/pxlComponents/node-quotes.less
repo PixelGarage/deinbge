@@ -1,0 +1,56 @@
+/*
+ *  Node testimonials component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-quote {
+  height: 200px;
+
+  .row {
+    div.col-sm-12 {
+      width: 100%;
+
+      .field-name-body {
+        margin: 20px auto 30px;
+        width: 80%;
+        padding: 0;
+
+        .field-item {
+          p {
+            font-family: @pxl-text-font-bold;
+            #pxl-mixins.font-size-responsive(30px);
+            #pxl-mixins.hyphenate;
+            text-align: center;
+            color: #fff;
+          }
+        }
+
+        @media @tablet {
+          //.content-columns(2);
+        }
+      }
+
+      .field-name-field-author {
+        margin: 20px auto 0;
+        width: 80%;
+
+        .field-item {
+          font-family: @pxl-text-font;
+          font-size: @font-size-base;
+          text-align: right;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
