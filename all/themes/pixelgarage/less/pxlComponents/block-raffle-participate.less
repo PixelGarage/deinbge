@@ -1,0 +1,138 @@
+/*
+ *  Block raffle participate component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+.resp-raffle-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-color-participate; @radius: @border-radius-large) {
+  display: inline-block;
+  margin: 10px;
+  padding: 7px 15px;
+  font-family: @pxl-text-font-bold;
+  font-size: @size;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: @color;
+  outline: none;
+  opacity: 1.0;
+  #pxl-mixins.border-radius(@radius);
+  border: none;
+  background-color: @bg-color;
+
+  &:hover, &:focus {
+    opacity: 0.7;
+  }
+}
+
+
+
+
+// General settings
+// -------------------------
+#pxlraffle-participate {
+  padding: 20px 0;
+
+  .participation {
+    width: 100%;
+
+    .block-header {
+      margin-bottom: 30px;
+      font-family: @pxl-text-font-bold;
+      font-size: @font-size-larger;
+      text-align: center;
+      color: @text-color;
+    }
+
+    .participation-slogan {
+      margin-bottom: 20px;
+      font-family: @pxl-text-font;
+      font-size: @font-size-base + 2;
+      text-align: center;
+    }
+
+    .participation-accordion {
+      .panel{
+        box-shadow: none;
+        border: none;
+        text-align: center;
+
+        .panel-heading {
+          display: inline-block;
+          margin: 10px auto 30px;
+          padding: 0;
+          width: auto;
+          text-align: center;
+          border: none;
+
+          .panel-title {
+            a.accordion-toggle {
+              padding: 13px 15px 15px;
+              min-width: 160px;
+              height: 44px;
+              font-family: @pxl-text-font-bold;
+              font-size: @font-size-base;
+              text-decoration: none;
+              line-height: 1;
+              letter-spacing: @pxl-button-letter-spacing;
+              color: #fff;
+              opacity: 1.0;
+              #pxl-mixins.border-radius(5px);
+              background: @pxl-color-participate;
+
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+
+        .panel-collapse {
+          .jumbotron {
+            .user-raffle-info {
+              margin-bottom: 20px;
+              font-family: @pxl-text-font;
+              font-size: @font-size-base + 2;
+              text-align: center;
+              color: @text-color;
+
+              .user-raffle-number {
+
+              }
+
+              .user-raffle-code {
+                span.raffle-code {
+                  padding: 5px 15px;
+                  font-size: @font-size-base + 4;
+                  color: #fff;
+                  background: #000;
+                }
+              }
+
+              .user-raffle-date {
+
+              }
+            }
+
+            .user-raffle-actions {
+              .btn.refresh-raffle-button {
+              .resp-raffle-button(@font-size-base);
+              }
+
+              .btn.remove-raffle-button {
+                .resp-raffle-button(@font-size-base);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media @tablet {
+    }
+  }
+}

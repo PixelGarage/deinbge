@@ -19,16 +19,12 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   // user login dependant variables
   if ($user->uid) {
     //
-    // get info text
-    $full_user = user_load($user->uid);
-    $msg = pxlraffle_get_user_raffle_info_html($full_user);
-
-    //
     // add raffle edit buttons
     $uid = $user->uid;
+    $full_user = user_load($uid);
     $renew_url = '/user/' . $uid . '/raffle/renew';
     $remove_url = '/user/' . $uid . '/raffle/remove';
-    $markup = '<div class="user-raffle-info"><p>' . $msg . '</p></div>';
+    $markup = pxlraffle_get_user_raffle_info_html($full_user);
     $markup .= '<div class="user-raffle-actions">' .
       l(t('Add to current raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Add to current raffle')))) .
       l(t('Remove from raffle'), $remove_url, array('attributes' => array('class' => array('btn btn-default remove-raffle-button'), 'title' => t('Remove from raffle')))) .

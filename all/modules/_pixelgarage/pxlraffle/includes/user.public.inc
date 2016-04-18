@@ -135,7 +135,7 @@ function pxlraffle_get_user_raffle_info_html($user) {
     // user is not part of a raffle
     $msg = t('You are actually not part of a raffle. Please press "Add to current raffle" to be part of the current raffle.');
   }
-  return '<div class="user-raffle-info"><p>' . $msg . '</p></div>';
+  return '<div class="user-raffle-info">' . $msg . '</div>';
 }
 
 /**

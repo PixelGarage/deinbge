@@ -19,7 +19,7 @@
       <h2 class="block-header"><?php print $title; ?></h2>
     <?php endif; ?>
     <div class="participation-slogan"><?php print $participation_slogan; ?></div>
-    <div class="participate-accordion">
+    <div class="participation-accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">

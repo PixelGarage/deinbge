@@ -9581,6 +9581,117 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
   }
 }
 /*
+ *  Block raffle participate component
+ * --------------------------------------------------*/
+#pxlraffle-participate {
+  padding: 20px 0;
+}
+#pxlraffle-participate .participation {
+  width: 100%;
+}
+#pxlraffle-participate .participation .block-header {
+  margin-bottom: 30px;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+}
+#pxlraffle-participate .participation .participation-slogan {
+  margin-bottom: 20px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  text-align: center;
+}
+#pxlraffle-participate .participation .participation-accordion .panel {
+  box-shadow: none;
+  border: none;
+  text-align: center;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-heading {
+  display: inline-block;
+  margin: 10px auto 30px;
+  padding: 0;
+  width: auto;
+  text-align: center;
+  border: none;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-heading .panel-title a.accordion-toggle {
+  padding: 13px 15px 15px;
+  min-width: 160px;
+  height: 44px;
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #fff;
+  opacity: 1.0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #327abd;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-heading .panel-title a.accordion-toggle:hover {
+  opacity: 0.7;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-info {
+  margin-bottom: 20px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  text-align: center;
+  color: #333333;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-info .user-raffle-code span.raffle-code {
+  padding: 5px 15px;
+  font-size: 20px;
+  color: #fff;
+  background: #000;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.refresh-raffle-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 7px 15px;
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: none;
+  background-color: #327abd;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.refresh-raffle-button:hover,
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.refresh-raffle-button:focus {
+  opacity: 0.7;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.remove-raffle-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 7px 15px;
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: none;
+  background-color: #327abd;
+}
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.remove-raffle-button:hover,
+#pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.remove-raffle-button:focus {
+  opacity: 0.7;
+}
+/*
  *  Node intro video component
  * --------------------------------------------------*/
 .node.node-intro .row div.col-sm-12 {
