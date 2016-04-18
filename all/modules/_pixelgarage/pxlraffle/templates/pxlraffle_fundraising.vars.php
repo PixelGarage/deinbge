@@ -3,10 +3,10 @@
  * The preprocess function for the current raffle state theme.
  */
 
-function template_preprocess_pxlraffle_current_info(&$vars) {
+function template_preprocess_pxlraffle_fundraising(&$vars) {
   $raffle_nid = pxlraffle_get_current_raffle_nid();
   $current_raffle = node_load($raffle_nid);
-  $number = $current_raffle->field_number[LANGUAGE_NONE][0]['value'];
+  $raffle_id = strtoupper($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
   $total_amount = 30000;
 
   //
@@ -25,7 +25,7 @@ function template_preprocess_pxlraffle_current_info(&$vars) {
 
   //
   // style odometer for user count
-  pxlraffle_odometer_theme_attachments($vars, 'pxlraffle_current_info');
+  _pxlraffle_odometer_theme_attachments($vars, 'pxlraffle_fundraising');
   $vars['user_count'] = 23678;//pxlraffle_get_user_count_in_raffle($raffle_nid);
-  $vars['odometer_label'] = t('participants are currently part of raffle number @number', array('@number' => $number));
+  $vars['odometer_label'] = t('participants are currently part of raffle "@number"', array('@number' => $raffle_id));
 }

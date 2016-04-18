@@ -8725,6 +8725,17 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   float: none;
   width: auto;
 }
+#user_register_form h1,
+#user_login_form h1,
+#user-create-account h1,
+#user_pass_form h1,
+#user_register_form h2,
+#user_login_form h2,
+#user-create-account h2,
+#user_pass_form h2 {
+  margin: 0 0 15px;
+  font-size: 34px;
+}
 /* User login page */
 form#user-login {
   position: relative;
@@ -8743,6 +8754,9 @@ form#user-login {
     padding: 2em;
     width: 50%;
   }
+}
+#user-create-account .create-account-description {
+  margin-bottom: 6px;
 }
 #user-create-account .form-actions-wrapper {
   position: relative;
@@ -9134,38 +9148,38 @@ form#user-login {
   background-color: #fa6278;
 }
 /*
- *  Block raffle info component
+ *  Block raffle fundraising component
  * --------------------------------------------------*/
-#pxlraffle-current-info {
+#pxlraffle-fundraising {
   padding: 20px 0;
 }
-#pxlraffle-current-info .current-raffle {
+#pxlraffle-fundraising .current-raffle {
   width: 100%;
 }
-#pxlraffle-current-info .current-raffle .block-header {
+#pxlraffle-fundraising .current-raffle .block-header {
   margin-bottom: 50px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   text-align: center;
   color: #333333;
 }
-#pxlraffle-current-info .current-raffle .odometer-container {
+#pxlraffle-fundraising .current-raffle .odometer-container {
   margin-bottom: 50px;
   margin: 0;
   text-align: center;
 }
-#pxlraffle-current-info .current-raffle .odometer-container .odometer-label {
+#pxlraffle-fundraising .current-raffle .odometer-container .odometer-label {
   font-family: 'ProximaNovaBold';
   font-size: 18px;
   letter-spacing: 0.05em;
   color: #333333;
 }
-#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside {
+#pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside {
   font-family: 'ProximaNovaBold';
   font-size: 32px;
   line-height: 1.1;
 }
-#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
+#pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
   display: inline-block;
   vertical-align: top;
   margin: 0 2px;
@@ -9178,50 +9192,110 @@ form#user-login {
   border-radius: 5px;
   background-color: #327abd;
 }
-#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+#pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
   margin-top: -1px;
   padding-left: 4px;
   text-align: left;
 }
-#pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
+#pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
   width: 5px;
   opacity: 0.0;
 }
 @media screen and (min-width: 768px) {
-  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside {
+  #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside {
     font-size: 50px;
   }
-  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
+  #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
     width: 44px;
     height: 52px;
   }
-  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+  #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
     margin-top: -2px;
     padding-left: 7.14285714px;
   }
-  #pxlraffle-current-info .current-raffle .odometer-container .odometer .odometer-formatting-mark {
+  #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-formatting-mark {
     width: 6px;
   }
 }
-#pxlraffle-current-info .current-raffle .total-amount {
+body.front #pxlraffle-fundraising .current-raffle .odometer-container {
+  margin: 0;
+  text-align: center;
+}
+body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer-label {
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside {
+  font-family: 'ProximaNovaBold';
+  font-size: 32px;
+  line-height: 1.1;
+}
+body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  padding: 0;
+  width: 28px;
+  height: 34px;
+  color: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #aa935e;
+}
+body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+  margin-top: -1px;
+  padding-left: 4px;
+  text-align: left;
+}
+body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
+  display: inline-block;
+  width: 5px;
+  opacity: 0.0;
+}
+@media screen and (min-width: 768px) {
+  body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside {
+    font-size: 50px;
+  }
+  body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
+    width: 44px;
+    height: 52px;
+  }
+  body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
+    margin-top: -2px;
+    padding-left: 7.14285714px;
+  }
+  body.front #pxlraffle-fundraising .current-raffle .odometer-container .odometer .odometer-formatting-mark {
+    width: 6px;
+  }
+}
+#pxlraffle-fundraising .current-raffle .total-amount {
   font-family: 'ProximaNovaBold';
   font-size: 16px;
   text-align: right;
 }
-#pxlraffle-current-info .current-raffle .progress {
+#pxlraffle-fundraising .current-raffle .progress {
   margin: 0;
   height: 30px;
 }
-#pxlraffle-current-info .current-raffle .progress .progress-bar {
+#pxlraffle-fundraising .current-raffle .progress .progress-bar {
   background-color: #327abd;
 }
-#pxlraffle-current-info .current-raffle .current-amount-container {
+body.front #pxlraffle-fundraising .current-raffle .progress .progress-bar {
+  background-color: #aa935e;
+}
+#pxlraffle-fundraising .current-raffle .current-amount-container {
   font-family: 'ProximaNovaBold';
   font-size: 16px;
   color: #327abd;
 }
-#pxlraffle-current-info .current-raffle .current-amount-container .fa {
+body.front #pxlraffle-fundraising .current-raffle .current-amount-container {
+  color: #aa935e;
+}
+#pxlraffle-fundraising .current-raffle .current-amount-container .fa {
   display: inline-block;
   vertical-align: top;
   -webkit-transform: translateX(-50%);
@@ -9229,7 +9303,7 @@ form#user-login {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-#pxlraffle-current-info .current-raffle .current-amount-container .current-amount {
+#pxlraffle-fundraising .current-raffle .current-amount-container .current-amount {
   display: inline-block;
   margin-top: 20px;
   -webkit-transform: translateX(-50%);
@@ -9237,11 +9311,11 @@ form#user-login {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-#pxlraffle-current-info .current-raffle .actions {
+#pxlraffle-fundraising .current-raffle .actions {
   margin: 30px auto;
   text-align: center;
 }
-#pxlraffle-current-info .current-raffle .actions .btn.link-participate {
+#pxlraffle-fundraising .current-raffle .actions .btn.link-participate {
   display: inline-block;
   margin: 0 auto;
   padding: 13px 15px 15px;
@@ -9260,11 +9334,33 @@ form#user-login {
   border-radius: 5px;
   background: #327abd;
 }
-#pxlraffle-current-info .current-raffle .actions .btn.link-participate:hover {
+#pxlraffle-fundraising .current-raffle .actions .btn.link-participate:hover {
   background: #1d466c;
 }
+body.front #pxlraffle-fundraising .current-raffle .actions .btn.link-participate {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 13px 15px 15px;
+  min-width: 160px;
+  height: 44px;
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #aa935e;
+}
+body.front #pxlraffle-fundraising .current-raffle .actions .btn.link-participate:hover {
+  background: #6a5b38;
+}
 @media screen and (min-width: 768px) {
-  #pxlraffle-current-info .current-raffle {
+  #pxlraffle-fundraising .current-raffle {
     margin: 0 auto;
     width: 80%;
   }
@@ -9290,6 +9386,9 @@ form#user-login {
   margin-bottom: 20px;
   text-align: center;
   color: #2bca80;
+}
+body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
+  color: #aa935e;
 }
 #pxlraffle-next-raffle .next-raffle .next-raffle-date {
   display: inline-block;
@@ -9321,7 +9420,7 @@ form#user-login {
 }
 #pxlraffle-subscriptions .subscriptions .subscription-slogan {
   margin-bottom: 20px;
-  font-family: 'ProximaNovaBold';
+  font-family: 'ProximaNovaLight';
   font-size: 18px;
   text-align: center;
 }
@@ -9346,10 +9445,10 @@ form#user-login {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #2bca80;
+  background: #327abd;
 }
 #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:hover {
-  background: #19764b;
+  background: #1d466c;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users {
   margin-bottom: 10px;
@@ -9378,7 +9477,7 @@ form#user-login {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: #2bca80;
+  background-color: #327abd;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
   margin-top: -1px;
@@ -10802,6 +10901,395 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-size: 16px;
   text-align: right;
   color: #fff;
+}
+/*
+ *  Node spenden component
+ * --------------------------------------------------*/
+.node.node-spenden .row .col-sm-12 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.node.node-spenden .row .col-sm-12 .field-name-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 90%;
+  z-index: 10;
+}
+.node.node-spenden .row .col-sm-12 .field-name-title h2 {
+  margin: 0 0 20px;
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-title h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-title h2 {
+    top: 30px;
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-images .field-item .carousel {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner {
+  margin-top: 0;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item > div {
+  width: 100%;
+  height: 200px !important;
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-inner .item > div {
+    height: 200px !important;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-images .field-item .carousel > .carousel-indicators {
+  display: none;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-images .field-item .carousel > a.carousel-control {
+  display: none;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items {
+  text-align: center;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item {
+    margin: 0 10px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  background-color: #327abd;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button:hover,
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button:focus {
+  opacity: 0.7;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  background-color: #aa935e;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button:focus {
+  opacity: 0.7;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button.btn-warning {
+  background-color: #f0ad4e;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .stripe-button[disabled] {
+  opacity: 1.0;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form {
+  width: 100%;
+  margin: 0 auto;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -2px;
+  padding: 0;
+  width: auto;
+  font-family: 'ProximaNovaLight';
+  font-size: 20px;
+  letter-spacing: 0;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .input-group-addon {
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px 5px 4px;
+  height: 34px;
+  width: 50px;
+  font-family: 'ProximaNovaLight';
+  color: #333333;
+  border: none;
+  border-right: 1px solid #c9c9c9;
+  background-color: #fff;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .form-item-stripe-button-custom-amount {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 100px;
+  color: #333333;
+  text-align: right;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .form-item-stripe-button-custom-amount label {
+  display: none;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .form-item-stripe-button-custom-amount input.form-text {
+  padding: 8px 5px 4px;
+  height: 34px;
+  text-align: right;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .form-item-stripe-button-custom-amount input.form-text:focus {
+  border: 1px solid #327abd;
+  box-shadow: 1px 1px 1px #aaa inset;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form .input-group .form-item-stripe-button-custom-amount input.form-text:focus {
+  border: 1px solid #aa935e;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit {
+  vertical-align: top;
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  background-color: #327abd;
+  margin: 0 0 0 -4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit:hover,
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit:focus {
+  opacity: 0.7;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: 'ProximaNovaBold';
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  background-color: #aa935e;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item form button.form-submit:focus {
+  opacity: 0.7;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .label.stripe-message {
+  display: block;
+  white-space: normal;
+  max-width: 150px;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .label.stripe-message.label-warning {
+  background-color: #f0ad4e;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .popover {
+  font-family: 'ProximaNovaLight';
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #fff;
+  border: none;
+  background: none;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .popover .popover-title {
+  padding: 4px 14px;
+  font-family: 'ProximaNovaBold';
+  font-size: 80%;
+  border: none;
+}
+.node.node-spenden .row .col-sm-12 .field-type-number-decimal .field-items .field-item .popover .popover-content {
+  padding: 4px 14px;
+  font-size: 80%;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  background-color: #f0ad4e;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined {
+  position: absolute;
+  top: 70px;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden {
+  position: absolute;
+  top: 130px;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body h1,
+.node.node-spenden .row .col-sm-12 .field-name-body h2,
+.node.node-spenden .row .col-sm-12 .field-name-body h3,
+.node.node-spenden .row .col-sm-12 .field-name-body h4,
+.node.node-spenden .row .col-sm-12 .field-name-body h5,
+.node.node-spenden .row .col-sm-12 .field-name-body h6 {
+  font-family: 'ProximaNovaBold';
+  font-size: 18px;
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body h1,
+  .node.node-spenden .row .col-sm-12 .field-name-body h2,
+  .node.node-spenden .row .col-sm-12 .field-name-body h3,
+  .node.node-spenden .row .col-sm-12 .field-name-body h4,
+  .node.node-spenden .row .col-sm-12 .field-name-body h5,
+  .node.node-spenden .row .col-sm-12 .field-name-body h6 {
+    font-size: 3.75vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body h1,
+  .node.node-spenden .row .col-sm-12 .field-name-body h2,
+  .node.node-spenden .row .col-sm-12 .field-name-body h3,
+  .node.node-spenden .row .col-sm-12 .field-name-body h4,
+  .node.node-spenden .row .col-sm-12 .field-name-body h5,
+  .node.node-spenden .row .col-sm-12 .field-name-body h6 {
+    font-size: 20px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-body h1,
+.node.node-spenden .row .col-sm-12 .field-name-body h2,
+.node.node-spenden .row .col-sm-12 .field-name-body h3 {
+  font-size: 20px;
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body h1,
+  .node.node-spenden .row .col-sm-12 .field-name-body h2,
+  .node.node-spenden .row .col-sm-12 .field-name-body h3 {
+    font-size: 4.16666667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body h1,
+  .node.node-spenden .row .col-sm-12 .field-name-body h2,
+  .node.node-spenden .row .col-sm-12 .field-name-body h3 {
+    font-size: 32px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-body p,
+.node.node-spenden .row .col-sm-12 .field-name-body tbody td {
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body p,
+  .node.node-spenden .row .col-sm-12 .field-name-body tbody td {
+    font-size: 3.75vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body p,
+  .node.node-spenden .row .col-sm-12 .field-name-body tbody td {
+    font-size: 16px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-body pre,
+.node.node-spenden .row .col-sm-12 .field-name-body address {
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body pre,
+  .node.node-spenden .row .col-sm-12 .field-name-body address {
+    font-size: 3.75vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body pre,
+  .node.node-spenden .row .col-sm-12 .field-name-body address {
+    font-size: 16px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-body strong {
+  font-family: 'ProximaNovaBold';
+}
+.node.node-spenden .row .col-sm-12 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #333333;
+  background: none;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body img,
+.node.node-spenden .row .col-sm-12 .field-name-body embed,
+.node.node-spenden .row .col-sm-12 .field-name-body video,
+.node.node-spenden .row .col-sm-12 .field-name-body audio,
+.node.node-spenden .row .col-sm-12 .field-name-body iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px;
 }
 /*
  *  View call2action component

@@ -34,9 +34,9 @@ function pxlraffle_form_user_profile_form_alter (&$form, &$form_state, $form_id)
     // add raffle info
     $raffle_id = $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'];
     $raffle = node_load($raffle_id);
-    $raffle_number = (int)$raffle->field_number[LANGUAGE_NONE][0]['value'];
+    $raffle_id = strtoupper($raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
     $raffle_date = pxlraffle_get_raffle_date($raffle);
-    $form['field_raffle_code']['#prefix'] = '<p>' . t('You participate in raffle @number. The raffle date is @date.', array('@number' => $raffle_number, '@date' => $raffle_date)) . '</p>';
+    $form['field_raffle_code']['#prefix'] = '<p>' . t('You participate in raffle "@number". The raffle date is @date.', array('@number' => $raffle_id, '@date' => $raffle_date)) . '</p>';
   }
   else {
     $form['field_raffle_code']['#prefix'] = '<p>' . t('You are not part of a raffle.') . '</p>';
@@ -62,8 +62,7 @@ function pxlraffle_form_user_profile_form_alter (&$form, &$form_state, $form_id)
 function pxlraffle_user_presave(&$edit, $account, $category) {
   //
   // user is activated, add current raffle to user before save
-  if (empty($account->field_current_raffle)) {
-    $current_raffle_nid = pxlraffle_get_current_raffle_nid();
-    $account->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
+  if (!$account->is_new && empty($account->field_current_raffle) && empty($account->field_raffle_code)) {
+    pxlraffle_set_user_raffle($account);
   }
 }

@@ -1,0 +1,292 @@
+/*
+ *  Node spenden component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+.bg-carousel() {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+
+  > .carousel-inner {
+    margin-top: 0;
+
+    .item {
+      > div {
+        width: 100%;
+        height: 200px !important;
+
+        @media @tablet {
+          height: 200px !important;
+        }
+
+      }
+
+      &.active {
+
+      }
+    }
+  }
+
+  > .carousel-indicators {
+    display: none;
+  }
+
+  > a.carousel-control {
+    display: none;
+  }
+}
+
+.resp-spenden-button(@size: @font-size-large; @color: @webform-color-submit; @bg-color: @webform-bg-color-submit; @radius: @border-radius-large) {
+  display: inline-block;
+  padding: 7px 15px;
+  font-family: @pxl-text-font-bold;
+  font-size: @size;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: @color;
+  outline: none;
+  opacity: 1.0;
+  #pxl-mixins.border-radius(@radius);
+  border: none;
+  background-color: @bg-color;
+
+  &:hover, &:focus {
+    opacity: 0.7;
+  }
+}
+
+
+// General settings
+// -------------------------
+.node.node-spenden {
+  .row {
+    .col-sm-12 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+
+      .field-name-title {
+        position: absolute;
+        top: 20px;
+        #pxl-mixins.center-horizontally;
+        width: 90%;
+        z-index: 10;
+
+        h2 {
+          margin: 0 0 20px;
+          font-family: @pxl-title-font;
+          font-size: 18px;
+          letter-spacing: 1.2px;
+          text-align: center;
+          color: #fff;
+          text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        @media @narrow {
+          h2 {
+            font-size: 20px;
+          }
+        }
+        @media @tablet {
+          h2 {
+            top: 30px;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .field-name-field-images {
+        .field-item {
+          .carousel {
+            .bg-carousel;
+          }
+        }
+      }
+
+      .field-type-number-decimal {
+        // stripe buttons
+        position: relative;
+        width: 100%;
+        z-index: 10;
+
+        .field-items {
+          text-align: center;
+
+          .field-item {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 2px;
+
+            @media @narrow {
+              margin: 0 10px;
+            }
+
+            .stripe-button {
+              // thestripe button with the given amount
+              .resp-spenden-button(20px, #fff, @pxl-color-participate, 4px);
+
+              body.front & {
+                .resp-spenden-button(20px, #fff, @pxl-color-main, 4px);
+              }
+
+              &.btn-warning {
+                background-color: @pxl-color-warning;
+              }
+
+              &[disabled] {
+                opacity: 1.0;
+              }
+            }
+
+            //
+            // item form to get custom amount
+            form {
+              width: 100%;
+              margin: 0 auto;
+
+              .input-group {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 -2px;
+                padding: 0;
+                width: auto;
+                font-family: @pxl-text-font;
+                font-size: 20px;
+                letter-spacing: 0;
+
+                .input-group-addon {
+                  display: inline-block;
+                  vertical-align: top;
+                  padding: 8px 5px 4px;
+                  height: 34px;
+                  width: 50px;
+                  font-family: @pxl-text-font;
+                  color: @text-color;
+                  border: none;
+                  border-right: 1px solid @pxl-color-border-light;
+                  background-color: #fff;
+                }
+
+                .form-item-stripe-button-custom-amount {
+                  display: inline-block;
+                  vertical-align: top;
+                  padding: 0;
+                  width: 100px;
+                  color: @text-color;
+                  text-align: right;
+
+                  label {
+                    display: none;
+                  }
+
+                  input.form-text {
+                    padding: 8px 5px 4px;
+                    height: 34px;
+                    text-align: right;
+                    #pxl-mixins.border-radius(0);
+                    border: none;
+
+                    &:focus {
+                      border: 1px solid @pxl-color-participate;
+                      box-shadow: 1px 1px 1px #aaa inset;
+
+                      body.front & {
+                        border: 1px solid @pxl-color-main;
+                      }
+                    }
+                  }
+                }
+              }
+
+              button.form-submit {
+                display: inline-block;
+                vertical-align: top;
+                .resp-spenden-button(20px, #fff, @pxl-color-participate, 4px);
+
+                body.front & {
+                  .resp-spenden-button(20px, #fff, @pxl-color-main, 4px);
+                }
+
+                margin: 0 0 0 -4px;
+                .border-left-radius(0);
+              }
+            }
+
+            //
+            // error items
+            .label.stripe-message {
+              // stripe message
+              display: block;
+              white-space: normal;
+              max-width: 150px;
+
+              &.label-warning {
+                background-color: @pxl-color-warning;
+              }
+            }
+
+            .popover {
+              // stripe popover
+              font-family: @pxl-text-font;
+              letter-spacing: 1.2px;
+              text-align: left;
+              color: #fff;
+              border: none;
+              background: none;
+
+              .arrow {
+              }
+
+              .popover-title {
+                padding: 4px 14px;
+                font-family: @pxl-title-font;
+                font-size: 80%;
+                border:none;
+              }
+
+              .popover-content {
+                padding: 4px 14px;
+                font-size: 80%;
+                #pxl-mixins.border-radius(0 0 5px 5px);
+                background-color: @pxl-color-warning;
+              }
+            }
+          }
+        }
+      }
+
+      .field-name-field-spenden-predefined {
+        position: absolute;
+        top: 70px;
+      }
+
+      .field-name-field-spenden {
+        position: absolute;
+        top: 130px;
+      }
+
+      .field-name-body {
+        display: none;
+
+        position: absolute;
+        top: 60px;
+        #pxl-mixins.center-horizontally;
+        width: 100%;
+        #pxl-mixins.wysiwyg-body;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        z-index: 10;
+      }
+
+    }
+  }
+}

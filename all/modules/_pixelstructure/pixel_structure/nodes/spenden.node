@@ -1,10 +1,10 @@
 <?php
-$export_time = 1460545187;
+$export_time = 1460545057;
 $data = array(
   'bundles' => array(
-    'call2action' => (object) array(
-      'type' => 'call2action',
-      'name' => 'Call2Action',
+    'spenden' => (object) array(
+      'type' => 'spenden',
+      'name' => 'Spenden',
       'base' => 'node_content',
       'module' => 'node',
       'description' => '',
@@ -15,7 +15,7 @@ $data = array(
       'modified' => '1',
       'locked' => '0',
       'disabled' => '0',
-      'orig_type' => 'call2action',
+      'orig_type' => 'spenden',
       'disabled_changed' => FALSE,
       'bc_entity_type' => 'node',
     ),
@@ -93,81 +93,15 @@ $data = array(
           0 => 'page',
           1 => 'article',
           2 => 'pxltest',
-          3 => 'call2action',
-          4 => 'facebook_post',
-          5 => 'intro',
-          6 => 'quote',
-          7 => 'pxl_raffle',
+          3 => 'reason',
+          4 => 'webform',
+          5 => 'footer',
+          6 => 'share',
+          7 => 'spenden',
         ),
       ),
     ),
-    'field_css_class' => array(
-      'translatable' => '0',
-      'entity_types' => array(),
-      'settings' => array(
-        'max_length' => '255',
-      ),
-      'storage' => array(
-        'type' => 'field_sql_storage',
-        'settings' => array(),
-        'module' => 'field_sql_storage',
-        'active' => '1',
-        'details' => array(
-          'sql' => array(
-            'FIELD_LOAD_CURRENT' => array(
-              'field_data_field_css_class' => array(
-                'value' => 'field_css_class_value',
-                'format' => 'field_css_class_format',
-              ),
-            ),
-            'FIELD_LOAD_REVISION' => array(
-              'field_revision_field_css_class' => array(
-                'value' => 'field_css_class_value',
-                'format' => 'field_css_class_format',
-              ),
-            ),
-          ),
-        ),
-      ),
-      'foreign keys' => array(
-        'format' => array(
-          'table' => 'filter_format',
-          'columns' => array(
-            'format' => 'format',
-          ),
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'field_name' => 'field_css_class',
-      'type' => 'text',
-      'module' => 'text',
-      'active' => '1',
-      'locked' => '0',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'columns' => array(
-        'value' => array(
-          'type' => 'varchar',
-          'length' => '255',
-          'not null' => FALSE,
-        ),
-        'format' => array(
-          'type' => 'varchar',
-          'length' => 255,
-          'not null' => FALSE,
-        ),
-      ),
-      'bundles' => array(
-        'node' => array(
-          0 => 'call2action',
-        ),
-      ),
-    ),
-    'field_icon' => array(
+    'field_images' => array(
       'translatable' => '0',
       'entity_types' => array(),
       'settings' => array(
@@ -182,21 +116,21 @@ $data = array(
         'details' => array(
           'sql' => array(
             'FIELD_LOAD_CURRENT' => array(
-              'field_data_field_icon' => array(
-                'fid' => 'field_icon_fid',
-                'alt' => 'field_icon_alt',
-                'title' => 'field_icon_title',
-                'width' => 'field_icon_width',
-                'height' => 'field_icon_height',
+              'field_data_field_images' => array(
+                'fid' => 'field_images_fid',
+                'alt' => 'field_images_alt',
+                'title' => 'field_images_title',
+                'width' => 'field_images_width',
+                'height' => 'field_images_height',
               ),
             ),
             'FIELD_LOAD_REVISION' => array(
-              'field_revision_field_icon' => array(
-                'fid' => 'field_icon_fid',
-                'alt' => 'field_icon_alt',
-                'title' => 'field_icon_title',
-                'width' => 'field_icon_width',
-                'height' => 'field_icon_height',
+              'field_revision_field_images' => array(
+                'fid' => 'field_images_fid',
+                'alt' => 'field_images_alt',
+                'title' => 'field_images_title',
+                'width' => 'field_images_width',
+                'height' => 'field_images_height',
               ),
             ),
           ),
@@ -215,7 +149,7 @@ $data = array(
           0 => 'fid',
         ),
       ),
-      'field_name' => 'field_icon',
+      'field_name' => 'field_images',
       'type' => 'image',
       'module' => 'image',
       'active' => '1',
@@ -254,27 +188,19 @@ $data = array(
       ),
       'bundles' => array(
         'node' => array(
-          0 => 'call2action',
+          0 => 'pxltest',
+          1 => 'page_banner',
+          2 => 'spenden',
         ),
       ),
     ),
-    'field_link' => array(
+    'field_spenden' => array(
       'translatable' => '0',
       'entity_types' => array(),
       'settings' => array(
-        'attributes' => array(
-          'target' => 'default',
-          'class' => '',
-          'rel' => '',
-        ),
-        'url' => 0,
-        'title' => 'optional',
-        'title_value' => '',
-        'title_maxlength' => 128,
-        'enable_tokens' => 1,
-        'display' => array(
-          'url_cutoff' => 80,
-        ),
+        'precision' => '10',
+        'scale' => '2',
+        'decimal_separator' => '.',
       ),
       'storage' => array(
         'type' => 'field_sql_storage',
@@ -284,17 +210,13 @@ $data = array(
         'details' => array(
           'sql' => array(
             'FIELD_LOAD_CURRENT' => array(
-              'field_data_field_link' => array(
-                'url' => 'field_link_url',
-                'title' => 'field_link_title',
-                'attributes' => 'field_link_attributes',
+              'field_data_field_spenden' => array(
+                'value' => 'field_spenden_value',
               ),
             ),
             'FIELD_LOAD_REVISION' => array(
-              'field_revision_field_link' => array(
-                'url' => 'field_link_url',
-                'title' => 'field_link_title',
-                'attributes' => 'field_link_attributes',
+              'field_revision_field_spenden' => array(
+                'value' => 'field_spenden_value',
               ),
             ),
           ),
@@ -302,66 +224,8 @@ $data = array(
       ),
       'foreign keys' => array(),
       'indexes' => array(),
-      'field_name' => 'field_link',
-      'type' => 'link_field',
-      'module' => 'link',
-      'active' => '1',
-      'locked' => '0',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'columns' => array(
-        'url' => array(
-          'type' => 'varchar',
-          'length' => 2048,
-          'not null' => FALSE,
-          'sortable' => TRUE,
-        ),
-        'title' => array(
-          'type' => 'varchar',
-          'length' => 255,
-          'not null' => FALSE,
-          'sortable' => TRUE,
-        ),
-        'attributes' => array(
-          'type' => 'text',
-          'size' => 'medium',
-          'not null' => FALSE,
-        ),
-      ),
-      'bundles' => array(
-        'node' => array(
-          0 => 'call2action',
-        ),
-      ),
-    ),
-    'field_weight' => array(
-      'translatable' => '0',
-      'entity_types' => array(),
-      'settings' => array(),
-      'storage' => array(
-        'type' => 'field_sql_storage',
-        'settings' => array(),
-        'module' => 'field_sql_storage',
-        'active' => '1',
-        'details' => array(
-          'sql' => array(
-            'FIELD_LOAD_CURRENT' => array(
-              'field_data_field_weight' => array(
-                'value' => 'field_weight_value',
-              ),
-            ),
-            'FIELD_LOAD_REVISION' => array(
-              'field_revision_field_weight' => array(
-                'value' => 'field_weight_value',
-              ),
-            ),
-          ),
-        ),
-      ),
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'field_name' => 'field_weight',
-      'type' => 'number_integer',
+      'field_name' => 'field_spenden',
+      'type' => 'number_decimal',
       'module' => 'number',
       'active' => '1',
       'locked' => '0',
@@ -369,13 +233,66 @@ $data = array(
       'deleted' => '0',
       'columns' => array(
         'value' => array(
-          'type' => 'int',
+          'type' => 'numeric',
+          'precision' => '10',
+          'scale' => '2',
           'not null' => FALSE,
         ),
       ),
       'bundles' => array(
         'node' => array(
-          0 => 'call2action',
+          0 => 'spenden',
+        ),
+      ),
+    ),
+    'field_spenden_predefined' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'precision' => '10',
+        'scale' => '2',
+        'decimal_separator' => '.',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_spenden_predefined' => array(
+                'value' => 'field_spenden_predefined_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_spenden_predefined' => array(
+                'value' => 'field_spenden_predefined_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_spenden_predefined',
+      'type' => 'number_decimal',
+      'module' => 'number',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '3',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'numeric',
+          'precision' => '10',
+          'scale' => '2',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'spenden',
         ),
       ),
     ),
@@ -390,7 +307,7 @@ $data = array(
             'rows' => 20,
             'summary_rows' => 5,
           ),
-          'weight' => '4',
+          'weight' => '7',
           'module' => 'text',
         ),
         'settings' => array(
@@ -402,7 +319,7 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'text_default',
-            'weight' => '3',
+            'weight' => '4',
             'settings' => array(),
             'module' => 'text',
           ),
@@ -415,67 +332,43 @@ $data = array(
             'module' => 'text',
             'weight' => 0,
           ),
+          'spenden_de' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '11',
+            'settings' => array(),
+          ),
+          'spenden_fr' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '2',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'full' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '4',
+            'settings' => array(),
+            'module' => 'text',
+          ),
         ),
         'required' => FALSE,
         'description' => '',
-        'default_value' => NULL,
         'field_name' => 'body',
         'entity_type' => 'node',
-        'bundle' => 'call2action',
+        'bundle' => 'spenden',
         'deleted' => '0',
-      ),
-    ),
-    'field_css_class' => array(
-      0 => array(
-        'label' => 'CSS class',
-        'widget' => array(
-          'weight' => '5',
-          'type' => 'text_textfield',
-          'module' => 'text',
-          'active' => 1,
-          'settings' => array(
-            'size' => '60',
-          ),
-        ),
-        'settings' => array(
-          'text_processing' => '0',
-          'linkit' => array(
-            'enable' => 0,
-            'profile' => '',
-            'button_text' => 'Search',
-          ),
-          'user_register_form' => FALSE,
-        ),
-        'display' => array(
-          'default' => array(
-            'label' => 'above',
-            'type' => 'hidden',
-            'weight' => '15',
-            'settings' => array(),
-          ),
-          'teaser' => array(
-            'type' => 'hidden',
-            'label' => 'above',
-            'settings' => array(),
-            'weight' => 0,
-          ),
-        ),
-        'required' => 1,
-        'description' => '',
         'default_value' => NULL,
-        'field_name' => 'field_css_class',
-        'entity_type' => 'node',
-        'bundle' => 'call2action',
-        'deleted' => '0',
       ),
     ),
-    'field_icon' => array(
+    'field_images' => array(
       0 => array(
-        'label' => 'Icon',
+        'label' => 'Images',
         'widget' => array(
           'weight' => '1',
-          'type' => 'image_image',
-          'module' => 'image',
+          'type' => 'image_miw',
+          'module' => 'multiupload_imagefield_widget',
           'active' => 1,
           'settings' => array(
             'progress_indicator' => 'throbber',
@@ -483,9 +376,9 @@ $data = array(
           ),
         ),
         'settings' => array(
-          'file_directory' => 'icons',
+          'file_directory' => 'images',
           'file_extensions' => 'png gif jpg jpeg',
-          'max_filesize' => '',
+          'max_filesize' => '2MB',
           'max_resolution' => '',
           'min_resolution' => '',
           'alt_field' => 0,
@@ -496,92 +389,90 @@ $data = array(
         'display' => array(
           'default' => array(
             'label' => 'hidden',
-            'type' => 'hidden',
-            'weight' => '5',
-            'settings' => array(),
+            'type' => 'bootstrap_carousel_if',
+            'weight' => '1',
+            'settings' => array(
+              'interval' => '5000',
+              'pause' => '0',
+              'wrap' => '0',
+              'keyboard' => '0',
+              'indicators' => '1',
+              'image_style' => '0',
+              'background' => '1',
+              'background_pos' => 'center center',
+              'width' => '100%',
+              'height' => '200px',
+            ),
+            'module' => 'bootstrap_carousel_if',
           ),
-          'teaser' => array(
-            'type' => 'hidden',
-            'label' => 'above',
-            'settings' => array(),
-            'weight' => 0,
+          'spenden_de' => array(
+            'label' => 'hidden',
+            'type' => 'bootstrap_carousel_if',
+            'weight' => '2',
+            'settings' => array(
+              'interval' => '5000',
+              'pause' => '0',
+              'wrap' => '0',
+              'keyboard' => '0',
+              'indicators' => '1',
+              'image_style' => '0',
+              'background' => '1',
+              'background_pos' => 'center center',
+              'width' => '100%',
+              'height' => '200px',
+            ),
+            'module' => 'bootstrap_carousel_if',
+          ),
+          'spenden_fr' => array(
+            'label' => 'hidden',
+            'type' => 'bootstrap_carousel_if',
+            'weight' => '1',
+            'settings' => array(
+              'interval' => '5000',
+              'pause' => '0',
+              'wrap' => '0',
+              'keyboard' => '0',
+              'indicators' => '1',
+              'image_style' => '0',
+              'background' => '1',
+              'background_pos' => 'center center',
+              'width' => '100%',
+              'height' => '200px',
+            ),
+            'module' => 'bootstrap_carousel_if',
+          ),
+          'full' => array(
+            'label' => 'hidden',
+            'type' => 'bootstrap_carousel_if',
+            'weight' => '1',
+            'settings' => array(
+              'interval' => '5000',
+              'pause' => '0',
+              'wrap' => '0',
+              'keyboard' => '0',
+              'indicators' => '1',
+              'image_style' => '0',
+              'background' => '1',
+              'background_pos' => 'center center',
+              'width' => '100%',
+              'height' => '200px',
+            ),
+            'module' => 'bootstrap_carousel_if',
           ),
         ),
         'required' => 0,
-        'description' => '',
-        'field_name' => 'field_icon',
+        'description' => 'Füge ein Hintergrundbild hinzu.',
+        'field_name' => 'field_images',
         'entity_type' => 'node',
-        'bundle' => 'call2action',
+        'bundle' => 'spenden',
         'deleted' => '0',
       ),
     ),
-    'field_link' => array(
+    'field_spenden' => array(
       0 => array(
-        'label' => 'Link',
+        'label' => 'Spenden',
         'widget' => array(
-          'weight' => '3',
-          'type' => 'link_field',
-          'module' => 'link',
-          'active' => 0,
-          'settings' => array(),
-        ),
-        'settings' => array(
-          'absolute_url' => 0,
-          'validate_url' => 1,
-          'url' => 0,
-          'title' => 'required',
-          'title_value' => '',
-          'title_label_use_field_label' => 0,
-          'title_maxlength' => '128',
-          'enable_tokens' => 1,
-          'display' => array(
-            'url_cutoff' => '80',
-          ),
-          'attributes' => array(
-            'target' => 'default',
-            'rel' => '',
-            'configurable_class' => 0,
-            'class' => '',
-            'configurable_title' => 0,
-            'title' => '',
-          ),
-          'rel_remove' => 'default',
-          'linkit' => array(
-            'enable' => 1,
-            'profile' => 'field_links',
-            'button_text' => 'Search',
-          ),
-          'user_register_form' => FALSE,
-        ),
-        'display' => array(
-          'default' => array(
-            'label' => 'hidden',
-            'type' => 'link_default',
-            'weight' => '2',
-            'settings' => array(),
-            'module' => 'link',
-          ),
-          'teaser' => array(
-            'type' => 'hidden',
-            'label' => 'above',
-            'settings' => array(),
-            'weight' => 0,
-          ),
-        ),
-        'required' => 1,
-        'description' => '',
-        'default_value' => NULL,
-        'field_name' => 'field_link',
-        'entity_type' => 'node',
-        'bundle' => 'call2action',
-        'deleted' => '0',
-      ),
-    ),
-    'field_weight' => array(
-      0 => array(
-        'label' => 'Weight',
-        'widget' => array(
-          'weight' => '6',
+          'weight' => '2',
           'type' => 'number',
           'module' => 'number',
           'active' => 0,
@@ -590,40 +481,118 @@ $data = array(
         'settings' => array(
           'min' => '',
           'max' => '',
-          'prefix' => '',
+          'prefix' => 'CHF',
           'suffix' => '',
           'user_register_form' => FALSE,
         ),
         'display' => array(
           'default' => array(
             'label' => 'hidden',
-            'type' => 'number_integer',
-            'weight' => '1',
+            'type' => 'stripe_button_custom',
+            'weight' => '3',
             'settings' => array(
-              'thousand_separator' => '',
-              'decimal_separator' => '.',
-              'scale' => 0,
-              'prefix_suffix' => TRUE,
+              'stripe_button_currency' => 'CHF',
+              'stripe_button_name' => '',
+              'stripe_button_description' => '',
+              'stripe_button_label' => 'Spende',
+              'stripe_button_billing' => 0,
+              'stripe_button_shipping' => 0,
+              'stripe_button_remember' => 0,
             ),
-            'module' => 'number',
+            'module' => 'stripe_button',
           ),
-          'teaser' => array(
+          'full' => array(
+            'label' => 'hidden',
+            'type' => 'stripe_button_custom',
+            'weight' => '3',
+            'settings' => array(
+              'stripe_button_currency' => 'CHF',
+              'stripe_button_name' => '',
+              'stripe_button_description' => '',
+              'stripe_button_label' => 'Spende ',
+              'stripe_button_billing' => 0,
+              'stripe_button_shipping' => 0,
+              'stripe_button_remember' => 0,
+            ),
+            'module' => 'stripe_button',
+          ),
+          'spenden_fr' => array(
+            'label' => 'hidden',
             'type' => 'hidden',
-            'label' => 'above',
+            'weight' => '12',
             'settings' => array(),
-            'weight' => 0,
           ),
         ),
-        'required' => 1,
-        'description' => 'The number of the call2action element.',
-        'default_value' => array(
-          0 => array(
-            'value' => '0',
-          ),
-        ),
-        'field_name' => 'field_weight',
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_spenden',
         'entity_type' => 'node',
-        'bundle' => 'call2action',
+        'bundle' => 'spenden',
+        'deleted' => '0',
+      ),
+    ),
+    'field_spenden_predefined' => array(
+      0 => array(
+        'label' => 'Spenden predefined',
+        'widget' => array(
+          'weight' => '3',
+          'type' => 'number',
+          'module' => 'number',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'min' => '',
+          'max' => '',
+          'prefix' => 'CHF',
+          'suffix' => '',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'stripe_button_fixed',
+            'weight' => '2',
+            'settings' => array(
+              'stripe_button_currency' => 'CHF',
+              'stripe_button_name' => '',
+              'stripe_button_description' => '',
+              'stripe_button_label' => 'Spende ',
+              'stripe_button_billing' => 0,
+              'stripe_button_shipping' => 0,
+              'stripe_button_remember' => 0,
+            ),
+            'module' => 'stripe_button',
+          ),
+          'full' => array(
+            'label' => 'hidden',
+            'type' => 'stripe_button_fixed',
+            'weight' => '2',
+            'settings' => array(
+              'stripe_button_currency' => 'CHF',
+              'stripe_button_name' => '',
+              'stripe_button_description' => '',
+              'stripe_button_label' => 'Spende ',
+              'stripe_button_billing' => 0,
+              'stripe_button_shipping' => 0,
+              'stripe_button_remember' => 0,
+            ),
+            'module' => 'stripe_button',
+          ),
+          'spenden_fr' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '11',
+            'settings' => array(),
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_spenden_predefined',
+        'entity_type' => 'node',
+        'bundle' => 'spenden',
         'deleted' => '0',
       ),
     ),

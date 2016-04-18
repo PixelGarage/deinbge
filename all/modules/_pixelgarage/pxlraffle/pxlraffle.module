@@ -78,7 +78,7 @@ function pxlraffle_menu() {
     'weight' => -7,
   );
   // callback: renew the current raffle for specified user
-  $items['user/%/raffle/renew'] = array(
+  $items['user/%pxlraffle_uid/raffle/renew'] = array(
     'type' => MENU_CALLBACK,
     'page callback' => '_pxlraffle_renew_raffle_callback',
     'page arguments' => array(1),
@@ -86,7 +86,7 @@ function pxlraffle_menu() {
     'access arguments' => array(1),
   );
   // callback: remove the specified user from a raffle
-  $items['user/%/raffle/remove'] = array(
+  $items['user/%pxlraffle_uid/raffle/remove'] = array(
     'type' => MENU_CALLBACK,
     'page callback' => '_pxlraffle_remove_raffle_callback',
     'page arguments' => array(1),
@@ -97,33 +97,37 @@ function pxlraffle_menu() {
   return $items;
 }
 
+function pxlraffle_uid_load($uid) {
+  if (is_array($uid)) {
+    return array_values($uid)[0];
+  }
+  else {
+    return user_load($uid);
+  }
+}
 
 /* --------------------------------------------------
  * PxlRaffle callbacks
  * --------------------------------------------------*/
 
-function _pxlraffle_renew_raffle_callback ($uid) {
-  $user = user_load($uid);
-
+function _pxlraffle_renew_raffle_callback ($user) {
   // update user raffle, if possible
   pxlraffle_renew_user_raffle($user);
 
   // redirect to user edit form
-  drupal_goto('user/' . $uid . '/edit', array(), 301);
+  drupal_goto('user/' . $user->uid . '/edit', array(), 301);
 }
 
-function _pxlraffle_remove_raffle_callback ($uid) {
-  $user = user_load($uid);
-
+function _pxlraffle_remove_raffle_callback ($user) {
   // remove user from raffle, if any
   if (!empty($user->field_current_raffle)) {
-    $user = user_save($user, array('field_current_raffle' => null));
+    $user = user_save($user, array('field_current_raffle' => null, 'field_raffle_code' => null));
     $msg = t('You (@user) have been successfully removed from any raffle.', array('@user' => $user->name));
     drupal_set_message($msg);
   }
 
   // redirect to user edit form
-  drupal_goto('user/' . $uid . '/edit', array(), 301);
+  drupal_goto('user/' . $user->uid . '/edit', array(), 301);
 }
 
 
@@ -137,12 +141,12 @@ function _pxlraffle_remove_raffle_callback ($uid) {
  */
 function pxlraffle_theme() {
   return array(
-    'pxlraffle_current_info' => array(
+    'pxlraffle_fundraising' => array(
       'variables' => array(
-        'container_id' => 'pxlraffle-current-info',
+        'container_id' => 'pxlraffle-fundraising',
       ),
-      'file' => 'templates/pxlraffle_current_info.vars.php',
-      'template' => 'templates/pxlraffle_current_info',
+      'file' => 'templates/pxlraffle_fundraising.vars.php',
+      'template' => 'templates/pxlraffle_fundraising',
     ),
     'pxlraffle_next_raffle' => array(
       'variables' => array(
@@ -158,7 +162,65 @@ function pxlraffle_theme() {
       'file' => 'templates/pxlraffle_subscriptions.vars.php',
       'template' => 'templates/pxlraffle_subscriptions',
     ),
+    'pxlraffle_participate' => array(
+      'variables' => array(
+        'container_id' => 'pxlraffle-participate',
+      ),
+      'file' => 'templates/pxlraffle_participate.vars.php',
+      'template' => 'templates/pxlraffle_participate',
+    ),
   );
+}
+
+function _pxlraffle_odometer_theme_attachments (&$vars, $delta) {
+  // set variables
+  $vars['odometer_label_on_top'] = variable_get($delta . '_odometer_label_position') == 'top';
+  $vars['odometer_label'] = t(variable_get($delta . '_odometer_label'));
+
+  // add js and css files
+  $path = drupal_get_path('module', 'pxlraffle');
+  $animated_range = variable_get($delta . '_odometer_anim_number_range');
+  $theme = variable_get($delta . '_odometer_theme');
+  $css_file = $path;
+
+  switch ($theme) {
+    case 'car':
+      $css_file .= '/css/odometer-theme-car.css';
+      break;
+    case 'train_station':
+      $css_file .= '/css/odometer-theme-train-station.css';
+      break;
+    case 'digital':
+      $css_file .= '/css/odometer-theme-digital.css';
+      break;
+    case 'minimal':
+      $css_file .= '/css/odometer-theme-minimal.css';
+      break;
+    case 'plaza':
+      $css_file .= '/css/odometer-theme-plaza.css';
+      break;
+    case 'slot_machine':
+      $css_file .= '/css/odometer-theme-slot_machine.css';
+      break;
+    case 'default':
+    default:
+      $css_file .= '/css/odometer-theme-default.css';
+      break;
+  }
+
+  // set js settings
+  $js_settings = array(
+    'pxlraffle_odometer' => array(
+      'animated_range' => $animated_range
+    ),
+  );
+
+  // add files
+  drupal_add_css($css_file);
+  drupal_add_js($path . '/js/odometer.min.js');
+  drupal_add_js($path . '/js/odometer_anim.js');
+  drupal_add_js($js_settings, 'setting');
+
 }
 
 
@@ -169,8 +231,8 @@ function pxlraffle_theme() {
  * Implements hook_block_info().
  */
 function pxlraffle_block_info() {
-  $blocks['pxlraffle_current_info'] = array(
-    'info' => t('Current raffle information'),
+  $blocks['pxlraffle_fundraising'] = array(
+    'info' => t('Fundraising information'),
     'cache' => DRUPAL_NO_CACHE,
   );
   $blocks['pxlraffle_next_raffle'] = array(
@@ -181,6 +243,10 @@ function pxlraffle_block_info() {
     'info' => t('Raffle subscriptions'),
     'cache' => DRUPAL_NO_CACHE,
   );
+  $blocks['pxlraffle_participate'] = array(
+    'info' => t('Raffle participation'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
   return $blocks;
 }
 
@@ -189,7 +255,7 @@ function pxlraffle_block_info() {
  */
 function pxlraffle_block_configure($delta = '') {
   switch ($delta) {
-    case 'pxlraffle_current_info':
+    case 'pxlraffle_fundraising':
     case 'pxlraffle_subscriptions':
       return _pxlraffle_block_form($delta);
   }
@@ -249,7 +315,7 @@ function _pxlraffle_block_form ($delta) {
  */
 function pxlraffle_block_save($delta = '', $edit = array()) {
   switch ($delta) {
-    case 'pxlraffle_current_info':
+    case 'pxlraffle_fundraising':
     case 'pxlraffle_subscriptions':
       variable_set($delta . '_odometer_label', $edit['pxlraffle_odometer_label']);
       variable_set($delta . '_odometer_label_position', $edit['pxlraffle_odometer_label_position']);
@@ -269,9 +335,9 @@ function pxlraffle_block_view($delta = 0) {
   $block = array();
 
   switch ($delta) {
-    case 'pxlraffle_current_info':
+    case 'pxlraffle_fundraising':
       $block['subject'] = null;
-      $block['content'] = theme('pxlraffle_current_info');
+      $block['content'] = theme('pxlraffle_fundraising');
       break;
     case 'pxlraffle_next_raffle':
       $block['subject'] = null;
@@ -281,57 +347,11 @@ function pxlraffle_block_view($delta = 0) {
       $block['subject'] = null;
       $block['content'] = theme('pxlraffle_subscriptions');
       break;
+    case 'pxlraffle_participate':
+      $block['subject'] = null;
+      $block['content'] = theme('pxlraffle_participate');
+      break;
   }
   return $block;
 }
 
-function pxlraffle_odometer_theme_attachments (&$vars, $delta) {
-  // set variables
-  $vars['odometer_label_on_top'] = variable_get($delta . '_odometer_label_position') == 'top';
-  $vars['odometer_label'] = t(variable_get($delta . '_odometer_label'));
-
-  // add js and css files
-  $path = drupal_get_path('module', 'pxlraffle');
-  $animated_range = variable_get($delta . '_odometer_anim_number_range');
-  $theme = variable_get($delta . '_odometer_theme');
-  $css_file = $path;
-
-  switch ($theme) {
-    case 'car':
-      $css_file .= '/css/odometer-theme-car.css';
-      break;
-    case 'train_station':
-      $css_file .= '/css/odometer-theme-train-station.css';
-      break;
-    case 'digital':
-      $css_file .= '/css/odometer-theme-digital.css';
-      break;
-    case 'minimal':
-      $css_file .= '/css/odometer-theme-minimal.css';
-      break;
-    case 'plaza':
-      $css_file .= '/css/odometer-theme-plaza.css';
-      break;
-    case 'slot_machine':
-      $css_file .= '/css/odometer-theme-slot_machine.css';
-      break;
-    case 'default':
-    default:
-      $css_file .= '/css/odometer-theme-default.css';
-      break;
-  }
-
-  // set js settings
-  $js_settings = array(
-    'pxlraffle_odometer' => array(
-      'animated_range' => $animated_range
-    ),
-  );
-
-  // add files
-  drupal_add_css($css_file);
-  drupal_add_js($path . '/js/odometer.min.js');
-  drupal_add_js($path . '/js/odometer_anim.js');
-  drupal_add_js($js_settings, 'setting');
-
-}

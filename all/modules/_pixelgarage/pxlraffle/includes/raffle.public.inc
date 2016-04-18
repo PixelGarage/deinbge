@@ -100,13 +100,13 @@ function pxlraffle_get_current_raffle_nid() {
 }
 
 /**
- * Gets the recurring raffle node id.
+ * Gets the subscription raffle node id.
  *
- * There is only one recurring raffle (state = 'recurring'), used to hold all users with subscriptions.
+ * There is only one subscription raffle (state = 'recurring'), used to hold all users with subscriptions.
  *
  * @return bool|mixed
  */
-function pxlraffle_get_recurring_raffle_nid() {
+function pxlraffle_get_subscription_raffle_nid() {
   // get the recurring raffle
   $nids = pxlraffle_get_raffles_with_state(PXLRAFFLE_STATE_RECURRING);
   if ($nids) {

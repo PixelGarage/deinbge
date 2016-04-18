@@ -1,5 +1,5 @@
 /*
- *  Block raffle info component
+ *  Block raffle fundraising component
  * --------------------------------------------------*/
 
 // Variables
@@ -15,7 +15,7 @@
 
 // General settings
 // -------------------------
-#pxlraffle-current-info {
+#pxlraffle-fundraising {
   padding: 20px 0;
 
   .current-raffle {
@@ -32,6 +32,10 @@
     .odometer-container {
       margin-bottom: 50px;
       #pxl-mixins.odometer(#fff, @pxl-color-participate, 5px);
+
+      body.front & {
+        #pxl-mixins.odometer(#fff, @pxl-color-main, 5px);
+      }
     }
 
     .total-amount {
@@ -46,6 +50,10 @@
 
       .progress-bar {
         background-color: @pxl-color-participate;
+
+        body.front & {
+          background-color: @pxl-color-main;
+        }
       }
     }
 
@@ -53,6 +61,10 @@
       font-family: @pxl-text-font-bold;
       font-size: @font-size-base;
       color: @pxl-color-participate;
+
+      body.front & {
+        color: @pxl-color-main;
+      }
 
       .fa {
         display: inline-block;
@@ -73,6 +85,10 @@
 
       .btn.link-participate {
         #pxl-mixins.button-large(@pxl-color-participate, darken(@pxl-color-participate, 20%));
+
+        body.front & {
+          #pxl-mixins.button-large(@pxl-color-main, darken(@pxl-color-main, 20%));
+        }
       }
     }
 
