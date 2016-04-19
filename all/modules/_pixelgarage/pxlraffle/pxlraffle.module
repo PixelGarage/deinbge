@@ -78,13 +78,14 @@ function pxlraffle_menu() {
     'weight' => -7,
   );
   // callback: renew the current raffle for specified user
-  $items['user/%pxlraffle_uid/raffle/renew'] = array(
+  $items['user/%pxlraffle_uid/raffle/%'] = array(
     'type' => MENU_CALLBACK,
-    'page callback' => '_pxlraffle_renew_raffle_callback',
-    'page arguments' => array(1),
+    'page callback' => '_pxlraffle_manage_user_raffle_callback',
+    'page arguments' => array(1,3),
     'access callback' => 'user_edit_access',
     'access arguments' => array(1),
   );
+  /*
   // callback: remove the specified user from a raffle
   $items['user/%pxlraffle_uid/raffle/remove'] = array(
     'type' => MENU_CALLBACK,
@@ -93,7 +94,7 @@ function pxlraffle_menu() {
     'access callback' => 'user_edit_access',
     'access arguments' => array(1),
   );
-
+*/
   return $items;
 }
 
@@ -110,24 +111,51 @@ function pxlraffle_uid_load($uid) {
  * PxlRaffle callbacks
  * --------------------------------------------------*/
 
-function _pxlraffle_renew_raffle_callback ($user) {
-  // update user raffle, if possible
-  pxlraffle_renew_user_raffle($user);
+function _pxlraffle_manage_user_raffle_callback ($user, $action) {
+  //
+  // manage raffle on user
+  switch ($action) {
+    case 'renew':
+      // update user raffle, if possible
+      pxlraffle_renew_user_raffle($user);
 
-  // redirect to user edit form
-  drupal_goto('user/' . $user->uid . '/edit', array(), 301);
-}
+      // redirect to participate page
+      drupal_goto('/participate/#panel-participate', array(), 301);
+      break;
 
-function _pxlraffle_remove_raffle_callback ($user) {
-  // remove user from raffle, if any
-  if (!empty($user->field_current_raffle)) {
-    $user = user_save($user, array('field_current_raffle' => null, 'field_raffle_code' => null));
-    $msg = t('You (@user) have been successfully removed from any raffle.', array('@user' => $user->name));
-    drupal_set_message($msg);
+    case 'renew-in-profile':
+      // update user raffle, if possible
+      pxlraffle_renew_user_raffle($user);
+
+      // redirect to user edit form
+      drupal_goto('user/' . $user->uid . '/edit', array(), 301);
+      break;
+
+    case 'remove':
+      // remove user from raffle, if any
+      if (!empty($user->field_current_raffle)) {
+        $user = user_save($user, array('field_current_raffle' => null, 'field_raffle_code' => null));
+        $msg = t('You (@user) have been successfully removed from any raffle.', array('@user' => $user->name));
+        drupal_set_message($msg);
+      }
+
+      // redirect to participate page
+      drupal_goto('/participate/#panel-participate', array(), 301);
+      break;
+
+    case 'remove-in-profile':
+      // remove user from raffle, if any
+      if (!empty($user->field_current_raffle)) {
+        $user = user_save($user, array('field_current_raffle' => null, 'field_raffle_code' => null));
+        $msg = t('You (@user) have been successfully removed from any raffle.', array('@user' => $user->name));
+        drupal_set_message($msg);
+      }
+
+      // redirect to user edit form
+      drupal_goto('user/' . $user->uid . '/edit', array(), 301);
+      break;
   }
 
-  // redirect to user edit form
-  drupal_goto('user/' . $user->uid . '/edit', array(), 301);
 }
 
 

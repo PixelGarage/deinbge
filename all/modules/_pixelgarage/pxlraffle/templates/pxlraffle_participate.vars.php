@@ -12,7 +12,7 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   $raffle_id = strtoupper($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
 
   $vars['title'] = t('Participate in current raffle');
-  $vars['participation_slogan'] = t("Do you want to be part of the current raffle '@number'.", array('@number' => $raffle_id));
+  $vars['participation_slogan'] = t("Do you want to participate in the current raffle '@number'.", array('@number' => $raffle_id));
   $vars['participation_acc_title'] = t('YES, I do');
 
   //

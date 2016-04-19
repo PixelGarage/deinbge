@@ -33,31 +33,37 @@ function pxlraffle_get_user_count_in_raffle ($raffle_nid, $include_subscriptions
 }
 
 /**
- * Sets the current raffle and raffle code for the given user.
+ * Adds the user to the current raffle and assigns a unique raffle code to the user.
  *
  * @param object $user    The user object
  * @param bool $do_save   If true, save the updated user object.
  * @return bool|mixed     The new assigned raffle object.
  * @throws Exception
  */
-function pxlraffle_set_user_raffle(&$user, $do_save = false) {
+function pxlraffle_add_user_to_current_raffle(&$user, $do_save = false) {
   //
   // add user to current raffle
   $current_raffle_nid = pxlraffle_get_current_raffle_nid();
   $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
 
   //
-  // set new raffle code for given user
-  // Raffle code format: 'raffle_id-raffle_user_count'
+  // Set new raffle code for given user.
+  // To guarantee, that each code is unique, the next available code is saved in the raffle object
+  // and updated after usage. Count of raffle attached users is NOT applicable because user can delete their account!
+  // Raffle code format: 'raffle_id-raffle_next_code'
   $user_raffle = node_load($current_raffle_nid);
   $raffle_id = strtoupper($user_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
-  $user_raffle_user_count = pxlraffle_get_user_count_in_raffle($current_raffle_nid, false) + 1;
-  $user->field_raffle_code[LANGUAGE_NONE][0]['value'] = $raffle_id . '-' . sprintf('%05d', $user_raffle_user_count);
+  $user_raffle_next_code = $user_raffle->field_next_code[LANGUAGE_NONE][0]['value'];
+  $user->field_raffle_code[LANGUAGE_NONE][0]['value'] = $raffle_id . '-' . sprintf('%07d', $user_raffle_next_code);
 
   // save user if requested
   if ($do_save) {
     user_save($user);
   }
+
+  // update user raffle with next code
+  $user_raffle->field_next_code[LANGUAGE_NONE][0]['value'] = $user_raffle_next_code + 1;
+  node_save($user_raffle);
 
   // return new user raffle
   return $user_raffle;
@@ -78,17 +84,23 @@ function pxlraffle_subscribe_user(&$user, $do_save = false) {
   $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $subscr_raffle_nid;
 
   //
-  // set new raffle code for given user
-  // Raffle code format: 'raffle_id-raffle_user_count'
+  // Set new raffle code for given user.
+  // To guarantee, that each code is unique, the next available code is saved in the raffle object
+  // and updated after usage. Count of raffle attached users is NOT applicable because user can delete their account!
+  // Raffle code format: 'raffle_id-raffle_next_code'
   $user_raffle = node_load($subscr_raffle_nid);
   $raffle_id = strtoupper($user_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
-  $user_raffle_user_count = pxlraffle_get_user_count_in_raffle($subscr_raffle_nid, false) + 1;
-  $user->field_raffle_code[LANGUAGE_NONE][0]['value'] = $raffle_id . '-' . sprintf('%05d', $user_raffle_user_count);
+  $user_raffle_next_code = $user_raffle->field_next_code[LANGUAGE_NONE][0]['value'];
+  $user->field_raffle_code[LANGUAGE_NONE][0]['value'] = $raffle_id . '-' . sprintf('%07d', $user_raffle_next_code);
 
   // save user if requested
   if ($do_save) {
     user_save($user);
   }
+
+  // update user raffle with next code
+  $user_raffle->field_next_code[LANGUAGE_NONE][0]['value'] = $user_raffle_next_code + 1;
+  node_save($user_raffle);
 
   // return new user raffle
   return $user_raffle;
@@ -116,24 +128,24 @@ function pxlraffle_get_user_raffle_info_html($user) {
     if ($user_raffle_nid == $recurring_raffle_nid) {
       // user has a subscription
       $msg = '<div class="user-raffle-number">' . t('You have a subscription and participate automatically in all raffles!') . '</div>';
-      $msg .= '<div class="user-raffle-code">' . t('Your raffle code is: ') . '<span class="raffle-code">' . $user_raffle_code . '</span></div>';
+      $msg .= '<div class="user-raffle-code">' . t('Your unique raffle code is: ') . '<span class="raffle-code">' . $user_raffle_code . '</span></div>';
     }
     else if (in_array($user_raffle_state, array(PXLRAFFLE_STATE_COLLECTING, PXLRAFFLE_STATE_CLOSED))) {
       // user is part of current raffle
       $raffle_id = strtoupper($user_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
       $raffle_date = pxlraffle_get_raffle_date($user_raffle);
-      $msg = '<div class="user-raffle-number">' . t('You are part of raffle "@number".', array('@number' => $raffle_id)) . '</div>';
-      $msg .= '<div class="user-raffle-code">' . t('Your raffle code is: ') . '<span class="raffle-code">' . $user_raffle_code . '</span></div>';
+      $msg = '<div class="user-raffle-number">' . t('You are already part of raffle "@number".', array('@number' => $raffle_id)) . '</div>';
+      $msg .= '<div class="user-raffle-code">' . t('Your unique raffle code is: ') . '<span class="raffle-code">' . $user_raffle_code . '</span></div>';
       $msg .= '<div class="user-raffle-date">' . t('The raffle date is @date.', array('@date' => $raffle_date)) . '</div>';
     }
     else {
       // user is part of an old raffle
-      $msg = t('You are part of an old raffle. Please press "Add to current raffle" to renew your participation.');
+      $msg = t('You are part of an old raffle. Please press "Add to current raffle" to renew your participation in the current raffle.');
     }
   }
   else {
     // user is not part of a raffle
-    $msg = t('You are actually not part of a raffle. Please press "Add to current raffle" to be part of the current raffle.');
+    $msg = t('You are actually not part of a raffle. Please press "Add to current raffle" to take part in the current raffle.');
   }
   return '<div class="user-raffle-info">' . $msg . '</div>';
 }
@@ -167,18 +179,21 @@ function pxlraffle_renew_user_raffle(&$user) {
     else {
       //
       // the user raffle has been raffled so the user can change to the current raffle
-      $user_raffle = pxlraffle_set_user_raffle($user, true);
+      $user_raffle = pxlraffle_add_user_to_current_raffle($user, true);
+      $code = $user->field_raffle_code[LANGUAGE_NONE][0]['value'];
 
       // send update message
-      $msg = t('You have successfully renewed your raffle participation. You are now participant of @raffle.', array('@raffle' => $user_raffle->title));
+      $msg = t('You have been successfully switched to the new raffle "@raffle". Your new unique raffle code is @code.', array('@raffle' => $user_raffle->title, '@code' => $code));
       drupal_set_message($msg);
     }
   }
   else {
     // user is not part of a raffle, add user to current raffle
-    $user_raffle = pxlraffle_set_user_raffle($user, true);
+    $user_raffle = pxlraffle_add_user_to_current_raffle($user, true);
+    $code = $user->field_raffle_code[LANGUAGE_NONE][0]['value'];
 
-    $msg = t('You have been successfully added to @raffle.', array('@raffle' => $user_raffle->title));
+    // send update message
+    $msg = t('You have been successfully added to raffle "@raffle". Your new unique raffle code is @code.', array('@raffle' => $user_raffle->title, '@code' => $code));
     drupal_set_message($msg);
   }
 }

@@ -13,6 +13,16 @@ function pxlraffle_form_user_register_form_alter (&$form, &$form_state, $form_id
   // hide the raffle fieldset on registration
   unset($form['#groups']['group_raffle_info']);
   unset($form['#fieldgroups']['group_raffle_info']);
+
+  // add a checkbox with link to participation conditions
+  $form['condition_checkbox'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('I confirm that I have read the <a href="/node/126" target="_blank">Participation Conditions</a>'),
+    '#return_value' => 1,
+    '#default_value' => 0,
+    '#required' => true,
+    '#weight' => 3
+  );
 }
 
 /**
@@ -43,10 +53,10 @@ function pxlraffle_form_user_profile_form_alter (&$form, &$form_state, $form_id)
   }
 
   //
-  // add renew button
+  // add action buttons
   $uid = $user->uid;
-  $renew_url = 'user/' . $uid . '/raffle/renew';
-  $remove_url = 'user/' . $uid . '/raffle/remove';
+  $renew_url = 'user/' . $uid . '/raffle/renew-in-profile';
+  $remove_url = 'user/' . $uid . '/raffle/remove-in-profile';
   $form['field_raffle_code']['#suffix'] = '<div class="raffle-action-container">' .
     l(t('Renew raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Renew raffle')))) .
     l(t('Remove from raffle'), $remove_url, array('attributes' => array('class' => array('btn btn-default remove-raffle-button'), 'title' => t('Remove from raffle')))) .
@@ -63,6 +73,6 @@ function pxlraffle_user_presave(&$edit, $account, $category) {
   //
   // user is activated, add current raffle to user before save
   if (!$account->is_new && empty($account->field_current_raffle) && empty($account->field_raffle_code)) {
-    pxlraffle_set_user_raffle($account);
+    pxlraffle_add_user_to_current_raffle($account);
   }
 }
