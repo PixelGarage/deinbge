@@ -20,12 +20,13 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
   $vars['current_amount'] = number_format($current_amount, 2, ".", "'");;
   $vars['fill_level'] = $current_amount / $total_amount * 100;
   $vars['current_fees'] = empty($current_raffle->field_club_fees) ? 0 : $current_raffle->field_club_fees[LANGUAGE_NONE][0]['value'];
+  $vars['explanation'] = t("As soon as 30'000 CHF are collected, a raffle takes place.");
   $vars['label_participate'] = t('Participate');
   $vars['url_participate'] = $base_url . '/participate';
 
   //
   // style odometer for user count
   _pxlraffle_odometer_theme_attachments($vars, 'pxlraffle_fundraising');
-  $vars['user_count'] = 23678;//pxlraffle_get_user_count_in_raffle($raffle_nid);
+  $vars['user_count'] = pxlraffle_get_user_count_in_raffle($raffle_nid);
   $vars['odometer_label'] = t('participants are currently part of raffle "@number"', array('@number' => $raffle_id));
 }

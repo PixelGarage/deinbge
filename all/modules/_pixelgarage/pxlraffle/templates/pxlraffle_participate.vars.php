@@ -11,15 +11,20 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   $current_raffle = node_load($raffle_nid);
   $raffle_id = strtoupper($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
 
-  $vars['title'] = t('Participate in current raffle');
-  $vars['participation_slogan'] = t("Do you want to participate in the current raffle '@number'.", array('@number' => $raffle_id));
-  $vars['participation_acc_title'] = t('YES, I do');
+  $vars['title'] = t('Participate');
 
   //
   // user login dependant variables
   if ($user->uid) {
     //
-    // add raffle edit buttons
+    // slogan for logged in users
+    $vars['participation_slogan'] = t("Hi @user, you are a registered user.", array('@user' => $user->name));
+    $vars['participation_acc_title'] = t('Show raffle info');
+    $vars['class_collapsed'] = '';
+    $vars['class_in'] = 'in';
+
+    //
+    // add raffle and user infor and edit buttons
     $uid = $user->uid;
     $full_user = user_load($uid);
     $renew_url = '/user/' . $uid . '/raffle/renew';
@@ -37,6 +42,10 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   }
   else {
     // user not logged in, show login/registration form
+    $vars['participation_slogan'] = t("It's easy to participate in the current raffle '@number'. Just press the button below and register.", array('@number' => $raffle_id));
+    $vars['participation_acc_title'] = t('Participate');
+    $vars['class_collapsed'] = 'collapsed';
+    $vars['class_in'] = '';
     $vars['participation_acc_body'] = array(
       'form' => drupal_get_form('user_login'),
     );

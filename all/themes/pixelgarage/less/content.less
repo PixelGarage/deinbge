@@ -34,6 +34,20 @@
   .panel-display {
     .panel-col {
       .panel-pane {
+        &.full-width {
+          margin: 0 -@grid-gutter-width/2;
+
+          @media @tablet {
+            margin: 0 (@container-sm - @grid-gutter-width - @screen-sm-min)/2;
+          }
+          @media @normal {
+            margin: 0 (@container-md - @grid-gutter-width - @screen-md-min)/2;
+          }
+          @media @wide {
+            margin: 0 (@container-lg - @grid-gutter-width - @screen-lg-min)/2;
+          }
+        }
+
         .pane-title {
           margin: 50px auto;
           font-family: @pxl-text-font-bold;
@@ -63,8 +77,22 @@ body {
   position: relative;
   height: 100%;
   min-height: 320px;
+  background-color: #888;
 
   .main-container {
+    margin: 0 auto;
+    background-color: #fff;
+
+    @media @tablet {
+      width: @screen-sm-min;
+    }
+    @media @normal {
+      width: @screen-md-min;
+    }
+    @media @wide {
+      width: @screen-lg-min;
+    }
+
     .container {
       //
       // Page header
@@ -125,7 +153,7 @@ body {
         // main content region
         .region-content {
           #block-system-main {
-            padding: 0 10px;
+            padding: 0;
           }
         }
       }

@@ -6,6 +6,7 @@
 // -------------------------
 @pxl-progress-height: 30px;
 @pxl-raffle-info-text-size: 24px;
+@pxl-margin-sep: 30px;
 
 
 // Mixins
@@ -17,24 +18,27 @@
 // -------------------------
 #pxlraffle-fundraising {
   padding: 20px 0;
+  background-color: #efefef;
 
   .current-raffle {
-    width: 100%;
+    max-width: @container-max-width;
+    margin: 0 @container-inner-margin;
 
     .block-header {
-      margin-bottom: 50px;
+      margin-bottom: @pxl-margin-sep;
       font-family: @pxl-text-font-bold;
-      font-size: @font-size-larger;
+      font-size: @font-size-pane-title;
       text-align: center;
       color: @text-color;
     }
 
     .odometer-container {
-      margin-bottom: 50px;
       #pxl-mixins.odometer(#fff, @pxl-color-participate, 5px);
+      margin-bottom: @pxl-margin-sep;
 
       body.front & {
         #pxl-mixins.odometer(#fff, @pxl-color-main, 5px);
+        margin-bottom: @pxl-margin-sep;
       }
     }
 
@@ -79,6 +83,14 @@
       }
     }
 
+    .explanation {
+      margin: @pxl-margin-sep auto;
+      font-family: @pxl-text-font;
+      font-size: @font-size-base;
+      color: @text-color;
+      text-align: center;
+    }
+
     .actions {
       margin: 30px auto;
       text-align: center;
@@ -91,11 +103,5 @@
         }
       }
     }
-
-    @media @tablet {
-      margin: 0 auto;
-      width: 80%;
-    }
   }
-
 }

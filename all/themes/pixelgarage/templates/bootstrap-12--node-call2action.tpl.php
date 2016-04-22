@@ -15,6 +15,7 @@
     <!-- print button -->
       <a class="call2action-container" href="<?php print $field_link[0]['url']; ?>">
         <?php print render($content['field_weight']); ?>
+        <?php print render($content['field_animation_icon']); ?>
         <?php print render($content['title']); ?>
       </a>
       <!-- print body -->

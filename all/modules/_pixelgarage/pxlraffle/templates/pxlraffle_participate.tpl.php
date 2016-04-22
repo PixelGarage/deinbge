@@ -23,7 +23,7 @@
       <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title">
-            <a class="accordion-toggle"
+            <a class="accordion-toggle <?php print $class_collapsed; ?>"
                data-toggle="collapse"
                href="#collapse-accordion">
               <?php print $participation_acc_title ?>
@@ -31,7 +31,7 @@
           </h4>
         </div>
 
-        <div id="collapse-accordion" class="panel-collapse collapse">
+        <div id="collapse-accordion" class="panel-collapse collapse <?php print $class_in; ?>">
           <?php print render($participation_acc_body); ?>
         </div>
       </div>

@@ -13,23 +13,23 @@
 // General settings
 // -------------------------
 #pxlraffle-next-raffle {
+  margin: 0 2*@container-inner-margin;
   padding: 20px 0;
-  background-color: #efefef;
+  background: none;
 
   .next-raffle {
     font-family: @pxl-text-font-bold;
-    font-size: @pxl-raffle-info-text-size;
     text-align: center;
 
     .next-raffle-slogan {
-      margin-bottom: 50px;
-      text-align: center;
+      margin-bottom: 20px;
+      font-size: @font-size-pane-title;
       color: @text-color;
     }
 
     .next-raffle-label {
-      margin-bottom: 20px;
       text-align: center;
+      font-size: @font-size-pane-title;
       color: @pxl-color-raffle;
 
       body.front & {
@@ -39,15 +39,16 @@
 
     .next-raffle-date {
       display: inline-block;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       padding: 5px 15px;
-      color: #fff;
-      background-color: @text-color;
+      font-size: 90px;
+      color: @pxl-color-main;
     }
 
     .next-raffle-info {
       margin-bottom: 50px;
       text-align: center;
+      font-size: @font-size-base;
       color: @text-color;
     }
   }

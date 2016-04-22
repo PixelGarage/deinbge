@@ -37,6 +37,7 @@
       <span class="fa fa-caret-up" style="position: relative; left: <?php print $fill_level; ?>%;"></span>
       <div class="current-amount"  style="position: relative; left: <?php print $fill_level; ?>%;">CHF <?php print $current_amount; ?></div>
     </div>
+    <div class="explanation"><?php print $explanation; ?></div>
     <div class="actions">
       <a class="btn btn-default link-participate" href="<?php print $url_participate; ?>"><?php print $label_participate; ?></a>
     </div>

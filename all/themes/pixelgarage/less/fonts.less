@@ -28,7 +28,7 @@
 // text fonts
 @pxl-text-font: 'ProximaNovaLight';
 @pxl-text-font-light: @pxl-text-font;
-@pxl-text-font-medium: @pxl-text-font;
+@pxl-text-font-medium: 'ProximaNovaRegular';
 @pxl-text-font-bold: 'ProximaNovaBold';
 @pxl-text-font-italics: 'ProximaNovaLight';
 @pxl-text-font-light-italics: 'ProximaNovaLight';
@@ -63,5 +63,15 @@
   url('@{pxl-font-path}/ProximaNovaBold/ProximaNovaBold.woff2') format('woff2'),
   url('@{pxl-font-path}/ProximaNovaBold/ProximaNovaBold.woff') format('woff'),
   url('@{pxl-font-path}/ProximaNovaBold/ProximaNovaBold.ttf') format('truetype'),
-  url('@{pxl-font-path}/ProximaNovaBold/ProximaNovaBold.svg#proximanovaboldwebfont') format('svg');
+  url('@{pxl-font-path}/ProximaNovaBold/ProximaNovaBold.svg#ProximaNovaBold') format('svg');
+}
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url('@{pxl-font-path}/ProximaNovaRegular/ProximaNovaRegular.eot');
+  src: url('@{pxl-font-path}/ProximaNovaRegular/ProximaNovaRegular.eot') format('embedded-opentype'),
+  url('@{pxl-font-path}/ProximaNovaRegular/ProximaNovaRegular.woff2') format('woff2'),
+  url('@{pxl-font-path}/ProximaNovaRegular/ProximaNovaRegular.woff') format('woff'),
+  url('@{pxl-font-path}/ProximaNovaRegular/ProximaNovaRegular.ttf') format('truetype'),
+  url('@{pxl-font-path}/ProximaNovaRegular/ProximaNovaRegular.svg#ProximaNovaRegular') format('svg');
 }

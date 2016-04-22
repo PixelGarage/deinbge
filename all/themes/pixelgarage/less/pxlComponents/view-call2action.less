@@ -6,7 +6,9 @@
 // -------------------------
 @pxl-gutter-width: 1.5%;
 @pxl-badge-size: 50px;
-
+@pxl-container-padding: 20px;
+@pxl-icon-width: 250px;
+@pxl-icon-height: 190px;
 
 
 // Mixins
@@ -22,10 +24,11 @@
 
   .view-content {
     margin: 0 -@pxl-gutter-width;
+    text-align: center;
 
     .views-row {
       display: inline-block;
-      margin: 10px -2px;
+      margin: 20px -2px;
       padding: 0;
       width: 100%;
       vertical-align: top;
@@ -40,9 +43,14 @@
             .call2action-container {
               display: block;
               position: relative;
+              padding: @pxl-container-padding;
               width: 100%;
-              height: 300px;
+              min-width: (@pxl-icon-width + 2*@pxl-container-padding);
               #pxl-mixins.border-radius(10px);
+
+              &:hover {
+                text-decoration: none;
+              }
 
               .field-name-field-weight {
                 #pxl-mixins.center-horizontally;
@@ -65,55 +73,53 @@
                 }
               }
 
+              .field-name-field-animation-icon {
+                display: block;
+                margin: 0 auto;
+
+                .field-item {
+                  iframe {
+                    display: block;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    max-width: 100%;
+                    height: @pxl-icon-height;
+                  }
+                }
+              }
+
               .field-name-title {
-                position: absolute;
-                bottom: 20px;
-                width: 100%;
+                margin: 10px 0;
 
                 h2 {
                   margin: 0;
                   font-family: @pxl-text-font-bold;
-                  font-size: @font-size-larger;
+                  font-size: @font-size-pane-title;
                   text-align: center;
                   color: #fff;
                 }
               }
 
-              .field-name-field-icon {
-                #pxl-mixins.center-horizontally;
-                position: absolute;
-                bottom: 52%;
-                width: 90%;
-
-                .field-item {
-                  display: block;
-                  margin: 0 auto;
-                  height: auto;
-
-                  img {
-                    display: none;
-                  }
-                }
-              }
             }
 
             .field-name-body {
               display: none;
-              margin-top: 20px;
+              margin: 20px auto 0;
+              width: 90%;
 
               .field-item {
                 font-family: @pxl-text-font-light;
-                font-size: 18px;
+                font-size: @font-size-base;
                 line-height: 30px;
                 text-align: center;
-                color: @pxl-masonry-text;
+                color: @text-color;
               }
             }
           }
         }
       }
 
-      @media @narrow {
+      @media @special-break {
         width: 50%;
 
         .node-call2action {
@@ -133,7 +139,7 @@
         }
       }
 
-      @media @tablet {
+      @media @normal {
         width: 33.33333%;
 
         .node-call2action {
@@ -142,21 +148,6 @@
               padding: 0 3*@pxl-gutter-width;
 
               .call2action-container {
-              }
-            }
-          }
-        }
-      }
-
-      @media @normal {
-        .node-call2action {
-          .row {
-            .col-sm-12 {
-              .call2action-container {
-                .field-name-field-icon {
-                  bottom: 55%;
-                  width: 100%;
-                }
               }
             }
           }

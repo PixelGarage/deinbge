@@ -134,7 +134,7 @@ function pxlraffle_get_user_raffle_info_html($user) {
       // user is part of current raffle
       $raffle_id = strtoupper($user_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
       $raffle_date = pxlraffle_get_raffle_date($user_raffle);
-      $msg = '<div class="user-raffle-number">' . t('You are already part of raffle "@number".', array('@number' => $raffle_id)) . '</div>';
+      $msg = '<div class="user-raffle-number">' . t('You are part of raffle "@number".', array('@number' => $raffle_id)) . '</div>';
       $msg .= '<div class="user-raffle-code">' . t('Your unique raffle code is: ') . '<span class="raffle-code">' . $user_raffle_code . '</span></div>';
       $msg .= '<div class="user-raffle-date">' . t('The raffle date is @date.', array('@date' => $raffle_date)) . '</div>';
     }

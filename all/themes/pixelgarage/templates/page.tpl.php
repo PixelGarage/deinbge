@@ -90,7 +90,7 @@
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
-          <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          <span class="navbar-open" aria-hidden="true"></span>
         </button>
       <?php endif; ?>
     </div>
@@ -108,6 +108,10 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
+        <button type="button" class="navbar-toggle-2" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-close" aria-hidden="true"></span>
+        </button>
       </div>
     <?php endif; ?>
   </div>
