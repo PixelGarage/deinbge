@@ -1,5 +1,5 @@
 <?php
-$export_time = 1460545187;
+$export_time = 1461398531;
 $data = array(
   'bundles' => array(
     'call2action' => (object) array(
@@ -98,6 +98,72 @@ $data = array(
           5 => 'intro',
           6 => 'quote',
           7 => 'pxl_raffle',
+          8 => 'spenden',
+          9 => 'offline_donation',
+        ),
+      ),
+    ),
+    'field_animation_icon' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_animation_icon' => array(
+                'value' => 'field_animation_icon_value',
+                'format' => 'field_animation_icon_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_animation_icon' => array(
+                'value' => 'field_animation_icon_value',
+                'format' => 'field_animation_icon_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_animation_icon',
+      'type' => 'text_long',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'call2action',
         ),
       ),
     ),
@@ -402,7 +468,7 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'text_default',
-            'weight' => '3',
+            'weight' => '4',
             'settings' => array(),
             'module' => 'text',
           ),
@@ -420,6 +486,51 @@ $data = array(
         'description' => '',
         'default_value' => NULL,
         'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'call2action',
+        'deleted' => '0',
+      ),
+    ),
+    'field_animation_icon' => array(
+      0 => array(
+        'label' => 'Animation icon',
+        'widget' => array(
+          'weight' => '3',
+          'type' => 'text_textarea',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '5',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '1',
+          'linkit' => array(
+            'enable' => 0,
+            'profile' => '',
+            'button_text' => 'Search',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '2',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 1,
+        'description' => 'Add an icon animation to the action.',
+        'default_value' => NULL,
+        'field_name' => 'field_animation_icon',
         'entity_type' => 'node',
         'bundle' => 'call2action',
         'deleted' => '0',
@@ -450,7 +561,7 @@ $data = array(
           'default' => array(
             'label' => 'above',
             'type' => 'hidden',
-            'weight' => '15',
+            'weight' => '16',
             'settings' => array(),
           ),
           'teaser' => array(
@@ -497,7 +608,7 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'hidden',
-            'weight' => '5',
+            'weight' => '15',
             'settings' => array(),
           ),
           'teaser' => array(
@@ -519,7 +630,7 @@ $data = array(
       0 => array(
         'label' => 'Link',
         'widget' => array(
-          'weight' => '3',
+          'weight' => '2',
           'type' => 'link_field',
           'module' => 'link',
           'active' => 0,
@@ -557,7 +668,7 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'link_default',
-            'weight' => '2',
+            'weight' => '3',
             'settings' => array(),
             'module' => 'link',
           ),

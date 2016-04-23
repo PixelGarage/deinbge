@@ -14,7 +14,6 @@
 // -------------------------
 #pxlraffle-next-raffle {
   margin: 0 2*@container-inner-margin;
-  padding: 20px 0;
   background: none;
 
   .next-raffle {
@@ -23,7 +22,8 @@
 
     .next-raffle-slogan {
       margin-bottom: 20px;
-      font-size: @font-size-pane-title;
+      #pxl-mixins.font-size-responsive(@font-size-pane-title);
+      #pxl-mixins.hyphenate;
       color: @text-color;
     }
 
@@ -41,12 +41,11 @@
       display: inline-block;
       margin-bottom: 20px;
       padding: 5px 15px;
-      font-size: 90px;
+      #pxl-mixins.font-size-responsive(90px);
       color: @pxl-color-main;
     }
 
     .next-raffle-info {
-      margin-bottom: 50px;
       text-align: center;
       font-size: @font-size-base;
       color: @text-color;

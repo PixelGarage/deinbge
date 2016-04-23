@@ -34,6 +34,8 @@
   .panel-display {
     .panel-col {
       .panel-pane {
+        padding-bottom: @panel-separator-height;
+
         &.full-width {
           margin: 0 -@grid-gutter-width/2;
 
@@ -45,6 +47,20 @@
           }
           @media @wide {
             margin: 0 (@container-lg - @grid-gutter-width - @screen-lg-min)/2;
+          }
+
+          .pane-content {
+            padding: 0 @grid-gutter-width/2;
+
+            @media @tablet {
+              padding: 0 (@screen-sm-min - @container-sm + @grid-gutter-width)/2;
+            }
+            @media @normal {
+              padding: 0 (@screen-md-min - @container-md + @grid-gutter-width)/2;
+            }
+            @media @wide {
+              padding: 0 (@screen-lg-min - @container-lg + @grid-gutter-width)/2;
+            }
           }
         }
 
@@ -61,8 +77,25 @@
         }
       }
 
+      #panel-fundraising {
+        margin-bottom: @panel-separator-height;
+        padding-bottom: 0;
+        background-color: @pxl-bg-panel-item;
+      }
+
+      #panel-quotes {
+        padding-bottom: 0;
+        background-color: @pxl-color-main;
+      }
+
+      #panel-masonry-social {
+        padding-top: @panel-separator-height;
+        padding-bottom: @panel-separator-height;
+        background-color: @pxl-bg-panel-item;
+      }
+
       .panel-separator {
-        height: 50px;
+        height: 0;
       }
     }
   }

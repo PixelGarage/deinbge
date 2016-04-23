@@ -14,29 +14,38 @@
 // General settings
 // -------------------------
 .node-page {
-  div.col-sm-12 {
-    width: 100%;
+  .row {
+    div.col-sm-12 {
+      margin: 20px 0 50px;
+      width: 100%;
 
-    .field-name-title {
-      h2 {
-        font-family: @pxl-text-font-bold;
-        font-size: @resp-font-size-large-min;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-        color: @text-color;
+      .field-name-title {
+        h2 {
+          margin-bottom: 20px;
+          font-family: @pxl-text-font-bold;
+          font-size: @resp-font-size-large-min;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          color: @text-color;
 
-        @media @narrow {
-          font-size: @resp-font-size-large;
-        }
-        @media @tablet {
-          font-size: @resp-font-size-large-max;
+          @media @narrow {
+            font-size: @resp-font-size-large;
+          }
+          @media @tablet {
+            font-size: @resp-font-size-large-max;
+          }
         }
       }
-    }
 
-    .field-name-body {
-      #pxl-mixins.wysiwyg-body;
-    }
+      .field-name-body {
+        .jumbotron {
+          h2 {
+            margin: 0 auto 20px;
+          }
+        }
 
+        #pxl-mixins.wysiwyg-body;
+      }
+    }
   }
 }

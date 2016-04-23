@@ -1,5 +1,5 @@
 <?php
-$export_time = 1459171050;
+$export_time = 1461398629;
 $data = array(
   'bundles' => array(
     'pxl_raffle' => (object) array(
@@ -98,13 +98,18 @@ $data = array(
           5 => 'intro',
           6 => 'quote',
           7 => 'pxl_raffle',
+          8 => 'spenden',
+          9 => 'offline_donation',
+          10 => 'footer',
         ),
       ),
     ),
-    'field_current_donation' => array(
+    'field_club_fees' => array(
       'translatable' => '0',
       'entity_types' => array(),
       'settings' => array(
+        'precision' => '10',
+        'scale' => '2',
         'decimal_separator' => '.',
       ),
       'storage' => array(
@@ -115,13 +120,13 @@ $data = array(
         'details' => array(
           'sql' => array(
             'FIELD_LOAD_CURRENT' => array(
-              'field_data_field_current_donation' => array(
-                'value' => 'field_current_donation_value',
+              'field_data_field_club_fees' => array(
+                'value' => 'field_club_fees_value',
               ),
             ),
             'FIELD_LOAD_REVISION' => array(
-              'field_revision_field_current_donation' => array(
-                'value' => 'field_current_donation_value',
+              'field_revision_field_club_fees' => array(
+                'value' => 'field_club_fees_value',
               ),
             ),
           ),
@@ -129,8 +134,8 @@ $data = array(
       ),
       'foreign keys' => array(),
       'indexes' => array(),
-      'field_name' => 'field_current_donation',
-      'type' => 'number_float',
+      'field_name' => 'field_club_fees',
+      'type' => 'number_decimal',
       'module' => 'number',
       'active' => '1',
       'locked' => '0',
@@ -138,7 +143,54 @@ $data = array(
       'deleted' => '0',
       'columns' => array(
         'value' => array(
-          'type' => 'float',
+          'type' => 'numeric',
+          'precision' => '10',
+          'scale' => '2',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'pxl_raffle',
+        ),
+      ),
+    ),
+    'field_next_code' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_next_code' => array(
+                'value' => 'field_next_code_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_next_code' => array(
+                'value' => 'field_next_code_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_next_code',
+      'type' => 'number_integer',
+      'module' => 'number',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'int',
           'not null' => FALSE,
         ),
       ),
@@ -155,9 +207,9 @@ $data = array(
         'granularity' => array(
           'month' => 'month',
           'day' => 'day',
+          'hour' => 'hour',
+          'minute' => 'minute',
           'year' => 'year',
-          'hour' => 0,
-          'minute' => 0,
           'second' => 0,
         ),
         'tz_handling' => 'none',
@@ -213,6 +265,329 @@ $data = array(
         ),
       ),
     ),
+    'field_raffle_donation' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'precision' => '10',
+        'scale' => '2',
+        'decimal_separator' => '.',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_raffle_donation' => array(
+                'value' => 'field_raffle_donation_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_raffle_donation' => array(
+                'value' => 'field_raffle_donation_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_raffle_donation',
+      'type' => 'number_decimal',
+      'module' => 'number',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'numeric',
+          'precision' => '10',
+          'scale' => '2',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'pxl_raffle',
+        ),
+      ),
+    ),
+    'field_raffle_id' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'max_length' => '10',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_raffle_id' => array(
+                'value' => 'field_raffle_id_value',
+                'format' => 'field_raffle_id_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_raffle_id' => array(
+                'value' => 'field_raffle_id_value',
+                'format' => 'field_raffle_id_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_raffle_id',
+      'type' => 'text',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => '10',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'pxl_raffle',
+        ),
+      ),
+    ),
+    'field_raffle_state' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'allowed_values' => array(
+          'recurring' => 'Recurring',
+          'collecting' => 'Collecting',
+          'closed' => 'Closed',
+          'raffled' => 'Raffled',
+          'paying' => 'Paying',
+          'paid' => 'Paid',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_raffle_state' => array(
+                'value' => 'field_raffle_state_value',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_raffle_state' => array(
+                'value' => 'field_raffle_state_value',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'field_name' => 'field_raffle_state',
+      'type' => 'list_text',
+      'module' => 'list',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'pxl_raffle',
+        ),
+      ),
+    ),
+    'field_raffle_video' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_raffle_video' => array(
+                'video_url' => 'field_raffle_video_video_url',
+                'thumbnail_path' => 'field_raffle_video_thumbnail_path',
+                'video_data' => 'field_raffle_video_video_data',
+                'embed_code' => 'field_raffle_video_embed_code',
+                'description' => 'field_raffle_video_description',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_raffle_video' => array(
+                'video_url' => 'field_raffle_video_video_url',
+                'thumbnail_path' => 'field_raffle_video_thumbnail_path',
+                'video_data' => 'field_raffle_video_video_data',
+                'embed_code' => 'field_raffle_video_embed_code',
+                'description' => 'field_raffle_video_description',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_raffle_video',
+      'type' => 'video_embed_field',
+      'module' => 'video_embed_field',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'video_url' => array(
+          'type' => 'varchar',
+          'length' => 512,
+          'default' => '',
+        ),
+        'thumbnail_path' => array(
+          'type' => 'varchar',
+          'length' => 512,
+          'default' => '',
+        ),
+        'video_data' => array(
+          'type' => 'blob',
+          'not null' => FALSE,
+          'size' => 'big',
+          'serialize' => TRUE,
+        ),
+        'embed_code' => array(
+          'type' => 'varchar',
+          'length' => 1024,
+          'default' => '',
+        ),
+        'description' => array(
+          'type' => 'text',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'pxl_raffle',
+        ),
+      ),
+    ),
+    'field_winner' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'target_type' => 'user',
+        'handler' => 'base',
+        'handler_settings' => array(
+          'target_bundles' => array(),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+        ),
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_winner' => array(
+                'target_id' => 'field_winner_target_id',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_winner' => array(
+                'target_id' => 'field_winner_target_id',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'users' => array(
+          'table' => 'users',
+          'columns' => array(
+            'target_id' => 'uid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'field_name' => 'field_winner',
+      'type' => 'entityreference',
+      'module' => 'entityreference',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'target_id' => array(
+          'description' => 'The id of the target entity.',
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => TRUE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'pxl_raffle',
+        ),
+      ),
+    ),
   ),
   'instances' => array(
     'body' => array(
@@ -224,7 +599,7 @@ $data = array(
             'rows' => 20,
             'summary_rows' => 5,
           ),
-          'weight' => '3',
+          'weight' => '7',
           'module' => 'text',
         ),
         'settings' => array(
@@ -236,9 +611,9 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'text_default',
+            'weight' => '5',
             'settings' => array(),
             'module' => 'text',
-            'weight' => 0,
           ),
           'teaser' => array(
             'label' => 'hidden',
@@ -252,18 +627,18 @@ $data = array(
         ),
         'required' => FALSE,
         'description' => '',
+        'default_value' => NULL,
         'field_name' => 'body',
         'entity_type' => 'node',
         'bundle' => 'pxl_raffle',
         'deleted' => '0',
-        'default_value' => NULL,
       ),
     ),
-    'field_current_donation' => array(
+    'field_club_fees' => array(
       0 => array(
-        'label' => 'Current donation',
+        'label' => 'Application fees',
         'widget' => array(
-          'weight' => '2',
+          'weight' => '6',
           'type' => 'number',
           'module' => 'number',
           'active' => 0,
@@ -278,8 +653,9 @@ $data = array(
         ),
         'display' => array(
           'default' => array(
-            'label' => 'above',
+            'label' => 'inline',
             'type' => 'number_decimal',
+            'weight' => '4',
             'settings' => array(
               'thousand_separator' => '',
               'decimal_separator' => '.',
@@ -287,7 +663,6 @@ $data = array(
               'prefix_suffix' => TRUE,
             ),
             'module' => 'number',
-            'weight' => 2,
           ),
           'teaser' => array(
             'type' => 'hidden',
@@ -297,9 +672,63 @@ $data = array(
           ),
         ),
         'required' => 0,
-        'description' => 'Add the current value of donations for this raffle (automatically filled).',
-        'default_value' => NULL,
-        'field_name' => 'field_current_donation',
+        'description' => 'Holds the sum of all application fees spend by the participants.',
+        'default_value' => array(
+          0 => array(
+            'value' => '0',
+          ),
+        ),
+        'field_name' => 'field_club_fees',
+        'entity_type' => 'node',
+        'bundle' => 'pxl_raffle',
+        'deleted' => '0',
+      ),
+    ),
+    'field_next_code' => array(
+      0 => array(
+        'label' => 'Next code',
+        'widget' => array(
+          'weight' => '2',
+          'type' => 'number',
+          'module' => 'number',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'min' => '1',
+          'max' => '',
+          'prefix' => '',
+          'suffix' => '',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'number_integer',
+            'settings' => array(
+              'thousand_separator' => '',
+              'decimal_separator' => '.',
+              'scale' => 0,
+              'prefix_suffix' => TRUE,
+            ),
+            'module' => 'number',
+            'weight' => 9,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Holds the next unique raffle code for a user.',
+        'default_value' => array(
+          0 => array(
+            'value' => '1',
+          ),
+        ),
+        'field_name' => 'field_next_code',
         'entity_type' => 'node',
         'bundle' => 'pxl_raffle',
         'deleted' => '0',
@@ -309,8 +738,8 @@ $data = array(
       0 => array(
         'label' => 'Raffle date',
         'widget' => array(
-          'weight' => '1',
-          'type' => 'date_popup',
+          'weight' => '4',
+          'type' => 'date_select',
           'module' => 'date',
           'active' => 1,
           'settings' => array(
@@ -333,18 +762,18 @@ $data = array(
         ),
         'display' => array(
           'default' => array(
-            'label' => 'above',
+            'label' => 'inline',
             'type' => 'date_default',
+            'weight' => '2',
             'settings' => array(
-              'format_type' => 'long',
+              'format_type' => 'medium',
+              'fromto' => 'both',
               'multiple_number' => '',
               'multiple_from' => '',
               'multiple_to' => '',
-              'fromto' => 'both',
-              'show_remaining_days' => FALSE,
+              'show_remaining_days' => 0,
             ),
             'module' => 'date',
-            'weight' => 1,
           ),
           'teaser' => array(
             'type' => 'hidden',
@@ -356,6 +785,233 @@ $data = array(
         'required' => 0,
         'description' => 'Add the date of the raffle.',
         'field_name' => 'field_raffle_date',
+        'entity_type' => 'node',
+        'bundle' => 'pxl_raffle',
+        'deleted' => '0',
+        'default_value' => NULL,
+      ),
+    ),
+    'field_raffle_donation' => array(
+      0 => array(
+        'label' => 'Donation',
+        'widget' => array(
+          'weight' => '5',
+          'type' => 'number',
+          'module' => 'number',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'min' => '0',
+          'max' => '',
+          'prefix' => 'CHF',
+          'suffix' => '',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'inline',
+            'type' => 'number_decimal',
+            'weight' => '3',
+            'settings' => array(
+              'thousand_separator' => '',
+              'decimal_separator' => '.',
+              'scale' => 2,
+              'prefix_suffix' => TRUE,
+            ),
+            'module' => 'number',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Holds the current donation amount usable for this raffle.',
+        'default_value' => array(
+          0 => array(
+            'value' => '0',
+          ),
+        ),
+        'field_name' => 'field_raffle_donation',
+        'entity_type' => 'node',
+        'bundle' => 'pxl_raffle',
+        'deleted' => '0',
+      ),
+    ),
+    'field_raffle_id' => array(
+      0 => array(
+        'label' => 'Raffle_id',
+        'widget' => array(
+          'weight' => '1',
+          'type' => 'text_textfield',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'size' => '60',
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '0',
+          'linkit' => array(
+            'enable' => 0,
+            'profile' => '',
+            'button_text' => 'Search',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'text_default',
+            'settings' => array(),
+            'module' => 'text',
+            'weight' => 8,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 1,
+        'description' => 'Add a unique raffle id.',
+        'default_value' => NULL,
+        'field_name' => 'field_raffle_id',
+        'entity_type' => 'node',
+        'bundle' => 'pxl_raffle',
+        'deleted' => '0',
+      ),
+    ),
+    'field_raffle_state' => array(
+      0 => array(
+        'label' => 'Raffle state',
+        'widget' => array(
+          'weight' => '3',
+          'type' => 'options_select',
+          'module' => 'options',
+          'active' => 1,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'inline',
+            'type' => 'list_default',
+            'weight' => '1',
+            'settings' => array(),
+            'module' => 'list',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 1,
+        'description' => 'Add the state of the raffle',
+        'default_value' => array(
+          0 => array(
+            'value' => 'collecting',
+          ),
+        ),
+        'field_name' => 'field_raffle_state',
+        'entity_type' => 'node',
+        'bundle' => 'pxl_raffle',
+        'deleted' => '0',
+      ),
+    ),
+    'field_raffle_video' => array(
+      0 => array(
+        'label' => 'Raffle video',
+        'widget' => array(
+          'weight' => '8',
+          'type' => 'video_embed_field_video',
+          'module' => 'video_embed_field',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'allowed_providers' => array(
+            'youtube' => 'youtube',
+            'vimeo' => 'vimeo',
+          ),
+          'description_field' => 1,
+          'description_length' => '128',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'video_embed_field',
+            'settings' => array(
+              'video_style' => 'normal',
+              'description' => 1,
+              'description_position' => 'bottom',
+            ),
+            'module' => 'video_embed_field',
+            'weight' => 7,
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Add here the link to the LIVE video stream showing the raffle (or the video, if the raffle lies in the past).',
+        'default_value' => NULL,
+        'field_name' => 'field_raffle_video',
+        'entity_type' => 'node',
+        'bundle' => 'pxl_raffle',
+        'deleted' => '0',
+      ),
+    ),
+    'field_winner' => array(
+      0 => array(
+        'label' => 'Winner',
+        'widget' => array(
+          'weight' => '9',
+          'type' => 'entityreference_autocomplete',
+          'module' => 'entityreference',
+          'active' => 1,
+          'settings' => array(
+            'match_operator' => 'STARTS_WITH',
+            'size' => '60',
+            'path' => '',
+          ),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'entityreference_label',
+            'weight' => '6',
+            'settings' => array(
+              'link' => FALSE,
+            ),
+            'module' => 'entityreference',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'The winner of the raffle.',
+        'default_value' => NULL,
+        'field_name' => 'field_winner',
         'entity_type' => 'node',
         'bundle' => 'pxl_raffle',
         'deleted' => '0',

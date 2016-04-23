@@ -1,0 +1,391 @@
+<?php
+$export_time = 1461398391;
+$data = array(
+  'bundles' => array(
+    'footer' => (object) array(
+      'type' => 'footer',
+      'name' => 'Footer',
+      'base' => 'node_content',
+      'module' => 'node',
+      'description' => 'Add a footer.',
+      'help' => '',
+      'has_title' => '1',
+      'title_label' => 'Title',
+      'custom' => '1',
+      'modified' => '1',
+      'locked' => '0',
+      'disabled' => '0',
+      'orig_type' => 'footer',
+      'disabled_changed' => FALSE,
+      'bc_entity_type' => 'node',
+    ),
+  ),
+  'fields' => array(
+    'body' => array(
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'settings' => array(),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'field_name' => 'body',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'page',
+          1 => 'article',
+          2 => 'pxltest',
+          3 => 'reason',
+          4 => 'webform',
+          5 => 'footer',
+          6 => 'share',
+          7 => 'spenden',
+        ),
+      ),
+    ),
+    'field_impressum' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_impressum' => array(
+                'value' => 'field_impressum_value',
+                'summary' => 'field_impressum_summary',
+                'format' => 'field_impressum_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_impressum' => array(
+                'value' => 'field_impressum_value',
+                'summary' => 'field_impressum_summary',
+                'format' => 'field_impressum_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_impressum',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'footer',
+        ),
+      ),
+    ),
+    'field_medienkontakt' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_medienkontakt' => array(
+                'value' => 'field_medienkontakt_value',
+                'summary' => 'field_medienkontakt_summary',
+                'format' => 'field_medienkontakt_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_medienkontakt' => array(
+                'value' => 'field_medienkontakt_value',
+                'summary' => 'field_medienkontakt_summary',
+                'format' => 'field_medienkontakt_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'field_name' => 'field_medienkontakt',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'footer',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'body' => array(
+      0 => array(
+        'label' => 'Privacy policy',
+        'widget' => array(
+          'weight' => '2',
+          'type' => 'text_textarea_with_summary',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '20',
+            'summary_rows' => 5,
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '1',
+          'display_summary' => 1,
+          'linkit' => array(
+            'enable' => 0,
+            'profile' => '',
+            'button_text' => 'Search',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '1',
+            'settings' => array(),
+          ),
+          'teaser' => array(
+            'label' => 'hidden',
+            'type' => 'text_summary_or_trimmed',
+            'settings' => array(
+              'trim_length' => 600,
+            ),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'footer',
+        'deleted' => '0',
+      ),
+    ),
+    'field_impressum' => array(
+      0 => array(
+        'label' => 'Impressum',
+        'widget' => array(
+          'weight' => '3',
+          'type' => 'text_textarea_with_summary',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '20',
+            'summary_rows' => 5,
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '1',
+          'display_summary' => 0,
+          'linkit' => array(
+            'enable' => 0,
+            'profile' => '',
+            'button_text' => 'Search',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '2',
+            'settings' => array(),
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_impressum',
+        'entity_type' => 'node',
+        'bundle' => 'footer',
+        'deleted' => '0',
+      ),
+    ),
+    'field_medienkontakt' => array(
+      0 => array(
+        'label' => 'Medienkontakt',
+        'widget' => array(
+          'weight' => '1',
+          'type' => 'text_textarea_with_summary',
+          'module' => 'text',
+          'active' => 1,
+          'settings' => array(
+            'rows' => '10',
+            'summary_rows' => 5,
+          ),
+        ),
+        'settings' => array(
+          'text_processing' => '1',
+          'display_summary' => 0,
+          'linkit' => array(
+            'enable' => 0,
+            'profile' => '',
+            'button_text' => 'Search',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '0',
+            'settings' => array(),
+            'module' => 'text',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 1,
+        'description' => 'Add a contact.',
+        'default_value' => NULL,
+        'field_name' => 'field_medienkontakt',
+        'entity_type' => 'node',
+        'bundle' => 'footer',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+);

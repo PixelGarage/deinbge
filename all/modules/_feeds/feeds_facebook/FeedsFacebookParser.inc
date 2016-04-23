@@ -22,12 +22,12 @@ class FeedsFacebookParser extends FeedsParser {
         $items[] = array(
           'post_id' => $entry->id,
           'from_name' => $entry->from->name,
-          'from_category' => $entry->from->category,
+          'from_category' => (isset($entry->from->category) ? $entry->from->category : ''),
           'from_id' => $entry->from->id,
           'to_name' => (isset($entry->to) ? $entry->to->data[0]->name : ''),
           'to_category' => (isset($entry->to) ? $entry->to->data[0]->category : ''),
           'to_id' => (isset($entry->to) ? $entry->to->data[0]->id : ''),
-          'message' => $entry->message,
+          'message' => (isset($entry->message) ? $entry->message : ''),
           'picture' => (isset($entry->picture) ? $entry->picture : ''),
           'full_picture' => (isset($entry->full_picture) ? $entry->full_picture : ''),
           'link' => (isset($entry->link) ? $entry->link : ''),
@@ -37,12 +37,12 @@ class FeedsFacebookParser extends FeedsParser {
           'description' => (isset($entry->description) ? $entry->description : ''),
           'icon' => (isset($entry->icon) ? $entry->icon : ''),
           'type' => (isset($entry->type) ? $entry->type : ''),
-          'likes_count' => (isset($entry->likes) ? $entry->likes->count : 0),
+          'likes_count' => (isset($entry->likes) ? count($entry->likes->data) : 0),
           'likes' => (isset($entry->likes) ? json_encode($entry->likes) : ''),
           'comments_count' => (isset($entry->comments) ? $entry->comments->count : 0),
           'comments' => (isset($entry->comments) ? json_encode($entry->comments) : ''),
-          'created_time' => $entry->created_time,
-          'updated_time' => $entry->updated_time,
+          'created_time' => (isset($entry->created_time) ? $entry->created_time : ''),
+          'updated_time' => (isset($entry->updated_time) ? $entry->updated_time : ''),
         );
       }
     }

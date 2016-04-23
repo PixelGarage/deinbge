@@ -18,88 +18,92 @@
 // -------------------------
 #pxlraffle-fundraising {
   padding: 20px 0;
-  background-color: #efefef;
+  background-color: @pxl-bg-panel-item;
 
   .current-raffle {
     max-width: @container-max-width;
-    margin: 0 @container-inner-margin;
+    margin: 0 auto;
 
-    .block-header {
-      margin-bottom: @pxl-margin-sep;
-      font-family: @pxl-text-font-bold;
-      font-size: @font-size-pane-title;
-      text-align: center;
-      color: @text-color;
-    }
+    .inner-current-raffle {
+      margin: 0 @container-inner-margin;
 
-    .odometer-container {
-      #pxl-mixins.odometer(#fff, @pxl-color-participate, 5px);
-      margin-bottom: @pxl-margin-sep;
-
-      body.front & {
-        #pxl-mixins.odometer(#fff, @pxl-color-main, 5px);
+      .block-header {
         margin-bottom: @pxl-margin-sep;
+        font-family: @pxl-text-font-bold;
+        font-size: @font-size-pane-title;
+        text-align: center;
+        color: @text-color;
       }
-    }
 
-    .total-amount {
-      font-family: @pxl-text-font-bold;
-      font-size: @font-size-base;
-      text-align: right;
-    }
-
-    .progress {
-      margin: 0;
-      height: @pxl-progress-height;
-
-      .progress-bar {
-        background-color: @pxl-color-participate;
+      .odometer-container {
+        #pxl-mixins.odometer(@pxl-color-participate, rgba(0,0,0,0.0), 5px);
+        margin-bottom: @pxl-margin-sep;
 
         body.front & {
-          background-color: @pxl-color-main;
+          #pxl-mixins.odometer(@pxl-color-main, rgba(0,0,0,0.0), 5px);
+          margin-bottom: @pxl-margin-sep;
         }
       }
-    }
 
-    .current-amount-container {
-      font-family: @pxl-text-font-bold;
-      font-size: @font-size-base;
-      color: @pxl-color-participate;
-
-      body.front & {
-        color: @pxl-color-main;
+      .total-amount {
+        font-family: @pxl-text-font-bold;
+        font-size: @font-size-base;
+        text-align: right;
       }
 
-      .fa {
-        display: inline-block;
-        vertical-align: top;
-        #pxl-mixins.translateX(-50%);
+      .progress {
+        margin: 0;
+        height: @pxl-progress-height;
+
+        .progress-bar {
+          background-color: @pxl-color-participate;
+
+          body.front & {
+            background-color: @pxl-color-main;
+          }
+        }
       }
 
-      .current-amount {
-        display: inline-block;
-        margin-top: 20px;
-        #pxl-mixins.translateX(-50%);
-      }
-    }
-
-    .explanation {
-      margin: @pxl-margin-sep auto;
-      font-family: @pxl-text-font;
-      font-size: @font-size-base;
-      color: @text-color;
-      text-align: center;
-    }
-
-    .actions {
-      margin: 30px auto;
-      text-align: center;
-
-      .btn.link-participate {
-        #pxl-mixins.button-large(@pxl-color-participate, darken(@pxl-color-participate, 20%));
+      .current-amount-container {
+        font-family: @pxl-text-font-bold;
+        font-size: @font-size-base;
+        color: @pxl-color-participate;
 
         body.front & {
-          #pxl-mixins.button-large(@pxl-color-main, darken(@pxl-color-main, 20%));
+          color: @pxl-color-main;
+        }
+
+        .fa {
+          display: inline-block;
+          vertical-align: top;
+          #pxl-mixins.translateX(-50%);
+        }
+
+        .current-amount {
+          display: inline-block;
+          margin-top: 20px;
+          #pxl-mixins.translateX(-50%);
+        }
+      }
+
+      .explanation {
+        margin: @pxl-margin-sep auto;
+        font-family: @pxl-text-font;
+        font-size: @font-size-base;
+        color: @text-color;
+        text-align: center;
+      }
+
+      .actions {
+        margin: 30px auto;
+        text-align: center;
+
+        .btn.link-participate {
+          #pxl-mixins.button-large(@pxl-color-participate, darken(@pxl-color-participate, 20%));
+
+          body.front & {
+            #pxl-mixins.button-large(@pxl-color-main, darken(@pxl-color-main, 20%));
+          }
         }
       }
     }
