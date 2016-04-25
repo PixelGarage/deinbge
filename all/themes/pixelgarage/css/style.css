@@ -9196,7 +9196,7 @@ form#user-login {
   padding: 0;
   width: 28px;
   height: 34px;
-  color: #4ba5eb;
+  color: #2dd092;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -9293,7 +9293,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
   height: 30px;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .progress .progress-bar {
-  background-color: #4ba5eb;
+  background-color: #2dd092;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .progress .progress-bar {
   background-color: #aa935e;
@@ -9301,7 +9301,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .progres
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .current-amount-container {
   font-family: 'ProximaNovaBold';
   font-size: 18px;
-  color: #4ba5eb;
+  color: #2dd092;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current-amount-container {
   color: #aa935e;
@@ -9317,10 +9317,6 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .current-amount-container .current-amount {
   display: inline-block;
   margin-top: 20px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .explanation {
   margin: 30px auto;
@@ -9336,7 +9332,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-participate {
   display: inline-block;
   margin: 0 auto;
-  padding: 13px 15px 15px;
+  padding: 10px 15px 10px;
   min-width: 160px;
   height: 44px;
   font-family: 'ProximaNovaBold';
@@ -9351,15 +9347,15 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #4ba5eb;
+  background: #2dd092;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-participate:hover {
-  background: #1572bb;
+  background: #1b7c57;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-participate {
   display: inline-block;
   margin: 0 auto;
-  padding: 13px 15px 15px;
+  padding: 10px 15px 10px;
   min-width: 160px;
   height: 44px;
   font-family: 'ProximaNovaBold';
@@ -9425,7 +9421,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
   margin-bottom: 20px;
   padding: 5px 15px;
   font-size: 50px;
-  color: #aa935e;
+  color: #2dd092;
 }
 @media screen and (min-width: 480px) {
   #pxlraffle-next-raffle .next-raffle .next-raffle-date {
@@ -9436,6 +9432,9 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
   #pxlraffle-next-raffle .next-raffle .next-raffle-date {
     font-size: 80px;
   }
+}
+body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
+  color: #aa935e;
 }
 #pxlraffle-next-raffle .next-raffle .next-raffle-info {
   text-align: center;
@@ -9471,7 +9470,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
 #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
   display: inline-block;
   margin: 0 auto;
-  padding: 13px 15px 15px;
+  padding: 10px 15px 10px;
   min-width: 160px;
   height: 44px;
   font-family: 'ProximaNovaBold';

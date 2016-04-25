@@ -18,11 +18,31 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
   $vars['total_amount'] = number_format($total_amount, 2, ".", "'");
   $current_amount = empty($current_raffle->field_raffle_donation) ? 0 : $current_raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'];
   $vars['current_amount'] = number_format($current_amount, 2, ".", "'");;
-  $vars['fill_level'] = $current_amount / $total_amount * 100;
+  $fill_level = $current_amount / $total_amount * 100;
+  $vars['fill_level'] = $fill_level;
   $vars['current_fees'] = empty($current_raffle->field_club_fees) ? 0 : $current_raffle->field_club_fees[LANGUAGE_NONE][0]['value'];
   $vars['explanation'] = t("As soon as 30'000 CHF are collected, a raffle takes place.");
   $vars['label_participate'] = t('Participate');
   $vars['url_participate'] = $base_url . '/participate';
+  if ($fill_level < 75) {
+    $trans_x = -50;
+  }
+  else if ($fill_level < 80) {
+    $trans_x = -60;
+  }
+  else if ($fill_level < 85) {
+    $trans_x = -70;
+  }
+  else if ($fill_level < 90) {
+    $trans_x = -80;
+  }
+  else if ($fill_level < 95) {
+    $trans_x = -90;
+  }
+  else {
+    $trans_x = -100;
+  }
+  $vars['translate_x'] = sprintf('-webkit-transform: translateX(%d%%);-ms-transform: translateX(%d%%);transform: translateX(%d%%);', $trans_x,$trans_x,$trans_x);
 
   //
   // style odometer for user count

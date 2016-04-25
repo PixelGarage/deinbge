@@ -42,7 +42,11 @@
       margin-bottom: 20px;
       padding: 5px 15px;
       #pxl-mixins.font-size-responsive(80px);
-      color: @pxl-color-main;
+      color: @pxl-color-raffle;
+
+      body.front & {
+        color: @pxl-color-main;
+      }
     }
 
     .next-raffle-info {

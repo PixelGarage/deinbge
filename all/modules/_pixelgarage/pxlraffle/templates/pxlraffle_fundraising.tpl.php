@@ -36,7 +36,7 @@
       </div>
       <div class="current-amount-container">
         <span class="fa fa-caret-up" style="position: relative; left: <?php print $fill_level; ?>%;"></span>
-        <div class="current-amount"  style="position: relative; left: <?php print $fill_level; ?>%;">CHF <?php print $current_amount; ?></div>
+        <div class="current-amount"  style="position: relative; left: <?php print $fill_level; ?>%; <?php print $translate_x; ?>;">CHF <?php print $current_amount; ?></div>
       </div>
       <div class="explanation"><?php print $explanation; ?></div>
       <div class="actions">
