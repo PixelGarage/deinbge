@@ -41,9 +41,9 @@
     width: 100%;
 
     .block-header {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-family: @pxl-text-font-bold;
-      font-size: @font-size-larger;
+      font-size: @font-size-pane-title;
       text-align: center;
       color: @text-color;
     }
@@ -51,7 +51,7 @@
     .participation-slogan {
       margin-bottom: 20px;
       font-family: @pxl-text-font;
-      font-size: @font-size-base + 2;
+      font-size: @font-size-pane-subtitle;
       text-align: center;
     }
 
@@ -75,7 +75,7 @@
               min-width: 160px;
               height: 44px;
               font-family: @pxl-text-font-bold;
-              font-size: @font-size-base;
+              font-size: @font-size-button;
               text-decoration: none;
               line-height: 1;
               letter-spacing: @pxl-button-letter-spacing;
@@ -93,10 +93,11 @@
 
         .panel-collapse {
           .jumbotron {
+            margin: 0;
+
             .user-raffle-info {
-              margin-bottom: 20px;
               font-family: @pxl-text-font;
-              font-size: @font-size-base + 2;
+              font-size: @font-size-pane-subtitle;
               text-align: center;
               color: @text-color;
 
@@ -120,19 +121,16 @@
 
             .user-raffle-actions {
               .btn.refresh-raffle-button {
-              .resp-raffle-button(@font-size-base);
+              .resp-raffle-button(@font-size-button);
               }
 
               .btn.remove-raffle-button {
-                .resp-raffle-button(@font-size-base);
+                .resp-raffle-button(@font-size-button);
               }
             }
           }
         }
       }
-    }
-
-    @media @tablet {
     }
   }
 }

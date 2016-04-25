@@ -67,7 +67,7 @@
         .pane-title {
           margin: 50px auto;
           font-family: @pxl-text-font-bold;
-          font-size: @font-size-larger;
+          font-size: @font-size-pane-title;
           text-align: center;
           color: @text-color;
         }
@@ -88,9 +88,14 @@
         background-color: @pxl-color-main;
       }
 
-      #panel-masonry-social {
+      #panel-masonry-social,
+      #panel-donate-online {
         padding-top: @panel-separator-height;
         padding-bottom: @panel-separator-height;
+        background-color: @pxl-bg-panel-item;
+      }
+
+      #panel-donate-offline {
         background-color: @pxl-bg-panel-item;
       }
 

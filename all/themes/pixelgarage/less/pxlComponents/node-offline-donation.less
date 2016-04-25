@@ -1,0 +1,114 @@
+/*
+ *  Node spenden component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-offline-donation {
+  margin: 0 @container-inner-margin !important;
+
+  .row {
+    .col-sm-12 {
+      position: relative;
+      width: 100%;
+      height: auto;
+
+      .field-name-title {
+        width: 100%;
+        z-index: 10;
+
+        h2 {
+          margin: 0 0 20px;
+          font-family: @pxl-title-font;
+          font-size: @font-size-pane-title;
+          text-align: center;
+          color: @text-color;
+        }
+      }
+
+      .field-name-body {
+        margin: 0 0 20px;
+        font-family: @pxl-text-font;
+        font-size: @font-size-pane-subtitle;
+        text-align: center;
+        color: @text-color;
+      }
+
+      .group-tabs {
+        .horizontal-tabs {
+          border: none;
+
+          ul.horizontal-tabs-list {
+            border: none;
+            .border-top-radius(6px);
+            background-color: @pxl-color-border-light;
+
+            li {
+              .border-top-radius(6px);
+              border: none;
+              border-bottom: 1px solid @pxl-color-border-light;
+              background-color: @pxl-color-border-light;
+
+              &:hover, &:focus {
+                border-bottom: 1px solid #fff;
+                background-color:#fff;
+              }
+
+              a {
+                padding: 8px 15px 6px;
+
+                strong {
+                  color: @text-color;
+                  font-family: @pxl-text-font;
+                  font-size: @pxl-font-size-button-title;
+                  text-align: center;
+                }
+
+                &:hover, &:focus {
+                  background: none;
+                }
+              }
+
+              &.selected {
+                border-bottom: 1px solid #fff;
+                background-color: #fff;
+
+                a {
+                  strong{
+                    color: @pxl-color-participate;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .horizontal-tabs-panes {
+          margin-top: -9px;
+
+          .horizontal-tabs-pane {
+            .border-top-radius(0);
+            .border-bottom-radius(6px);
+            #pxl-mixins.box-shadow(@pxl-box-shadow);
+
+            .panel-body {
+              .field-item {
+                #pxl-mixins.wysiwyg-body();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

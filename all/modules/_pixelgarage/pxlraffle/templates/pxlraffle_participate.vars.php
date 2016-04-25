@@ -19,7 +19,8 @@ function template_preprocess_pxlraffle_participate(&$vars) {
     //
     // slogan for logged in users
     $vars['participation_slogan'] = t("Hi @user, you are a registered user.", array('@user' => $user->name));
-    $vars['participation_acc_title'] = t('Show raffle info');
+    $vars['participation_acc_title'] = t('Hide raffle info');
+    $vars['participation_acc_title_collapsed'] = t('Show raffle info');
     $vars['class_collapsed'] = '';
     $vars['class_in'] = 'in';
 
@@ -44,10 +45,26 @@ function template_preprocess_pxlraffle_participate(&$vars) {
     // user not logged in, show login/registration form
     $vars['participation_slogan'] = t("It's easy to participate in the current raffle '@number'. Just press the button below and register.", array('@number' => $raffle_id));
     $vars['participation_acc_title'] = t('Participate');
+    $vars['participation_acc_title_collapsed'] = t('Hide login');
     $vars['class_collapsed'] = 'collapsed';
     $vars['class_in'] = '';
     $vars['participation_acc_body'] = array(
       'form' => drupal_get_form('user_login'),
     );
   }
+
+  // add js files
+  $path = drupal_get_path('module', 'pxlraffle');
+  $js_settings = array(
+    'pxlraffle_participate' => array(
+      'collapsed' => $vars['class_collapsed'] == 'collapsed',
+      'hide_label' => empty($vars['class_collapsed']) ? $vars['participation_acc_title'] : $vars['participation_acc_title_collapsed'],
+      'show_label' => empty($vars['class_collapsed']) ? $vars['participation_acc_title_collapsed'] : $vars['participation_acc_title'],
+    ),
+  );
+
+  // add files
+  drupal_add_js($path . '/js/participate.js');
+  drupal_add_js($js_settings, 'setting');
+
 }

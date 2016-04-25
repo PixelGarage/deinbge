@@ -14,12 +14,19 @@
 // Main settings
 // -------------------------
 body.navbar-is-fixed-top {
-  padding-top: 120px !important;
+  padding-top: 90px !important;
 
   &.admin-menu {
-    padding-top: 120px !important;
+    padding-top: 90px !important;
   }
 
+  @media @tablet {
+    padding-top: 120px !important;
+
+    &.admin-menu {
+      padding-top: 120px !important;
+    }
+  }
 }
 
 
@@ -28,10 +35,11 @@ header#navbar {
   background: transparent none;
 
   .container {
-    padding: 25px @grid-gutter-width / 2;
+    padding: 22px @grid-gutter-width / 2;
     width: 100%;
 
     @media @tablet {
+      padding: 25px @grid-gutter-width / 2;
       width: @screen-sm-min;
     }
     @media @normal {
@@ -50,16 +58,20 @@ header#navbar {
         position: relative;
         margin: 0;
         padding: 0;
-        width: 80%;
+        width: 70%;
         z-index: 10;
 
         img {
           display: block;
-          max-height: 70px;
+          max-height: 46px;
         }
 
         @media @tablet {
-          width: 50%;
+          width: 100%;
+
+          img {
+            max-height: 70px;
+          }
         }
       }
 
