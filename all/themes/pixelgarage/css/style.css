@@ -8739,12 +8739,12 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 #user-create-account h2,
 #user_pass_form h2 {
   margin: 0 0 15px;
+  font-family: 'ProximaNovaLight';
   font-size: 34px;
 }
 /* User login page */
 form#user-login {
   position: relative;
-  padding: 2em;
   border: none;
 }
 /* account register form */
@@ -8799,6 +8799,8 @@ form#user-login {
   vertical-align: top;
   padding: 0 0 2em;
   width: 100%;
+  font-family: 'ProximaNovaLight';
+  text-align: left;
   border: 0;
   border-bottom: 1px solid #eeeeee;
 }
