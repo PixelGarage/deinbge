@@ -37,6 +37,7 @@ header#navbar {
   .container {
     padding: 22px @grid-gutter-width / 2;
     width: 100%;
+    overflow: hidden;
 
     @media @tablet {
       padding: 25px @grid-gutter-width / 2;
@@ -56,6 +57,7 @@ header#navbar {
       a.logo {
         display: inline-block;
         position: relative;
+        left: -40px;
         margin: 0;
         padding: 0;
         width: 70%;
@@ -68,11 +70,17 @@ header#navbar {
 
         @media @tablet {
           width: 100%;
+          left: -50px;
 
           img {
             max-height: 70px;
           }
         }
+
+        @media @normal {
+          left: 0;
+        }
+
       }
 
       a.navbar-brand {
@@ -89,7 +97,8 @@ header#navbar {
 
       .navbar-toggle {
         // navbar toggle with burger
-        padding: 10px 10px 5px;
+        margin: 0;
+        padding: 7px 10px;
         border: none;
         background: none;
 

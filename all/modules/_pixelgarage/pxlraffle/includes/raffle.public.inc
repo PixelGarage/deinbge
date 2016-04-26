@@ -39,11 +39,40 @@ define('PXLRAFFLE_STATE_PAYING', 'paying');
  */
 define('PXLRAFFLE_STATE_PAID', 'paid');
 
+/**
+ * Defines the raffle maximal amount.
+ */
+define('PXLRAFFLE_MAX_AMOUNT', 30000);
+
 
 
 /* --------------------------------------------------
  * Raffle public functions
  * --------------------------------------------------*/
+
+function pxlraffle_new_raffle($start_amount = 0.0) {
+  // create raffle object
+  $raffle = new stdClass();
+  $raffle->type = 'pxl_raffle';
+  $raffle->language = LANGUAGE_NONE;
+  $raffle->uid = 1;
+  $raffle->status = 1;
+  node_object_prepare($raffle);
+
+  // add required fields
+  $raffle_count = pxlraffle_get_raffle_count() + 1;
+  $raffle->title = 'Raffle ' . $raffle_count;
+  $raffle->field_raffle_id[LANGUAGE_NONE][0]['value'] = 'R' . $raffle_count;
+  $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_STATE_COLLECTING;
+  $raffle->field_next_code[LANGUAGE_NONE][0]['value'] = 1;
+  $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = $start_amount;
+  $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] = 0.0;
+
+    // save node
+  $raffle = node_submit($raffle);
+  node_save($raffle);
+}
+
 /**
  * Returns the count of all raffles (excluding the recurring raffle).
  */
@@ -63,7 +92,8 @@ function pxlraffle_get_raffle_count () {
 /**
  * Gets the raffle nodes with the given state.
  *
- * The returned array contains all found node id's sorted by creation time in ascending order (oldest first).
+ * The returned array contains all found raffle nid's sorted by creation time in ascending order (oldest first).
+ * If no raffle with the given state is found, false is returned.
  *
  * @return bool|mixed
  */
@@ -139,4 +169,41 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
   }
 }
 
+/**
+ * Updates the current raffle with donation and fees.
+ *
+ * @param $amount   The amount donated
+ * @param $app_fee  The fee donated
+ * @return int      Returns the rest amount, if a new raffle has to be created.
+ */
+function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
+  //
+  // get current raffle
+  $current_raffle_nid = pxlraffle_get_current_raffle_nid();
+  $raffle = node_load($current_raffle_nid);
+
+  //
+  // return amount higher than 30000 CHF
+  $rest_amount = false;
+  $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount)* 1.0; // casting to float
+
+  if ($new_amount > PXLRAFFLE_MAX_AMOUNT) {
+    $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_MAX_AMOUNT;
+    $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_STATE_CLOSED;
+    $rest_amount = $new_amount - PXLRAFFLE_MAX_AMOUNT;
+  }
+  else {
+    $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = $new_amount;
+  }
+
+  //
+  // add application fees
+  $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] += $app_fee;
+
+  // save raffle
+  node_save($raffle);
+
+  // return rest amount
+  return $rest_amount;
+}
 

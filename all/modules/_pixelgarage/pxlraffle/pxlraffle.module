@@ -9,11 +9,6 @@
  */
 define('PXLRAFFLE_ADMIN_MENU_PATH', 'admin/pxlraffle');
 
-/**
- * Dummy email recipient address.
- */
-define('PXLRAFFLE_DUMMY_EMAIL_RECIPIENT', 'test@test.tld');
-
 
 
 //
@@ -78,7 +73,7 @@ function pxlraffle_menu() {
     'weight' => -7,
   );
 
-  // callback: renew the current raffle for specified user
+  // callback: manage the current raffle for specified user
   $items['user/%pxlraffle_uid/raffle/%'] = array(
     'type' => MENU_CALLBACK,
     'page callback' => '_pxlraffle_manage_user_raffle_callback',
@@ -86,16 +81,6 @@ function pxlraffle_menu() {
     'access callback' => 'user_edit_access',
     'access arguments' => array(1),
   );
-  /*
-  // callback: remove the specified user from a raffle
-  $items['user/%pxlraffle_uid/raffle/remove'] = array(
-    'type' => MENU_CALLBACK,
-    'page callback' => '_pxlraffle_remove_raffle_callback',
-    'page arguments' => array(1),
-    'access callback' => 'user_edit_access',
-    'access arguments' => array(1),
-  );
-*/
   return $items;
 }
 
@@ -108,8 +93,30 @@ function pxlraffle_uid_load($uid) {
   }
 }
 
+
+/**
+ * Hook called after the stripe charge transaction has been successfully performed.
+ *
+ * Used to update the current raffle with the donated money and update raffle state if needed.
+ *
+ * @param $amount     The charged amount
+ * @param $currency   The currency of the charged amount.
+ */
+function pxlraffle_charge_completed($amount, $app_fees, $currency) {
+  //
+  // update current raffle with the donated amount
+  $rest_amount = pxlraffle_update_current_raffle_donation($amount, $app_fees);
+
+  //
+  // create new raffle open for donations
+  if ($rest_amount) {
+    pxlraffle_new_raffle($rest_amount);
+  }
+}
+
+
 /* --------------------------------------------------
- * PxlRaffle callbacks
+ * PxlRaffle menu callbacks
  * --------------------------------------------------*/
 
 function _pxlraffle_manage_user_raffle_callback ($user, $action) {
@@ -254,7 +261,7 @@ function _pxlraffle_odometer_theme_attachments (&$vars, $delta) {
 
 
 /* --------------------------------------------------
- * PxlRaffle info block
+ * PxlRaffle blocks
  * --------------------------------------------------*/
 /**
  * Implements hook_block_info().

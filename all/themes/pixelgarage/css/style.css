@@ -12257,6 +12257,7 @@ header#navbar {
 header#navbar .container {
   padding: 22px 15px;
   width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   header#navbar .container {
@@ -12280,6 +12281,7 @@ header#navbar .container .navbar-header {
 header#navbar .container .navbar-header a.logo {
   display: inline-block;
   position: relative;
+  left: -40px;
   margin: 0;
   padding: 0;
   width: 70%;
@@ -12292,9 +12294,15 @@ header#navbar .container .navbar-header a.logo img {
 @media screen and (min-width: 768px) {
   header#navbar .container .navbar-header a.logo {
     width: 100%;
+    left: -50px;
   }
   header#navbar .container .navbar-header a.logo img {
     max-height: 70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header#navbar .container .navbar-header a.logo {
+    left: 0;
   }
 }
 header#navbar .container .navbar-header a.navbar-brand {
@@ -12309,7 +12317,8 @@ header#navbar .container .navbar-header a.navbar-brand {
   line-height: 1;
 }
 header#navbar .container .navbar-header .navbar-toggle {
-  padding: 10px 10px 5px;
+  margin: 0;
+  padding: 7px 10px;
   border: none;
   background: none;
 }

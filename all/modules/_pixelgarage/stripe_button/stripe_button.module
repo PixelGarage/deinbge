@@ -35,18 +35,7 @@ function stripe_button_menu() {
  * AJAX callback function of the stripe token creation.
  */
 function stripe_button_token_callback() {
-  // load stripe php library
-  $library = libraries_load('stripe');
-  if (!$library['loaded']) {
-    drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
-    print '<div class="stripe-message">' . t("NO charge!\nStripe API missing") . '</div>';
-    drupal_exit();
-  }
-
-  // set the private API key
-  \Stripe\Stripe::setApiKey(_stripe_api_secret_key());
-
-  // get the credit card details
+  // get/set charge details
   $token = $_POST['stripeToken'];
   $button_id = $_POST['btnID'];
   $amount = $_POST['amount'];
@@ -60,6 +49,26 @@ function stripe_button_token_callback() {
     '@curr' => $currency,
     '@date' => $date,
   ));
+
+  // load stripe php library
+  $library = libraries_load('stripe');
+  if (!$library['loaded']) {
+    //
+    // return error button with message
+    $button = theme('stripe_button_fix_value', array(
+        'id' => $button_id,
+        'amount' => -1,
+        'currency' => $currency,
+        'message' => t("NO charge!\nStripe API missing"),
+      )
+    );
+    drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+    print $button;
+    drupal_exit();
+  }
+
+  // set the private API key
+  \Stripe\Stripe::setApiKey(_stripe_api_secret_key());
 
   // Create the charge - this will charge the user's card
   $msg = false;
@@ -83,6 +92,12 @@ function stripe_button_token_callback() {
     $error = $e_json['error'];
     $msg = t($error['message']);
   }
+  finally {
+    //
+    // invoke hook for all modules
+    $app_fees = 0;
+    module_invoke_all('charge_completed', ($amount / 100), ($app_fees / 100), $currency);
+  }
 
   // create button (amount > 0 means normal button, amount == 0 means success button, amount < 0 means failure button)
   $success = !$msg ? 0 : -1;
@@ -94,13 +109,9 @@ function stripe_button_token_callback() {
     )
   );
 
-  // create error message
-  //$errorMsg  = $msg ? '<div class="label label-warning stripe-message">' . t("Error: @msg", array('@msg'=>$msg)) . '</div>' : '';
-
   // send answer to client
   drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
   print $button;
-  //print $errorMsg;
   drupal_exit();
 }
 
@@ -456,7 +467,8 @@ function stripe_button_field_formatter_view($entity_type, $entity, $field, $inst
   $field_name = $instance['field_name'];
 
   // create drupal settings array
-  $logo_path = theme_get_setting('logo_path', 'pixelgarage');
+  $path = drupal_get_path('module', 'stripe_button');
+  $logo_path = $path . '/images/stripe_logo.png';
   $site_name = variable_get('site_name');
   $js_settings = array (
     'stripe_button' => array(
@@ -534,7 +546,6 @@ function stripe_button_field_formatter_view($entity_type, $entity, $field, $inst
   }
 
   // add Checkout javascript
-  $path = drupal_get_path('module', 'stripe_button');
   drupal_add_js(STRIPE_CHECKOUT_JS_PATH, 'external');
   drupal_add_js($path . '/js/stripe_button.js');
 
