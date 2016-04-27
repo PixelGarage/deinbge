@@ -1,0 +1,174 @@
+/*
+ *  User profile component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+.resp-user-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-color-main; @radius: @border-radius-large) {
+  display: inline-block;
+  margin: 10px;
+  padding: 7px 15px;
+  font-family: @pxl-text-font-bold;
+  font-size: @size;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: @color;
+  outline: none;
+  opacity: 1.0;
+  #pxl-mixins.border-radius(@radius);
+  border: none;
+  background-color: @bg-color;
+
+  &:hover, &:focus {
+    opacity: 0.7;
+  }
+}
+
+
+
+
+// General settings
+// -------------------------
+body.page-user {
+  .main-container {
+    .container {
+      .row {
+        .col-sm-12 {
+          ul.tabs--primary {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+form#user-profile-form {
+  margin: 0 auto @panel-separator-height;
+
+  .ds-form {
+    .row {
+      .col-sm-12 {
+        .panel.group-raffle-info {
+          margin: 20px @container-inner-margin @panel-separator-height;
+          border: none;
+          #pxl-mixins.border-radius(6px);
+          background-color: @pxl-bg-panel-item;
+
+          .panel-heading {
+            border: none;
+            background: none;
+            text-align: center;
+
+            .panel-title {
+              display: inline-block;
+              margin-bottom: 20px;
+              font-family: @pxl-text-font-bold;
+              font-size: @font-size-pane-title;
+              text-align: center;
+              color: @text-color;
+            }
+          }
+
+          .panel-body {
+            p {
+              margin-bottom: 20px;
+              font-family: @pxl-text-font;
+              font-size: @font-size-pane-subtitle;
+              text-align: center;
+            }
+
+            .field-name-field-raffle-code {
+              .form-item {
+                text-align: center;
+
+                label.control-label {
+                  display: inline-block;
+                  width: 120px;
+                  font-family: @pxl-text-font;
+                  font-size: @font-size-pane-subtitle;
+                }
+
+                input.form-text {
+                  display: inline-block;
+                  width: 150px;
+                  font-family: @pxl-text-font;
+                  font-size: @font-size-pane-subtitle;
+                  color: #fff;
+                  border: none;
+                  #pxl-mixins.border-radius(0);
+                  background-color: #000;
+                }
+
+                .help-block {
+
+                }
+              }
+            }
+
+            .raffle-action-container {
+              text-align: center;
+
+              a.btn-default {
+                .resp-user-button;
+              }
+            }
+          }
+        }
+
+        #edit-account,
+        #edit-field-phone {
+          margin: 0 2*@container-inner-margin @panel-separator-height;
+        }
+
+        .form-group {
+          .form-item {
+            label.control-label {
+
+            }
+
+            input.form-control {
+              border: 1px solid @pxl-color-border;
+
+              &:focus {
+                #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+                #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+                border: 1px solid @pxl-color-main;
+              }
+            }
+
+            .help-block {
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .form-actions {
+    text-align: center;
+
+    .btn-success {
+      .resp-user-button;
+
+      .icon {
+        display: none;
+      }
+    }
+
+    .btn-default {
+      .resp-user-button;
+
+      .icon {
+        display: none;
+      }
+    }
+  }
+}

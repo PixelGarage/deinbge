@@ -115,6 +115,26 @@ form#user-login {
     border-right: 1px solid @hr-border;
   }
 
+  .form-item {
+    label.control-label {
+
+    }
+
+    input.form-control {
+      border: 1px solid @pxl-color-border;
+
+      &:focus {
+        #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+        #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+        border: 1px solid @pxl-color-main;
+      }
+    }
+
+    .help-block {
+
+    }
+  }
+
   .form-actions-wrapper {
     position: relative;
     padding: 1em 0 0;
@@ -157,6 +177,26 @@ form#user-login {
   max-width: 40em;
   vertical-align: top;
   margin: 1em 0;
+
+  .form-item {
+    label.control-label {
+
+    }
+
+    input.form-control {
+      border: 1px solid @pxl-color-border;
+
+      &:focus {
+        #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+        #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+        border: 1px solid @pxl-color-main;
+      }
+    }
+
+    .help-block {
+
+    }
+  }
 
   .form-actions {
     margin-top: 2em;
