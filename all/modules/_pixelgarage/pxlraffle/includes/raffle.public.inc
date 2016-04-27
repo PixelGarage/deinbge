@@ -160,7 +160,7 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
       return $default_msg;
     case 'closed':
       if ($raffle_time > time()) {
-        return date('j. F Y \u\m H:i', $raffle_time);
+        return date('j. F Y', $raffle_time);
       }
       else {
         return $default_msg;
@@ -185,7 +185,7 @@ function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
   //
   // return amount higher than 30000 CHF
   $rest_amount = false;
-  $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount)* 1.0; // casting to float
+  $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $app_fee)* 1.0; // casting to float
 
   if ($new_amount > PXLRAFFLE_MAX_AMOUNT) {
     $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_MAX_AMOUNT;

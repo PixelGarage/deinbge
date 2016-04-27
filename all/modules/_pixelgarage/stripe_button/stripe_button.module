@@ -95,7 +95,7 @@ function stripe_button_token_callback() {
   finally {
     //
     // invoke hook for all modules
-    $app_fees = 0;
+    $app_fees = $amount * 0.029 + 30; // Stripe fees
     module_invoke_all('charge_completed', ($amount / 100), ($app_fees / 100), $currency);
   }
 
@@ -106,6 +106,8 @@ function stripe_button_token_callback() {
       'amount' => $success,
       'currency' => $currency,
       'message' => $msg,
+      'label_title' => t('Thank you!'),
+      'label_text' => t('for your contribution'),
     )
   );
 
@@ -129,6 +131,8 @@ function stripe_button_custom_form_callback () {
       'id' => $button_id,
       'amount' => $new_amount,
       'currency' => $currency,
+      'label_title' => t('Custom amount'),
+      'label_text' => t('into basic income pot'),
     )
   );
 

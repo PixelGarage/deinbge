@@ -23,8 +23,24 @@ function pixelgarage_preprocess_page(&$vars) {
   // hide titles on login forms
   pg_login_preprocess_page($vars);
 
-  // replace logo with .svg
-  $vars['logo'] = str_replace('.jpg', '.svg', $vars['logo']);
+  // replace logo with .svg and make it language dependant
+  global $language;
+
+  switch ($language->language) {
+    case 'en':
+      $vars['logo'] = str_replace('_d.png', '_e.png', $vars['logo']);
+      break;
+    case 'fr':
+      $vars['logo'] = str_replace('_d.png', '_f.png', $vars['logo']);
+      break;
+    case 'it':
+      $vars['logo'] = str_replace('_d.png', '_i.png', $vars['logo']);
+      break;
+    case 'de':
+    default:
+      //$vars['logo'] = str_replace('.jpg', '.svg', $vars['logo']);
+      break;
+  }
 }
 
 

@@ -9008,7 +9008,7 @@ form#user-login {
 }
 @media screen and (min-width: 768px) {
   .follow-links {
-    text-align: left;
+    text-align: right;
   }
 }
 .follow-links .follow-link-wrapper {
@@ -9025,6 +9025,7 @@ form#user-login {
   background-image: none !important;
   text-decoration: none;
   text-align: center;
+  opacity: 1.0;
 }
 .follow-links .follow-link-wrapper a.follow-link.follow-link-facebook:before {
   content: "\f09a";
@@ -9048,7 +9049,7 @@ form#user-login {
   content: "\f09e";
 }
 .follow-links .follow-link-wrapper a.follow-link:hover {
-  color: #929295;
+  opacity: 0.7;
 }
 /*
  *  Language block component
@@ -12753,7 +12754,7 @@ footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-fie
     text-align: right;
   }
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum {
-    margin-top: 90px;
+    margin-top: 45px;
   }
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
     text-align: right;
