@@ -8763,6 +8763,9 @@ form#user-login {
 #user-create-account .create-account-description {
   margin-bottom: 6px;
 }
+#user-create-account .create-account-description p {
+  text-align: left;
+}
 #user-create-account .form-actions-wrapper {
   position: relative;
   padding: 1em 0 0;
