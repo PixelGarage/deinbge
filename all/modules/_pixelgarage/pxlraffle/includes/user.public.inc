@@ -154,12 +154,12 @@ function pxlraffle_get_user_raffle_info_html($user) {
     }
     else {
       // user is part of an old raffle
-      $msg = t('You are part of a past raffle. Please press "Add to current raffle" to renew your participation in the current raffle.');
+      $msg = t('You are part of a past raffle. Please press "Add to raffle" to renew your participation in the current raffle.');
     }
   }
   else {
     // user is not part of a raffle
-    $msg = t('You are currently not part of a raffle. Please press "Add to current raffle" to take part in the current raffle.');
+    $msg = t('You are currently not part of a raffle. Please press "Add to raffle" to take part in the current raffle.');
   }
   return '<div class="user-raffle-info">' . $msg . '</div>';
 }
