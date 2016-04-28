@@ -45,8 +45,8 @@ function pixelgarage_form_user_login_alter(&$form, &$form_state, $form_id) {
   if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL) != USER_REGISTER_ADMINISTRATORS_ONLY) {
     $form['actions']['#suffix'] .= '<div id="user-create-account" class="create-account clearfix">';
     $form['actions']['#suffix'] .= "\n<h2>" . t('I don\'t have an account') . "</h2>";
-    $form['actions']['#suffix'] .= "\n<div class='create-account-description'><p>" . t("To participate in a raffle you need to register so that we can contact you in case of a win.\n Press the button below to apply for an account.") . "</p>";
-    $form['actions']['#suffix'] .= "\n<p>" . t("After the registration you will receive an email with a one-time link to complete and activate your account. <strong>Be aware</strong> that you are only part of the next raffle, if you approve your email, so that we are able to contact you.") . "</p></div>";
+    $form['actions']['#suffix'] .= "\n<div class='create-account-description'><p>" . t("To participate in a raffle you have to register here so we can contact you in case of a win.") . "</p>";
+    $form['actions']['#suffix'] .= "\n<p>" . t("After registering you will receive a verification e-mail. Once this is confirmed, you are participating in the raffle.") . "</p></div>";
     $form['actions']['#suffix'] .= "\n<div class='form-actions-wrapper'>" . l(t('Create an account'), 'user/register', array('attributes' => array('class' => array('login-register'), 'title' => t('Create a new account'))));
     $form['actions']['#suffix'] .= '</div></div>';
   }

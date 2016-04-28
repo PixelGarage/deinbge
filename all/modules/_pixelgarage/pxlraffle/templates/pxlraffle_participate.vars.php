@@ -43,7 +43,7 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   }
   else {
     // user not logged in, show login/registration form
-    $vars['participation_slogan'] = t("It's easy to participate in the current raffle '@number'. Just press the button below and register.", array('@number' => $raffle_id));
+    $vars['participation_slogan'] = t("The current raffle is «@number». Register here now. Good luck!", array('@number' => $raffle_id));
     $vars['participation_acc_title'] = t('Participate');
     $vars['participation_acc_title_collapsed'] = t('Hide login');
     $vars['class_collapsed'] = 'collapsed';
