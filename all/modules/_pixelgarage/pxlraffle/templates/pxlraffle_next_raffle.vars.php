@@ -10,6 +10,7 @@ function template_preprocess_pxlraffle_next_raffle(&$vars) {
   $current_raffle = node_load($raffle_nid);
   $next_raffle = $current_raffle;
   $raffle_ids = '';
+  $count = 0;
   $closed_raffles = pxlraffle_get_raffles_with_state('closed');
 
   if ($closed_raffles) {
@@ -23,13 +24,15 @@ function template_preprocess_pxlraffle_next_raffle(&$vars) {
       $raffle_ids .= strtoupper($closed_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']) . ', ';
     }
     $raffle_ids = rtrim($raffle_ids, ' ,');
+    $count = count($closed_raffles);
   }
+
   $vars['next_raffle_slogan'] = t("The winner receives 2500 CHF per month for one year.\nUnconditionally.");
   $vars['next_raffle_label'] = t('Next raffle:');
   $vars['next_raffle_date'] = pxlraffle_get_raffle_date($next_raffle);
-  $vars['next_raffle_info'] = (count($closed_raffles) > 1) ?
+  $vars['next_raffle_info'] = ($count > 1) ?
     t('The raffles with the IDs "@numbers" are ready to be raffled.', array('@numbers' => $raffle_ids)) :
-    (count($closed_raffles) == 1) ?
+    ($count == 1) ?
       t('The raffle with ID "@numbers" is ready to be raffled.', array('@numbers' => $raffle_ids)) :
     t('At the moment no raffle is ready to be raffled.');
 }
