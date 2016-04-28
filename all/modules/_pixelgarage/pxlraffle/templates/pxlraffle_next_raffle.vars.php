@@ -24,7 +24,7 @@ function template_preprocess_pxlraffle_next_raffle(&$vars) {
     }
     $raffle_ids = rtrim($raffle_ids, ' ,');
   }
-  $vars['next_raffle_slogan'] = t("During one year you get 2500 CHF per month.\nUnconditionally.");
+  $vars['next_raffle_slogan'] = t("The winner receives 2500 CHF per month for one year.\nUnconditionally.");
   $vars['next_raffle_label'] = t('Next raffle:');
   $vars['next_raffle_date'] = pxlraffle_get_raffle_date($next_raffle);
   $vars['next_raffle_info'] = (count($closed_raffles) > 1) ?

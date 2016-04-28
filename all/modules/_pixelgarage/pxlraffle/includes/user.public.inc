@@ -141,7 +141,7 @@ function pxlraffle_get_user_raffle_info_html($user) {
 
     if ($user_raffle_nid == $recurring_raffle_nid) {
       // user has a subscription
-      $msg = '<div class="user-raffle-number">' . t('You have a subscription and participate automatically in all raffles!') . '</div>';
+      $msg = '<div class="user-raffle-number">' . t('You have a subscription and will automatically participate in all raffles!') . '</div>';
       $msg .= '<div class="user-raffle-code">' . t('Your unique raffle code is: ') . '<span class="raffle-code">' . $user_raffle_code . '</span></div>';
     }
     else if (in_array($user_raffle_state, array(PXLRAFFLE_STATE_COLLECTING, PXLRAFFLE_STATE_CLOSED))) {
@@ -154,12 +154,12 @@ function pxlraffle_get_user_raffle_info_html($user) {
     }
     else {
       // user is part of an old raffle
-      $msg = t('You are part of an old raffle. Please press "Add to current raffle" to renew your participation in the current raffle.');
+      $msg = t('You are part of a past raffle. Please press "Add to current raffle" to renew your participation in the current raffle.');
     }
   }
   else {
     // user is not part of a raffle
-    $msg = t('You are actually not part of a raffle. Please press "Add to current raffle" to take part in the current raffle.');
+    $msg = t('You are currently not part of a raffle. Please press "Add to current raffle" to take part in the current raffle.');
   }
   return '<div class="user-raffle-info">' . $msg . '</div>';
 }

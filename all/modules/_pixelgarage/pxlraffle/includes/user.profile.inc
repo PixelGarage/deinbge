@@ -46,7 +46,7 @@ function pxlraffle_form_user_profile_form_alter (&$form, &$form_state, $form_id)
     $raffle = node_load($raffle_id);
     $raffle_id = strtoupper($raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
     $raffle_date = pxlraffle_get_raffle_date($raffle);
-    $form['field_raffle_code']['#prefix'] = '<p>' . t('You participate in raffle "@number". The raffle date is @date.', array('@number' => $raffle_id, '@date' => $raffle_date)) . '</p>';
+    $form['field_raffle_code']['#prefix'] = '<p>' . t('You are participating in raffle "@number". The raffle date is @date.', array('@number' => $raffle_id, '@date' => $raffle_date)) . '</p>';
   }
   else {
     $form['field_raffle_code']['#prefix'] = '<p>' . t('You are not part of a raffle.') . '</p>';
