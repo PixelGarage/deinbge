@@ -9660,7 +9660,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
   color: #333333;
 }
 #pxlraffle-participate .participation .participation-slogan {
-  margin-bottom: 20px;
+  margin: 20px 0;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;

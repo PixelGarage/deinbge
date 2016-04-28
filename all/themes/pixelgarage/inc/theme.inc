@@ -23,6 +23,7 @@ function pixelgarage_links__locale_block(&$vars) {
  */
 function pixelgarage_stripe_button_fix_value($variables) {
   // Render Stripe Checkout button
+  $text = t($variables['label_text']);
   if ($variables['amount'] > 0) {
     //
     // Create initial button
@@ -39,7 +40,7 @@ function pixelgarage_stripe_button_fix_value($variables) {
       $variables['label_title'] = t('One hour');
     }
     else if ($amount <= 15) {
-      $variables['label_title'] = t('Three hour');
+      $variables['label_title'] = t('Three hours');
     }
     else if ($amount <= 50) {
       $variables['label_title'] = t('Half a day');
@@ -56,7 +57,6 @@ function pixelgarage_stripe_button_fix_value($variables) {
     else if ($amount <= 2500) {
       $variables['label_title'] = t('One month');
     }
-    $text = t($variables['label_text']);
 
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
@@ -71,7 +71,7 @@ function pixelgarage_stripe_button_fix_value($variables) {
     $label = t("Yes");
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $variables['label_text'] . '</div>' .
+      '<div class="stripe-button-text">' . $text . '</div>' .
       '<button id="' . $variables['id'] . '" type="button"' .
       ' class="btn btn-success stripe-button" disabled>' .
       '<span class="fa fa-check"></span>' . $label .
@@ -81,12 +81,13 @@ function pixelgarage_stripe_button_fix_value($variables) {
     //
     // failed payment, create fail button (disabled)
     $label = t("No");
+    $msg = t($variables['message']);
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $variables['label_text'] . '</div>' .
+      '<div class="stripe-button-text">' . $text . '</div>' .
       '<button id="' . $variables['id'] . '" type="button"' .
       ' class="btn btn-warning stripe-button" data-toggle="popover" data-trigger="hover" data-placement="auto bottom"'.
-      ' title="Stripe Error" data-content="' . $variables['message']. '">' .
+      ' title="Stripe Error" data-content="' . $msg . '">' .
       '<span class="fa fa-times"></span>' . $label .
       '</button></div>';
   }

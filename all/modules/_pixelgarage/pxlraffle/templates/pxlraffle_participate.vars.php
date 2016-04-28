@@ -11,7 +11,7 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   $current_raffle = node_load($raffle_nid);
   $raffle_id = strtoupper($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
 
-  $vars['title'] = t('Participate');
+  //$vars['title'] = t('Participate');
 
   //
   // user login dependant variables
@@ -32,8 +32,8 @@ function template_preprocess_pxlraffle_participate(&$vars) {
     $remove_url = '/user/' . $uid . '/raffle/remove';
     $markup = pxlraffle_get_user_raffle_info_html($full_user);
     $markup .= '<div class="user-raffle-actions">' .
-      l(t('Add to raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Add to raffle')))) .
-      l(t('Remove from raffle'), $remove_url, array('attributes' => array('class' => array('btn btn-default remove-raffle-button'), 'title' => t('Remove from raffle')))) .
+      l(t('Subscribe'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Add to raffle')))) .
+      l(t('Unsubscribe'), $remove_url, array('attributes' => array('class' => array('btn btn-default remove-raffle-button'), 'title' => t('Remove from raffle')))) .
       '</div>';
     $vars['participation_acc_body'] = array(
       '#markup' => $markup,

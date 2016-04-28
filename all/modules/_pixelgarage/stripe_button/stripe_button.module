@@ -107,7 +107,7 @@ function stripe_button_token_callback() {
       'currency' => $currency,
       'message' => $msg,
       'label_title' => t('Thank you!'),
-      'label_text' => t('for your contribution'),
+      'label_text' => t('For your contribution'),
     )
   );
 
@@ -206,8 +206,8 @@ function theme_stripe_button_fix_value($variables) {
     $amount = $variables['amount'] * 100 / 100; // no decimal value if not needed
     $label = t('@amount @currency', array('@amount' => $amount, '@currency' => $currency));
     $output = '<div class="stripe-button-container">' .
-      '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $variables['label_text'] . '</div>' .
+      '<div class="stripe-button-title">' . t($variables['label_title']) . '</div>' .
+      '<div class="stripe-button-text">' . t($variables['label_text']) . '</div>' .
       '<button id="' . $variables['id'] . '" type="button" class="btn btn-normal stripe-button">' .
       $label .
       '</button></div>';
@@ -217,8 +217,8 @@ function theme_stripe_button_fix_value($variables) {
     // successful payment, create success button (disabled)
     $label = t("Yes");
     $output = '<div class="stripe-button-container">' .
-      '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $variables['label_text'] . '</div>' .
+      '<div class="stripe-button-title">' . t($variables['label_title']) . '</div>' .
+      '<div class="stripe-button-text">' . t($variables['label_text']) . '</div>' .
       '<button id="' . $variables['id'] . '" type="button"' .
       ' class="btn btn-success stripe-button" disabled>' .
       '<span class="fa fa-check"></span>' . $label .
@@ -229,11 +229,11 @@ function theme_stripe_button_fix_value($variables) {
     // failed payment, create fail button (disabled)
     $label = t("No");
     $output = '<div class="stripe-button-container">' .
-      '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $variables['label_text'] . '</div>' .
+      '<div class="stripe-button-title">' . t($variables['label_title']) . '</div>' .
+      '<div class="stripe-button-text">' . t($variables['label_text']) . '</div>' .
       '<button id="' . $variables['id'] . '" type="button"' .
       ' class="btn btn-warning stripe-button" data-toggle="popover" data-trigger="hover" data-placement="auto bottom"'.
-      ' title="Stripe Error" data-content="' . $variables['message']. '">' .
+      ' title="Stripe Error" data-content="' . t($variables['message']) . '">' .
       '<span class="fa fa-times"></span>' . $label .
       '</button></div>';
   }
@@ -262,8 +262,8 @@ function theme_stripe_button_custom_value($variables) {
   // create custom amount form
   $render_form = drupal_get_form('stripe_button_custom_form');
   $output = '<div class="stripe-button-container">' .
-    '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-    '<div class="stripe-button-text">' . $variables['label_text'] . '</div>' .
+    '<div class="stripe-button-title">' . t($variables['label_title']) . '</div>' .
+    '<div class="stripe-button-text">' . t($variables['label_text']) . '</div>' .
     drupal_render($render_form) .
     '</div>';
 
@@ -494,8 +494,8 @@ function stripe_button_field_formatter_view($entity_type, $entity, $field, $inst
     'shippingAddress' => $settings['stripe_button_shipping'],
     'allowRememberMe' => $settings['stripe_button_remember'],
   );
-  $label_title = $settings['stripe_button_label_title'];
-  $label_text = $settings['stripe_button_label_text'];
+  $label_title = t($settings['stripe_button_label_title']);
+  $label_text = t($settings['stripe_button_label_text']);
 
   switch ($display['type']) {
     // This formatter outputs a button with the number as label.

@@ -152,7 +152,7 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
   $state = $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'];
   $raffle_date = $raffle->field_raffle_date[LANGUAGE_NONE][0]['value'];
   $raffle_time = strtotime($raffle_date);
-  $default_msg = t('@msg', array('@msg' => $undefined));
+  $default_msg = t($undefined);
 
   switch ($state) {
     case 'collecting':
