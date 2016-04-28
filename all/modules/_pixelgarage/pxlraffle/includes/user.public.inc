@@ -43,7 +43,7 @@ function pxlraffle_get_user_count_in_raffle ($raffle_nid, $include_subscriptions
 function pxlraffle_add_user_to_current_raffle(&$user, $do_save = false) {
   //
   // add user to current raffle (Start conditions: until 11. May 2016 to closed raffle)
-  $raffle1_time = strtotime("12-may-16");
+  /*$raffle1_time = strtotime("12-may-16");
   if (time() < $raffle1_time) {
     // add users to raffle 1
     $nids = pxlraffle_get_raffles_with_state(PXLRAFFLE_STATE_CLOSED);
@@ -57,7 +57,8 @@ function pxlraffle_add_user_to_current_raffle(&$user, $do_save = false) {
   else {
     // add user to current raffle
     $current_raffle_nid = pxlraffle_get_current_raffle_nid();
-  }
+  }*/
+  $current_raffle_nid = pxlraffle_get_current_raffle_nid();
   $user->field_current_raffle[LANGUAGE_NONE][0]['target_id'] = $current_raffle_nid;
 
   //
