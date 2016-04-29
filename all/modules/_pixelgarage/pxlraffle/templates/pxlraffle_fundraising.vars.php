@@ -17,7 +17,7 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
   $vars['total_amount'] = number_format(PXLRAFFLE_MAX_AMOUNT, 2, ".", "'");
   $current_amount = empty($current_raffle->field_raffle_donation) ? 0 : $current_raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'];
   $vars['current_amount'] = number_format($current_amount, 2, ".", "'");;
-  $fill_level = $current_amount / PXLRAFFLE_MAX_AMOUNT * 100;
+  $fill_level = min($current_amount / PXLRAFFLE_MAX_AMOUNT * 100, 100);
   $vars['fill_level'] = $fill_level;
   $vars['current_fees'] = empty($current_raffle->field_club_fees) ? 0 : $current_raffle->field_club_fees[LANGUAGE_NONE][0]['value'];
   $vars['explanation'] = t("As soon as 30'000 CHF are collected, a raffle takes place.");

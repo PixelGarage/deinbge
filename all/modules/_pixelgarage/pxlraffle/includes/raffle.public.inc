@@ -187,7 +187,8 @@ function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
   $rest_amount = false;
   $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $app_fee)* 1.0; // casting to float
 
-  if ($new_amount > PXLRAFFLE_MAX_AMOUNT) {
+  // TODO: correct raffle workflow
+  if ($new_amount > 10*PXLRAFFLE_MAX_AMOUNT) {
     $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_MAX_AMOUNT;
     $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_STATE_CLOSED;
     $rest_amount = $new_amount - PXLRAFFLE_MAX_AMOUNT;
