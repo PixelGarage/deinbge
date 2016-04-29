@@ -10,7 +10,7 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
 
   //
   // get current raffle numbers to be displayed
-  global $base_url;
+  global $base_url, $language;
 
   $vars['title'] = t('Basic Income Pot');
   $vars['raffle_count'] = pxlraffle_get_raffle_count();
@@ -22,7 +22,20 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
   $vars['current_fees'] = empty($current_raffle->field_club_fees) ? 0 : $current_raffle->field_club_fees[LANGUAGE_NONE][0]['value'];
   $vars['explanation'] = t("As soon as 30'000 CHF are collected, a raffle takes place.");
   $vars['label_participate'] = t('Participate');
-  $vars['url_participate'] = $base_url . '/participate';
+  switch($language->language) {
+    case 'en':
+      $vars['url_participate'] = $base_url . '/en/participate';
+      break;
+    case 'de':
+      $vars['url_participate'] = $base_url . '/de/participate';
+      break;
+    case 'fr':
+      $vars['url_participate'] = $base_url . '/fr/participate';
+      break;
+    case 'it':
+      $vars['url_participate'] = $base_url . '/it/participate';
+      break;
+  }
   if ($fill_level < 75) {
     $trans_x = -50;
   }
