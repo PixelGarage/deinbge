@@ -35,6 +35,9 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
     case 'it':
       $vars['url_participate'] = $base_url . '/it/participate';
       break;
+    default:
+      $vars['url_participate'] = $base_url . '/participate';
+      break;
   }
   if ($fill_level < 75) {
     $trans_x = -50;
