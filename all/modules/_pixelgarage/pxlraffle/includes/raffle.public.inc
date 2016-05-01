@@ -154,13 +154,31 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
   $raffle_time = strtotime($raffle_date);
   $default_msg = t($undefined);
 
+  // set locale
+  global $language;
+
+  switch ($language->language) {
+    case 'de':
+      setlocale(LC_ALL, 'de_CH');
+      break;
+    case 'fr':
+      setlocale(LC_ALL, 'fr_FR');
+      break;
+    case 'it':
+      setlocale(LC_ALL, 'it_IT');
+      break;
+    case 'en':
+      setlocale(LC_ALL, 'en_US');
+      break;
+  }
+
   switch ($state) {
     case 'collecting':
     default:
       return $default_msg;
     case 'closed':
       if ($raffle_time > time()) {
-        return date('j. F Y', $raffle_time);
+        return strftime('%e. %B %Y', $raffle_time); // date('j. F Y', $raffle_time);
       }
       else {
         return $default_msg;
@@ -177,6 +195,10 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
  * @return int      Returns the rest amount, if a new raffle has to be created.
  */
 function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
+  //
+  // open transaction to prevent doubled raffle codes
+  $transaction = db_transaction(); // commit when $transaction goes out of scope
+
   //
   // get current raffle
   $current_raffle_nid = pxlraffle_get_current_raffle_nid();

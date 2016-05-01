@@ -93,10 +93,12 @@ function stripe_button_token_callback() {
     $msg = t($error['message']);
   }
   finally {
-    //
-    // invoke hook for all modules
-    $app_fees = $amount * 0.029 + 30; // Stripe fees
-    module_invoke_all('charge_completed', ($amount / 100), ($app_fees / 100), $currency);
+    if (!$msg) {
+      //
+      // invoke hook for all modules, if charge was successful
+      $app_fees = $amount * 0.029 + 30; // Stripe fees
+      module_invoke_all('charge_completed', ($amount / 100), ($app_fees / 100), $currency);
+    }
   }
 
   // create button (amount > 0 means normal button, amount == 0 means success button, amount < 0 means failure button)
