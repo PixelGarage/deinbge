@@ -9760,6 +9760,65 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
   opacity: 0.7;
 }
 /*
+ *  Block stripe fees component
+ * --------------------------------------------------*/
+#stripe-button-fee-block {
+  margin: 40px 0 30px;
+}
+#stripe-button-fee-block .fee-text-top {
+  margin-bottom: 10px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #333333;
+}
+#stripe-button-fee-block .fee-radios-wrapper {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#stripe-button-fee-block .fee-radios-wrapper .fee-radio {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  padding: 15px 0 15px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #333333;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+  background-color: transparent;
+}
+#stripe-button-fee-block .fee-radios-wrapper .fee-radio:hover,
+#stripe-button-fee-block .fee-radios-wrapper .fee-radio:focus,
+#stripe-button-fee-block .fee-radios-wrapper .fee-radio.selected {
+  color: #fff;
+  border: 1px solid #4ba5eb;
+  background-color: #4ba5eb;
+}
+#stripe-button-fee-block .fee-answer-wrapper {
+  margin-bottom: 10px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #333333;
+}
+#stripe-button-fee-block .fee-text-stripe-fee {
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #333333;
+}
+/*
  *  User profile component
  * --------------------------------------------------*/
 body.page-user .main-container .container .row .col-sm-12 ul.tabs--primary {

@@ -28,6 +28,13 @@ function stripe_button_menu() {
     'access callback' => TRUE,
     'page callback' => 'stripe_button_custom_form_callback',
   );
+
+  // handles AJAX stripe button fees
+  $items['stripe/ajax/fee'] = array(
+    'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    'page callback' => 'stripe_button_fee_callback',
+  );
   return $items;
 }
 
@@ -94,10 +101,17 @@ function stripe_button_token_callback() {
   }
   finally {
     if (!$msg) {
+      // get application fee if available
+      $app_fee = 0;
+      $session_data = &stripe_button_session_data();
+      if (isset($session_data['selected_fee'])) {
+        $app_fee = $amount * $session_data['selected_fee'];
+      }
+      $stripe_fee = round($amount * 0.029) + 30;
+
       //
       // invoke hook for all modules, if charge was successful
-      $app_fees = $amount * 0.029 + 30; // Stripe fees
-      module_invoke_all('charge_completed', ($amount / 100), ($app_fees / 100), $currency);
+      module_invoke_all('charge_completed', ($amount / 100), ($stripe_fee / 100), ($app_fee / 100), $currency);
     }
   }
 
@@ -144,6 +158,41 @@ function stripe_button_custom_form_callback () {
   drupal_exit();
 }
 
+/**
+ * AJAX callback on click of fee radios. Used to set user selected fee percentage.
+ */
+function stripe_button_fee_callback() {
+  $selected_fee = $_POST['selectedFee'];
+  $session_data = &stripe_button_session_data();
+  $session_data['selected_fee'] = floatval($selected_fee);
+
+  // create answer depending on selected fee
+  switch($selected_fee) {
+    case 0.0:
+      $answer = t('<strong>Too bad!</strong> We are entirely financed by voluntary comission. Your contribution would make a difference.');
+      break;
+    case 0.05:
+      $answer = t('<strong>Thank you!</strong> Your contribution shows us that you appreciate our work.');
+      break;
+    case 0.1:
+    default:
+      $answer = t('<strong>Wow!</strong> Your contribution allows us to keep the platform deinbge.ch up and running.');
+      break;
+    case 0.15:
+      $answer = t('<strong>Amazing!</strong> Your contribution enables us to enhance the platform functionality.');
+      break;
+    case 0.2:
+      $answer = t('<strong>Absolutely awesome!</strong> We are very grateful that you honor our work so generously.');
+      break;
+
+  }
+
+  // send answer to client
+  drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
+  print $answer;
+  drupal_exit();
+}
+
 /* =============================================================================
  *   Stripe button themes
  * ========================================================================== */
@@ -186,6 +235,13 @@ function stripe_button_theme($existing, $type, $theme, $path) {
         'currency' => NULL,
         'csp' => FALSE,
       ),
+    ),
+    'stripe_button_fee_block' => array(
+      'variables' => array(
+        'container_id' => 'stripe-button-fee-block',
+      ),
+      'file' => 'templates/stripe_button_fee_block.vars.php',
+      'template' => 'templates/stripe_button_fee_block',
     ),
   );
 }
@@ -562,3 +618,39 @@ function stripe_button_field_formatter_view($entity_type, $entity, $field, $inst
 
   return $element;
 }
+
+
+/* =============================================================================
+ *   Donation fee block 
+ * ========================================================================== */
+
+/**
+ * Implements hook_block_info().
+ */
+function stripe_button_block_info() {
+  $blocks['stripe_button_fee'] = array(
+    'info' => t('Fee selection block'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * Displays the fee selection block.
+ */
+function stripe_button_block_view($delta = 0) {
+  $block = array();
+
+  switch ($delta) {
+    case 'stripe_button_fee':
+      $block['subject'] = null;
+      $block['content'] = theme('stripe_button_fee_block');
+      break;
+  }
+  return $block;
+}
+
+
+

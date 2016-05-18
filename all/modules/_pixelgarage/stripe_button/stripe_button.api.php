@@ -10,10 +10,11 @@
  *
  * Can be used to update Drupal internal data structures.
  *
- * @param $amount     The charged amount in currency
- * @param $app_fees   The application fees in currency
- * @param $currency   The currency of the charged amount.
+ * @param $amount              The charged amount in currency
+ * @param $stripe_fee          The stripe fee in currency.
+ * @param int|The $app_fee     The application fees in currency
+ * @param string|The $currency The currency of the charged amount.
  */
-function hook_charge_completed($amount, $app_fees = 0, $currency = 'CHF') {
+function hook_charge_completed($amount, $stripe_fee, $app_fee = 0, $currency = 'CHF') {
 
 }

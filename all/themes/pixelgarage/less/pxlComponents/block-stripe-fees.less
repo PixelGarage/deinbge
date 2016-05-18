@@ -1,0 +1,77 @@
+/*
+ *  Block stripe fees component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+#stripe-button-fee-block {
+  margin: 40px 0 30px;
+
+  .fee-text-top {
+    margin-bottom: 10px;
+    font-family: @pxl-text-font;
+    font-size: @font-size-base;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    color: @text-color;
+  }
+
+  .fee-radios-wrapper {
+    margin-bottom: 10px;
+    text-align: center;
+
+    .fee-radio {
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      padding: 15px 0 15px;
+      font-family: @pxl-text-font;
+      font-size: @font-size-base;
+      line-height: 1;
+      letter-spacing: 0;
+      color: @text-color;
+      #pxl-mixins.border-radius(50%);
+      border: 1px solid @pxl-color-border;
+      background-color: transparent;
+
+      &:hover, &:focus, &.selected {
+        color: #fff;
+        border: 1px solid @pxl-color-participate;
+        background-color: @pxl-color-participate;
+      }
+
+      label {
+
+      }
+    }
+  }
+
+  .fee-answer-wrapper {
+    margin-bottom: 10px;
+    font-family: @pxl-text-font;
+    font-size: @font-size-base;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    color: @text-color;
+  }
+
+  .fee-text-stripe-fee {
+    font-family: @pxl-text-font;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0;
+    color: @text-color;
+  }
+}

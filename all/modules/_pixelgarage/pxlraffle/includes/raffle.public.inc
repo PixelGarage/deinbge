@@ -190,11 +190,9 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
 /**
  * Updates the current raffle with donation and fees.
  *
- * @param $amount   The amount donated
- * @param $app_fee  The fee donated
  * @return int      Returns the rest amount, if a new raffle has to be created.
  */
-function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
+function pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee) {
   //
   // open transaction to prevent doubled raffle codes
   $transaction = db_transaction(); // commit when $transaction goes out of scope
@@ -207,10 +205,10 @@ function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
   //
   // return amount higher than 30000 CHF
   $rest_amount = false;
-  $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $app_fee)* 1.0; // casting to float
+  $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $stripe_fee - $app_fee)* 1.0; // casting to float
 
-  // TODO: correct raffle workflow
-  if ($new_amount > 10*PXLRAFFLE_MAX_AMOUNT) {
+  // check if new raffle has to be opened
+  if ($new_amount > PXLRAFFLE_MAX_AMOUNT) {
     $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_MAX_AMOUNT;
     $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_STATE_CLOSED;
     $rest_amount = $new_amount - PXLRAFFLE_MAX_AMOUNT;
@@ -221,7 +219,7 @@ function pxlraffle_update_current_raffle_donation($amount, $app_fee) {
 
   //
   // add application fees
-  $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] += $app_fee;
+  $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] = $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] + $app_fee;
 
   // save raffle
   node_save($raffle);

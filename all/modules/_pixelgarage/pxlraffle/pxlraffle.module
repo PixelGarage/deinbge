@@ -98,14 +98,11 @@ function pxlraffle_uid_load($uid) {
  * Hook called after the stripe charge transaction has been successfully performed.
  *
  * Used to update the current raffle with the donated money and update raffle state if needed.
- *
- * @param $amount     The charged amount
- * @param $currency   The currency of the charged amount.
- */
-function pxlraffle_charge_completed($amount, $app_fees, $currency) {
+ **/
+function pxlraffle_charge_completed($amount, $stripe_fee, $app_fee, $currency) {
   //
   // update current raffle with the donated amount
-  $rest_amount = pxlraffle_update_current_raffle_donation($amount, $app_fees);
+  $rest_amount = pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee);
 
   //
   // create new raffle open for donations
