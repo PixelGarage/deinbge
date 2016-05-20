@@ -162,9 +162,9 @@ function stripe_button_custom_form_callback () {
  * AJAX callback on click of fee radios. Used to set user selected fee percentage.
  */
 function stripe_button_fee_callback() {
-  $selected_fee = $_POST['selectedFee'];
+  $selected_fee = floatval($_POST['selectedFee']);
   $session_data = &stripe_button_session_data();
-  $session_data['selected_fee'] = floatval($selected_fee);
+  $session_data['selected_fee'] = $selected_fee;
 
   // create answer depending on selected fee
   switch($selected_fee) {
@@ -176,12 +176,12 @@ function stripe_button_fee_callback() {
       break;
     case 0.1:
     default:
-      $answer = t('<strong>Wow!</strong> Your contribution allows us to keep the platform deinbge.ch up and running.');
-      break;
-    case 0.15:
-      $answer = t('<strong>Amazing!</strong> Your contribution enables us to enhance the platform functionality.');
+      $answer = t('<strong>Wow!</strong> Your contribution allows us to keep this platform up and running.');
       break;
     case 0.2:
+      $answer = t('<strong>Amazing!</strong> Your contribution enables us to enhance the functionality of this platform.');
+      break;
+    case 0.3:
       $answer = t('<strong>Absolutely awesome!</strong> We are very grateful that you honor our work so generously.');
       break;
 

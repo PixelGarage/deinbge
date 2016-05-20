@@ -9763,9 +9763,10 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
  *  Block stripe fees component
  * --------------------------------------------------*/
 #stripe-button-fee-block {
-  margin: 40px 0 30px;
+  margin: 50px 0 50px;
 }
-#stripe-button-fee-block .fee-text-top {
+#stripe-button-fee-block .fee-text-top,
+#stripe-button-fee-block .fee-text-bottom {
   margin-bottom: 10px;
   font-family: 'ProximaNovaLight';
   font-size: 18px;

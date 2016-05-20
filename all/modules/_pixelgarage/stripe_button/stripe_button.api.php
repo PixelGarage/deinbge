@@ -16,5 +16,5 @@
  * @param string|The $currency The currency of the charged amount.
  */
 function hook_charge_completed($amount, $stripe_fee, $app_fee = 0, $currency = 'CHF') {
-
+  watchdog('stripe_button', '@amount CHF charged including stripe fee = @stripe_fee CHF and application fee = @app_fee CHF', array('@amount' => $amount, '@stripe_fee' => $stripe_fee, '@app_fee' => $app_fee), WATCHDOG_DEBUG);
 }

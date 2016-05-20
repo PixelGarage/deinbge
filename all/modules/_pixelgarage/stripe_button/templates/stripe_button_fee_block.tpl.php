@@ -19,9 +19,10 @@
     <div class="fee-radio" data-fee-value="0.0"><label>0%</label></div>
     <div class="fee-radio" data-fee-value="0.05"><label>5%</label></div>
     <div class="fee-radio selected" data-fee-value="0.1"><label>10%</label></div>
-    <div class="fee-radio" data-fee-value="0.15"><label>15%</label></div>
     <div class="fee-radio" data-fee-value="0.2"><label>20%</label></div>
+    <div class="fee-radio" data-fee-value="0.3"><label>30%</label></div>
   </div>
+  <div class="fee-text-bottom"><?php print $text_bottom; ?></div>
   <div class="fee-answer-wrapper"><?php print $text_answer; ?></div>
   <div class="fee-text-stripe-fee"><?php print $text_stripe_fee; ?></div>
 </div>
