@@ -224,6 +224,19 @@ function pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee
   // save raffle
   node_save($raffle);
 
+  // add donation to pxl_donations table
+  $fields = array(
+    'booked' => 0,
+    'type' => 'one-time',
+    'amount' => $amount,
+    'stripe_fee' => $stripe_fee,
+    'app_fee' => $app_fee,
+    'timestamp' => time(),
+  );
+  db_insert('pxl_donations')
+    ->fields($fields)
+    ->execute();
+
   // return rest amount
   return $rest_amount;
 }

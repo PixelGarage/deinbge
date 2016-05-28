@@ -7,6 +7,70 @@
  */
 
 /**
+ * Implements hook_schema().
+ */
+function pxlraffle_schema() {
+  $schema['pxl_donations'] = array(
+    'description' => 'Table that contains all stripe donations with the corresponding fees.',
+    'fields' => array(
+      'did' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique donation event ID.',
+      ),
+      'booked' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Indicates, if donations has been completely booked in bank account',
+      ),
+      'type' => array(
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => 'one-time',
+        'description' => 'Type of donation event, for example "one-time" or "recurring"',
+      ),
+      'amount' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => TRUE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 2
+      ),
+      'stripe_fee' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => TRUE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 2,
+        'description' => 'Stripe transaction fee',
+      ),
+      'app_fee' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => TRUE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 2,
+        'description' => 'Voluntary application fee for administration',
+      ),
+      'timestamp' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Unix timestamp of when event occurred.',
+      ),
+    ),
+    'primary key' => array('did'),
+  );
+
+  return $schema;
+}
+
+/**
  * Implements hook_install().
  */
 function pxlraffle_install () {
@@ -38,3 +102,91 @@ function pxlraffle_uninstall() {
   variable_del($delta . '_odometer_theme');
 }
 
+/**
+ * Insert the {donations} table.
+ */
+function pxlraffle_update_7100() {
+  //
+  // create the new table
+  $schema['pxl_donations'] = array(
+    'description' => 'Table that contains all stripe donations with the corresponding fees.',
+    'fields' => array(
+      'did' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: Unique donation event ID.',
+      ),
+      'booked' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Indicates, if donations has been completely booked in bank account',
+      ),
+      'type' => array(
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => 'one-time',
+        'description' => 'Type of donation event, for example "one-time" or "recurring"',
+      ),
+      'amount' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => TRUE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 2
+      ),
+      'stripe_fee' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => TRUE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 2,
+        'description' => 'Stripe transaction fee',
+      ),
+      'app_fee' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => TRUE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 2,
+        'description' => 'Voluntary application fee for administration',
+      ),
+      'timestamp' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Unix timestamp of when event occurred.',
+      ),
+    ),
+    'primary key' => array('did'),
+  );
+  db_create_table('pxl_donations', $schema['pxl_donations']);
+  
+  //
+  // update table {donations} with all entries in {watchdog}
+  $query = db_select('watchdog', 'w')
+    ->fields('w', array('timestamp', 'variables'))
+    ->condition('w.type', 'stripe_button')
+    ->orderBy('w.timestamp', 'DESC');
+  $result = $query->execute();
+
+  foreach ($result as $dblog) {
+    $payment = unserialize($dblog->variables);
+    $fields = array(
+      'booked' => 0,
+      'type' => 'one-time',
+      'amount' => $payment['@amount'],
+      'stripe_fee' => $payment['@stripe_fee'],
+      'app_fee' => $payment['@app_fee'],
+      'timestamp' => $dblog->timestamp,
+    );
+    db_insert('pxl_donations')
+      ->fields($fields)
+      ->execute();
+  }
+
+}

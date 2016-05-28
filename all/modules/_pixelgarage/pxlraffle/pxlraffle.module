@@ -73,6 +73,17 @@ function pxlraffle_menu() {
     'weight' => -7,
   );
 
+  //
+  // pxlraffle admin forms
+  $items[PXLRAFFLE_ADMIN_MENU_PATH . '/donations'] = array(
+    'title' => 'Stripe donations',
+    'description' => 'View all stripe donation payments.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('pxlraffle_donation_overview'),
+    'access arguments' => array('administer pixel raffle'),
+    'file' => 'pxlraffle.admin.inc',
+    'weight' => 0,
+  );
   // callback: manage the current raffle for specified user
   $items['user/%pxlraffle_uid/raffle/%'] = array(
     'type' => MENU_CALLBACK,
@@ -103,7 +114,6 @@ function pxlraffle_charge_completed($amount, $stripe_fee, $app_fee, $currency) {
   //
   // update current raffle with the donated amount
   $rest_amount = pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee);
-  watchdog('stripe_button', '@amount CHF charged including stripe fee = @stripe_fee CHF and application fee = @app_fee CHF', array('@amount' => $amount, '@stripe_fee' => $stripe_fee, '@app_fee' => $app_fee), WATCHDOG_DEBUG);
 
   //
   // create new raffle open for donations
