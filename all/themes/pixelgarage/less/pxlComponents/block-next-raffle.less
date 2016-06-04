@@ -41,8 +41,15 @@
       display: inline-block;
       margin-bottom: 20px;
       padding: 5px 15px;
-      #pxl-mixins.font-size-responsive(80px);
       color: @pxl-color-raffle;
+      font-size: 40px;
+
+      @media @narrow {
+        font-size: 10.4vw;
+      }
+      @media @tablet {
+        font-size: 80px;
+      }
 
       body.front & {
         color: @pxl-color-main;

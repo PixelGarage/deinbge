@@ -30,9 +30,13 @@
       .block-header {
         margin-bottom: @pxl-margin-sep;
         font-family: @pxl-text-font-bold;
-        font-size: @font-size-pane-title;
+        font-size: 24px;
         text-align: center;
         color: @text-color;
+
+        @media @narrow {
+          font-size: @font-size-pane-title;
+        }
       }
 
       .odometer-container {

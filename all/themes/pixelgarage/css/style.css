@@ -9195,9 +9195,14 @@ form#user-login {
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .block-header {
   margin-bottom: 30px;
   font-family: 'ProximaNovaBold';
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   color: #333333;
+}
+@media screen and (min-width: 480px) {
+  #pxlraffle-fundraising .current-raffle .inner-current-raffle .block-header {
+    font-size: 32px;
+  }
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container {
   margin: 0;
@@ -9446,12 +9451,12 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
   display: inline-block;
   margin-bottom: 20px;
   padding: 5px 15px;
-  font-size: 50px;
   color: #2dd092;
+  font-size: 40px;
 }
 @media screen and (min-width: 480px) {
   #pxlraffle-next-raffle .next-raffle .next-raffle-date {
-    font-size: 10.41666667vw;
+    font-size: 10.4vw;
   }
 }
 @media screen and (min-width: 768px) {
