@@ -19,6 +19,13 @@ class FeedsFacebookParser extends FeedsParser {
 
     foreach ($json->data as $entry) {
       if (!isset($entry->to)) {
+        // check picture url
+        $image_url = isset($entry->full_picture) ? $entry->full_picture : '';
+        if ($image_url && $pos = strpos($image_url, 'safe_image.php')) {
+          // get the image url
+          $pos = strpos($entry->full_picture, 'url=') + 4;
+          $image_url = rawurldecode(substr($entry->full_picture, $pos));
+        }
         $items[] = array(
           'post_id' => $entry->id,
           'from_name' => $entry->from->name,
@@ -29,7 +36,7 @@ class FeedsFacebookParser extends FeedsParser {
           'to_id' => (isset($entry->to) ? $entry->to->data[0]->id : ''),
           'message' => (isset($entry->message) ? $entry->message : ''),
           'picture' => (isset($entry->picture) ? $entry->picture : ''),
-          'full_picture' => (isset($entry->full_picture) ? $entry->full_picture : ''),
+          'full_picture' => $image_url,
           'link' => (isset($entry->link) ? $entry->link : ''),
           'source' => (isset($entry->source) ? $entry->source : ''),
           'name' => (isset($entry->name) ? $entry->name : ''),

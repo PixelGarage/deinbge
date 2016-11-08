@@ -10781,7 +10781,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   width: 100%;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title {
-  display: none;
+  margin: 0 0 20px;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2 {
   margin: 0;
@@ -10855,6 +10855,18 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   max-width: 100%;
   min-width: 30%;
   height: auto;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded {
+  margin: 0 0 20px;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded .embedded-video iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  width: 90%;
+  max-width: 90%;
+  min-height: 350px;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body {
   margin: 0 0 20px;
