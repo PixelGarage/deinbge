@@ -10777,13 +10777,16 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-size: 10px;
   margin-left: 10px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 {
   width: 100%;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-title {
   margin: 0 0 20px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-title h2 {
   margin: 0;
   padding: 15px 0;
   font-family: 'ProximaNovaBold';
@@ -10791,75 +10794,89 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #333333;
 }
 @media screen and (min-width: 33em) {
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-title h2 {
     font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-title h2 {
     font-size: 32px;
   }
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-name-from {
   display: none;
   padding: 0 0 10px;
   width: 100%;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from .field-item {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from .field-item,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-name-from .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 14px;
   text-align: left;
   color: #333333;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time {
   margin: 10px 0 20px;
   width: 100%;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   text-align: right;
   line-height: 1;
   color: #333333;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item:before {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item:before,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item:before {
   content: '\f09a';
   font-family: 'fontawesome';
   font-size: 17px;
   margin-right: 10px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count {
   margin: -34px 0 0;
   padding: 0;
   width: 100%;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   text-align: left;
   line-height: 1;
   color: #333333;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item:after {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item:after,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count .field-item:after {
   content: 'Likes';
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   margin-left: 10px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-picture {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-picture,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-picture {
   margin: 0 0 20px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-picture .field-item img {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-picture .field-item img,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-picture .field-item img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   min-width: 30%;
   height: auto;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-video-embedded {
   margin: 0 0 20px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded .embedded-video iframe {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded .embedded-video iframe,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-video-embedded .embedded-video iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -10868,52 +10885,73 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   max-width: 90%;
   min-height: 350px;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body {
   margin: 0 0 20px;
   color: #333333;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h1,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h1,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h2,
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3 {
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3 {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
 @media screen and (min-width: 35.2em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h1,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h1,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h2,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3 {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3 {
     font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h1,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h1,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h2,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3 {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3 {
     font-size: 30px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h4,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h4,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h5,
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6 {
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h5,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
   font-family: 'ProximaNovaLight';
   font-size: 18px;
 }
 @media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h4,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h5,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6 {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h5,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
     font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h4,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h5,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6 {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h5,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
     font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   word-break: break-word;
@@ -10925,74 +10963,94 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 @media screen and (min-width: 33.88235294117647em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
     font-size: 17px;
   }
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   color: #7c6941;
 }
 @media screen and (min-width: 33.88235294117647em) {
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 17px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:focus {
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a:hover,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:focus,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a:focus {
   color: #ab935e;
   text-decoration: none;
   background: none;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body pre,
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address {
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body pre,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
 }
 @media screen and (min-width: 33.88235294117647em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body pre,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body pre,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body pre,
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address {
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body pre,
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body address {
     font-size: 17px;
   }
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body strong {
   font-family: 'ProximaNovaBold';
   font-size: 16px;
 }
 @media screen and (min-width: 40.421052631578945em) {
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body strong {
     font-size: 2.47395833vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body strong {
     font-size: 19px;
   }
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body hr {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body hr,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body hr {
   border: 0;
   border-bottom: 2px solid #333333;
   background: none;
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body img {
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body img,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body img {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -11002,9 +11060,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   height: auto;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body embed,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body embed,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body video,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body video,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body audio,
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body iframe {
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body audio,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body iframe,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
