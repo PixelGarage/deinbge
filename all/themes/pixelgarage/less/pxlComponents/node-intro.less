@@ -21,17 +21,10 @@
       .field-name-title {
         h2 {
           font-family: @pxl-text-font-bold;
-          font-size: @resp-font-size-large-min;
+          #pxl-mixins.font-size-responsive(32px, 22px);
           letter-spacing: 1.2px;
           text-transform: uppercase;
           color: @text-color;
-
-          @media @narrow {
-            font-size: @resp-font-size-large;
-          }
-          @media @tablet {
-            font-size: @resp-font-size-large-max;
-          }
         }
       }
 
