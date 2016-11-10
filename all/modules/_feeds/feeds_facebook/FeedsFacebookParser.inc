@@ -19,13 +19,28 @@ class FeedsFacebookParser extends FeedsParser {
 
     foreach ($json->data as $entry) {
       if (!isset($entry->to)) {
-        // check picture url
+        //
+        // support for facebook cached images (safe_image.php)
         $image_url = isset($entry->full_picture) ? $entry->full_picture : '';
         if ($image_url && $pos = strpos($image_url, 'safe_image.php')) {
-          // get the image url
+          // get the direct image url
           $pos = strpos($entry->full_picture, 'url=') + 4;
           $image_url = rawurldecode(substr($entry->full_picture, $pos));
         }
+
+        //
+        // support for facebook videos
+        // use link field as video source, source field contains link to cache in form https://scontent.xx.fbcdn.net/hads-xaf1/v/...
+        // or https://video.xx.fbcdn.net/hvideo-xtl1/v/...
+        $source = isset($entry->source) ? $entry->source : '';
+        $link = isset($entry->link) ? $entry->link : '';
+        if ($link && $source && strpos($source, 'xx.fbcdn.net') > 0) {
+          $source = $link;
+          $link = '';
+        }
+
+        //
+        // add the corrected parsed item
         $items[] = array(
           'post_id' => $entry->id,
           'from_name' => $entry->from->name,
@@ -37,8 +52,8 @@ class FeedsFacebookParser extends FeedsParser {
           'message' => (isset($entry->message) ? $entry->message : ''),
           'picture' => (isset($entry->picture) ? $entry->picture : ''),
           'full_picture' => $image_url,
-          'link' => (isset($entry->link) ? $entry->link : ''),
-          'source' => (isset($entry->source) ? $entry->source : ''),
+          'link' => $link,
+          'source' => $source,
           'name' => (isset($entry->name) ? $entry->name : ''),
           'caption' => (isset($entry->caption) ? $entry->caption : ''),
           'description' => (isset($entry->description) ? $entry->description : ''),
