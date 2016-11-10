@@ -89,8 +89,8 @@
             $('body').css('overflow', 'auto');
 
             // set scroll position to top of container
-            var offset = $container.offset().top - 50;
-            $(window).scrollTop(offset);
+            //var offset = $container.offset().top - 50;
+            //$(window).scrollTop(offset);
 
             // redirect to home page to update view
             //window.location = '/';
