@@ -10836,7 +10836,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-size: 12px;
   text-align: right;
   line-height: 1;
-  color: #333333;
+  color: #929295;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item:before,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item:before {
@@ -11095,8 +11095,53 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 {
   width: 100%;
 }
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
+  margin: -20px -20px 0;
+  padding: 5px 10px;
+  background-color: black;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
+  font-family: 'ProximaNovaBold';
+  font-size: 15px;
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
+    font-size: 17px;
+  }
+}
+.decoration-black .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
+  background-color: black;
+}
+.decoration-gold .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
+  background-color: #ab935e;
+}
+.decoration-green .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
+  background-color: #2dd092;
+}
+.decoration-red .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
+  background-color: #ff7a8a;
+}
+.decoration-blue .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
+  background-color: #4ba5eb;
+}
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image {
   margin: -20px -20px 20px;
+}
+.decoration-black .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
+.decoration-gold .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
+.decoration-green .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
+.decoration-red .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
+.decoration-blue .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image {
+  margin: 0 -20px 20px;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image .field-item img {
   width: 100%;
@@ -11274,7 +11319,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaLight';
   font-size: 10px;
   text-align: right;
-  color: #333333;
+  color: #929295;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-post-date .field-item:after {
   content: '\f0e7';
@@ -11323,7 +11368,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   text-align: center;
-  color: #333333;
+  color: #929295;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item:before,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date .field-item:before {
@@ -11535,6 +11580,20 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   min-height: 350px;
 }
 @media screen and (min-width: 768px) {
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-video,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-video {
+  margin: 0 0 20px;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-video .embedded-video iframe,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-video .embedded-video iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  width: 90%;
+  max-width: 90%;
+  min-height: 350px;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-file,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-file {
@@ -12517,21 +12576,30 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
  * --------------------------------------------------*/
 .view.view-social-masonry .view-filters,
 .view.view-blog .view-filters {
-  margin-bottom: 52px;
+  margin: 30px 0 52px;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets {
   margin: 0;
+  text-align: center;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
+  display: inline-block;
+  vertical-align: top;
   float: none;
-  margin: 0;
+  margin: 5px -2px;
   padding: 0;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget > label,
-.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget > label {
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget > label,
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget > .description,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget > .description {
   display: none;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget {
+  position: relative;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios {
@@ -12540,7 +12608,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio {
   display: inline-block;
-  margin: 0 -2px;
+  margin: 0;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio .control-label,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio .control-label {
@@ -12577,6 +12645,111 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio:last-child .control-label {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input {
+  width: 150px;
+  height: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input::-moz-placeholder,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input:-ms-input-placeholder,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input::-webkit-input-placeholder,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input:focus,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-textfield input:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #ab935e;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select {
+  margin: 0 0 0 5px;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select select,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 3px 20px 6px 10px;
+  height: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  color: #333333;
+  border: 1px solid #c9c9c9;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select select:focus,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select select:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #ab935e;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select:after,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select:after {
+  content: '\f0d7';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  bottom: 0;
+  font-family: 'fontawesome';
+  color: #777777;
+  line-height: 30px;
+  pointer-events: none;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit {
+  display: inline-block;
+  margin: 0;
+  padding: 0 15px;
+  height: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: #fff;
+  outline: none;
+  opacity: 1.0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ff7a8a;
+  margin: 0 0 0 5px;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit.js-hide,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit.js-hide {
+  display: none;
+}
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit:hover,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit:hover,
+.view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit:focus,
+.view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit:focus {
+  opacity: 0.7;
 }
 .view.view-social-masonry .view-content > .pe-container,
 .view.view-blog .view-content > .pe-container {

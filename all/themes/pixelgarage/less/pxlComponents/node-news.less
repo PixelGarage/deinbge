@@ -21,8 +21,44 @@
     div.col-sm-12 {
       width: 100%;
 
+      .field-name-field-decoration {
+        margin: -20px -20px 0;
+        padding: 5px 10px;
+        background-color: black;
+
+        .field-item {
+          font-family: @pxl-text-font-bold;
+          #pxl-mixins.font-size-responsive(17px, 15px);
+          color: #fff;
+          line-height: 1;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .decoration-black & {
+          background-color: black;
+        }
+        .decoration-gold & {
+          background-color: @pxl-color-main;
+        }
+        .decoration-green & {
+          background-color: @pxl-color-raffle;
+        }
+        .decoration-red & {
+          background-color: @pxl-color-experience;
+        }
+        .decoration-blue & {
+          background-color: @pxl-color-participate;
+        }
+      }
+
       .field-name-field-image {
         margin: -20px -20px 20px;
+
+        .decoration-black &, .decoration-gold &,.decoration-green &,
+        .decoration-red &,.decoration-blue & {
+          margin: 0 -20px 20px;
+        }
 
         .field-item {
           img {
@@ -59,7 +95,7 @@
           font-family: @pxl-text-font;
           font-size: 10px;
           text-align: right;
-          color: @text-color;
+          color: @pxl-masonry-text;
 
           &:after {
             content: '\f0e7';
@@ -104,7 +140,7 @@
           font-family: @pxl-text-font;
           font-size: 12px;
           text-align: center;
-          color: @text-color;
+          color: @pxl-masonry-text;
 
           &:before {
             content: '\f0e7';
@@ -136,6 +172,22 @@
 
         @media @tablet {
           //.content-columns(2);
+        }
+      }
+
+      .field-name-field-video {
+        margin: 0 0 20px;
+
+        .embedded-video {
+          iframe {
+            display: block;
+            overflow: hidden;
+            margin: 20px auto;
+            padding: 0;
+            width: 90%;
+            max-width: 90%;
+            min-height: 350px;
+          }
         }
       }
 
