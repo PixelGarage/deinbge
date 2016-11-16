@@ -11522,6 +11522,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 @media screen and (min-width: 768px) {
 }
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-file,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-file {
+  margin: 0 0 20px;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags {
+  margin: 20px 0;
+}
 /*
  *  Node testimonials component
  * --------------------------------------------------*/
