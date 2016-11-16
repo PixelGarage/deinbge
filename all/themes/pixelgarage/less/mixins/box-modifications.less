@@ -33,15 +33,15 @@
   }
 
   // centers an element horizontally/vertically in its container (block with height)
-  .center-horizontally {
+  .center-horizontally() {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
-  .center-vertically {
-    position: relative;
+  .center-vertically(@position: relative) {
+    position: @position;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);

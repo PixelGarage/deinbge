@@ -77,6 +77,7 @@
 .node.node-article.view-mode-default {
   .row {
     div.col-sm-12 {
+      position: relative;
       width: 100%;
 
       .field-name-title {
@@ -86,17 +87,23 @@
           font-family: @pxl-text-font-bold;
           #pxl-mixins.font-size-responsive(32px, 22px);
           color: @text-color;
+          text-align: center;
         }
       }
 
+      .a2a_kit.addtoany_list {
+        display: block;
+        text-align: center;
+      }
+
       .field-name-post-date {
-        margin: 10px 0 20px;
+        margin: 0 0 20px;
         width: 100%;
 
         .field-item {
           font-family: @pxl-text-font;
           font-size: 12px;
-          text-align: right;
+          text-align: center;
           color: @text-color;
 
           &:before {
@@ -136,24 +143,25 @@
         margin: 0 0 20px;
 
         .field-item {
+
           .file {
             img {
 
             }
 
             a {
-
+              #pxl-mixins.hyphenate();
             }
           }
         }
       }
 
       .field-name-field-tags {
-        margin: 20px 0;
+        margin: 20px 0 50px;
 
         .field-item {
           a {
-
+            #pxl-mixins.hyphenate();
           }
         }
       }

@@ -8678,19 +8678,6 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /*
  *  Box modificarion mixins
  * --------------------------------------------------*/
-#pxl-mixins .center-horizontally {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-#pxl-mixins .center-vertically {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 /*
  *  Transformation mixins
  * --------------------------------------------------*/
@@ -8961,17 +8948,34 @@ form#user-login {
   font-weight: normal;
   font-style: normal;
 }
-.block-sharethis .block-inner {
-  margin: 0;
+.a2a_kit.a2a_floating_style {
+  display: none;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  -moz-border-radius: 5;
+  -webkit-border-radius: 5;
+  border-radius: 5;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background: white;
 }
-.sharethis-wrapper {
-  margin: 0;
-  text-align: right;
+@media screen and (min-width: 768px) {
+  .a2a_kit.a2a_floating_style {
+    display: block;
+  }
 }
-.sharethis-wrapper > span .stButton {
-  margin: 0;
+.a2a_kit a {
+  margin: 0 0 10px;
+  padding: 0;
 }
-.sharethis-wrapper > span .stButton .stLarge {
+.a2a_kit a .a2a_label {
+  display: none;
+}
+.a2a_kit a .a2a_svg {
   font-family: "SSSocial-Circle";
   font-style: normal;
   font-weight: normal;
@@ -8985,12 +8989,15 @@ form#user-login {
   -o-font-feature-settings: "liga";
   font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
-  font-size: 2em;
-  color: #fff;
-  height: 1.2em;
-  background-image: none !important;
+  width: 32px;
+  height: 32px;
+  font-size: 28px;
+  color: #ab935e;
+  text-align: center;
+  line-height: 32px;
+  background: none !important;
 }
-.sharethis-wrapper > span .stButton .stLarge:hover {
+.a2a_kit a .a2a_svg:hover {
   font-family: "SSSocial-Regular";
   font-style: normal;
   font-weight: normal;
@@ -9006,24 +9013,23 @@ form#user-login {
   -webkit-font-smoothing: antialiased;
   opacity: 1.0;
 }
-.sharethis-wrapper > span .stButton .stLarge:before {
+.a2a_kit a .a2a_svg:before {
   display: inline-block;
-  padding: 0.25em 0 0;
+  vertical-align: text-bottom;
 }
-/* Large social buttons */
-.st_facebook_large .stButton .stLarge:before {
+.a2a_kit a.a2a_button_facebook .a2a_svg:before {
   content: "\f610";
 }
-.st_twitter_large .stButton .stLarge:before {
+.a2a_kit a.a2a_button_twitter .a2a_svg:before {
   content: "\f611";
 }
-.st_googleplus_large .stButton .stLarge:before {
+.a2a_kit a.a2a_button_google_plus .a2a_svg:before {
   content: "\f613";
 }
-.st_email_large .stButton .stLarge:before {
-  content: "✉";
+.a2a_kit a.a2a_button_email .a2a_svg:before {
+  content: '✉';
 }
-.st_pinterest_large .stButton .stLarge:before {
+.a2a_kit a.a2a_button_pinterest .a2a_svg:before {
   content: "\f650";
 }
 .follow-links {
@@ -10792,6 +10798,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
   color: #333333;
+  text-align: center;
 }
 @media screen and (min-width: 33em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2,
@@ -11277,6 +11284,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-full .row div.col-sm-12,
 .node.node-article.view-mode-default .row div.col-sm-12 {
+  position: relative;
   width: 100%;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
@@ -11286,6 +11294,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
   color: #333333;
+  text-align: center;
 }
 @media screen and (min-width: 33em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
@@ -11299,16 +11308,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
     font-size: 32px;
   }
 }
+.node.node-article.view-mode-full .row div.col-sm-12 .a2a_kit.addtoany_list,
+.node.node-article.view-mode-default .row div.col-sm-12 .a2a_kit.addtoany_list {
+  display: block;
+  text-align: center;
+}
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date {
-  margin: 10px 0 20px;
+  margin: 0 0 20px;
   width: 100%;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
-  text-align: right;
+  text-align: center;
   color: #333333;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item:before,
@@ -11526,9 +11540,27 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-file {
   margin: 0 0 20px;
 }
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-file .field-item .file a,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-file .field-item .file a {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags {
-  margin: 20px 0;
+  margin: 20px 0 50px;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags .field-item a,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags .field-item a {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 /*
  *  Node testimonials component
