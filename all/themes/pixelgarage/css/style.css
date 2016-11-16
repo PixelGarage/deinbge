@@ -11275,10 +11275,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-size: 17px;
   margin-left: 10px;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 {
+.node.node-article.view-mode-full .row div.col-sm-12,
+.node.node-article.view-mode-default .row div.col-sm-12 {
   width: 100%;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-title h2 {
   margin: 0;
   padding: 15px 0;
   font-family: 'ProximaNovaBold';
@@ -11286,86 +11288,114 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #333333;
 }
 @media screen and (min-width: 33em) {
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-title h2 {
     font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2 {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-title h2 {
     font-size: 32px;
   }
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date {
   margin: 10px 0 20px;
   width: 100%;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   text-align: right;
   color: #333333;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item:before {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item:before,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date .field-item:before {
   content: '\f0e7';
   font-family: 'fontawesome';
   font-size: 17px;
   margin-right: 10px;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-image {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-image,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-image {
   margin: 0 0 20px;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-image .field-item img {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-image .field-item img,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-image .field-item img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body {
   margin: 0 0 20px;
   color: #333333;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h1,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h1,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h2,
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3 {
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3 {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
 @media screen and (min-width: 35.2em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h1,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h1,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h2,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3 {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3 {
     font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h1,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h1,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h2,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3 {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3 {
     font-size: 30px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h4,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h4,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h5,
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6 {
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h5,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
   font-family: 'ProximaNovaLight';
   font-size: 18px;
 }
 @media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h4,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h5,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6 {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h5,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
     font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h4,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h5,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6 {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h5,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
     font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   word-break: break-word;
@@ -11377,74 +11407,94 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 @media screen and (min-width: 33.88235294117647em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
     font-size: 17px;
   }
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   color: #7c6941;
 }
 @media screen and (min-width: 33.88235294117647em) {
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 17px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:focus {
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a:hover,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:focus,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a:focus {
   color: #ab935e;
   text-decoration: none;
   background: none;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body pre,
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address {
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body pre,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
 }
 @media screen and (min-width: 33.88235294117647em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body pre,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body pre,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body pre,
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address {
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body pre,
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body address {
     font-size: 17px;
   }
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body strong {
   font-family: 'ProximaNovaBold';
   font-size: 16px;
 }
 @media screen and (min-width: 40.421052631578945em) {
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body strong {
     font-size: 2.47395833vw;
   }
 }
 @media screen and (min-width: 768px) {
-  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body strong {
     font-size: 19px;
   }
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body hr {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body hr,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body hr {
   border: 0;
   border-bottom: 2px solid #333333;
   background: none;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body img {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body img,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body img {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -11454,9 +11504,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   height: auto;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body embed,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body embed,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body video,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body video,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body audio,
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body iframe {
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body audio,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body iframe,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
