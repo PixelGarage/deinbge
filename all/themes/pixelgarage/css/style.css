@@ -10060,7 +10060,7 @@ form#user-profile-form .form-actions .form-submit .icon {
 .node-page .row div.col-sm-12 .field-name-body p,
 .node-page .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -10068,7 +10068,7 @@ form#user-profile-form .form-actions .form-submit .icon {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node-page .row div.col-sm-12 .field-name-body p,
   .node-page .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
@@ -10082,10 +10082,10 @@ form#user-profile-form .form-actions .form-submit .icon {
 }
 .node-page .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node-page .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
@@ -10104,9 +10104,9 @@ form#user-profile-form .form-actions .form-submit .icon {
 .node-page .row div.col-sm-12 .field-name-body pre,
 .node-page .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node-page .row div.col-sm-12 .field-name-body pre,
   .node-page .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
@@ -10479,12 +10479,12 @@ form.webform-client-form .webform-component.webform-component-markup h2 {
 }
 form.webform-client-form .webform-component.webform-component-markup p {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   line-height: 22px;
   text-align: left;
   color: #333333;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 48em) {
   form.webform-client-form .webform-component.webform-component-markup p {
     font-size: 1.953125vw;
   }
@@ -10637,7 +10637,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -10645,7 +10645,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
@@ -10659,10 +10659,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
@@ -10681,9 +10681,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
@@ -10960,7 +10960,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -10968,7 +10968,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
@@ -10987,10 +10987,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
@@ -11015,9 +11015,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
@@ -11089,33 +11089,47 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
  *  Node news component
  * --------------------------------------------------*/
 .node.node-article.view-mode-teaser {
-  padding: 20px;
   background-color: #fff;
 }
+.node.node-article.view-mode-teaser .row {
+  margin: 0;
+}
 .node.node-article.view-mode-teaser .row div.col-sm-12 {
+  position: relative;
+  padding: 15px;
   width: 100%;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
-  margin: -20px -20px 0;
-  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  width: 56.5685%;
   background-color: black;
+  transform-origin: 70.7% top;
+  -webkit-transform: rotate(-45deg) translate(-29.29%, -100%);
+  -moz-transform: rotate(-45deg) translate(-29.29%, -100%);
+  -ms-transform: rotate(-45deg) translate(-29.29%, -100%);
+  -o-transform: rotate(-45deg) translate(-29.29%, -100%);
+  transform: rotate(-45deg) translate(-29.29%, -100%);
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
-  font-family: 'ProximaNovaBold';
-  font-size: 15px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 13px;
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 39em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
-    font-size: 2.21354167vw;
+    font-size: 2.08333333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 .decoration-black .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
@@ -11134,14 +11148,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   background-color: #4ba5eb;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image {
-  margin: -20px -20px 20px;
-}
-.decoration-black .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
-.decoration-gold .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
-.decoration-green .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
-.decoration-red .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image,
-.decoration-blue .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image {
-  margin: 0 -20px 20px;
+  margin: -15px -15px 15px;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image .field-item img {
   width: 100%;
@@ -11210,7 +11217,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -11218,7 +11225,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
@@ -11232,10 +11239,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
@@ -11254,9 +11261,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
@@ -11456,7 +11463,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -11464,7 +11471,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
@@ -11483,10 +11490,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
@@ -11511,9 +11518,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
@@ -12117,7 +12124,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 .node.node-spenden .row .col-sm-12 .field-name-body p,
 .node.node-spenden .row .col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12.5px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -12125,7 +12132,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body p,
   .node.node-spenden .row .col-sm-12 .field-name-body tbody td {
     font-size: 2.60416667vw;
@@ -12139,10 +12146,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 12.5px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body a {
     font-size: 2.60416667vw;
   }
@@ -12161,9 +12168,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 .node.node-spenden .row .col-sm-12 .field-name-body pre,
 .node.node-spenden .row .col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 12.5px;
+  font-size: 15px;
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body pre,
   .node.node-spenden .row .col-sm-12 .field-name-body address {
     font-size: 2.60416667vw;
@@ -12341,7 +12348,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -12349,7 +12356,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item tbody td {
     font-size: 2.21354167vw;
@@ -12363,10 +12370,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #7c6941;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
     font-size: 2.21354167vw;
   }
@@ -12385,9 +12392,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item pre,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item pre,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address {
     font-size: 2.21354167vw;
@@ -12777,7 +12784,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-i
     width: 3%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .view.view-social-masonry .view-content > .pe-container .grid-sizer,
   .view.view-blog .view-content > .pe-container .grid-sizer,
   .view.view-social-masonry .view-content > .pe-container .pe-item,
@@ -13547,11 +13554,11 @@ footer.container .region-footer .node.node-footer .row .col-sm-4 {
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 15px;
   color: #fff;
   text-align: center;
 }
-@media screen and (min-width: 33.88235294117647em) {
+@media screen and (min-width: 42.35294117647059em) {
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
     font-size: 2.21354167vw;

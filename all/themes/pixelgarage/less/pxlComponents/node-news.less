@@ -14,21 +14,30 @@
 // General settings
 // -------------------------
 .node.node-article.view-mode-teaser {
-  padding: 20px;
   background-color: @pxl-bg-masonry-item;
 
   .row {
+    margin: 0;
+
     div.col-sm-12 {
+      position: relative;
+      padding: @grid-gutter-width/2;
       width: 100%;
 
       .field-name-field-decoration {
-        margin: -20px -20px 0;
-        padding: 5px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 10px;
+        width: 56.5685%;
         background-color: black;
+        transform-origin: 70.7% top;
+        #pxl-mixins.transform(rotate(-45deg) translate(-29.29%, -100%));
 
         .field-item {
-          font-family: @pxl-text-font-bold;
-          #pxl-mixins.font-size-responsive(17px, 15px);
+          font-family: @pxl-text-font-medium;
+          #pxl-mixins.font-size-responsive(16px, 13px);
           color: #fff;
           line-height: 1;
           text-transform: uppercase;
@@ -53,12 +62,7 @@
       }
 
       .field-name-field-image {
-        margin: -20px -20px 20px;
-
-        .decoration-black &, .decoration-gold &,.decoration-green &,
-        .decoration-red &,.decoration-blue & {
-          margin: 0 -20px 20px;
-        }
+        margin: -@grid-gutter-width/2 -@grid-gutter-width/2 @grid-gutter-width/2;
 
         .field-item {
           img {
