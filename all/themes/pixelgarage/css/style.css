@@ -11619,14 +11619,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags {
   margin: 20px 0 50px;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags .field-item a,
-.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags .field-item a {
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags .field-item,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags .field-item {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags .field-item:before,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags .field-item:before {
+  content: '#';
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-tags .field-item:not(:last-child):after,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-tags .field-item:not(:last-child):after {
+  content: ',';
+  padding-right: 10px;
 }
 /*
  *  Node testimonials component

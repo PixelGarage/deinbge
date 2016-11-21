@@ -216,8 +216,15 @@
         margin: 20px 0 50px;
 
         .field-item {
-          a {
-            #pxl-mixins.hyphenate();
+          display: inline-block;
+          vertical-align: baseline;
+
+          &:before {
+            content: '#';
+          }
+          &:not(:last-child):after {
+            content: ',';
+            padding-right: 10px;
           }
         }
       }
