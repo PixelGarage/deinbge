@@ -44,26 +44,6 @@
   }
 }
 
-.resp-spenden-button(@size: @font-size-large; @color: @webform-color-submit; @bg-color: @webform-bg-color-submit; @radius: @border-radius-large) {
-  display: inline-block;
-  padding: 8px 15px 6px;
-  font-family: @pxl-text-font-bold;
-  font-size: @size;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
-  color: @color;
-  outline: none;
-  opacity: 1.0;
-  #pxl-mixins.border-radius(@radius);
-  border: none;
-  background-color: @bg-color;
-
-  &:hover, &:focus {
-    opacity: 0.7;
-  }
-}
-
 
 // General settings
 // -------------------------
@@ -100,184 +80,11 @@
         }
       }
 
-      .field-type-number-decimal {
-        // stripe buttons
-        position: relative;
+      .field-name-body {
         width: 100%;
-        z-index: 10;
-
-        .field-items {
-          text-align: center;
-
-          .field-item {
-            display: inline-block;
-            vertical-align: top;
-            width: 100%;
-            margin: 0 -2px 20px;
-            padding: 0;
-
-            @media @narrow {
-              width: 50%;
-              padding: 0 10px;
-            }
-
-            @media @tablet {
-              width: 33.333333%;
-            }
-
-            .stripe-button-container {
-              padding: 20px;
-              border: none;
-              #pxl-mixins.border-radius(6px);
-              background-color: #fff;
-              #pxl-mixins.box-shadow(@pxl-box-shadow);
-
-              .stripe-button-title {
-                font-family: @pxl-text-font-bold;
-                font-size: @pxl-font-size-button-title;
-                color: @pxl-color-participate;
-              }
-
-              .stripe-button-text {
-                margin-bottom: @font-size-base;
-                font-family: @pxl-text-font;
-                font-size: @font-size-base;
-                color: @text-color;
-              }
-
-              .stripe-button {
-                // thestripe button with the given amount
-                .resp-spenden-button(@font-size-button, #fff, @pxl-color-participate, 4px);
-
-                body.front & {
-                  .resp-spenden-button(@font-size-button, #fff, @pxl-color-main, 4px);
-                }
-
-                &.btn-warning {
-                  background-color: @pxl-color-warning;
-                }
-
-                &[disabled] {
-                  opacity: 1.0;
-                }
-              }
-            }
-
-            //
-            // item form to get custom amount
-            form {
-              width: 100%;
-              margin: 0 auto;
-
-              .input-group {
-                display: inline-block;
-                vertical-align: top;
-                margin: 0 -2px;
-                padding: 0;
-                width: auto;
-                letter-spacing: 0;
-
-                .input-group-addon {
-                  display: inline-block;
-                  vertical-align: top;
-                  padding: 8px 5px 6px;
-                  height: (@font-size-button + 14px);
-                  width: 70px;
-                  font-family: @pxl-text-font-bold;
-                  font-size: @font-size-button;
-                  color: @text-color;
-                  border: 1px solid @pxl-color-border-light;
-                  background-color: #fff;
-                }
-
-                .form-item-stripe-button-custom-amount {
-                  display: inline-block;
-                  vertical-align: top;
-                  padding: 0;
-                  width: 100px;
-                  color: @text-color;
-                  text-align: right;
-
-                  label {
-                    display: none;
-                  }
-
-                  input.form-text {
-                    padding: 8px 5px 6px;
-                    height: (@font-size-button + 14px);
-                    font-family: @pxl-text-font-bold;
-                    font-size: @font-size-button;
-                    text-align: right;
-                    #pxl-mixins.border-radius(0);
-                    border: 1px solid @pxl-color-border-light;
-
-                    &:focus {
-                      border: 1px solid @pxl-color-participate;
-                      box-shadow: 1px 1px 1px #aaa inset;
-
-                      body.front & {
-                        border: 1px solid @pxl-color-main;
-                      }
-                    }
-                  }
-                }
-              }
-
-              button.form-submit {
-                display: inline-block;
-                vertical-align: top;
-                .resp-spenden-button(@font-size-button, #fff, @pxl-color-participate, 4px);
-
-                body.front & {
-                  .resp-spenden-button(@font-size-button, #fff, @pxl-color-main, 4px);
-                }
-
-                margin: 0 0 0 -4px;
-                .border-left-radius(0);
-              }
-            }
-
-            //
-            // error items
-            .label.stripe-message {
-              // stripe message
-              display: block;
-              white-space: normal;
-              max-width: 150px;
-
-              &.label-warning {
-                background-color: @pxl-color-warning;
-              }
-            }
-
-            .popover {
-              // stripe popover
-              font-family: @pxl-text-font;
-              letter-spacing: 1.2px;
-              text-align: left;
-              color: #fff;
-              border: none;
-              background: none;
-
-              .arrow {
-              }
-
-              .popover-title {
-                padding: 4px 14px;
-                font-family: @pxl-title-font;
-                font-size: 80%;
-                border:none;
-              }
-
-              .popover-content {
-                padding: 4px 14px;
-                font-size: 80%;
-                #pxl-mixins.border-radius(0 0 5px 5px);
-                background-color: @pxl-color-warning;
-              }
-            }
-          }
-        }
+        #pxl-mixins.wysiwyg-body(@font-size-pane-subtitle);
+        text-align: center;
+        margin: 0 0 20px;
       }
 
       .field-name-field-spenden {
@@ -287,27 +94,31 @@
 
             form {
               .input-group {
+                height: @form-control-height - 4;
+
                 .input-group-addon {
                   width: 50px;
-                  height: (@font-size-button-small + 14px);
                   font-size: @font-size-button-small;
                 }
 
-                .form-item-stripe-button-custom-amount {
-                  width: 100px;
+                .form-item {
+                  width: 70px;
+
                   input.form-text {
-                    height: (@font-size-button-small + 14px);
+                    height: @form-control-height - 4;
                     font-size: @font-size-button-small;
                   }
                 }
               }
 
               button.form-submit {
-                .resp-spenden-button(@font-size-button-small, #fff, @pxl-color-participate, 4px);
+                .stripe-button(@font-size-button-small, @pxl-color-participate);
 
                 body.front & {
-                  .resp-spenden-button(@font-size-button-small, #fff, @pxl-color-main, 4px);
+                  .stripe-button(@font-size-button-small, @pxl-color-main);
                 }
+
+                height: @form-control-height - 4;
                 .border-left-radius(0);
               }
             }
@@ -318,47 +129,43 @@
 
               form {
                 .input-group {
+                  height: @form-control-height;
+
                   .input-group-addon {
                     width: 70px;
-                    height: (@font-size-button + 14px);
                     font-size: @font-size-button;
                   }
 
-                  .form-item-stripe-button-custom-amount {
+                  .form-item {
                     width: 100px;
+
                     input.form-text {
-                      height: (@font-size-button + 14px);
+                      height: @form-control-height;
                       font-size: @font-size-button;
                     }
                   }
                 }
 
                 button.form-submit {
-                  .resp-spenden-button(@font-size-button, #fff, @pxl-color-participate, 4px);
+                  .stripe-button(@font-size-button, @pxl-color-participate);
 
                   body.front & {
-                    .resp-spenden-button(@font-size-button, #fff, @pxl-color-main, 4px);
+                    .stripe-button(@font-size-button, @pxl-color-main);
                   }
+
+                  height: @form-control-height;
                   .border-left-radius(0);
                 }
               }
 
             }
 
-            @media @tablet {
+            @media @normal {
               width: 50%;
             }
           }
         }
       }
-
-      .field-name-body {
-        width: 100%;
-        #pxl-mixins.wysiwyg-body(@font-size-pane-subtitle);
-        text-align: center;
-        margin: 0 0 20px;
-      }
-
     }
   }
 }

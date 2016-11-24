@@ -1,0 +1,233 @@
+/*
+ *  Stripe button component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@stripe-button-font-size: @font-size-button;
+@stripe-button-color: #fff;
+@stripe-button-radius: 4px;
+
+@form-control-height: 38px;
+
+
+// Mixins
+// -------------------------
+.stripe-button(@size: @stripe-button-font-size; @bg-color: @gray-lighter) {
+  display: inline-block;
+  padding: 6px 15px;
+  height: @form-control-height;
+  font-family: @pxl-text-font-bold;
+  font-size: @size;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: @stripe-button-color;
+  outline: none;
+  opacity: 1.0;
+  #pxl-mixins.border-radius(@stripe-button-radius);
+  border: none;
+  background-color: @bg-color;
+
+  &:hover, &:focus {
+    opacity: 0.7;
+  }
+}
+
+.stripe-button-form () {
+  form {
+    width: 100%;
+    margin: 0 auto;
+
+    .input-group {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 -2px;
+      padding: 0;
+      width: auto;
+      height: @form-control-height;
+      letter-spacing: 0;
+
+      .input-group-addon {
+        display: inline-block;
+        vertical-align: top;
+        padding: 6px 5px;
+        width: 70px;
+        font-family: @pxl-text-font-bold;
+        font-size: @font-size-button;
+        color: @text-color;
+        line-height: 1;
+        border: 1px solid @pxl-color-border-light;
+        background-color: #fff;
+      }
+
+      .form-item {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0;
+        width: 100px;
+        color: @text-color;
+        text-align: right;
+
+        label {
+          display: none;
+        }
+
+        input.form-text {
+          padding: 6px 5px;
+          font-family: @pxl-text-font-bold;
+          font-size: @font-size-button;
+          text-align: right;
+          line-height: 1;
+          #pxl-mixins.border-radius(0);
+          border: 1px solid @pxl-color-border-light;
+
+          &:focus {
+            border: 1px solid @pxl-color-participate;
+            box-shadow: 1px 1px 1px #aaa inset;
+
+            body.front & {
+              border: 1px solid @pxl-color-main;
+            }
+          }
+        }
+      }
+    }
+
+    button.form-submit {
+      display: inline-block;
+      vertical-align: top;
+      .stripe-button(@font-size-button, @pxl-color-participate);
+
+      body.front & {
+        .stripe-button(@font-size-button, @pxl-color-main);
+      }
+
+      margin: 0 0 0 -4px;
+      .border-left-radius(0);
+    }
+  }
+}
+
+
+// General settings
+// -------------------------
+.field-type-number-decimal {
+  // stripe buttons
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  .field-items {
+    text-align: center;
+
+    .field-item {
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      margin: 0 -2px 20px;
+      padding: 0;
+
+      @media @narrow {
+        width: 50%;
+        padding: 0 10px;
+      }
+
+      @media @tablet {
+        width: 33.333333%;
+      }
+
+      .stripe-button-container {
+        padding: 20px;
+        border: none;
+        #pxl-mixins.border-radius(6px);
+        background-color: #fff;
+        #pxl-mixins.box-shadow(@pxl-box-shadow);
+
+        .stripe-button-title {
+          font-family: @pxl-text-font-bold;
+          font-size: @pxl-font-size-button-title;
+          color: @pxl-color-participate;
+        }
+
+        .stripe-button-text {
+          margin-bottom: @font-size-base;
+          font-family: @pxl-text-font;
+          font-size: @font-size-base;
+          color: @text-color;
+        }
+
+        .stripe-button {
+          // the stripe button with the given amount
+          .stripe-button(@font-size-button, @pxl-color-participate);
+
+          body.front & {
+            .stripe-button(@font-size-button, @pxl-color-main);
+          }
+
+          &.btn-warning {
+            background-color: @pxl-color-warning;
+          }
+
+          &[disabled] {
+            opacity: 1.0;
+          }
+        }
+
+        //
+        // stripe button custom form
+        .stripe-button-custom-form {
+          .stripe-button-form ();
+        }
+
+        //
+        // visible only when input is incorrect
+        .stripe-button-input-error {
+          font-family: @pxl-text-font;
+          font-size: 12px;
+          color: @pxl-color-danger;
+        }
+      }
+
+      //
+      // error items
+      .label.stripe-message {
+        // stripe message
+        display: block;
+        white-space: normal;
+        max-width: 150px;
+
+        &.label-warning {
+          background-color: @pxl-color-warning;
+        }
+      }
+
+      .popover {
+        // stripe popover
+        font-family: @pxl-text-font;
+        letter-spacing: 1.2px;
+        text-align: left;
+        color: #fff;
+        border: none;
+        background: none;
+
+        .arrow {
+        }
+
+        .popover-title {
+          padding: 4px 14px;
+          font-family: @pxl-title-font;
+          font-size: 80%;
+          border:none;
+        }
+
+        .popover-content {
+          padding: 4px 14px;
+          font-size: 80%;
+          #pxl-mixins.border-radius(0 0 5px 5px);
+          background-color: @pxl-color-warning;
+        }
+      }
+    }
+  }
+}
