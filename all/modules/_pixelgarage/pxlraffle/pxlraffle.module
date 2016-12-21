@@ -110,10 +110,10 @@ function pxlraffle_uid_load($uid) {
  *
  * Used to update the current raffle with the donated money and update raffle state if needed.
  **/
-function pxlraffle_charge_completed($amount, $stripe_fee, $app_fee, $currency) {
+function pxlraffle_stripe_charge_completed($charge_params) {
   //
   // update current raffle with the donated amount
-  $rest_amount = pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee);
+  $rest_amount = pxlraffle_update_current_raffle_donation($charge_params);
 
   //
   // create new raffle open for donations

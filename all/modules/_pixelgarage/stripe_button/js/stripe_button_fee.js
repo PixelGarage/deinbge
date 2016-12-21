@@ -18,7 +18,7 @@
           var $feeAnswerWrapper = $fee_block.find('.fee-answer-wrapper'),
               feeValue = parseFloat($(this).attr('data-fee-value')),
               params = {
-                selectedFee: feeValue
+                selectedFeePercentage: feeValue
               };
 
           // toggle selection
@@ -27,7 +27,7 @@
           $selectedItem = $(this);
 
           // update selected fee on server
-          $feeAnswerWrapper.load('stripe/ajax/fee', params);
+          $feeAnswerWrapper.load('/stripe/ajax/fee', params);
         });
       });
 

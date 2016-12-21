@@ -6,15 +6,28 @@
  */
 
 /**
- * Hook called after the stripe transaction has been successfully performed.
+ * After a stripe transaction has been successfully performed, this hook is called.
+ * This hook is called inside a try-catch clause catching all Stripe exceptions, so no
+ * special exception handling has to be done in this hook.
  *
- * Can be used to update Drupal internal data structures.
+ * An associative array with all charge parameters is transfered to the hook as input parameter.
  *
- * @param $amount              The charged amount in currency
- * @param $stripe_fee          The stripe fee in currency.
- * @param int|The $app_fee     The application fees in currency
- * @param string|The $currency The currency of the charged amount.
+ * @param $charge_params       array
+ *    The associative array with the following charge parameters as key-value pairs:
+ *      currency:         The currency of the charged amount.
+ *      amount:           The charged amount in currency.
+ *      stripe_fee:       The stripe fee in currency.
+ *      app_fee:          The application fees in currency.
+ *      stripe_api_mode:  The stripe API mode, e.g. test | live.
  */
-function hook_charge_completed($amount, $stripe_fee, $app_fee = 0, $currency = 'CHF') {
-  watchdog('stripe_button', '@amount CHF charged including stripe fee = @stripe_fee CHF and application fee = @app_fee CHF', array('@amount' => $amount, '@stripe_fee' => $stripe_fee, '@app_fee' => $app_fee), WATCHDOG_DEBUG);
+function hook_stripe_charge_completed($charge_params) {
+  watchdog(
+    'stripe_button',
+    '@amount @curr charged including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr',
+    array(
+      '@amount' => $charge_params['amount'],
+      '@stripe_fee' => $charge_params['stripe_fee'],
+      '@app_fee' => $charge_params['app_fee'],
+      '@curr' => $charge_params['currency'],
+    ), WATCHDOG_DEBUG);
 }

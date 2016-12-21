@@ -42,7 +42,7 @@ function stripe_button_menu() {
  * AJAX callback function of the stripe token creation.
  */
 function stripe_button_token_callback() {
-  // get/set charge details
+  // get charge details
   $token = $_POST['stripeToken'];
   $button_id = $_POST['btnID'];
   $amount = $_POST['amount'];
@@ -57,11 +57,11 @@ function stripe_button_token_callback() {
     '@date' => $date,
   ));
 
-  // load stripe php library
+  //
+  // load stripe php library or return error, if no library is available
   $library = libraries_load('stripe');
   if (!$library['loaded']) {
-    //
-    // return error button with message
+    // create error button with message
     $button = theme('stripe_button_fix_value', array(
         'id' => $button_id,
         'amount' => -1,
@@ -69,17 +69,23 @@ function stripe_button_token_callback() {
         'message' => t("NO charge!\nStripe API is missing"),
       )
     );
+
+    // exit with error button
     drupal_add_http_header('Content-Type', 'text/html; charset=utf-8');
     print $button;
     drupal_exit();
   }
 
-  // set the private API key
+  //
+  // set the private API key of specific account
   \Stripe\Stripe::setApiKey(_stripe_api_secret_key());
 
-  // Create the charge - this will charge the user's card
-  $msg = false;
+  //
+  // Perform the charge process
   try {
+    $msg = false;
+
+    // Create the stripe charge object - this will charge the user's card
     $charge = \Stripe\Charge::create(array(
       "amount" => $amount,
       "currency" => $currency,
@@ -87,6 +93,26 @@ function stripe_button_token_callback() {
       "description" => $desc,
       "receipt_email" => $email
     ));
+
+    // get application fee if available
+    $app_fee = 0;
+    $session_data = &stripe_button_session_data();
+    if (isset($session_data['selected_fee_percentage'])) {
+      $app_fee = $amount * $session_data['selected_fee_percentage'];
+    }
+    $stripe_fee = round($amount * 0.029) + 30;
+
+    //
+    // invoke charge_completed hook for all modules, if charge was successful
+    $params = array (
+      'stripe_api_mode' => strtolower(variable_get('stripe_api_mode')),
+      'currency' => $currency,
+      'amount' => ($amount / 100),
+      'stripe_fee' => ($stripe_fee / 100),
+      'app_fee' => ($app_fee / 100),
+    );
+    module_invoke_all('stripe_charge_completed', $params);
+
   }
   catch(\Stripe\Error\Card $e) {
     // The card has been declined
@@ -100,21 +126,9 @@ function stripe_button_token_callback() {
     $msg = t($error['message']);
   }
   finally {
-    if (!$msg) {
-      // get application fee if available
-      $app_fee = 0;
-      $session_data = &stripe_button_session_data();
-      if (isset($session_data['selected_fee'])) {
-        $app_fee = $amount * $session_data['selected_fee'];
-      }
-      $stripe_fee = round($amount * 0.029) + 30;
-
-      //
-      // invoke hook for all modules, if charge was successful
-      module_invoke_all('charge_completed', ($amount / 100), ($stripe_fee / 100), ($app_fee / 100), $currency);
-    }
   }
 
+  //
   // create success button (amount == 0 means success button, amount < 0 means failure button)
   $success = !$msg ? 0 : -1;
   $title = !$msg ? t('Thank you,') : t('Whoops,');
@@ -190,12 +204,12 @@ function stripe_button_custom_form_callback () {
  * AJAX callback on click of fee radios. Used to set user selected fee percentage.
  */
 function stripe_button_fee_callback() {
-  $selected_fee = floatval($_POST['selectedFee']);
+  $selected_fee_percentage = floatval($_POST['selectedFeePercentage']);
   $session_data = &stripe_button_session_data();
-  $session_data['selected_fee'] = $selected_fee;
+  $session_data['selected_fee_percentage'] = $selected_fee_percentage;
 
   // create answer depending on selected fee
-  switch($selected_fee) {
+  switch($selected_fee_percentage) {
     case 0.0:
       $answer = t('<strong>Too bad!</strong> We are entirely financed by voluntary comission. Your contribution would make a difference.');
       break;

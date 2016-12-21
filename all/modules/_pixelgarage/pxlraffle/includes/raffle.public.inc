@@ -150,7 +150,7 @@ function pxlraffle_get_subscription_raffle_nid() {
  */
 function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
   $state = $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'];
-  $raffle_date = $raffle->field_raffle_date[LANGUAGE_NONE][0]['value'];
+  $raffle_date = !empty($raffle->field_raffle_date) ? $raffle->field_raffle_date[LANGUAGE_NONE][0]['value'] : 'now';
   $raffle_time = strtotime($raffle_date);
   $default_msg = t($undefined);
 
@@ -188,11 +188,17 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
 }
 
 /**
- * Updates the current raffle with donation and fees.
+ * Updates the current raffle amount with the a donation excluding all fees. If
+ * the updated raffle amount exceeds the maximum amount, the current raffle is closed.
+ * The remaining amount of the closed raffle is returned.
  *
- * @return int      Returns the rest amount, if a new raffle has to be created.
+ * TEST MODE: In Stripe test mode neither the raffle object nor the donation table are updated.
+ *            Only a watchdog message is created.
+ *
+ * @return  int
+ *    Returns the rest amount, if a new raffle has to be created, otherwise false.
  */
-function pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee) {
+function pxlraffle_update_current_raffle_donation($charge_params) {
   //
   // open transaction to prevent doubled raffle codes
   $transaction = db_transaction(); // commit when $transaction goes out of scope
@@ -203,28 +209,48 @@ function pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee
   $raffle = node_load($current_raffle_nid);
 
   //
-  // return amount higher than 30000 CHF
-  $rest_amount = false;
+  // calculate new raffle donation amount
+  $remaining_amount = false;
+  $stripe_api_mode = $charge_params['stripe_api_mode'];
+  $amount = $charge_params['amount'];
+  $stripe_fee = $charge_params['stripe_fee'];
+  $app_fee = $charge_params['app_fee'];
+  $currency = $charge_params['currency'];
+
   $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $stripe_fee - $app_fee)* 1.0; // casting to float
 
-  // check if new raffle has to be opened
-  if ($new_amount > PXLRAFFLE_MAX_AMOUNT) {
+  //
+  // check if in test mode or the new amount exceeds the maximal raffle amount
+  if ($stripe_api_mode === 'test') {
+    watchdog(
+      'PxlRaffle test',
+      '@amount @curr charged including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr. Old raffle amount: @old_amount @curr; New raffle amount: @new_amount @curr',
+      array(
+        '@curr' => $currency,
+        '@amount' => $amount,
+        '@stripe_fee' => $stripe_fee,
+        '@app_fee' => $app_fee,
+        '@old_amount' => $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'],
+        '@new_amount' => $new_amount,
+      ), WATCHDOG_DEBUG);
+
+    return false;
+  }
+  else if ($new_amount >= PXLRAFFLE_MAX_AMOUNT) {
     $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_MAX_AMOUNT;
     $raffle->field_raffle_state[LANGUAGE_NONE][0]['value'] = PXLRAFFLE_STATE_CLOSED;
-    $rest_amount = $new_amount - PXLRAFFLE_MAX_AMOUNT;
+    $remaining_amount = $new_amount - PXLRAFFLE_MAX_AMOUNT;
   }
   else {
     $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = $new_amount;
   }
 
-  //
-  // add application fees
+  // add application fees and save raffle
   $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] = $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] + $app_fee;
-
-  // save raffle
   node_save($raffle);
 
-  // add donation to pxl_donations table
+  //
+  // add current donation to pxl_donations table
   $fields = array(
     'booked' => 0,
     'type' => 'one-time',
@@ -238,6 +264,6 @@ function pxlraffle_update_current_raffle_donation($amount, $stripe_fee, $app_fee
     ->execute();
 
   // return rest amount
-  return $rest_amount;
+  return $remaining_amount;
 }
 
