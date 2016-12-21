@@ -7,7 +7,7 @@ function template_preprocess_stripe_button_fee_block(&$vars) {
   //
   // define text for stripe button fee block
   $session_data = &stripe_button_session_data();
-  $session_data['selected_fee'] = 0.1; // 10% default fee
+  $session_data['selected_fee_percentage'] = 0.1; // 10% default fee
 
   $vars['text_top'] = t('We are financed entirely by voluntary contributions. Please support our work with');
   $vars['text_bottom'] = t('of your donation.');
