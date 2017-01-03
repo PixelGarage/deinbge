@@ -6,11 +6,11 @@
  */
 
 /**
- * After a stripe transaction has been successfully performed, this hook is called.
- * This hook is called inside a try-catch clause catching all Stripe exceptions, so no
+ * This hook is called, after a stripe transaction has been successfully performed.
+ * It's called inside a try-catch clause catching all Stripe exceptions, so no
  * special exception handling has to be done in this hook.
  *
- * An associative array with all charge parameters is transfered to the hook as input parameter.
+ * An associative array with all charge parameters is transferred to the hook as input parameter.
  *
  * @param $charge_params       array
  *    The associative array with the following charge parameters as key-value pairs:
@@ -20,7 +20,7 @@
  *      app_fee:          The application fees in currency.
  *      stripe_api_mode:  The stripe API mode, e.g. test | live.
  */
-function hook_stripe_charge_completed($charge_params) {
+function hook_stripe_button_charge_completed($charge_params) {
   watchdog(
     'stripe_button',
     '@amount @curr charged including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr',

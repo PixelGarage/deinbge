@@ -23,7 +23,6 @@ function pixelgarage_links__locale_block(&$vars) {
  */
 function pixelgarage_stripe_button_fix_value($variables) {
   // Render Stripe Checkout button
-  $text = t($variables['label_text']);
   if ($variables['amount'] > 0) {
     //
     // Create initial button
@@ -36,31 +35,53 @@ function pixelgarage_stripe_button_fix_value($variables) {
     $currency = strtoupper($variables['currency']);
     $amount = $variables['amount'] * 100 / 100; // no decimal value if not needed
     $label = t('@amount @currency', array('@amount' => $amount, '@currency' => $currency));
+
+    $box_title = '';
     if ($amount <= 5) {
-      $variables['label_title'] = t('One hour');
+      $box_title = t('One hour');
     }
     else if ($amount <= 15) {
-      $variables['label_title'] = t('Three hours');
+      $box_title = t('Three hours');
     }
     else if ($amount <= 50) {
-      $variables['label_title'] = t('Half a day');
+      $box_title = t('Half a day');
     }
     else if ($amount <= 100) {
-      $variables['label_title'] = t('One day');
+      $box_title = t('One day');
     }
     else if ($amount <= 300) {
-      $variables['label_title'] = t('Three days');
+      $box_title = t('Three days');
     }
     else if ($amount <= 1000) {
-      $variables['label_title'] = t('One week');
+      $box_title = t('One week');
     }
     else if ($amount <= 2500) {
-      $variables['label_title'] = t('One month');
+      $box_title = t('One month');
+    }
+
+    // create box text depending on recurring billing
+    switch ($variables['recurring_billing']) {
+      case 'once':
+      default:
+        $box_text = t('of basic income (single payment)');
+        break;
+      case 'daily':
+        $box_text = t('of basic income (daily billed)');
+        break;
+      case 'weekly':
+        $box_text = t('of basic income (weekly billed)');
+        break;
+      case 'monthly':
+        $box_text = t('of basic income (monthly billed)');
+        break;
+      case 'yearly':
+        $box_text = t('of basic income (yearly billed)');
+        break;
     }
 
     $output = '<div class="stripe-button-container">' .
-      '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $text . '</div>' .
+      '<div class="stripe-button-title">' . $box_title . '</div>' .
+      '<div class="stripe-button-text">' . $box_text . '</div>' .
       '<button id="' . $variables['id'] . '" type="button" class="btn btn-normal stripe-button">' .
       $label .
       '</button></div>';
@@ -70,10 +91,9 @@ function pixelgarage_stripe_button_fix_value($variables) {
     // successful payment, create success button (disabled)
     $label = t("Yes");
     $output = '<div class="stripe-button-container">' .
-      '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $text . '</div>' .
-      '<button id="' . $variables['id'] . '" type="button"' .
-      ' class="btn btn-success stripe-button" disabled>' .
+      '<div class="stripe-button-title">' . t($variables['box_title']) . '</div>' .
+      '<div class="stripe-button-text">' . t($variables['box_text']) . '</div>' .
+      '<button id="' . $variables['id'] . '" type="button" class="btn btn-success stripe-button" disabled>' .
       '<span class="fa fa-check"></span>' . $label .
       '</button></div>';
   }
@@ -83,8 +103,8 @@ function pixelgarage_stripe_button_fix_value($variables) {
     $label = t("No");
     $msg = t($variables['message']);
     $output = '<div class="stripe-button-container">' .
-      '<div class="stripe-button-title">' . $variables['label_title'] . '</div>' .
-      '<div class="stripe-button-text">' . $text . '</div>' .
+      '<div class="stripe-button-title">' . t($variables['box_title']) . '</div>' .
+      '<div class="stripe-button-text">' . t($variables['box_text']) . '</div>' .
       '<button id="' . $variables['id'] . '" type="button"' .
       ' class="btn btn-warning stripe-button" data-toggle="popover" data-trigger="hover" data-placement="auto bottom"'.
       ' title="Stripe Error" data-content="' . $msg . '">' .

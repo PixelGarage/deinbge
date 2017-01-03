@@ -34,7 +34,8 @@
                       btnID: id,  // used to recreate button in ajax response
                       email: token.email,
                       amount: currentSettings.amount,
-                      currency: currentSettings.currency
+                      currency: currentSettings.currency,
+                      recurringBilling: currentSettings.recurringBilling
                     };
 
                 //
@@ -74,11 +75,11 @@
 
           // Open Checkout with further options
           checkoutHandler.open({
-            name: Drupal.settings.stripe_button.name,
+            name: settings.name,
             description: settings.description,
             currency: settings.currency,
             amount: settings.amount,
-            panelLabel: settings.buttonLabel,
+            panelLabel: settings.buttonPrefix,
             zipCode: settings.zipCode == 1,
             billingAddress: settings.billingAddress == 1,
             shippingAddress: settings.shippingAddress == 1,
@@ -107,7 +108,7 @@
   Drupal.behaviors.stripeCheckoutCustomButton = {
     attach: function () {
       // Iterate through all defined stripe button instances
-      $.each(Drupal.settings.stripe_button.custom_buttons, function (button, currency) {
+      $.each(Drupal.settings.stripe_button.custom_buttons, function (button, settings) {
         var $form_button = $('#form-' + button + ' .form-submit'),
             $form_text = $('#form-' + button + ' .form-text'),
             $fieldItemDiv = $form_button.parents('.field-item');
@@ -118,7 +119,8 @@
               params = {
                 btnID: button,  // used to recreate button in ajax response
                 newAmount: new_amount,
-                currency: currency
+                currency: settings.currency,
+                recurringBilling: settings.recurringBilling
               };
 
           //

@@ -95,6 +95,9 @@ function pxlraffle_menu() {
   return $items;
 }
 
+/**
+ * User object auto loader.
+ */
 function pxlraffle_uid_load($uid) {
   if (is_array($uid)) {
     return array_values($uid)[0];
@@ -110,13 +113,13 @@ function pxlraffle_uid_load($uid) {
  *
  * Used to update the current raffle with the donated money and update raffle state if needed.
  **/
-function pxlraffle_stripe_charge_completed($charge_params) {
+function pxlraffle_stripe_button_charge_completed($charge_params) {
   //
   // update current raffle with the donated amount
   $rest_amount = pxlraffle_update_current_raffle_donation($charge_params);
 
   //
-  // create new raffle open for donations
+  // create new raffle, if rest amount is available
   if ($rest_amount) {
     pxlraffle_new_raffle($rest_amount);
   }
