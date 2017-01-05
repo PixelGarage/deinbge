@@ -109,6 +109,16 @@ function pxlraffle_uid_load($uid) {
 
 
 /**
+ * This hook returns the related fee percentage for the pressed stripe button.
+ */
+function pxlraffle_stripe_button_fee_percentage($button_id, $fee_percentages) {
+  if (strpos($button_id, 'field-spenden') !== false) {
+    return $fee_percentages['stripe-button-fee-block'];
+  }
+  return 0;
+}
+
+/**
  * Hook called after the stripe charge transaction has been successfully performed.
  *
  * Used to update the current raffle with the donated money and update raffle state if needed.
@@ -116,7 +126,7 @@ function pxlraffle_uid_load($uid) {
 function pxlraffle_stripe_button_charge_completed($charge_params) {
   //
   // update current raffle with the donated amount
-  $rest_amount = pxlraffle_update_current_raffle_donation($charge_params);
+  $rest_amount = pxlraffle_update_current_raffle_amount($charge_params);
 
   //
   // create new raffle, if rest amount is available
@@ -279,19 +289,19 @@ function _pxlraffle_odometer_theme_attachments (&$vars, $delta) {
  */
 function pxlraffle_block_info() {
   $blocks['pxlraffle_fundraising'] = array(
-    'info' => t('Fundraising information'),
+    'info' => t('Raffle: Current fundraising information'),
     'cache' => DRUPAL_NO_CACHE,
   );
   $blocks['pxlraffle_next_raffle'] = array(
-    'info' => t('Next raffle'),
+    'info' => t('Raffle: Next drawing'),
     'cache' => DRUPAL_NO_CACHE,
   );
   $blocks['pxlraffle_subscriptions'] = array(
-    'info' => t('Raffle subscriptions'),
+    'info' => t('Raffle: Current subscription information'),
     'cache' => DRUPAL_NO_CACHE,
   );
   $blocks['pxlraffle_participate'] = array(
-    'info' => t('Raffle participation'),
+    'info' => t('Raffle: Login and user information'),
     'cache' => DRUPAL_NO_CACHE,
   );
   return $blocks;
@@ -304,12 +314,12 @@ function pxlraffle_block_configure($delta = '') {
   switch ($delta) {
     case 'pxlraffle_fundraising':
     case 'pxlraffle_subscriptions':
-      return _pxlraffle_block_form($delta);
+      return _pxlraffle_odometer_settings_form($delta);
   }
 }
 
 
-function _pxlraffle_block_form ($delta) {
+function _pxlraffle_odometer_settings_form ($delta) {
   $form['pxlraffle_odometer'] = array(
     '#type'         => 'fieldset',
     '#title'        => t('Odometer specific configuration'),

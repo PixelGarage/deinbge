@@ -188,19 +188,28 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
 }
 
 /**
- * Updates the current raffle amount with the a donation excluding all fees. If
- * the updated raffle amount exceeds the maximum amount, the current raffle is closed.
+ * Updates the current raffle amount with the given donation (amount excluding fees).
+ * If the updated raffle amount exceeds the maximum amount, the current raffle is closed.
+ *
  * The remaining amount of the closed raffle is returned.
  *
- * TEST MODE: In Stripe test mode neither the raffle object nor the donation table are updated.
+ * LIVE MODE: The given donation is permanently stored in the database.
+ * TEST MODE: Neither the raffle object nor the donation table are updated.
  *            Only a watchdog message is created.
  *
- * @return  int
- *    Returns the rest amount, if a new raffle has to be created, otherwise false.
+ * @param $donation_params  array
+ *    Associative array containing the values of the donation:
+ *    - stripe_api_mode: "test" | "live"
+ *    - recurring_billing: "one-time" | "daily" | "weekly" | "monthly" | "yearly"
+ *    - currency: Currency of donation
+ *    - amount: Amount of the donation
+ *    - stripe_fee: transaction fee of Stripe (2.9% + 30)
+ *    - app_fee: application fee (user defined percentage for the association)
+ * @return int Returns the rest amount, if a new raffle has to be created, otherwise false.
  */
-function pxlraffle_update_current_raffle_donation($charge_params) {
+function pxlraffle_update_current_raffle_amount($donation_params) {
   //
-  // open transaction to prevent doubled raffle codes
+  // open transaction
   $transaction = db_transaction(); // commit when $transaction goes out of scope
 
   //
@@ -211,12 +220,12 @@ function pxlraffle_update_current_raffle_donation($charge_params) {
   //
   // calculate new raffle donation amount
   $remaining_amount = false;
-  $stripe_api_mode = $charge_params['stripe_api_mode'];
-  $amount = $charge_params['amount'];
-  $stripe_fee = $charge_params['stripe_fee'];
-  $app_fee = $charge_params['app_fee'];
-  $currency = $charge_params['currency'];
-  $recurring_billing = $charge_params['recurring_billing'];
+  $stripe_api_mode = $donation_params['stripe_api_mode'];
+  $recurring_billing = $donation_params['recurring_billing'];
+  $currency = $donation_params['currency'];
+  $amount = $donation_params['amount'];
+  $stripe_fee = $donation_params['stripe_fee'];
+  $app_fee = $donation_params['app_fee'];
 
   $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $stripe_fee - $app_fee)* 1.0; // casting to float
 

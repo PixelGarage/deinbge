@@ -28,7 +28,7 @@ function pxlraffle_donation_operations() {
 
 /**
  * Make mass update of donations, changing all donations in the $donations array
- * to update them with the field values in $updates.
+ * with the field values in $updates.
  *
  * IMPORTANT NOTE: This function is intended to work when called from a form
  * submission handler. Calling it outside of the form submission process may not
@@ -165,36 +165,36 @@ function donation_sum_column($donations, $updates) {
 }
 
 
+
+
 /* --------------------------------------------------
- * PxlRaffle admin forms
+ * PxlRaffle admin donation form
  * --------------------------------------------------*/
 
 /**
  * Page callback: Form constructor for the donation administration form.
  *
- * @see pxlraffle_admin_donations()
+ * @see pxlraffle_admin_donation_form()
  * @see pxlraffle_admin_donations_submit()
  * @see pxlraffle_admin_donations_validate()
  * @see pxlraffle_menu()
  * @ingroup forms
  */
 function pxlraffle_donation_overview($form, $form_state) {
-  $form['admin'] = pxlraffle_admin_donations();
-
+  $form['admin'] = pxlraffle_admin_donation_form($form, $form_state);
   return $form;
 }
 
 /**
  * Form builder: Builds the donation administration overview.
  *
- * @see pxlraffle_admin_donations()
  * @see pxlraffle_admin_donations_submit()
  * @see pxlraffle_admin_donations_validate()
  * @see pxlraffle_menu()
  *
  * @ingroup forms
  */
-function pxlraffle_admin_donations() {
+function pxlraffle_admin_donation_form($form, $form_state) {
   $admin_access = user_access('administer pixel raffle');
 
   //
@@ -204,6 +204,7 @@ function pxlraffle_admin_donations() {
     '#title' => t('Update options'),
     '#attributes' => array('class' => array('container-inline')),
     '#access' => $admin_access,
+    '#weight' => 0,
   );
   $options = array();
   foreach (module_invoke_all('donation_operations') as $operation => $array) {
@@ -219,8 +220,28 @@ function pxlraffle_admin_donations() {
   $form['options']['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Update'),
-    '#validate' => array('pxlraffle_admin_donations_validate'),
-    '#submit' => array('pxlraffle_admin_donations_submit'),
+    '#validate' => array('pxlraffle_admin_donation_form_validate'),
+    '#submit' => array('pxlraffle_admin_donation_form_submit'),
+  );
+
+  //
+  // create table filter
+  $filters = array(
+    'all' => t('Show all donations'),
+    'booked' => t('Show booked donations'),
+    'unbooked' => t('Show unbooked donations'),
+    'paged' => t('Show donations in pages'),
+  );
+  $form['filter'] = array(
+    '#type' => 'select',
+    '#title' => t('Table filter'),
+    '#options' => $filters,
+    '#default_value' => 'paged',
+    '#ajax' => array(
+      'callback' => 'pxlraffle_filter_callback',
+      'wrapper' => 'donation-filter-wrapper',
+    ),
+    '#weight' => 1,
   );
 
   //
@@ -236,50 +257,38 @@ function pxlraffle_admin_donations() {
   );
 
   //
-  // select all donations ID's of a page
-  $query = db_select('pxl_donations', 'd')->extend('PagerDefault')->extend('TableSort');
-  $result = $query
-    ->fields('d')
-    ->limit(50)
-    ->orderByHeader($header)
-    ->execute();
-
-  //
-  // Prepare the list of donations.
-  $session_data = &pxlraffle_session_data();
-  $rows = array();
-  $amount = 0;
-  $stripe_fee = 0;
-  $app_fee = 0;
-  foreach ($result as $donation) {
-    $rows[$donation->did] = array(
-      'did' => $donation->did,
-      'booked' => $donation->booked,
-      'type' => check_plain($donation->type),
-      'amount' => floatval($donation->amount),
-      'stripe_fee' => floatval($donation->stripe_fee),
-      'app_fee' => floatval($donation->app_fee),
-      'changed' => format_date($donation->timestamp, 'short')
-    );
-    $amount += floatval($donation->amount);
-    $stripe_fee += floatval($donation->stripe_fee);
-    $app_fee += floatval($donation->app_fee);
+  // create donation rows
+  $limit = 0;
+  $conditions = array();
+  $filter = !empty($form_state['values']['filter']) ? $form_state['values']['filter'] : 'paged';
+  switch ($filter) {
+    case 'all':
+      $condition = null;
+      break;
+    case 'booked':
+      $condition = array('field' => 'booked', 'value' => 1, 'operator' => '=');
+      break;
+    case 'unbooked':
+      $condition = array('field' => 'booked', 'value' => 0, 'operator' => '=');
+      break;
+    case 'paged':
+    default:
+      $condition = null;
+      $limit = 50;
+      break;
   }
-  $session_data['donation_rows'] = $rows;
-  $session_data['donation_amount'] = $amount;
-  $session_data['donation_stripe_fee'] = $stripe_fee;
-  $session_data['donation_app_fee'] = $app_fee;
-
-  //
-  // add sums to header
-  $header['amount'] = array('data' => t('Donation amount = @amount CHF', array('@amount' => $amount)), 'field' => 'd.amount');
-  $header['stripe_fee'] = array('data' => t('Stripe fee = @stripe_fee CHF', array('@stripe_fee' => $stripe_fee)), 'field' => 'd.stripe_fee');
-  $header['app_fee'] = array('data' => t('Application fee = @app_fee CHF', array('@app_fee' => $app_fee)), 'field' => 'd.app_fee');
+  if ($condition) {
+    $conditions[] = $condition;
+  }
+  $rows = _create_donation_rows($header, $limit, $conditions);
 
   // Only use a tableselect when the current user is able to perform any
   // operations.
+  $form['donations']['#prefix'] = '<div id="donation-filter-wrapper">';
+  $form['donations']['#suffix'] = '</div>';
+  $form['donations']['#weight'] = 2;
   if ($admin_access) {
-    $form['donations'] = array(
+    $form['donations']['table'] = array(
       '#type' => 'tableselect',
       '#prefix' => '<div id="tableselect-wrapper">',
       '#suffix' => '</div>',
@@ -294,7 +303,7 @@ function pxlraffle_admin_donations() {
   }
   // Otherwise, use a simple table.
   else {
-    $form['donations'] = array(
+    $form['donations']['table'] = array(
       '#theme' => 'table',
       '#header' => $header,
       '#rows' => $rows,
@@ -302,7 +311,12 @@ function pxlraffle_admin_donations() {
     );
   }
 
-  $form['pager'] = array('#markup' => theme('pager'));
+  if ($filter == 'paged') {
+    $form['donations']['pager'] = array(
+      '#markup' => theme('pager'),
+      '#weight' => 3,
+    );
+  }
   return $form;
 }
 
@@ -312,9 +326,9 @@ function pxlraffle_admin_donations() {
  * Checks whether any donations have been selected to perform the chosen 'Update
  * option' on.
  */
-function pxlraffle_admin_donations_validate($form, &$form_state) {
+function pxlraffle_admin_donation_form_validate($form, &$form_state) {
   // Error if there are no items to select.
-  if (!is_array($form_state['values']['donations']) || !count(array_filter($form_state['values']['donations']))) {
+  if (!is_array($form_state['values']['table']) || !count(array_filter($form_state['values']['table']))) {
     form_set_error('', t('No items selected.'));
   }
 }
@@ -324,11 +338,11 @@ function pxlraffle_admin_donations_validate($form, &$form_state) {
  *
  * Executes the chosen 'Update option' on the selected nodes.
  **/
-function pxlraffle_admin_donations_submit($form, &$form_state) {
+function pxlraffle_admin_donation_form_submit($form, &$form_state) {
   $operations = module_invoke_all('donation_operations');
   $operation = $operations[$form_state['values']['operation']];
   // Filter out unchecked donations
-  $donations = array_filter($form_state['values']['donations']);
+  $donations = array_filter($form_state['values']['table']);
   if ($function = $operation['callback']) {
     // Add in callback arguments if present.
     if (isset($operation['callback arguments'])) {
@@ -348,6 +362,10 @@ function pxlraffle_admin_donations_submit($form, &$form_state) {
   }
 }
 
+/* --------------------------------------------------
+ * AJAX callbacks
+ * --------------------------------------------------*/
+
 /**
  * AJAX callback for the tableselect.
  *
@@ -362,7 +380,7 @@ function pxlraffle_tableselect_callback($form, &$form_state) {
   $app_fee = 0;
 
   // Filter out unchecked donations
-  $donations = array_filter($form_state['values']['donations']);
+  $donations = array_filter($form_state['values']['table']);
   if (is_array($donations) && count($donations)) {
     // donations selected, calculate sum of selection
     foreach ($donations as $did) {
@@ -380,10 +398,88 @@ function pxlraffle_tableselect_callback($form, &$form_state) {
 
   //
   // add sums to header
-  $table_donations = $form['admin']['donations'];
+  $table_donations = $form['admin']['donations']['table'];
   $table_donations['#header']['amount']['data'] =  t('Donation amount = @amount CHF', array('@amount' => $amount));
   $table_donations['#header']['stripe_fee']['data'] = t('Stripe fee = @stripe_fee CHF', array('@stripe_fee' => $stripe_fee));
   $table_donations['#header']['app_fee']['data'] = t('Application fee = @app_fee CHF', array('@app_fee' => $app_fee));
 
   return $table_donations;
 }
+
+/**
+ * AJAX callback for the donation filter.
+ */
+function pxlraffle_filter_callback($form, &$form_state) {
+  return $form['admin']['donations'];
+}
+
+
+/* --------------------------------------------------
+ * Helper functions
+ * --------------------------------------------------*/
+
+/**
+ * Create and returns all donation rows.
+ */
+function _create_donation_rows(&$header, $limit = 0, $conditions = array()) {
+  //
+  // select te specified donations
+  // add limit, if any
+  if ($limit) {
+    $query = db_select('pxl_donations', 'd')->extend('PagerDefault')->extend('TableSort');
+    $query = $query
+      ->fields('d')
+      ->orderByHeader($header)
+      ->limit($limit);
+  }
+  else {
+    $query = db_select('pxl_donations', 'd')->extend('TableSort');
+    $query = $query
+      ->fields('d')
+      ->orderByHeader($header);
+  }
+
+  // add field conditions, if any
+  if (!empty($conditions)) {
+    foreach ($conditions as $condition) {
+      $query = $query->condition($condition['field'], $condition['value'], $condition['operator']);
+    }
+  }
+  $result = $query->execute();
+
+  //
+  // Prepare the list of donations.
+  $rows = array();
+  $amount = 0;
+  $stripe_fee = 0;
+  $app_fee = 0;
+  foreach ($result as $donation) {
+    $rows[$donation->did] = array(
+      'did' => $donation->did,
+      'booked' => $donation->booked,
+      'type' => check_plain($donation->type),
+      'amount' => floatval($donation->amount),
+      'stripe_fee' => floatval($donation->stripe_fee),
+      'app_fee' => floatval($donation->app_fee),
+      'changed' => format_date($donation->timestamp, 'short')
+    );
+    $amount += floatval($donation->amount);
+    $stripe_fee += floatval($donation->stripe_fee);
+    $app_fee += floatval($donation->app_fee);
+  }
+  $session_data = &pxlraffle_session_data();
+  $session_data['donation_rows'] = $rows;
+  $session_data['donation_amount'] = $amount;
+  $session_data['donation_stripe_fee'] = $stripe_fee;
+  $session_data['donation_app_fee'] = $app_fee;
+
+  //
+  // add sums to header
+  $header['amount'] = array('data' => t('Donation amount = @amount CHF', array('@amount' => $amount)), 'field' => 'd.amount');
+  $header['stripe_fee'] = array('data' => t('Stripe fee = @stripe_fee CHF', array('@stripe_fee' => $stripe_fee)), 'field' => 'd.stripe_fee');
+  $header['app_fee'] = array('data' => t('Application fee = @app_fee CHF', array('@app_fee' => $app_fee)), 'field' => 'd.app_fee');
+
+  // return rows
+  return $rows;
+}
+
