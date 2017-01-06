@@ -8,12 +8,7 @@
 
 // Mixins
 // -------------------------
-
-
-
-// General settings
-// -------------------------
-#stripe-button-fee-block {
+.stripe-button-fee-percentages() {
   margin: 50px 0 50px;
 
   .fee-text-top,
@@ -76,3 +71,21 @@
     color: @text-color;
   }
 }
+
+
+
+// General settings
+// -------------------------
+.field-name-field-spenden-fee-percentage,
+.field-name-field-recurr-spenden-fee-percent {
+  .field-items {
+    .field-item {
+      width: 100%;
+
+      .stripe-button-fee-percentages {
+        .stripe-button-fee-percentages();
+      }
+    }
+  }
+}
+

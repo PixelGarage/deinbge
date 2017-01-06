@@ -23,6 +23,7 @@ function pixelgarage_links__locale_block(&$vars) {
  */
 function pixelgarage_stripe_button_fix_value($variables) {
   // Render Stripe Checkout button
+  $field_id = $variables['field_id'];
   if ($variables['amount'] > 0) {
     //
     // Create initial button
@@ -37,10 +38,13 @@ function pixelgarage_stripe_button_fix_value($variables) {
     $label = t('@amount @currency', array('@amount' => $amount, '@currency' => $currency));
 
     $box_title = '';
-    if ($amount <= 5) {
+    if ($amount <= 3) {
       $box_title = t('One hour');
     }
-    else if ($amount <= 15) {
+    else if ($amount <= 6) {
+      $box_title = t('Two hours');
+    }
+    else if ($amount <= 10) {
       $box_title = t('Three hours');
     }
     else if ($amount <= 50) {
@@ -61,28 +65,28 @@ function pixelgarage_stripe_button_fix_value($variables) {
 
     // create box text depending on recurring billing
     switch ($variables['recurring_billing']) {
-      case 'once':
+      case 'one-time':
       default:
-        $box_text = t('of basic income (single payment)');
+        $box_text = t('of basic income');
         break;
       case 'daily':
-        $box_text = t('of basic income (daily billed)');
+        $box_text = t('of basic income each day');
         break;
       case 'weekly':
-        $box_text = t('of basic income (weekly billed)');
+        $box_text = t('of basic income each week');
         break;
       case 'monthly':
-        $box_text = t('of basic income (monthly billed)');
+        $box_text = t('of basic income each month');
         break;
       case 'yearly':
-        $box_text = t('of basic income (yearly billed)');
+        $box_text = t('of basic income each year');
         break;
     }
 
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . $box_title . '</div>' .
       '<div class="stripe-button-text">' . $box_text . '</div>' .
-      '<button id="' . $variables['id'] . '" type="button" class="btn btn-normal stripe-button">' .
+      '<button id="' . $field_id . '" type="button" class="btn btn-normal stripe-button">' .
       $label .
       '</button></div>';
   }
@@ -93,7 +97,7 @@ function pixelgarage_stripe_button_fix_value($variables) {
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . t($variables['box_title']) . '</div>' .
       '<div class="stripe-button-text">' . t($variables['box_text']) . '</div>' .
-      '<button id="' . $variables['id'] . '" type="button" class="btn btn-success stripe-button" disabled>' .
+      '<button id="' . $field_id . '" type="button" class="btn btn-success stripe-button" disabled>' .
       '<span class="fa fa-check"></span>' . $label .
       '</button></div>';
   }
@@ -105,7 +109,7 @@ function pixelgarage_stripe_button_fix_value($variables) {
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . t($variables['box_title']) . '</div>' .
       '<div class="stripe-button-text">' . t($variables['box_text']) . '</div>' .
-      '<button id="' . $variables['id'] . '" type="button"' .
+      '<button id="' . $field_id . '" type="button"' .
       ' class="btn btn-warning stripe-button" data-toggle="popover" data-trigger="hover" data-placement="auto bottom"'.
       ' title="Stripe Error" data-content="' . $msg . '">' .
       '<span class="fa fa-times"></span>' . $label .

@@ -1,0 +1,62 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ralph
+ * Date: 05.01.17
+ * Time: 11:53
+ */
+/**
+ * Implements hook_schema().
+ */
+function stripe_button_schema() {
+  $schema['pxl_user_stripe_customer'] = array(
+    'description' => 'Table that relates a registered user with a Stripe customer (subscription).',
+    'fields' => array(
+      'user_id' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'The user id of the user, that is related to the Stripe customer',
+      ),
+      'stripe_cust_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Stripe customer id, that holds subscription',
+      ),
+    ),
+    'primary key' => array('stripe_cust_id'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Insert the {pxl_user_stripe_customer} table.
+ */
+function stripe_button_update_7200() {
+  //
+  // create the new table UserID - Stripe CustomerID
+  $schema['pxl_user_stripe_customer'] = array(
+    'description' => 'Table that relates a registered user with a Stripe customer (subscription).',
+    'fields' => array(
+      'user_id' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'The user id of the user, that is related to the Stripe customer',
+      ),
+      'stripe_cust_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Stripe customer id, that holds subscription',
+      ),
+    ),
+    'primary key' => array('stripe_cust_id'),
+  );
+  db_create_table('pxl_user_stripe_customer', $schema['pxl_user_stripe_customer']);
+
+}

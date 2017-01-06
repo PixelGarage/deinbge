@@ -14,11 +14,12 @@
    */
   Drupal.behaviors.stripeCheckoutPredefinedButton = {
     attach: function () {
-      var currentSettings,
+      var clickedButtonSettings,
           $clickedButton,
+          settings = Drupal.settings.stripe_button,
           checkoutHandler = StripeCheckout.configure({
-            key: Drupal.settings.stripe_button.stripe_public_key,
-            image: Drupal.settings.stripe_button.icon,
+            key: settings.stripe_public_key,
+            image: settings.icon,
             locale: 'auto',
             token: function (token) {
               // get button container for responses
@@ -33,9 +34,9 @@
                       stripeToken: token.id,
                       btnID: id,  // used to recreate button in ajax response
                       email: token.email,
-                      amount: currentSettings.amount,
-                      currency: currentSettings.currency,
-                      recurringBilling: currentSettings.recurringBilling
+                      amount: clickedButtonSettings.amount,
+                      currency: clickedButtonSettings.currency,
+                      recurringBilling: clickedButtonSettings.recurringBilling
                     };
 
                 //
@@ -70,7 +71,7 @@
         $button.off('click');
         $button.on('click', function (e) {
           // set current settings
-          currentSettings = settings;
+          clickedButtonSettings = settings;
           $clickedButton  = $(this);
 
           // Open Checkout with further options

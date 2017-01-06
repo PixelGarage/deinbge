@@ -109,16 +109,6 @@ function pxlraffle_uid_load($uid) {
 
 
 /**
- * This hook returns the related fee percentage for the pressed stripe button.
- */
-function pxlraffle_stripe_button_fee_percentage($button_id, $fee_percentages) {
-  if (strpos($button_id, 'field-spenden') !== false) {
-    return $fee_percentages['stripe-button-fee-block'];
-  }
-  return 0;
-}
-
-/**
  * Hook called after the stripe charge transaction has been successfully performed.
  *
  * Used to update the current raffle with the donated money and update raffle state if needed.

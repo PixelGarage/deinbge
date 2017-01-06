@@ -65,10 +65,6 @@ function stripe_button_registered_user($email) {
   }
   else {
     $registered_user = user_load($GLOBALS['user']->uid);
-    if (!property_exists($registered_user, 'field_stripe_customer_id')) {
-      // current user object misses property
-      throw new Exception('Missing property on user. User object needs field to store ID of created Stripe customer.');
-    }
   }
   return $registered_user;
 }
@@ -83,10 +79,15 @@ function stripe_button_registered_user($email) {
  */
 function stripe_button_subscription_plan($amount, $currency, $recurring_billing) {
   //
-  // get subscription plan via plan-id
-  $plan_id = 'bge_' . $recurring_billing . '_' . $amount;
-  $subscription_plan = \Stripe\Plan::retrieve($plan_id);
-  if ($subscription_plan) return $subscription_plan;
+  // get subscription plan via plan-id, if available
+  try {
+    $plan_id = 'bge_' . $recurring_billing . '_' . $amount;
+    $subscription_plan = \Stripe\Plan::retrieve($plan_id);
+    return $subscription_plan;
+  }
+  catch (Exception $e) {
+    // no plan with given id found, do nothing here
+  }
 
   //
   // create a new subscription plan
@@ -145,13 +146,7 @@ function stripe_button_subscription_plan($amount, $currency, $recurring_billing)
 function stripe_button_subscribe_user_to_plan($registered_user, $plan, $email, $source) {
   //
   // check, if user is already subscribed to a plan and delete it, if any
-  if (!empty($registered_user->field_stripe_customer_id)) {
-    $stripe_cust_id = $registered_user->field_stripe_customer_id[LANGUAGE_NONE][0]['value'];
-    $stripe_customer = \Stripe\Customer::retrieve($stripe_cust_id);
-    if (!$stripe_customer->deleted) {
-      $stripe_customer->delete();
-    }
-  }
+  stripe_button_delete_subscription_for_user($registered_user);
 
   //
   // creating a Stripe customer with a plan and a source (credit card) performs the following:
@@ -166,9 +161,80 @@ function stripe_button_subscribe_user_to_plan($registered_user, $plan, $email, $
   ));
 
   //
-  // new subscription successful, store customer id in registered user for later access (user wants to cancel subscription)
-  $registered_user->field_stripe_customer_id[LANGUAGE_NONE][0]['value'] = $customer->id;
-  user_save($registered_user);
+  // new subscription successful, store customer id and registered user id for later access
+  // e.g. user wants to cancel subscription
+  db_user_stripe_customer_add($registered_user->uid, $customer->id);
 }
 
+/**
+ * Deletes the Stripe subscription for the given registered user.
+ *
+ * @param $registered_user  object
+ *    The registered user object.
+ */
+function stripe_button_delete_subscription_for_user($registered_user) {
+  $stripe_cust_id = db_user_stripe_customer_get($registered_user->uid);
+  if ($stripe_cust_id) {
+    $customer = \Stripe\Customer::retrieve($stripe_cust_id);
+    if (!$customer->deleted) {
+      $customer->delete();
+    }
+    db_user_stripe_customer_delete($stripe_cust_id);
+  }
+}
+
+
+/* --------------------------------------------------
+ * DB UserID - Stripe CustomerID
+ * --------------------------------------------------*/
+/**
+ * Adds a new record to the {pxl_user_stripe_customer} db.
+ *
+ * @param $uid      int       User id.
+ * @param $cust_id  string    Stripe customer id.
+ */
+function db_user_stripe_customer_add($uid, $cust_id) {
+  $fields = array(
+    'user_id' => $uid,
+    'stripe_cust_id' => $cust_id,
+  );
+  db_insert('pxl_user_stripe_customer')
+    ->fields($fields)
+    ->execute();
+
+}
+
+/**
+ * Gets the Stripe customer id for the given user id. False, if no record is found.
+ *
+ * @param $uid      int       User id.
+ * @return mixed    string    Stripe customer id, if record exists, otherwise false.
+ */
+function db_user_stripe_customer_get($uid) {
+  // get related stripe customer for the given user id
+  $result = db_select('pxl_user_stripe_customer', 'p')
+    ->fields('p', array('stripe_cust_id'))
+    ->condition('p.user_id', $uid)
+    ->execute()
+    ->fetchAssoc();
+
+  if ($result) {
+    return $result['stripe_cust_id'];
+  }
+  return false;
+}
+
+/**
+ * Deletes the record containing the given Stripe customer id.
+ *
+ * @param $cust_id  string    Stripe customer id.
+ * @return bool   True, if deletion was successful, false otherwise.
+ */
+function db_user_stripe_customer_delete($cust_id) {
+  // delete stripe customer relation
+  $deleted = db_delete('pxl_user_stripe_customer')
+    ->condition('stripe_cust_id', $cust_id)
+    ->execute();
+  return $deleted == 1;
+}
 
