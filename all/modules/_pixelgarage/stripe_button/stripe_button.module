@@ -39,6 +39,15 @@ function stripe_button_menu() {
     'access callback' => TRUE,
     'page callback' => 'stripe_button_fee_callback',
   );
+
+  // AJAX: manages user subscriptions
+  $items['stripe/user/%user/delete_subscription'] = array(
+    'type' => MENU_CALLBACK,
+    'access callback' => 'user_is_logged_in',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('stripe_button_user_subscription_delete_confirm', 2),
+    'file' => 'includes/stripe.lib.inc',
+  );
   return $items;
 }
 
@@ -84,6 +93,7 @@ function stripe_button_token_callback() {
   // Perform the charge process
   try {
     $msg = false;
+    $stripe_cust_id = false;
 
     // charge customer card according to recurrent billing settings
     if ($recurring_billing == 'one-time') {
@@ -98,10 +108,13 @@ function stripe_button_token_callback() {
       $registered_user = stripe_button_registered_user($email);
 
       // get/create Stripe subscription plan
-      $plan = stripe_button_subscription_plan($amount, $currency, $recurring_billing);
+      $plan_id = stripe_button_subscription_plan($amount, $currency, $recurring_billing);
 
       // create recurring payment for user and bill it immediately
-      stripe_button_subscribe_user_to_plan($registered_user, $plan, $email, $token);
+      $stripe_cust_id = stripe_button_subscribe_user_to_plan($registered_user, $plan_id, $email, $token);
+
+      // successful subscription, inform other modules
+      module_invoke_all('stripe_button_user_subscribed', $registered_user);
     }
 
 
@@ -118,6 +131,12 @@ function stripe_button_token_callback() {
       $fee_percentages = &stripe_button_session_data()['fee_buttons'];
       $fee_percentage = $fee_percentages[$fee_button_id];
       $app_fee = $amount * $fee_percentage;
+
+      //
+      // update subscription with application fee percentage, if any
+      if ($stripe_cust_id) {
+        db_user_stripe_subscription_update($stripe_cust_id, $fee_percentage);
+      }
     }
     $stripe_fee = round($amount * 0.029) + 30;
 
@@ -131,6 +150,8 @@ function stripe_button_token_callback() {
       'app_fee' => ($app_fee / 100),
     );
     module_invoke_all('stripe_button_charge_completed', $params);
+    $session_data = &stripe_button_session_data();
+    $session_data['stripe_button_hook_charge_completed_called'] = true;
 
   }
   catch(\Stripe\Error\Card $e) {
@@ -254,7 +275,6 @@ function stripe_button_fee_callback() {
   print $feedback;
   drupal_exit();
 }
-
 
 
 /* =============================================================================

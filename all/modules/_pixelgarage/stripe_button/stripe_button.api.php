@@ -46,6 +46,24 @@ function hook_stripe_button_fee_select_feedback_alter(&$feedbacks, $fee_button_i
 }
 
 /**
+ * This hook is called when the recurring payment subscription (Stripe) of the user is
+ * successfully finished.
+ *
+ * @param $user
+ */
+function hook_stripe_button_user_subscribed($user) {
+  // update user after subscription, if needed
+}
+
+/**
+ * This hook is called after the recurring payment subscription (Stripe) of the user has been deleted.
+ * @param $user
+ */
+function hook_stripe_button_user_unsubscribed($user) {
+  // update user after subscription, if needed
+}
+
+/**
  * This hook is called, after a stripe transaction has been successfully performed.
  * It's called inside a try-catch clause catching all Stripe exceptions, so no
  * special exception handling has to be done in this hook.

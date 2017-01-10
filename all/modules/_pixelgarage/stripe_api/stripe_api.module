@@ -43,7 +43,7 @@ function _stripe_api_process_incoming_webhook() {
   $event = NULL;
 
   // Validate the webhook if we are in LIVE mode.
-  if (variable_get('stripe_api_mode', 'test') === 'live' && ($event_json->livemode == TRUE || $event_json->id !== 'evt_00000000000000')) {
+  //if (variable_get('stripe_api_mode', 'test') === 'live' && ($event_json->livemode == TRUE || $event_json->id !== 'evt_00000000000000')) {
     $event = stripe_api_call('event', 'retrieve', $event_json->id);
     if (!$event) {
       watchdog('stripe_api', 'Invalid webhook event: @data', array(
@@ -54,7 +54,7 @@ function _stripe_api_process_incoming_webhook() {
       print 'Forbidden';
       exit;
     }
-  }
+  //}
 
   // Invoke webhooks for others to use.
   module_invoke_all('stripe_api_webhook', $event_json->type, $event_json->data, $event);

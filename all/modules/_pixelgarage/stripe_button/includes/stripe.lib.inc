@@ -70,20 +70,20 @@ function stripe_button_registered_user($email) {
 }
 
 /**
- * Returns the Stripe subscription plan that fits the given parameters.
+ * Returns the ID of the Stripe subscription plan fitting the given parameter or of the newly created one.
  *
  * @param $amount
  * @param $currency
  * @param $recurring_billing
- * @return \Stripe\Plan
+ * @return string   Stripe plan id.
  */
 function stripe_button_subscription_plan($amount, $currency, $recurring_billing) {
   //
   // get subscription plan via plan-id, if available
   try {
-    $plan_id = 'bge_' . $recurring_billing . '_' . $amount;
+    $plan_id = 'bge_' . $recurring_billing . '_' . $amount . '_' . $currency;
     $subscription_plan = \Stripe\Plan::retrieve($plan_id);
-    return $subscription_plan;
+    return $subscription_plan->id;
   }
   catch (Exception $e) {
     // no plan with given id found, do nothing here
@@ -129,41 +129,46 @@ function stripe_button_subscription_plan($amount, $currency, $recurring_billing)
     "name" => $plan_name,
   ));
 
-  return $plan;
+  return $plan->id;
 }
 
 /**
- * Subscribes the registered user to the Stripe subscription plan.
+ * Subscribes the registered user to the Stripe subscription plan. Returns the created Stripe customer id.
  *
  * REMARK: If the registered user is already subscribed to a plan, the old plan
  * will be deleted before the user is subscribed to the new plan.
  *
  * @param $registered_user  object
  *    The registered user object.
- * @param $plan   object
- *    The Stripe subscription plan
+ * @param $plan_id   object
+ *    The Stripe subscription plan id
+ * @return string
+ *    Returns the created Stripe customer id.
  */
-function stripe_button_subscribe_user_to_plan($registered_user, $plan, $email, $source) {
+function stripe_button_subscribe_user_to_plan($registered_user, $plan_id, $email, $source) {
   //
   // check, if user is already subscribed to a plan and delete it, if any
   stripe_button_delete_subscription_for_user($registered_user);
 
   //
   // creating a Stripe customer with a plan and a source (credit card) performs the following:
-  // - Creates a customer
+  // - Creates a customer (unique)
   // - Saves the customer’s payment information
   // - Signs the customer up for a subscription
   // - By default, Stripe bills the customer immediately for their first week of the subscription
   $customer = \Stripe\Customer::create(array(
     'email' => $email,
     'source'  => $source,
-    'plan' => $plan->id
+    'plan' => $plan_id
   ));
 
   //
   // new subscription successful, store customer id and registered user id for later access
   // e.g. user wants to cancel subscription
-  db_user_stripe_customer_add($registered_user->uid, $customer->id);
+  db_user_stripe_subscription_add($registered_user->uid, $customer->id, $plan_id);
+
+  // return subscription (created customer id)
+  return $customer->id;
 }
 
 /**
@@ -173,68 +178,296 @@ function stripe_button_subscribe_user_to_plan($registered_user, $plan, $email, $
  *    The registered user object.
  */
 function stripe_button_delete_subscription_for_user($registered_user) {
-  $stripe_cust_id = db_user_stripe_customer_get($registered_user->uid);
-  if ($stripe_cust_id) {
+  $stripe_subscriptions = db_user_stripe_subscription_get_subscriptions($registered_user->uid);
+  foreach ($stripe_subscriptions as $stripe_subscription) {
+    $stripe_cust_id = $stripe_subscription['stripe_cust_id'];
     $customer = \Stripe\Customer::retrieve($stripe_cust_id);
     if (!$customer->deleted) {
       $customer->delete();
     }
-    db_user_stripe_customer_delete($stripe_cust_id);
+    db_user_stripe_subscription_delete($stripe_cust_id);
   }
 }
 
 
 /* --------------------------------------------------
- * DB UserID - Stripe CustomerID
+ * DB UserID - Stripe subscription
  * --------------------------------------------------*/
 /**
- * Adds a new record to the {pxl_user_stripe_customer} db.
+ * Adds a new record to the {pxl_user_stripe_subscription} db.
  *
  * @param $uid      int       User id.
- * @param $cust_id  string    Stripe customer id.
+ * @param $cust_id  string    Stripe customer id (subscription).
+ * @param $plan_id string
+ * @param $app_fee_percentage float   The chosen fee percentage for the subscription. Default = 0.0.
  */
-function db_user_stripe_customer_add($uid, $cust_id) {
+function db_user_stripe_subscription_add($uid, $cust_id, $plan_id, $app_fee_percentage = 0.0) {
   $fields = array(
-    'user_id' => $uid,
     'stripe_cust_id' => $cust_id,
+    'user_id' => $uid,
+    'stripe_plan_id' => $plan_id,
+    'app_fee_percentage' => $app_fee_percentage,
   );
-  db_insert('pxl_user_stripe_customer')
+  db_insert('pxl_user_stripe_subscription')
     ->fields($fields)
     ->execute();
 
 }
 
 /**
- * Gets the Stripe customer id for the given user id. False, if no record is found.
+ * Updates the subscription (Stripe customer) with the selected application fee percentage in the {pxl_user_stripe_subscription} db.
  *
- * @param $uid      int       User id.
- * @return mixed    string    Stripe customer id, if record exists, otherwise false.
+ * @param $cust_id  string    Stripe customer id (subscription).
+ * @param $app_fee_percentage float   The chosen fee percentage for the subscription. Default = 0.0.
  */
-function db_user_stripe_customer_get($uid) {
-  // get related stripe customer for the given user id
-  $result = db_select('pxl_user_stripe_customer', 'p')
-    ->fields('p', array('stripe_cust_id'))
-    ->condition('p.user_id', $uid)
-    ->execute()
-    ->fetchAssoc();
+function db_user_stripe_subscription_update($cust_id, $app_fee_percentage = 0.0) {
+  $fields = array(
+    'app_fee_percentage' => $app_fee_percentage,
+  );
+  db_update('pxl_user_stripe_subscription')
+    ->fields($fields)
+    ->condition('stripe_cust_id', $cust_id)
+    ->execute();
 
-  if ($result) {
-    return $result['stripe_cust_id'];
-  }
-  return false;
 }
 
 /**
- * Deletes the record containing the given Stripe customer id.
+ * Gets all Stripe subscriptions for the given user id.
  *
- * @param $cust_id  string    Stripe customer id.
+ * @param $uid      int
+ *    User id.
+ * @return mixed    array
+ *    Array of Stripe subscriptions {'stripe_cust_id' => cust_id, 'app_fee_percentage' => app_fee, 'stripe_plan_id' => plan_id} for the given user or empty array.
+ */
+function db_user_stripe_subscription_get_subscriptions($uid) {
+  // get related stripe customer for the given user id
+  $results = db_select('pxl_user_stripe_subscription', 'p')
+    ->fields('p', array('stripe_cust_id', 'app_fee_percentage', 'stripe_plan_id'))
+    ->condition('p.user_id', $uid)
+    ->execute()
+    ->fetchAll(PDO::FETCH_ASSOC);
+
+  return $results;
+}
+
+/**
+ * Gets the Stripe subscription of the given stripe customer (only one subscription).
+ * @param $cust_id
+ * @return mixed
+ */
+function db_user_stripe_subscription_get_subscription($cust_id) {
+  // get related stripe customer for the given user id
+  $result = db_select('pxl_user_stripe_subscription', 'p')
+    ->fields('p', array('stripe_cust_id', 'app_fee_percentage', 'stripe_plan_id'))
+    ->condition('p.stripe_cust_id', $cust_id)
+    ->execute()
+    ->fetchAssoc();
+
+  return $result;
+}
+
+/**
+ * Deletes a given Stripe subscription (stripe_cust_id).
+ *
+ * @param $cust_id  string    Subscription to be deleted, e.g. the Stripe customer id.
  * @return bool   True, if deletion was successful, false otherwise.
  */
-function db_user_stripe_customer_delete($cust_id) {
+function db_user_stripe_subscription_delete($cust_id) {
   // delete stripe customer relation
-  $deleted = db_delete('pxl_user_stripe_customer')
+  $deleted = db_delete('pxl_user_stripe_subscription')
     ->condition('stripe_cust_id', $cust_id)
     ->execute();
   return $deleted == 1;
 }
 
+
+
+/* --------------------------------------------------
+ * User profile - extend profile with subscription information
+ * --------------------------------------------------*/
+/**
+ * Alter the user profile form.
+ *
+ * Alter the user profile to make the subscription of a user manageable.
+ */
+function stripe_button_form_user_profile_form_alter (&$form, &$form_state, $form_id) {
+  //
+  // show subscription information in the user profile
+  $user = $form['#user'];
+  $stripe_subscriptions = db_user_stripe_subscription_get_subscriptions($user->uid);
+  if (!empty($stripe_subscriptions) && stripe_button_library_loaded()) {
+    // get subscription info for user
+    try {
+      $header = array(
+        'subscription' => array('data' => t('Subscription')),
+        'created' => array('data' => t('Created')),
+        'ops' => array('data' => t('Operations')),
+      );
+      $rows = array();
+
+      foreach ($stripe_subscriptions as $stripe_subscription) {
+        $stripe_cust_id = $stripe_subscription['stripe_cust_id'];
+        $customer = \Stripe\Customer::retrieve(array(
+            "id" => $stripe_cust_id,
+            "expand" => array("subscriptions")
+          )
+        );
+        if ($customer->deleted) {
+          // cleanup db and continue
+          db_user_stripe_subscription_delete($stripe_cust_id);
+          continue;
+        }
+
+        // create a row per subscription (should be only one)
+        foreach($customer->subscriptions->data as $index => $subscription) {
+          $plan = $subscription->plan;
+          $subscription_text = t('@plan: @amount @curr per @interval', array(
+              '@plan' => $plan->name,
+              '@amount' => $plan->amount/100,
+              '@curr' => strtoupper($plan->currency),
+              '@interval' => $plan->interval,
+            )
+          );
+
+          // create delete link
+          $uid = $user->uid;
+          $del_subscription = 'stripe/user/' . $uid . '/delete_subscription';
+          $del_link = l(t('Delete'), $del_subscription, array(
+            'attributes' => array('class' => array('btn btn-default stripe-user-subscription-delete'), 'title' => t('Delete user subscription'))
+          ));
+
+          // create row
+          $rows[] = array(
+            'subscription' => $subscription_text,
+            'created' => format_date($plan->created, 'short'),
+            'ops' => $del_link,
+          );
+        }
+      }
+
+      // add subscription table
+      $form['subscription'] = array(
+        '#theme' => 'table',
+        '#header' => $header,
+        '#rows' => $rows,
+        '#empty' => t('No recurring payment subscription available.'),
+      );
+
+    }
+    catch (Exception $e) {
+      $msg = $e->getMessage();
+    }
+  }
+}
+
+/**
+ * Confirmation form for the subscription deletion.
+ */
+function stripe_button_user_subscription_delete_confirm($form, &$form_state, $user) {
+  $confirm = null;
+  $form_state['subscribed_user'] = $user;
+
+  $message = t('Are you sure you want to delete the subscription?');
+  $caption = '<p>' . t('This action cannot be undone.') . '</p>';
+  return confirm_form($form, $message, "user/{$user->uid}/edit", $caption, t('Delete'));
+}
+
+/**
+ * Submit handler from user_subscription_delete_confirm form.
+ */
+function stripe_button_user_subscription_delete_confirm_submit($form, &$form_state) {
+  $user = $form_state['subscribed_user'];
+
+  // delete subscription
+  if (stripe_button_library_loaded ()) {
+    stripe_button_delete_subscription_for_user($user);
+
+    // inform other modules about the subscription deletion
+    module_invoke_all('stripe_button_user_unsubscribed', $user);
+  }
+
+  // redirect to pixel structure main config page
+  $form_state['redirect'] = "user/{$user->uid}/edit";
+}
+
+
+
+/* --------------------------------------------------
+ * Stripe event - charge succeeded
+ * --------------------------------------------------*/
+function stripe_button_stripe_api_webhook_charge_succeeded($data, Stripe\Event $event = NULL) {
+  $session_data = &stripe_button_session_data();
+  if (isset($session_data['stripe_button_hook_charge_completed_called'])) {
+    // stripe_button_charge_completed hook already called, don't invoke hook again
+    unset($session_data['stripe_button_hook_charge_completed_called']);
+    //return;
+  }
+
+  // TODO: check correct event handling
+  // create charge params form charge.succeeded event and inform other modules about charge
+  if (stripe_button_library_loaded () && $event) {
+    // get customer id of charge object
+    try {
+      $event_string = $event->__toString();
+      $destination = 'public://last_charge_succeeded_event.tmp';
+      file_unmanaged_save_data($event_string, $destination, FILE_EXISTS_REPLACE);
+      return;
+
+      $charge = $event->data->object;
+      if ($charge->object == 'charge' && $charge->customer) {
+        //
+        // get subscription plan via customer id
+        $stripe_cust_id = $charge->customer;
+        $subscription = db_user_stripe_subscription_get_subscription($stripe_cust_id);
+        $plan_id = $subscription['stripe_plan_id'];
+        $subscription_plan = \Stripe\Plan::retrieve($plan_id);
+
+        // define charge parameters and invoke charge completed hook
+        $amount = $subscription_plan->amount;
+        $currency = $subscription_plan->currency;
+        $interval = $subscription_plan->interval;
+        $app_fee_percentage = $subscription['app_fee_percentage'];
+        $app_fee = $amount * $app_fee_percentage;
+        $stripe_fee = round($amount * 0.029) + 30;
+
+        // get recurring billing type
+        switch ($interval) {
+          case 'day':
+            $recurring_billing = 'daily';
+            break;
+          case 'week':
+            $recurring_billing = 'weekly';
+            break;
+          case 'month':
+          default:
+          $recurring_billing = 'monthly';
+            break;
+          case 'year':
+            $recurring_billing = 'yearly';
+            break;
+        }
+        $params = array (
+          'stripe_api_mode' => strtolower(variable_get('stripe_api_mode')),
+          'recurring_billing' => $recurring_billing,
+          'currency' => $currency,
+          'amount' => ($amount / 100),
+          'stripe_fee' => ($stripe_fee / 100),
+          'app_fee' => ($app_fee / 100),
+        );
+        module_invoke_all('stripe_button_charge_completed', $params);
+
+      }
+    }
+    catch (Exception $e) {
+      watchdog('stripe_button', 'Webhook charge.succeeded event error: Charge not completed: @data', array(
+        '@data' => $data,
+      ), WATCHDOG_ERROR);
+    }
+  }
+  else {
+    watchdog('stripe_button', 'Webhook charge.succeeded event not delivered: Charge not completed: @data', array(
+      '@data' => $data,
+    ), WATCHDOG_ERROR);
+
+  }
+}

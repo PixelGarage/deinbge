@@ -9,21 +9,37 @@
  * Implements hook_schema().
  */
 function stripe_button_schema() {
-  $schema['pxl_user_stripe_customer'] = array(
-    'description' => 'Table that relates a registered user with a Stripe customer (subscription).',
+  $schema['pxl_user_stripe_subscription'] = array(
+    'description' => 'Table that relates a registered user with a Stripe subscription and the selected fee.',
     'fields' => array(
-      'user_id' => array(
-        'type' => 'int',
-        'not null' => TRUE,
-        'default' => 0,
-        'description' => 'The user id of the user, that is related to the Stripe customer',
-      ),
       'stripe_cust_id' => array(
         'type' => 'varchar',
         'length' => 100,
         'not null' => TRUE,
         'default' => 0,
         'description' => 'Stripe customer id, that holds subscription',
+      ),
+      'user_id' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'The user id of the user, that is related to the Stripe customer',
+      ),
+      'stripe_plan_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Stripe subscription plan id',
+      ),
+      'app_fee_percentage' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 3,
+        'description' => 'Selected application fee percentage for subscription',
       ),
     ),
     'primary key' => array('stripe_cust_id'),
@@ -38,15 +54,9 @@ function stripe_button_schema() {
 function stripe_button_update_7200() {
   //
   // create the new table UserID - Stripe CustomerID
-  $schema['pxl_user_stripe_customer'] = array(
-    'description' => 'Table that relates a registered user with a Stripe customer (subscription).',
+  $schema['pxl_user_stripe_subscription'] = array(
+    'description' => 'Table that relates a registered user with a Stripe subscription and the selected fee.',
     'fields' => array(
-      'user_id' => array(
-        'type' => 'int',
-        'not null' => TRUE,
-        'default' => 0,
-        'description' => 'The user id of the user, that is related to the Stripe customer',
-      ),
       'stripe_cust_id' => array(
         'type' => 'varchar',
         'length' => 100,
@@ -54,9 +64,32 @@ function stripe_button_update_7200() {
         'default' => 0,
         'description' => 'Stripe customer id, that holds subscription',
       ),
+      'user_id' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'The user id of the user, that is related to the Stripe customer',
+      ),
+      'stripe_plan_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => 'Stripe subscription plan id',
+      ),
+      'app_fee_percentage' => array(
+        'type' => 'numeric',
+        'size' => 'normal',
+        'not null' => FALSE,
+        'default' => 0,
+        'precision' => 10,
+        'scale' => 3,
+        'description' => 'Selected application fee percentage for subscription',
+      ),
     ),
     'primary key' => array('stripe_cust_id'),
   );
-  db_create_table('pxl_user_stripe_customer', $schema['pxl_user_stripe_customer']);
+
+  db_create_table('pxl_user_stripe_subscription', $schema['pxl_user_stripe_subscription']);
 
 }

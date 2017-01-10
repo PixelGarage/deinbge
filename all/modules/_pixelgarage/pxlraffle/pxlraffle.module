@@ -109,6 +109,25 @@ function pxlraffle_uid_load($uid) {
 
 
 /**
+ * This hook is called when the recurring payment subscription for the user is
+ * successfully finished.
+ * @param $user
+ */
+function pxlraffle_stripe_button_user_subscribed($user) {
+  // update user after subscription
+  pxlraffle_subscribe_user($user, true);
+}
+
+/**
+ * This hook is called after the recurring payment subscription (Stripe) of the user has been deleted.
+ * @param $user
+ */
+function pxlraffle_stripe_button_user_unsubscribed($user) {
+  // update user after subscription deletion
+  user_save($user, array('field_current_raffle' => null, 'field_raffle_code' => null));
+}
+
+/**
  * Hook called after the stripe charge transaction has been successfully performed.
  *
  * Used to update the current raffle with the donated money and update raffle state if needed.

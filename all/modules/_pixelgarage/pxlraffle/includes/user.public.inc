@@ -6,6 +6,24 @@
  */
 
 /* --------------------------------------------------
+ * User hooks
+ * --------------------------------------------------*/
+/**
+ * Implements hook_user_presave().
+ *
+ * Called before a user is saved or updated. If the current raffle field is empty, the user is in the
+ * registration process and the current raffle has to be added.
+ */
+function pxlraffle_user_presave(&$edit, $account, $category) {
+  //
+  // user is activated, add current raffle to user before save
+  if (!$account->is_new && empty($account->field_current_raffle) && empty($account->field_raffle_code)) {
+    pxlraffle_add_user_to_current_raffle($account);
+  }
+}
+
+
+/* --------------------------------------------------
  * User public functions
  * --------------------------------------------------*/
 /**

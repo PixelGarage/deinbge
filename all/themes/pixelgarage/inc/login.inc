@@ -42,11 +42,21 @@ function pixelgarage_form_user_login_alter(&$form, &$form_state, $form_id) {
   $form['pass']['#suffix']  = '<div class="form-actions-wrapper">';
   $form['pass']['#suffix'] .= l(t('Forgot your password?'), 'user/password', array('attributes' => array('class' => array('login-password'), 'title' => t('Get a new password'))));
   $form['actions']['#suffix']  = '</div></div>';
+
+  // add the registration form on the right side, if applicable
   if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL) != USER_REGISTER_ADMINISTRATORS_ONLY) {
+    $is_recurring_payment_login = $form_state['build_info']['args'][0] === 'recurring_payment';
+    $account_descr = $is_recurring_payment_login ?
+      t('Registration is needed for a recurring payment subscription.') :
+      t("To participate in a raffle you have to register here so we can contact you in case of a win.");
+    $registration_descr = $is_recurring_payment_login ?
+      t('Once this is confirmed, you can manage your subscription in your account at any time.') :
+      t('Once this is confirmed, you are participating in the next raffle.');
+
     $form['actions']['#suffix'] .= '<div id="user-create-account" class="create-account clearfix">';
     $form['actions']['#suffix'] .= "\n<h2>" . t('I don\'t have an account') . "</h2>";
-    $form['actions']['#suffix'] .= "\n<div class='create-account-description'><p>" . t("To participate in a raffle you have to register here so we can contact you in case of a win.") . "</p>";
-    $form['actions']['#suffix'] .= "\n<p>" . t("After registering you will receive a verification e-mail. Once this is confirmed, you are participating in the raffle.") . "</p></div>";
+    $form['actions']['#suffix'] .= "\n<div class='create-account-description'><p>" . $account_descr . "</p>";
+    $form['actions']['#suffix'] .= "\n<p>" . t("After registering you will receive a verification e-mail. ") . $registration_descr . "</p></div>";
     $form['actions']['#suffix'] .= "\n<div class='form-actions-wrapper'>" . l(t('Create an account'), 'user/register', array('attributes' => array('class' => array('login-register'), 'title' => t('Create a new account'))));
     $form['actions']['#suffix'] .= '</div></div>';
   }
