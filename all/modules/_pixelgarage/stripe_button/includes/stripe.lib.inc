@@ -396,7 +396,7 @@ function stripe_button_user_subscription_delete_confirm_submit($form, &$form_sta
  * Stripe event - charge succeeded
  * --------------------------------------------------*/
 function stripe_button_stripe_api_webhook_charge_succeeded($data, Stripe\Event $event = NULL) {
-  $time = date('d-m-Y H:i:s.u');
+  $time = date('d-m-Y H:i:s');
   watchdog('stripe_event', 'Webhook charge.succeeded called: ' . $time, array(), WATCHDOG_DEBUG);
 
   $session_data = &stripe_button_session_data();

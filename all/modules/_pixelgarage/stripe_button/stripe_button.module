@@ -96,7 +96,7 @@ function stripe_button_token_callback() {
     $stripe_cust_id = false;
     $session_data = &stripe_button_session_data();
     $session_data['stripe_button_initialized_payment'] = true;
-    $time = date('d-m-Y H:i:s.u');
+    $time = date('d-m-Y H:i:s');
     watchdog('stripe_event', 'Before charge: ' . $time, array(), WATCHDOG_DEBUG);
 
     // charge customer card according to recurrent billing settings
@@ -120,7 +120,7 @@ function stripe_button_token_callback() {
       // successful subscription, inform other modules
       module_invoke_all('stripe_button_user_subscribed', $registered_user);
     }
-    $time = date('d-m-Y H:i:s.u');
+    $time = date('d-m-Y H:i:s');
     watchdog('stripe_event', 'After charge: ' . $time, array(), WATCHDOG_DEBUG);
 
     //
@@ -155,7 +155,7 @@ function stripe_button_token_callback() {
       'app_fee' => ($app_fee / 100),
     );
     module_invoke_all('stripe_button_charge_completed', $params);
-    $time = date('d-m-Y H:i:s.u');
+    $time = date('d-m-Y H:i:s');
     watchdog('stripe_event', 'After charge completed: ' . $time, array(), WATCHDOG_DEBUG);
 
   }
