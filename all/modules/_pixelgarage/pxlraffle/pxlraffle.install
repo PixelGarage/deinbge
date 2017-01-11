@@ -93,12 +93,14 @@ function pxlraffle_uninstall() {
   variable_del($delta . '_odometer_label');
   variable_del($delta . '_odometer_label_position');
   variable_del($delta . '_odometer_anim_number_range');
+  variable_del($delta . '_odometer_format');
   variable_del($delta . '_odometer_theme');
 
   $delta = 'pxlraffle_subscriptions';
   variable_del($delta . '_odometer_label');
   variable_del($delta . '_odometer_label_position');
   variable_del($delta . '_odometer_anim_number_range');
+  variable_del($delta . '_odometer_format');
   variable_del($delta . '_odometer_theme');
 }
 
@@ -129,6 +131,13 @@ function pxlraffle_update_7100() {
         'default' => 'one-time',
         'description' => 'Type of donation event, for example "one-time" or "recurring"',
       ),
+      'currency' => array(
+        'type' => 'varchar',
+        'length' => 10,
+        'not null' => FALSE,
+        'default' => 'CHF',
+        'description' => "Currency of the amount and fees.",
+      ),
       'amount' => array(
         'type' => 'numeric',
         'size' => 'normal',
@@ -154,6 +163,13 @@ function pxlraffle_update_7100() {
         'precision' => 10,
         'scale' => 2,
         'description' => 'Voluntary application fee for administration',
+      ),
+      'stripe_cust_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => FALSE,
+        'default' => '',
+        'description' => 'Stripe customer id, that holds subscription',
       ),
       'timestamp' => array(
         'type' => 'int',
@@ -188,5 +204,29 @@ function pxlraffle_update_7100() {
       ->fields($fields)
       ->execute();
   }
-
 }
+
+/**
+ * Add new fields to {pxl_donations} table.
+ */
+function pxlraffle_update_7110() {
+  $currency_spec = array(
+    'type' => 'varchar',
+    'length' => 10,
+    'not null' => FALSE,
+    'default' => 'CHF',
+    'initial' => 'CHF', // sets all fields of existing rows to value
+    'description' => "Currency of the amount and fees.",
+  );
+  db_add_field('pxl_donations', 'currency', $currency_spec);
+
+  $customer_spec = array(
+    'type' => 'varchar',
+    'length' => 100,
+    'not null' => FALSE,
+    'default' => '',
+    'description' => 'Stripe customer id, that holds subscription',
+  );
+  db_add_field('pxl_donations', 'stripe_cust_id', $customer_spec);
+}
+

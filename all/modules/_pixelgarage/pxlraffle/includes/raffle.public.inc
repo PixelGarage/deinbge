@@ -226,6 +226,7 @@ function pxlraffle_update_current_raffle_amount($donation_params) {
   $amount = $donation_params['amount'];
   $stripe_fee = $donation_params['stripe_fee'];
   $app_fee = $donation_params['app_fee'];
+  $cust_id = $donation_params['stripe_cust_id'];
 
   $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $stripe_fee - $app_fee)* 1.0; // casting to float
 
@@ -234,8 +235,9 @@ function pxlraffle_update_current_raffle_amount($donation_params) {
   if ($stripe_api_mode === 'test') {
     watchdog(
       'PxlRaffle test',
-      '@amount @curr charged @recurring including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr. Old raffle amount: @old_amount @curr; New raffle amount: @new_amount @curr',
+      '@cust charged with @amount @curr (@recurring) including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr. Old raffle amount: @old_amount @curr; New raffle amount: @new_amount @curr',
       array(
+        '@cust' => $cust_id,
         '@curr' => $currency,
         '@amount' => $amount,
         '@recurring' => $recurring_billing,
@@ -265,9 +267,11 @@ function pxlraffle_update_current_raffle_amount($donation_params) {
   $fields = array(
     'booked' => 0,
     'type' => $recurring_billing,
+    'currency' => $currency,
     'amount' => $amount,
     'stripe_fee' => $stripe_fee,
     'app_fee' => $app_fee,
+    'stripe_cust_id' => $cust_id,
     'timestamp' => time(),
   );
   db_insert('pxl_donations')

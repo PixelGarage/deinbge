@@ -97,7 +97,7 @@ function stripe_button_token_callback() {
     $session_data = &stripe_button_session_data();
     $session_data['stripe_button_initialized_payment'] = true;
     $time = date('d-m-Y H:i:s');
-    watchdog('stripe_event', 'Before charge: ' . $time, array(), WATCHDOG_DEBUG);
+    watchdog('stripe_button', 'Before charge: ' . $time, array(), WATCHDOG_DEBUG);
 
     // charge customer card according to recurrent billing settings
     if ($recurring_billing == 'one-time') {
@@ -121,7 +121,7 @@ function stripe_button_token_callback() {
       module_invoke_all('stripe_button_user_subscribed', $registered_user);
     }
     $time = date('d-m-Y H:i:s');
-    watchdog('stripe_event', 'After charge: ' . $time, array(), WATCHDOG_DEBUG);
+    watchdog('stripe_button', 'After charge: ' . $time, array(), WATCHDOG_DEBUG);
 
     //
     // get fee percentage for pressed stripe button
@@ -153,10 +153,11 @@ function stripe_button_token_callback() {
       'amount' => ($amount / 100),
       'stripe_fee' => ($stripe_fee / 100),
       'app_fee' => ($app_fee / 100),
+      'stripe_cust_id' => $stripe_cust_id ? $stripe_cust_id : '',
     );
     module_invoke_all('stripe_button_charge_completed', $params);
     $time = date('d-m-Y H:i:s');
-    watchdog('stripe_event', 'After charge completed: ' . $time, array(), WATCHDOG_DEBUG);
+    watchdog('stripe_button', 'After charge completed: ' . $time, array(), WATCHDOG_DEBUG);
 
   }
   catch(\Stripe\Error\Card $e) {

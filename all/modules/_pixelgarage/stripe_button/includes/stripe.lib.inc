@@ -232,12 +232,13 @@ function db_user_stripe_subscription_update($cust_id, $app_fee_percentage = 0.0)
 }
 
 /**
- * Gets all Stripe subscriptions for the given user id.
+ * Gets all stored subscriptions for the given user id.
  *
  * @param $uid      int
  *    User id.
  * @return mixed    array
- *    Array of Stripe subscriptions {'stripe_cust_id' => cust_id, 'app_fee_percentage' => app_fee, 'stripe_plan_id' => plan_id} for the given user or empty array.
+ *    Associative array of subscriptions {'stripe_cust_id' => cust_id, 'app_fee_percentage' => app_fee, 'stripe_plan_id' => plan_id}
+ *    for the given user or empty array.
  */
 function db_user_stripe_subscription_get_subscriptions($uid) {
   // get related stripe customer for the given user id
@@ -251,9 +252,9 @@ function db_user_stripe_subscription_get_subscriptions($uid) {
 }
 
 /**
- * Gets the Stripe subscription of the given stripe customer (only one subscription).
+ * Gets the subscription of the given stripe customer (only one subscription).
  * @param $cust_id
- * @return mixed
+ * @return mixed  Associative array with subscription parameters, false otherwise.
  */
 function db_user_stripe_subscription_get_subscription($cust_id) {
   // get related stripe customer for the given user id
@@ -397,50 +398,45 @@ function stripe_button_user_subscription_delete_confirm_submit($form, &$form_sta
  * --------------------------------------------------*/
 function stripe_button_stripe_api_webhook_charge_succeeded($data, Stripe\Event $event = NULL) {
   $time = date('d-m-Y H:i:s');
-  watchdog('stripe_event', 'Webhook charge.succeeded called: ' . $time, array(), WATCHDOG_DEBUG);
+  watchdog('stripe_button', 'Webhook charge.succeeded called: ' . $time, array(), WATCHDOG_DEBUG);
 
   $session_data = &stripe_button_session_data();
   if (isset($session_data['stripe_button_initialized_payment'])) {
     // stripe_button initialized the payment, don't process event
     unset($session_data['stripe_button_initialized_payment']);
-    //return;
-
-    $event_string = "Payment initialized on Client:\n\n";
+    watchdog('stripe_button', 'Payment initialized on Client', array(), WATCHDOG_DEBUG);
+    return;
   }
   else {
-    $event_string = "Payment initialized on Stripe:\n\n";
+    watchdog('stripe_button', 'Payment initialized on Stripe server', array(), WATCHDOG_DEBUG);
   }
 
-  // TODO: check correct event handling
   //
   // Process charge.succeeded event for recurring payments initialized on Stripe
   // create charge params form charge.succeeded event and inform other modules about charge
-  if (stripe_button_library_loaded () && $event) {
-    // get customer id of charge object
-    try {
-      $event_string .= $event->__toString();
-      $destination = 'public://last_charge_succeeded_event.tmp';
-      file_unmanaged_save_data($event_string, $destination, FILE_EXISTS_REPLACE);
-      return;
+  $charge = $data->object;
+  if (stripe_button_library_loaded () && $charge->object === 'charge') {
+    //
+    // get charge data
+    $amount = $charge->amount;
+    $currency = $charge->currency;
+    $stripe_fee = round($amount * 0.029) + 30;
+    $app_fee = 0;
+    $recurring_billing = 'unknown';
 
-      $charge = $event->data->object;
-      if ($charge->object == 'charge' && $charge->customer) {
-        //
-        // get subscription plan via customer id
-        $stripe_cust_id = $charge->customer;
-        $subscription = db_user_stripe_subscription_get_subscription($stripe_cust_id);
+    // get extended data via customer id, if possible
+    $stripe_cust_id = $charge->customer;
+    $subscription = db_user_stripe_subscription_get_subscription($stripe_cust_id);
+    if ($subscription) {
+      // define charge parameters and invoke charge completed hook
+      $app_fee_percentage = $subscription['app_fee_percentage'];
+      $app_fee = $amount * $app_fee_percentage;
+
+      // get payment interval from plan
+      try {
         $plan_id = $subscription['stripe_plan_id'];
         $subscription_plan = \Stripe\Plan::retrieve($plan_id);
-
-        // define charge parameters and invoke charge completed hook
-        $amount = $subscription_plan->amount;
-        $currency = $subscription_plan->currency;
         $interval = $subscription_plan->interval;
-        $app_fee_percentage = $subscription['app_fee_percentage'];
-        $app_fee = $amount * $app_fee_percentage;
-        $stripe_fee = round($amount * 0.029) + 30;
-
-        // get recurring billing type
         switch ($interval) {
           case 'day':
             $recurring_billing = 'daily';
@@ -450,33 +446,33 @@ function stripe_button_stripe_api_webhook_charge_succeeded($data, Stripe\Event $
             break;
           case 'month':
           default:
-          $recurring_billing = 'monthly';
+            $recurring_billing = 'monthly';
             break;
           case 'year':
             $recurring_billing = 'yearly';
             break;
         }
-        $params = array (
-          'stripe_api_mode' => strtolower(variable_get('stripe_api_mode')),
-          'recurring_billing' => $recurring_billing,
-          'currency' => $currency,
-          'amount' => ($amount / 100),
-          'stripe_fee' => ($stripe_fee / 100),
-          'app_fee' => ($app_fee / 100),
-        );
-        module_invoke_all('stripe_button_charge_completed', $params);
-
+      }
+      catch (Exception $e) {
+        watchdog('stripe_button', 'Webhook charge.succeeded event info: Stripe plan could not be retrieved.', array(), WATCHDOG_INFO);
       }
     }
-    catch (Exception $e) {
-      watchdog('stripe_button', 'Webhook charge.succeeded event error: Charge not completed: @data', array(
-        '@data' => $data,
-      ), WATCHDOG_ERROR);
-    }
+
+    $params = array (
+      'stripe_api_mode' => strtolower(variable_get('stripe_api_mode')),
+      'recurring_billing' => $recurring_billing,
+      'currency' => $currency,
+      'amount' => ($amount / 100),
+      'stripe_fee' => ($stripe_fee / 100),
+      'app_fee' => ($app_fee / 100),
+      'stripe_cust_id' => $stripe_cust_id ? $stripe_cust_id : '',
+    );
+    module_invoke_all('stripe_button_charge_completed', $params);
+
   }
   else {
-    watchdog('stripe_button', 'Webhook charge.succeeded event not delivered: Charge not completed: @data', array(
-      '@data' => $data,
+    watchdog('stripe_button', 'Webhook charge.succeeded event error: Missing charge object: @data', array(
+      '@data' => json_encode($data),
     ), WATCHDOG_ERROR);
 
   }
