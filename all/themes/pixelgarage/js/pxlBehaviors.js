@@ -44,12 +44,13 @@
    * Allows full size clickable items.
    Drupal.behaviors.fullSizeClickableItems = {
     attach: function () {
-      var $clickableItems = $('.node-link-item.node-teaser .field-group-div')
-        .add('.node-team-member.node-teaser .field-group-div');
+      var $clickableItems = $('.call2action-container');
 
       $clickableItems.once('click', function () {
         $(this).on('click', function () {
-          window.location = $(this).find("a:first").attr("href");
+          var base_url = window.location.origin,
+            location = base_url + $(this).attr("href");
+          window.location = location;
           return false;
         });
       });

@@ -49,9 +49,9 @@ function stripe_button_schema() {
 }
 
 /**
- * Insert the {pxl_user_stripe_customer} table.
+ * Insert the {pxl_user_stripe_subscription} table.
  */
-function stripe_button_update_7200() {
+function stripe_button_update_7210() {
   //
   // create the new table UserID - Stripe CustomerID
   $schema['pxl_user_stripe_subscription'] = array(

@@ -81,7 +81,7 @@ function pxlraffle_form_user_profile_form_alter (&$form, &$form_state, $form_id)
     $renew_url = 'user/' . $uid . '/raffle/renew-in-profile';
     $remove_url = 'user/' . $uid . '/raffle/remove-in-profile';
     $form['field_raffle_code']['#suffix'] = '<div class="raffle-action-container">' .
-      l(t('Renew raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Renew raffle')))) .
+      l(t('Participate in raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Renew raffle')))) .
       l(t('Remove from raffle'), $remove_url, array('attributes' => array('class' => array('btn btn-default remove-raffle-button'), 'title' => t('Remove from raffle')))) .
       '</div>';
   }

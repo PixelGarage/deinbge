@@ -83,7 +83,7 @@
           border: 1px solid @pxl-color-border-light;
 
           &:focus {
-            border: 1px solid @pxl-color-participate;
+            border: 1px solid @pxl-color-support;
             box-shadow: 1px 1px 1px #aaa inset;
 
             body.front & {
@@ -97,7 +97,7 @@
     button.form-submit {
       display: inline-block;
       vertical-align: top;
-      .stripe-button(@font-size-button, @pxl-color-participate);
+      .stripe-button(@font-size-button, @pxl-color-support);
 
       body.front & {
         .stripe-button(@font-size-button, @pxl-color-main);
@@ -147,7 +147,7 @@
         .stripe-button-title {
           font-family: @pxl-text-font-bold;
           font-size: @pxl-font-size-button-title;
-          color: @pxl-color-participate;
+          color: @pxl-color-support;
         }
 
         .stripe-button-text {
@@ -159,7 +159,7 @@
 
         .stripe-button {
           // the stripe button with the given amount
-          .stripe-button(@font-size-button, @pxl-color-participate);
+          .stripe-button(@font-size-button, @pxl-color-support);
 
           body.front & {
             .stripe-button(@font-size-button, @pxl-color-main);

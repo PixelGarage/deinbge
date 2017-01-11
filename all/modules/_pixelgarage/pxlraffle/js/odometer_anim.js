@@ -12,12 +12,15 @@
   Drupal.behaviors.pxlRaffleOdometerAnim = {
     attach: function () {
       var $odometer = $('.odometer'),
-          counter = parseInt($odometer.html()),
+          value = $odometer.html(),
+          counter = parseFloat(value),
           animatedRange = Drupal.settings.pxlraffle_odometer.animated_range,
-          startValue = Math.max(counter - animatedRange, 0);
+          format = Drupal.settings.pxlraffle_odometer.format,
+          startValue = Math.max(counter - animatedRange, 0),
+          odometer = new Odometer({ el: $odometer[0], value: startValue, format: format });
 
       // set the odometer value (reduced by the range)
-      $odometer.html(startValue);
+      //$odometer.html(startValue);
 
       setTimeout(function() {
         $odometer.html(counter);

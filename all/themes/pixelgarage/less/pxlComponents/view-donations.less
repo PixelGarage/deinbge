@@ -1,0 +1,101 @@
+/*
+ *  Donations view component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@tab-button-font-size: @font-size-button-small;
+@tab-button-color: #fff;
+@tab-button-radius: 4px;
+
+@tab-height: 44px;
+
+
+// Mixins
+// -------------------------
+.tab-button(@size: @tab-button-font-size; @bg-color: @gray-lighter) {
+  display: inline-block;
+  padding: 10px 15px;
+  height: @tab-height;
+  font-family: @pxl-text-font-bold;
+  font-size: @size;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  color: @text-color;
+  outline: none;
+  opacity: 1.0;
+  #pxl-mixins.border-radius(@tab-button-radius);
+  border: 1px solid @pxl-color-border;
+  background-color: transparent;
+
+  &:hover, &:focus {
+    color: #fff;
+    border: 1px solid @pxl-color-support;
+    background-color: @pxl-color-support;
+  }
+}
+
+// General settings
+// -------------------------
+#block-views-donations-block {
+  width: 100%;
+
+  .block-title {
+    margin: 0 0 20px;
+    font-family: @pxl-title-font;
+    font-size: @font-size-pane-title;
+    text-align: center;
+    color: @text-color;
+  }
+}
+
+.view.view-donations {
+  .view-header {
+    width: 100%;
+    #pxl-mixins.wysiwyg-body(@font-size-pane-subtitle);
+    text-align: center;
+  }
+
+  .view-content {
+    margin: 40px auto 0;
+
+    .views-bootstrap-tab-plugin-style {
+      ul.nav {
+        width: 100%;
+        text-align: center;
+
+        li {
+          float: none;
+          display: inline-block;
+          vertical-align: top;
+          margin: 5px 0;
+
+          a {
+            .tab-button();
+          }
+
+          &.active {
+            a {
+              color: #fff;
+              border: 1px solid @pxl-color-support;
+              background-color: @pxl-color-support;
+            }
+          }
+        }
+      }
+
+      .tab-content {
+        margin: 20px auto 0;
+
+        .tab-pane {
+          // see node-spenden.less, node-offline-donation.less
+
+          &.active {
+
+          }
+        }
+      }
+    }
+  }
+}

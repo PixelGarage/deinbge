@@ -11,7 +11,7 @@
 .resp-raffle-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-color-participate; @radius: @border-radius-large) {
   display: inline-block;
   margin: 10px;
-  padding: 7px 15px;
+  padding: 7px 10px;
   font-family: @pxl-text-font-bold;
   font-size: @size;
   line-height: 1;
@@ -71,7 +71,7 @@
 
           .panel-title {
             a.accordion-toggle {
-              padding: 13px 15px 15px;
+              padding: 10px 15px;
               min-width: 160px;
               height: 44px;
               font-family: @pxl-text-font-bold;
@@ -121,11 +121,11 @@
 
             .user-raffle-actions {
               .btn.refresh-raffle-button {
-              .resp-raffle-button(@font-size-button);
+                .resp-raffle-button(@font-size-base);
               }
 
               .btn.remove-raffle-button {
-                .resp-raffle-button(@font-size-button);
+                .resp-raffle-button(@font-size-base);
               }
             }
           }

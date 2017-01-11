@@ -16,6 +16,11 @@
   margin: 0 2*@container-inner-margin;
   background: none;
 
+  body.page-support & {
+    padding-top: 30px;
+    background-color: @pxl-bg-panel-item;
+  }
+
   .next-raffle {
     font-family: @pxl-text-font-bold;
     text-align: center;
@@ -30,7 +35,7 @@
     .next-raffle-label {
       text-align: center;
       font-size: @font-size-pane-title;
-      color: @pxl-color-raffle;
+      color: @pxl-color-support;
 
       body.front & {
         color: @pxl-color-main;
@@ -41,7 +46,7 @@
       display: inline-block;
       margin-bottom: 20px;
       padding: 5px 15px;
-      color: @pxl-color-raffle;
+      color: @pxl-color-support;
       font-size: 40px;
 
       @media @narrow {
@@ -57,9 +62,23 @@
     }
 
     .next-raffle-info {
+      display: none;
       text-align: center;
       font-size: @font-size-base;
       color: @text-color;
+    }
+
+    .actions {
+      margin: 30px auto;
+      text-align: center;
+
+      .btn.link-participate {
+        #pxl-mixins.button-large(@pxl-color-support, darken(@pxl-color-support, 20%));
+
+        body.front & {
+          #pxl-mixins.button-large(@pxl-color-main, darken(@pxl-color-main, 20%));
+        }
+      }
     }
   }
 }

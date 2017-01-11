@@ -158,7 +158,7 @@ function _pxlraffle_manage_user_raffle_callback ($user, $action) {
       pxlraffle_renew_user_raffle($user);
 
       // redirect to participate page
-      drupal_goto('/participate/#panel-participate', array(), 301);
+      drupal_goto('/participate/#panel-participate', array(), 307);
       break;
 
     case 'renew-in-profile':
@@ -166,7 +166,7 @@ function _pxlraffle_manage_user_raffle_callback ($user, $action) {
       pxlraffle_renew_user_raffle($user);
 
       // redirect to user edit form
-      drupal_goto('user/' . $user->uid . '/edit', array(), 301);
+      drupal_goto('user/' . $user->uid . '/edit', array(), 307);
       break;
 
     case 'remove':
@@ -178,7 +178,7 @@ function _pxlraffle_manage_user_raffle_callback ($user, $action) {
       }
 
       // redirect to participate page
-      drupal_goto('/participate/#panel-participate', array(), 301);
+      drupal_goto('/participate/#panel-participate', array(), 307);
       break;
 
     case 'remove-in-profile':
@@ -190,7 +190,7 @@ function _pxlraffle_manage_user_raffle_callback ($user, $action) {
       }
 
       // redirect to user edit form
-      drupal_goto('user/' . $user->uid . '/edit', array(), 301);
+      drupal_goto('user/' . $user->uid . '/edit', array(), 307);
       break;
   }
 
@@ -246,6 +246,7 @@ function _pxlraffle_odometer_theme_attachments (&$vars, $delta) {
   // add js and css files
   $path = drupal_get_path('module', 'pxlraffle');
   $animated_range = variable_get($delta . '_odometer_anim_number_range');
+  $format = variable_get($delta . '_odometer_format');
   $theme = variable_get($delta . '_odometer_theme');
   $css_file = $path;
 
@@ -277,7 +278,8 @@ function _pxlraffle_odometer_theme_attachments (&$vars, $delta) {
   // set js settings
   $js_settings = array(
     'pxlraffle_odometer' => array(
-      'animated_range' => $animated_range
+      'animated_range' => $animated_range,
+      'format' => $format,
     ),
   );
 
@@ -357,6 +359,12 @@ function _pxlraffle_odometer_settings_form ($delta) {
     '#default_value' => variable_get($delta . '_odometer_anim_number_range', 0),
     '#description'   => t('Define the range of numbers that are animated when the odometer is shown.'),
   );
+  $form['pxlraffle_odometer']['pxlraffle_odometer_format'] = array(
+    '#type'          => 'textfield',
+    '#title'         => t('Number format'),
+    '#default_value' => variable_get($delta . '_odometer_format', "('ddd).dd"),
+    '#description'   => t("Define the format of the displayed number. Default: ('ddd).dd."),
+  );
   $form['pxlraffle_odometer']['pxlraffle_odometer_theme'] = array(
     '#type' => 'select',
     '#title' => t('Theme'),
@@ -386,6 +394,7 @@ function pxlraffle_block_save($delta = '', $edit = array()) {
       variable_set($delta . '_odometer_label', $edit['pxlraffle_odometer_label']);
       variable_set($delta . '_odometer_label_position', $edit['pxlraffle_odometer_label_position']);
       variable_set($delta . '_odometer_anim_number_range', $edit['pxlraffle_odometer_anim_number_range']);
+      variable_set($delta . '_odometer_format', $edit['pxlraffle_odometer_format']);
       variable_set($delta . '_odometer_theme', $edit['pxlraffle_odometer_theme']);
       break;
   }

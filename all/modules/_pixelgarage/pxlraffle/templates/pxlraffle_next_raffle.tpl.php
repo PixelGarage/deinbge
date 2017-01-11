@@ -19,5 +19,10 @@
     <div class="next-raffle-label"><?php print $next_raffle_label; ?></div>
     <div class="next-raffle-date"><?php print $next_raffle_date; ?></div>
     <div class="next-raffle-info"><?php print $next_raffle_info; ?></div>
+    <div class="actions">
+      <a class="btn btn-default link-participate"
+         href="<?php print $url_participate; ?>"><?php print $label_participate; ?>
+      </a>
+    </div>
   </div>
 </div>

@@ -6,6 +6,8 @@
 function template_preprocess_pxlraffle_next_raffle(&$vars) {
   //
   // get current and closed raffles
+  global $base_url, $language;
+
   $raffle_nid = pxlraffle_get_current_raffle_nid();
   $current_raffle = node_load($raffle_nid);
   $next_raffle = $current_raffle;
@@ -35,4 +37,22 @@ function template_preprocess_pxlraffle_next_raffle(&$vars) {
     ($count == 1) ?
       t('The raffle with ID "@numbers" is ready to be raffled.', array('@numbers' => $raffle_ids)) :
     t('At the moment no raffle is ready to be raffled.');
+  $vars['label_participate'] = t('Go for it now!');
+  switch($language->language) {
+    case 'en':
+      $vars['url_participate'] = $base_url . '/en/participate';
+      break;
+    case 'de':
+      $vars['url_participate'] = $base_url . '/de/participate';
+      break;
+    case 'fr':
+      $vars['url_participate'] = $base_url . '/fr/participate';
+      break;
+    case 'it':
+      $vars['url_participate'] = $base_url . '/it/participate';
+      break;
+    default:
+      $vars['url_participate'] = $base_url . '/participate';
+      break;
+  }
 }

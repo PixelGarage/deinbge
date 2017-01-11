@@ -163,6 +163,15 @@ header#navbar {
                 background-color: @text-color;
               }
 
+              &.menu-support {
+                color: @pxl-color-support;
+
+                &:hover,
+                &.active {
+                  color: #fff;
+                  background-color: @pxl-color-support;
+                }
+              }
               &.menu-participate {
                 color: @pxl-color-participate;
 
@@ -170,15 +179,6 @@ header#navbar {
                 &.active {
                   color: #fff;
                   background-color: @pxl-color-participate;
-                }
-              }
-              &.menu-raffle {
-                color: @pxl-color-raffle;
-
-                &:hover,
-                &.active {
-                  color: #fff;
-                  background-color: @pxl-color-raffle;
                 }
               }
               &.menu-experience {

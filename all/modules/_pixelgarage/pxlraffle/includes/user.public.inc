@@ -166,7 +166,7 @@ function pxlraffle_get_user_raffle_info_html($user) {
     }
     else {
       // user is part of an old raffle
-      $msg = t('You are part of a past raffle. Please press "Add to raffle" to renew your participation in the current raffle.');
+      $msg = t('You are part of a past raffle. Please press button below to renew your participation in the current raffle.');
     }
   }
   else {

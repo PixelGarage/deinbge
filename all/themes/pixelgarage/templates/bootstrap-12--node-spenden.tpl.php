@@ -9,7 +9,7 @@ if ($ds_switch === 'recurring_payment' && !$logged_in) {
   $login_form = drupal_get_form('user_login', 'recurring_payment');
   $extended_login_form = array(
     'description' => array(
-      '#markup' => t('Subscribe now to one of our subscription plans and automatically be part of any future raffle.'),
+      '#markup' => t('You have to register for a recurring donation. In your account you can cancel the recurring donation at any time.'),
     ),
     'form' => $login_form,
   );

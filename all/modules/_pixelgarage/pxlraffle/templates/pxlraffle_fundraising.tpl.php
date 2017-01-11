@@ -22,9 +22,11 @@
       <div class="odometer-container">
         <?php if ($odometer_label_on_top): ?>
           <div class="odometer-label"><?php print $odometer_label; ?></div>
-          <div class="odometer"><?php print $user_count; ?></div>
+          <div class="odometer"><?php print $current_amount; ?></div>
+          <span class="currency">CHF</span>
         <?php else: ?>
-          <div class="odometer"><?php print $user_count; ?></div>
+          <div class="odometer"><?php print $current_amount; ?></div>
+          <span class="currency">CHF</span>
           <div class="odometer-label"><?php print $odometer_label; ?></div>
         <?php endif; ?>
       </div>
@@ -40,7 +42,7 @@
       </div>
       <div class="explanation"><?php print $explanation; ?></div>
       <div class="actions">
-        <a class="btn btn-default link-participate" href="<?php print $url_participate; ?>"><?php print $label_participate; ?></a>
+        <a class="btn btn-default link-support" href="<?php print $url_support; ?>"><?php print $label_support; ?></a>
       </div>
     </div>
   </div>

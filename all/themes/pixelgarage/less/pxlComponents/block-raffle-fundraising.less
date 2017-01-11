@@ -40,12 +40,18 @@
       }
 
       .odometer-container {
-        #pxl-mixins.odometer(@pxl-color-raffle, rgba(0,0,0,0.0), 5px);
+        #pxl-mixins.odometer(@pxl-color-participate, rgba(0,0,0,0.0), 5px);
         margin-bottom: @pxl-margin-sep;
 
         body.front & {
           #pxl-mixins.odometer(@pxl-color-main, rgba(0,0,0,0.0), 5px);
           margin-bottom: @pxl-margin-sep;
+        }
+
+        .currency {
+          vertical-align: middle;
+          font-family: @pxl-text-font-bold;
+          font-size: 24px;
         }
       }
 
@@ -60,7 +66,7 @@
         height: @pxl-progress-height;
 
         .progress-bar {
-          background-color: @pxl-color-raffle;
+          background-color: @pxl-color-participate;
 
           body.front & {
             background-color: @pxl-color-main;
@@ -69,9 +75,10 @@
       }
 
       .current-amount-container {
+        display: none;
         font-family: @pxl-text-font-bold;
         font-size: @font-size-base;
-        color: @pxl-color-raffle;
+        color: @pxl-color-participate;
 
         body.front & {
           color: @pxl-color-main;
@@ -102,8 +109,8 @@
         margin: 30px auto;
         text-align: center;
 
-        .btn.link-participate {
-          #pxl-mixins.button-large(@pxl-color-raffle, darken(@pxl-color-raffle, 20%));
+        .btn.link-support {
+          #pxl-mixins.button-large(@pxl-color-participate, darken(@pxl-color-participate, 20%));
 
           body.front & {
             #pxl-mixins.button-large(@pxl-color-main, darken(@pxl-color-main, 20%));
