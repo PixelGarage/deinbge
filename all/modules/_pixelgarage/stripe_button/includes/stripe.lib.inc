@@ -396,19 +396,29 @@ function stripe_button_user_subscription_delete_confirm_submit($form, &$form_sta
  * Stripe event - charge succeeded
  * --------------------------------------------------*/
 function stripe_button_stripe_api_webhook_charge_succeeded($data, Stripe\Event $event = NULL) {
+  $time = date('d-m-Y H:i:s.u');
+  watchdog('stripe_event', 'Webhook charge.succeeded called: ' . $time, array(), WATCHDOG_DEBUG);
+
   $session_data = &stripe_button_session_data();
-  if (isset($session_data['stripe_button_hook_charge_completed_called'])) {
-    // stripe_button_charge_completed hook already called, don't invoke hook again
-    unset($session_data['stripe_button_hook_charge_completed_called']);
+  if (isset($session_data['stripe_button_initialized_payment'])) {
+    // stripe_button initialized the payment, don't process event
+    unset($session_data['stripe_button_initialized_payment']);
     //return;
+
+    $event_string = "Payment initialized on Client:\n\n";
+  }
+  else {
+    $event_string = "Payment initialized on Stripe:\n\n";
   }
 
   // TODO: check correct event handling
+  //
+  // Process charge.succeeded event for recurring payments initialized on Stripe
   // create charge params form charge.succeeded event and inform other modules about charge
   if (stripe_button_library_loaded () && $event) {
     // get customer id of charge object
     try {
-      $event_string = $event->__toString();
+      $event_string .= $event->__toString();
       $destination = 'public://last_charge_succeeded_event.tmp';
       file_unmanaged_save_data($event_string, $destination, FILE_EXISTS_REPLACE);
       return;
