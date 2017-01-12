@@ -210,9 +210,19 @@ function stripe_button_delete_subscription_for_user($registered_user) {
   }
 }
 
+/**
+ * Hook called before user is deleted.
+ * Guarantees, that the Stripe subscriptions are deleted.
+ *
+ * @param $account
+ */
+function stripe_button_user_delete($account) {
+  stripe_button_delete_subscription_for_user($account);
+}
+
 
 /* --------------------------------------------------
- * DB UserID - Stripe subscription
+ * DB User-Stripe subscription methods
  * --------------------------------------------------*/
 /**
  * Adds a new record to the {pxl_user_stripe_subscription} db.
