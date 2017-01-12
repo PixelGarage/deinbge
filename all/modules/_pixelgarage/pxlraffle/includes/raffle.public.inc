@@ -205,6 +205,7 @@ function pxlraffle_get_raffle_date ($raffle, $undefined = 'coming soon') {
  *    - amount: Amount of the donation
  *    - stripe_fee: transaction fee of Stripe (2.9% + 30)
  *    - app_fee: application fee (user defined percentage for the association)
+ *    - stripe_cust_id: Stripe customer id for recurring payments (subscription)
  * @return int Returns the rest amount, if a new raffle has to be created, otherwise false.
  */
 function pxlraffle_update_current_raffle_amount($donation_params) {
@@ -282,3 +283,83 @@ function pxlraffle_update_current_raffle_amount($donation_params) {
   return $remaining_amount;
 }
 
+/**
+ * Updates the subscription raffle with the amount and fees of the donations.
+ * The hold amount in the subscription raffle is the amount per month. For any other interval,
+ * the charged amount is recalculated to the amount per month:
+ * - day => amount * 30
+ * - week => amount * 4
+ * - year => amount / 12
+ *
+ * @param $params array
+ *    Associative array containing charge parameters of donations.
+ * @param $subtract bool
+ *    True, if the charge has to be subtracted from the existing subscription raffle values.
+ */
+function pxlraffle_update_subscription_raffle($params, $subtract = false) {
+  //
+  // open transaction
+  $transaction = db_transaction(); // commit when $transaction goes out of scope
+
+  //
+  // get current raffle
+  $recurring_raffle_nid = pxlraffle_get_subscription_raffle_nid();
+  $raffle = node_load($recurring_raffle_nid);
+
+  //
+  // calculate new raffle donation amount
+  $stripe_api_mode = $params['stripe_api_mode'];
+  $recurring_billing = $params['recurring_billing'];
+  $currency = $params['currency'];
+  $amount = $params['amount'];
+  $stripe_fee = $params['stripe_fee'];
+  $app_fee = $params['app_fee'];
+
+  //
+  // get amounts per month
+  $netto_amount = $amount - $stripe_fee - $app_fee;
+  switch ($recurring_billing) {
+    case 'daily':
+      $monthly_amount = $netto_amount * 30;
+      $monthly_app_fee = $app_fee * 30;
+      break;
+    case 'weekly':
+      $monthly_amount = $netto_amount * 4;
+      $monthly_app_fee = $app_fee * 4;
+      break;
+    case 'monthly':
+    default:
+      $monthly_amount = $netto_amount;
+      $monthly_app_fee = $app_fee;
+      break;
+    case 'yearly':
+      $monthly_amount = $netto_amount / 12;
+      $monthly_app_fee = $app_fee / 12;
+      break;
+  }
+
+  if ($subtract) {
+    $monthly_amount *= -1;
+    $monthly_app_fee *= -1;
+  }
+
+  //
+  // check if in test mode or the subscription raffle has to be updated
+  if ($stripe_api_mode === 'test') {
+    watchdog(
+      'PxlRaffle test',
+      'Subscribed users donate @amount @curr each month. They support us with @app_fee @curr each month.',
+      array(
+        '@curr' => $currency,
+        '@amount' => $amount,
+        '@app_fee' => $app_fee,
+      ), WATCHDOG_DEBUG);
+
+    return false;
+  }
+
+  // save updated raffle
+  $raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $monthly_amount)* 1.0; // casting to float
+  $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] = $raffle->field_club_fees[LANGUAGE_NONE][0]['value'] + $app_fee;
+  node_save($raffle);
+}

@@ -31,13 +31,13 @@ function template_preprocess_pxlraffle_subscriptions(&$vars) {
       $vars['subscription_link_url'] = $base_url . '/support';
       break;
   }
-  $vars['subscribtion_fee_statement'] = t('Subscribed users assign @amount CHF of this amount to our association. Thank you very much!',
+  $vars['subscribtion_fee_statement'] = t('Subscribed users support us with @amount CHF each month. Thank you very much!',
       array('@amount' => $current_fees));
 
   //
   // style odometer for user count and amount
   _pxlraffle_odometer_theme_attachments($vars, 'pxlraffle_subscriptions');
   $subscribed_users = pxlraffle_get_user_count_in_raffle($raffle_nid, false);
-  $vars['odometer_label'] = t('@num subscribed user collect each month', array('@num' => $subscribed_users));
+  $vars['odometer_label'] = t('@num subscribed users donate each month', array('@num' => $subscribed_users));
   $vars['subscribed_amount'] = empty($recurring_raffle->field_raffle_donation) ? '0.00' : $recurring_raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'];
 }

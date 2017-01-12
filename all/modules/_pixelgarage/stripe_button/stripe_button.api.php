@@ -11,7 +11,8 @@
  * Use this hook to relate a stripe button field with a fee button field, so
  * that the correct fee percentage is used for the pressed stripe button.
  *
- * CAUTION: In button ID's the '_' are replaced with '-'
+ * REMARK: Use machine names of fields, but replace '_' with '-'.
+ * Delta values of fields have not to be considered.
  *
  * @param $stripe_button_relations  array
  *    Empty array to be filled with all stripe button - fee button relations.
@@ -48,18 +49,32 @@ function hook_stripe_button_fee_select_feedback_alter(&$feedbacks, $fee_button_i
 /**
  * This hook is called when the recurring payment subscription (Stripe) of the user is
  * successfully finished.
+ * @param $user object
+ *    The subscribed user object.
+ * @param $params  array
+ *    An associative array with the following charge parameters as key-value pairs:
+ *      stripe_api_mode:  The stripe API mode, e.g. test | live.
+ *      currency:         The currency of the charged amount.
+ *      amount:           The charged amount in currency.
+ *      stripe_fee:       The stripe fee in currency.
+ *      app_fee:          The application fees in currency.
+ *      recurring_billing:The recurring payment interval, e.g. daily|weekly|monthly|yearly
+ *      stripe_cust_id:   The Stripe customer id holding the subscription.
  *
- * @param $user
  */
-function hook_stripe_button_user_subscribed($user) {
+function hook_stripe_button_user_subscribed($user, $params) {
   // update user after subscription, if needed
 }
 
 /**
  * This hook is called after the recurring payment subscription (Stripe) of the user has been deleted.
- * @param $user
+ * @param $user object
+ *    The subscribed user object.
+ * @param $params  mixed
+ *    An associative array with the charge parameters (see hook_stripe_button_user_subscribed)
+ *    or false, if no parameters are available anymore.
  */
-function hook_stripe_button_user_unsubscribed($user) {
+function hook_stripe_button_user_unsubscribed($user, $params) {
   // update user after subscription, if needed
 }
 
@@ -72,11 +87,13 @@ function hook_stripe_button_user_unsubscribed($user) {
  *
  * @param $charge_params       array
  *    The associative array with the following charge parameters as key-value pairs:
+ *      stripe_api_mode:  The stripe API mode, e.g. test | live.
  *      currency:         The currency of the charged amount.
  *      amount:           The charged amount in currency.
  *      stripe_fee:       The stripe fee in currency.
  *      app_fee:          The application fees in currency.
- *      stripe_api_mode:  The stripe API mode, e.g. test | live.
+ *      recurring_billing:The recurring payment interval, e.g. daily|weekly|monthly|yearly
+ *      stripe_cust_id:   The Stripe customer id holding the subscription.
  */
 function hook_stripe_button_charge_completed($charge_params) {
   watchdog(

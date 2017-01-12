@@ -113,18 +113,24 @@ function pxlraffle_uid_load($uid) {
  * successfully finished.
  * @param $user
  */
-function pxlraffle_stripe_button_user_subscribed($user) {
-  // update user after subscription
+function pxlraffle_stripe_button_user_subscribed($user, $params) {
+  // subscripe user to subscription raffle
   pxlraffle_subscribe_user($user, true);
+
+  // update subscription raffle with recurring charge
+  pxlraffle_update_subscription_raffle($params);
 }
 
 /**
  * This hook is called after the recurring payment subscription (Stripe) of the user has been deleted.
  * @param $user
  */
-function pxlraffle_stripe_button_user_unsubscribed($user) {
-  // update user after subscription deletion
+function pxlraffle_stripe_button_user_unsubscribed($user, $params) {
+  // unsubscripe user from subscription raffle
   user_save($user, array('field_current_raffle' => null, 'field_raffle_code' => null));
+
+  // update subscription raffle (subtract charge)
+  pxlraffle_update_subscription_raffle($params, true);
 }
 
 /**

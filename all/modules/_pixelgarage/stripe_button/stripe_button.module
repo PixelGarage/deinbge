@@ -115,8 +115,6 @@ function stripe_button_token_callback() {
 
     //
     // charge customer card according to recurrent billing settings
-    watchdog('stripe_button', 'Before charge: ' . date('d-m-Y H:i:s'), array(), WATCHDOG_DEBUG);
-
     if ($recurring_billing == 'one-time') {
       //
       // charge the user's card once and send confirmation email to user
@@ -129,17 +127,16 @@ function stripe_button_token_callback() {
       $registered_user = stripe_button_registered_user($email);
 
       // get/create Stripe subscription plan
-      $plan_id = stripe_button_subscription_plan($amount, $currency, $recurring_billing);
+      $plan = stripe_button_subscription_plan($amount, $currency, $recurring_billing);
 
       // create recurring payment for user and bill it immediately
-      $stripe_cust_id = stripe_button_subscribe_user_to_plan($registered_user, $plan_id, $email, $token, $app_fee_percentage);
+      $stripe_cust_id = stripe_button_subscribe_user_to_plan($registered_user, $plan, $email, $token, $app_fee_percentage);
 
     }
-    watchdog('stripe_button', 'After charge: ' . date('d-m-Y H:i:s'), array(), WATCHDOG_DEBUG);
 
     // invoke charge_completed hook for all modules, if charge was successful
     $params = array (
-      'stripe_api_mode' => strtolower(variable_get('stripe_api_mode')),
+      'stripe_api_mode' => strtolower(variable_get('stripe_api_mode', 'test')),
       'recurring_billing' => $recurring_billing,
       'currency' => $currency,
       'amount' => ($amount / 100),
@@ -148,7 +145,6 @@ function stripe_button_token_callback() {
       'stripe_cust_id' => $stripe_cust_id ? $stripe_cust_id : '',
     );
     module_invoke_all('stripe_button_charge_completed', $params);
-
     watchdog('stripe_button', 'After charge completed: ' . date('d-m-Y H:i:s'), array(), WATCHDOG_DEBUG);
   }
   catch(\Stripe\Error\Card $e) {
