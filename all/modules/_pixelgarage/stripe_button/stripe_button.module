@@ -875,6 +875,10 @@ function _prepare_stripe_button_js_settings($settings) {
  * Add the javascript files and settings to be loaded.
  */
 function _add_stripe_button_js_settings($stripe_buttons, $custom_buttons) {
+  // check if user is logged in
+  global $user;
+  $email = ($user->uid == 0) ? '' : $user->mail;
+
   // add the Stripe and the stripe_button javascript
   $path = drupal_get_path('module', 'stripe_button');
   drupal_add_js(STRIPE_CHECKOUT_JS_PATH, 'external');
@@ -886,6 +890,7 @@ function _add_stripe_button_js_settings($stripe_buttons, $custom_buttons) {
     'stripe_button' => array(
       'stripe_public_key' => _stripe_api_public_key(),
       'icon' => $logo_path ? file_create_url($logo_path) : '',
+      'email' => $email,
     ),
   );
   $js_settings['stripe_button']['stripe_buttons'] = $stripe_buttons;

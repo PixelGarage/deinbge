@@ -84,7 +84,8 @@
             zipCode: settings.zipCode == 1,
             billingAddress: settings.billingAddress == 1,
             shippingAddress: settings.shippingAddress == 1,
-            allowRememberMe: settings.allowRememberMe == 1
+            allowRememberMe: settings.allowRememberMe == 1,
+            email: Drupal.settings.stripe_button.email
           });
           e.preventDefault();
         });
