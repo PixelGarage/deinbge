@@ -94,12 +94,29 @@ function stripe_button_token_callback() {
   try {
     $msg = false;
     $stripe_cust_id = false;
-    $session_data = &stripe_button_session_data();
-    $session_data['stripe_button_initialized_payment'] = true;
-    $time = date('d-m-Y H:i:s');
-    watchdog('stripe_button', 'Before charge: ' . $time, array(), WATCHDOG_DEBUG);
 
+    //
+    // get fee percentage for pressed stripe button
+    $app_fee = 0;
+    $app_fee_percentage = 0;
+    $stripe_button_relations = array();
+    drupal_alter('stripe_button_fee_button_relation', $stripe_button_relations);
+    if (!empty($stripe_button_relations)) {
+      // get fee button field id
+      $len = strpos($button_id, '--');
+      $stripe_button_id = substr($button_id, 0, $len);
+      $fee_button_id = $stripe_button_relations[$stripe_button_id];
+      $app_fee_percentages = &stripe_button_session_data()['fee_buttons'];
+      $app_fee_percentage = $app_fee_percentages[$fee_button_id];
+      $app_fee = $amount * $app_fee_percentage;
+    }
+    $stripe_fee = stripe_button_stripe_fee($amount);
+
+
+    //
     // charge customer card according to recurrent billing settings
+    watchdog('stripe_button', 'Before charge: ' . date('d-m-Y H:i:s'), array(), WATCHDOG_DEBUG);
+
     if ($recurring_billing == 'one-time') {
       //
       // charge the user's card once and send confirmation email to user
@@ -115,35 +132,10 @@ function stripe_button_token_callback() {
       $plan_id = stripe_button_subscription_plan($amount, $currency, $recurring_billing);
 
       // create recurring payment for user and bill it immediately
-      $stripe_cust_id = stripe_button_subscribe_user_to_plan($registered_user, $plan_id, $email, $token);
+      $stripe_cust_id = stripe_button_subscribe_user_to_plan($registered_user, $plan_id, $email, $token, $app_fee_percentage);
 
-      // successful subscription, inform other modules
-      module_invoke_all('stripe_button_user_subscribed', $registered_user);
     }
-    $time = date('d-m-Y H:i:s');
-    watchdog('stripe_button', 'After charge: ' . $time, array(), WATCHDOG_DEBUG);
-
-    //
-    // get fee percentage for pressed stripe button
-    $app_fee = 0;
-    $stripe_button_relations = array();
-    drupal_alter('stripe_button_fee_button_relation', $stripe_button_relations);
-    if (!empty($stripe_button_relations)) {
-      // get fee button field id
-      $len = strpos($button_id, '--');
-      $stripe_button_id = substr($button_id, 0, $len);
-      $fee_button_id = $stripe_button_relations[$stripe_button_id];
-      $fee_percentages = &stripe_button_session_data()['fee_buttons'];
-      $fee_percentage = $fee_percentages[$fee_button_id];
-      $app_fee = $amount * $fee_percentage;
-
-      //
-      // update subscription with application fee percentage, if any
-      if ($stripe_cust_id) {
-        db_user_stripe_subscription_update($stripe_cust_id, $fee_percentage);
-      }
-    }
-    $stripe_fee = round($amount * 0.029) + 30;
+    watchdog('stripe_button', 'After charge: ' . date('d-m-Y H:i:s'), array(), WATCHDOG_DEBUG);
 
     // invoke charge_completed hook for all modules, if charge was successful
     $params = array (
@@ -156,9 +148,8 @@ function stripe_button_token_callback() {
       'stripe_cust_id' => $stripe_cust_id ? $stripe_cust_id : '',
     );
     module_invoke_all('stripe_button_charge_completed', $params);
-    $time = date('d-m-Y H:i:s');
-    watchdog('stripe_button', 'After charge completed: ' . $time, array(), WATCHDOG_DEBUG);
 
+    watchdog('stripe_button', 'After charge completed: ' . date('d-m-Y H:i:s'), array(), WATCHDOG_DEBUG);
   }
   catch(\Stripe\Error\Card $e) {
     // The card has been declined

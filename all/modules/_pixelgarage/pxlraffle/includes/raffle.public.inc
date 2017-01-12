@@ -235,7 +235,7 @@ function pxlraffle_update_current_raffle_amount($donation_params) {
   if ($stripe_api_mode === 'test') {
     watchdog(
       'PxlRaffle test',
-      '@cust charged with @amount @curr (@recurring) including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr. Old raffle amount: @old_amount @curr; New raffle amount: @new_amount @curr',
+      'Customer @cust charged with @amount @curr (@recurring) including stripe fee = @stripe_fee @curr and application fee = @app_fee @curr. Old raffle amount: @old_amount @curr; New raffle amount: @new_amount @curr',
       array(
         '@cust' => $cust_id,
         '@curr' => $currency,

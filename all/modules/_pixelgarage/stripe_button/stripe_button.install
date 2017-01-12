@@ -41,6 +41,13 @@ function stripe_button_schema() {
         'scale' => 3,
         'description' => 'Selected application fee percentage for subscription',
       ),
+      'stripe_evt_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Stripe charge.succeeded event id used to assure idempotency of incoming charge events',
+      ),
     ),
     'primary key' => array('stripe_cust_id'),
   );
@@ -51,7 +58,7 @@ function stripe_button_schema() {
 /**
  * Insert the {pxl_user_stripe_subscription} table.
  */
-function stripe_button_update_7210() {
+function stripe_button_update_7220() {
   //
   // create the new table UserID - Stripe CustomerID
   $schema['pxl_user_stripe_subscription'] = array(
@@ -85,6 +92,13 @@ function stripe_button_update_7210() {
         'precision' => 10,
         'scale' => 3,
         'description' => 'Selected application fee percentage for subscription',
+      ),
+      'stripe_evt_id' => array(
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'Stripe charge.succeeded event id used to assure idempotency of incoming charge events',
       ),
     ),
     'primary key' => array('stripe_cust_id'),
