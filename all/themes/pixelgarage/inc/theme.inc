@@ -93,7 +93,7 @@ function pixelgarage_stripe_button_fix_value($variables) {
   else if ($variables['amount'] == 0) {
     //
     // successful payment, create success button (disabled)
-    $label = t("Yes");
+    $label = t("Done");
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . t($variables['box_title']) . '</div>' .
       '<div class="stripe-button-text">' . t($variables['box_text']) . '</div>' .
@@ -104,16 +104,14 @@ function pixelgarage_stripe_button_fix_value($variables) {
   else {
     //
     // failed payment, create fail button (disabled)
-    $label = t("No");
-    $msg = t($variables['message']);
+    $label = t("Nope");
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . t($variables['box_title']) . '</div>' .
       '<div class="stripe-button-text">' . t($variables['box_text']) . '</div>' .
-      '<button id="' . $field_id . '" type="button"' .
-      ' class="btn btn-warning stripe-button" data-toggle="popover" data-trigger="hover" data-placement="auto bottom"'.
-      ' title="Stripe Error" data-content="' . $msg . '">' .
+      '<button id="' . $field_id . '" type="button" class="btn btn-error stripe-button">' .
       '<span class="fa fa-times"></span>' . $label .
-      '</button></div>';
+      '</button>' .
+      '<div class="stripe-button-error">' . t($variables['message']) . '</div></div>';
   }
 
   return $output;

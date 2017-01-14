@@ -9214,6 +9214,7 @@ form#user-login {
   }
 }
 .field-type-number-decimal .field-items .field-item .stripe-button-container {
+  position: relative;
   padding: 20px;
   border: none;
   -moz-border-radius: 6px;
@@ -9279,8 +9280,8 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:focus {
   opacity: 0.7;
 }
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button.btn-warning {
-  background-color: #f0ad4e;
+.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button.btn-error {
+  background-color: #d9534f;
 }
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button[disabled] {
   opacity: 1.0;
@@ -9387,40 +9388,22 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:focus {
   opacity: 0.7;
 }
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-input-error {
+.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-payment-processing {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  max-height: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  color: #333333;
+}
+.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-error {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   color: #d9534f;
-}
-.field-type-number-decimal .field-items .field-item .label.stripe-message {
-  display: block;
-  white-space: normal;
-  max-width: 150px;
-}
-.field-type-number-decimal .field-items .field-item .label.stripe-message.label-warning {
-  background-color: #f0ad4e;
-}
-.field-type-number-decimal .field-items .field-item .popover {
-  font-family: 'ProximaNovaLight';
-  letter-spacing: 1.2px;
-  text-align: left;
-  color: #fff;
-  border: none;
-  background: none;
-}
-.field-type-number-decimal .field-items .field-item .popover .popover-title {
-  padding: 4px 14px;
-  font-family: 'ProximaNovaBold';
-  font-size: 80%;
-  border: none;
-}
-.field-type-number-decimal .field-items .field-item .popover .popover-content {
-  padding: 4px 14px;
-  font-size: 80%;
-  -moz-border-radius: 0 0 5px 5px;
-  -webkit-border-radius: 0 0 5px 5px;
-  border-radius: 0 0 5px 5px;
-  background-color: #f0ad4e;
 }
 /*
  *  Block stripe fees component
@@ -12046,7 +12029,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body {
   width: 100%;
   text-align: center;
-  margin: 0 0 20px;
+  margin: 30px 0 50px;
 }
 .node.node-spenden .row .col-sm-12 .field-name-body h1,
 .node.node-spenden .row .col-sm-12 .field-name-body h2,
@@ -12371,7 +12354,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #333333;
 }
 .node.node-offline-donation .row .col-sm-12 .field-name-body {
-  margin: 0 0 20px;
+  margin: 30px 0 50px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
@@ -13416,6 +13399,34 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content {
   margin: 20px auto 0;
+}
+.view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information {
+  width: 100%;
+  text-align: center;
+}
+.view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message {
+  display: inline-block;
+  margin: 10px auto 30px;
+  padding: 5px 10px;
+  font-family: 'ProximaNovaLight';
+  text-align: center;
+  border: 1px solid #efefef;
+}
+.view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message .registration-hint {
+  font-size: 15px;
+  color: #333333;
+}
+.view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 2px 8px;
+  color: #fff;
+  border: 1px solid #d9534f;
+  background-color: #d9534f;
+}
+.view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message a:hover,
+.view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message a.active {
+  background-color: #e27c79;
 }
 /*
  *  Header section (navigation)

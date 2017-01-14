@@ -5,21 +5,29 @@
  */
 
 if ($ds_switch === 'recurring_payment' && !$logged_in) {
-  // recurring payments only possible with logged in user, display login form
-  $login_form = drupal_get_form('user_login', 'recurring_payment');
-  $extended_login_form = array(
-    'description' => array(
-      '#markup' => t('You have to register for a recurring donation. In your account you can cancel the recurring donation at any time.'),
-    ),
-    'form' => $login_form,
-  );
-  $central = drupal_render($extended_login_form);
+  // recurring payments only possible with logged in user, display register information
+  global $base_url;
+  $url_register = $base_url . '/' . $language->language . '/user';
+  $label_register = t('Register?');
+  $hint_register = t('You need an account to subscribe successfully to a recurring payment!');
+  $display_register_info = true;
 }
+else {
+  $display_register_info = false;
+}
+
 ?>
 
+<?php if ($display_register_info): ?>
+  <div class="registration-information">
+    <div class="registration-message">
+      <div class="registration-hint"><?php print $hint_register; ?></div>
+      <a class="btn btn-error link-register" href="<?php print $url_register; ?>"><?php print $label_register; ?></a>
+    </div>
+  </div>
+<?php endif; ?>
 
-<<?php print $layout_wrapper;
-print $layout_attributes; ?> class="<?php print $classes; ?>">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="<?php print $classes; ?>">
 <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>
 <?php endif; ?>

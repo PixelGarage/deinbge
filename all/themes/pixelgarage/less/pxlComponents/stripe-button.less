@@ -138,6 +138,7 @@
       }
 
       .stripe-button-container {
+        position:relative;
         padding: 20px;
         border: none;
         #pxl-mixins.border-radius(6px);
@@ -165,8 +166,8 @@
             .stripe-button(@font-size-button, @pxl-color-main);
           }
 
-          &.btn-warning {
-            background-color: @pxl-color-warning;
+          &.btn-error {
+            background-color: @pxl-color-danger;
           }
 
           &[disabled] {
@@ -180,53 +181,29 @@
           .stripe-button-form ();
         }
 
+        // payment processing image
+        .stripe-payment-processing {
+          position: absolute;
+          #pxl-mixins.center-horizontally();
+          bottom: 0;
+          max-height: 30px;
+          font-family: @pxl-text-font;
+          font-size: 12px;
+          color: @text-color;
+
+          img {
+
+          }
+        }
+
         //
         // visible only when input is incorrect
-        .stripe-button-input-error {
+        .stripe-button-error {
           font-family: @pxl-text-font;
           font-size: 12px;
           color: @pxl-color-danger;
         }
-      }
 
-      //
-      // error items
-      .label.stripe-message {
-        // stripe message
-        display: block;
-        white-space: normal;
-        max-width: 150px;
-
-        &.label-warning {
-          background-color: @pxl-color-warning;
-        }
-      }
-
-      .popover {
-        // stripe popover
-        font-family: @pxl-text-font;
-        letter-spacing: 1.2px;
-        text-align: left;
-        color: #fff;
-        border: none;
-        background: none;
-
-        .arrow {
-        }
-
-        .popover-title {
-          padding: 4px 14px;
-          font-family: @pxl-title-font;
-          font-size: 80%;
-          border:none;
-        }
-
-        .popover-content {
-          padding: 4px 14px;
-          font-size: 80%;
-          #pxl-mixins.border-radius(0 0 5px 5px);
-          background-color: @pxl-color-warning;
-        }
       }
     }
   }

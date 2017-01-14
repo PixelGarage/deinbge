@@ -89,11 +89,41 @@
         margin: 20px auto 0;
 
         .tab-pane {
+
+          // registration info for recurring payment
+          .registration-information {
+            width: 100%;
+            text-align: center;
+
+            .registration-message {
+              display: inline-block;
+              margin: 10px auto 30px;
+              padding: 5px 10px;
+              font-family: @pxl-text-font;
+              text-align: center;
+              border: 1px solid @pxl-color-border-light;
+
+              .registration-hint {
+                font-size: @font-size-base - 2;
+                color: @text-color;
+              }
+
+              a {
+                display: inline-block;
+                margin-top: 10px;
+                padding: 2px 8px;
+                color: #fff;
+                border: 1px solid @pxl-color-danger;
+                background-color: @pxl-color-danger;
+
+                &:hover, &.active {
+                  background-color: lighten(@pxl-color-danger, 10%);
+                }
+              }
+            }
+          }
           // see node-spenden.less, node-offline-donation.less
 
-          &.active {
-
-          }
         }
       }
     }

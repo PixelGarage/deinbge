@@ -386,8 +386,7 @@ function theme_stripe_button_fix_value($variables) {
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . $box_title . '</div>' .
       '<div class="stripe-button-text">' . $box_text . '</div>' .
-      '<button id="' . $field_id . '" type="button"' .
-      ' class="btn btn-success stripe-button" disabled>' .
+      '<button id="' . $field_id . '" type="button" class="btn btn-success stripe-button" disabled>' .
       '<span class="fa fa-check"></span>' . $label .
       '</button></div>';
   }
@@ -398,11 +397,10 @@ function theme_stripe_button_fix_value($variables) {
     $output = '<div class="stripe-button-container">' .
       '<div class="stripe-button-title">' . $box_title . '</div>' .
       '<div class="stripe-button-text">' . $box_text . '</div>' .
-      '<button id="' . $field_id . '" type="button"' .
-      ' class="btn btn-warning stripe-button" data-toggle="popover" data-trigger="hover" data-placement="auto bottom"'.
-      ' title="Stripe Error" data-content="' . t($variables['message']) . '">' .
+      '<button id="' . $field_id . '" type="button" class="btn btn-error stripe-button">' .
       '<span class="fa fa-times"></span>' . $label .
-      '</button></div>';
+      '</button>' .
+      '<div class="stripe-button-error">' . t($variables['message']) . '</div></div>';
   }
 
   return $output;
@@ -454,7 +452,7 @@ function theme_stripe_button_custom_value($variables) {
     '<div class="stripe-button-title">' . $box_title . '</div>' .
     '<div class="stripe-button-text">' . $recurring_billing_text . '</div>' .
     drupal_render($render_form);
-  $output .= !empty($variables['message']) ? '<div class="stripe-button-input-error">' . t($variables['message']) . '</div></div>' : '</div>';
+  $output .= !empty($variables['message']) ? '<div class="stripe-button-error">' . t($variables['message']) . '</div></div>' : '</div>';
 
   return $output;
 }
@@ -885,11 +883,13 @@ function _add_stripe_button_js_settings($stripe_buttons, $custom_buttons) {
   drupal_add_js($path . '/js/stripe_button.js');
 
   // add Drupal js settings (Drupal settings are merged for multiple buttons)
-  $logo_path = $path . '/images/stripe_logo.png';
+  $logo = $path . '/images/stripe_logo.png';
+  $loader_img = $path . '/images/ajax_loader.svg';
   $js_settings = array (
     'stripe_button' => array(
       'stripe_public_key' => _stripe_api_public_key(),
-      'icon' => $logo_path ? file_create_url($logo_path) : '',
+      'icon' => $logo ? file_create_url($logo) : '',
+      'processing_img' => $loader_img ? file_create_url($loader_img) : '',
       'email' => $email,
     ),
   );

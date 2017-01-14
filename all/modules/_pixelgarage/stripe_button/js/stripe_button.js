@@ -16,10 +16,10 @@
     attach: function () {
       var clickedButtonSettings,
           $clickedButton,
-          settings = Drupal.settings.stripe_button,
+          stripeSettings = Drupal.settings.stripe_button,
           checkoutHandler = StripeCheckout.configure({
-            key: settings.stripe_public_key,
-            image: settings.icon,
+            key: stripeSettings.stripe_public_key,
+            image: stripeSettings.icon,
             locale: 'auto',
             token: function (token) {
               // get button container for responses
@@ -39,33 +39,34 @@
                       recurringBilling: clickedButtonSettings.recurringBilling
                     };
 
+                // append payment processing activity image to button
+                var stripeProcessing = '<span class="stripe-payment-processing"><img src="' + stripeSettings.processing_img + '" alt="processing payment..."/></span>';
+                $clickedButton.parent().append(stripeProcessing);
+
                 //
                 // charge the customer with the token and display response
                 $fieldItemDiv.load('/stripe/ajax/token', params, function (response, status, xhr) {
                   if (status == "error") {
                     var msg = "Server error " + xhr.status + ": " + xhr.statusText;
-                    $fieldItemDiv.html('<div class="label label-warning stripe-message">' + msg + '</div>');
+                    $fieldItemDiv.html('<div class="stripe-button-error">' + msg + '</div>');
                   }
                   else {
                     // do NOT attach behaviours to button, it is disabled
                     //Drupal.attachBehaviors($fieldItemDiv);
-
-                    // initialize error popovers for returned error buttons
-                    $fieldItemDiv.find('[data-toggle="popover"]').popover();
                   }
                 });
               }
               else {
                 // no valid token returned => should never happen
-                var msg = "Stripe Checkout unavailable.";
-                $fieldItemDiv.html('<div class="label label-warning stripe-message">' + msg + '</div>');
+                var msg = "Stripe payment server error. Try it later again.";
+                $clickedButton.parent().append('<div class="stripe-button-error">' + msg + '</div>');
               }
 
             }
           });
 
       // Iterate through all defined stripe button instances
-      $.each(Drupal.settings.stripe_button.stripe_buttons, function (button, settings) {
+      $.each(stripeSettings.stripe_buttons, function (button, settings) {
         var $button = $('#' + button);
 
         $button.off('click');
@@ -134,7 +135,7 @@
           $fieldItemDiv.load('/stripe/ajax/button', params, function (response, status, xhr) {
             if (status == "error") {
               var msg = "Server error " + xhr.status + ": " + xhr.statusText;
-              $fieldItemDiv.html('<div class="label label-warning stripe-message">' + msg + '</div>');
+              $fieldItemDiv.html('<div class="stripe-button-error">' + msg + '</div>');
             }
             else {
               // attach behaviours to new stripe button
