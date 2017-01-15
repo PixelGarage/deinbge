@@ -7,9 +7,9 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   //
   // create participate form
   global $base_url, $user;
-  $raffle_nid = pxlraffle_get_current_raffle_nid();
-  $current_raffle = node_load($raffle_nid);
-  $raffle_id = strtoupper($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value']);
+  $current_raffle_nid = pxlraffle_get_current_raffle_nid();
+  $current_raffle = node_load($current_raffle_nid);
+  $current_raffle_num = substr($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value'], 1);
 
   //$vars['title'] = t('Participate');
 
@@ -31,14 +31,17 @@ function template_preprocess_pxlraffle_participate(&$vars) {
     $recurring_raffle_nid = pxlraffle_get_subscription_raffle_nid();
     $user_raffle_nid = $full_user->field_current_raffle[LANGUAGE_NONE][0]['target_id'];
     $user_is_subscribed = ($recurring_raffle_nid == $user_raffle_nid);
+    $user_is_registered = ($current_raffle_nid == $user_raffle_nid);
     $markup = pxlraffle_get_user_raffle_info_html($full_user);
 
     if (!$user_is_subscribed) {
       // show raffle buttons only for user without subscription
       $renew_url = '/user/' . $uid . '/raffle/renew';
       $remove_url = '/user/' . $uid . '/raffle/remove';
+      $renew_link = $user_is_registered ? '' :
+        l(t('Participate in raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Renew raffle'))));
       $markup .= '<div class="user-raffle-actions">' .
-        l(t('Participate in raffle'), $renew_url, array('attributes' => array('class' => array('btn btn-default refresh-raffle-button'), 'title' => t('Renew raffle')))) .
+        $renew_link .
         l(t('Remove from raffle'), $remove_url, array('attributes' => array('class' => array('btn btn-default remove-raffle-button'), 'title' => t('Remove from raffle')))) .
         '</div>';
     }
@@ -50,7 +53,7 @@ function template_preprocess_pxlraffle_participate(&$vars) {
   }
   else {
     // user not logged in, show login/registration form
-    $vars['participation_slogan'] = t("The current raffle is «@number». Register here now. Good luck!", array('@number' => $raffle_id));
+    $vars['participation_slogan'] = t("We collect for the @number. raffle. Register here now. Good luck!", array('@number' => $current_raffle_num));
     $vars['participation_acc_title'] = t('Participate');
     $vars['participation_acc_title_collapsed'] = t('Hide login');
     $vars['class_collapsed'] = 'collapsed';
