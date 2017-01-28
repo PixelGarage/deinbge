@@ -227,7 +227,7 @@ function pxlraffle_update_current_raffle_amount($donation_params) {
   $amount = $donation_params['amount'];
   $stripe_fee = $donation_params['stripe_fee'];
   $app_fee = $donation_params['app_fee'];
-  $cust_id = $donation_params['stripe_cust_id'];
+  $cust_id = isset($donation_params['stripe_cust_id']) ? $donation_params['stripe_cust_id'] : '';
 
   $new_amount = ($raffle->field_raffle_donation[LANGUAGE_NONE][0]['value'] + $amount - $stripe_fee - $app_fee)* 1.0; // casting to float
 

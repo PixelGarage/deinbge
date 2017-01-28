@@ -69,3 +69,62 @@ function pixelgarage_preprocess_views_exposed_form(&$vars) {
 }
 
 
+/**
+ * Themes a Stripe Checkout button with a predefined amount in a given currency.
+ */
+function pixelgarage_preprocess_stripe_button_fix_value(&$variables) {
+  // Render Stripe Checkout button
+  $amount = $variables['amount'];
+  if ($amount > 0) {
+    $box_title = '';
+    if ($amount <= 3) {
+      $box_title = t('One hour');
+    }
+    else if ($amount <= 6) {
+      $box_title = t('Two hours');
+    }
+    else if ($amount <= 10) {
+      $box_title = t('Three hours');
+    }
+    else if ($amount <= 50) {
+      $box_title = t('Half a day');
+    }
+    else if ($amount <= 100) {
+      $box_title = t('One day');
+    }
+    else if ($amount <= 300) {
+      $box_title = t('Three days');
+    }
+    else if ($amount <= 1000) {
+      $box_title = t('One week');
+    }
+    else if ($amount <= 2500) {
+      $box_title = t('One month');
+    }
+    $variables['box_title'] = $box_title;
+
+    // create box text depending on recurring billing
+    $recurring_billing = $variables['recurring_billing'];
+    switch ($recurring_billing) {
+      case 'one-time':
+      default:
+        $box_text = t('of basic income');
+        break;
+      case 'daily':
+        $box_text = t('of basic income each day');
+        break;
+      case 'weekly':
+        $box_text = t('of basic income each week');
+        break;
+      case 'monthly':
+        $box_text = t('of basic income each month');
+        break;
+      case 'yearly':
+        $box_text = t('of basic income each year');
+        break;
+    }
+    $variables['box_text'] = $box_text;
+
+  }
+}
+
