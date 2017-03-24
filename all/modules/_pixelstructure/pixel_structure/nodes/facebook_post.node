@@ -1,5 +1,5 @@
 <?php
-$export_time = 1458660363;
+$export_time = 1490363280;
 $data = array(
   'bundles' => array(
     'facebook_post' => (object) array(
@@ -90,22 +90,16 @@ $data = array(
       ),
       'bundles' => array(
         'node' => array(
-          0 => 'course',
-          1 => 'course_times',
-          2 => 'webform',
-          3 => 'location',
-          4 => 'video',
-          5 => 'page',
-          6 => 'testimonial',
-          7 => 'course_tabs',
-          8 => 'block',
-          9 => 'news',
-          10 => 'remote_form',
-          11 => 'brochure',
-          12 => 'footer',
-          13 => 'call2action',
-          14 => 'tweet',
-          15 => 'facebook_post',
+          0 => 'page',
+          1 => 'article',
+          2 => 'call2action',
+          3 => 'facebook_post',
+          4 => 'intro',
+          5 => 'quote',
+          6 => 'pxl_raffle',
+          7 => 'spenden',
+          8 => 'offline_donation',
+          9 => 'footer',
         ),
       ),
     ),
@@ -166,8 +160,7 @@ $data = array(
       ),
       'bundles' => array(
         'node' => array(
-          0 => 'tweet',
-          1 => 'facebook_post',
+          0 => 'facebook_post',
         ),
       ),
     ),
@@ -213,6 +206,83 @@ $data = array(
       'bundles' => array(
         'node' => array(
           0 => 'facebook_post',
+        ),
+      ),
+    ),
+    'field_link' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(
+        'attributes' => array(
+          'target' => 'default',
+          'class' => '',
+          'rel' => '',
+        ),
+        'url' => 0,
+        'title' => 'optional',
+        'title_value' => '',
+        'title_maxlength' => 128,
+        'enable_tokens' => 1,
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+      ),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_link' => array(
+                'url' => 'field_link_url',
+                'title' => 'field_link_title',
+                'attributes' => 'field_link_attributes',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_link' => array(
+                'url' => 'field_link_url',
+                'title' => 'field_link_title',
+                'attributes' => 'field_link_attributes',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_link',
+      'type' => 'link_field',
+      'module' => 'link',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'url' => array(
+          'type' => 'varchar',
+          'length' => 2048,
+          'not null' => FALSE,
+          'sortable' => TRUE,
+        ),
+        'title' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+          'sortable' => TRUE,
+        ),
+        'attributes' => array(
+          'type' => 'text',
+          'size' => 'medium',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'call2action',
+          1 => 'facebook_post',
         ),
       ),
     ),
@@ -369,13 +439,7 @@ $data = array(
       ),
       'bundles' => array(
         'node' => array(
-          0 => 'contact',
-          1 => 'location',
-          2 => 'testimonial',
-          3 => 'news',
-          4 => 'banner',
-          5 => 'call2action',
-          6 => 'facebook_post',
+          0 => 'facebook_post',
         ),
       ),
     ),
@@ -445,6 +509,146 @@ $data = array(
         ),
       ),
     ),
+    'field_tags' => array(
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'tags',
+            'parent' => 0,
+          ),
+        ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
+      ),
+      'entity_types' => array(),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_tags' => array(
+                'tid' => 'field_tags_tid',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_tags' => array(
+                'tid' => 'field_tags_tid',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'table' => 'taxonomy_term_data',
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'field_name' => 'field_tags',
+      'type' => 'taxonomy_term_reference',
+      'module' => 'taxonomy',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'columns' => array(
+        'tid' => array(
+          'type' => 'int',
+          'unsigned' => TRUE,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'article',
+          1 => 'facebook_post',
+        ),
+      ),
+    ),
+    'field_video_embedded' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_video_embedded' => array(
+                'video_url' => 'field_video_embedded_video_url',
+                'thumbnail_path' => 'field_video_embedded_thumbnail_path',
+                'video_data' => 'field_video_embedded_video_data',
+                'embed_code' => 'field_video_embedded_embed_code',
+                'description' => 'field_video_embedded_description',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_video_embedded' => array(
+                'video_url' => 'field_video_embedded_video_url',
+                'thumbnail_path' => 'field_video_embedded_thumbnail_path',
+                'video_data' => 'field_video_embedded_video_data',
+                'embed_code' => 'field_video_embedded_embed_code',
+                'description' => 'field_video_embedded_description',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_video_embedded',
+      'type' => 'video_embed_field',
+      'module' => 'video_embed_field',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'video_url' => array(
+          'type' => 'varchar',
+          'length' => 512,
+          'default' => '',
+        ),
+        'thumbnail_path' => array(
+          'type' => 'varchar',
+          'length' => 512,
+          'default' => '',
+        ),
+        'video_data' => array(
+          'type' => 'blob',
+          'not null' => FALSE,
+          'size' => 'big',
+          'serialize' => TRUE,
+        ),
+        'embed_code' => array(
+          'type' => 'varchar',
+          'length' => 1024,
+          'default' => '',
+        ),
+        'description' => array(
+          'type' => 'text',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'facebook_post',
+        ),
+      ),
+    ),
   ),
   'instances' => array(
     'body' => array(
@@ -456,7 +660,7 @@ $data = array(
             'rows' => 20,
             'summary_rows' => 5,
           ),
-          'weight' => '3',
+          'weight' => '4',
           'module' => 'text',
         ),
         'settings' => array(
@@ -468,34 +672,34 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'text_default',
-            'weight' => '0',
+            'weight' => '3',
             'settings' => array(),
             'module' => 'text',
           ),
           'teaser' => array(
             'label' => 'hidden',
             'type' => 'text_summary_or_trimmed',
+            'weight' => '3',
             'settings' => array(
               'trim_length' => 600,
             ),
             'module' => 'text',
-            'weight' => 0,
           ),
         ),
         'required' => FALSE,
         'description' => '',
+        'default_value' => NULL,
         'field_name' => 'body',
         'entity_type' => 'node',
         'bundle' => 'facebook_post',
         'deleted' => '0',
-        'default_value' => NULL,
       ),
     ),
     'field_created_time' => array(
       0 => array(
         'label' => 'Created time',
         'widget' => array(
-          'weight' => '6',
+          'weight' => '10',
           'type' => 'date_text',
           'module' => 'date',
           'active' => 1,
@@ -507,6 +711,7 @@ $data = array(
             'label_position' => 'above',
             'text_parts' => array(),
             'no_fieldset' => 0,
+            'display_all_day' => 0,
           ),
         ),
         'settings' => array(
@@ -520,22 +725,30 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'date_default',
-            'weight' => '1',
+            'weight' => '7',
             'settings' => array(
-              'format_type' => 'long',
+              'format_type' => 'short',
+              'fromto' => 'both',
               'multiple_number' => '',
               'multiple_from' => '',
               'multiple_to' => '',
-              'fromto' => 'both',
-              'show_remaining_days' => FALSE,
+              'show_remaining_days' => 0,
             ),
             'module' => 'date',
           ),
           'teaser' => array(
-            'type' => 'hidden',
-            'label' => 'above',
-            'settings' => array(),
-            'weight' => 0,
+            'label' => 'hidden',
+            'type' => 'date_default',
+            'weight' => '4',
+            'settings' => array(
+              'format_type' => 'short',
+              'fromto' => 'both',
+              'multiple_number' => '',
+              'multiple_from' => '',
+              'multiple_to' => '',
+              'show_remaining_days' => 0,
+            ),
+            'module' => 'date',
           ),
         ),
         'required' => 0,
@@ -550,7 +763,7 @@ $data = array(
       0 => array(
         'label' => 'Likes count',
         'widget' => array(
-          'weight' => '5',
+          'weight' => '9',
           'type' => 'number',
           'module' => 'number',
           'active' => 0,
@@ -567,7 +780,7 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'number_integer',
-            'weight' => '4',
+            'weight' => '8',
             'settings' => array(
               'thousand_separator' => '',
               'decimal_separator' => '.',
@@ -577,10 +790,10 @@ $data = array(
             'module' => 'number',
           ),
           'teaser' => array(
-            'type' => 'hidden',
             'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '13',
             'settings' => array(),
-            'weight' => 0,
           ),
         ),
         'required' => 0,
@@ -592,11 +805,73 @@ $data = array(
         'deleted' => '0',
       ),
     ),
+    'field_link' => array(
+      0 => array(
+        'label' => 'Facebook post',
+        'widget' => array(
+          'weight' => '6',
+          'type' => 'link_field',
+          'module' => 'link',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'absolute_url' => 1,
+          'validate_url' => 0,
+          'url' => 0,
+          'title' => 'value',
+          'title_value' => 'Facebook post',
+          'title_label_use_field_label' => 0,
+          'title_maxlength' => '128',
+          'enable_tokens' => 1,
+          'display' => array(
+            'url_cutoff' => '80',
+          ),
+          'attributes' => array(
+            'target' => '_blank',
+            'rel' => '',
+            'configurable_class' => 0,
+            'class' => '',
+            'configurable_title' => 0,
+            'title' => '',
+          ),
+          'rel_remove' => 'default',
+          'linkit' => array(
+            'enable' => 0,
+            'profile' => '',
+            'button_text' => 'Search',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'link_default',
+            'weight' => '6',
+            'settings' => array(),
+            'module' => 'link',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Add a link of the facebook post.',
+        'default_value' => NULL,
+        'field_name' => 'field_link',
+        'entity_type' => 'node',
+        'bundle' => 'facebook_post',
+        'deleted' => '0',
+      ),
+    ),
     'field_name_from' => array(
       0 => array(
         'label' => 'Name from',
         'widget' => array(
-          'weight' => '2',
+          'weight' => '3',
           'type' => 'text_textfield',
           'module' => 'text',
           'active' => 1,
@@ -617,15 +892,16 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'text_default',
-            'weight' => '5',
+            'weight' => '2',
             'settings' => array(),
             'module' => 'text',
           ),
           'teaser' => array(
-            'type' => 'hidden',
-            'label' => 'above',
+            'label' => 'hidden',
+            'type' => 'text_default',
+            'weight' => '2',
             'settings' => array(),
-            'weight' => 0,
+            'module' => 'text',
           ),
         ),
         'required' => 0,
@@ -641,7 +917,7 @@ $data = array(
       0 => array(
         'label' => 'Picture',
         'widget' => array(
-          'weight' => '4',
+          'weight' => '5',
           'type' => 'image_image',
           'module' => 'image',
           'active' => 1,
@@ -664,19 +940,45 @@ $data = array(
         'display' => array(
           'default' => array(
             'label' => 'hidden',
-            'type' => 'image',
-            'weight' => '2',
+            'type' => 'picture',
+            'weight' => '1',
             'settings' => array(
-              'image_style' => '',
+              'picture_mapping' => 'pixelgarage',
+              'fallback_image_style' => '',
+              'lazyload' => 0,
+              'lazyload_aspect_ratio' => 0,
               'image_link' => '',
+              'colorbox_settings' => array(
+                'colorbox_group' => '',
+                'colorbox_gallery' => 'post',
+                'colorbox_gallery_custom' => '',
+                'colorbox_caption' => 'auto',
+                'colorbox_caption_custom' => '',
+                'colorbox_multivalue_index' => NULL,
+              ),
             ),
-            'module' => 'image',
+            'module' => 'picture',
           ),
           'teaser' => array(
-            'type' => 'hidden',
-            'label' => 'above',
-            'settings' => array(),
-            'weight' => 0,
+            'label' => 'hidden',
+            'type' => 'picture',
+            'weight' => '0',
+            'settings' => array(
+              'picture_mapping' => 'pixelgarage',
+              'fallback_image_style' => '',
+              'lazyload' => '',
+              'lazyload_aspect_ratio' => '',
+              'image_link' => '',
+              'colorbox_settings' => array(
+                'colorbox_group' => '',
+                'colorbox_gallery' => 'post',
+                'colorbox_gallery_custom' => '',
+                'colorbox_caption' => 'auto',
+                'colorbox_caption_custom' => '',
+                'colorbox_multivalue_index' => NULL,
+              ),
+            ),
+            'module' => 'picture',
           ),
         ),
         'required' => 0,
@@ -691,7 +993,7 @@ $data = array(
       0 => array(
         'label' => 'Post ID',
         'widget' => array(
-          'weight' => '1',
+          'weight' => '2',
           'type' => 'text_textfield',
           'module' => 'text',
           'active' => 1,
@@ -711,10 +1013,48 @@ $data = array(
         'display' => array(
           'default' => array(
             'label' => 'hidden',
-            'type' => 'text_default',
-            'weight' => '3',
+            'type' => 'hidden',
+            'weight' => '19',
             'settings' => array(),
-            'module' => 'text',
+          ),
+          'teaser' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '14',
+            'settings' => array(),
+          ),
+        ),
+        'required' => 0,
+        'description' => 'The post ID.',
+        'default_value' => NULL,
+        'field_name' => 'field_post_id',
+        'entity_type' => 'node',
+        'bundle' => 'facebook_post',
+        'deleted' => '0',
+      ),
+    ),
+    'field_tags' => array(
+      0 => array(
+        'label' => 'Tags',
+        'widget' => array(
+          'weight' => '1',
+          'type' => 'taxonomy_autocomplete',
+          'module' => 'taxonomy',
+          'active' => 0,
+          'settings' => array(
+            'size' => 60,
+            'autocomplete_path' => 'taxonomy/autocomplete',
+          ),
+        ),
+        'settings' => array(
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'above',
+            'type' => 'hidden',
+            'weight' => '20',
+            'settings' => array(),
           ),
           'teaser' => array(
             'type' => 'hidden',
@@ -724,9 +1064,57 @@ $data = array(
           ),
         ),
         'required' => 0,
-        'description' => 'The post ID.',
+        'description' => 'Categorize the content here.',
         'default_value' => NULL,
-        'field_name' => 'field_post_id',
+        'field_name' => 'field_tags',
+        'entity_type' => 'node',
+        'bundle' => 'facebook_post',
+        'deleted' => '0',
+      ),
+    ),
+    'field_video_embedded' => array(
+      0 => array(
+        'label' => 'Video embedded',
+        'widget' => array(
+          'weight' => '8',
+          'type' => 'video_embed_field_video',
+          'module' => 'video_embed_field',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'allowed_providers' => array(
+            'facebook' => 'facebook',
+            'youtube' => 'youtube',
+            'vimeo' => 'vimeo',
+          ),
+          'description_field' => 0,
+          'description_length' => '128',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'video_embed_field',
+            'weight' => '4',
+            'settings' => array(
+              'video_style' => 'normal',
+              'description' => 1,
+              'description_position' => 'bottom',
+            ),
+            'module' => 'video_embed_field',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => '',
+        'default_value' => NULL,
+        'field_name' => 'field_video_embedded',
         'entity_type' => 'node',
         'bundle' => 'facebook_post',
         'deleted' => '0',

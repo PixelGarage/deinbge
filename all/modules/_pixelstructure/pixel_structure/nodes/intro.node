@@ -1,0 +1,274 @@
+<?php
+$export_time = 1490363571;
+$data = array(
+  'bundles' => array(
+    'intro' => (object) array(
+      'type' => 'intro',
+      'name' => 'Intro video',
+      'base' => 'node_content',
+      'module' => 'node',
+      'description' => 'Shows an intro movie.',
+      'help' => '',
+      'has_title' => '1',
+      'title_label' => 'Title',
+      'custom' => '1',
+      'modified' => '1',
+      'locked' => '0',
+      'disabled' => '0',
+      'orig_type' => 'intro',
+      'disabled_changed' => FALSE,
+      'bc_entity_type' => 'node',
+    ),
+  ),
+  'fields' => array(
+    'body' => array(
+      'entity_types' => array(
+        0 => 'node',
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'settings' => array(),
+      'translatable' => '0',
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_body' => array(
+                'value' => 'body_value',
+                'summary' => 'body_summary',
+                'format' => 'body_format',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'field_name' => 'body',
+      'type' => 'text_with_summary',
+      'module' => 'text',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'summary' => array(
+          'type' => 'text',
+          'size' => 'big',
+          'not null' => FALSE,
+        ),
+        'format' => array(
+          'type' => 'varchar',
+          'length' => 255,
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'page',
+          1 => 'article',
+          2 => 'call2action',
+          3 => 'facebook_post',
+          4 => 'intro',
+          5 => 'quote',
+          6 => 'pxl_raffle',
+          7 => 'spenden',
+          8 => 'offline_donation',
+          9 => 'footer',
+        ),
+      ),
+    ),
+    'field_video' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_video' => array(
+                'video_url' => 'field_video_video_url',
+                'thumbnail_path' => 'field_video_thumbnail_path',
+                'video_data' => 'field_video_video_data',
+                'embed_code' => 'field_video_embed_code',
+                'description' => 'field_video_description',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_video' => array(
+                'video_url' => 'field_video_video_url',
+                'thumbnail_path' => 'field_video_thumbnail_path',
+                'video_data' => 'field_video_video_data',
+                'embed_code' => 'field_video_embed_code',
+                'description' => 'field_video_description',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_video',
+      'type' => 'video_embed_field',
+      'module' => 'video_embed_field',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'columns' => array(
+        'video_url' => array(
+          'type' => 'varchar',
+          'length' => 512,
+          'default' => '',
+        ),
+        'thumbnail_path' => array(
+          'type' => 'varchar',
+          'length' => 512,
+          'default' => '',
+        ),
+        'video_data' => array(
+          'type' => 'blob',
+          'not null' => FALSE,
+          'size' => 'big',
+          'serialize' => TRUE,
+        ),
+        'embed_code' => array(
+          'type' => 'varchar',
+          'length' => 1024,
+          'default' => '',
+        ),
+        'description' => array(
+          'type' => 'text',
+          'not null' => FALSE,
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'intro',
+          1 => 'article',
+        ),
+      ),
+    ),
+  ),
+  'instances' => array(
+    'body' => array(
+      0 => array(
+        'label' => 'Body',
+        'widget' => array(
+          'type' => 'text_textarea_with_summary',
+          'settings' => array(
+            'rows' => 20,
+            'summary_rows' => 5,
+          ),
+          'weight' => '2',
+          'module' => 'text',
+        ),
+        'settings' => array(
+          'display_summary' => TRUE,
+          'text_processing' => 1,
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '1',
+            'settings' => array(),
+          ),
+          'teaser' => array(
+            'label' => 'hidden',
+            'type' => 'text_summary_or_trimmed',
+            'settings' => array(
+              'trim_length' => 600,
+            ),
+            'module' => 'text',
+            'weight' => 0,
+          ),
+        ),
+        'required' => FALSE,
+        'description' => '',
+        'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'intro',
+        'deleted' => '0',
+        'default_value' => NULL,
+      ),
+    ),
+    'field_video' => array(
+      0 => array(
+        'label' => 'Video',
+        'widget' => array(
+          'weight' => '1',
+          'type' => 'video_embed_field_video',
+          'module' => 'video_embed_field',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'allowed_providers' => array(
+            'youtube' => 'youtube',
+            'vimeo' => 'vimeo',
+          ),
+          'description_field' => 0,
+          'description_length' => '128',
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'video_embed_field',
+            'weight' => '0',
+            'settings' => array(
+              'video_style' => 'normal',
+              'description' => 1,
+              'description_position' => 'bottom',
+            ),
+            'module' => 'video_embed_field',
+          ),
+          'teaser' => array(
+            'type' => 'hidden',
+            'label' => 'above',
+            'settings' => array(),
+            'weight' => 0,
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Add the intro video.',
+        'default_value' => NULL,
+        'field_name' => 'field_video',
+        'entity_type' => 'node',
+        'bundle' => 'intro',
+        'deleted' => '0',
+      ),
+    ),
+  ),
+);
