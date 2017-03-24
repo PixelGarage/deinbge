@@ -21,9 +21,9 @@
             key: stripeSettings.stripe_public_key,
             image: stripeSettings.icon,
             locale: 'auto',
-            token: function (token) {
+            token: function (token, args) {
               // get button container for responses
-              var $fieldItemDiv = $clickedButton.parents('.field-item');
+              var $buttonContainer = $clickedButton.parent();
 
               // Use the token to create the charge with a server-side script.
               if ((typeof token != 'undefined') && token.id) {
@@ -36,19 +36,20 @@
                       email: token.email,
                       amount: clickedButtonSettings.amount,
                       currency: clickedButtonSettings.currency,
-                      recurringBilling: clickedButtonSettings.recurringBilling
+                      recurringBilling: clickedButtonSettings.recurringBilling,
+                      arguments: args
                     };
 
                 // append payment processing activity image to button
                 var stripeProcessing = '<span class="stripe-payment-processing"><img src="' + stripeSettings.processing_img + '" alt="processing payment..."/></span>';
-                $clickedButton.parent().append(stripeProcessing);
+                $buttonContainer.append(stripeProcessing);
 
                 //
                 // charge the customer with the token and display response
-                $fieldItemDiv.load('/stripe/ajax/token', params, function (response, status, xhr) {
+                $buttonContainer.load('/stripe/ajax/token', params, function (response, status, xhr) {
                   if (status == "error") {
                     var msg = "Server error " + xhr.status + ": " + xhr.statusText;
-                    $fieldItemDiv.html('<div class="stripe-button-error">' + msg + '</div>');
+                    $buttonContainer.append('<div class="stripe-button-error">' + msg + '</div>');
                   }
                   else {
                     // do NOT attach behaviours to button, it is disabled
@@ -59,7 +60,7 @@
               else {
                 // no valid token returned => should never happen
                 var msg = "Stripe payment server error. Try it later again.";
-                $clickedButton.parent().append('<div class="stripe-button-error">' + msg + '</div>');
+                $buttonContainer.append('<div class="stripe-button-error">' + msg + '</div>');
               }
 
             }
@@ -114,7 +115,7 @@
       $.each(Drupal.settings.stripe_button.custom_buttons, function (button, settings) {
         var $form_button = $('#form-' + button + ' .form-submit'),
             $form_text = $('#form-' + button + ' .form-text'),
-            $fieldItemDiv = $form_button.parents('.field-item');
+            $buttonContainer = $form_button.parents('.stripe-button-container');
 
         $form_button.off('click');
         $form_button.on('click', function (e) {
@@ -132,10 +133,10 @@
 
           //
           // get the stripe button with the user set value
-          $fieldItemDiv.load('/stripe/ajax/button', params, function (response, status, xhr) {
+          $buttonContainer.load('/stripe/ajax/button', params, function (response, status, xhr) {
             if (status == "error") {
               var msg = "Server error " + xhr.status + ": " + xhr.statusText;
-              $fieldItemDiv.html('<div class="stripe-button-error">' + msg + '</div>');
+              $buttonContainer.append('<div class="stripe-button-error">' + msg + '</div>');
             }
             else {
               // attach behaviours to new stripe button
