@@ -8932,6 +8932,49 @@ form#user-login {
   text-decoration: none;
 }
 /*
+ *  Form confirmation component
+ * --------------------------------------------------*/
+form.confirmation {
+  margin: 0 auto 50px;
+}
+form.confirmation p {
+  font-family: 'ProximaNovaLight';
+  font-size: 15px;
+}
+@media screen and (min-width: 42.35294117647059em) {
+  form.confirmation p {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  form.confirmation p {
+    font-size: 17px;
+  }
+}
+form.confirmation .form-actions button.form-submit {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 15px 10px;
+  min-width: 160px;
+  height: 44px;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #fff;
+  white-space: normal;
+  border: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #ab935e;
+}
+form.confirmation .form-actions button.form-submit:hover {
+  background: #6b5b38;
+}
+/*
  *  ShareThis component
  * --------------------------------------------------*/
 @font-face {
