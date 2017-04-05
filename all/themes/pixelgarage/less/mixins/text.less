@@ -53,12 +53,11 @@
 
   // responsive font size with minimum and maximum size
   .font-size-responsive(@max-size: @resp-font-size-max; @min-size: @resp-font-size-min) {
-    @min-font-size: max(@min-size, @max-size*5/8); // min = 480 / 768 * max
-    @min-max-breakpoint: unit((48 * @min-font-size / @max-size), em);
+    @min-max-breakpoint: unit((48 * @min-size / @max-size), em);
     @font-break:  ~"screen and (min-width: @{min-max-breakpoint})";
 
     // min font size
-    font-size: @min-font-size;
+    font-size: @min-size;
 
     // dynamic font size
     @media @font-break {
@@ -66,7 +65,7 @@
     }
 
     // max.font size
-    @media @tablet {
+    @media @normal {
       font-size: @max-size;
     }
   }

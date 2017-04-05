@@ -14,6 +14,7 @@ function template_preprocess_pxlraffle_next_raffle(&$vars) {
   $raffle_ids = '';
   $count = 0;
   $closed_raffles = pxlraffle_get_raffles_with_state('closed');
+  $raffle_num = substr($current_raffle->field_raffle_id[LANGUAGE_NONE][0]['value'], 1);
 
   if ($closed_raffles) {
     // get oldest closed raffle to be raffled next
@@ -37,7 +38,7 @@ function template_preprocess_pxlraffle_next_raffle(&$vars) {
     ($count == 1) ?
       t('The raffle with ID "@numbers" is ready to be raffled.', array('@numbers' => $raffle_ids)) :
     t('At the moment no raffle is ready to be raffled.');
-  $vars['label_participate'] = t('Go for it now!');
+  $vars['label_participate'] = t('Register for the @num. raffle now!', array('@num' => $raffle_num));
   switch($language->language) {
     case 'en':
       $vars['url_participate'] = $base_url . '/en/participate';

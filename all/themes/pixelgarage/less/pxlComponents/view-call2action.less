@@ -19,7 +19,7 @@
 // General settings
 // -------------------------
 .view.view-call2action {
-  margin: 0;
+  margin: 50px 0 0;
   width: 100%;
 
   .view-content {
@@ -34,6 +34,9 @@
       vertical-align: top;
 
       .node-call2action {
+        margin: 0 auto;
+        max-width: 350px;
+
         .row {
           margin: 0;
 
@@ -103,7 +106,7 @@
             }
 
             .field-name-body {
-              display: none;
+              display: block;
               margin: 20px auto 0;
               width: 90%;
 
@@ -120,20 +123,13 @@
       }
 
       @media @special-break {
+        max-width: none;
         width: 50%;
 
         .node-call2action {
           .row {
             .col-sm-12 {
               padding: 0 2*@pxl-gutter-width;
-
-              .call2action-container {
-
-              }
-
-              .field-name-body {
-                display:block;
-              }
             }
           }
         }
@@ -146,9 +142,6 @@
           .row {
             .col-sm-12 {
               padding: 0 3*@pxl-gutter-width;
-
-              .call2action-container {
-              }
             }
           }
         }

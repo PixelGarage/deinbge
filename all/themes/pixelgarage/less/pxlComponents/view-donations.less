@@ -98,10 +98,12 @@
             .registration-message {
               display: inline-block;
               margin: 10px auto 30px;
-              padding: 5px 10px;
+              padding: 20px 10px;
               font-family: @pxl-text-font;
               text-align: center;
-              border: 1px solid @pxl-color-border-light;
+              //border: 1px solid @pxl-color-border-light;
+              #pxl-mixins.border-radius(@tab-button-radius);
+              background-color: @pxl-bg-panel-item;
 
               .registration-hint {
                 font-size: @font-size-base - 2;
@@ -111,13 +113,18 @@
               a {
                 display: inline-block;
                 margin-top: 10px;
-                padding: 2px 8px;
+                padding: 5px 10px;
+                font-family: @pxl-text-font-bold;
+                font-size: @font-size-button-small;
+                line-height: 1;
+                letter-spacing: 0;
+                text-transform: capitalize;
                 color: #fff;
-                border: 1px solid @pxl-color-danger;
-                background-color: @pxl-color-danger;
+                border: 1px solid @pxl-color-main;
+                background-color: @pxl-color-main;
 
                 &:hover, &.active {
-                  background-color: lighten(@pxl-color-danger, 10%);
+                  background-color: lighten(@pxl-color-main, 10%);
                 }
               }
             }

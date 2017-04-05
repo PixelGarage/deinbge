@@ -15,11 +15,8 @@
 #pxlraffle-next-raffle {
   margin: 0 2*@container-inner-margin;
   background: none;
-
-  body.page-support & {
-    padding-top: 30px;
-    background-color: @pxl-bg-panel-item;
-  }
+  padding-top: 30px;
+  background-color: @pxl-bg-panel-item;
 
   .next-raffle {
     font-family: @pxl-text-font-bold;
@@ -28,7 +25,6 @@
     .next-raffle-slogan {
       margin-bottom: 20px;
       #pxl-mixins.font-size-responsive(@font-size-pane-title);
-      #pxl-mixins.hyphenate;
       color: @text-color;
     }
 
