@@ -9784,6 +9784,7 @@ form#user-profile-form .form-actions .form-submit .icon {
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
+  margin: 0 3px 0 -1px;
   width: 5px;
   color: #2dd092;
 }
@@ -9839,6 +9840,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
+  margin: 0 3px 0 -1px;
   width: 5px;
   color: #ab935e;
 }
@@ -10230,6 +10232,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
+  margin: 0 3px 0 -1px;
   width: 5px;
   color: #fff;
 }
@@ -10285,6 +10288,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
+  margin: 0 3px 0 -1px;
   width: 5px;
   color: #fff;
 }
@@ -10303,6 +10307,9 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-formatting-mark {
     width: 6px;
   }
+}
+#pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-formatting-mark {
+  color: #000;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount .currency {
   vertical-align: middle;
