@@ -9538,45 +9538,77 @@ body.page-user .main-container .container .row .col-sm-12 ul.tabs--primary {
   display: none;
 }
 form#user-profile-form {
-  margin: 0 auto 50px;
+  margin: 0 auto 30px;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info {
-  margin: 20px 7% 50px;
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) {
+  margin: 20px 1.75% 30px;
   border: none;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
   background-color: #efefef;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-heading {
+@media screen and (min-width: 768px) {
+  form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) {
+    margin: 20px 7% 30px;
+  }
+}
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-heading {
+  padding: 20px 10px;
   border: none;
   background: none;
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-heading .panel-title {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-heading .panel-title {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   font-family: 'ProximaNovaBold';
   font-size: 32px;
   text-align: center;
   color: #333333;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body p {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .help-block {
+  padding-bottom: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+}
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group,
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel {
+  margin: 0 7% 30px;
+}
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group .form-group,
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel .form-group,
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group .panel,
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel .panel {
+  margin: 0;
+}
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body p {
   margin-bottom: 20px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .field-name-field-raffle-code .form-item {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-textfield input.form-control {
+  border: 1px solid #c9c9c9;
+}
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-textfield input.form-control:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #ab935e;
+}
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item {
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .field-name-field-raffle-code .form-item label.control-label {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item label.control-label {
   display: inline-block;
   width: 120px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .field-name-field-raffle-code .form-item input.form-text {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item input.form-text {
   display: inline-block;
   width: 150px;
   font-family: 'ProximaNovaLight';
@@ -9588,10 +9620,10 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-
   border-radius: 0;
   background-color: #000;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .raffle-action-container {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container {
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .raffle-action-container a.btn-default {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default {
   display: inline-block;
   margin: 10px;
   padding: 7px 15px;
@@ -9609,22 +9641,22 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-
   border: none;
   background-color: #ab935e;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .raffle-action-container a.btn-default:hover,
-form#user-profile-form .ds-form .row .col-sm-12 .panel.group-raffle-info .panel-body .raffle-action-container a.btn-default:focus {
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:hover,
+form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:focus {
   opacity: 0.7;
 }
-form#user-profile-form .ds-form .row .col-sm-12 #edit-account,
-form#user-profile-form .ds-form .row .col-sm-12 #edit-field-phone {
-  margin: 0 14% 50px;
+form#user-profile-form .ds-form .row .col-sm-12 .panel#edit-picture {
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .form-group .form-item input.form-control {
-  border: 1px solid #c9c9c9;
+form#user-profile-form .ds-form .row .col-sm-12 .panel#edit-picture .panel-heading {
+  display: none;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .form-group .form-item input.form-control:focus {
-  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  border: 1px solid #ab935e;
+form#user-profile-form .ds-form .row .col-sm-12 .panel#edit-picture .panel-body {
+  border: none;
 }
 form#user-profile-form .form-actions {
   text-align: center;
@@ -9655,7 +9687,7 @@ form#user-profile-form .form-actions .form-submit .icon {
   display: none;
 }
 .panel-display .panel-col .panel-pane {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .panel-display .panel-col .panel-pane.full-width {
   margin: 0 -15px;
@@ -9701,7 +9733,7 @@ form#user-profile-form .form-actions .form-submit .icon {
   color: #333333;
 }
 .panel-display .panel-col #panel-fundraising {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-bottom: 0;
   background-color: #efefef;
 }
@@ -9712,8 +9744,8 @@ form#user-profile-form .form-actions .form-submit .icon {
 .panel-display .panel-col #panel-masonry-social,
 .panel-display .panel-col #panel-blog,
 .panel-display .panel-col #panel-donate-online {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #efefef;
 }
 .panel-display .panel-col #panel-next-raffle {

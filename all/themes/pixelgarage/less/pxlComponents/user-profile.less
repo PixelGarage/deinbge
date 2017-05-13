@@ -54,20 +54,26 @@ form#user-profile-form {
   .ds-form {
     .row {
       .col-sm-12 {
-        .panel.group-raffle-info {
-          margin: 20px @container-inner-margin @panel-separator-height;
+
+        .panel:not(#edit-picture) {
+          margin: 20px @container-inner-margin/4 @panel-separator-height;
           border: none;
           #pxl-mixins.border-radius(6px);
           background-color: @pxl-bg-panel-item;
 
+          @media @tablet {
+            margin: 20px @container-inner-margin @panel-separator-height;
+          }
+
           .panel-heading {
+            padding: 20px 10px;
             border: none;
             background: none;
             text-align: center;
 
             .panel-title {
               display: inline-block;
-              margin-bottom: 20px;
+              margin-bottom: 0;
               font-family: @pxl-text-font-bold;
               font-size: @font-size-pane-title;
               text-align: center;
@@ -76,6 +82,22 @@ form#user-profile-form {
           }
 
           .panel-body {
+            > .help-block {
+              padding-bottom: 30px;
+              font-family: @pxl-text-font;
+              font-size: @font-size-pane-subtitle;
+              text-align: center;
+              color: @text-color;
+            }
+
+            > .form-group, .panel {
+              margin: 0 @container-inner-margin @panel-separator-height;
+
+              .form-group, .panel {
+                margin: 0;
+              }
+            }
+
             p {
               margin-bottom: 20px;
               font-family: @pxl-text-font;
@@ -83,6 +105,33 @@ form#user-profile-form {
               text-align: center;
             }
 
+            .field-name-field-phone {
+              label {
+              }
+
+              input {
+              }
+            }
+
+            .form-type-textfield {
+              label.control-label {
+
+              }
+
+              input.form-control {
+                border: 1px solid @pxl-color-border;
+
+                &:focus {
+                  #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+                  #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+                  border: 1px solid @pxl-color-main;
+                }
+              }
+
+              .help-block, .description {
+
+              }
+            }
             .field-name-field-raffle-code {
               .form-item {
                 text-align: center;
@@ -118,33 +167,33 @@ form#user-profile-form {
                 .resp-user-button;
               }
             }
-          }
-        }
 
-        #edit-account,
-        #edit-field-phone {
-          margin: 0 2*@container-inner-margin @panel-separator-height;
-        }
+            .form-type-radios {
+              label {
+              }
 
-        .form-group {
-          .form-item {
-            label.control-label {
-
-            }
-
-            input.form-control {
-              border: 1px solid @pxl-color-border;
-
-              &:focus {
-                #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
-                #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
-                border: 1px solid @pxl-color-main;
+              input {
               }
             }
+            .form-type-checkboxes {
+              label {
+              }
 
-            .help-block {
-
+              input {
+              }
             }
+          }
+        }
+        .panel#edit-picture {
+          border: none;
+          background: none;
+          #pxl-mixins.box-shadow(none);
+
+          .panel-heading {
+            display: none;
+          }
+          .panel-body {
+            border: none;
           }
         }
 

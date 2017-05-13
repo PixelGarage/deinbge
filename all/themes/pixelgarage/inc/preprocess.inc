@@ -20,8 +20,14 @@ function pixelgarage_preprocess_html(&$vars) {
  * Override or insert variables for the page templates.
  */
 function pixelgarage_preprocess_page(&$vars) {
-  // hide titles on login forms
-  pg_login_preprocess_page($vars);
+  // hide title for user registration / login
+  switch (current_path()) {
+    case 'user':
+    case 'user/login':
+    case 'user/register':
+    case 'user/password':
+      $vars['title'] = '';
+  }
 
   // replace logo with .svg and make it language dependant
   global $language;
