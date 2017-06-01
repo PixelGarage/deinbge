@@ -1075,12 +1075,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #7c6941;
+  color: #8e7234;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: underline;
 }
 a:focus {
@@ -3272,7 +3272,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #fff;
 }
 .btn-link {
-  color: #7c6941;
+  color: #8e7234;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3293,7 +3293,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3870,7 +3870,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #7c6941;
+  border-color: #8e7234;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4592,7 +4592,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #7c6941;
+  color: #8e7234;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4612,7 +4612,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #ab935e;
+  color: #bf9c50;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -4807,7 +4807,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #7c6941;
+  color: #8e7234;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -4878,7 +4878,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #7c6941;
+  border-color: #8e7234;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -8738,7 +8738,7 @@ form#user-login {
 #user-create-account {
   display: inline-block;
   vertical-align: top;
-  padding: 0 0 2em;
+  padding: 0 0 5em;
   width: 100%;
 }
 @media screen and (min-width: 992px) {
@@ -8749,6 +8749,11 @@ form#user-login {
 }
 #user-create-account .create-account-description {
   margin-bottom: 6px;
+}
+@media screen and (min-width: 992px) {
+  #user-create-account .create-account-description {
+    margin: 40px 0 50px;
+  }
 }
 #user-create-account .create-account-description p {
   text-align: left;
@@ -8763,11 +8768,11 @@ form#user-login {
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
-  background-image: -webkit-linear-gradient(top, #ab935e 0%, #8d7849 100%);
-  background-image: -o-linear-gradient(top, #ab935e 0%, #8d7849 100%);
-  background-image: linear-gradient(to bottom, #ab935e 0%, #8d7849 100%);
+  background-image: -webkit-linear-gradient(top, #bf9c50 0%, #a1813b 100%);
+  background-image: -o-linear-gradient(top, #bf9c50 0%, #a1813b 100%);
+  background-image: linear-gradient(to bottom, #bf9c50 0%, #a1813b 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab935e', endColorstr='#ff8d7849', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbf9c50', endColorstr='#ffa1813b', GradientType=0);
   display: inline-block;
   position: absolute;
   right: 0;
@@ -8776,11 +8781,11 @@ form#user-login {
 }
 #user-create-account .login-register:hover {
   color: #fff;
-  background-image: -webkit-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: -o-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: linear-gradient(to bottom, #8d7849 0%, #ab935e 100%);
+  background-image: -webkit-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: -o-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: linear-gradient(to bottom, #a1813b 0%, #bf9c50 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8d7849', endColorstr='#ffab935e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa1813b', endColorstr='#ffbf9c50', GradientType=0);
   text-decoration: none;
 }
 /* user login form */
@@ -8809,7 +8814,7 @@ form#user-login {
   -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  border: 1px solid #ab935e;
+  border: 1px solid #bf9c50;
 }
 #user_login_form .form-actions-wrapper {
   position: relative;
@@ -8828,35 +8833,35 @@ form#user-login {
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
-  background-image: -webkit-linear-gradient(top, #ab935e 0%, #8d7849 100%);
-  background-image: -o-linear-gradient(top, #ab935e 0%, #8d7849 100%);
-  background-image: linear-gradient(to bottom, #ab935e 0%, #8d7849 100%);
+  background-image: -webkit-linear-gradient(top, #bf9c50 0%, #a1813b 100%);
+  background-image: -o-linear-gradient(top, #bf9c50 0%, #a1813b 100%);
+  background-image: linear-gradient(to bottom, #bf9c50 0%, #a1813b 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab935e', endColorstr='#ff8d7849', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbf9c50', endColorstr='#ffa1813b', GradientType=0);
 }
 #user_login_form .form-actions-wrapper .form-actions .btn:hover {
   color: #fff;
-  background-image: -webkit-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: -o-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: linear-gradient(to bottom, #8d7849 0%, #ab935e 100%);
+  background-image: -webkit-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: -o-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: linear-gradient(to bottom, #a1813b 0%, #bf9c50 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8d7849', endColorstr='#ffab935e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa1813b', endColorstr='#ffbf9c50', GradientType=0);
   text-decoration: none;
 }
 #user_login_form .form-actions-wrapper .form-actions .btn:hover {
-  background-image: -webkit-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: -o-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: linear-gradient(to bottom, #8d7849 0%, #ab935e 100%);
+  background-image: -webkit-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: -o-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: linear-gradient(to bottom, #a1813b 0%, #bf9c50 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8d7849', endColorstr='#ffab935e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa1813b', endColorstr='#ffbf9c50', GradientType=0);
 }
 #user_login_form .form-actions-wrapper .login-password {
   display: inline-block;
   margin: 0.5em 0;
-  color: #ab935e;
+  color: #bf9c50;
 }
 #user_login_form .form-actions-wrapper .login-password:hover {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: underline;
 }
 /* User register / password forms */
@@ -8876,7 +8881,7 @@ form#user-login {
   -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  border: 1px solid #ab935e;
+  border: 1px solid #bf9c50;
 }
 #user-register-form .form-actions,
 #user-pass .form-actions {
@@ -8891,11 +8896,11 @@ form#user-login {
 #user-pass .form-actions .back-to-login .login-account {
   display: inline-block;
   margin-top: 0.5em;
-  color: #ab935e;
+  color: #bf9c50;
 }
 #user-register-form .form-actions .back-to-login .login-account:hover,
 #user-pass .form-actions .back-to-login .login-account:hover {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: underline;
 }
 #user-register-form .form-actions .back-to-login:before,
@@ -8903,7 +8908,7 @@ form#user-login {
   display: inline;
   font-family: "fontawesome";
   content: '\f112';
-  color: #ab935e;
+  color: #bf9c50;
   text-align: center;
   padding: 0.3em;
 }
@@ -8914,21 +8919,21 @@ form#user-login {
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
-  background-image: -webkit-linear-gradient(top, #ab935e 0%, #8d7849 100%);
-  background-image: -o-linear-gradient(top, #ab935e 0%, #8d7849 100%);
-  background-image: linear-gradient(to bottom, #ab935e 0%, #8d7849 100%);
+  background-image: -webkit-linear-gradient(top, #bf9c50 0%, #a1813b 100%);
+  background-image: -o-linear-gradient(top, #bf9c50 0%, #a1813b 100%);
+  background-image: linear-gradient(to bottom, #bf9c50 0%, #a1813b 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab935e', endColorstr='#ff8d7849', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffbf9c50', endColorstr='#ffa1813b', GradientType=0);
   float: right;
 }
 #user-register-form .form-actions .btn:hover,
 #user-pass .form-actions .btn:hover {
   color: #fff;
-  background-image: -webkit-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: -o-linear-gradient(top, #8d7849 0%, #ab935e 100%);
-  background-image: linear-gradient(to bottom, #8d7849 0%, #ab935e 100%);
+  background-image: -webkit-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: -o-linear-gradient(top, #a1813b 0%, #bf9c50 100%);
+  background-image: linear-gradient(to bottom, #a1813b 0%, #bf9c50 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8d7849', endColorstr='#ffab935e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa1813b', endColorstr='#ffbf9c50', GradientType=0);
   text-decoration: none;
 }
 /*
@@ -8968,7 +8973,7 @@ form.confirmation .form-actions button.form-submit {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #ab935e;
+  background: #bf9c50;
 }
 @media screen and (min-width: 40em) {
   form.confirmation .form-actions button.form-submit {
@@ -8981,7 +8986,7 @@ form.confirmation .form-actions button.form-submit {
   }
 }
 form.confirmation .form-actions button.form-submit:hover {
-  background: #6b5b38;
+  background: #7c632d;
 }
 /*
  *  ShareThis component
@@ -9044,7 +9049,7 @@ form.confirmation .form-actions button.form-submit:hover {
   width: 32px;
   height: 32px;
   font-size: 28px;
-  color: #ab935e;
+  color: #bf9c50;
   text-align: center;
   line-height: 32px;
   background: none !important;
@@ -9150,7 +9155,7 @@ form.confirmation .form-actions button.form-submit:hover {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin: 0 -0.25em 0 0;
+  margin: 0 -0.55em 0 0;
   padding: 0 10px;
   line-height: 1;
 }
@@ -9161,15 +9166,16 @@ form.confirmation .form-actions button.form-submit:hover {
 #block-locale-language ul.language-switcher-locale-url > li a.language-link {
   display: inline-block;
   width: 10px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #333333;
+  color: #777777;
   outline: none;
 }
 #block-locale-language ul.language-switcher-locale-url > li a.language-link.active,
 #block-locale-language ul.language-switcher-locale-url > li a.language-link:hover,
 #block-locale-language ul.language-switcher-locale-url > li a.language-link:focus {
   text-transform: uppercase;
+  color: #bf9c50;
 }
 #block-locale-language ul.language-switcher-locale-url > li span.locale-untranslated {
   color: #555555;
@@ -9280,7 +9286,7 @@ form.confirmation .form-actions button.form-submit:hover {
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-title {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
-  color: #4ba5eb;
+  color: #bf9c50;
 }
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-text {
   margin-bottom: 17px;
@@ -9304,7 +9310,7 @@ form.confirmation .form-actions button.form-submit:hover {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #4ba5eb;
+  background-color: #00B9BF;
 }
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:hover,
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:focus {
@@ -9326,7 +9332,7 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:hover,
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:focus {
@@ -9386,11 +9392,11 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
   border: 1px solid #efefef;
 }
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
-  border: 1px solid #4ba5eb;
+  border: 1px solid #bf9c50;
   box-shadow: 1px 1px 1px #aaa inset;
 }
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
-  border: 1px solid #ab935e;
+  border: 1px solid #bf9c50;
 }
 .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
   vertical-align: top;
@@ -9409,7 +9415,7 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #4ba5eb;
+  background-color: #bf9c50;
   margin: 0 0 0 -4px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -9434,7 +9440,7 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
 body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:focus {
@@ -9509,8 +9515,8 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
 .field-name-field-spenden-fee-percentage .field-items .field-item .stripe-button-fee-percentages .fee-radios-wrapper .fee-radio.selected,
 .field-name-field-recurr-spenden-fee-percent .field-items .field-item .stripe-button-fee-percentages .fee-radios-wrapper .fee-radio.selected {
   color: #fff;
-  border: 1px solid #4ba5eb;
-  background-color: #4ba5eb;
+  border: 1px solid #bf9c50;
+  background-color: #bf9c50;
 }
 .field-name-field-spenden-fee-percentage .field-items .field-item .stripe-button-fee-percentages .fee-answer-wrapper,
 .field-name-field-recurr-spenden-fee-percent .field-items .field-item .stripe-button-fee-percentages .fee-answer-wrapper {
@@ -9597,7 +9603,7 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel
   -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  border: 1px solid #ab935e;
+  border: 1px solid #bf9c50;
 }
 form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item {
   text-align: center;
@@ -9639,7 +9645,7 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:hover,
 form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:focus {
@@ -9677,7 +9683,7 @@ form#user-profile-form .form-actions .form-submit {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 form#user-profile-form .form-actions .form-submit:hover,
 form#user-profile-form .form-actions .form-submit:focus {
@@ -9739,7 +9745,7 @@ form#user-profile-form .form-actions .form-submit .icon {
 }
 .panel-display .panel-col #panel-quotes {
   padding-bottom: 0;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 .panel-display .panel-col #panel-masonry-social,
 .panel-display .panel-col #panel-blog,
@@ -9786,6 +9792,7 @@ form#user-profile-form .form-actions .form-submit .icon {
   margin-bottom: 30px;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer-label {
+  margin-bottom: 10px;
   font-family: 'ProximaNovaBold';
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -9799,26 +9806,24 @@ form#user-profile-form .form-actions .form-submit .icon {
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
   display: inline-block;
   vertical-align: top;
-  margin: 0 2px;
+  margin: 0px;
   padding: 0;
-  width: 28px;
+  width: auto;
   height: 34px;
-  color: #2dd092;
+  color: #bf9c50;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0);
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-  margin-top: -1px;
-  padding-left: 4px;
-  text-align: left;
+  margin-top: 0px;
+  text-align: center;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
   margin: 0 3px 0 -1px;
   width: 5px;
-  color: #2dd092;
+  color: #bf9c50;
 }
 @media screen and (min-width: 768px) {
   #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside {
@@ -9829,11 +9834,11 @@ form#user-profile-form .form-actions .form-submit .icon {
     height: 52px;
   }
   #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-    margin-top: -2px;
-    padding-left: 7.14285714px;
+    margin-top: 0px;
   }
   #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-formatting-mark {
     width: 6px;
+    margin: 0 10px 0 -1px;
   }
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container {
@@ -9842,6 +9847,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
   margin-bottom: 30px;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer-label {
+  margin-bottom: 10px;
   font-family: 'ProximaNovaBold';
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -9855,26 +9861,24 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-digit {
   display: inline-block;
   vertical-align: top;
-  margin: 0 2px;
+  margin: 0px;
   padding: 0;
-  width: 28px;
+  width: auto;
   height: 34px;
-  color: #ab935e;
+  color: #bf9c50;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0);
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-  margin-top: -1px;
-  padding-left: 4px;
-  text-align: left;
+  margin-top: 0px;
+  text-align: center;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
   margin: 0 3px 0 -1px;
   width: 5px;
-  color: #ab935e;
+  color: #bf9c50;
 }
 @media screen and (min-width: 768px) {
   body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside {
@@ -9885,11 +9889,11 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
     height: 52px;
   }
   body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-    margin-top: -2px;
-    padding-left: 7.14285714px;
+    margin-top: 0px;
   }
   body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .odometer .odometer-formatting-mark {
     width: 6px;
+    margin: 0 10px 0 -1px;
   }
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .odometer-container .currency {
@@ -9907,19 +9911,19 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
   height: 30px;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .progress .progress-bar {
-  background-color: #2dd092;
+  background-color: #bf9c50;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .progress .progress-bar {
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .current-amount-container {
   display: none;
   font-family: 'ProximaNovaBold';
   font-size: 17px;
-  color: #2dd092;
+  color: #bf9c50;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current-amount-container {
-  color: #ab935e;
+  color: #bf9c50;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .current-amount-container .fa {
   display: inline-block;
@@ -9961,7 +9965,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #2dd092;
+  background: #00B9BF;
 }
 @media screen and (min-width: 40em) {
   #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-support {
@@ -9974,7 +9978,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current
   }
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-support:hover {
-  background: #1b7c57;
+  background: #00a0a6;
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-support {
   display: inline-block;
@@ -9993,7 +9997,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #ab935e;
+  background: #00B9BF;
 }
 @media screen and (min-width: 40em) {
   body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-support {
@@ -10006,7 +10010,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions
   }
 }
 body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions .btn.link-support:hover {
-  background: #6b5b38;
+  background: #00a0a6;
 }
 /*
  *  Block next raffle component
@@ -10039,16 +10043,16 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions
 #pxlraffle-next-raffle .next-raffle .next-raffle-label {
   text-align: center;
   font-size: 32px;
-  color: #4ba5eb;
+  color: #bf9c50;
 }
 body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
-  color: #ab935e;
+  color: #bf9c50;
 }
 #pxlraffle-next-raffle .next-raffle .next-raffle-date {
   display: inline-block;
   margin-bottom: 20px;
   padding: 5px 15px;
-  color: #4ba5eb;
+  color: #bf9c50;
   font-size: 40px;
 }
 @media screen and (min-width: 480px) {
@@ -10062,7 +10066,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
   }
 }
 body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
-  color: #ab935e;
+  color: #bf9c50;
 }
 #pxlraffle-next-raffle .next-raffle .next-raffle-info {
   display: none;
@@ -10091,7 +10095,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #4ba5eb;
+  background: #00B9BF;
 }
 @media screen and (min-width: 40em) {
   #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate {
@@ -10104,7 +10108,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
   }
 }
 #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:hover {
-  background: #1572bb;
+  background: #00a0a6;
 }
 body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate {
   display: inline-block;
@@ -10123,7 +10127,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #ab935e;
+  background: #00B9BF;
 }
 @media screen and (min-width: 40em) {
   body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate {
@@ -10136,7 +10140,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate {
   }
 }
 body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:hover {
-  background: #6b5b38;
+  background: #00a0a6;
 }
 /*
  *  Block raffle subscriptions component
@@ -10148,7 +10152,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
   width: 100%;
 }
 #pxlraffle-subscriptions .subscriptions .block-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: 'ProximaNovaBold';
   font-size: 32px;
   text-align: center;
@@ -10181,7 +10185,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #2dd092;
+  background: #00B9BF;
 }
 @media screen and (min-width: 40em) {
   #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
@@ -10194,7 +10198,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
   }
 }
 #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:hover {
-  background: #1b7c57;
+  background: #00a0a6;
 }
 body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
   display: inline-block;
@@ -10213,7 +10217,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe 
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #ab935e;
+  background: #00B9BF;
 }
 @media screen and (min-width: 40em) {
   body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
@@ -10226,7 +10230,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe 
   }
 }
 body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:hover {
-  background: #6b5b38;
+  background: #00a0a6;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users {
   margin-bottom: 10px;
@@ -10234,6 +10238,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   text-align: center;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users .odometer-label {
+  margin-bottom: 10px;
   font-family: 'ProximaNovaBold';
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -10247,20 +10252,18 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit {
   display: inline-block;
   vertical-align: top;
-  margin: 0 2px;
+  margin: 0px;
   padding: 0;
-  width: 28px;
+  width: auto;
   height: 34px;
-  color: #fff;
+  color: #bf9c50;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: #2dd092;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-  margin-top: -1px;
-  padding-left: 4px;
-  text-align: left;
+  margin-top: 0px;
+  text-align: center;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
@@ -10277,11 +10280,11 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
     height: 52px;
   }
   #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-    margin-top: -2px;
-    padding-left: 7.14285714px;
+    margin-top: 0px;
   }
   #pxlraffle-subscriptions .subscriptions .odometer-users .odometer .odometer-formatting-mark {
     width: 6px;
+    margin: 0 10px 0 -1px;
   }
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount {
@@ -10290,6 +10293,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   text-align: center;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer-label {
+  margin-bottom: 10px;
   font-family: 'ProximaNovaBold';
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -10303,20 +10307,18 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit {
   display: inline-block;
   vertical-align: top;
-  margin: 0 2px;
+  margin: 0px;
   padding: 0;
-  width: 20px;
+  width: auto;
   height: 26px;
-  color: #fff;
+  color: #bf9c50;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background-color: #000;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-  margin-top: -1px;
-  padding-left: 2.85714286px;
-  text-align: left;
+  margin-top: 0px;
+  text-align: center;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-formatting-mark {
   display: inline-block;
@@ -10333,11 +10335,11 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
     height: 38px;
   }
   #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-digit .odometer-digit-inner .odometer-ribbon .odometer-ribbon-inner .odometer-value {
-    margin-top: -2px;
-    padding-left: 5.14285714px;
+    margin-top: 0px;
   }
   #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-formatting-mark {
     width: 6px;
+    margin: 0 10px 0 -1px;
   }
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount .odometer .odometer-inside .odometer-formatting-mark {
@@ -10347,9 +10349,10 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   vertical-align: middle;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
+  margin-left: 15px;
 }
 #pxlraffle-subscriptions .subscriptions .subscription-fee-statement {
-  margin-bottom: 50px;
+  margin: 15px 0 50px;
   font-family: 'ProximaNovaLight';
   font-size: 15px;
   text-align: center;
@@ -10412,13 +10415,14 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #2dd092;
+  background: #bf9c50;
 }
 #pxlraffle-participate .participation .participation-accordion .panel .panel-heading .panel-title a.accordion-toggle:hover {
   opacity: 0.7;
 }
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron {
   margin: 0;
+  background-color: transparent;
 }
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-info {
   font-family: 'ProximaNovaLight';
@@ -10435,12 +10439,11 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.refresh-raffle-button {
   display: inline-block;
   margin: 10px;
-  padding: 7px 10px;
+  padding: 7px 15px;
   font-family: 'ProximaNovaBold';
   font-size: 17px;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
   color: #fff;
   outline: none;
   opacity: 1.0;
@@ -10448,7 +10451,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
-  background-color: #2dd092;
+  background-color: #00B9BF;
 }
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.refresh-raffle-button:hover,
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.refresh-raffle-button:focus {
@@ -10457,12 +10460,11 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.remove-raffle-button {
   display: inline-block;
   margin: 10px;
-  padding: 7px 10px;
+  padding: 7px 15px;
   font-family: 'ProximaNovaBold';
   font-size: 17px;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
   color: #fff;
   outline: none;
   opacity: 1.0;
@@ -10470,7 +10472,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
-  background-color: #2dd092;
+  background-color: #00B9BF;
 }
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.remove-raffle-button:hover,
 #pxlraffle-participate .participation .participation-accordion .panel .panel-collapse .jumbotron .user-raffle-actions .btn.remove-raffle-button:focus {
@@ -10607,7 +10609,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node-page .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 42.35294117647059em) {
   .node-page .row div.col-sm-12 .field-name-body a {
@@ -10621,7 +10623,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node-page .row div.col-sm-12 .field-name-body a:hover,
 .node-page .row div.col-sm-12 .field-name-body a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -11184,7 +11186,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
@@ -11198,7 +11200,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a:hover,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -11512,7 +11514,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 42.35294117647059em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
@@ -11530,7 +11532,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a:hover,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:focus,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -11660,16 +11662,16 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   background-color: black;
 }
 .decoration-gold .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 .decoration-green .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
-  background-color: #2dd092;
+  background-color: #bf9c50;
 }
 .decoration-red .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
-  background-color: #ff7a8a;
+  background-color: #bf9c50;
 }
 .decoration-blue .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration {
-  background-color: #4ba5eb;
+  background-color: #bf9c50;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-image {
   margin: -15px -15px 15px;
@@ -11764,7 +11766,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
@@ -11778,7 +11780,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a:hover,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -12015,7 +12017,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 42.35294117647059em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
@@ -12033,7 +12035,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a:hover,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:focus,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -12325,7 +12327,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body a {
@@ -12339,7 +12341,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a:hover,
 .node.node-spenden .row .col-sm-12 .field-name-body a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -12440,7 +12442,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #4ba5eb;
+  background-color: #00B9BF;
   height: 34px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -12468,7 +12470,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:hover,
 body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:hover,
@@ -12516,7 +12518,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
     -webkit-border-radius: 4px;
     border-radius: 4px;
     border: none;
-    background-color: #4ba5eb;
+    background-color: #00B9BF;
     height: 38px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -12544,7 +12546,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
     -webkit-border-radius: 4px;
     border-radius: 4px;
     border: none;
-    background-color: #ab935e;
+    background-color: #bf9c50;
   }
   body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:hover,
   body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:hover,
@@ -12627,7 +12629,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   background-color: #fff;
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs ul.horizontal-tabs-list li.selected a strong {
-  color: #4ba5eb;
+  color: #bf9c50;
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes {
   margin-top: -9px;
@@ -12707,7 +12709,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 42.35294117647059em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
@@ -12721,7 +12723,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a:hover,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -12899,22 +12901,22 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .view.view-call2action .view-content .views-row.call2action-support .call2action-container {
-  background-color: #4ba5eb;
+  background-color: #bf9c50;
 }
 .view.view-call2action .view-content .views-row.call2action-support .call2action-container .field-name-field-weight .field-item {
-  background-color: #4ba5eb;
+  background-color: #bf9c50;
 }
 .view.view-call2action .view-content .views-row.call2action-participate .call2action-container {
-  background-color: #2dd092;
+  background-color: #bf9c50;
 }
 .view.view-call2action .view-content .views-row.call2action-participate .call2action-container .field-name-field-weight .field-item {
-  background-color: #2dd092;
+  background-color: #bf9c50;
 }
 .view.view-call2action .view-content .views-row.call2action-experience .call2action-container {
-  background-color: #ff7a8a;
+  background-color: #bf9c50;
 }
 .view.view-call2action .view-content .views-row.call2action-experience .call2action-container .field-name-field-weight .field-item {
-  background-color: #ff7a8a;
+  background-color: #bf9c50;
 }
 /*
  *  Social-masonry view component
@@ -12967,7 +12969,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -webkit-border-radius: 0;
   border-radius: 0;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
   opacity: 1.0;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio .control-label > input,
@@ -13024,7 +13026,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  border: 1px solid #ab935e;
+  border: 1px solid #bf9c50;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select {
@@ -13050,7 +13052,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
-  border: 1px solid #ab935e;
+  border: 1px solid #bf9c50;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select:after,
 .view.view-blog .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-type-select:after {
@@ -13083,7 +13085,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
-  background-color: #ff7a8a;
+  background-color: #bf9c50;
   margin: 0 0 0 5px;
 }
 .view.view-social-masonry .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit.js-hide,
@@ -13343,7 +13345,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
-  background-color: #ab935e;
+  background-color: #00B9BF;
   opacity: 1.0;
 }
 .view.view-social-masonry .pager.pager--infinite-scroll .pager__item a:hover,
@@ -13359,7 +13361,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   padding: 30px 0;
 }
 .view.view-quotes .view-content {
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 .view.view-quotes .view-content .carousel {
   position: relative;
@@ -13509,7 +13511,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-header a {
   font-family: 'ProximaNovaLight';
   font-size: 15px;
-  color: #7c6941;
+  color: #8e7234;
 }
 @media screen and (min-width: 36em) {
   .view.view-donations .view-header a {
@@ -13523,7 +13525,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .view.view-donations .view-header a:hover,
 .view.view-donations .view-header a:focus {
-  color: #ab935e;
+  color: #bf9c50;
   text-decoration: none;
   background: none;
 }
@@ -13596,7 +13598,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   float: none;
   display: inline-block;
   vertical-align: top;
-  margin: 5px 0;
+  margin: 5px;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li a {
   display: inline-block;
@@ -13619,13 +13621,13 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li a:hover,
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li a:focus {
   color: #fff;
-  border: 1px solid #4ba5eb;
-  background-color: #4ba5eb;
+  border: 1px solid #bf9c50;
+  background-color: #bf9c50;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li.active a {
   color: #fff;
-  border: 1px solid #4ba5eb;
-  background-color: #4ba5eb;
+  border: 1px solid #bf9c50;
+  background-color: #bf9c50;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content {
   margin: 20px auto 0;
@@ -13637,34 +13639,39 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message {
   display: inline-block;
   margin: 10px auto 30px;
-  padding: 20px 10px;
+  padding: 30px 10px;
   font-family: 'ProximaNovaLight';
   text-align: center;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  background-color: #efefef;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message .registration-hint {
-  font-size: 15px;
+  font-size: 17px;
   color: #333333;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message a {
   display: inline-block;
-  margin-top: 10px;
-  padding: 5px 10px;
+  margin-top: 30px;
+  padding: 5px 15px;
   font-family: 'ProximaNovaBold';
   font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: #fff;
-  border: 1px solid #ab935e;
-  background-color: #ab935e;
+  background-color: #00B9BF;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message a:hover,
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content .tab-pane .registration-information .registration-message a.active {
-  background-color: #bca980;
+  background-color: #00a0a6;
+}
+/*
+ *  Mitglieder view component
+ * --------------------------------------------------*/
+.view.view-mitglieder .view-content .views-row {
+  display: inline-block;
+  margin: 0 10px 0;
 }
 /*
  *  Header section (navigation)
@@ -13790,7 +13797,7 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li {
   height: 40px;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
-  padding: 7px 15px;
+  padding: 0px 15px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   text-align: center;
@@ -13798,34 +13805,35 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
   line-height: 1;
   background: none;
 }
+@media screen and (min-width: 768px) {
+  header#navbar .container .navbar-collapse nav ul.navbar-nav li a {
+    padding: 0px 15px;
+  }
+}
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a:hover,
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.active {
-  color: #fff;
-  background-color: #333333;
+  color: #bf9c50;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-support {
-  color: #4ba5eb;
+  color: #333333;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-support:hover,
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-support.active {
-  color: #fff;
-  background-color: #4ba5eb;
+  color: #bf9c50;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-participate {
-  color: #2dd092;
+  color: #333333;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-participate:hover,
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-participate.active {
-  color: #fff;
-  background-color: #2dd092;
+  color: #bf9c50;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-experience {
-  color: #ff7a8a;
+  color: #333333;
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-experience:hover,
 header#navbar .container .navbar-collapse nav ul.navbar-nav li a.menu-experience.active {
-  color: #fff;
-  background-color: #ff7a8a;
+  color: #bf9c50;
 }
 header#navbar .container .navbar-collapse nav .region-navigation {
   display: block;
@@ -13854,13 +13862,14 @@ header#navbar .container .navbar-collapse nav .region-navigation .block-system u
   font-family: 'ProximaNovaBold';
   font-size: 22px;
   text-align: center;
-  color: #333333;
+  color: #777777;
   outline: none;
 }
 header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a.active,
 header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a:hover,
 header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li a:focus {
   background: none;
+  color: #bf9c50;
 }
 header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
   display: none;
@@ -14022,7 +14031,7 @@ footer.container {
   margin: 0 auto;
   padding: 10px 0;
   border: none;
-  background-color: #ab935e;
+  background-color: #bf9c50;
 }
 @media screen and (min-width: 768px) {
   footer.container {
@@ -14088,7 +14097,7 @@ footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-fie
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p a:hover,
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p a.active,
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p a.active {
-  color: #7c6941;
+  color: #8e7234;
 }
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-addtoany .field-item {
   text-align: center;
@@ -14098,7 +14107,7 @@ footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-add
 }
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-addtoany .field-item .a2a_kit a:hover,
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-addtoany .field-item .a2a_kit a.active {
-  color: #7c6941;
+  color: #8e7234;
 }
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum {
   margin-top: 30px;

@@ -17,6 +17,7 @@
     text-align: center;
 
     .odometer-label {
+      margin-bottom: 10px;
       font-family: @pxl-text-font-bold;
       font-size: @odometer-label-font-size;
       letter-spacing: 0.05em;
@@ -33,13 +34,13 @@
         .odometer-digit {
           display: inline-block;
           vertical-align: top;
-          margin: 0 2px;
+          margin: 0px;
           padding: 0;
-          width: (@digit-small - 4);
+          width: auto; //(@digit-small - 4);
           height: (@digit-small + 2);
-          color: @digit-color;
+          color: @pxl-color-main;
           #pxl-mixins.border-radius(@digit-border-radius);
-          background-color: @digit-bg;
+          //background-color: @pxl-color-main;
 
           .odometer-digit-spacer {
 
@@ -49,9 +50,9 @@
             .odometer-ribbon {
               .odometer-ribbon-inner {
                 .odometer-value {
-                  margin-top: -1px;
-                  padding-left: (@digit-small - 4) / 7;
-                  text-align: left;
+                  margin-top: 0px;
+                  //padding-left: (@digit-small - 4) / 7;
+                  text-align: center;
                 }
               }
             }
@@ -80,8 +81,8 @@
               .odometer-ribbon {
                 .odometer-ribbon-inner {
                   .odometer-value {
-                    margin-top: -2px;
-                    padding-left: (@digit-size) / 7;
+                    margin-top: 0px;
+                    //padding-left: (@digit-size) / 7;
                   }
                 }
               }
@@ -91,6 +92,7 @@
 
         .odometer-formatting-mark {
           width: 6px;
+          margin: 0 10px 0 -1px;
         }
       }
     }

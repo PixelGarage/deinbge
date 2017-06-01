@@ -20,7 +20,7 @@
     width: 100%;
 
     .block-header {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       font-family: @pxl-text-font-bold;
       font-size: @font-size-pane-title;
       text-align: center;
@@ -39,10 +39,10 @@
       text-align: center;
 
       .btn.link-subscribe {
-        #pxl-mixins.button-large(@pxl-color-participate, darken(@pxl-color-participate, 20%));
+        #pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
 
         body.front & {
-          #pxl-mixins.button-large(@pxl-color-main, darken(@pxl-color-main, 20%));
+          #pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
         }
       }
     }
@@ -63,11 +63,12 @@
         vertical-align: middle;
         font-family: @pxl-text-font-bold;
         font-size: 24px;
+        margin-left: 15px;
       }
     }
 
     .subscription-fee-statement {
-      margin-bottom: 50px;
+      margin: 15px 0 50px;
       font-family: @pxl-text-font;
       font-size: (@font-size-base - 2);
       text-align: center;

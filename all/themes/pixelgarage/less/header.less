@@ -149,7 +149,7 @@ header#navbar {
             height: 40px;
 
             a {
-              padding: 7px 15px;
+              padding: 0px 15px;
               font-family: @pxl-text-font-bold;
               font-size: 24px;
               text-align: center;
@@ -157,40 +157,43 @@ header#navbar {
               line-height: 1;
               background: none;
 
+              @media @tablet {
+                padding: 0px 15px;
+              }
+
               &:hover,
               &.active {
-                color: #fff;
-                background-color: @text-color;
+                color: @pxl-color-main;
+                //background-color: @text-color;
               }
 
               &.menu-support {
-                color: @pxl-color-support;
+                color: @text-color;
 
                 &:hover,
                 &.active {
-                  color: #fff;
-                  background-color: @pxl-color-support;
+                  color: @pxl-color-main;
+                  //background-color: @pxl-color-support;
                 }
               }
               &.menu-participate {
-                color: @pxl-color-participate;
+                color: @text-color;
 
                 &:hover,
                 &.active {
-                  color: #fff;
-                  background-color: @pxl-color-participate;
+                  color: @pxl-color-main;
+                  //background-color: @pxl-color-participate;
                 }
               }
               &.menu-experience {
-                color: @pxl-color-experience;
+                color: @text-color;
 
                 &:hover,
                 &.active {
-                  color: #fff;
-                  background-color: @pxl-color-experience;
+                  color: @pxl-color-main;
+                  //background-color: @pxl-color-experience;
                 }
               }
-
             }
           }
         }
@@ -223,11 +226,12 @@ header#navbar {
                   font-family: @pxl-text-font-bold;
                   font-size: @font-size-large;
                   text-align: center;
-                  color: @text-color;
+                  color: @text-color-light;
                   outline: none;
 
                   &.active, &:hover, &:focus {
                     background: none;
+                    color: @pxl-color-main;
                   }
                 }
               }

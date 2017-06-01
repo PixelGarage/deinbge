@@ -8,15 +8,15 @@
 
 // Mixins
 // -------------------------
-.resp-raffle-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-color-participate; @radius: @border-radius-large) {
+.resp-raffle-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-action-button; @radius: @border-radius-large) {
   display: inline-block;
   margin: 10px;
-  padding: 7px 10px;
+  padding: 7px 15px;
   font-family: @pxl-text-font-bold;
   font-size: @size;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  //text-transform: none;
   color: @color;
   outline: none;
   opacity: 1.0;
@@ -94,6 +94,7 @@
         .panel-collapse {
           .jumbotron {
             margin: 0;
+            background-color: transparent;
 
             .user-raffle-info {
               font-family: @pxl-text-font;

@@ -23,7 +23,7 @@
     >li {
       #pxl-mixins.no-list-style;
       display:inline-block;
-      margin: 0 -0.25em 0 0;
+      margin: 0 -0.55em 0 0;
       padding: 0 10px;
       line-height: 1;
 
@@ -35,13 +35,14 @@
       a.language-link {
         display: inline-block;
         width: 10px;
-        text-transform: lowercase;
+        text-transform: uppercase;
         text-decoration: none;
-        color: @text-color;
+        color: @text-color-light;
         outline: none;
 
         &.active, &:hover, &:focus {
           text-transform: uppercase;
+          color: @pxl-color-main;
         }
       }
 
