@@ -13687,7 +13687,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 90px !important;
+  padding-top: 70px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
   padding-top: 90px !important;
@@ -13705,7 +13705,7 @@ header#navbar {
   background: transparent none;
 }
 header#navbar .container {
-  padding: 22px 15px;
+  padding: 12px 15px;
   width: 100%;
   overflow: hidden;
 }
@@ -13801,7 +13801,12 @@ header#navbar .container .navbar-collapse nav ul.navbar-nav {
   display: block;
   position: static;
   float: none;
-  margin: 0;
+  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  header#navbar .container .navbar-collapse nav ul.navbar-nav {
+    margin: 0;
+  }
 }
 header#navbar .container .navbar-collapse nav ul.navbar-nav li {
   height: 40px;
