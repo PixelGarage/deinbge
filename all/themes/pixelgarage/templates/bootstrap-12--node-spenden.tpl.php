@@ -6,7 +6,7 @@
 
 if ($ds_switch === 'recurring_payment' && !$logged_in) {
   // recurring payments only possible with logged in user, display register information
-  global $base_url;
+  global $base_url, $language;
   $url_register = $base_url . '/' . $language->language . '/user';
   $label_register = t('Register?');
   $hint_register = t('You need an account to subscribe successfully to a recurring payment!');

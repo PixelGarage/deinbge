@@ -8752,7 +8752,7 @@ form#user-login {
 }
 @media screen and (min-width: 992px) {
   #user-create-account .create-account-description {
-    margin: 40px 0 50px;
+    margin: 40px 0 25px;
   }
 }
 #user-create-account .create-account-description p {
@@ -9574,7 +9574,7 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel
   color: #333333;
 }
 form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .help-block {
-  padding-bottom: 30px;
+  padding: 30px 100px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
@@ -10062,7 +10062,7 @@ body.front #pxlraffle-next-raffle .next-raffle .next-raffle-label {
 }
 @media screen and (min-width: 768px) {
   #pxlraffle-next-raffle .next-raffle .next-raffle-date {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 body.front #pxlraffle-next-raffle .next-raffle .next-raffle-date {
@@ -10383,10 +10383,15 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   color: #333333;
 }
 #pxlraffle-participate .participation .participation-slogan {
-  margin: 20px 0;
+  margin: 20px 5px 30px 5px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  #pxlraffle-participate .participation .participation-slogan {
+    margin: 20px 150px 30px 150px;
+  }
 }
 #pxlraffle-participate .participation .participation-accordion .panel {
   box-shadow: none;
@@ -12169,7 +12174,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   width: 100%;
 }
 .node.node-quote .row div.col-sm-12 .field-name-body {
-  margin: 30px auto 20px;
+  margin: 90px auto 20px;
   width: 80%;
   padding: 0;
 }
@@ -12185,14 +12190,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   text-align: center;
   color: #fff;
 }
-@media screen and (min-width: 24em) {
+@media screen and (min-width: 18em) {
   .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
-    font-size: 3.90625vw;
+    font-size: 5.20833333vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -13374,7 +13379,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .view.view-quotes .view-content .carousel > .carousel-indicators {
   position: absolute;
-  bottom: 5px;
+  bottom: -15px;
   margin-left: -40%;
   width: 80%;
   overflow-x: auto;
@@ -13442,8 +13447,13 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #333333;
 }
 .view.view-donations .view-header {
-  width: 100%;
+  margin: 0 30px 0 30px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .view.view-donations .view-header {
+    margin: 0 100px 0 100px;
+  }
 }
 .view.view-donations .view-header h1,
 .view.view-donations .view-header h2,
