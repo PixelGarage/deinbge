@@ -49,13 +49,8 @@ function pxlraffle_form_user_login_alter(&$form, &$form_state, $form_id) {
 
   // add the registration form on the right side, if applicable
   if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL) != USER_REGISTER_ADMINISTRATORS_ONLY) {
-    $is_recurring_payment_login = $form_state['build_info']['args'][0] === 'recurring_payment';
-    $account_descr = $is_recurring_payment_login ?
-      t('Registration is needed for a membership with a recurring payment subscription.') :
-      t("Registration is needed to be part of the basic income movement and the next raffle.");
-    $registration_descr = $is_recurring_payment_login ?
-      t('Once this is confirmed, you can manage your membership and subscription in your account at any time.') :
-      t('Once this is confirmed, you are a passive member and participating in the next raffle.');
+    $account_descr = t("Registration is needed to be part of the basic income movement and the next raffle.");
+    $registration_descr = t('Once this is confirmed, you can manage your membership in your account at any time.');
 
     $form['actions']['#suffix'] .= '<div id="user-create-account" class="create-account clearfix">';
     $form['actions']['#suffix'] .= "\n<h2>" . t('I don\'t have an account') . "</h2>";
