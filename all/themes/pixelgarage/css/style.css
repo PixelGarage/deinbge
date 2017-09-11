@@ -9902,11 +9902,13 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .odomete
   font-size: 24px;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .total-amount {
+  display: none;
   font-family: 'ProximaNovaBold';
   font-size: 17px;
   text-align: right;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .progress {
+  display: none;
   margin: 0;
   height: 30px;
 }
@@ -9938,6 +9940,7 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .current
   margin-top: 20px;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .explanation {
+  display: none;
   margin: 30px auto;
   font-family: 'ProximaNovaLight';
   font-size: 17px;
@@ -10145,9 +10148,6 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
 /*
  *  Block raffle subscriptions component
  * --------------------------------------------------*/
-#pxlraffle-subscriptions {
-  padding: 20px 0;
-}
 #pxlraffle-subscriptions .subscriptions {
   width: 100%;
 }
@@ -10288,6 +10288,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   }
 }
 #pxlraffle-subscriptions .subscriptions .odometer-amount {
+  display: none;
   margin-bottom: 20px;
   margin: 0;
   text-align: center;
@@ -10352,6 +10353,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   margin-left: 15px;
 }
 #pxlraffle-subscriptions .subscriptions .subscription-fee-statement {
+  display: none;
   margin: 15px 0 50px;
   font-family: 'ProximaNovaLight';
   font-size: 15px;
@@ -10390,7 +10392,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 @media screen and (min-width: 768px) {
   #pxlraffle-participate .participation .participation-slogan {
-    margin: 20px 150px 30px 150px;
+    margin: 20px 100px 30px 100px;
   }
 }
 #pxlraffle-participate .participation .participation-accordion .panel {
@@ -10484,7 +10486,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   opacity: 0.7;
 }
 /*
- *  Node intro video component
+ *  Node intro video component --> Home elements with text
  * --------------------------------------------------*/
 .node.node-intro .row div.col-sm-12 {
   width: 100%;
@@ -10495,6 +10497,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #333333;
+  text-align: center;
 }
 @media screen and (min-width: 33em) {
   .node.node-intro .row div.col-sm-12 .field-name-title h2 {
@@ -10519,6 +10522,12 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node.node-intro .row div.col-sm-12 .field-name-field-video .field-item iframe {
     min-width: 70%;
   }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body p {
+  padding: 10px 60px;
+  font-family: 'ProximaNovaLight';
+  font-size: 20px;
+  text-align: center;
 }
 /*
  *  Node page component
