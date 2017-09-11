@@ -62,7 +62,7 @@ function stripe_button_token_callback() {
   $currency = $_POST['currency'];
   $email = $_POST['email'];
   $recurring_billing = $_POST['recurringBilling'];
-  $args = $_POST['arguments'];
+  $args = isset($_POST['arguments']) ? $_POST['arguments'] : array();
   $date = date('r'); // e.g. Thu, 21 Dec 2000 16:01:07 +0200
   $desc = t('@site charged you (@user) with @amount @curr on @date', array(
     '@site' => variable_get('site_name'),
