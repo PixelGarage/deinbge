@@ -51,11 +51,12 @@
       }
 
       .field-name-body {
-        padding: 10px 60px;
+        padding: 10px 0;
         #pxl-mixins.wysiwyg-body();
-        //font-family: @pxl-text-font;
-        //font-size: 20px;
-        //text-align: center;
+
+        @media @tablet {
+          padding: 10px 60px;
+        }
       }
     }
   }

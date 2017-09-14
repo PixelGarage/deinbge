@@ -9781,7 +9781,7 @@ form .form-actions .form-submit .icon {
   margin: 0 auto;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle {
-  margin: 0 7%;
+  margin: 0;
 }
 #pxlraffle-fundraising .current-raffle .inner-current-raffle .block-header {
   margin-bottom: 30px;
@@ -9791,6 +9791,9 @@ form .form-actions .form-submit .icon {
   color: #333333;
 }
 @media screen and (min-width: 480px) {
+  #pxlraffle-fundraising .current-raffle .inner-current-raffle {
+    margin: 0 7%;
+  }
   #pxlraffle-fundraising .current-raffle .inner-current-raffle .block-header {
     font-size: 32px;
   }
@@ -10533,7 +10536,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body {
-  padding: 10px 60px;
+  padding: 10px 0;
 }
 .node.node-intro .row div.col-sm-12 .field-name-body h1,
 .node.node-intro .row div.col-sm-12 .field-name-body h2,
@@ -10670,6 +10673,11 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+@media screen and (min-width: 768px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body {
+    padding: 10px 60px;
+  }
 }
 /*
  *  Node page component
