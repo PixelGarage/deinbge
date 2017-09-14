@@ -10,7 +10,7 @@
 // -------------------------
 .resp-user-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-color-main; @radius: @border-radius-large) {
   display: inline-block;
-  margin: 10px;
+  margin-left: 10px;
   padding: 7px 15px;
   font-family: @pxl-text-font-bold;
   font-size: @size;
@@ -48,7 +48,7 @@ body.page-user {
   }
 }
 
-form#user-profile-form {
+form {
   margin: 0 auto @panel-separator-height;
 
   .ds-form {
@@ -56,13 +56,14 @@ form#user-profile-form {
       .col-sm-12 {
 
         .panel:not(#edit-picture) {
-          margin: 20px @container-inner-margin/4 @panel-separator-height;
+          margin: 20px auto @panel-separator-height;
           border: none;
           #pxl-mixins.border-radius(6px);
-          background-color: @pxl-bg-panel-item;
+          #pxl-mixins.box-shadow(none);
+          background: none;
 
           @media @tablet {
-            margin: 20px @container-inner-margin @panel-separator-height;
+            margin: 20px auto @panel-separator-height;
           }
 
           .panel-heading {
@@ -91,10 +92,12 @@ form#user-profile-form {
             }
 
             > .form-group, .panel {
-              margin: 0 @container-inner-margin @panel-separator-height;
+              margin: 0 0 @panel-separator-height;
+            }
 
-              .form-group, .panel {
-                margin: 0;
+            #user_register_form {
+              h1 {
+                display: none;
               }
             }
 
@@ -105,7 +108,13 @@ form#user-profile-form {
               text-align: center;
             }
 
-            .field-name-field-phone {
+            .form-type-password {
+              @media @tablet {
+                &.col-md-4 {
+                  width: 50%;
+                }
+              }
+
               label {
               }
 
@@ -132,6 +141,7 @@ form#user-profile-form {
 
               }
             }
+
             .field-name-field-raffle-code {
               .form-item {
                 text-align: center;
@@ -201,7 +211,12 @@ form#user-profile-form {
     }
   }
 
+  .form-item-condition-checkbox {
+    display: none;
+  }
+
   .form-actions {
+    margin: 20px 0 !important;
     text-align: center;
 
     .form-submit {

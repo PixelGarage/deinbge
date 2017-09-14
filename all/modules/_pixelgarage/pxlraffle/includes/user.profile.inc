@@ -81,7 +81,7 @@ function pxlraffle_form_user_register_form_alter (&$form, &$form_state, $form_id
     '#title' => t('I confirm that I have read the <a href="/node/126" target="_blank">Participation Conditions</a>'),
     '#return_value' => 1,
     '#default_value' => 0,
-    '#required' => true,
+    '#required' => false,
     '#weight' => 3
   );
 

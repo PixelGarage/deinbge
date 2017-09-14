@@ -8944,16 +8944,16 @@ form.confirmation {
 }
 form.confirmation p {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 40.8em) {
   form.confirmation p {
-    font-size: 2.21354167vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 992px) {
   form.confirmation p {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 form.confirmation .form-actions button.form-submit {
@@ -9543,29 +9543,32 @@ body.front .field-type-number-decimal .field-items .field-item .stripe-button-co
 body.page-user .main-container .container .row .col-sm-12 ul.tabs--primary {
   display: none;
 }
-form#user-profile-form {
+form {
   margin: 0 auto 30px;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) {
-  margin: 20px 1.75% 30px;
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) {
+  margin: 20px auto 30px;
   border: none;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  background-color: #efefef;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: none;
 }
 @media screen and (min-width: 768px) {
-  form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) {
-    margin: 20px 7% 30px;
+  form .ds-form .row .col-sm-12 .panel:not(#edit-picture) {
+    margin: 20px auto 30px;
   }
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-heading {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-heading {
   padding: 20px 10px;
   border: none;
   background: none;
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-heading .panel-title {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-heading .panel-title {
   display: inline-block;
   margin-bottom: 0;
   font-family: 'ProximaNovaBold';
@@ -9573,48 +9576,50 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel
   text-align: center;
   color: #333333;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .help-block {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .help-block {
   padding: 30px 100px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
   color: #333333;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group,
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel {
-  margin: 0 7% 30px;
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group,
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel {
+  margin: 0 0 30px;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group .form-group,
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel .form-group,
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .form-group .panel,
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .panel .panel {
-  margin: 0;
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body #user_register_form h1 {
+  display: none;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body p {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body p {
   margin-bottom: 20px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-textfield input.form-control {
+@media screen and (min-width: 768px) {
+  form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-password.col-md-4 {
+    width: 50%;
+  }
+}
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-textfield input.form-control {
   border: 1px solid #c9c9c9;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-textfield input.form-control:focus {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .form-type-textfield input.form-control:focus {
   -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
   border: 1px solid #bf9c50;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item {
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item label.control-label {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item label.control-label {
   display: inline-block;
   width: 120px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item input.form-text {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .field-name-field-raffle-code .form-item input.form-text {
   display: inline-block;
   width: 150px;
   font-family: 'ProximaNovaLight';
@@ -9626,12 +9631,12 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel
   border-radius: 0;
   background-color: #000;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container {
   text-align: center;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default {
   display: inline-block;
-  margin: 10px;
+  margin-left: 10px;
   padding: 7px 15px;
   font-family: 'ProximaNovaBold';
   font-size: 22px;
@@ -9647,29 +9652,33 @@ form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel
   border: none;
   background-color: #bf9c50;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:hover,
-form#user-profile-form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:focus {
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:hover,
+form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:focus {
   opacity: 0.7;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel#edit-picture {
+form .ds-form .row .col-sm-12 .panel#edit-picture {
   border: none;
   background: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel#edit-picture .panel-heading {
+form .ds-form .row .col-sm-12 .panel#edit-picture .panel-heading {
   display: none;
 }
-form#user-profile-form .ds-form .row .col-sm-12 .panel#edit-picture .panel-body {
+form .ds-form .row .col-sm-12 .panel#edit-picture .panel-body {
   border: none;
 }
-form#user-profile-form .form-actions {
+form .form-item-condition-checkbox {
+  display: none;
+}
+form .form-actions {
+  margin: 20px 0 !important;
   text-align: center;
 }
-form#user-profile-form .form-actions .form-submit {
+form .form-actions .form-submit {
   display: inline-block;
-  margin: 10px;
+  margin-left: 10px;
   padding: 7px 15px;
   font-family: 'ProximaNovaBold';
   font-size: 22px;
@@ -9685,11 +9694,11 @@ form#user-profile-form .form-actions .form-submit {
   border: none;
   background-color: #bf9c50;
 }
-form#user-profile-form .form-actions .form-submit:hover,
-form#user-profile-form .form-actions .form-submit:focus {
+form .form-actions .form-submit:hover,
+form .form-actions .form-submit:focus {
   opacity: 0.7;
 }
-form#user-profile-form .form-actions .form-submit .icon {
+form .form-actions .form-submit .icon {
   display: none;
 }
 .panel-display .panel-col .panel-pane {
@@ -10030,10 +10039,10 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions
 }
 #pxlraffle-next-raffle .next-raffle .next-raffle-slogan {
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 17px;
   color: #333333;
 }
-@media screen and (min-width: 22.5em) {
+@media screen and (min-width: 25.5em) {
   #pxlraffle-next-raffle .next-raffle .next-raffle-slogan {
     font-size: 4.16666667vw;
   }
@@ -10523,11 +10532,144 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
     min-width: 70%;
   }
 }
-.node.node-intro .row div.col-sm-12 .field-name-body p {
+.node.node-intro .row div.col-sm-12 .field-name-body {
   padding: 10px 60px;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body h1,
+.node.node-intro .row div.col-sm-12 .field-name-body h2,
+.node.node-intro .row div.col-sm-12 .field-name-body h3 {
+  font-family: 'ProximaNovaBold';
+  font-size: 22px;
+}
+@media screen and (min-width: 33em) {
+  .node.node-intro .row div.col-sm-12 .field-name-body h1,
+  .node.node-intro .row div.col-sm-12 .field-name-body h2,
+  .node.node-intro .row div.col-sm-12 .field-name-body h3 {
+    font-size: 4.16666667vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body h1,
+  .node.node-intro .row div.col-sm-12 .field-name-body h2,
+  .node.node-intro .row div.col-sm-12 .field-name-body h3 {
+    font-size: 32px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body h4,
+.node.node-intro .row div.col-sm-12 .field-name-body h5,
+.node.node-intro .row div.col-sm-12 .field-name-body h6 {
   font-family: 'ProximaNovaLight';
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+}
+@media screen and (min-width: 36em) {
+  .node.node-intro .row div.col-sm-12 .field-name-body h4,
+  .node.node-intro .row div.col-sm-12 .field-name-body h5,
+  .node.node-intro .row div.col-sm-12 .field-name-body h6 {
+    font-size: 3.125vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body h4,
+  .node.node-intro .row div.col-sm-12 .field-name-body h5,
+  .node.node-intro .row div.col-sm-12 .field-name-body h6 {
+    font-size: 24px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body p,
+.node.node-intro .row div.col-sm-12 .field-name-body tbody td {
+  font-family: 'ProximaNovaLight';
+  font-size: 17px;
+}
+@media screen and (min-width: 40.8em) {
+  .node.node-intro .row div.col-sm-12 .field-name-body p,
+  .node.node-intro .row div.col-sm-12 .field-name-body tbody td {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body p,
+  .node.node-intro .row div.col-sm-12 .field-name-body tbody td {
+    font-size: 20px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body a {
+  font-family: 'ProximaNovaLight';
+  font-size: 17px;
+  color: #8e7234;
+}
+@media screen and (min-width: 40.8em) {
+  .node.node-intro .row div.col-sm-12 .field-name-body a {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body a {
+    font-size: 20px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body a:hover,
+.node.node-intro .row div.col-sm-12 .field-name-body a:focus {
+  color: #bf9c50;
+  text-decoration: none;
+  background: none;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body pre,
+.node.node-intro .row div.col-sm-12 .field-name-body address {
+  font-family: 'ProximaNovaLight';
+  font-size: 17px;
+}
+@media screen and (min-width: 40.8em) {
+  .node.node-intro .row div.col-sm-12 .field-name-body pre,
+  .node.node-intro .row div.col-sm-12 .field-name-body address {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body pre,
+  .node.node-intro .row div.col-sm-12 .field-name-body address {
+    font-size: 20px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body strong {
+  font-family: 'ProximaNovaBold';
+  font-size: 16px;
+}
+@media screen and (min-width: 34.90909090909091em) {
+  .node.node-intro .row div.col-sm-12 .field-name-body strong {
+    font-size: 2.86458333vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body strong {
+    font-size: 22px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #333333;
+  background: none;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body img {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body embed,
+.node.node-intro .row div.col-sm-12 .field-name-body video,
+.node.node-intro .row div.col-sm-12 .field-name-body audio,
+.node.node-intro .row div.col-sm-12 .field-name-body iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px;
 }
 /*
  *  Node page component
@@ -10563,18 +10705,18 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node-page .row div.col-sm-12 .field-name-body h1,
   .node-page .row div.col-sm-12 .field-name-body h2,
   .node-page .row div.col-sm-12 .field-name-body h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page .row div.col-sm-12 .field-name-body h1,
   .node-page .row div.col-sm-12 .field-name-body h2,
   .node-page .row div.col-sm-12 .field-name-body h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node-page .row div.col-sm-12 .field-name-body h4,
@@ -10600,15 +10742,9 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node-page .row div.col-sm-12 .field-name-body p,
 .node-page .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node-page .row div.col-sm-12 .field-name-body p,
   .node-page .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
@@ -10622,10 +10758,10 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node-page .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node-page .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
@@ -10644,9 +10780,9 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node-page .row div.col-sm-12 .field-name-body pre,
 .node-page .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node-page .row div.col-sm-12 .field-name-body pre,
   .node-page .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
@@ -11019,12 +11155,12 @@ form.webform-client-form .webform-component.webform-component-markup h2 {
 }
 form.webform-client-form .webform-component.webform-component-markup p {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   line-height: 22px;
   text-align: left;
   color: #333333;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 54.4em) {
   form.webform-client-form .webform-component.webform-component-markup p {
     font-size: 1.953125vw;
   }
@@ -11140,18 +11276,18 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
@@ -11177,15 +11313,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
@@ -11199,10 +11329,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
@@ -11221,9 +11351,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
@@ -11446,14 +11576,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h1,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h1,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h2,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11463,7 +11593,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h4,
@@ -11500,15 +11630,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
@@ -11527,10 +11651,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
@@ -11555,9 +11679,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
@@ -11720,18 +11844,18 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
@@ -11757,15 +11881,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body tbody td {
     font-size: 2.21354167vw;
@@ -11779,10 +11897,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
   }
@@ -11801,9 +11919,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address {
     font-size: 2.21354167vw;
@@ -11949,14 +12067,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h1,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h1,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h2,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11966,7 +12084,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h4,
@@ -12003,15 +12121,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body tbody td,
@@ -12030,10 +12142,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
     font-size: 2.21354167vw;
@@ -12058,9 +12170,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
@@ -12189,7 +12301,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
   font-family: 'ProximaNovaBold';
-  font-size: 15px;
+  font-size: 17px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -12199,7 +12311,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   text-align: center;
   color: #fff;
 }
-@media screen and (min-width: 18em) {
+@media screen and (min-width: 20.4em) {
   .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
     font-size: 5.20833333vw;
   }
@@ -12281,18 +12393,18 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node.node-spenden .row .col-sm-12 .field-name-body h1,
   .node.node-spenden .row .col-sm-12 .field-name-body h2,
   .node.node-spenden .row .col-sm-12 .field-name-body h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body h1,
   .node.node-spenden .row .col-sm-12 .field-name-body h2,
   .node.node-spenden .row .col-sm-12 .field-name-body h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body h4,
@@ -12318,15 +12430,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body p,
 .node.node-spenden .row .col-sm-12 .field-name-body tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 40.8em) {
   .node.node-spenden .row .col-sm-12 .field-name-body p,
   .node.node-spenden .row .col-sm-12 .field-name-body tbody td {
     font-size: 2.60416667vw;
@@ -12340,10 +12446,10 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 40.8em) {
   .node.node-spenden .row .col-sm-12 .field-name-body a {
     font-size: 2.60416667vw;
   }
@@ -12362,9 +12468,9 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body pre,
 .node.node-spenden .row .col-sm-12 .field-name-body address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 40.8em) {
   .node.node-spenden .row .col-sm-12 .field-name-body pre,
   .node.node-spenden .row .col-sm-12 .field-name-body address {
     font-size: 2.60416667vw;
@@ -12663,18 +12769,18 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h1,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h2,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h1,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h2,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h4,
@@ -12700,39 +12806,33 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 40.8em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item tbody td {
-    font-size: 2.21354167vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item tbody td {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 40.8em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
-    font-size: 2.21354167vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a:hover,
@@ -12744,32 +12844,32 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item pre,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 40.8em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item pre,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address {
-    font-size: 2.21354167vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item pre,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong {
   font-family: 'ProximaNovaBold';
   font-size: 16px;
 }
-@media screen and (min-width: 40.421052631578945em) {
+@media screen and (min-width: 34.90909090909091em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong {
-    font-size: 2.47395833vw;
+    font-size: 2.86458333vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong {
-    font-size: 19px;
+    font-size: 22px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item hr {
@@ -12803,7 +12903,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  View call2action component
  * --------------------------------------------------*/
 .view.view-call2action {
-  margin: 50px 0 0;
+  margin: 0;
   width: 100%;
 }
 .view.view-call2action .view-content {
@@ -12830,9 +12930,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-call2action .view-content .views-row .node-call2action .row .col-sm-12 .call2action-container {
   display: block;
   position: relative;
-  padding: 20px;
+  padding: 5px;
   width: 100%;
-  min-width: 290px;
+  min-width: 260px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -12915,22 +13015,22 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .view.view-call2action .view-content .views-row.call2action-support .call2action-container {
-  background-color: #bf9c50;
+  background-color: #00B9BF;
 }
 .view.view-call2action .view-content .views-row.call2action-support .call2action-container .field-name-field-weight .field-item {
-  background-color: #bf9c50;
+  background-color: #00B9BF;
 }
 .view.view-call2action .view-content .views-row.call2action-participate .call2action-container {
-  background-color: #bf9c50;
+  background-color: #00B9BF;
 }
 .view.view-call2action .view-content .views-row.call2action-participate .call2action-container .field-name-field-weight .field-item {
-  background-color: #bf9c50;
+  background-color: #00B9BF;
 }
 .view.view-call2action .view-content .views-row.call2action-experience .call2action-container {
-  background-color: #bf9c50;
+  background-color: #00B9BF;
 }
 .view.view-call2action .view-content .views-row.call2action-experience .call2action-container .field-name-field-weight .field-item {
-  background-color: #bf9c50;
+  background-color: #00B9BF;
 }
 /*
  *  Social-masonry view component
@@ -13470,18 +13570,18 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   font-family: 'ProximaNovaBold';
   font-size: 22px;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 33em) {
   .view.view-donations .view-header h1,
   .view.view-donations .view-header h2,
   .view.view-donations .view-header h3 {
-    font-size: 3.90625vw;
+    font-size: 4.16666667vw;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header h1,
   .view.view-donations .view-header h2,
   .view.view-donations .view-header h3 {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 .view.view-donations .view-header h4,
@@ -13507,15 +13607,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-header p,
 .view.view-donations .view-header tbody td {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  -o-hyphens: auto;
-  hyphens: auto;
+  font-size: 17px;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 40.8em) {
   .view.view-donations .view-header p,
   .view.view-donations .view-header tbody td {
     font-size: 2.60416667vw;
@@ -13529,10 +13623,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .view.view-donations .view-header a {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #8e7234;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 40.8em) {
   .view.view-donations .view-header a {
     font-size: 2.60416667vw;
   }
@@ -13551,9 +13645,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-header pre,
 .view.view-donations .view-header address {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 40.8em) {
   .view.view-donations .view-header pre,
   .view.view-donations .view-header address {
     font-size: 2.60416667vw;
@@ -14097,11 +14191,11 @@ footer.container .region-footer .node.node-footer .row .col-sm-4 {
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 17px;
   color: #fff;
   text-align: center;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 48em) {
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
     font-size: 2.21354167vw;
