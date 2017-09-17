@@ -162,7 +162,7 @@ function pxlraffle_form_user_profile_form_alter (&$form, &$form_state, $form_id)
   if ($user_has_subscription) {
     $subscr_table = $form['subscription'];
     unset($form['subscription']);
-    $form['field_raffle_code']['#suffix'] = '<div class="subscription-container">' . drupal_render($subscr_table) . '</div>';
+    $form['account']['#prefix'] = '<div class="subscription-container">' . drupal_render($subscr_table) . '</div>';
   }
   else {
     //
