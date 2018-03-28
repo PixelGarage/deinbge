@@ -10498,6 +10498,79 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   opacity: 0.7;
 }
 /*
+ *  Node block component
+ * --------------------------------------------------*/
+.node.node-block {
+  margin: 20px auto 50px;
+  max-width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .node.node-block {
+    max-width: 80%;
+  }
+}
+.node.node-block .row {
+  margin: 0;
+}
+.node.node-block .row .col-sm-12 {
+  padding: 0 1.5%;
+}
+@media screen and (min-width: 640px) {
+  .node.node-block .row .col-sm-12 {
+    padding: 0 3%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .node.node-block .row .col-sm-12 {
+    padding: 0 4.5%;
+  }
+}
+.node.node-block .row .col-sm-12 .field-name-field-image {
+  margin: 20px auto 30px;
+}
+.node.node-block .row .col-sm-12 .field-name-field-image .field-item img {
+  width: 100%;
+  height: auto;
+}
+.node.node-block .row .col-sm-12 .field-name-body {
+  display: block;
+  margin: 20px auto 30px;
+  width: 90%;
+}
+.node.node-block .row .col-sm-12 .field-name-body .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  color: #333333;
+}
+.node.node-block .row .col-sm-12 a.block-button {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+  min-width: 260px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #FA6278;
+}
+.node.node-block .row .col-sm-12 a.block-button:hover {
+  text-decoration: none;
+}
+.node.node-block .row .col-sm-12 a.block-button .field-name-title {
+  margin: 10px 0;
+}
+.node.node-block .row .col-sm-12 a.block-button .field-name-title h2 {
+  margin: 0;
+  font-family: 'ProximaNovaBold';
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+}
+/*
  *  Node intro video component --> Home elements with text
  * --------------------------------------------------*/
 .node.node-intro .row div.col-sm-12 {
@@ -13801,7 +13874,7 @@ body.navbar-is-fixed-top {
   padding-top: 70px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 90px !important;
+  padding-top: 70px !important;
 }
 @media screen and (min-width: 768px) {
   body.navbar-is-fixed-top {

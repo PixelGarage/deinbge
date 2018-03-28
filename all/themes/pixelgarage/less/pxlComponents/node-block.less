@@ -1,0 +1,93 @@
+/*
+ *  Node block component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-block {
+  margin: 20px auto 50px;
+  max-width: 100%;
+
+  @media @special-break {
+    max-width: 80%;
+  }
+
+  .row {
+    margin: 0;
+
+    .col-sm-12 {
+      padding: 0 @pxl-gutter-width;
+
+      @media @special-break {
+        padding: 0 2*@pxl-gutter-width;
+      }
+
+      @media @normal {
+        padding: 0 3*@pxl-gutter-width;
+      }
+
+      .field-name-field-image {
+        margin: 20px auto 30px;
+
+        .field-item {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .field-name-body {
+        display: block;
+        margin: 20px auto 30px;
+        width: 90%;
+
+        .field-item {
+          font-family: @pxl-text-font-light;
+          font-size: @font-size-base;
+          line-height: 30px;
+          text-align: center;
+          color: @text-color;
+        }
+      }
+
+      a.block-button {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        padding: @pxl-container-padding;
+        width: 100%;
+        max-width: 500px;
+        min-width: (@pxl-icon-width + 2*@pxl-container-padding);
+        #pxl-mixins.border-radius(10px);
+        background-color: @pxl-bg-button;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        .field-name-title {
+          margin: 10px 0;
+
+          h2 {
+            margin: 0;
+            font-family: @pxl-text-font-bold;
+            font-size: @font-size-pane-title;
+            text-align: center;
+            color: #fff;
+          }
+        }
+
+      }
+    }
+  }
+}
