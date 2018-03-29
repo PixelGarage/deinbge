@@ -10552,13 +10552,16 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   width: 100%;
   max-width: 500px;
   min-width: 260px;
+  text-decoration: none;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #FA6278;
+  opacity: 1.0;
 }
 .node.node-block .row .col-sm-12 a.block-button:hover {
   text-decoration: none;
+  opacity: 0.7;
 }
 .node.node-block .row .col-sm-12 a.block-button .field-name-title {
   margin: 10px 0;

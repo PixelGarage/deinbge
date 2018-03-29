@@ -68,11 +68,14 @@
         width: 100%;
         max-width: 500px;
         min-width: (@pxl-icon-width + 2*@pxl-container-padding);
+        text-decoration: none;
         #pxl-mixins.border-radius(10px);
         background-color: @pxl-bg-button;
+        opacity: 1.0;
 
         &:hover {
           text-decoration: none;
+          opacity: 0.7;
         }
 
         .field-name-title {
