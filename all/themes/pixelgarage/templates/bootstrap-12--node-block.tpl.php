@@ -21,7 +21,7 @@
         <?php print render($content['body']); ?>
       </div>
       <!-- print button -->
-      <a class="block-button" href="<?php print $field_link[0]['url']; ?>">
+      <a class="block-button" href="<?php print $field_link[0]['url']; ?>" target="_blank">
         <?php print render($content['title']); ?>
       </a>
     </<?php print $central_wrapper; ?>>
