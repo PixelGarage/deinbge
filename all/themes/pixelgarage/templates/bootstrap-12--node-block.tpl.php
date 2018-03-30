@@ -12,10 +12,18 @@
   <?php endif; ?>
   <div class="row">
     <<?php print $central_wrapper; ?> class="col-sm-12 <?php print $central_classes; ?>">
-      <!-- print image -->
-      <div class="image">
-        <?php print render($content['field_image']); ?>
-      </div>
+      <?php if (isset($content['field_image'])): ?>
+        <!-- print image -->
+        <div class="image">
+          <?php print render($content['field_image']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (isset($content['field_video'])): ?>
+        <!-- print video -->
+        <div class="video">
+          <?php print render($content['field_video']); ?>
+        </div>
+      <?php endif; ?>
       <!-- print body -->
       <div class="body">
         <?php print render($content['body']); ?>

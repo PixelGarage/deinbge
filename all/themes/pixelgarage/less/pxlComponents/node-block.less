@@ -46,6 +46,34 @@
         }
       }
 
+      .field-name-field-video {
+        .field-item {
+          width: 100%;
+
+          iframe {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-height: 260px;
+          }
+        }
+
+        @media @tablet {
+          .field-item {
+            iframe {
+              max-height: 300px;
+            }
+          }
+        }
+        @media @normal {
+          .field-item {
+            iframe {
+              max-height: 360px;
+            }
+          }
+        }
+      }
+
       .field-name-body {
         display: block;
         margin: 20px auto 30px;
