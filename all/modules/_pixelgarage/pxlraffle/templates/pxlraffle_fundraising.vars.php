@@ -63,5 +63,5 @@ function template_preprocess_pxlraffle_fundraising(&$vars) {
   // style odometer for user count
   _pxlraffle_odometer_theme_attachments($vars, 'pxlraffle_fundraising');
   $user_count = pxlraffle_get_user_count_in_raffle($raffle_nid);
-  $vars['odometer_label'] = t('has been collected by @number users.', array('@number' => $user_count));
+  $vars['odometer_label'] = t('has been collected by @number users. This is OUR shared capital!', array('@number' => $user_count));
 }

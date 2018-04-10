@@ -49,14 +49,14 @@ function pxlraffle_form_user_login_alter(&$form, &$form_state, $form_id) {
 
   // add the registration form on the right side, if applicable
   if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL) != USER_REGISTER_ADMINISTRATORS_ONLY) {
-    $account_descr = t("Registration is needed to be part of the basic income movement and the next raffle.");
+    $account_descr = t("Subscribe here and become part of the Basic Income movement.");
     $registration_descr = t('Once this is confirmed, you can manage your membership in your account at any time.');
 
     $form['actions']['#suffix'] .= '<div id="user-create-account" class="create-account clearfix">';
     $form['actions']['#suffix'] .= "\n<h2>" . t('I don\'t have an account') . "</h2>";
     $form['actions']['#suffix'] .= "\n<div class='create-account-description'><p>" . $account_descr . "</p>";
-    $form['actions']['#suffix'] .= "\n<p>" . t("After registering you will receive a verification e-mail. ") . $registration_descr . "</p></div>";
-    $form['actions']['#suffix'] .= "\n<div class='form-actions-wrapper'>" . l(t('Become a member'), 'user/register', array('attributes' => array('class' => array('login-register'), 'title' => t('Create a new account'))));
+    $form['actions']['#suffix'] .= "\n<p>" . t("After successful subscription you will receive a verification email. ") . $registration_descr . "</p></div>";
+    $form['actions']['#suffix'] .= "\n<div class='form-actions-wrapper'>" . l(t('Become a member'), 'user/register', array('attributes' => array('class' => array('login-register'), 'title' => t('Create new account'))));
     $form['actions']['#suffix'] .= '</div></div>';
   }
 }

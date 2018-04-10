@@ -11,9 +11,9 @@ function template_preprocess_pxlraffle_subscriptions(&$vars) {
   $recurring_raffle = node_load($raffle_nid);
   $current_fees = empty($recurring_raffle->field_club_fees) ? 0 : $recurring_raffle->field_club_fees[LANGUAGE_NONE][0]['value'];
 
-  $vars['title'] = t('Subscribe for all raffles');
-  $vars['subscription_slogan'] = t("Become a subscribed user and automatically take part in all future raffles. A subscription can be cancelled at any time.");
-  $vars['subscription_link_label'] = t('Subscribe now!');
+  $vars['title'] = t('Still scrolling?');
+  $vars['subscription_slogan'] = t("There's nothing to lose. Being part of it is everything!");
+  $vars['subscription_link_label'] = t('Ok cool');
   switch($language->language) {
     case 'en':
       $vars['subscription_link_url'] = $base_url . '/en/user/register';
