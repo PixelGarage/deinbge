@@ -14064,6 +14064,7 @@ header#navbar .container .navbar-collapse nav .region-navigation {
 }
 header#navbar .container .navbar-collapse nav .region-navigation .block-system {
   display: block;
+  margin-right: 20px;
 }
 header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu {
   list-style: none;
@@ -14114,6 +14115,7 @@ header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
   }
   header#navbar .container .navbar-collapse nav .region-navigation .block-system {
     display: inline-block;
+    margin-right: 20px;
   }
   header#navbar .container .navbar-collapse nav .region-navigation .block-system ul.menu li {
     display: inline-block;
@@ -14131,7 +14133,6 @@ header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
   }
   header#navbar .container .navbar-collapse nav .region-navigation .block-locale {
     display: inline-block;
-    margin-right: 20px;
   }
 }
 /*
