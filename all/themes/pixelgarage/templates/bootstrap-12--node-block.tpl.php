@@ -28,10 +28,10 @@
       <div class="body">
         <?php print render($content['body']); ?>
       </div>
-      <?php if (isset($content['field_image'])): ?>
+      <?php if (isset($content['field_link'])): ?>
         <!-- print button -->
         <a class="block-button" href="<?php print $field_link[0]['url']; ?>" target="_blank">
-          <?php print render($content['title']); ?>
+          <div class="block-button-title"><?php print $field_link[0]['title']; ?></div>
         </a>
       <?php endif; ?>
     </<?php print $central_wrapper; ?>>

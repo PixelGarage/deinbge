@@ -14,7 +14,7 @@
 // General settings
 // -------------------------
 .node.node-block {
-  margin: 20px auto 50px;
+  margin: 20px auto;
   max-width: 100%;
 
   @media @special-break {
@@ -40,8 +40,8 @@
 
         .field-item {
           img {
-            width: 100%;
-            height: auto;
+            width: 100% !important;
+            height: auto !important;
           }
         }
       }
@@ -106,16 +106,12 @@
           opacity: 0.7;
         }
 
-        .field-name-title {
-          margin: 10px 0;
-
-          h2 {
-            margin: 0;
-            font-family: @pxl-text-font-bold;
-            font-size: @font-size-pane-title;
-            text-align: center;
-            color: #fff;
-          }
+        .block-button-title {
+          display: block;
+          font-family: @pxl-text-font-bold;
+          font-size: @font-size-pane-title;
+          text-align: center;
+          color: #fff;
         }
 
       }

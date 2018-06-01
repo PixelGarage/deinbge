@@ -10501,7 +10501,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
  *  Node block component
  * --------------------------------------------------*/
 .node.node-block {
-  margin: 20px auto 50px;
+  margin: 20px auto;
   max-width: 100%;
 }
 @media screen and (min-width: 640px) {
@@ -10529,8 +10529,8 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   margin: 20px auto 30px;
 }
 .node.node-block .row .col-sm-12 .field-name-field-image .field-item img {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
 .node.node-block .row .col-sm-12 .field-name-field-video .field-item {
   width: 100%;
@@ -10582,11 +10582,8 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   text-decoration: none;
   opacity: 0.7;
 }
-.node.node-block .row .col-sm-12 a.block-button .field-name-title {
-  margin: 10px 0;
-}
-.node.node-block .row .col-sm-12 a.block-button .field-name-title h2 {
-  margin: 0;
+.node.node-block .row .col-sm-12 a.block-button .block-button-title {
+  display: block;
   font-family: 'ProximaNovaBold';
   font-size: 32px;
   text-align: center;
