@@ -10161,6 +10161,9 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
 /*
  *  Block raffle subscriptions component
  * --------------------------------------------------*/
+#pxlraffle-subscriptions {
+  padding: 30px 0;
+}
 #pxlraffle-subscriptions .subscriptions {
   width: 100%;
 }
