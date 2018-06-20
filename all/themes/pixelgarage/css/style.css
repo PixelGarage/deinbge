@@ -9752,7 +9752,8 @@ form .form-actions .form-submit .icon {
   padding-bottom: 0;
   background-color: #efefef;
 }
-.panel-display .panel-col #panel-quotes {
+.panel-display .panel-col #panel-quotes,
+.panel-display .panel-col #panel-subscription {
   padding-bottom: 0;
   background-color: #bf9c50;
 }
