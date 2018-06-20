@@ -10165,20 +10165,25 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
   width: 100%;
 }
 #pxlraffle-subscriptions .subscriptions .block-header {
-  margin-bottom: 20px;
+  display: none;
   font-family: 'ProximaNovaBold';
   font-size: 32px;
   text-align: center;
-  color: #333333;
+  color: #efefef;
 }
 #pxlraffle-subscriptions .subscriptions .subscription-slogan {
   margin-bottom: 20px;
   font-family: 'ProximaNovaLight';
   font-size: 20px;
   text-align: center;
+  color: #efefef;
+}
+#pxlraffle-subscriptions .subscriptions .subscription-slogan a {
+  color: #efefef;
+  text-decoration: underline;
 }
 #pxlraffle-subscriptions .subscriptions .actions {
-  margin: 0 auto 70px;
+  margin: 0 auto 30px;
   text-align: center;
 }
 #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
@@ -10198,7 +10203,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #00B9BF;
+  background: #efefef;
 }
 @media screen and (min-width: 40em) {
   #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
@@ -10211,7 +10216,7 @@ body.front #pxlraffle-next-raffle .next-raffle .actions .btn.link-participate:ho
   }
 }
 #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:hover {
-  background: #00a0a6;
+  background: #e2e2e2;
 }
 body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
   display: inline-block;
@@ -10230,7 +10235,8 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe 
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #00B9BF;
+  background: #efefef;
+  color: #bf9c50;
 }
 @media screen and (min-width: 40em) {
   body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe {
@@ -10243,7 +10249,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe 
   }
 }
 body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:hover {
-  background: #00a0a6;
+  background: #e2e2e2;
 }
 #pxlraffle-subscriptions .subscriptions .odometer-users {
   margin-bottom: 10px;
@@ -10375,7 +10381,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 @media screen and (min-width: 768px) {
   #pxlraffle-subscriptions .subscriptions {
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
   }
   #pxlraffle-subscriptions .subscriptions .odometer-amount .currency {
     font-size: 36px;
@@ -10502,7 +10508,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
  *  Node block component
  * --------------------------------------------------*/
 .node.node-block {
-  margin: 20px auto;
+  margin: 40px auto;
   max-width: 100%;
 }
 @media screen and (min-width: 640px) {
@@ -10554,12 +10560,12 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node.node-block .row .col-sm-12 .field-name-body {
   display: block;
-  margin: 20px auto 30px;
+  margin: 60px auto 30px;
   width: 90%;
 }
 .node.node-block .row .col-sm-12 .field-name-body .field-item {
   font-family: 'ProximaNovaLight';
-  font-size: 17px;
+  font-size: 20px;
   line-height: 30px;
   text-align: center;
   color: #333333;
@@ -10570,13 +10576,13 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   margin: 0 auto;
   padding: 5px;
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   min-width: 260px;
   text-decoration: none;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #FA6278;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #00B9BF;
   opacity: 1.0;
 }
 .node.node-block .row .col-sm-12 a.block-button:hover {
@@ -10586,7 +10592,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-block .row .col-sm-12 a.block-button .block-button-title {
   display: block;
   font-family: 'ProximaNovaBold';
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   color: #fff;
 }
@@ -13552,8 +13558,8 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-blog .pager.pager--infinite-scroll .pager__item a {
   display: inline-block;
   padding: 8px 20px 10px;
-  font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-family: 'ProximaNovaBold';
+  font-size: 24px;
   line-height: 1;
   color: #fff;
   -moz-border-radius: 3px;
@@ -14334,9 +14340,19 @@ footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-fie
 }
 footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 17px;
   color: #fff;
   text-align: center;
+}
+@media screen and (min-width: 48em) {
+  footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
+    font-size: 2.21354167vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
+    font-size: 17px;
+  }
 }
 @media screen and (min-width: 768px) {
   footer.container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p {
