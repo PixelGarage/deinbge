@@ -1,5 +1,5 @@
 <?php
-$export_time = 1430596496;
+$export_time = 1510762416;
 $data = array(
   'bundles' => array(
     'page' => (object) array(
@@ -7,7 +7,7 @@ $data = array(
       'name' => 'Page',
       'base' => 'node_content',
       'module' => 'node',
-      'description' => '',
+      'description' => 'Use <em>Page</em> for your static content, such as an \'About us\' page or for easy extendable pages via paragraphs.',
       'help' => '',
       'has_title' => '1',
       'title_label' => 'Title',
@@ -25,21 +25,8 @@ $data = array(
       'entity_types' => array(
         0 => 'node',
       ),
-      'foreign keys' => array(
-        'format' => array(
-          'table' => 'filter_format',
-          'columns' => array(
-            'format' => 'format',
-          ),
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'settings' => array(),
       'translatable' => '0',
+      'settings' => array(),
       'storage' => array(
         'type' => 'field_sql_storage',
         'settings' => array(),
@@ -62,6 +49,19 @@ $data = array(
               ),
             ),
           ),
+        ),
+      ),
+      'foreign keys' => array(
+        'format' => array(
+          'table' => 'filter_format',
+          'columns' => array(
+            'format' => 'format',
+          ),
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
         ),
       ),
       'field_name' => 'body',
@@ -92,16 +92,60 @@ $data = array(
         'node' => array(
           0 => 'page',
           1 => 'article',
-          2 => 'pxltest',
-          3 => 'course',
-          4 => 'course_tabs',
-          5 => 'course_times',
-          6 => 'location',
-          7 => 'remoteform',
-          8 => 'segment_blocks',
-          9 => 'introstep',
-          10 => 'in_depth_course',
-          11 => 'banner',
+          2 => 'charts',
+        ),
+      ),
+    ),
+    'field_paragraphs' => array(
+      'translatable' => '0',
+      'entity_types' => array(),
+      'settings' => array(),
+      'storage' => array(
+        'type' => 'field_sql_storage',
+        'settings' => array(),
+        'module' => 'field_sql_storage',
+        'active' => '1',
+        'details' => array(
+          'sql' => array(
+            'FIELD_LOAD_CURRENT' => array(
+              'field_data_field_paragraphs' => array(
+                'value' => 'field_paragraphs_value',
+                'revision_id' => 'field_paragraphs_revision_id',
+              ),
+            ),
+            'FIELD_LOAD_REVISION' => array(
+              'field_revision_field_paragraphs' => array(
+                'value' => 'field_paragraphs_value',
+                'revision_id' => 'field_paragraphs_revision_id',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'field_name' => 'field_paragraphs',
+      'type' => 'paragraphs',
+      'module' => 'paragraphs',
+      'active' => '1',
+      'locked' => '0',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'columns' => array(
+        'value' => array(
+          'type' => 'int',
+          'not null' => FALSE,
+          'description' => 'The paragraph item id.',
+        ),
+        'revision_id' => array(
+          'type' => 'int',
+          'not null' => FALSE,
+          'description' => 'The paragraph item revision id.',
+        ),
+      ),
+      'bundles' => array(
+        'node' => array(
+          0 => 'page',
         ),
       ),
     ),
@@ -128,24 +172,77 @@ $data = array(
           'default' => array(
             'label' => 'hidden',
             'type' => 'text_default',
-            'weight' => '0',
+            'weight' => '1',
             'settings' => array(),
             'module' => 'text',
           ),
           'teaser' => array(
             'label' => 'hidden',
-            'type' => 'text_summary_or_trimmed',
-            'settings' => array(
-              'trim_length' => 600,
-            ),
+            'type' => 'text_default',
+            'weight' => '1',
+            'settings' => array(),
             'module' => 'text',
-            'weight' => 0,
           ),
         ),
         'required' => FALSE,
         'description' => '',
-        'default_value' => NULL,
         'field_name' => 'body',
+        'entity_type' => 'node',
+        'bundle' => 'page',
+        'deleted' => '0',
+        'default_value' => NULL,
+      ),
+    ),
+    'field_paragraphs' => array(
+      0 => array(
+        'label' => 'Paragraphs',
+        'widget' => array(
+          'weight' => '2',
+          'type' => 'paragraphs_embed',
+          'module' => 'paragraphs',
+          'active' => 0,
+          'settings' => array(),
+        ),
+        'settings' => array(
+          'title' => 'Paragraph',
+          'title_multiple' => 'Paragraphs',
+          'default_edit_mode' => 'preview',
+          'add_mode' => 'select',
+          'allowed_bundles' => array(
+            'text_paragraph' => -1,
+            'block_paragraph' => -1,
+            'image_paragraph' => -1,
+            'bs_carousel_paragraph' => -1,
+          ),
+          'bundle_weights' => array(
+            'text_paragraph' => '-8',
+            'block_paragraph' => '-7',
+            'image_paragraph' => '-6',
+            'bs_carousel_paragraph' => '-5',
+          ),
+          'user_register_form' => FALSE,
+        ),
+        'display' => array(
+          'default' => array(
+            'label' => 'hidden',
+            'type' => 'paragraphs_view',
+            'weight' => '2',
+            'settings' => array(
+              'view_mode' => 'full',
+            ),
+            'module' => 'paragraphs',
+          ),
+          'teaser' => array(
+            'label' => 'hidden',
+            'type' => 'hidden',
+            'weight' => '2',
+            'settings' => array(),
+          ),
+        ),
+        'required' => 0,
+        'description' => 'Add any number of pragraphs to this page.',
+        'default_value' => NULL,
+        'field_name' => 'field_paragraphs',
         'entity_type' => 'node',
         'bundle' => 'page',
         'deleted' => '0',

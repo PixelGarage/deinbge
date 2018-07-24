@@ -1,0 +1,77 @@
+/*
+ *  Node teammember component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-teammember {
+  .row {
+    div.col-sm-12 {
+      margin: 0;
+      width: 100%;
+
+      .field-name-title {
+        margin: 0 auto;
+
+        h2 {
+          margin-bottom: 20px;
+          font-family: @pxl-text-font-bold;
+          #pxl-mixins.font-size-responsive(32px, 22px);
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+          color: @text-color;
+        }
+      }
+
+      .field-name-field-image {
+        margin: 0 auto;
+
+        .field-item {
+          img {
+            max-width: 100%;
+            width: 180px;
+            height: auto;
+          }
+        }
+      }
+
+      .field_t_tigkeiten {
+        margin: 0 auto;
+
+        .field-item {
+          font-family: @pxl-text-font;
+          #pxl-mixins.font-size-responsive(18px, 16px);
+          color: @text-color;
+        }
+      }
+
+      .field_email {
+        margin: 0 auto;
+
+        .field-item {
+          font-family: @pxl-text-font;
+          #pxl-mixins.font-size-responsive(18px, 16px);
+
+          a {
+            color: @link-color;
+
+            &:hover, &:focus {
+              color: @link-hover-color;
+              text-decoration: none;
+              background: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

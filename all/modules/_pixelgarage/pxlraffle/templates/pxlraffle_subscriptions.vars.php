@@ -19,16 +19,14 @@ function template_preprocess_pxlraffle_subscriptions(&$vars) {
       $vars['subscription_link_url'] = $base_url . '/en/user/register';
       break;
     case 'de':
-      $vars['subscription_link_url'] = $base_url . '/de/user/register';
+    default:
+      $vars['subscription_link_url'] = $base_url . '/user/register';
       break;
     case 'fr':
       $vars['subscription_link_url'] = $base_url . '/fr/user/register';
       break;
     case 'it':
       $vars['subscription_link_url'] = $base_url . '/it/user/register';
-      break;
-    default:
-      $vars['subscription_link_url'] = $base_url . '/user/register';
       break;
   }
   $vars['subscribtion_fee_statement'] = t('Subscribed users support us with @amount CHF each month. Thank you very much!',
