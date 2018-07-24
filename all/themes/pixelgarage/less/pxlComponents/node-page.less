@@ -4,6 +4,8 @@
 
 // Variables
 // -------------------------
+@paragraph-margin-bottom: 30px;
+@paragraph-margin-bottom-large: 50px;
 
 
 // Mixins
@@ -31,6 +33,7 @@
       }
 
       .field-name-body {
+        margin: 0 0 30px;
         .jumbotron {
           h2 {
             margin: 0 auto 20px;
@@ -39,6 +42,24 @@
 
         #pxl-mixins.wysiwyg-body(17px);
       }
+
+      >.paragraphs-items {
+        >.field-name-field-paragraphs {
+          >.field-items {
+            >.field-item:not(:last-child) {
+              margin-bottom: @paragraph-margin-bottom;
+
+              @media @tablet {
+                margin-bottom: @paragraph-margin-bottom-large;
+              }
+
+
+              // see paragraph-item-... less files
+            }
+          }
+        }
+      }
+
     }
   }
 }

@@ -10806,6 +10806,9 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
     font-size: 32px;
   }
 }
+.node-page .row div.col-sm-12 .field-name-body {
+  margin: 0 0 30px;
+}
 .node-page .row div.col-sm-12 .field-name-body .jumbotron h2 {
   margin: 0 auto 20px;
 }
@@ -10944,6 +10947,14 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node-page .row div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .node-page .row div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
+    margin-bottom: 50px;
+  }
 }
 /*
  *  Node / block webform component
@@ -13014,77 +13025,84 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  * --------------------------------------------------*/
 .node.node-teammember .row div.col-sm-12 {
   margin: 0;
+  padding: 15px;
   width: 100%;
 }
 .node.node-teammember .row div.col-sm-12 .field-name-title {
-  margin: 0 auto;
+  text-align: center;
 }
 .node.node-teammember .row div.col-sm-12 .field-name-title h2 {
+  display: inline-block;
   margin-bottom: 20px;
   font-family: 'ProximaNovaBold';
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #333333;
 }
-@media screen and (min-width: 33em) {
+@media screen and (min-width: 42.666666666666664em) {
   .node.node-teammember .row div.col-sm-12 .field-name-title h2 {
-    font-size: 4.16666667vw;
+    font-size: 2.34375vw;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-teammember .row div.col-sm-12 .field-name-title h2 {
-    font-size: 32px;
+    font-size: 18px;
   }
 }
 .node.node-teammember .row div.col-sm-12 .field-name-field-image {
-  margin: 0 auto;
+  text-align: center;
+}
+.node.node-teammember .row div.col-sm-12 .field-name-field-image .field-item {
+  display: inline-block;
 }
 .node.node-teammember .row div.col-sm-12 .field-name-field-image .field-item img {
   max-width: 100%;
   width: 180px;
   height: auto;
 }
-.node.node-teammember .row div.col-sm-12 .field_t_tigkeiten {
-  margin: 0 auto;
+.node.node-teammember .row div.col-sm-12 .field-name-field-t-tigkeiten {
+  text-align: center;
 }
-.node.node-teammember .row div.col-sm-12 .field_t_tigkeiten .field-item {
+.node.node-teammember .row div.col-sm-12 .field-name-field-t-tigkeiten .field-item {
+  display: inline-block;
   font-family: 'ProximaNovaLight';
   font-size: 16px;
   color: #333333;
 }
 @media screen and (min-width: 42.666666666666664em) {
-  .node.node-teammember .row div.col-sm-12 .field_t_tigkeiten .field-item {
+  .node.node-teammember .row div.col-sm-12 .field-name-field-t-tigkeiten .field-item {
     font-size: 2.34375vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .node.node-teammember .row div.col-sm-12 .field_t_tigkeiten .field-item {
+  .node.node-teammember .row div.col-sm-12 .field-name-field-t-tigkeiten .field-item {
     font-size: 18px;
   }
 }
-.node.node-teammember .row div.col-sm-12 .field_email {
-  margin: 0 auto;
+.node.node-teammember .row div.col-sm-12 .field-name-field-email {
+  text-align: center;
 }
-.node.node-teammember .row div.col-sm-12 .field_email .field-item {
+.node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item {
+  display: inline-block;
   font-family: 'ProximaNovaLight';
   font-size: 16px;
 }
 @media screen and (min-width: 42.666666666666664em) {
-  .node.node-teammember .row div.col-sm-12 .field_email .field-item {
+  .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item {
     font-size: 2.34375vw;
   }
 }
 @media screen and (min-width: 992px) {
-  .node.node-teammember .row div.col-sm-12 .field_email .field-item {
+  .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item {
     font-size: 18px;
   }
 }
-.node.node-teammember .row div.col-sm-12 .field_email .field-item a {
+.node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item a {
   color: #8e7234;
 }
-.node.node-teammember .row div.col-sm-12 .field_email .field-item a:hover,
-.node.node-teammember .row div.col-sm-12 .field_email .field-item a:focus {
+.node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item a:hover,
+.node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item a:focus {
   color: #bf9c50;
   text-decoration: none;
   background: none;
@@ -13979,6 +13997,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 /*
  *  Teammember view component
  * --------------------------------------------------*/
+.view.view-teammember {
+  margin: 20px auto;
+}
 .view.view-teammember .view-content > .pe-container {
   width: 100%;
 }
@@ -14016,7 +14037,6 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  box-shadow: 0 0 12px rgba(192, 192, 192, 0.4);
 }
 .view.view-teammember .view-content > .pe-container .pe-item.shown {
   opacity: 1.0;
