@@ -9709,17 +9709,17 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 768px) {
   .panel-display .panel-col .panel-pane.full-width {
-    margin: 0 -136px;
+    margin: 0 calc((750px - 30px - 100vw)/2);
   }
 }
 @media screen and (min-width: 992px) {
   .panel-display .panel-col .panel-pane.full-width {
-    margin: 0 -180px;
+    margin: 0 calc((950px - 30px - 100vw)/2);
   }
 }
 @media screen and (min-width: 1280px) {
   .panel-display .panel-col .panel-pane.full-width {
-    margin: 0 -4539.5px;
+    margin: 0 calc((950px - 30px - 100vw)/2);
   }
 }
 .panel-display .panel-col .panel-pane.full-width .pane-content {
@@ -9727,17 +9727,17 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 768px) {
   .panel-display .panel-col .panel-pane.full-width .pane-content {
-    padding: 0 136px;
+    padding: 0 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .panel-display .panel-col .panel-pane.full-width .pane-content {
-    padding: 0 180px;
+    padding: 0 36px;
   }
 }
 @media screen and (min-width: 1280px) {
   .panel-display .panel-col .panel-pane.full-width .pane-content {
-    padding: 0 4539.5px;
+    padding: 0 180px;
   }
 }
 .panel-display .panel-col .panel-pane .pane-title {
