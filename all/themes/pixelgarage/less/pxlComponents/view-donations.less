@@ -4,7 +4,6 @@
 
 // Variables
 // -------------------------
-@tab-button-font-size: @font-size-button-small;
 @tab-button-color: #fff;
 @tab-button-radius: 4px;
 
@@ -13,7 +12,7 @@
 
 // Mixins
 // -------------------------
-.tab-button(@size: @tab-button-font-size; @bg-color: @gray-lighter) {
+.tab-button(@size: @resp-button-size-min; @bg-color: @gray-lighter) {
   display: inline-block;
   padding: 10px 15px;
   height: @tab-height;
@@ -59,7 +58,7 @@
       margin: 0 100px 0 100px;
     }
 
-    #pxl-mixins.wysiwyg-body(@font-size-pane-subtitle);
+    #pxl-mixins.wysiwyg-body();
     text-align: center;
   }
 
@@ -121,7 +120,7 @@
                 margin-top: 30px;
                 padding: 5px 15px;
                 font-family: @pxl-text-font-bold;
-                font-size: @font-size-button-small;
+                font-size: @resp-button-size-min;
                 line-height: 1.6;
                 letter-spacing: 0.04em;
                 text-transform: none;

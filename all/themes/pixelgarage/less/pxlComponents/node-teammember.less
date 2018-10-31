@@ -25,12 +25,10 @@
 
         h2 {
           display:inline-block;
-          margin-bottom: 20px;
+          margin: 20px 0;
+          #pxl-mixins.text();
           font-family: @pxl-text-font-bold;
-          #pxl-mixins.font-size-responsive(18px, 16px);
-          letter-spacing: 1.2px;
           text-transform: uppercase;
-          color: @text-color;
         }
       }
 
@@ -70,7 +68,7 @@
             color: @link-color;
 
             &:hover, &:focus {
-              color: @link-hover-color;
+              color: @link-color-hover;
               text-decoration: none;
               background: none;
             }
