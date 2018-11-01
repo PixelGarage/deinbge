@@ -54,22 +54,28 @@
     .col-xxs-6-sm-3 {
       margin: 20px 0;
 
-      .field-name-field-image1, .field-name-field-image2 {
-        .field-item {
-          img {
-            max-width: 100%;
-            height: auto;
+      .col-inner {
+        padding: 10px;
+        #pxl-mixins.border-radius(6px);
+        #pxl-mixins.box-shadow(@pxl-box-shadow);
+
+        .field-name-field-image1, .field-name-field-image2 {
+          .field-item {
+            img {
+              max-width: 100%;
+              height: auto;
+            }
           }
         }
-      }
 
-      .field-name-field-image-title-1, .field-name-field-image-title-2 {
-        margin: 10px 0;
+        .field-name-field-image-title-1, .field-name-field-image-title-2 {
+          margin-bottom: 20px;
 
-        .field-item {
-          #pxl-mixins.text();
-          font-family: @pxl-text-font-bold;
-          text-align: center;
+          .field-item {
+            #pxl-mixins.text();
+            font-family: @pxl-text-font-bold;
+            text-align: center;
+          }
         }
       }
     }

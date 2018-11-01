@@ -17,18 +17,22 @@ $url2 = $field_link_2[0]['url'];
       <?php print $central; ?>
     </<?php print $central_wrapper; ?>>
     <<?php print $left_wrapper; ?> class="col-xxs-6-sm-3 col-sm-pull-6 <?php print $left_classes; ?>">
-      <?php if (!empty($url1)): ?>
-        <a href="<?php print $url1; ?>"><?php print $left; ?></a>
-      <?php else: ?>
-        <?php print $left; ?>
-      <?php endif; ?>
+      <div class="col-inner">
+        <?php if (!empty($url1)): ?>
+          <a href="<?php print $url1; ?>"><?php print $left; ?></a>
+        <?php else: ?>
+          <?php print $left; ?>
+        <?php endif; ?>
+      </div>
     </<?php print $left_wrapper; ?>>
     <<?php print $right_wrapper; ?> class="col-xxs-6-sm-3 <?php print $right_classes; ?>">
-      <?php if (!empty($url2)): ?>
-        <a href="<?php print $url2; ?>"><?php print $right; ?></a>
-      <?php else: ?>
-        <?php print $right; ?>
-      <?php endif; ?>
+      <div class="col-inner">
+        <?php if (!empty($url2)): ?>
+          <a href="<?php print $url2; ?>"><?php print $right; ?></a>
+        <?php else: ?>
+          <?php print $right; ?>
+        <?php endif; ?>
+      </div>
     </<?php print $right_wrapper; ?>>
   </div>
 </<?php print $layout_wrapper ?>>

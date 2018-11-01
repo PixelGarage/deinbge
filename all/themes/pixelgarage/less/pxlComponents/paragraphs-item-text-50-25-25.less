@@ -35,8 +35,7 @@
       .field-name-field-title {
         .field-item {
           margin: 10px auto;
-          #pxl-mixins.text();
-          font-family: @pxl-text-font-bold;
+          #pxl-mixins.subtitle();
         }
       }
     }
@@ -56,7 +55,25 @@
         }
       }
 
-      .field-name-field-image1, .field-name-field-image2, .field-name-field-image3, .field-name-field-image4 {
+      .field-name-field-image1, .field-name-field-image2 {
+        display: block;
+        width: 100%;
+
+        .field-item {
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        @media @special-break {
+          display: inline-block;
+          width: 50%;
+        }
+      }
+
+      .field-name-field-image3, .field-name-field-image4 {
+        margin: 0 -@grid-gutter-width/4;
         .field-item {
           img {
             max-width: 100%;
