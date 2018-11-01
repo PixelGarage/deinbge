@@ -69,7 +69,6 @@ header#navbar {
         }
 
         @media @tablet {
-          width: 100%;
           left: -50px;
 
           img {
@@ -78,6 +77,7 @@ header#navbar {
         }
 
         @media @normal {
+          width: 100%;
           left: 0;
         }
 
@@ -114,6 +114,8 @@ header#navbar {
     // collapse part
     .navbar-collapse {
       position: relative;
+      max-height: 380px;
+      border: 0;
 
       .navbar-toggle-2 {
         // navbar toggle with arrow
@@ -145,7 +147,7 @@ header#navbar {
           float: none;
           margin: 15px;
 
-          @media @tablet {
+          @media @normal {
             margin: 0;
           }
 
@@ -161,7 +163,7 @@ header#navbar {
               line-height: 1;
               background: none;
 
-              @media @tablet {
+              @media @normal {
                 padding: 0px 15px;
               }
 
@@ -249,7 +251,7 @@ header#navbar {
           }
         }
 
-        @media @tablet {
+        @media @normal {
           ul.navbar-nav {
             display: block;
             position: absolute;
