@@ -9860,6 +9860,7 @@ form .form-actions .form-submit .icon {
  *  Text paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
+  margin: 10px auto;
   font-family: 'ProximaNovaLight';
   font-size: 18px;
   letter-spacing: 0;
@@ -11718,9 +11719,6 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-12 .field-name-field-title .field-item {
     font-size: 24px;
   }
-}
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 {
-  margin: 20px 0;
 }
 @media screen and (min-width: 768px) {
   .field-item.even .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.left {
