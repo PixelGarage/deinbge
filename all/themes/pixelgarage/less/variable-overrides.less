@@ -173,6 +173,7 @@
 @special-break: ~"screen and (min-width: 640px)";
 
 // Media queries stacked
+@narrow-only:  ~"screen and (min-width: @{screen-xs-min}) and (max-width: @{screen-xs-max})";
 @tablet-only:  ~"screen and (min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
 @normal-only:  ~"screen and (min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
 

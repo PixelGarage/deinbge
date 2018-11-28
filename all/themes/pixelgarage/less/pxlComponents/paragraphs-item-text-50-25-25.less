@@ -31,6 +31,7 @@
 
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 {
   .row {
+
     .col-sm-12 {
       .field-name-field-title {
         .field-item {
@@ -41,7 +42,6 @@
     }
 
     .col-sm-6, .col-md-4 {
-
       .field-name-field-text-50,
       .field-name-field-text-25-1,
       .field-name-field-text-25-2 {
@@ -62,9 +62,30 @@
         margin: 0 -@grid-gutter-width/4 20px;
 
         .field-item {
+          text-align: center;
+
           img {
+            display: inline-block;
             max-width: 100%;
             height: auto;
+
+            @media @narrow-only {
+              max-width: 75%;
+            }
+          }
+        }
+      }
+
+      @media @tablet-only {
+        .field-name-field-image1 {
+          .field-item {
+            text-align: left;
+
+            img {
+              display: inline-block;
+              max-width: 50%;
+              height: auto;
+            }
           }
         }
       }

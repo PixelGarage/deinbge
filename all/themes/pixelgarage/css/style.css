@@ -11220,6 +11220,16 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 {
   margin: 0 -7.5px 20px;
 }
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image3 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 .field-item {
+  text-align: center;
+}
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2 .field-item img,
@@ -11228,8 +11238,33 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 .field-item img {
+  display: inline-block;
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image3 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 .field-item img {
+    max-width: 75%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item {
+    text-align: left;
+  }
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item img,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item img {
+    display: inline-block;
+    max-width: 50%;
+    height: auto;
+  }
 }
 /*
  *  Image-Text-image paragraph component
@@ -12798,11 +12833,24 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image {
   margin-bottom: 20px;
 }
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image .field-item,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image .field-item,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image .field-item {
+  text-align: center;
+}
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image .field-item img,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image .field-item img,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image .field-item img {
+  display: inline-block;
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image .field-item img,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image .field-item img,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image .field-item img {
+    max-width: 75%;
+  }
 }
 /*
  *  Block raffle fundraising component
