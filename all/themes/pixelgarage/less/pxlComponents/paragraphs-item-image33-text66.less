@@ -1,0 +1,82 @@
+/*
+ *  Image33-Text66 paragraph component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+// Component
+// -------------------------
+
+.entity-paragraphs-item.paragraphs-item-image33-text66 {
+  .row {
+    .col-sm-12 {
+      .field-name-field-title {
+        .field-item {
+          margin: 10px auto;
+          #pxl-mixins.subtitle();
+        }
+      }
+    }
+
+    .col-sm-6, .col-md-4, .col-md-8 {
+      @media @tablet {
+        &.left.switch {
+          left: 50%;
+        }
+
+        &.right.switch {
+          right: 50%;
+        }
+      }
+      @media @normal {
+        &.left.switch {
+          left: 66.666666%;
+        }
+
+        &.right.switch {
+          right: 33.333333%;
+        }
+      }
+
+      .field-name-field-text {
+        margin-bottom: 20px;
+
+        .field-item {
+          #pxl-mixins.wysiwyg-body();
+          //#pxl-mixins.hyphenate;
+
+          ol {
+            padding-left: 20px;
+          }
+
+          .table-responsive {
+            padding: 0 15px;
+            border: 1px solid #ddd;
+
+            table {
+              min-width: 540px;
+            }
+          }
+        }
+      }
+
+      .field-name-field-image {
+        margin-bottom: 20px;
+
+        .field-item {
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+    }
+  }
+}

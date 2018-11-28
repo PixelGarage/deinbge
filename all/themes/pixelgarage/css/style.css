@@ -10319,24 +10319,32 @@ form .form-actions .form-submit .icon {
     font-size: 30px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 {
+  margin-bottom: 20px;
+}
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h1,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h1,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h2,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h2,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-title,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-title,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-title {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-title {
   margin: 20px auto;
   font-family: 'ProximaNovaBold';
   font-size: 30px;
@@ -10347,82 +10355,82 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-title {
     font-size: 5.20833333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-title {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-title {
     font-size: 40px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h3,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h3,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtitle {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
   margin: 10px auto;
   font-family: 'ProximaNovaLight';
   font-size: 24px;
@@ -10433,70 +10441,70 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
     font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
     font-size: 30px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h4,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h4,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h4,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h4,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h4,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h4,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h5,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h5,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h5,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h6,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h6,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h6,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h6,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h6,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h6 {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
   font-size: 16px;
@@ -10508,76 +10516,76 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h6 {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h6 {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h4,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h5,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item h6 {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item p,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item p,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item p,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item p,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item p,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item p {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
   font-size: 16px;
@@ -10594,46 +10602,46 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item p,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item p,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item p {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item p,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item p,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item p {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item p,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item p,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item p {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item small,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item small,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item small,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item small,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item small,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtext,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtext {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
   font-size: 14px;
   letter-spacing: 0;
@@ -10642,74 +10650,74 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 42em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
     font-size: 2.08333333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
     text-align: left;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-glow,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-glow,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-glow,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-glow {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-glow {
   font-family: 'ProximaNovaLight';
   font-size: 50px;
   letter-spacing: 0.2em;
@@ -10721,40 +10729,40 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 24em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-glow {
     font-size: 13.02083333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-glow {
     font-size: 100px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-glow {
     font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-quote,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-quote,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-quote,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-quote {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-quote {
   font-family: 'ProximaNovaBold';
   font-size: 30px;
   letter-spacing: 1.2px;
@@ -10764,40 +10772,40 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-quote {
     font-size: 5.20833333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-quote {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-quote {
     font-size: 40px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item a,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item a,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item a {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
   font-family: 'ProximaNovaLight';
   font-size: 16px;
   letter-spacing: 0;
@@ -10809,74 +10817,74 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item a,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item a,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item a {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item a,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item a,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item a {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item a,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item a,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item a {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a:hover,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a:hover,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a:focus,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a:focus,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a:focus,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a:focus,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a:focus,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item a:focus {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a:focus {
   color: #bf9c50;
   text-decoration: underline;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item pre,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item pre,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item pre,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item pre,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item pre,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item pre,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item address,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item address,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item address,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item address,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item address,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item address,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item i,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item i,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item i,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item i,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item i,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item i,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item em,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item em,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item em,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item em,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item em,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item em {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 1.14em;
@@ -10886,100 +10894,100 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item em,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item em,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item em {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item em,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item em,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item em {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item pre,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item address,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item address,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item i,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item i,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item em,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item em,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item em {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item strong,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item strong,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item b,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item b,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item b,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item b,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item b,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item b {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
   font-family: 'ProximaNovaLight';
   font-size: 16px;
   letter-spacing: 0;
@@ -10990,58 +10998,58 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item b,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item b,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item b {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item b,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item b,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item b {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item strong,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item b,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item b,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item b {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item u,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item u,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item u {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
   font-family: 'ProximaNovaLight';
   font-size: 16px;
   letter-spacing: 0;
@@ -11052,54 +11060,54 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item u,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item u,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item u {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item u,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item u,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item u {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item u,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item u,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item u {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u:hover,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item u:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u:hover,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u:hover,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item u:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u:hover,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u:hover,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item u:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u:hover,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u:focus,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item u:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u:focus,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u:focus,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item u:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u:focus,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u:focus,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item u:focus {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u:focus {
   color: #bf9c50;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item mark,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item mark,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item mark,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item mark,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item mark,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item mark {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
   font-family: 'ProximaNovaLight';
   font-size: 16px;
   letter-spacing: 0;
@@ -11110,50 +11118,50 @@ form .form-actions .form-submit .icon {
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item mark {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
     font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item mark {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item mark {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item hr,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item hr,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item hr,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item hr,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item hr,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item hr,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item hr,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item hr {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item hr {
   border: 0;
   border-bottom: 2px solid #bf9c50;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item img {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item img {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -11162,29 +11170,29 @@ form .form-actions .form-submit .icon {
   height: auto;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item embed,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item embed,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item embed,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item embed,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item embed,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item embed,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item video,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item video,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item video,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item video,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item video,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item video,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item video,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item video,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item video,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item audio,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item audio,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item audio,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item audio,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item audio,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item audio,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item iframe,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item iframe,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item iframe,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item iframe,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item iframe,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item iframe {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -11195,46 +11203,47 @@ form .form-actions .form-submit .icon {
   min-height: 350px;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item ol,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-50 .field-item ol,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item ol,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-1 .field-item ol,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item ol,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-text-25-2 .field-item ol {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item ol {
   padding-left: 20px;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image1,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image2 {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 {
   display: block;
+  margin-bottom: 20px;
   width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image1 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image2 .field-item img {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 .field-item img {
   max-width: 100%;
   height: auto;
 }
 @media screen and (min-width: 640px) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image1,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image2 {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 {
     display: inline-block;
     width: 50%;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image3,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image3,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image4 {
-  margin: 0 -7.5px;
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 {
+  margin: 0 -7.5px 20px;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image3 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image3 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-xxs-6-sm-3 .field-name-field-image4 .field-item img {
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 .field-item img {
   max-width: 100%;
   height: auto;
 }
@@ -12150,6 +12159,664 @@ form .form-actions .form-submit .icon {
   min-width: 540px;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-image .field-item img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ *  Image33-Text66 paragraph component
+ * --------------------------------------------------*/
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
+  margin: 10px auto;
+  font-family: 'ProximaNovaLight';
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
+    font-size: 3.90625vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left.switch {
+    left: 50%;
+  }
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right.switch {
+    right: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left.switch {
+    left: 66.666666%;
+  }
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right.switch,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right.switch {
+    right: 33.333333%;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text {
+  margin-bottom: 20px;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
+  margin: 20px auto;
+  font-family: 'ProximaNovaBold';
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-align: center;
+  color: #333333;
+}
+@media screen and (min-width: 36em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
+    font-size: 5.20833333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
+    font-size: 40px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
+  margin: 10px auto;
+  font-family: 'ProximaNovaLight';
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
+    font-size: 3.90625vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
+    font-size: 30px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h4,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h4,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h4,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h5,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h5,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h5,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
+  margin: 5px auto;
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  font-family: 'ProximaNovaBold';
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h4,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h5,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
+  margin: 0 0 10px;
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+  font-family: 'ProximaNovaLight';
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 1.1667em;
+  text-align: left;
+}
+@media screen and (min-width: 42em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+    font-size: 2.08333333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+    text-align: left;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+  font-family: 'ProximaNovaLight';
+  font-size: 50px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
+}
+@media screen and (min-width: 24em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+    font-size: 13.02083333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+    font-size: 100px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+  font-family: 'ProximaNovaBold';
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  color: #333333;
+  text-align: center;
+}
+@media screen and (min-width: 36em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+    font-size: 5.20833333vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+    font-size: 40px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  color: #8e7234;
+  text-decoration: none;
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a:focus {
+  color: #bf9c50;
+  text-decoration: underline;
+  background: none;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item pre,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item pre,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item pre,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item address,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item address,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item address,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item i,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item i,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item i,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  font-family: 'ProximaNovaLight';
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item pre,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item address,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item i,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item strong,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item strong,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  font-family: 'ProximaNovaBold';
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item strong,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  color: #8e7234;
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u:focus {
+  color: #bf9c50;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
+  font-family: 'ProximaNovaLight';
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1.14em;
+  text-align: left;
+  color: #333333;
+  background-color: #ff0;
+}
+@media screen and (min-width: 38.4em) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
+    font-size: 2.60416667vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
+    font-size: 20px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item hr,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item hr,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item hr {
+  border: 0;
+  border-bottom: 2px solid #bf9c50;
+  background: none;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item img {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item embed,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item embed,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item embed,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item video,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item video,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item video,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item audio,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item audio,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item audio,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item ol,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item ol,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item ol {
+  padding-left: 20px;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .table-responsive,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .table-responsive,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .table-responsive {
+  padding: 0 15px;
+  border: 1px solid #ddd;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .table-responsive table,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .table-responsive table,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .table-responsive table {
+  min-width: 540px;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image {
+  margin-bottom: 20px;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image .field-item img {
   max-width: 100%;
   height: auto;
 }

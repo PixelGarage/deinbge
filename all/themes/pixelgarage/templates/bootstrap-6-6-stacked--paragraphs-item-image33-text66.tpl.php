@@ -1,8 +1,9 @@
 <?php
 /**
  * @file
- * Bootstrap 4-4-4 Stacked template for Display Suite.
+ * Bootstrap 6-6 stacked template for Display Suite.
  */
+$switch = $field_switch_fields[0]['value'] == '1' ? 'switch' : '';
 ?>
 
 
@@ -17,15 +18,12 @@
       </<?php print $top_wrapper; ?>>
     </div>
   <?php endif; ?>
-  <?php if ($left || $central || $right): ?>
+  <?php if ($left || $right): ?>
     <div class="row">
-      <<?php print $left_wrapper; ?> class="col-sm-12 col-md-4 <?php print $left_classes; ?>">
+      <<?php print $left_wrapper; ?> class="col-sm-6 col-md-4 left <?php print $switch; print $left_classes; ?>">
         <?php print $left; ?>
       </<?php print $left_wrapper; ?>>
-      <<?php print $central_wrapper; ?> class="col-sm-6 col-md-4 <?php print $central_classes; ?>">
-        <?php print $central; ?>
-      </<?php print $central_wrapper; ?>>
-      <<?php print $right_wrapper; ?> class="col-sm-6 col-md-4 <?php print $right_classes; ?>">
+      <<?php print $right_wrapper; ?> class="col-sm-6 col-md-8 right <?php print $switch; print $right_classes; ?>">
         <?php print $right; ?>
       </<?php print $right_wrapper; ?>>
     </div>

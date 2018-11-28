@@ -5,7 +5,7 @@
  */
 $url1 = $field_link_1[0]['url'];
 $url2 = $field_link_2[0]['url'];
-$button_text = t('Zum den Resultaten');
+$button_text = t('Zu den Resultaten');
 ?>
 
 

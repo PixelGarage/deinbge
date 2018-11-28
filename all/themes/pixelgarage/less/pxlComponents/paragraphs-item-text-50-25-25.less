@@ -40,11 +40,13 @@
       }
     }
 
-    .col-sm-6, .col-xxs-6-sm-3 {
+    .col-sm-6, .col-md-4 {
 
       .field-name-field-text-50,
       .field-name-field-text-25-1,
       .field-name-field-text-25-2 {
+        margin-bottom: 20px;
+
         .field-item {
           #pxl-mixins.wysiwyg-body();
           //#pxl-mixins.hyphenate;
@@ -57,6 +59,7 @@
 
       .field-name-field-image1, .field-name-field-image2 {
         display: block;
+        margin-bottom: 20px;
         width: 100%;
 
         .field-item {
@@ -73,7 +76,7 @@
       }
 
       .field-name-field-image3, .field-name-field-image4 {
-        margin: 0 -@grid-gutter-width/4;
+        margin: 0 -@grid-gutter-width/4 20px;
         .field-item {
           img {
             max-width: 100%;
