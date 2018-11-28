@@ -11213,33 +11213,17 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 {
-  display: block;
-  margin-bottom: 20px;
-  width: 100%;
-}
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2 .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 .field-item img {
-  max-width: 100%;
-  height: auto;
-}
-@media screen and (min-width: 640px) {
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2,
-  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 {
-    display: inline-block;
-    width: 50%;
-  }
-}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 {
   margin: 0 -7.5px 20px;
 }
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image2 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image2 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image3 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3 .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4 .field-item img,
