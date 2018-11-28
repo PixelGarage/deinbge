@@ -5,6 +5,7 @@
  */
 $url1 = $field_link_1[0]['url'];
 $url2 = $field_link_2[0]['url'];
+$button_text = t('Zum den Resultaten');
 ?>
 
 
@@ -19,7 +20,8 @@ $url2 = $field_link_2[0]['url'];
     <<?php print $left_wrapper; ?> class="col-xxs-6-sm-3 col-sm-pull-6 <?php print $left_classes; ?>">
       <div class="col-inner">
         <?php if (!empty($url1)): ?>
-          <a href="<?php print $url1; ?>"><?php print $left; ?></a>
+          <?php print $left; ?>
+          <a class="button-survey" href="<?php print $url1; ?>"><?php print $button_text; ?></a>
         <?php else: ?>
           <?php print $left; ?>
         <?php endif; ?>
@@ -28,7 +30,8 @@ $url2 = $field_link_2[0]['url'];
     <<?php print $right_wrapper; ?> class="col-xxs-6-sm-3 <?php print $right_classes; ?>">
       <div class="col-inner">
         <?php if (!empty($url2)): ?>
-          <a href="<?php print $url2; ?>"><?php print $right; ?></a>
+          <?php print $right; ?>
+          <a class="button-survey" href="<?php print $url2; ?>"><?php print $button_text; ?></a>
         <?php else: ?>
           <?php print $right; ?>
         <?php endif; ?>

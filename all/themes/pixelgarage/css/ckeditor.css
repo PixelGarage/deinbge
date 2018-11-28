@@ -1369,96 +1369,96 @@
 .pxl-title {
   margin: 20px auto;
   font-family: 'ProximaNovaBold';
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 1.2px;
   line-height: 1;
   text-align: center;
   color: #333333;
   color: #000;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 36em) {
   .pxl-title {
-    font-size: 3.90625vw;
+    font-size: 5.20833333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .pxl-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
   .pxl-title {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 .pxl-subtitle {
   font-family: 'ProximaNovaLight';
-  font-size: 18px;
+  font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #000;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 38.4em) {
   .pxl-subtitle {
-    font-size: 3.125vw;
+    font-size: 3.90625vw;
   }
 }
 @media screen and (min-width: 768px) {
   .pxl-subtitle {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 992px) {
   .pxl-subtitle {
-    font-size: 24px;
+    font-size: 30px;
   }
 }
 .pxl-normal {
   font-family: 'ProximaNovaLight';
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #000;
 }
-@media screen and (min-width: 42.35294117647059em) {
+@media screen and (min-width: 38.4em) {
   .pxl-normal {
-    font-size: 2.21354167vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .pxl-normal {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .pxl-normal {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 41.142857142857146em) {
+@media screen and (min-width: 42em) {
   .pxl-subtext {
-    font-size: 1.82291667vw;
+    font-size: 2.08333333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .pxl-subtext {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 992px) {
   .pxl-subtext {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1468,25 +1468,25 @@
 }
 .pxl-quote {
   font-family: 'ProximaNovaBold';
-  font-size: 22px;
+  font-size: 30px;
   letter-spacing: 1.2px;
   line-height: 1;
   color: #333333;
   text-align: center;
   color: #000;
 }
-@media screen and (min-width: 35.2em) {
+@media screen and (min-width: 36em) {
   .pxl-quote {
-    font-size: 3.90625vw;
+    font-size: 5.20833333vw;
   }
 }
 @media screen and (min-width: 768px) {
   .pxl-quote {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
   .pxl-quote {
-    font-size: 30px;
+    font-size: 40px;
   }
 }

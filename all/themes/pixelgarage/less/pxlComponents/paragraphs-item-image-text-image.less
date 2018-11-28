@@ -56,10 +56,13 @@
 
       .col-inner {
         padding: 10px;
+        text-align: center;
         #pxl-mixins.border-radius(6px);
-        #pxl-mixins.box-shadow(@pxl-box-shadow);
+        border: 1px solid #92BDC3;
+        //#pxl-mixins.box-shadow(@pxl-box-shadow);
 
         .field-name-field-image1, .field-name-field-image2 {
+          display: none;
           .field-item {
             img {
               max-width: 100%;
@@ -74,7 +77,27 @@
           .field-item {
             #pxl-mixins.text();
             font-family: @pxl-text-font-bold;
+
             text-align: center;
+          }
+        }
+
+        a.button-survey {
+          display: inline-block;
+          padding: 8px 20px 10px;
+          font-family: @pxl-text-font-bold; //font type und size geändert
+          #pxl-mixins.font-size-responsive(@resp-button-size-max, @resp-button-size-med, @resp-button-size-min);
+          line-height: 1;
+          color: #fff;
+          #pxl-mixins.border-radius(3px);
+          border: none;
+          background-color: @pxl-action-button;
+          opacity: 1.0;
+          text-decoration: none;
+
+          &:hover, &.active {
+            text-decoration: none;
+            opacity: 0.7;
           }
         }
       }
