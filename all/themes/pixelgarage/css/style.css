@@ -8944,21 +8944,21 @@ form.confirmation {
 }
 form.confirmation p {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   form.confirmation p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   form.confirmation p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   form.confirmation p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 form.confirmation .form-actions button.form-submit {
@@ -9801,12 +9801,12 @@ form .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
@@ -9828,12 +9828,12 @@ form .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
@@ -9859,12 +9859,12 @@ form .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
@@ -9924,12 +9924,12 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
@@ -9954,38 +9954,38 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -9997,45 +9997,45 @@ form .form-actions .form-submit .icon {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10094,7 +10094,7 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -10102,19 +10102,19 @@ form .form-actions .form-submit .icon {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a:hover,
@@ -10127,19 +10127,19 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10147,7 +10147,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -10155,59 +10155,59 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item u:hover,
@@ -10216,26 +10216,26 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item hr {
@@ -10265,14 +10265,6 @@ form .form-actions .form-submit .icon {
   min-height: 350px;
 }
 @media screen and (min-width: 768px) {
-  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 24px;
-    -moz-column-gap: 24px;
-    column-gap: 24px;
-  }
 }
 /*
  *  Text-50-25-25 paragraph component
@@ -10297,12 +10289,12 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-12 .field-name-field-title .field-item {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-12 .field-name-field-title .field-item {
@@ -10432,12 +10424,12 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
@@ -10507,14 +10499,14 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h4,
@@ -10533,7 +10525,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10555,7 +10547,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -10577,7 +10569,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item h6,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item p,
@@ -10588,7 +10580,7 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -10600,14 +10592,14 @@ form .form-actions .form-submit .icon {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10617,7 +10609,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -10627,7 +10619,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item p,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
@@ -10643,12 +10635,12 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item small,
@@ -10661,7 +10653,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10677,7 +10669,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -10693,7 +10685,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10807,7 +10799,7 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -10815,14 +10807,14 @@ form .form-actions .form-submit .icon {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10832,7 +10824,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -10842,7 +10834,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
@@ -10885,14 +10877,14 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item pre,
@@ -10917,7 +10909,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10945,7 +10937,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -10973,7 +10965,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item em,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
@@ -10989,14 +10981,14 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item strong,
@@ -11009,7 +11001,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11025,7 +11017,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11041,7 +11033,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item b,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u,
@@ -11051,21 +11043,21 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11075,7 +11067,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11085,7 +11077,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item u,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item u:hover,
@@ -11109,21 +11101,21 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11133,7 +11125,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11143,7 +11135,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item mark,
   .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item hr,
@@ -11310,12 +11302,12 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
@@ -11340,38 +11332,38 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -11383,45 +11375,45 @@ form .form-actions .form-submit .icon {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11480,7 +11472,7 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -11488,19 +11480,19 @@ form .form-actions .form-submit .icon {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
@@ -11513,19 +11505,19 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11533,7 +11525,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -11541,59 +11533,59 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u:hover,
@@ -11602,26 +11594,26 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item hr {
@@ -11696,7 +11688,7 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -11704,22 +11696,22 @@ form .form-actions .form-submit .icon {
   font-family: 'ProximaNovaBold';
   text-align: center;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
   .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner a.button-survey {
@@ -11762,12 +11754,12 @@ form .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-12 .field-name-field-title .field-item {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-12 .field-name-field-title .field-item {
@@ -11827,12 +11819,12 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
@@ -11857,38 +11849,38 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -11900,45 +11892,45 @@ form .form-actions .form-submit .icon {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11997,7 +11989,7 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -12005,19 +11997,19 @@ form .form-actions .form-submit .icon {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
@@ -12030,19 +12022,19 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item pre,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12050,7 +12042,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -12058,59 +12050,59 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item u:hover,
@@ -12119,26 +12111,26 @@ form .form-actions .form-submit .icon {
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item hr {
@@ -12186,12 +12178,12 @@ form .form-actions .form-submit .icon {
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
@@ -12300,12 +12292,12 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
@@ -12348,14 +12340,14 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h4,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h4,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h4,
@@ -12365,7 +12357,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12378,7 +12370,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -12391,7 +12383,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
@@ -12399,7 +12391,7 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -12411,25 +12403,25 @@ form .form-actions .form-submit .icon {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
@@ -12439,19 +12431,19 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12461,7 +12453,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -12471,7 +12463,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12552,7 +12544,7 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -12560,25 +12552,25 @@ form .form-actions .form-submit .icon {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a:hover,
@@ -12603,14 +12595,14 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item pre,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item pre,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item pre,
@@ -12623,7 +12615,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12639,7 +12631,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -12655,7 +12647,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
@@ -12665,21 +12657,21 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item strong,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12689,7 +12681,7 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -12699,39 +12691,39 @@ form .form-actions .form-submit .icon {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item u,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item u:hover,
@@ -12746,32 +12738,32 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item hr,
@@ -13135,17 +13127,17 @@ body.front #pxlraffle-fundraising .current-raffle .inner-current-raffle .actions
 }
 #pxlraffle-next-raffle .next-raffle .next-raffle-slogan {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   #pxlraffle-next-raffle .next-raffle .next-raffle-slogan {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   #pxlraffle-next-raffle .next-raffle .next-raffle-slogan {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -13697,12 +13689,12 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-block .row .col-sm-12 .field-name-body h3,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-block .row .col-sm-12 .field-name-body h3,
@@ -13727,38 +13719,38 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-block .row .col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body h4,
   .node.node-block .row .col-sm-12 .field-name-body h5,
   .node.node-block .row .col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body h4,
   .node.node-block .row .col-sm-12 .field-name-body h5,
   .node.node-block .row .col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body h4,
   .node.node-block .row .col-sm-12 .field-name-body h5,
   .node.node-block .row .col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -13770,45 +13762,45 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body small,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-block .row .col-sm-12 .field-name-body small,
   .node.node-block .row .col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body small,
   .node.node-block .row .col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body small,
   .node.node-block .row .col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -13867,7 +13859,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node.node-block .row .col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -13875,19 +13867,19 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body a:hover,
@@ -13900,19 +13892,19 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-block .row .col-sm-12 .field-name-body address,
 .node.node-block .row .col-sm-12 .field-name-body i,
 .node.node-block .row .col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body pre,
   .node.node-block .row .col-sm-12 .field-name-body address,
   .node.node-block .row .col-sm-12 .field-name-body i,
   .node.node-block .row .col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -13920,7 +13912,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node.node-block .row .col-sm-12 .field-name-body address,
   .node.node-block .row .col-sm-12 .field-name-body i,
   .node.node-block .row .col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -13928,59 +13920,59 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node.node-block .row .col-sm-12 .field-name-body address,
   .node.node-block .row .col-sm-12 .field-name-body i,
   .node.node-block .row .col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body strong,
 .node.node-block .row .col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body strong,
   .node.node-block .row .col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body strong,
   .node.node-block .row .col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body strong,
   .node.node-block .row .col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body u:hover,
@@ -13989,26 +13981,26 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node.node-block .row .col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-block .row .col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-block .row .col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-block .row .col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body hr {
@@ -14038,14 +14030,6 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   min-height: 350px;
 }
 @media screen and (min-width: 768px) {
-  .node.node-block .row .col-sm-12 .field-name-body {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 24px;
-    -moz-column-gap: 24px;
-    column-gap: 24px;
-  }
 }
 .node.node-block .row .col-sm-12 a.block-button {
   display: block;
@@ -14156,12 +14140,12 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-intro .row div.col-sm-12 .field-name-body h3,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-intro .row div.col-sm-12 .field-name-body h3,
@@ -14186,38 +14170,38 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-intro .row div.col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body h4,
   .node.node-intro .row div.col-sm-12 .field-name-body h5,
   .node.node-intro .row div.col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body h4,
   .node.node-intro .row div.col-sm-12 .field-name-body h5,
   .node.node-intro .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body h4,
   .node.node-intro .row div.col-sm-12 .field-name-body h5,
   .node.node-intro .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -14229,45 +14213,45 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body small,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-intro .row div.col-sm-12 .field-name-body small,
   .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body small,
   .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body small,
   .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -14326,7 +14310,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node.node-intro .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -14334,19 +14318,19 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body a:hover,
@@ -14359,19 +14343,19 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node.node-intro .row div.col-sm-12 .field-name-body address,
 .node.node-intro .row div.col-sm-12 .field-name-body i,
 .node.node-intro .row div.col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body pre,
   .node.node-intro .row div.col-sm-12 .field-name-body address,
   .node.node-intro .row div.col-sm-12 .field-name-body i,
   .node.node-intro .row div.col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -14379,7 +14363,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node.node-intro .row div.col-sm-12 .field-name-body address,
   .node.node-intro .row div.col-sm-12 .field-name-body i,
   .node.node-intro .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -14387,59 +14371,59 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node.node-intro .row div.col-sm-12 .field-name-body address,
   .node.node-intro .row div.col-sm-12 .field-name-body i,
   .node.node-intro .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body strong,
 .node.node-intro .row div.col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body strong,
   .node.node-intro .row div.col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body strong,
   .node.node-intro .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body strong,
   .node.node-intro .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body u:hover,
@@ -14448,26 +14432,26 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node.node-intro .row div.col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-intro .row div.col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-intro .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-intro .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body hr {
@@ -14574,12 +14558,12 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node-page > .row > div.col-sm-12 > .field-name-body h3,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node-page > .row > div.col-sm-12 > .field-name-body h3,
@@ -14604,38 +14588,38 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node-page > .row > div.col-sm-12 > .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body h4,
   .node-page > .row > div.col-sm-12 > .field-name-body h5,
   .node-page > .row > div.col-sm-12 > .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body h4,
   .node-page > .row > div.col-sm-12 > .field-name-body h5,
   .node-page > .row > div.col-sm-12 > .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body h4,
   .node-page > .row > div.col-sm-12 > .field-name-body h5,
   .node-page > .row > div.col-sm-12 > .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -14647,45 +14631,45 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body small,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node-page > .row > div.col-sm-12 > .field-name-body small,
   .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body small,
   .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body small,
   .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -14744,7 +14728,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node-page > .row > div.col-sm-12 > .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -14752,19 +14736,19 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body a:hover,
@@ -14777,19 +14761,19 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 .node-page > .row > div.col-sm-12 > .field-name-body address,
 .node-page > .row > div.col-sm-12 > .field-name-body i,
 .node-page > .row > div.col-sm-12 > .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body pre,
   .node-page > .row > div.col-sm-12 > .field-name-body address,
   .node-page > .row > div.col-sm-12 > .field-name-body i,
   .node-page > .row > div.col-sm-12 > .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -14797,7 +14781,7 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node-page > .row > div.col-sm-12 > .field-name-body address,
   .node-page > .row > div.col-sm-12 > .field-name-body i,
   .node-page > .row > div.col-sm-12 > .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -14805,59 +14789,59 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   .node-page > .row > div.col-sm-12 > .field-name-body address,
   .node-page > .row > div.col-sm-12 > .field-name-body i,
   .node-page > .row > div.col-sm-12 > .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body strong,
 .node-page > .row > div.col-sm-12 > .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body strong,
   .node-page > .row > div.col-sm-12 > .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body strong,
   .node-page > .row > div.col-sm-12 > .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body strong,
   .node-page > .row > div.col-sm-12 > .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body u:hover,
@@ -14866,26 +14850,26 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
 }
 .node-page > .row > div.col-sm-12 > .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node-page > .row > div.col-sm-12 > .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node-page > .row > div.col-sm-12 > .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body hr {
@@ -14915,14 +14899,6 @@ body.front #pxlraffle-subscriptions .subscriptions .actions .btn.link-subscribe:
   min-height: 350px;
 }
 @media screen and (min-width: 768px) {
-  .node-page > .row > div.col-sm-12 > .field-name-body {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 24px;
-    -moz-column-gap: 24px;
-    column-gap: 24px;
-  }
 }
 .node-page > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item:not(:last-child) {
   margin-bottom: 30px;
@@ -15252,19 +15228,19 @@ form.webform-client-form .webform-component.webform-component-markup h2 {
 }
 form.webform-client-form .webform-component.webform-component-markup p {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   text-align: left;
   color: #333333;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   form.webform-client-form .webform-component.webform-component-markup p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   form.webform-client-form .webform-component.webform-component-markup p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -15354,12 +15330,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
   margin: 0 auto 20px;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
@@ -15414,12 +15390,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
@@ -15444,38 +15420,38 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -15487,45 +15463,45 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body small,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -15584,7 +15560,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -15592,19 +15568,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a:hover,
@@ -15617,19 +15593,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body i,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body i,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -15637,7 +15613,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body i,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -15645,59 +15621,59 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body address,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body i,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body u:hover,
@@ -15706,26 +15682,26 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body hr {
@@ -15967,12 +15943,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtitle,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h3,
@@ -16006,21 +15982,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h4,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16030,7 +16006,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -16040,14 +16016,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h5,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body h6,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -16059,22 +16035,22 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body small,
@@ -16082,17 +16058,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16100,7 +16076,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -16108,7 +16084,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body small,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16178,7 +16154,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -16186,22 +16162,22 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
@@ -16220,14 +16196,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body i,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body em,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body pre,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body address,
@@ -16236,7 +16212,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body i,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body em,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16248,7 +16224,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body i,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body em,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -16260,7 +16236,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body i,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body em,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong,
@@ -16268,19 +16244,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body b,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body b,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16288,7 +16264,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body b,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -16296,35 +16272,35 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body strong,
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body b,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body u,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body u,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body u,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body u,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body u:hover,
@@ -16336,29 +16312,29 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body mark,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body mark,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body mark,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body mark,
   .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body hr,
@@ -16426,13 +16402,13 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
   font-family: 'ProximaNovaRegular';
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
 }
-@media screen and (min-width: 59.07692307692308em) {
+@media screen and (min-width: 66.46153846153847em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-decoration .field-item {
     font-size: 1.69270833vw;
   }
@@ -16471,12 +16447,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
   margin: 0 auto 20px;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
@@ -16531,12 +16507,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
@@ -16561,38 +16537,38 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -16604,45 +16580,45 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body small,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16701,7 +16677,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -16709,19 +16685,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a:hover,
@@ -16734,19 +16710,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body i,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body i,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -16754,7 +16730,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body i,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -16762,59 +16738,59 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body address,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body i,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body u:hover,
@@ -16823,26 +16799,26 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body hr {
@@ -17011,12 +16987,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtitle,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h3,
@@ -17050,21 +17026,21 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h4,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17074,7 +17050,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -17084,14 +17060,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h5,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body h6,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -17103,22 +17079,22 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body p,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body small,
@@ -17126,17 +17102,17 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17144,7 +17120,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -17152,7 +17128,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body small,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtext,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17222,7 +17198,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -17230,22 +17206,22 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
@@ -17264,14 +17240,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body i,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body em,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body pre,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body address,
@@ -17280,7 +17256,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body i,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body em,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17292,7 +17268,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body i,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body em,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -17304,7 +17280,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body i,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body em,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong,
@@ -17312,19 +17288,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body b,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body b,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17332,7 +17308,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body b,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -17340,35 +17316,35 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body strong,
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body b,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body u,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body u,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body u,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body u,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body u:hover,
@@ -17380,29 +17356,29 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body mark,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body mark,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body mark,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body mark,
   .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body hr,
@@ -17500,7 +17476,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
   font-family: 'ProximaNovaBold';
-  font-size: 16px;
+  font-size: 18px;
   word-break: break-word;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -17510,14 +17486,14 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   text-align: center;
   color: #fff;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-quote .row div.col-sm-12 .field-name-body .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -17643,12 +17619,12 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body h3,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-spenden .row .col-sm-12 .field-name-body h3,
@@ -17673,38 +17649,38 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body h4,
   .node.node-spenden .row .col-sm-12 .field-name-body h5,
   .node.node-spenden .row .col-sm-12 .field-name-body h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body h4,
   .node.node-spenden .row .col-sm-12 .field-name-body h5,
   .node.node-spenden .row .col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body h4,
   .node.node-spenden .row .col-sm-12 .field-name-body h5,
   .node.node-spenden .row .col-sm-12 .field-name-body h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -17716,45 +17692,45 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body small,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-spenden .row .col-sm-12 .field-name-body small,
   .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body small,
   .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body small,
   .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17813,7 +17789,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -17821,19 +17797,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a:hover,
@@ -17846,19 +17822,19 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 .node.node-spenden .row .col-sm-12 .field-name-body address,
 .node.node-spenden .row .col-sm-12 .field-name-body i,
 .node.node-spenden .row .col-sm-12 .field-name-body em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body pre,
   .node.node-spenden .row .col-sm-12 .field-name-body address,
   .node.node-spenden .row .col-sm-12 .field-name-body i,
   .node.node-spenden .row .col-sm-12 .field-name-body em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -17866,7 +17842,7 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-spenden .row .col-sm-12 .field-name-body address,
   .node.node-spenden .row .col-sm-12 .field-name-body i,
   .node.node-spenden .row .col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -17874,59 +17850,59 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
   .node.node-spenden .row .col-sm-12 .field-name-body address,
   .node.node-spenden .row .col-sm-12 .field-name-body i,
   .node.node-spenden .row .col-sm-12 .field-name-body em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body strong,
 .node.node-spenden .row .col-sm-12 .field-name-body b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body strong,
   .node.node-spenden .row .col-sm-12 .field-name-body b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body strong,
   .node.node-spenden .row .col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body strong,
   .node.node-spenden .row .col-sm-12 .field-name-body b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body u:hover,
@@ -17935,26 +17911,26 @@ form.webform-client-form div.form-actions button.webform-submit:focus {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-spenden .row .col-sm-12 .field-name-body mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-spenden .row .col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-spenden .row .col-sm-12 .field-name-body mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body hr {
@@ -18275,12 +18251,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h3,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h3,
@@ -18305,38 +18281,38 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h4,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h5,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h4,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h5,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h4,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h5,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -18348,45 +18324,45 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item small,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item small,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item small,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item small,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -18445,7 +18421,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -18453,19 +18429,19 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a:hover,
@@ -18478,19 +18454,19 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item i,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item pre,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item i,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -18498,7 +18474,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item i,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -18506,59 +18482,59 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item address,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item i,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item strong,
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item u:hover,
@@ -18567,26 +18543,26 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item hr {
@@ -18630,7 +18606,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   display: inline-block;
   margin: 20px 0;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -18638,19 +18614,19 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   font-family: 'ProximaNovaBold';
   text-transform: uppercase;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .node.node-teammember .row div.col-sm-12 .field-name-title h2 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .node.node-teammember .row div.col-sm-12 .field-name-title h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .node.node-teammember .row div.col-sm-12 .field-name-title h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .node.node-teammember .row div.col-sm-12 .field-name-field-image {
@@ -18670,10 +18646,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-teammember .row div.col-sm-12 .field-name-field-t-tigkeiten .field-item {
   display: inline-block;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   color: #333333;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 54em) {
   .node.node-teammember .row div.col-sm-12 .field-name-field-t-tigkeiten .field-item {
     font-size: 2.08333333vw;
   }
@@ -18694,9 +18670,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item {
   display: inline-block;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 54em) {
   .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item {
     font-size: 2.08333333vw;
   }
@@ -19432,12 +19408,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-header h3,
 .view.view-donations .view-header .pxl-subtitle {
   margin: 10px auto;
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
-  color: #333333;
+  color: #bf9c50;
 }
 @media screen and (min-width: 38.4em) {
   .view.view-donations .view-header h3,
@@ -19462,38 +19438,38 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-header h6 {
   margin: 5px auto;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header h4,
   .view.view-donations .view-header h5,
   .view.view-donations .view-header h6 {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header h4,
   .view.view-donations .view-header h5,
   .view.view-donations .view-header h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header h4,
   .view.view-donations .view-header h5,
   .view.view-donations .view-header h6 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header p {
   margin: 0 0 10px;
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -19505,45 +19481,45 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   -o-hyphens: auto;
   hyphens: auto;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header small,
 .view.view-donations .view-header .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: 1.1667em;
   text-align: left;
 }
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 38.4em) {
   .view.view-donations .view-header small,
   .view.view-donations .view-header .pxl-subtext {
-    font-size: 2.08333333vw;
+    font-size: 2.60416667vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header small,
   .view.view-donations .view-header .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header small,
   .view.view-donations .view-header .pxl-subtext {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -19602,7 +19578,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .view.view-donations .view-header a {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
@@ -19610,19 +19586,19 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #8e7234;
   text-decoration: none;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header a {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header a {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header a:hover,
@@ -19635,19 +19611,19 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .view.view-donations .view-header address,
 .view.view-donations .view-header i,
 .view.view-donations .view-header em {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaLight';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header pre,
   .view.view-donations .view-header address,
   .view.view-donations .view-header i,
   .view.view-donations .view-header em {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
@@ -19655,7 +19631,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .view.view-donations .view-header address,
   .view.view-donations .view-header i,
   .view.view-donations .view-header em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -19663,59 +19639,59 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .view.view-donations .view-header address,
   .view.view-donations .view-header i,
   .view.view-donations .view-header em {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header strong,
 .view.view-donations .view-header b {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header strong,
   .view.view-donations .view-header b {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header strong,
   .view.view-donations .view-header b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header strong,
   .view.view-donations .view-header b {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header u {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   color: #8e7234;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header u {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header u {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header u:hover,
@@ -19724,26 +19700,26 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .view.view-donations .view-header mark {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   line-height: 1.14em;
   text-align: left;
   color: #333333;
   background-color: #ff0;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   .view.view-donations .view-header mark {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   .view.view-donations .view-header mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
   .view.view-donations .view-header mark {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 .view.view-donations .view-header hr {
@@ -20486,20 +20462,20 @@ footer.footer .container .region-footer .node.node-footer .row .col-sm-4 {
 footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
 footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   text-align: center;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
   footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-medienkontakt .field-item p,
   footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-body .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -20533,18 +20509,18 @@ footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-
 }
 footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   text-align: center;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 36em) {
   footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
-    font-size: 2.60416667vw;
+    font-size: 3.125vw;
   }
 }
 @media screen and (min-width: 768px) {
   footer.footer .container .region-footer .node.node-footer .row .col-sm-4 .field-name-field-impressum .field-item p {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 992px) {
