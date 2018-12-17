@@ -11261,6 +11261,47 @@ form .form-actions .form-submit .icon {
 /*
  *  Image-Text-image paragraph component
  * --------------------------------------------------*/
+.entity-paragraphs-item.paragraphs-item-image-text-image.full-width {
+  margin: 0 -15px;
+  background-color: #bf9c50;
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image-text-image.full-width {
+    margin: 0 calc((750px - 30px - 100vw)/2);
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image-text-image.full-width {
+    margin: 0 calc((950px - 30px - 100vw)/2);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .entity-paragraphs-item.paragraphs-item-image-text-image.full-width {
+    margin: 0 calc((1210px - 30px - 100vw)/2);
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image-text-image.full-width .row {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image-text-image.full-width .row {
+    padding: 0 24px;
+    width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .entity-paragraphs-item.paragraphs-item-image-text-image.full-width .row {
+    padding: 0 36px;
+    width: 992px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .entity-paragraphs-item.paragraphs-item-image-text-image.full-width .row {
+    padding: 0 50px;
+    width: 1280px;
+  }
+}
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 {
   margin: 20px 0;
 }
@@ -11642,6 +11683,9 @@ form .form-actions .form-submit .icon {
   height: auto;
   min-height: 350px;
 }
+.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
+  color: #efefef;
+}
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
   padding-left: 20px;
 }
@@ -11667,10 +11711,6 @@ form .form-actions .form-submit .icon {
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner {
   padding: 10px;
   text-align: center;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  border: 1px solid #92BDC3;
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image1,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image2 {
@@ -11694,6 +11734,7 @@ form .form-actions .form-submit .icon {
   text-align: left;
   color: #333333;
   font-family: 'ProximaNovaBold';
+  color: #efefef;
   text-align: center;
 }
 @media screen and (min-width: 36em) {
@@ -11720,12 +11761,12 @@ form .form-actions .form-submit .icon {
   font-family: 'ProximaNovaBold';
   font-size: 20px;
   line-height: 1;
-  color: #fff;
+  color: #bf9c50;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   border: none;
-  background-color: #92BDC3;
+  background-color: #efefef;
   opacity: 1.0;
   text-decoration: none;
 }

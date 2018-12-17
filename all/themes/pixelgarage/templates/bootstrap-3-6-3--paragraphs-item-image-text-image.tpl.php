@@ -9,7 +9,7 @@ $button_text = t('Zu den Resultaten');
 ?>
 
 
-<<?php print $layout_wrapper; print $layout_attributes; ?> class="<?php print $classes; ?>">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="full-width <?php print $classes; ?>">
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
