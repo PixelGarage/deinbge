@@ -29,38 +29,25 @@ body.navbar-is-fixed-top {
   }
 }
 
-
 header#navbar {
   border-bottom: none;
   background: white none;
 
-  .container {
-    padding: 12px @grid-gutter-width / 2;
-    width: 100%;
-    overflow: hidden;
-
-    @media @tablet {
-      padding: 25px @grid-gutter-width / 2;
-      width: @screen-sm-min;
-    }
-    @media @normal {
-      width: @screen-md-min;
-    }
-    @media @wide {
-      width: @screen-lg-min;
-    }
+  .container, .container-fluid {
+    // set container
+    .container-def();
 
     .navbar-header {
       // header (branding)
+      position: relative;
       margin: 0;
 
       a.logo {
         display: inline-block;
         position: relative;
-        left: -40px;
+        left: -50px;
         margin: 0;
         padding: 0;
-        width: 70%;
         z-index: 10;
 
         img {
@@ -69,13 +56,11 @@ header#navbar {
         }
 
         @media @tablet {
-          left: -50px;
-
+          left: 0;
           img {
             max-height: 70px;
           }
         }
-
         @media @normal {
           width: 100%;
           left: 0;
@@ -85,20 +70,15 @@ header#navbar {
 
       a.navbar-brand {
         display: none;
-        margin: 0;
-        padding: 0;
-        max-width: 350px;
-        height: auto;
-        font-family: @pxl-text-font-bold;
-        font-size: @font-size-h1;
-        color: @gray-darker;
-        line-height: 1;
       }
 
       .navbar-toggle {
         // navbar toggle with burger
+        #pxl-mixins.center-vertically(absolute);
+        right: 0;
         margin: 0;
-        padding: 7px 10px;
+        padding: 0;
+        height: 23px;
         border: none;
         background: none;
 
@@ -215,7 +195,6 @@ header#navbar {
           // user login menu
           .block-system {
             display: block;
-            margin-right: 20px;
 
             ul.menu {
               #pxl-mixins.no-list-style;
@@ -280,7 +259,6 @@ header#navbar {
 
             .block-system {
               display: inline-block;
-              margin-right: 20px;
               ul.menu {
                 li {
                   display: inline-block;

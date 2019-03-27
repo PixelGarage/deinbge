@@ -20,8 +20,10 @@
     margin: 0;
 
     .col-sm-12 {
+      text-align: center;
+
       .field-name-field-image {
-        margin: 20px auto 30px;
+        margin: @field-margin;
 
         .field-item {
           img {
@@ -33,7 +35,7 @@
       }
 
       .field-name-field-video {
-        margin: 20px auto 30px;
+        margin: @field-margin;
         width: 100%;
         max-width: 720px;
 
@@ -54,7 +56,7 @@
       }
 
       .field-name-body {
-        margin: 60px auto 30px;
+        margin: @field-margin;
         #pxl-mixins.wysiwyg-body();
         //#pxl-mixins.hyphenate;
 
@@ -64,31 +66,7 @@
       }
 
       a.block-button {
-        display: block;
-        position: relative;
-        margin: 0 auto;
-        padding: @pxl-container-padding;
-        width: 100%;
-        max-width: 300px;
-        min-width: (@pxl-icon-width + 2*@pxl-container-padding);
-        text-decoration: none;
-        #pxl-mixins.border-radius(5px);
-        background-color: @pxl-action-button;
-        opacity: 1.0;
-
-        &:hover {
-          text-decoration: none;
-          opacity: 0.7;
-        }
-
-        .block-button-title {
-          display: block;
-          font-family: @pxl-text-font-bold;
-          font-size: 24px;
-          text-align: center;
-          color: #fff;
-        }
-
+        #pxl-mixins.button-main();
       }
     }
   }

@@ -19,26 +19,37 @@
 .pxl-title {
   margin: 20px auto;
   #pxl-mixins.title();
-  color: @gray-base;
+  color: @gray-darker;
 }
 
 .pxl-subtitle {
   #pxl-mixins.subtitle();
-  color: @gray-base;
+  color: @gray-darker;
 }
 
-.pxl-normal {
+.pxl-headline {
   #pxl-mixins.text();
-  color: @gray-base;
+  font-weight: bold;
+  color: @gray-darker;
 }
 
-.pxl-subtext {
+.pxl-leadtext {
+  #pxl-mixins.leadtext();
+  color: @gray-darker;
+}
+
+.pxl-normal, .pxl-text {
+  #pxl-mixins.text();
+  color: @gray-darker;
+}
+
+small, .pxl-subtext {
   #pxl-mixins.subtext();
+  color: @gray-darker;
 }
 
-.pxl-quote {
-  #pxl-mixins.title();
-  text-align: center;
-  color: @gray-base;
+blockquote, .pxl-quote {
+  #pxl-mixins.quote();
+  color: @gray-darker;
 }
 

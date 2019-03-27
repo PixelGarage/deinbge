@@ -10,7 +10,23 @@
 if (typeof(CKEDITOR) !== 'undefined') {
   CKEDITOR.addStylesSet('drupal',
     [
-      /* Kulturfolger styles */
+      /* Block Styles */
+
+      // These styles are already available in the "Format" drop-down list, so they are
+      // not needed here by default. You may enable them to avoid placing the
+      // "Format" drop-down list in the toolbar, maintaining the same features.
+      {name: 'Title', element: 'h2', attributes: {'class': 'pxl-title'}},
+      {name: 'Subtitle', element: 'h3', attributes: {'class': 'pxl-subtitle'}},
+      {name: 'Headline', element: 'h4', attributes: {'class': 'pxl-headline', 'style': 'font-weight: bold'}},
+
+      /* Custom styles */
+      {
+        name: 'Leadtext',
+        element: 'p',
+        attributes: {
+          'class': 'pxl-leadtext'
+        }
+      },
       {
         name: 'Normal',
         element: 'p',
@@ -26,45 +42,26 @@ if (typeof(CKEDITOR) !== 'undefined') {
         }
       },
       {
-        name: 'Title',
-        element: 'p',
-        attributes: {
-          'class': 'pxl-title'
-        }
-      },
-      {
-        name: 'Subtitle',
-        element: 'p',
-        attributes: {
-          'class': 'pxl-subtitle'
-        }
-      },
-      {
         name: 'Subtext',
         element: 'p',
         attributes: {
           'class': 'pxl-subtext'
         }
       },
-
-      /* Block Styles */
-
-      // These styles are already available in the "Format" drop-down list, so they are
-      // not needed here by default. You may enable them to avoid placing the
-      // "Format" drop-down list in the toolbar, maintaining the same features.
-      {name: 'Heading 1', element: 'h1', attributes: {'class': 'pxl-title'}},
-      {name: 'Heading 2', element: 'h2', attributes: {'class': 'pxl-title'}},
-      {name: 'Heading 3', element: 'h3', attributes: {'class': 'pxl-subtitle'}},
-      {name: 'Heading 4', element: 'h4', attributes: {'class': 'pxl-text', 'style': 'font-weight: bold'}},
-      {name: 'Heading 5', element: 'h5', attributes: {'class': 'pxl-text', 'style': 'font-weight: bold'}},
-      {name: 'Heading 6', element: 'h6', attributes: {'class': 'pxl-text', 'style': 'font-weight: bold'}},
-      {name: 'Preformatted Text', element: 'pre', attributes: {'class': 'pxl-text', 'style': 'font-style: italic'}},
-      {name: 'Address', element: 'address'},
+      {
+        name: 'Quote',
+        element: 'div',
+        attributes: {
+          'class': 'pxl-quote'
+        }
+      },
+      {name: 'Emphasis', element: 'em', attributes: {'class': 'pxl-text', 'style': 'font-style: italic'}}
 
       /* Inline Styles
 
        // These are core styles available as toolbar buttons. You may opt enabling
        // some of them in the "Styles" drop-down list, removing them from the toolbar.
+       {name: 'Address', element: 'address'},
        { name : 'Strong'			, element : 'strong', overrides : 'b' },
        { name : 'Emphasis'			, element : 'em'	, overrides : 'i' },
        { name : 'Underline'		, element : 'u' },
@@ -93,7 +90,7 @@ if (typeof(CKEDITOR) !== 'undefined') {
        { name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
        { name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
        */
-      /* Object Styles */
+      /* Object Styles
       {
         name: 'Image on Left',
         element: 'img',
@@ -103,7 +100,6 @@ if (typeof(CKEDITOR) !== 'undefined') {
           'align': 'left'
         }
       },
-
       {
         name: 'Image on Right',
         element: 'img',
@@ -112,6 +108,7 @@ if (typeof(CKEDITOR) !== 'undefined') {
           'border': '2',
           'align': 'right'
         }
-      }
+      },
+      */
     ]);
 }

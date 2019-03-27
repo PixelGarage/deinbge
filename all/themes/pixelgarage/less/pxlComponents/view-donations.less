@@ -5,7 +5,7 @@
 // Variables
 // -------------------------
 @tab-button-color: #fff;
-@tab-button-radius: 4px;
+@tab-button-radius: 0;
 
 @tab-height: 44px;
 
@@ -97,13 +97,13 @@
 
             .registration-message {
               display: inline-block;
-              margin: 10px auto 30px;
+              margin: @field-margin;
               padding: 30px 10px;
               font-family: @pxl-text-font;
               text-align: center;
               //border: 1px solid @pxl-color-border-light;
               #pxl-mixins.border-radius(@tab-button-radius);
-              //background-color: @pxl-bg-panel-item;
+              //background-color: @pxl-color-panel-item-bg;
 
               .registration-hint {
                 font-size: @font-size-base;

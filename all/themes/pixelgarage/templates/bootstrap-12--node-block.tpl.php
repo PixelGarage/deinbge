@@ -30,7 +30,7 @@
       </div>
       <?php if (isset($content['field_link'])): ?>
         <!-- print button -->
-        <a class="block-button" href="<?php print $field_link[0]['url']; ?>" target="_blank">
+        <a class="block-button" href="<?php print $field_link[0]['url']; ?>">
           <div class="block-button-title"><?php print $field_link[0]['title']; ?></div>
         </a>
       <?php endif; ?>

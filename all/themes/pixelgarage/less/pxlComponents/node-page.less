@@ -4,8 +4,8 @@
 
 // Variables
 // -------------------------
-@paragraph-margin-bottom: 30px;
-@paragraph-margin-bottom-large: 50px;
+@paragraph-margin-bottom: 64px;
+@paragraph-margin-bottom-large: 128px;
 
 
 // Mixins
@@ -23,17 +23,16 @@
 
       >.field-name-title {
         h2 {
-          margin: 30px auto;
+          margin: @field-title-margin;
           #pxl-mixins.title();
-          text-transform: uppercase;
         }
       }
 
       >.field-name-body {
-        margin: 0 0 50px;
+        margin: @field-margin;
         .jumbotron {
           h2 {
-            margin: 0 auto 20px;
+            margin: @field-margin;
           }
         }
         #pxl-mixins.wysiwyg-body();

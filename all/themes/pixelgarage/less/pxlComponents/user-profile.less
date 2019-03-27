@@ -8,28 +8,6 @@
 
 // Mixins
 // -------------------------
-.resp-user-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-color-main; @radius: @border-radius-large) {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 7px 15px;
-  font-family: @pxl-text-font-bold;
-  font-size: @size;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
-  color: @color;
-  outline: none;
-  opacity: 1.0;
-  #pxl-mixins.border-radius(@radius);
-  border: none;
-  background-color: @bg-color;
-
-  &:hover, &:focus {
-    opacity: 0.7;
-  }
-}
-
-
 
 
 // General settings
@@ -54,11 +32,10 @@ form {
   .ds-form {
     .row {
       .col-sm-12 {
-
         .panel:not(#edit-picture) {
           margin: 20px auto @panel-separator-height;
           border: none;
-          #pxl-mixins.border-radius(6px);
+          #pxl-mixins.border-radius(0);
           #pxl-mixins.box-shadow(none);
           background: none;
 
@@ -67,7 +44,7 @@ form {
           }
 
           .panel-heading {
-            padding: 20px 10px;
+            padding: 0;
             border: none;
             background: none;
             text-align: center;
@@ -75,37 +52,52 @@ form {
             .panel-title {
               display: inline-block;
               margin-bottom: 0;
-              font-family: @pxl-text-font-bold;
-              font-size: @font-size-pane-title;
-              text-align: center;
-              color: @text-color;
+              #pxl-mixins.title();
             }
           }
 
           .panel-body {
+            padding: 0;
             > .help-block {
               padding: 30px 100px;
-              font-family: @pxl-text-font;
-              font-size: @font-size-pane-subtitle;
-              text-align: center;
-              color: @text-color;
+              #pxl-mixins.subtitle();
             }
 
             > .form-group, .panel {
               margin: 0 0 @panel-separator-height;
             }
 
-            #user_register_form {
-              h1 {
-                display: none;
+            #user_register_form h1 {
+              display: none;
+            }
+
+            .form-item {
+              .help-block {
+                font-size: @font-size-min;
               }
             }
 
             p {
-              margin-bottom: 20px;
-              font-family: @pxl-text-font;
-              font-size: @font-size-pane-subtitle;
-              text-align: center;
+              margin: @field-margin;
+              #pxl-mixins.text();
+            }
+
+            input.form-control {
+              border: 1px solid @pxl-color-border;
+              #pxl-mixins.border-radius(0);
+              #pxl-mixins.box-shadow(none);
+
+              &:focus {
+                #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+                #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+                border: 1px solid @pxl-color-main;
+              }
+            }
+
+            @media @normal {
+              .form-type-password-confirm .password-help {
+                left: 50%;
+              }
             }
 
             .form-type-password {
@@ -114,29 +106,9 @@ form {
                   width: 50%;
                 }
               }
-
-              label {
-              }
-
-              input {
-              }
             }
 
             .form-type-textfield {
-              label.control-label {
-
-              }
-
-              input.form-control {
-                border: 1px solid @pxl-color-border;
-
-                &:focus {
-                  #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
-                  #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
-                  border: 1px solid @pxl-color-main;
-                }
-              }
-
               .help-block, .description {
 
               }
@@ -149,19 +121,15 @@ form {
                 label.control-label {
                   display: inline-block;
                   width: 120px;
-                  font-family: @pxl-text-font;
-                  font-size: @font-size-pane-subtitle;
+                  #pxl-mixins.leadtext();
                 }
 
                 input.form-text {
                   display: inline-block;
                   width: 150px;
-                  font-family: @pxl-text-font;
-                  font-size: @font-size-pane-subtitle;
-                  color: #fff;
+                  #pxl-mixins.leadtext();
                   border: none;
-                  #pxl-mixins.border-radius(0);
-                  background-color: #000;
+                  background-color: #222;
                 }
 
                 .help-block {
@@ -174,22 +142,7 @@ form {
               text-align: center;
 
               a.btn-default {
-                .resp-user-button;
-              }
-            }
-
-            .form-type-radios {
-              label {
-              }
-
-              input {
-              }
-            }
-            .form-type-checkboxes {
-              label {
-              }
-
-              input {
+                #pxl-mixins.button-gold();
               }
             }
           }
@@ -216,11 +169,11 @@ form {
   }
 
   .form-actions {
-    margin: 20px 0 !important;
+    margin: 0 !important;
     text-align: center;
 
     .form-submit {
-      .resp-user-button;
+      #pxl-mixins.button-gold();
 
       .icon {
         display: none;

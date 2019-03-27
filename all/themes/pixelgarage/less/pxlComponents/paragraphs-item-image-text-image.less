@@ -15,36 +15,7 @@
 
 .entity-paragraphs-item.paragraphs-item-image-text-image {
   &.full-width {
-    margin: 0 -@grid-gutter-width/2;
     background-color: @pxl-color-main;
-
-    @media @tablet {
-      margin: 0 ~"calc((@{container-sm} - @{grid-gutter-width} - 100vw)/2)";
-    }
-    @media @normal {
-      margin: 0 ~"calc((@{container-md} - @{grid-gutter-width} - 100vw)/2)";
-    }
-    @media @wide {
-      margin: 0 ~"calc((@{container-lg} - @{grid-gutter-width} - 100vw)/2)";
-    }
-
-    .row {
-      margin: 0 auto;
-      padding: 0 @grid-gutter-width/2;
-
-      @media @tablet {
-        padding: 0 (@screen-sm-min - @container-sm + @grid-gutter-width)/2;
-        width: @screen-sm-min;
-      }
-      @media @normal {
-        padding: 0 (@screen-md-min - @container-md + @grid-gutter-width)/2;
-        width: @screen-md-min;
-      }
-      @media @wide {
-        padding: 0 (@screen-lg-min - @container-lg + @grid-gutter-width)/2;
-        width: @screen-lg-min;
-      }
-    }
   }
 
   .row {
@@ -56,7 +27,7 @@
         .field-item {
           #pxl-mixins.wysiwyg-body();
           p {
-            color: @pxl-bg-panel-item;
+            color: @pxl-color-panel-item-bg;
           }
           //#pxl-mixins.hyphenate;
 
@@ -93,10 +64,6 @@
       .col-inner {
         padding: 10px;
         text-align: center;
-        //#pxl-mixins.border-radius(6px);
-        //border: 1px solid @pxl-bg-panel-item;
-      ;
-        //#pxl-mixins.box-shadow(@pxl-box-shadow);
 
         .field-name-field-image1, .field-name-field-image2 {
           display: none;
@@ -114,28 +81,13 @@
           .field-item {
             #pxl-mixins.text();
             font-family: @pxl-text-font-bold;
-            color: @pxl-bg-panel-item;
+            color: @pxl-color-panel-item-bg;
             text-align: center;
           }
         }
 
         a.button-survey {
-          display: inline-block;
-          padding: 8px 20px 10px;
-          font-family: @pxl-text-font-bold; //font type und size geändert
-          #pxl-mixins.font-size-responsive(@resp-button-size-max, @resp-button-size-med, @resp-button-size-min);
-          line-height: 1;
-          color: @pxl-color-main;
-          #pxl-mixins.border-radius(3px);
-          border: none;
-          background-color: @pxl-bg-panel-item;
-          opacity: 1.0;
-          text-decoration: none;
-
-          &:hover, &.active {
-            text-decoration: none;
-            opacity: 0.7;
-          }
+          #pxl-mixins.button-second();
         }
       }
     }

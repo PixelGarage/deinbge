@@ -5,41 +5,14 @@
     .panel-pane {
       padding-bottom: @panel-separator-height;
 
-      &.full-width {
-        margin: 0 -@grid-gutter-width/2;
-
-        @media @tablet {
-          margin: 0 ~"calc((@{container-sm} - @{grid-gutter-width} - 100vw)/2)";
-        }
-        @media @normal {
-          margin: 0 ~"calc((@{container-md} - @{grid-gutter-width} - 100vw)/2)";
-        }
-        @media @wide {
-          margin: 0 ~"calc((@{container-lg} - @{grid-gutter-width} - 100vw)/2)";
-        }
-
-        .pane-content {
-          padding: 0 @grid-gutter-width/2;
-
-          @media @tablet {
-            padding: 0 (@screen-sm-min - @container-sm + @grid-gutter-width)/2;
-          }
-          @media @normal {
-            padding: 0 (@screen-md-min - @container-md + @grid-gutter-width)/2;
-          }
-          @media @wide {
-            padding: 0 (@screen-lg-min - @container-lg + @grid-gutter-width)/2;
-          }
-        }
-      }
-
       .pane-title {
-        margin: 30px auto;
+        margin: @field-title-margin;
         #pxl-mixins.title();
-        text-transform: uppercase;
       }
 
       .pane-content {
+        margin: 0 auto;
+        max-width: @container-max-width;
         // see specific content less-file
       }
     }
@@ -47,7 +20,7 @@
     #panel-fundraising {
       margin-bottom: @panel-separator-height;
       padding-bottom: 0;
-      background-color: @pxl-bg-panel-item;
+      background-color: @pxl-color-panel-item-bg;
     }
 
     #panel-quotes, #panel-subscription {
@@ -58,13 +31,11 @@
     #panel-masonry-social,
     #panel-blog,
     #panel-donate-online {
-      padding-top: @panel-separator-height;
-      padding-bottom: @panel-separator-height;
-      background-color: @pxl-bg-panel-item;
+      background-color: @pxl-color-panel-item-bg;
     }
 
     #panel-next-raffle {
-      background-color: @pxl-bg-panel-item;
+      background-color: @pxl-color-panel-item-bg;
     }
 
     .panel-separator {

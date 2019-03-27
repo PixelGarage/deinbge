@@ -17,21 +17,31 @@
     .col-sm-12 {
       .field-name-field-title {
         .field-item {
-          margin: 10px auto;
+          margin: @paragraph-title-margin;
           #pxl-mixins.subtitle();
           color: @pxl-color-main;
         }
       }
 
       .field-name-field-text {
+        width: 100%;
+
         .field-item {
           #pxl-mixins.wysiwyg-body();
-          #pxl-mixins.hyphenate;
+          h3, .pxl-subtitle {
+            margin: @paragraph-title-margin;
+            #pxl-mixins.subtitle();
+          }
+          //#pxl-mixins.hyphenate;
+        }
 
-          @media @tablet {
+        @media @tablet {
+          width: 75%;
+          .field-item {
             //.content-columns(2, 24px);
           }
         }
+
       }
     }
   }

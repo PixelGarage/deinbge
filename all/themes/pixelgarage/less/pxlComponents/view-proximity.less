@@ -1,0 +1,36 @@
+/*
+ *  Proximity view component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+// General settings
+// -------------------------
+.view.view-proximity {
+  width: 100%;
+
+  .view-content {
+    padding: 0;
+    #pxl-mixins.masonry();
+  }
+
+  //
+  // view pager
+  #pxl-mixins.view-pager(18px, @text-color, @text-color);
+
+  //
+  // infinite scrolling more button
+  .pager.pager--infinite-scroll {
+    .pager__item {
+      a {
+        #pxl-mixins.button-main();
+      }
+    }
+  }
+}
+

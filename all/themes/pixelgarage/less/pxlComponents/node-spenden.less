@@ -48,7 +48,7 @@
 // General settings
 // -------------------------
 .node.node-spenden {
-  margin: 0 @container-inner-margin !important;
+  margin: 0 !important;
 
   .row {
     .col-sm-12 {
@@ -61,15 +61,15 @@
         z-index: 10;
 
         h2 {
-          margin: 0 0 20px;
+          margin: @field-title-margin;
           #pxl-mixins.title();
-          text-align: center;
         }
 
       }
 
       .field-name-field-images {
         display: none;
+        margin: @field-margin;
 
         .field-item {
           .carousel {
@@ -79,10 +79,10 @@
       }
 
       .field-name-body {
+        margin: @field-margin;
         width: 100%;
         #pxl-mixins.wysiwyg-body();
         text-align: center;
-        margin: 30px 0 50px;
       }
 
       // custom stripe button
@@ -112,7 +112,7 @@
               }
 
               button.form-submit {
-                .stripe-button(@resp-button-size-min, @pxl-action-button);
+                .stripe-button(@resp-button-size-min);
 
                 body.front & {
                   .stripe-button(@resp-button-size-min, @pxl-color-main);
@@ -147,7 +147,7 @@
                 }
 
                 button.form-submit {
-                  .stripe-button(@resp-button-size-max, @pxl-action-button);
+                  .stripe-button(@resp-button-size-max);
 
                   body.front & {
                     .stripe-button(@resp-button-size-max, @pxl-color-main);

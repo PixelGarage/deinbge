@@ -13,17 +13,16 @@
 
   .fee-text-top,
   .fee-text-bottom {
-    margin-bottom: 10px;
-    font-family: @pxl-text-font;
-    font-size: @font-size-base;
+    margin: @field-margin;
+    #pxl-mixins.text();
     text-align: center;
-    line-height: 1;
-    letter-spacing: 0;
-    color: @text-color;
+  }
+  .fee-text-bottom {
+    display: none;
   }
 
   .fee-radios-wrapper {
-    margin-bottom: 10px;
+    margin: @field-margin;
     text-align: center;
 
     .fee-radio {
@@ -32,9 +31,8 @@
       height: 46px;
       padding: 15px 0 15px;
       font-family: @pxl-text-font;
-      font-size: @font-size-base;
+      font-size: @font-size-min;
       line-height: 1;
-      letter-spacing: 0;
       color: @text-color;
       #pxl-mixins.border-radius(50%);
       border: 1px solid @pxl-color-border;
@@ -53,21 +51,15 @@
   }
 
   .fee-answer-wrapper {
-    margin-bottom: 10px;
-    font-family: @pxl-text-font;
-    font-size: @font-size-base;
+    margin: @field-margin;
+    #pxl-mixins.text();
     text-align: center;
-    line-height: 1;
-    letter-spacing: 0;
-    color: @text-color;
   }
 
   .fee-text-stripe-fee {
     font-family: @pxl-text-font;
-    font-size: 12px;
-    text-align: center;
+    font-size: @font-size-min;
     line-height: 1;
-    letter-spacing: 0;
     color: @text-color;
   }
 }

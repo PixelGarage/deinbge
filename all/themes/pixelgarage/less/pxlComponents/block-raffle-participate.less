@@ -8,28 +8,6 @@
 
 // Mixins
 // -------------------------
-.resp-raffle-button(@size: @font-size-large; @color: #fff; @bg-color: @pxl-action-button; @radius: @border-radius-large) {
-  display: inline-block;
-  margin: 10px;
-  padding: 7px 15px;
-  font-family: @pxl-text-font-bold;
-  font-size: @size;
-  line-height: 1.6;
-  letter-spacing: 0.04em;
-  //text-transform: none;
-  color: @color;
-  outline: none;
-  opacity: 1.0;
-  #pxl-mixins.border-radius(@radius);
-  border: none;
-  background-color: @bg-color;
-
-  &:hover, &:focus {
-    opacity: 0.7;
-  }
-}
-
-
 
 
 // General settings
@@ -42,16 +20,13 @@
 
     .block-header {
       margin-bottom: 20px;
-      font-family: @pxl-text-font-bold;
-      font-size: @font-size-pane-title;
+      #pxl-mixins.title();
       text-align: center;
-      color: @text-color;
     }
 
     .participation-slogan {
       margin: 20px 5px 30px 5px;
-      font-family: @pxl-text-font;
-      font-size: @font-size-pane-subtitle;
+      #pxl-mixins.subtitle();
       text-align: center;
 
       @media @tablet {
@@ -101,10 +76,8 @@
             background-color: transparent;
 
             .user-raffle-info {
-              font-family: @pxl-text-font;
-              font-size: @font-size-pane-subtitle;
+              #pxl-mixins.text();
               text-align: center;
-              color: @text-color;
 
               .user-raffle-number {
 
@@ -126,11 +99,11 @@
 
             .user-raffle-actions {
               .btn.refresh-raffle-button {
-                .resp-raffle-button(@font-size-base);
+                #pxl-mixins.button-main();
               }
 
               .btn.remove-raffle-button {
-                .resp-raffle-button(@font-size-base);
+                #pxl-mixins.button-gold();
               }
             }
           }

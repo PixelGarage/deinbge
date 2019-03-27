@@ -73,9 +73,9 @@
   left: -1.85714286em;
 }
 .fa-border {
-  padding: .2em .25em .15em;
+  padding: 0.2em 0.25em 0.15em;
   border: solid 0.08em #eee;
-  border-radius: .1em;
+  border-radius: 0.1em;
 }
 .pull-right {
   float: right;
@@ -84,10 +84,10 @@
   float: left;
 }
 .fa.pull-left {
-  margin-right: .3em;
+  margin-right: 0.3em;
 }
 .fa.pull-right {
-  margin-left: .3em;
+  margin-left: 0.3em;
 }
 .fa-spin {
   -webkit-animation: spin 2s infinite linear;
@@ -1369,123 +1369,143 @@
 .pxl-title {
   margin: 20px auto;
   font-family: 'ProximaNovaBold';
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: 1.2px;
   line-height: 1;
-  text-align: center;
+  text-align: left;
   color: #333333;
-  color: #000;
+  color: #222222;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 320px) {
   .pxl-title {
-    font-size: 5.20833333vw;
+    font-size: calc(24px + 8 * ((100vw - 320px) / 880));
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .pxl-title {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .pxl-title {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 .pxl-subtitle {
   font-family: 'ProximaNovaRegular';
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 1.14em;
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 1.4;
   text-align: left;
   color: #bf9c50;
-  color: #000;
+  color: #222222;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 320px) {
   .pxl-subtitle {
-    font-size: 3.90625vw;
+    font-size: calc(22px + 6 * ((100vw - 320px) / 880));
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .pxl-subtitle {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
-@media screen and (min-width: 992px) {
-  .pxl-subtitle {
-    font-size: 30px;
-  }
-}
-.pxl-normal {
+.pxl-headline {
   font-family: 'ProximaNovaLight';
   font-size: 18px;
-  letter-spacing: 0;
-  line-height: 1.14em;
+  letter-spacing: normal;
+  line-height: 1.4;
   text-align: left;
   color: #333333;
-  color: #000;
+  font-weight: bold;
+  color: #222222;
 }
-@media screen and (min-width: 36em) {
-  .pxl-normal {
-    font-size: 3.125vw;
+@media screen and (min-width: 320px) {
+  .pxl-headline {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
-@media screen and (min-width: 768px) {
-  .pxl-normal {
+@media screen and (min-width: 1200px) {
+  .pxl-headline {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 992px) {
-  .pxl-normal {
+.pxl-leadtext {
+  font-family: 'ProximaNovaRegular';
+  font-size: 28px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #333333;
+  color: #222222;
+}
+@media screen and (min-width: 320px) {
+  .pxl-leadtext {
+    font-size: calc(28px + -4 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pxl-leadtext {
     font-size: 24px;
   }
 }
+.pxl-normal,
+.pxl-text {
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #333333;
+  color: #222222;
+}
+@media screen and (min-width: 320px) {
+  .pxl-normal,
+  .pxl-text {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pxl-normal,
+  .pxl-text {
+    font-size: 24px;
+  }
+}
+small,
 .pxl-subtext {
   font-family: 'ProximaNovaLight';
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 1.1667em;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 1.2;
   text-align: left;
+  color: #333333;
+  color: #222222;
 }
-@media screen and (min-width: 38.4em) {
+@media screen and (min-width: 320px) {
+  small,
   .pxl-subtext {
-    font-size: 2.60416667vw;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 880));
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  small,
   .pxl-subtext {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 992px) {
-  .pxl-subtext {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .pxl-subtext {
-    text-align: left;
-  }
-}
+blockquote,
 .pxl-quote {
   font-family: 'ProximaNovaBold';
   font-size: 30px;
-  letter-spacing: 1.2px;
-  line-height: 1;
-  color: #333333;
+  letter-spacing: normal;
+  line-height: 1.4;
   text-align: center;
-  color: #000;
+  color: #333333;
+  color: #222222;
 }
-@media screen and (min-width: 36em) {
+@media screen and (min-width: 320px) {
+  blockquote,
   .pxl-quote {
-    font-size: 5.20833333vw;
+    font-size: calc(30px + 10 * ((100vw - 320px) / 880));
   }
 }
-@media screen and (min-width: 768px) {
-  .pxl-quote {
-    font-size: 40px;
-  }
-}
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+  blockquote,
   .pxl-quote {
     font-size: 40px;
   }

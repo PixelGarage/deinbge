@@ -14,7 +14,7 @@
 // General settings
 // -------------------------
 .node.node-offline-donation {
-  margin: 0 @container-inner-margin !important;
+  margin: 0 !important;
 
   .row {
     .col-sm-12 {
@@ -27,18 +27,14 @@
         z-index: 10;
 
         h2 {
-          margin: 0 0 20px;
+          margin: @field-title-margin;
           #pxl-mixins.title();
-          text-align: center;
         }
       }
 
       .field-name-body {
         margin: 30px 0 50px;
-        font-family: @pxl-text-font;
-        font-size: @font-size-pane-subtitle;
-        text-align: center;
-        color: @text-color;
+        #pxl-mixins.subtitle();
       }
 
       .group-tabs {
@@ -47,11 +43,11 @@
 
           ul.horizontal-tabs-list {
             border: none;
-            .border-top-radius(6px);
+            .border-top-radius(0);
             background-color: @pxl-color-border-light;
 
             li {
-              .border-top-radius(6px);
+              .border-top-radius(0);
               border: none;
               border-bottom: 1px solid @pxl-color-border-light;
               background-color: @pxl-color-border-light;

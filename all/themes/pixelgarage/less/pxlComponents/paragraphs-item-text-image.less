@@ -18,7 +18,7 @@
     .col-sm-12 {
       .field-name-field-title {
         .field-item {
-          margin: 10px auto;
+          margin: @paragraph-title-margin;
           #pxl-mixins.subtitle();
           color: @pxl-color-main;
         }
@@ -27,18 +27,30 @@
 
     .col-sm-6 {
       @media @tablet {
-        .field-item.even &.left {
+        .field-item.even &.left:not(.switch) {
           left: 50%;
         }
+        .field-item.even &.right:not(.switch) {
+          right: 50%;
+        }
 
-        .field-item.even &.right {
+        .field-item.odd &.left.switch {
+          left: 50%;
+        }
+        .field-item.odd &.right.switch {
           right: 50%;
         }
       }
 
       .field-name-field-text-50 {
+        margin: @field-margin;
+
         .field-item {
           #pxl-mixins.wysiwyg-body();
+          h3, .pxl-subtitle {
+            margin: @paragraph-title-margin;
+            #pxl-mixins.subtitle();
+          }
           //#pxl-mixins.hyphenate;
 
           ol {
@@ -57,6 +69,8 @@
       }
 
       .field-name-field-image {
+        margin: @field-margin;
+
         .field-item {
           img {
             max-width: 100%;

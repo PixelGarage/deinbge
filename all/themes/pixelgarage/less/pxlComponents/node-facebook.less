@@ -15,7 +15,7 @@
 // -------------------------
 .node.node-facebook-post.view-mode-teaser {
   padding: 20px;
-  background-color: @pxl-bg-masonry-item;
+  background-color: @pxl-color-masonry-item-bg;
 
   .row {
     div.col-sm-12 {
@@ -41,7 +41,7 @@
       }
 
       .field-name-body {
-        #pxl-mixins.wysiwyg-body();
+        #pxl-mixins.wysiwyg-teaser();
         color: @text-color;
 
         @media @tablet {
@@ -71,7 +71,7 @@
           font-family: @pxl-text-font;
           font-size: 10px;
           text-align: right;
-          color: @pxl-masonry-text;
+          color: @pxl-color-masonry-item;
 
           &:after {
             content: '\f09a';
@@ -113,9 +113,8 @@
 
       .field-name-title {
         h2 {
-          margin: 20px 0;
+          margin: @field-title-margin;
           #pxl-mixins.title();
-          text-align: center;
         }
       }
 
@@ -141,7 +140,7 @@
           font-size: 12px;
           text-align: right;
           line-height: 1;
-          color: @pxl-masonry-text;
+          color: @pxl-color-masonry-item;
 
           &:before {
             content: '\f09a';
@@ -174,7 +173,7 @@
       }
 
       .field-name-field-picture {
-        margin: 0 0 20px;
+        margin: @field-margin;
 
         .field-item {
           img {
@@ -188,26 +187,30 @@
       }
 
       .field-name-field-video-embedded {
-        margin: 0 0 20px;
+        margin: @field-margin;
 
         .embedded-video {
+          position: relative;
+          overflow: hidden;
+          padding-top: 56.25%;
+          margin: 0 auto;
+          width: 90%;
+          max-width: 90%;
+
           iframe {
-            display: block;
-            overflow: hidden;
-            margin: 20px auto;
-            padding: 0;
-            width: 90%;
-            max-width: 90%;
-            min-height: 350px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
           }
         }
       }
 
       .field-name-body {
-        margin: 0 0 20px;
-
+        margin: @field-margin;
         #pxl-mixins.wysiwyg-body();
-        color: @text-color;
 
         @media @tablet {
           //.content-columns(2);

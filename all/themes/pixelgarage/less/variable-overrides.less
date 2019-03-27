@@ -8,28 +8,26 @@
 //== Colors
 //
 @pxl-color-main: rgb(191, 156, 80); //#BF9C50;
+@pxl-color-second: #222;
 @pxl-color-support: rgb(191, 156, 80); //#BF9C50;
 @pxl-color-participate: rgb(191, 156, 80); //#BF9C50;
 @pxl-color-experience: rgb(191, 156, 80); //#BF9C50;
-@pxl-bg-panel-item: #efefef;
+@pxl-color-active: @pxl-color-main;
+@pxl-color-light: #929295;
 
 // borders
 @pxl-color-border-active: @pxl-color-main;
 @pxl-color-border: #c9c9c9;
 @pxl-color-border-light: #efefef;
 
-// buttons
-@pxl-bg-button: #FA6278;
-@pxl-bg-button-hover: #ff757d;
-@pxl-action-button: #92BDC3;//#00B9BF;
-
 // backgrounds
 @pxl-color-body-bg: #fff;
 @pxl-color-box-bg: @pxl-color-main;
+@pxl-color-panel-item-bg: #efefef;
 
 // masonry colors
-@pxl-bg-masonry-item: #fff;
-@pxl-masonry-text: #929295;
+@pxl-color-masonry-item: @pxl-color-light;
+@pxl-color-masonry-item-bg: #fff;
 
 // gray tones
 @gray-base:              #000;
@@ -52,60 +50,81 @@
 @text-color:            @gray-dark;
 @text-color-light:      @gray-light;
 @text-color-disabled:   @gray;
+@text-color-active:     @pxl-color-active;
+@text-color-light:      @pxl-color-light;
+@text-color-disabled:   @gray;
+@text-muted:            @text-color-disabled;
+@text-color-form:       @text-color;
+@text-color-placeholder:@gray;
+@text-color-code:       @text-color;
 
 @title-letter-spacing: 1.2px;
 @title-line-height: 1;
-@title-text-align: center;
-@title-text-align-small: left;
+@title-text-align: left;
 
-@subtitle-letter-spacing: 0;
-@subtitle-line-height: 1.14em;
+@subtitle-letter-spacing: normal;
+@subtitle-line-height: 1.4;
 @subtitle-text-align: left;
-@subtitle-text-align-small: left;
 
-@text-letter-spacing: 0;
-@text-line-height: 1.14em;
+@leadtext-letter-spacing: normal;
+@leadtext-line-height: 1.4;
+@leadtext-text-align: left;
+
+@text-letter-spacing: normal;
+@text-line-height: 1.4;
 @text-text-align: left;
-@text-text-align-small: left;
 
-@subtext-letter-spacing: 0;
-@subtext-line-height: 1.1667em;
+@subtext-letter-spacing: normal;
+@subtext-line-height: 1.2;
 @subtext-text-align: left;
-@subtext-text-align-small: left;
+
+@quote-letter-spacing: normal;
+@quote-line-height: 1.4;
+@quote-text-align: center;
+
+@menu-letter-spacing: normal;
+@menu-line-height: 1;
+@menu-text-align: left;
 
 @form-letter-spacing: normal;
-@form-line-height: 1.15em;
+@form-line-height: 1.15rem;
 @form-text-align: left;
 
-@form-button-letter-spacing: normal;
-@form-button-line-height: 1;
-@form-button-text-align: center;
+@button-letter-spacing: normal;
+@button-line-height: 1;
 
 //
 // responsive font sizes
-@resp-title-size-max:     40px;
-@resp-title-size-med:     40px;
-@resp-title-size-min:     30px;
+@resp-title-size-max:     32px;
+@resp-title-size-min:     24px;
 
-@resp-subtitle-size-max:  30px;
-@resp-subtitle-size-med:  30px;
-@resp-subtitle-size-min:  24px;
+@resp-subtitle-size-max:  28px;
+@resp-subtitle-size-min:  22px;
+
+@resp-leadtext-size-max:  24px;
+@resp-leadtext-size-min:  28px;
 
 @resp-text-size-max:      24px;
-@resp-text-size-med:      24px;
 @resp-text-size-min:      18px;
 
 @resp-subtext-size-max:   20px;
-@resp-subtext-size-med:   20px;
-@resp-subtext-size-min:   16px;
+@resp-subtext-size-min:   14px;
+
+@resp-quote-size-max:     40px;
+@resp-quote-size-min:     30px;
+
+@resp-menu-size-max:      24px;
+@resp-menu-size-min:      20px;
+
+@resp-form-size-max:      24px;
+@resp-form-size-min:      18px;
 
 @resp-button-size-max:    24px;
-@resp-button-size-med:    20px;
-@resp-button-size-min:    20px;
+@resp-button-size-min:    18px;
 
 //
 // selected element font size
-@font-size-base:          20px;
+@font-size-base:          20px; // 1rem
 @font-size-large:         ceil((@font-size-base * 1.25));
 @font-size-larger:        ceil((@font-size-base * 1.5));
 @font-size-small:         ceil((@font-size-base * 0.85));
@@ -119,11 +138,8 @@
 //== Scaffolding
 // links
 @link-color:            darken(@pxl-color-main, 15%);
-//** Link hover decoration.
 @link-decoration:       none;
-//** Link hover color set via `darken()` function.
 @link-color-hover:      @pxl-color-main;
-//** Link hover decoration.
 @link-decoration-hover: underline;
 
 // shadows
@@ -144,15 +160,9 @@
 // Extra small screen / phone
 //** Deprecated `@screen-xs-min` as of v3.2.0
 @screen-xs-min:              480px;
-
-// Small screen / tablet
 @screen-sm-min:              768px;
-
-// Medium screen / desktop
 @screen-md-min:              992px;
-
-// Large screen / wide desktop
-@screen-lg-min:              1280px;
+@screen-lg-min:              1200px;
 
 //
 // Media queries maximums
@@ -202,26 +212,30 @@
 
 // Small screen / tablet
 @container-tablet:             (720px + @grid-gutter-width);
-//** For `@screen-sm-min` and up.
 @container-sm:                 @container-tablet;
 
 // Medium screen / desktop
 @container-desktop:            (920px + @grid-gutter-width);
-//** For `@screen-md-min` and up.
 @container-md:                 @container-desktop;
 
 // Large screen / wide desktop
-@container-large-desktop:      (1180px + @grid-gutter-width);
-//** For `@screen-lg-min` and up.
+@container-large-desktop:      (1170px + @grid-gutter-width);
 @container-lg:                 @container-large-desktop;
 
-@container-max-width: 920px;
-@container-inner-margin: 0;
-@panel-separator-height: 30px;
+@container-max-width: @screen-lg-min;
 
 
 //== Components
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
+@panel-separator-height: 30px;
+
+//== Paragraphs
+@paragraph-title-margin: 0 auto 30px;
+
+
+//== Fields
+@field-margin: 0 auto 20px;
+@field-title-margin: 0 auto 30px;
 

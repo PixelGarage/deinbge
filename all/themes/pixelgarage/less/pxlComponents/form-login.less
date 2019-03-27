@@ -6,34 +6,12 @@
 // Variables
 // -------------------------
 //text
-@pxl-login-btn-color: #fff;
-@pxl-login-btn-hover-color: #fff;
 @pxl-login-link-color: @pxl-color-main;
 @pxl-login-link-hover-color: @pxl-color-main;
-//gradients
-@pxl-login-gradient-top: @pxl-color-main;
-@pxl-login-gradient-bottom: darken(@pxl-color-main, 10%);
-@pxl-login-gradient-2-top: @pxl-color-main;
-@pxl-login-gradient-2-bottom: darken(@pxl-color-main, 10%);
 
 
 // Mixins
 // -------------------------
-.submit-btn() {
-  &:extend(.btn-lg);
-  border: none;
-  color: @pxl-login-btn-color;
-  #pxl-mixins.border-radius(0.25em);
-  #gradient.vertical(@pxl-login-gradient-2-top, @pxl-login-gradient-2-bottom);
-
-  &:hover {
-    color: @pxl-login-btn-hover-color;
-    #gradient.vertical(@pxl-login-gradient-2-bottom, @pxl-login-gradient-2-top);
-    text-decoration: none;
-  }
-}
-
-
 
 
 // General form settings
@@ -92,7 +70,7 @@ form#user-login {
   }
 
   .login-register {
-    .submit-btn;
+    #pxl-mixins.button-gold();
     display: inline-block;
     position: absolute;
     right: 0;
@@ -152,12 +130,7 @@ form#user-login {
       margin: 0;
 
       .btn {
-        .submit-btn;
-        #gradient.vertical(@pxl-login-gradient-top, @pxl-login-gradient-bottom);
-
-        &:hover {
-          #gradient.vertical(@pxl-login-gradient-bottom, @pxl-login-gradient-top);
-        }
+        #pxl-mixins.button-gold();
       }
     }
 
@@ -204,8 +177,6 @@ form#user-login {
   }
 
   .form-actions {
-    margin-top: 2em;
-
     .back-to-login {
       float: left;
       margin: 0;
@@ -232,7 +203,8 @@ form#user-login {
     }
 
     .btn {
-      .submit-btn;
+      #pxl-mixins.button-gold();
+      margin: 0;
       float: right;
     }
   }

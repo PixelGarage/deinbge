@@ -21,37 +21,32 @@
 
     .block-header {
       display: none;
-      font-family: @pxl-text-font-bold;
-      font-size: @font-size-pane-title;
+      #pxl-mixins.title();
       text-align: center;
-      color: @pxl-bg-panel-item;
+      color: @pxl-color-panel-item-bg;
     }
 
     .subscription-slogan {
       margin-bottom: 20px;
-      font-family: @pxl-text-font;
-      font-size: @font-size-pane-subtitle;
+      #pxl-mixins.subtitle();
       text-align: center;
-      color: @pxl-bg-panel-item;
+      color: @pxl-color-panel-item-bg;
 
       a {
-        color: @pxl-bg-panel-item;
+        color: @pxl-color-panel-item-bg;
         text-decoration: underline;
       }
     }
 
     .actions {
-      margin: 0 auto 30px;
+      margin: 0;
       text-align: center;
 
       .btn.link-subscribe {
-        //#pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
-        #pxl-mixins.button-large(@pxl-bg-panel-item, darken(@pxl-bg-panel-item, 5%));
+        #pxl-mixins.button-main();
 
         body.front & {
-          //#pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
-          #pxl-mixins.button-large(@pxl-bg-panel-item, darken(@pxl-bg-panel-item, 5%));
-          color: @pxl-color-main;
+          #pxl-mixins.button-second();
         }
       }
     }
@@ -65,14 +60,15 @@
       display: none;
       margin-bottom: 20px;
       #pxl-mixins.odometer(#fff, #000, 5px, 36px, 24px);
+
       .odometer .odometer-inside .odometer-formatting-mark {
         color: #000;
       }
 
       .currency {
         vertical-align: middle;
-        font-family: @pxl-text-font-bold;
-        font-size: 24px;
+        #pxl-mixins.text();
+        font-weight: bold;
         margin-left: 15px;
       }
     }
@@ -80,8 +76,7 @@
     .subscription-fee-statement {
       display: none;
       margin: 15px 0 50px;
-      font-family: @pxl-text-font;
-      font-size: (@font-size-base - 2);
+      #pxl-mixins.subtext();
       text-align: center;
     }
 

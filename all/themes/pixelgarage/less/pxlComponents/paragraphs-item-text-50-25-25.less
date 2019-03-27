@@ -35,7 +35,7 @@
     .col-sm-12 {
       .field-name-field-title {
         .field-item {
-          margin: 10px auto;
+          margin: @paragraph-title-margin;
           #pxl-mixins.subtitle();
           color: @pxl-color-main;
         }
@@ -50,6 +50,10 @@
 
         .field-item {
           #pxl-mixins.wysiwyg-body();
+          h3, .pxl-subtitle {
+            margin: @paragraph-title-margin;
+            #pxl-mixins.subtitle();
+          }
           //#pxl-mixins.hyphenate;
 
           ol {

@@ -13,10 +13,10 @@
 // General settings
 // -------------------------
 #pxlraffle-next-raffle {
-  margin: 0 2*@container-inner-margin;
-  background: none;
+  margin: 0;
   padding-top: 30px;
-  background-color: @pxl-bg-panel-item;
+  background: none;
+  background-color: @pxl-color-panel-item-bg;
 
   .next-raffle {
     font-family: @pxl-text-font-bold;
@@ -24,13 +24,11 @@
 
     .next-raffle-slogan {
       margin-bottom: 20px;
-      #pxl-mixins.font-size-responsive(@font-size-pane-title);
-      color: @text-color;
+      #pxl-mixins.title();
     }
 
     .next-raffle-label {
-      text-align: center;
-      font-size: @font-size-pane-title;
+      #pxl-mixins.title();
       color: @pxl-color-support;
 
       body.front & {
@@ -42,15 +40,8 @@
       display: inline-block;
       margin-bottom: 20px;
       padding: 5px 15px;
+      #pxl-mixins.quote();
       color: @pxl-color-support;
-      font-size: 40px;
-
-      @media @narrow {
-        font-size: 10.4vw;
-      }
-      @media @tablet {
-        font-size: 60px;
-      }
 
       body.front & {
         color: @pxl-color-main;
@@ -59,9 +50,8 @@
 
     .next-raffle-info {
       display: none;
+      #pxl-mixins.text();
       text-align: center;
-      font-size: @font-size-base;
-      color: @text-color;
     }
 
     .actions {
@@ -69,10 +59,10 @@
       text-align: center;
 
       .btn.link-participate {
-        #pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
+        #pxl-mixins.button-main();
 
         body.front & {
-          #pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
+          #pxl-mixins.button-second();
         }
       }
     }

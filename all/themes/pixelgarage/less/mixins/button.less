@@ -1,0 +1,95 @@
+/*
+ *  Button mixins
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+// main button
+@pxl-color-button: #fff;
+@pxl-color-button-hover: @pxl-color-main;
+@pxl-color-button-bg: #222;
+@pxl-color-button-bg-hover: #222;
+
+// second button
+@pxl-color-button2: @pxl-color-main;
+@pxl-color-button2-hover: @pxl-color-main;
+@pxl-color-button2-bg: #fff;
+@pxl-color-button2-bg-hover: rgba(white, 0.7);
+
+@pxl-action-button: #92BDC3;//#00B9BF;
+
+
+
+// Mixins
+// -------------------------
+#pxl-mixins {
+  //
+  // Button styles
+  .button-main(@radius: 30px) {
+    display: inline-block;
+    margin: 1em auto;
+    padding: .5em 2em;
+    #pxl-mixins.buttontext();
+    color: @pxl-color-button;
+    border: none;
+    outline: none;
+    #pxl-mixins.border-radius(@radius);
+    background: @pxl-color-button-bg;
+
+    &:hover {
+      color: @pxl-color-button-hover;
+      background: @pxl-color-button-bg-hover;
+    }
+  }
+
+  .button-second(@radius: 30px) {
+    display: inline-block;
+    margin: 1em auto;
+    padding: .5em 2em;
+    #pxl-mixins.buttontext();
+    color: @pxl-color-button2;
+    border: none;
+    outline: none;
+    #pxl-mixins.border-radius(@radius);
+    background: @pxl-color-button2-bg;
+
+    &:hover {
+      color: @pxl-color-button2-hover;
+      background: @pxl-color-button2-bg-hover;
+    }
+  }
+
+  .button-gold(@radius: 30px) {
+    display: inline-block;
+    margin: 1em auto;
+    padding: .5em 2em;
+    #pxl-mixins.buttontext();
+    color: white;
+    border: none;
+    outline: none;
+    #pxl-mixins.border-radius(@radius);
+    background: @pxl-color-main;
+
+    &:hover {
+      color: white;
+      background: rgba(@pxl-color-main, 0.5);
+    }
+  }
+
+  .button-large(@bg-color:  @pxl-color-button-bg; @bg-color-hover: @pxl-color-button-bg-hover; @radius: 5px) {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 15px 10px;
+    #pxl-mixins.buttontext();
+    color: #fff;
+    white-space: normal;
+    border: none;
+    #pxl-mixins.border-radius(@radius);
+    background: @bg-color;
+
+    &:hover {
+      background: @bg-color-hover;
+    }
+  }
+
+}

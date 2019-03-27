@@ -3,6 +3,7 @@
  * @file
  * Bootstrap 6-6 stacked template for Display Suite.
  */
+$switch = $field_switch_fields[0]['value'] == '1' ? 'switch' : '';
 ?>
 
 
@@ -19,10 +20,10 @@
   <?php endif; ?>
   <?php if ($left || $right): ?>
     <div class="row">
-      <<?php print $left_wrapper; ?> class="col-sm-6 left <?php print $left_classes; ?>">
+      <<?php print $left_wrapper; ?> class="col-sm-6 left <?php print $switch; print $left_classes; ?>">
         <?php print $left; ?>
       </<?php print $left_wrapper; ?>>
-      <<?php print $right_wrapper; ?> class="col-sm-6 right <?php print $right_classes; ?>">
+      <<?php print $right_wrapper; ?> class="col-sm-6 right <?php print $switch; print $right_classes; ?>">
         <?php print $right; ?>
       </<?php print $right_wrapper; ?>>
     </div>

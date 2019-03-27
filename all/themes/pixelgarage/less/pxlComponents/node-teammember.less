@@ -25,14 +25,14 @@
 
         h2 {
           display:inline-block;
-          margin: 20px 0;
+          margin: 0;
           #pxl-mixins.text();
           font-family: @pxl-text-font-bold;
-          text-transform: uppercase;
         }
       }
 
       .field-name-field-image {
+        margin: 0;
         text-align: center;
 
         .field-item {
@@ -46,23 +46,22 @@
       }
 
       .field-name-field-t-tigkeiten {
+        margin: 0;
         text-align: center;
 
         .field-item {
           display:inline-block;
-          font-family: @pxl-text-font;
-          #pxl-mixins.font-size-responsive(18px, 16px);
-          color: @text-color;
+          #pxl-mixins.subtext();
         }
       }
 
       .field-name-field-email {
+        margin:0;
         text-align: center;
 
         .field-item {
           display:inline-block;
-          font-family: @pxl-text-font;
-          #pxl-mixins.font-size-responsive(18px, 16px);
+          #pxl-mixins.subtext();
 
           a {
             color: @link-color;

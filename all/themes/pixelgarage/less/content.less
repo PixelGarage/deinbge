@@ -4,19 +4,49 @@
 
 // Variables
 // -------------------------
-@pxl-content-fading-height: 20px;
+@footer-height-narrow: 460px;
+@footer-height-tablet: 266px;
+
 
 
 // Mixins
 // -------------------------
+.container-def() {
+  // define responsive padding
+  margin: 0 auto;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
+  max-width: @container-max-width;
 
+  .full-width {
+    margin: 0 -1.2rem;
+    padding: 0 1.2rem;
+  }
 
+  @media @tablet {
+    padding: 1rem 2rem;
 
-// Main settings
-// -------------------------
-.container {
-  // all container with background
-  background-color: #fff;
+    .full-width {
+      margin: 0 -2rem;
+      padding: 0 2rem;
+    }
+  }
+  @media @normal {
+    padding: 1rem 3rem;
+
+    .full-width {
+      margin: 0 -3rem;
+      padding: 0 3rem;
+    }
+  }
+  @media @wide {
+    padding: 1rem 4rem;
+
+    .full-width {
+      margin: 0 calc((@container-max-width - 8rem - 100vw)/2);
+      padding: 0 calc((100vw - @container-max-width + 8rem)/2);
+    }
+  }
 
   // sharper fonts
   #pxl-mixins.sharp-fonts;
@@ -30,42 +60,39 @@
   }
 }
 
+// Main settings
+// -------------------------
+
 html {
   height: 100%;
+  font-size: @font-size-base;
 }
 
 body {
   position: relative;
-  height: 100%;
-  min-height: 320px;
+  min-height: 100%;
+  padding-bottom: @footer-height-narrow;
   background-color: white;
+
+  @media @tablet {
+    padding-bottom: @footer-height-tablet;
+  }
 
   .main-container {
     margin: 0 auto;
-    background-color: #fff;
 
-    @media @tablet {
-      width: @screen-sm-min;
-    }
-    @media @normal {
-      width: @screen-md-min;
-    }
-    @media @wide {
-      width: @screen-lg-min;
-    }
+    .container, .container-fluid {
+      // set container
+      .container-def();
 
-    .container {
       //
       // Page header
       #page-header {
         .region-header {
-          // block title
           h2.block-title {
+            #pxl-mixins.title();
             margin: 20px 0 10px;
-            font-family: @pxl-text-font;
-            font-size: @font-size-larger;
           }
-
         }
       }
 
@@ -75,9 +102,10 @@ body {
         section { // column(s)
 
           h1.page-header {
-            margin: 20px 0 10px;
-            font-family: @pxl-text-font-bold;
-            font-size: @font-size-h1;
+            margin: @field-title-margin;
+            padding: 0;
+            #pxl-mixins.title();
+            border: none;
           }
 
           .messages {
@@ -120,28 +148,27 @@ body {
       }
     }
 
-    //
-    // fading area on top and bottom of main container
-    .fading {
-      display: none; // will be enabled via event
-      position: absolute;
-      left: 0;
-      right: 0;
-      height: @pxl-content-fading-height;
-      z-index: 10;
-
-      &.fading-top {
-        top: 0;
-        #gradient.vertical(#fff, rgba(255,255,255,0));
-      }
-      &.fading-bottom {
-        bottom: 0;
-        #gradient.vertical(rgba(255,255,255,0), #fff);
-      }
-    }
   } // main-container
 
-  footer {
+  footer.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: @footer-height-narrow;
+    border: none;
+    background: @pxl-color-second none;
+
+    @media @tablet {
+      height: @footer-height-tablet;
+    }
+
+    .container, .container-fluid {
+      // set container
+      .container-def();
+    }
   }
 
 }

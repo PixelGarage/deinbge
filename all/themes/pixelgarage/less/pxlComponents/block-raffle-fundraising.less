@@ -18,10 +18,9 @@
 // -------------------------
 #pxlraffle-fundraising {
   padding: 20px 0;
-  background-color: @pxl-bg-panel-item;
+  background-color: @pxl-color-panel-item-bg;
 
   .current-raffle {
-    max-width: @container-max-width;
     margin: 0 auto;
 
     .inner-current-raffle {
@@ -29,18 +28,13 @@
 
       .block-header {
         margin-bottom: @pxl-margin-sep;
-        font-family: @pxl-text-font-bold;
-        font-size: 24px;
+        #pxl-mixins.title();
         text-align: center;
         color: @text-color;
       }
 
       @media @narrow {
-        margin: 0 @container-inner-margin;
-
-        .block-header {
-          font-size: @font-size-pane-title;
-        }
+        margin: 0;
       }
 
       .odometer-container {
@@ -61,8 +55,8 @@
 
       .total-amount {
         display: none;
-        font-family: @pxl-text-font-bold;
-        font-size: @font-size-base;
+        #pxl-mixins.text();
+        font-weight: bold;
         text-align: right;
       }
 
@@ -82,8 +76,8 @@
 
       .current-amount-container {
         display: none;
-        font-family: @pxl-text-font-bold;
-        font-size: @font-size-base;
+        #pxl-mixins.text();
+        font-weight: bold;
         color: @pxl-color-participate;
 
         body.front & {
@@ -106,9 +100,7 @@
       .explanation {
         display: none;
         margin: @pxl-margin-sep auto;
-        font-family: @pxl-text-font;
-        font-size: @font-size-base;
-        color: @text-color;
+        #pxl-mixins.text();
         text-align: center;
       }
 
@@ -117,10 +109,10 @@
         text-align: center;
 
         .btn.link-support {
-          #pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
+          #pxl-mixins.button-main();
 
           body.front & {
-            #pxl-mixins.button-large(@pxl-action-button, darken(@pxl-action-button, 5%));
+            #pxl-mixins.button-second();
           }
         }
       }

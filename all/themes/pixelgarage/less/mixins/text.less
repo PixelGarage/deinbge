@@ -54,33 +54,31 @@
 
   //
   // responsive font size with minimum and maximum size
-  .font-size-responsive(@max-size: @resp-text-size-max; @med-size: @resp-text-size-med; @min-size: @resp-text-size-min) {
-    @min-max-breakpoint: unit((48 * @min-size / @med-size), em);
-    @font-break:  ~"screen and (min-width: @{min-max-breakpoint})";
+  .font-size-responsive(@max-size: @resp-text-size-max; @min-size: @resp-text-size-min) {
+    @min-font-break:  ~"screen and (min-width: 320px)";
+    @max-font-break:  ~"screen and (min-width: @{container-max-width})";
+    @font-diff-size: unit(@max-size - @min-size);
 
     // min font size
     font-size: @min-size;
 
-    // dynamic font size
-    @media @font-break {
-      font-size: unit(@med-size/7.68, vw);
+    // start of responsive font size
+    @media @min-font-break {
+      font-size: calc(@min-size + @font-diff-size * ((100vw - 320px) / unit(@container-max-width - 320px)));
     }
 
-    // maed.font size
-    @media @tablet {
-      font-size: @med-size;
-    }
     // max.font size
-    @media @normal {
+    @media @max-font-break {
       font-size: @max-size;
     }
   }
+
 
   //
   // title, subtitle, text styles
   .title() {
     font-family: @pxl-title-font;
-    .font-size-responsive(@resp-title-size-max, @resp-title-size-med, @resp-title-size-min);
+    .font-size-responsive(@resp-title-size-max, @resp-title-size-min);
     letter-spacing: @title-letter-spacing;
     line-height: @title-line-height;
     text-align: @title-text-align;
@@ -89,11 +87,20 @@
 
   .subtitle() {
     font-family: @pxl-subtitle-font;
-    .font-size-responsive(@resp-subtitle-size-max, @resp-subtitle-size-med, @resp-subtitle-size-min);
+    .font-size-responsive(@resp-subtitle-size-max, @resp-subtitle-size-min);
     letter-spacing: @subtitle-letter-spacing;
     line-height: @subtitle-line-height;
     text-align: @subtitle-text-align;
     color: @pxl-color-main;
+  }
+
+  .leadtext() {
+    font-family: @pxl-leadtext-font;
+    .font-size-responsive(@resp-leadtext-size-max, @resp-leadtext-size-min);
+    letter-spacing: @leadtext-letter-spacing;
+    line-height: @leadtext-line-height;
+    text-align: @leadtext-text-align;
+    color: @text-color;
   }
 
   .text() {
@@ -107,19 +114,53 @@
 
   .subtext() {
     font-family: @pxl-text-font;
-    .font-size-responsive(@resp-subtext-size-max,@resp-subtext-size-med,@resp-subtext-size-min);
+    .font-size-responsive(@resp-subtext-size-max, @resp-subtext-size-min);
     letter-spacing: @subtext-letter-spacing;
     line-height: @subtext-line-height;
-    text-align: @subtext-text-align-small;
+    text-align: @subtext-text-align;
+    color: @text-color;
+  }
 
-    @media @tablet {
-      text-align: @subtext-text-align;
-    }
+  .quote() {
+    font-family: @pxl-quote-font;
+    .font-size-responsive(@resp-quote-size-max, @resp-quote-size-min);
+    letter-spacing: @quote-letter-spacing;
+    line-height: @quote-line-height;
+    text-align: @quote-text-align;
+    color: @text-color;
+  }
+
+  .menutext() {
+    font-family: @pxl-menu-font;
+    .font-size-responsive(@resp-menu-size-max, @resp-menu-size-min);
+    letter-spacing: @menu-letter-spacing;
+    line-height: @menu-line-height;
+    text-align: @menu-text-alignl;
+    color: @text-color;
+  }
+
+  .formtext() {
+    font-family: @pxl-form-font;
+    .font-size-responsive(@resp-form-size-max, @resp-form-size-min);
+    letter-spacing: @form-letter-spacing;
+    line-height: @form-line-height;
+    text-align: @form-text-align;
+    color: @text-color;
+  }
+
+  .buttontext() {
+    font-family: @pxl-button-font;
+    .font-size-responsive(@resp-button-size-max, @resp-button-size-min);
+    letter-spacing: @button-letter-spacing;
+    line-height: @button-line-height;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
   }
 
   .glow() {
     font-family: @pxl-text-font-light;
-    .font-size-responsive(100px, 100px, 50px);
+    .font-size-responsive(100px, 50px);
     letter-spacing: 0.2em;
     line-height: 1;
     text-align: center;
@@ -131,37 +172,47 @@
   }
 
   .paragraph-first-letter() {
-    p::first-letter {
-      .title();
+    &::first-letter {
+      font-family: @pxl-title-font;
+      .font-size-responsive(2 * @resp-title-size-max, 2 * @resp-title-size-min);
+      letter-spacing: @title-letter-spacing;
+      line-height: 1;
+      text-align: @title-text-align;
+      color: @text-color;
       float: left;
       vertical-align: top;
+      margin: 0;
+      padding: 0 0.1rem;
     }
   }
 
 
   //
-  // WYSIWYG body
-  .wysiwyg-body() {
+  // WYSIWYG text definition
+  .wysiwyg() {
     h1, h2, .pxl-title {
-      margin: 20px auto;
+      margin: 0 auto 30px;
       .title();
     }
 
     h3, .pxl-subtitle {
-      margin: 10px auto;
+      margin: 15px auto;
       .subtitle();
     }
 
-    h4, h5, h6 {
-      margin: 5px auto;
-      .text();
+    h4, h5, h6, .pxl-headline {
+      margin: 8px auto;
       font-family: @pxl-text-font-bold;
+    }
+
+    .pxl-leadtext {
+      margin: 0 0 10px;
+      .leadtext();
     }
 
     p {
       margin: 0 0 10px;
-      .text();
-      .hyphenate;
+      //.hyphenate();
     }
 
     small, .pxl-subtext {
@@ -172,13 +223,12 @@
       .glow();
     }
 
-    .pxl-quote {
-      .title();
+    blockquote, .pxl-quote {
+      .quote();
       text-align: center;
     }
 
     a {
-      .text();
       color: @link-color;
       text-decoration: @link-decoration;
 
@@ -190,26 +240,14 @@
     }
 
     pre, address, i, em {
-      .text();
       font-family: @pxl-text-font-italic;
     }
 
     strong, b {
-      .text();
       font-family: @pxl-text-font-bold;
     }
 
-    u {
-      .text();
-      color: @link-color;
-
-      &:hover, &:focus {
-        color: @link-color-hover;
-      }
-    }
-
     mark {
-      .text();
       background-color: #ff0;
     }
 
@@ -238,6 +276,14 @@
       height: auto;
       min-height: 350px;
     }
+  }
+  .wysiwyg-body() {
+    .text();
+    .wysiwyg();
+  }
+  .wysiwyg-teaser() {
+    .subtext();
+    .wysiwyg();
   }
 
 }
