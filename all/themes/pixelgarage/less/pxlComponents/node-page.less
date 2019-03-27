@@ -25,20 +25,24 @@
         h2 {
           margin: @field-title-margin;
           #pxl-mixins.title();
+          color: @pxl-color-main;
         }
       }
 
       >.field-name-body {
-        margin: @field-margin;
-        .jumbotron {
-          h2 {
-            margin: @field-margin;
-          }
-        }
+        margin: 0 0 @paragraph-margin-bottom / 2;
+        width: 100%;
         #pxl-mixins.wysiwyg-body();
+        h3, .pxl-subtitle {
+          margin: @paragraph-title-margin;
+          #pxl-mixins.subtitle();
+          color: @pxl-color-main;
+        }
         //#pxl-mixins.hyphenate;
 
         @media @tablet {
+          margin: 0 0 @paragraph-margin-bottom;
+          width: 75%;
           //.content-columns(2, 24px);
         }
       }

@@ -45,14 +45,15 @@
 
                 .control-label {
                   display: block;
-                  padding: 8px 20px 10px;
-                  font-family: @pxl-text-font;
+                  margin: 0 5px;
+                  padding: 8px 20px;
+                  font-family: @pxl-text-font-medium;
                   font-size: 16px;
                   line-height: 1;
                   color: #fff;
-                  #pxl-mixins.border-radius(0);
                   border: none;
-                  background-color: @pxl-color-main;
+                  #pxl-mixins.border-radius(20px);
+                  background-color: @pxl-color-second;
                   opacity: 1.0;
 
                   > input {
@@ -60,8 +61,7 @@
                   }
 
                   &:hover, &.active {
-                    color: #fff;
-                    opacity: 0.7;
+                    color: @pxl-color-main;
                   }
                 }
               }

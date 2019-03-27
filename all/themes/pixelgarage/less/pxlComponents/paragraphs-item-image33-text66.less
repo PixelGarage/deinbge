@@ -50,6 +50,11 @@
 
         .field-item {
           #pxl-mixins.wysiwyg-body();
+          h3, .pxl-subtitle {
+            margin: @paragraph-title-margin;
+            #pxl-mixins.subtitle();
+            color: @pxl-color-main;
+          }
           //#pxl-mixins.hyphenate;
 
           ol {
