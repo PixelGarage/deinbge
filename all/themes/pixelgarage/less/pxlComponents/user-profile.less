@@ -30,6 +30,7 @@ form {
   margin: 0 auto @panel-separator-height;
 
   .ds-form {
+    max-width: 40em;
     .row {
       .col-sm-12 {
         .panel:not(#edit-picture) {
@@ -47,17 +48,18 @@ form {
             padding: 0;
             border: none;
             background: none;
-            text-align: center;
 
             .panel-title {
               display: inline-block;
               margin-bottom: 0;
               #pxl-mixins.title();
+              text-align: left;
             }
           }
 
           .panel-body {
             padding: 0;
+
             > .help-block {
               padding: 30px 100px;
               #pxl-mixins.subtitle();

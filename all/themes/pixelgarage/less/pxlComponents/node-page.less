@@ -4,6 +4,7 @@
 
 // Variables
 // -------------------------
+@paragraph-padding-full-width: 30px;
 @paragraph-margin-bottom: 64px;
 @paragraph-margin-bottom-large: 128px;
 
@@ -30,18 +31,16 @@
       }
 
       >.field-name-body {
-        margin: 0 0 @paragraph-margin-bottom / 2;
+        margin-bottom: @paragraph-margin-bottom / 2;
         width: 100%;
         #pxl-mixins.wysiwyg-body();
         h3, .pxl-subtitle {
           margin: @paragraph-title-margin;
-          #pxl-mixins.subtitle();
-          color: @pxl-color-main;
         }
         //#pxl-mixins.hyphenate;
 
         @media @tablet {
-          margin: 0 0 @paragraph-margin-bottom;
+          margin-bottom: @paragraph-margin-bottom;
           width: 75%;
           //.content-columns(2, 24px);
         }
@@ -50,15 +49,45 @@
       >.paragraphs-items {
         >.field-name-field-paragraphs {
           >.field-items {
-            >.field-item:not(:last-child) {
-              margin-bottom: @paragraph-margin-bottom;
+            >.field-item {
+              &:not(:last-child) {
+                margin-bottom: @paragraph-margin-bottom;
 
-              @media @tablet {
-                margin-bottom: @paragraph-margin-bottom-large;
+                @media @tablet {
+                  margin-bottom: @paragraph-margin-bottom-large;
+                }
               }
 
+              .entity-paragraphs-item.full-width {
+                padding-top: @paragraph-padding-full-width;
+                padding-bottom: @paragraph-padding-full-width;
+                background-color: @pxl-color-main;
 
-              // see paragraph-item-... less files
+                .page-node-950 & {
+                  background-color: @pxl-color-paragraph-bg;
+                }
+
+                .field-name-field-title,
+                .field-name-field-text,
+                .field-name-field-text-50,
+                .field-name-field-text-25-1,
+                .field-name-field-text-25-2 {
+                  .field-item {
+                    color: @text-color-light !important;
+                  }
+                }
+
+                .field-name-field-links {
+                  .field-item {
+                    a {
+                      #pxl-mixins.button-second();
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+
+              // see specific paragraph-items for further less rules
             }
           }
         }

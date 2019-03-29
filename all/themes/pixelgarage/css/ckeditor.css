@@ -1372,8 +1372,7 @@
   font-size: 24px;
   letter-spacing: 1.2px;
   line-height: 1;
-  text-align: left;
-  color: #333333;
+  text-align: center;
   color: #222222;
 }
 @media screen and (min-width: 320px) {
@@ -1406,13 +1405,11 @@
   }
 }
 .pxl-headline {
-  font-family: 'ProximaNovaLight';
+  font-family: 'ProximaNovaRegular';
   font-size: 18px;
   letter-spacing: normal;
   line-height: 1.4;
   text-align: left;
-  color: #333333;
-  font-weight: bold;
   color: #222222;
 }
 @media screen and (min-width: 320px) {
@@ -1427,16 +1424,15 @@
 }
 .pxl-leadtext {
   font-family: 'ProximaNovaRegular';
-  font-size: 28px;
+  font-size: 18px;
   letter-spacing: normal;
   line-height: 1.4;
   text-align: left;
-  color: #333333;
   color: #222222;
 }
 @media screen and (min-width: 320px) {
   .pxl-leadtext {
-    font-size: calc(28px + -4 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1451,7 +1447,6 @@
   letter-spacing: normal;
   line-height: 1.4;
   text-align: left;
-  color: #333333;
   color: #222222;
 }
 @media screen and (min-width: 320px) {
@@ -1473,7 +1468,6 @@ small,
   letter-spacing: normal;
   line-height: 1.2;
   text-align: left;
-  color: #333333;
   color: #222222;
 }
 @media screen and (min-width: 320px) {
@@ -1495,7 +1489,6 @@ blockquote,
   letter-spacing: normal;
   line-height: 1.4;
   text-align: center;
-  color: #333333;
   color: #222222;
 }
 @media screen and (min-width: 320px) {

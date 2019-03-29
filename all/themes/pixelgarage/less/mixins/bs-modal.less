@@ -60,7 +60,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: @pxl-color-main;
+      background-color: white;
 
       &.in {
         opacity: 1;
@@ -69,23 +69,22 @@
 
     .modal-dialog {
       margin: 0 auto;
+      padding: 0 1.2rem;
       width: 100%;
+      max-width: @container-max-width;
 
       .admin-menu & {
         margin: 29px auto 0;
       }
 
-      @media @narrow {
-        min-width: 480px;
-        width: 90%;
-        max-width: 690px;
-      }
       @media @tablet {
-        width: 90%;
-        max-width: 800px;
+        padding: 1rem 2rem;
       }
       @media @normal {
-        width: 800px;
+        padding: 1rem 3rem;
+      }
+      @media @wide {
+        padding: 1rem 4rem;
       }
 
       .modal-content {
@@ -129,11 +128,7 @@
 
         .modal-body {
           // content styled separately
-          padding: 20px 10px;
-
-          @media @narrow {
-            padding: 20px 30px;
-          }
+          padding: 0;
         }
 
         .modal-footer {

@@ -12,7 +12,7 @@
 @pxl-share-align: left;
 @pxl-follow-color: @text-color;
 
-@pxl-share-icon-size: 32px;
+@pxl-share-icon-size: 40px;
 
 
 // Social icon Fonts
@@ -61,7 +61,7 @@
 // -------------------------
 //
 // Add2Any buttons floating
-.a2a_kit {
+.a2a_kit.addtoany_list {
   &.a2a_floating_style {
     display: none;
     #pxl-mixins.center-vertically(fixed);
@@ -79,8 +79,15 @@
   &.a2a_horizontal_style {}
 
   a {
-    margin: 0 0 10px;
-    padding: 0;
+    margin: @field-margin;
+    padding: 0 5px;
+
+    >span {
+      width: @pxl-share-icon-size;
+      height: @pxl-share-icon-size;
+      line-height: @pxl-share-icon-size;
+      font-size: (@pxl-share-icon-size - 4px);
+    }
 
     .a2a_label {
       display: none;

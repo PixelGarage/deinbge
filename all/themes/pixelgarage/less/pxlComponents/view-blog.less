@@ -1,0 +1,39 @@
+/*
+ *  Blog view component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+body.page-blog {
+  h1.page-header {
+    display: none;
+  }
+}
+
+.view.view-blog {
+  .view-filters {
+    .filter-definition();
+  }
+
+  .view-content {
+    #pxl-mixins.masonry-small();
+
+    >.pe-container {
+      .pe-item {
+        #pxl-mixins.box-shadow(@pxl-box-shadow);
+      }
+    }
+  }
+
+  .pager.pager--infinite-scroll {
+    .pager__item {
+      a {
+        #pxl-mixins.button-main();
+      }
+    }
+  }
+}

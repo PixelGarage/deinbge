@@ -49,23 +49,8 @@
           #pxl-mixins.wysiwyg-body();
           h3, .pxl-subtitle {
             margin: @paragraph-title-margin;
-            #pxl-mixins.subtitle();
-            color: @pxl-color-main;
           }
           //#pxl-mixins.hyphenate;
-
-          ol {
-            padding-left: 20px;
-          }
-
-          .table-responsive {
-            padding: 0 15px;
-            border: 1px solid #ddd;
-
-            table {
-              min-width: 540px;
-            }
-          }
         }
       }
 
@@ -80,6 +65,44 @@
         }
       }
 
+      .field-name-field-video {
+        margin: @field-margin;
+        width: 100%;
+
+        .field-item {
+          position: relative;
+          overflow: hidden;
+          padding-top: 56.25%;
+
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+        }
+      }
+
+      .field-name-field-links {
+        margin: @field-margin;
+        width: 100%;
+
+        @media @tablet {
+          width: auto;
+        }
+
+        .field-item {
+          display: inline-block;
+          margin: 0 5px 1rem;
+
+          a {
+            #pxl-mixins.button-main();
+            margin: 0;
+          }
+        }
+      }
     }
   }
 }

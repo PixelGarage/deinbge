@@ -45,7 +45,7 @@
         }
 
         .decoration-black & {
-          background-color: black;
+          background-color: #222;
         }
         .decoration-gold & {
           background-color: @pxl-color-main;
@@ -76,6 +76,7 @@
         h2 {
           margin: @field-title-margin;
           #pxl-mixins.leadtext();
+          line-height: 1.2;
         }
       }
 
@@ -119,8 +120,8 @@
 
       .field-name-title {
         h2 {
-          margin: @field-title-margin;
           #pxl-mixins.title();
+          margin: @field-title-margin;
         }
       }
 

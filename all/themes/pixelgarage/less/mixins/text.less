@@ -23,7 +23,6 @@
     -webkit-hyphens: @mode;
     -moz-hyphens: @mode;
     -ms-hyphens: @mode;
-    -o-hyphens: @mode;
     hyphens: @mode;
   }
 
@@ -135,7 +134,7 @@
     .font-size-responsive(@resp-menu-size-max, @resp-menu-size-min);
     letter-spacing: @menu-letter-spacing;
     line-height: @menu-line-height;
-    text-align: @menu-text-alignl;
+    text-align: @menu-text-align;
     color: @text-color;
   }
 
@@ -155,7 +154,6 @@
     line-height: @button-line-height;
     text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
   }
 
   .glow() {
@@ -255,6 +253,19 @@
       border: 0;
       border-bottom: 2px solid @pxl-color-border-active;
       background: none;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    .table-responsive {
+      padding: 0 15px;
+      border: 1px solid @pxl-color-border;
+
+      table {
+        min-width: 540px;
+      }
     }
 
     img {

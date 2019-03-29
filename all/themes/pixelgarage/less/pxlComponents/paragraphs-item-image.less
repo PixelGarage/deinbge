@@ -31,6 +31,26 @@
           }
         }
       }
+
+      .field-name-field-links {
+        margin: @field-margin;
+        width: 100%;
+
+        @media @tablet {
+          width: auto;
+        }
+
+        .field-item {
+          display: inline-block;
+          margin: 0 5px 1rem;
+
+          a {
+            #pxl-mixins.button-main();
+            margin: 0;
+          }
+        }
+      }
+
     }
   }
 }

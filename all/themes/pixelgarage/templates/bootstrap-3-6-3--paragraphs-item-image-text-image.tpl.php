@@ -6,10 +6,11 @@
 $url1 = $field_link_1[0]['url'];
 $url2 = $field_link_2[0]['url'];
 $button_text = t('Zu den Resultaten');
+$full_width = $field_full_width_paragraph[0]['value'] == '1' ? 'full-width ' : '';
 ?>
 
 
-<<?php print $layout_wrapper; print $layout_attributes; ?> class="full-width <?php print $classes; ?>">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="<?php print $full_width; print $classes; ?>">
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>

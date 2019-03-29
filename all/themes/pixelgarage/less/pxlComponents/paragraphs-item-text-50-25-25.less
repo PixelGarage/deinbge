@@ -46,14 +46,12 @@
       .field-name-field-text-50,
       .field-name-field-text-25-1,
       .field-name-field-text-25-2 {
-        margin-bottom: 20px;
+        margin: @field-margin;
 
         .field-item {
           #pxl-mixins.wysiwyg-body();
           h3, .pxl-subtitle {
             margin: @paragraph-title-margin;
-            #pxl-mixins.subtitle();
-            color: @pxl-color-main;
           }
           //#pxl-mixins.hyphenate;
 
@@ -65,7 +63,7 @@
 
       .field-name-field-image1, .field-name-field-image2,
       .field-name-field-image3, .field-name-field-image4 {
-        margin: 0 -@grid-gutter-width/4 20px;
+        margin: 0 -@grid-gutter-width/4 30px;
 
         .field-item {
           text-align: center;
@@ -83,14 +81,12 @@
       }
 
       @media @tablet-only {
+        // left image
         .field-name-field-image1 {
           .field-item {
             text-align: left;
-
             img {
-              display: inline-block;
               max-width: 50%;
-              height: auto;
             }
           }
         }

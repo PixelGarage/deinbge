@@ -4,72 +4,131 @@
 
 // Variables
 // -------------------------
-@pxl-form-control-height: 30px;
+@pxl-form-control-height: 38px;
 
 // Mixins
 // -------------------------
 
+.filter-definition {
+  padding: 30px 0;
 
-// General settings
-// -------------------------
-.view.view-social-masonry,
-.view.view-blog {
-  .view-filters {
-    padding: 30px 0;
+  form {
+    margin: 0;
+  }
 
-    .views-exposed-form {
-      .views-exposed-widgets {
-        margin: 0;
-        text-align: center;
+  .views-exposed-form {
+    .views-exposed-widgets {
+      margin: 0;
+      text-align: center;
 
-        .views-exposed-widget {
-          display: inline-block;
-          vertical-align: top;
-          float: none;
-          margin: 5px -2px;
-          padding: 0;
+      .views-exposed-widget {
+        display: inline-block;
+        vertical-align: top;
+        float: none;
+        margin: 5px -2px;
+        padding: 0;
 
-          >label, >.description {
-            display: none;
-          }
+        >label, >.description {
+          display: none;
+        }
 
-          .views-widget {
-            position: relative;
+        .views-widget {
+          position: relative;
 
-            .form-radios {
-              text-align: center;
+          .form-radios {
+            text-align: center;
 
-              .radio {
-                display: inline-block;
-                margin: 0;
+            .radio {
+              display: inline-block;
+              margin: 0;
 
-                .control-label {
-                  display: block;
-                  margin: 0 5px;
-                  padding: 8px 20px;
-                  font-family: @pxl-text-font-medium;
-                  font-size: 16px;
-                  line-height: 1;
-                  color: #fff;
-                  border: none;
-                  #pxl-mixins.border-radius(20px);
-                  background-color: @pxl-color-second;
-                  opacity: 1.0;
-
-                  > input {
-                    display: none;
-                  }
-
-                  &:hover, &.active {
-                    color: @pxl-color-main;
-                  }
+              .control-label {
+                > input {
+                  display: none;
                 }
+
+                #pxl-mixins.button-main-small();
+                margin: 0 5px;
               }
             }
           }
+
+
+          .form-type-textfield {
+            input {
+              width: 150px;
+              height: @pxl-form-control-height;
+              font-family: @pxl-form-font;
+              font-size: 16px;
+              color: @text-color;
+              #pxl-mixins.placeholder();
+              border: 1px solid @pxl-color-border;
+              #pxl-mixins.border-radius(0);
+              #pxl-mixins.box-shadow(none);
+
+              &:focus {
+                #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+                #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+                border: 1px solid @pxl-color-main;
+              }
+            }
+          }
+
+          .form-type-select {
+            margin: 0 0 0 5px;
+
+            select {
+              #pxl-mixins.no-appearance;
+              padding: 3px 20px 6px 10px;
+              height: @pxl-form-control-height;
+              font-family: @pxl-form-font;
+              font-size: 16px;
+              color: @text-color;
+              border: 1px solid @pxl-color-border;
+              #pxl-mixins.border-radius(0);
+              #pxl-mixins.box-shadow(none);
+
+              &:focus {
+                #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+                #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+                border: 1px solid @pxl-color-main;
+              }
+            }
+
+            &:after {
+              content: '\f0d7';
+              display: inline-block;
+              position: absolute;
+              top: 0;
+              right: 5px;
+              bottom: 0;
+              font-family: @pxl-icon-font;
+              color: @gray-light;
+              line-height: @pxl-form-control-height;
+              pointer-events: none;
+            }
+          }
+        }
+
+        .form-submit {
+          &.js-hide {
+            display: none;
+          }
+
+          #pxl-mixins.button-main-small();
+          margin: 0 5px;
         }
       }
     }
+  }
+}
+
+
+// General settings
+// -------------------------
+.view.view-social-masonry {
+  .view-filters {
+    .filter-definition();
   }
 
   .view-content {

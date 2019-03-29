@@ -30,8 +30,6 @@
           #pxl-mixins.wysiwyg-body();
           h3, .pxl-subtitle {
             margin: @paragraph-title-margin;
-            #pxl-mixins.subtitle();
-            color: @pxl-color-main;
           }
           //#pxl-mixins.hyphenate;
         }
@@ -40,6 +38,25 @@
           width: 75%;
           .field-item {
             //.content-columns(2, 24px);
+          }
+        }
+
+        .field-name-field-links {
+          margin: @field-margin;
+          width: 100%;
+
+          @media @tablet {
+            width: auto;
+          }
+
+          .field-item {
+            display: inline-block;
+            margin: 0 5px 1rem;
+
+            a {
+              #pxl-mixins.button-main();
+              margin: 0;
+            }
           }
         }
 

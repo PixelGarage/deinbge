@@ -25,70 +25,88 @@
 #pxl-mixins {
   //
   // Button styles
-  .button-main(@radius: 30px) {
+  .button-base(@radius: 30px) {
     display: inline-block;
     margin: 1em auto;
     padding: .5em 2em;
     #pxl-mixins.buttontext();
-    color: @pxl-color-button;
     border: none;
     outline: none;
     #pxl-mixins.border-radius(@radius);
+  }
+
+  .button-base-small(@radius: 30px) {
+    display: inline-block;
+    margin: 1em auto;
+    padding: .5em 2em;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    #pxl-mixins.border-radius(@radius);
+  }
+
+  .button-main(@radius: 30px) {
+    .button-base(@radius);
+    color: @pxl-color-button;
     background: @pxl-color-button-bg;
 
-    &:hover {
+    &:hover, &.active {
+      color: @pxl-color-button-hover;
+      background: @pxl-color-button-bg-hover;
+    }
+  }
+
+  .button-main-small(@radius: 30px) {
+    .button-base-small(@radius);
+    color: @pxl-color-button;
+    background: @pxl-color-button-bg;
+
+    &:hover, &.active {
       color: @pxl-color-button-hover;
       background: @pxl-color-button-bg-hover;
     }
   }
 
   .button-second(@radius: 30px) {
-    display: inline-block;
-    margin: 1em auto;
-    padding: .5em 2em;
-    #pxl-mixins.buttontext();
-    color: @pxl-color-button2;
-    border: none;
-    outline: none;
-    #pxl-mixins.border-radius(@radius);
-    background: @pxl-color-button2-bg;
+    .button-base(@radius);
+    color: @pxl-color-button2 !important;
+    background: @pxl-color-button2-bg !important;
 
-    &:hover {
-      color: @pxl-color-button2-hover;
-      background: @pxl-color-button2-bg-hover;
+    &:hover, &.active {
+      color: @pxl-color-button2-hover !important;
+      background: @pxl-color-button2-bg-hover !important;
+    }
+  }
+
+  .button-second-small(@radius: 30px) {
+    .button-base-small(@radius);
+    color: @pxl-color-button2 !important;
+    background: @pxl-color-button2-bg !important;
+
+    &:hover, &.active {
+      color: @pxl-color-button2-hover !important;
+      background: @pxl-color-button2-bg-hover !important;
     }
   }
 
   .button-gold(@radius: 30px) {
-    display: inline-block;
-    margin: 1em auto;
-    padding: .5em 2em;
-    #pxl-mixins.buttontext();
+    .button-base(@radius);
     color: white;
-    border: none;
-    outline: none;
-    #pxl-mixins.border-radius(@radius);
     background: @pxl-color-main;
 
-    &:hover {
+    &:hover, &.active {
       color: white;
       background: rgba(@pxl-color-main, 0.5);
     }
   }
+  .button-gold-small(@radius: 30px) {
+    .button-base-small(@radius);
+    color: white;
+    background: @pxl-color-main;
 
-  .button-large(@bg-color:  @pxl-color-button-bg; @bg-color-hover: @pxl-color-button-bg-hover; @radius: 5px) {
-    display: inline-block;
-    margin: 0 auto;
-    padding: 10px 15px 10px;
-    #pxl-mixins.buttontext();
-    color: #fff;
-    white-space: normal;
-    border: none;
-    #pxl-mixins.border-radius(@radius);
-    background: @bg-color;
-
-    &:hover {
-      background: @bg-color-hover;
+    &:hover, &.active {
+      color: white;
+      background: rgba(@pxl-color-main, 0.5);
     }
   }
 

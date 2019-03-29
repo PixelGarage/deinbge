@@ -14,20 +14,15 @@
 // -------------------------
 
 .entity-paragraphs-item.paragraphs-item-image-text-image {
-  &.full-width {
-    background-color: @pxl-color-main;
-  }
-
   .row {
     .col-sm-6 {
-      margin: 20px 0;
-
       .field-name-field-text-50 {
-        margin: 20px 0;
+        margin: @field-margin;
+
         .field-item {
           #pxl-mixins.wysiwyg-body();
-          p {
-            color: @pxl-color-panel-item-bg;
+          h3, .pxl-subtitle {
+            margin: @paragraph-title-margin;
           }
           //#pxl-mixins.hyphenate;
 
@@ -38,6 +33,7 @@
       }
 
       .field-name-field-video {
+        margin: @field-margin;
         width: 100%;
 
         .field-item {
@@ -59,14 +55,13 @@
     }
 
     .col-xxs-6-sm-3 {
-      margin: 20px 0;
-
       .col-inner {
         padding: 10px;
         text-align: center;
 
         .field-name-field-image1, .field-name-field-image2 {
           display: none;
+          margin: @field-margin;
           .field-item {
             img {
               max-width: 100%;
@@ -76,18 +71,17 @@
         }
 
         .field-name-field-image-title-1, .field-name-field-image-title-2 {
-          margin-bottom: 20px;
+          margin: @field-margin;
 
           .field-item {
             #pxl-mixins.text();
             font-family: @pxl-text-font-bold;
-            color: @pxl-color-panel-item-bg;
             text-align: center;
           }
         }
 
         a.button-survey {
-          #pxl-mixins.button-second();
+          #pxl-mixins.button-second(50px);
         }
       }
     }

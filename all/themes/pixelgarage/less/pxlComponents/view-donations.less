@@ -51,10 +51,12 @@
 
 .view.view-donations {
   .view-header {
-    //width: 100%;
+    margin-bottom: @paragraph-margin-bottom;
 
     #pxl-mixins.wysiwyg-body();
-    text-align: center;
+    h3, .pxl-subtitle {
+      margin: @paragraph-title-margin;
+    }
   }
 
   .view-content {
@@ -69,27 +71,28 @@
           float: none;
           display: inline-block;
           vertical-align: top;
-          margin: 5px;
 
           a {
-            .tab-button();
+            #pxl-mixins.button-main-small();
+            margin: 0 5px;
+            //.tab-button();
           }
 
           &.active {
             a {
-              color: #fff;
-              border: 1px solid @pxl-color-support;
-              background-color: @pxl-color-support;
+              #pxl-mixins.button-gold-small();
+              margin: 0 5px;
             }
           }
         }
       }
 
       .tab-content {
-        margin: 20px auto 0;
+        margin: 5px auto 0;
+        border-top: 1px solid @pxl-color-border;
 
         .tab-pane {
-
+          padding-top: 20px;
           // registration info for recurring payment
           .registration-information {
             width: 100%;
@@ -111,21 +114,7 @@
               }
 
               a {
-                display: inline-block;
-                margin-top: 30px;
-                padding: 5px 15px;
-                font-family: @pxl-text-font-bold;
-                font-size: @resp-button-size-min;
-                line-height: 1.6;
-                letter-spacing: 0.04em;
-                text-transform: none;
-                color: #fff;
-                //border: 1px solid @pxl-action-button;
-                background-color: @pxl-action-button;
-
-                &:hover, &.active {
-                  background-color: darken(@pxl-action-button, 5%);
-                }
+                #pxl-mixins.button-main();
               }
             }
           }
