@@ -12,28 +12,7 @@
 
 // Mixins
 // -------------------------
-.tab-button(@size: @resp-button-size-min; @bg-color: @gray-lighter) {
-  display: inline-block;
-  padding: 10px 15px;
-  height: @tab-height;
-  font-family: @pxl-text-font-bold;
-  font-size: @size;
-  line-height: 1;
-  letter-spacing: 0;
-  text-transform: capitalize;
-  color: @text-color;
-  outline: none;
-  opacity: 1.0;
-  #pxl-mixins.border-radius(@tab-button-radius);
-  border: 1px solid @pxl-color-border;
-  background-color: transparent;
 
-  &:hover, &:focus {
-    color: #fff;
-    border: 1px solid @pxl-color-support;
-    background-color: @pxl-color-support;
-  }
-}
 
 // General settings
 // -------------------------
@@ -70,6 +49,7 @@
         li {
           float: none;
           display: inline-block;
+          margin: 5px 0;
           vertical-align: top;
 
           a {

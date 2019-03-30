@@ -8795,6 +8795,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /*
  *  Modal dialog component
  * --------------------------------------------------*/
+/*
+ *  Stripe button component
+ * --------------------------------------------------*/
 /* --------------------------------------------------
  * Pixelgarage Components
  * --------------------------------------------------*/
@@ -9007,7 +9010,7 @@ form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-acti
 form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default:hover,
 form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body .raffle-action-container a.btn-default.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 form .ds-form .row .col-sm-12 .panel#edit-picture {
   border: none;
@@ -9060,7 +9063,7 @@ form .form-actions .form-submit {
 form .form-actions .form-submit:hover,
 form .form-actions .form-submit.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 form .form-actions .form-submit .icon {
   display: none;
@@ -10602,6 +10605,7 @@ body.page-blog h1.page-header {
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li {
   float: none;
   display: inline-block;
+  margin: 5px 0;
   vertical-align: top;
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li a {
@@ -10640,7 +10644,7 @@ body.page-blog h1.page-header {
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li.active a:hover,
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style ul.nav li.active a.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 .view.view-donations .view-content .views-bootstrap-tab-plugin-style .tab-content {
   margin: 5px auto 0;
@@ -11630,7 +11634,6 @@ body.page-blog h1.page-header {
   line-height: 1;
   text-align: center;
   color: #222222;
-  color: #bf9c50;
 }
 @media screen and (min-width: 320px) {
   .node-page > .row > div.col-sm-12 > .field-name-title h2 {
@@ -13671,163 +13674,755 @@ body.page-blog h1.page-header {
   height: auto;
   min-height: 350px;
 }
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item {
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined {
+  position: relative;
   width: 100%;
+  z-index: 10;
 }
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group {
-  height: 34px;
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items {
+  text-align: center;
 }
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group .input-group-addon,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group .input-group-addon {
-  width: 50px;
-  font-size: 18px;
-}
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group .form-item,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group .form-item {
-  width: 70px;
-}
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group .form-item input.form-text,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group .form-item input.form-text {
-  height: 34px;
-  font-size: 18px;
-}
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit {
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item {
   display: inline-block;
-  padding: 6px 2em;
-  height: 38px;
-  font-family: 'ProximaNovaBold';
+  vertical-align: top;
+  width: 100%;
+  margin: 0 -2px 20px;
+  padding: 0;
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item {
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item {
+    width: 33.333333%;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container {
+  position: relative;
+  padding: 20px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+  box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-title,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-title {
+  font-family: 'ProximaNovaRegular';
   font-size: 18px;
-  line-height: 1;
   letter-spacing: normal;
-  text-transform: capitalize;
-  color: #fff;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+  color: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-title,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-title {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-title,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-title {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-text,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-text {
+  margin-bottom: 20px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-text,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-text {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-text,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-text {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
   outline: none;
-  opacity: 1;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
+  color: #fff;
+  background: #222;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button.active,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button.active {
+  color: #bf9c50;
+  background: #222;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
   border: none;
-  background-color: #222;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: white;
+  background: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: 24px;
+  }
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button.active,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button.active {
+  color: white;
+  background: rgba(191, 156, 80, 0.8);
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button.btn-error,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button.btn-error {
+  background-color: #d9534f;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button[disabled],
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button[disabled] {
+  opacity: 1;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form {
+  display: inline-block;
+  margin: 1em 0;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form {
+  width: 100%;
+  white-space: nowrap;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -2px;
+  padding: 0;
+  width: auto;
+  height: 34px;
+  letter-spacing: 0;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 5px;
+  width: 60px;
+  height: 34px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  color: #222222;
+  line-height: 1;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border: 1px solid #c9c9c9;
+  background-color: #fff;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 70px;
+  color: #222222;
+  text-align: right;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item label,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item label {
+  display: none;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text {
+  padding: 6px 5px;
+  height: 34px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  text-align: right;
+  line-height: 1;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #c9c9c9;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
+  box-shadow: 0 0 1px 1px #aaa inset;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
+  border: 1px solid #bf9c50;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+  vertical-align: top;
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0 0 0 -4px;
+  padding: 6px 1.5em;
   height: 34px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:hover,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:hover,
-.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:focus,
-.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:focus {
-  opacity: 0.7;
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
 }
-body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit,
-body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit {
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active {
+  color: #bf9c50;
+  background: #222;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
   display: inline-block;
-  padding: 6px 2em;
-  height: 38px;
-  font-family: 'ProximaNovaBold';
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
   font-size: 18px;
-  line-height: 1;
   letter-spacing: normal;
-  text-transform: capitalize;
-  color: #fff;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
   outline: none;
-  opacity: 1;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  border: none;
-  background-color: #222;
+  color: white;
+  background: #bf9c50;
+  padding: 6px 1.5em;
+  height: 34px;
 }
-body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:hover,
-body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:hover,
-body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:focus,
-body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:focus {
-  opacity: 0.7;
+@media screen and (min-width: 320px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: 24px;
+  }
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active {
+  color: white;
+  background: rgba(191, 156, 80, 0.8);
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group {
+    height: 38px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon {
+    width: 80px;
+    font-size: 24px;
+    height: 38px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item {
+    width: 100px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text {
+    height: 38px;
+    font-size: 24px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    padding: 6px 2em;
+    height: 38px;
+  }
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    padding: 6px 2em;
+    height: 34px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-payment-processing,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-payment-processing {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  max-height: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  color: #222222;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-error,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined .field-items .field-item .stripe-button-container .stripe-button-error {
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  color: #d9534f;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items {
+  text-align: center;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0 -2px 20px;
+  padding: 0;
 }
 @media screen and (min-width: 480px) {
   .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item,
   .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item {
-    width: 100%;
+    width: auto;
     padding: 0 10px;
   }
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group {
-    height: 38px;
-  }
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group .input-group-addon,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group .input-group-addon {
-    width: 70px;
-    font-size: 24px;
-  }
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group .form-item,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group .form-item {
-    width: 100px;
-  }
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form .input-group .form-item input.form-text,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form .input-group .form-item input.form-text {
-    height: 38px;
-    font-size: 24px;
-  }
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit {
-    display: inline-block;
-    padding: 6px 2em;
-    font-family: 'ProximaNovaBold';
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    color: #fff;
-    outline: none;
-    opacity: 1;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    border: none;
-    background-color: #222;
-    height: 38px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:hover,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:hover,
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:focus,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:focus {
-    opacity: 0.7;
-  }
-  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit,
-  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit {
-    display: inline-block;
-    padding: 6px 2em;
-    height: 38px;
-    font-family: 'ProximaNovaBold';
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    color: #fff;
-    outline: none;
-    opacity: 1;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    border: none;
-    background-color: #222;
-  }
-  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:hover,
-  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:hover,
-  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item form button.form-submit:focus,
-  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item form button.form-submit:focus {
-    opacity: 0.7;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container {
+  position: relative;
+  padding: 20px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+  box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-title,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-title {
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+  color: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-title,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-title {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
-@media screen and (min-width: 992px) {
-  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item,
-  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item {
-    width: 50%;
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-title,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-title {
+    font-size: 24px;
   }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-text,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-text {
+  margin-bottom: 20px;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-text,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-text {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-text,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-text {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button.active,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button.active {
+  color: #bf9c50;
+  background: #222;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: white;
+  background: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button {
+    font-size: 24px;
+  }
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button.active,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button.active {
+  color: white;
+  background: rgba(191, 156, 80, 0.8);
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button.btn-error,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button.btn-error {
+  background-color: #d9534f;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button[disabled],
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button[disabled] {
+  opacity: 1;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form {
+  display: inline-block;
+  margin: 1em 0;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form {
+  width: 100%;
+  white-space: nowrap;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -2px;
+  padding: 0;
+  width: auto;
+  height: 34px;
+  letter-spacing: 0;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 5px;
+  width: 60px;
+  height: 34px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  color: #222222;
+  line-height: 1;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border: 1px solid #c9c9c9;
+  background-color: #fff;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  width: 70px;
+  color: #222222;
+  text-align: right;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item label,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item label {
+  display: none;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text {
+  padding: 6px 5px;
+  height: 34px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  text-align: right;
+  line-height: 1;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 1px solid #c9c9c9;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
+  box-shadow: 0 0 1px 1px #aaa inset;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
+  border: 1px solid #bf9c50;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+  vertical-align: top;
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0 0 0 -4px;
+  padding: 6px 1.5em;
+  height: 34px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active {
+  color: #bf9c50;
+  background: #222;
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: white;
+  background: #bf9c50;
+  padding: 6px 1.5em;
+  height: 34px;
+}
+@media screen and (min-width: 320px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    font-size: 24px;
+  }
+}
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active,
+body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit.active {
+  color: white;
+  background: rgba(191, 156, 80, 0.8);
+}
+@media screen and (min-width: 480px) {
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group {
+    height: 38px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon {
+    width: 80px;
+    font-size: 24px;
+    height: 38px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item {
+    width: 100px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text {
+    height: 38px;
+    font-size: 24px;
+  }
+  .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    padding: 6px 2em;
+    height: 38px;
+  }
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit,
+  body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
+    padding: 6px 2em;
+    height: 34px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-payment-processing,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-payment-processing {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  max-height: 30px;
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  color: #222222;
+}
+.node.node-spenden .row .col-sm-12 .field-name-field-spenden .field-items .field-item .stripe-button-container .stripe-button-error,
+.node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .field-items .field-item .stripe-button-container .stripe-button-error {
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  color: #d9534f;
 }
 /*
  *  Node spenden component
@@ -16523,7 +17118,7 @@ form#user-login {
 #user-create-account .login-register:hover,
 #user-create-account .login-register.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 /* user login form */
 #user_login_form {
@@ -16595,7 +17190,7 @@ form#user-login {
 #user_login_form .form-actions-wrapper .form-actions .btn:hover,
 #user_login_form .form-actions-wrapper .form-actions .btn.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 #user_login_form .form-actions-wrapper .login-password {
   display: inline-block;
@@ -16688,7 +17283,7 @@ form#user-login {
 #user-register-form .form-actions .btn.active,
 #user-pass .form-actions .btn.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 /*
  *  Form confirmation component
@@ -16745,7 +17340,7 @@ form.confirmation .form-actions button.form-submit {
 form.confirmation .form-actions button.form-submit:hover,
 form.confirmation .form-actions button.form-submit.active {
   color: white;
-  background: rgba(191, 156, 80, 0.5);
+  background: rgba(191, 156, 80, 0.8);
 }
 /*
  *  ShareThis component
@@ -17003,258 +17598,6 @@ form.confirmation .form-actions button.form-submit.active {
 #ui-datepicker-div table.ui-datepicker-calendar tbody tr td a.ui-state-active {
   color: #fff;
   background-color: #222;
-}
-/*
- *  Stripe button component
- * --------------------------------------------------*/
-.field-type-number-decimal {
-  position: relative;
-  width: 100%;
-  z-index: 10;
-}
-.field-type-number-decimal .field-items {
-  text-align: center;
-}
-.field-type-number-decimal .field-items .field-item {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  margin: 0 -2px 20px;
-  padding: 0;
-}
-@media screen and (min-width: 480px) {
-  .field-type-number-decimal .field-items .field-item {
-    width: 50%;
-    padding: 0 10px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .field-type-number-decimal .field-items .field-item {
-    width: 33.333333%;
-  }
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container {
-  position: relative;
-  padding: 20px;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  background-color: #fff;
-  -webkit-box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
-  -moz-box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
-  box-shadow: 0 0 20px rgba(192, 192, 192, 0.8);
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-title {
-  font-family: 'ProximaNovaRegular';
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 1.4;
-  text-align: left;
-  color: #222222;
-  font-weight: bold;
-  text-align: center;
-  color: #bf9c50;
-}
-@media screen and (min-width: 320px) {
-  .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-title {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-title {
-    font-size: 24px;
-  }
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-text {
-  margin-bottom: 20px;
-  font-family: 'ProximaNovaLight';
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 1.4;
-  text-align: left;
-  color: #222222;
-  text-align: center;
-}
-@media screen and (min-width: 320px) {
-  .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-text {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-text {
-    font-size: 24px;
-  }
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button {
-  display: inline-block;
-  padding: 6px 2em;
-  height: 38px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: capitalize;
-  color: #fff;
-  outline: none;
-  opacity: 1;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  border: none;
-  background-color: #222;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:hover,
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:focus {
-  opacity: 0.7;
-}
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button {
-  display: inline-block;
-  padding: 6px 2em;
-  height: 38px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: capitalize;
-  color: #fff;
-  outline: none;
-  opacity: 1;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  border: none;
-  background-color: #222;
-}
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:hover,
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button:focus {
-  opacity: 0.7;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button.btn-error {
-  background-color: #d9534f;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button[disabled] {
-  opacity: 1;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form {
-  width: 100%;
-  margin: 0 auto;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 -2px;
-  padding: 0;
-  width: auto;
-  height: 38px;
-  letter-spacing: 0;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .input-group-addon {
-  display: inline-block;
-  vertical-align: top;
-  padding: 6px 5px;
-  width: 70px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  color: #222222;
-  line-height: 1;
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 30px;
-  border: 1px solid #c9c9c9;
-  background-color: #fff;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0;
-  width: 100px;
-  color: #222222;
-  text-align: right;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item label {
-  display: none;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text {
-  padding: 6px 5px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  text-align: right;
-  line-height: 1;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  border: 1px solid #c9c9c9;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
-  border: 1px solid #c9c9c9;
-  box-shadow: 0 0 1px 1px #aaa inset;
-}
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form .input-group .form-item input.form-text:focus {
-  border: 1px solid #bf9c50;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
-  vertical-align: top;
-  display: inline-block;
-  padding: 6px 2em;
-  height: 38px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: capitalize;
-  color: #fff;
-  outline: none;
-  opacity: 1;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  border: none;
-  background-color: #222;
-  margin: 0 0 0 -4px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:focus {
-  opacity: 0.7;
-}
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit {
-  display: inline-block;
-  padding: 6px 2em;
-  height: 38px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: capitalize;
-  color: #fff;
-  outline: none;
-  opacity: 1;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  border: none;
-  background-color: #222;
-}
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:hover,
-body.front .field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-custom-form form button.form-submit:focus {
-  opacity: 0.7;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-payment-processing {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  bottom: 0;
-  max-height: 30px;
-  font-family: 'ProximaNovaLight';
-  font-size: 12px;
-  color: #222222;
-}
-.field-type-number-decimal .field-items .field-item .stripe-button-container .stripe-button-error {
-  font-family: 'ProximaNovaLight';
-  font-size: 12px;
-  color: #d9534f;
 }
 /*
  *  Block stripe fees component

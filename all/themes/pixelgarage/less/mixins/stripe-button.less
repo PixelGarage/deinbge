@@ -1,0 +1,264 @@
+/*
+ *  Stripe button component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@form-control-height: 38px;
+
+
+// Mixins
+// -------------------------
+#pxl-mixins {
+  //
+  // custom stripe button (form)
+  .stripe-button-form () {
+    display: inline-block;
+    margin: 1em 0;
+
+    form {
+      width: 100%;
+      white-space: nowrap;
+
+      .input-group {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 -2px;
+        padding: 0;
+        width: auto;
+        height: @form-control-height - 4;
+        letter-spacing: 0;
+
+        .input-group-addon {
+          display: inline-block;
+          vertical-align: top;
+          padding: 6px 5px;
+          width: 60px;
+          height: @form-control-height - 4;
+          font-family: @pxl-text-font-medium;
+          font-size: @resp-button-size-min;
+          color: @text-color;
+          line-height: 1;
+          .border-left-radius(30px);
+          border: 1px solid @pxl-color-border;
+          background-color: #fff;
+        }
+
+        .form-item {
+          display: inline-block;
+          vertical-align: top;
+          padding: 0;
+          width: 70px;
+          color: @text-color;
+          text-align: right;
+
+          label {
+            display: none;
+          }
+
+          input.form-text {
+            padding: 6px 5px;
+            height: @form-control-height - 4;
+            font-family: @pxl-text-font-medium;
+            font-size: @resp-button-size-min;
+            text-align: right;
+            line-height: 1;
+            #pxl-mixins.border-radius(0);
+            border: 1px solid @pxl-color-border;
+
+            &:focus {
+              box-shadow: 0 0 1px 1px #aaa inset;
+
+              body.front & {
+                border: 1px solid @pxl-color-main;
+              }
+            }
+          }
+        }
+      }
+
+      button.form-submit {
+        display: inline-block;
+        vertical-align: top;
+        #pxl-mixins.button-main();
+        margin: 0 0 0 -4px;
+        padding: 6px 1.5em;
+        height: @form-control-height - 4;
+        .border-left-radius(0);
+
+        body.front & {
+          #pxl-mixins.button-gold();
+          padding: 6px 1.5em;
+          height: @form-control-height - 4;
+        }
+
+      }
+    }
+
+    @media @narrow {
+      form {
+        .input-group {
+          height: @form-control-height;
+
+          .input-group-addon {
+            width: 80px;
+            font-size: @resp-button-size-max;
+            height: @form-control-height;
+          }
+
+          .form-item {
+            width: 100px;
+
+            input.form-text {
+              height: @form-control-height;
+              font-size: @resp-button-size-max;
+            }
+          }
+        }
+        button.form-submit {
+          padding: 6px 2em;
+          height: @form-control-height;
+
+          body.front & {
+            padding: 6px 2em;
+            height: @form-control-height - 4;
+          }
+        }
+      }
+    }
+
+  }
+
+  //
+  // stripe button predefined
+  .stripe-button() {
+    .stripe-button-container {
+      position:relative;
+      padding: 20px;
+      #pxl-mixins.border-radius(0);
+      //border: 1px solid @pxl-color-border;
+      background-color: #fff;
+      #pxl-mixins.box-shadow(@pxl-box-shadow);
+
+      .stripe-button-title {
+        #pxl-mixins.leadtext();
+        font-weight: bold;
+        text-align: center;
+        color: @pxl-color-main;
+      }
+
+      .stripe-button-text {
+        margin-bottom: @font-size-base;
+        #pxl-mixins.text();
+        text-align: center;
+      }
+
+      .stripe-button {
+        // the stripe button with the given amount
+        #pxl-mixins.button-main();
+
+        body.front & {
+          #pxl-mixins.button-gold();
+        }
+
+        &.btn-error {
+          background-color: @pxl-color-danger;
+        }
+
+        &[disabled] {
+          opacity: 1.0;
+        }
+      }
+
+      //
+      // stripe button custom form
+      .stripe-button-custom-form {
+        .stripe-button-form();
+      }
+
+      // payment processing image
+      .stripe-payment-processing {
+        position: absolute;
+        #pxl-mixins.center-horizontally();
+        bottom: 0;
+        max-height: 30px;
+        font-family: @pxl-text-font;
+        font-size: 12px;
+        color: @text-color;
+
+        img {
+
+        }
+      }
+
+      //
+      // visible only when input is incorrect
+      .stripe-button-error {
+        font-family: @pxl-text-font;
+        font-size: 12px;
+        color: @pxl-color-danger;
+      }
+
+    }
+  }
+
+  //
+  // stripe button fee percentage
+  .stripe-button-fee-percentages() {
+    margin: 50px 0 20px;
+
+    .fee-text-top,
+    .fee-text-bottom {
+      margin: @field-margin;
+      #pxl-mixins.text();
+      text-align: center;
+    }
+    .fee-text-bottom {
+      display: none;
+    }
+
+    .fee-radios-wrapper {
+      margin: @field-margin;
+      text-align: center;
+
+      .fee-radio {
+        display: inline-block;
+        width: 46px;
+        height: 46px;
+        padding: 15px 0 15px;
+        font-family: @pxl-text-font;
+        font-size: @font-size-min;
+        line-height: 1;
+        color: @text-color;
+        #pxl-mixins.border-radius(50%);
+        border: 1px solid @pxl-color-border;
+        background-color: white;
+
+        &:hover, &:focus, &.selected {
+          color: #fff;
+          border: 1px solid @pxl-color-support;
+          background-color: @pxl-color-support;
+        }
+
+        label {
+
+        }
+      }
+    }
+
+    .fee-answer-wrapper {
+      margin: @field-margin;
+      #pxl-mixins.text();
+      text-align: center;
+    }
+
+    .fee-text-stripe-fee {
+      font-family: @pxl-text-font;
+      font-size: @font-size-min;
+      line-height: 1;
+      color: @text-color;
+    }
+  }
+
+
+}

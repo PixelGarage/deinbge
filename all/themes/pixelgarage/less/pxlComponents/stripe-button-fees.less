@@ -8,62 +8,6 @@
 
 // Mixins
 // -------------------------
-.stripe-button-fee-percentages() {
-  margin: 50px 0 20px;
-
-  .fee-text-top,
-  .fee-text-bottom {
-    margin: @field-margin;
-    #pxl-mixins.text();
-    text-align: center;
-  }
-  .fee-text-bottom {
-    display: none;
-  }
-
-  .fee-radios-wrapper {
-    margin: @field-margin;
-    text-align: center;
-
-    .fee-radio {
-      display: inline-block;
-      width: 46px;
-      height: 46px;
-      padding: 15px 0 15px;
-      font-family: @pxl-text-font;
-      font-size: @font-size-min;
-      line-height: 1;
-      color: @text-color;
-      #pxl-mixins.border-radius(50%);
-      border: 1px solid @pxl-color-border;
-      background-color: white;
-
-      &:hover, &:focus, &.selected {
-        color: #fff;
-        border: 1px solid @pxl-color-support;
-        background-color: @pxl-color-support;
-      }
-
-      label {
-
-      }
-    }
-  }
-
-  .fee-answer-wrapper {
-    margin: @field-margin;
-    #pxl-mixins.text();
-    text-align: center;
-  }
-
-  .fee-text-stripe-fee {
-    font-family: @pxl-text-font;
-    font-size: @font-size-min;
-    line-height: 1;
-    color: @text-color;
-  }
-}
-
 
 
 // General settings
@@ -75,7 +19,7 @@
       width: 100%;
 
       .stripe-button-fee-percentages {
-        .stripe-button-fee-percentages();
+        #pxl-mixins.stripe-button-fee-percentages();
       }
     }
   }
