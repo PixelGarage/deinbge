@@ -24,7 +24,7 @@
 
       .field-name-field-medienkontakt,
       .field-name-body,
-      .field-name-field-text {
+      .field-name-field-impressum {
         .field-item {
           h4.pxl-headline {
             #pxl-mixins.subtext();
@@ -33,10 +33,11 @@
           }
 
           p {
+            margin: @field-margin-small;
             // logo
             img {
-              width: 60px;
-              height: 60px;
+              width: 3rem;
+              height: 3rem;
             }
 
             #pxl-mixins.subtext();
@@ -54,30 +55,43 @@
           }
         }
       }
+      .field-name-follow-site {
+        margin: 0 0 18px;
 
-      .field-name-addtoany {
         .field-item {
-          text-align: center;
-
-          .a2a_kit {
-            a {
-              color: #fff;
-
-              &:hover, &.active {
-                color: @link-color;
-              }
-            }
-          }
+          //
+          // see block-socials.less
         }
       }
 
-      .field-name-field-impressum {
-        margin-top: 30px;
-
+      .field-name-language-field {
         .field-item {
-          p {
-            #pxl-mixins.subtext();
-            color: #fff;
+          ul.language-switcher-locale-url {
+            #pxl-mixins.no-list-style;
+
+            >li {
+              #pxl-mixins.no-list-style;
+              display:block;
+              margin: @field-margin-small;
+              #pxl-mixins.subtext();
+
+              a.language-link {
+                display: inline-block;
+                padding: 0;
+                color: #fff;
+                outline: none;
+                text-decoration: @link-decoration;
+
+                &.active, &:hover, &:focus {
+                  color: @pxl-color-main;
+                }
+              }
+
+              span.locale-untranslated {
+                color: @text-color-disabled;
+                text-decoration: @link-decoration-hover;
+              }
+            }
           }
         }
       }

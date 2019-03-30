@@ -24,16 +24,17 @@
         <?php print render($content['field_medienkontakt']); ?>
       </div>
       <div class="inner-column col-xs-12 col-sm-6">
-        <?php print render($content['field_text']); ?>
+        <?php print render($content['body']); ?>
       </div>
     </<?php print $left_wrapper; ?>>
 
     <<?php print $right_wrapper; ?> class="column col-xs-12 col-md-6 right <?php print $right_classes; ?>">
       <div class="inner-column col-xs-12 col-sm-6">
-        <?php print render($content['body']); ?>
+        <?php print render($content['field_impressum']); ?>
       </div>
       <div class="inner-column col-xs-12 col-sm-6">
         <?php print render($content['follow_site']); ?>
+        <?php print render($content['language_field']); ?>
       </div>
     </<?php print $right_wrapper; ?>>
 

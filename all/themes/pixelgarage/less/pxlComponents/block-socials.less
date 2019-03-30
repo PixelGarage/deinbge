@@ -13,7 +13,7 @@
 @pxl-follow-color: @text-color;
 
 @pxl-share-icon-size: 40px;
-
+@pxl-follow-icon-size: 35px;
 
 // Social icon Fonts
 // -------------------------
@@ -147,6 +147,8 @@
 // Follow site block settings
 // --------------------------
 .follow-links {
+  position: relative;
+  left: -10px;
   text-align: left;
 
   @media @tablet {
@@ -155,12 +157,14 @@
 
   .follow-link-wrapper {
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
 
     a.follow-link {
+      display: inline-block;
       padding: 0;
-      height: 38px;
-      width: 38px;
+      height: @pxl-follow-icon-size;
+      width: @pxl-follow-icon-size;
+      line-height: @pxl-follow-icon-size;
       font-family: @pxl-icon-font;
       font-size: @font-size-larger;
       color: #fff;
