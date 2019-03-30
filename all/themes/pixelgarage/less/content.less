@@ -4,8 +4,9 @@
 
 // Variables
 // -------------------------
-@footer-height-narrow: 460px;
-@footer-height-tablet: 266px;
+@footer-height-narrow: 690px;
+@footer-height-tablet: 485px;
+@footer-height-normal: 350px;
 
 
 
@@ -76,6 +77,10 @@ body {
 
   @media @tablet {
     padding-bottom: @footer-height-tablet;
+  }
+
+  @media @normal {
+    padding-bottom: @footer-height-normal;
   }
 
   .main-container {
@@ -164,6 +169,10 @@ body {
 
     @media @tablet {
       height: @footer-height-tablet;
+    }
+
+    @media @normal {
+      height: @footer-height-normal;
     }
 
     .container, .container-fluid {
