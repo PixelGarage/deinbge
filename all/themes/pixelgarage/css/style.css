@@ -18066,12 +18066,12 @@ html {
 body {
   position: relative;
   min-height: 100%;
-  padding-bottom: 800px;
+  padding-bottom: 900px;
   background-color: white;
 }
 @media screen and (min-width: 768px) {
   body {
-    padding-bottom: 530px;
+    padding-bottom: 610px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -18237,13 +18237,13 @@ body footer.footer {
   right: 0;
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 900px;
   border: none;
   background: #222 none;
 }
 @media screen and (min-width: 768px) {
   body footer.footer {
-    height: 530px;
+    height: 610px;
   }
 }
 @media screen and (min-width: 992px) {
