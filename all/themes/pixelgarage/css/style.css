@@ -10593,7 +10593,7 @@ body.page-blog h1.page-header {
 }
 .view.view-donations .view-header h3,
 .view.view-donations .view-header .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 .view.view-donations .view-content {
   margin: 40px auto 0;
@@ -11864,7 +11864,7 @@ body.page-blog h1.page-header {
 }
 .node-page > .row > div.col-sm-12 > .field-name-body h3,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body {
@@ -14848,7 +14848,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Block paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -14870,7 +14870,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Image paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -14943,7 +14943,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Text paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -15181,7 +15181,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text {
@@ -15257,7 +15257,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -15810,7 +15810,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item ol,
@@ -16097,7 +16097,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
   padding-left: 20px;
@@ -16197,7 +16197,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Text-image paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -16449,7 +16449,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-image {
   margin: 0 0 1rem;
@@ -16526,7 +16526,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Image33-Text66 paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -16914,7 +16914,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image,
@@ -17699,6 +17699,7 @@ form.confirmation .form-actions button.form-submit.active {
 }
 .field-name-field-spenden-fee-percentage .field-items .field-item .stripe-button-fee-percentages .fee-text-stripe-fee,
 .field-name-field-recurr-spenden-fee-percent .field-items .field-item .stripe-button-fee-percentages .fee-text-stripe-fee {
+  text-align: center;
   font-family: 'ProximaNovaLight';
   font-size: 14px;
   line-height: 1;
