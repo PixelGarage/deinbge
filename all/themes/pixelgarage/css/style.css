@@ -1075,12 +1075,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #564520;
+  color: #8e7234;
   text-decoration: underline;
 }
 a:focus {
@@ -3363,7 +3363,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #fff;
 }
 .btn-link {
-  color: #8e7234;
+  color: #bf9c50;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3384,7 +3384,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #564520;
+  color: #8e7234;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3957,7 +3957,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #8e7234;
+  border-color: #bf9c50;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4679,7 +4679,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #8e7234;
+  color: #bf9c50;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4699,7 +4699,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #564520;
+  color: #8e7234;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -4894,7 +4894,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #8e7234;
+  color: #bf9c50;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -4965,7 +4965,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #8e7234;
+  border-color: #bf9c50;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -8863,7 +8863,7 @@ form .ds-form .row .col-sm-12 .panel:not(#edit-picture) .panel-body > .help-bloc
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -10397,7 +10397,7 @@ body.page-blog h1.page-header {
 .view.view-donations .view-header h1,
 .view.view-donations .view-header h2,
 .view.view-donations .view-header .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -10421,11 +10421,11 @@ body.page-blog h1.page-header {
 }
 .view.view-donations .view-header h3,
 .view.view-donations .view-header .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -10445,7 +10445,7 @@ body.page-blog h1.page-header {
 .view.view-donations .view-header h5,
 .view.view-donations .view-header h6,
 .view.view-donations .view-header .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .view.view-donations .view-header .pxl-leadtext {
@@ -10533,12 +10533,12 @@ body.page-blog h1.page-header {
   }
 }
 .view.view-donations .view-header a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .view.view-donations .view-header a:hover,
 .view.view-donations .view-header a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -10593,7 +10593,7 @@ body.page-blog h1.page-header {
 }
 .view.view-donations .view-header h3,
 .view.view-donations .view-header .pxl-subtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 .view.view-donations .view-content {
   margin: 40px auto 0;
@@ -11023,7 +11023,7 @@ body.page-blog h1.page-header {
 .node.node-footer .row .column .field-name-field-medienkontakt .field-item p a.active,
 .node.node-footer .row .column .field-name-body .field-item p a.active,
 .node.node-footer .row .column .field-name-field-impressum .field-item p a.active {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
 }
 .node.node-footer .row .column .field-name-follow-site {
@@ -11133,7 +11133,7 @@ body.page-blog h1.page-header {
 .node.node-block .row .col-sm-12 .field-name-body h1,
 .node.node-block .row .col-sm-12 .field-name-body h2,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11157,11 +11157,11 @@ body.page-blog h1.page-header {
 }
 .node.node-block .row .col-sm-12 .field-name-body h3,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -11181,7 +11181,7 @@ body.page-blog h1.page-header {
 .node.node-block .row .col-sm-12 .field-name-body h5,
 .node.node-block .row .col-sm-12 .field-name-body h6,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-block .row .col-sm-12 .field-name-body .pxl-leadtext {
@@ -11269,12 +11269,12 @@ body.page-blog h1.page-header {
   }
 }
 .node.node-block .row .col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-block .row .col-sm-12 .field-name-body a:hover,
 .node.node-block .row .col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -11425,7 +11425,7 @@ body.page-blog h1.page-header {
 .node.node-intro .row div.col-sm-12 .field-name-body h1,
 .node.node-intro .row div.col-sm-12 .field-name-body h2,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11449,11 +11449,11 @@ body.page-blog h1.page-header {
 }
 .node.node-intro .row div.col-sm-12 .field-name-body h3,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -11473,7 +11473,7 @@ body.page-blog h1.page-header {
 .node.node-intro .row div.col-sm-12 .field-name-body h5,
 .node.node-intro .row div.col-sm-12 .field-name-body h6,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-leadtext {
@@ -11561,12 +11561,12 @@ body.page-blog h1.page-header {
   }
 }
 .node.node-intro .row div.col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-intro .row div.col-sm-12 .field-name-body a:hover,
 .node.node-intro .row div.col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -11668,7 +11668,7 @@ body.page-blog h1.page-header {
 .node-page > .row > div.col-sm-12 > .field-name-body h1,
 .node-page > .row > div.col-sm-12 > .field-name-body h2,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11692,11 +11692,11 @@ body.page-blog h1.page-header {
 }
 .node-page > .row > div.col-sm-12 > .field-name-body h3,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -11716,7 +11716,7 @@ body.page-blog h1.page-header {
 .node-page > .row > div.col-sm-12 > .field-name-body h5,
 .node-page > .row > div.col-sm-12 > .field-name-body h6,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-leadtext {
@@ -11804,12 +11804,12 @@ body.page-blog h1.page-header {
   }
 }
 .node-page > .row > div.col-sm-12 > .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node-page > .row > div.col-sm-12 > .field-name-body a:hover,
 .node-page > .row > div.col-sm-12 > .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -11864,7 +11864,7 @@ body.page-blog h1.page-header {
 }
 .node-page > .row > div.col-sm-12 > .field-name-body h3,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 @media screen and (min-width: 768px) {
   .node-page > .row > div.col-sm-12 > .field-name-body {
@@ -11954,7 +11954,7 @@ body.page-blog h1.page-header {
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -11989,7 +11989,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12013,11 +12013,11 @@ body.page-blog h1.page-header {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -12037,7 +12037,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h6,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-leadtext {
@@ -12125,12 +12125,12 @@ body.page-blog h1.page-header {
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a:hover,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -12372,7 +12372,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-title,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12404,11 +12404,11 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtitle,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -12436,7 +12436,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h6,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-headline,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-leadtext,
@@ -12544,14 +12544,14 @@ body.page-blog h1.page-header {
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a:hover,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body a:focus,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -12733,7 +12733,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12757,11 +12757,11 @@ body.page-blog h1.page-header {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -12781,7 +12781,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h5,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h6,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-leadtext {
@@ -12869,12 +12869,12 @@ body.page-blog h1.page-header {
   }
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a:hover,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -13035,7 +13035,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-title,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -13067,11 +13067,11 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtitle,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -13099,7 +13099,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h6,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-headline,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-leadtext,
@@ -13207,14 +13207,14 @@ body.page-blog h1.page-header {
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:hover,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a:hover,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body a:focus,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -13480,7 +13480,7 @@ body.page-blog h1.page-header {
 .node.node-spenden .row .col-sm-12 .field-name-body h1,
 .node.node-spenden .row .col-sm-12 .field-name-body h2,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -13504,11 +13504,11 @@ body.page-blog h1.page-header {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body h3,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -13528,7 +13528,7 @@ body.page-blog h1.page-header {
 .node.node-spenden .row .col-sm-12 .field-name-body h5,
 .node.node-spenden .row .col-sm-12 .field-name-body h6,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-leadtext {
@@ -13616,12 +13616,12 @@ body.page-blog h1.page-header {
   }
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-spenden .row .col-sm-12 .field-name-body a:hover,
 .node.node-spenden .row .col-sm-12 .field-name-body a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -14463,7 +14463,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -14551,7 +14551,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h1,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h2,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -14575,11 +14575,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h3,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -14599,7 +14599,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h5,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h6,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-leadtext {
@@ -14687,12 +14687,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a:hover,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -14836,11 +14836,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item a {
-  color: #8e7234;
+  color: #bf9c50;
 }
 .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item a:hover,
 .node.node-teammember .row div.col-sm-12 .field-name-field-email .field-item a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -14848,11 +14848,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Block paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-block-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -14870,11 +14870,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Image paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -14943,11 +14943,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Text paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -14985,7 +14985,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -15009,11 +15009,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -15033,7 +15033,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h6,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-leadtext {
@@ -15121,12 +15121,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -15181,7 +15181,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text {
@@ -15257,11 +15257,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -15334,7 +15334,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -15398,11 +15398,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -15462,7 +15462,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-headline,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-headline,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
@@ -15650,7 +15650,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
@@ -15665,7 +15665,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item a:focus,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item a:focus,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -15810,7 +15810,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item ol,
@@ -15901,7 +15901,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -15925,11 +15925,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -15949,7 +15949,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
@@ -16037,12 +16037,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
@@ -16097,7 +16097,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
   padding-left: 20px;
@@ -16197,11 +16197,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Text-image paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -16229,9 +16229,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
     right: 50%;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 {
   margin: 0 0 1rem;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 18px;
@@ -16241,19 +16243,24 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #222222;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
     font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
     font-size: 24px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -16262,48 +16269,65 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #222222;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
     font-size: calc(24px + 8 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
     font-size: 32px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 15px auto;
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
     font-size: calc(22px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
     font-size: 28px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h4,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h6,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-headline,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-headline {
-  margin: 8px auto;
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
   margin: 0 0 10px;
   font-family: 'ProximaNovaRegular';
@@ -16314,19 +16338,24 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #222222;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
     font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
     font-size: 24px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item p,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
   margin: 0 0 10px;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
   font-size: 14px;
@@ -16336,17 +16365,22 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #222222;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
     font-size: calc(14px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
     font-size: 20px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
   font-family: 'ProximaNovaLight';
   font-size: 50px;
@@ -16358,16 +16392,20 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
     font-size: calc(50px + 50 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
     font-size: 100px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item blockquote,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
   font-family: 'ProximaNovaBold';
   font-size: 30px;
@@ -16377,55 +16415,74 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   text-align: center;
 }
 @media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
     font-size: calc(30px + 10 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
     font-size: 40px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item a,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-  color: #8e7234;
+  color: #bf9c50;
   text-decoration: none;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item a:focus,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:focus {
-  color: #bf9c50;
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item pre,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item em,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
   font-family: 'ProximaNovaLight';
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item b,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
   font-family: 'ProximaNovaBold';
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item mark,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
   background-color: #ff0;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item hr,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item hr {
   border: 0;
   border-bottom: 2px solid #bf9c50;
   background: none;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
   padding-left: 20px;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .table-responsive,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive {
   padding: 0 15px;
   border: 1px solid #c9c9c9;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .table-responsive table,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive table {
   min-width: 540px;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item img,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item img {
   display: block;
   overflow: hidden;
@@ -16434,9 +16491,13 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   max-width: 100%;
   height: auto;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item embed,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item video,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item video,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item audio,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item iframe,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item iframe {
   display: block;
   overflow: hidden;
@@ -16447,9 +16508,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   height: auto;
   min-height: 350px;
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-image {
   margin: 0 0 1rem;
@@ -16526,11 +16589,11 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
  *  Image33-Text66 paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-12 .field-name-field-title .field-item {
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -16570,12 +16633,18 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 {
   margin: 0 0 1rem;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 18px;
   letter-spacing: normal;
@@ -16586,27 +16655,42 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item {
     font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item {
     font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h1,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
-  margin: 0 auto 30px;
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-title {
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -16618,12 +16702,21 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-title {
     font-size: calc(24px + 8 * ((100vw - 320px) / 880));
   }
 }
@@ -16631,26 +16724,41 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h1,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h2,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-title {
     font-size: 32px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 15px auto;
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
+  margin: 0 auto 1.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
 }
@@ -16658,9 +16766,15 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
     font-size: calc(22px + 6 * ((100vw - 320px) / 880));
   }
 }
@@ -16668,30 +16782,51 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h3,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
     font-size: 28px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h4,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h4,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h4,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h4,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h5,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h5,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h5,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h5,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h6,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h6,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h6,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h6,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h6,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h6,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-headline,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-headline,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-headline {
-  margin: 8px auto;
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-headline,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-headline,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-headline,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-headline {
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-leadtext,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-leadtext {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-leadtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-leadtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-leadtext {
   margin: 0 0 10px;
   font-family: 'ProximaNovaRegular';
   font-size: 18px;
@@ -16703,28 +16838,43 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-leadtext,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-leadtext {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-leadtext {
     font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-leadtext,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-leadtext {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-leadtext {
     font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item p,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item p,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item p,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item p,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item p,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item p {
   margin: 0 0 10px;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item small,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item small,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item small,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
   font-size: 14px;
   letter-spacing: normal;
@@ -16736,9 +16886,15 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtext {
     font-size: calc(14px + 6 * ((100vw - 320px) / 880));
   }
 }
@@ -16746,15 +16902,24 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item small,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtext {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-glow {
   font-family: 'ProximaNovaLight';
   font-size: 50px;
   letter-spacing: 0.2em;
@@ -16767,23 +16932,35 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-glow {
     font-size: calc(50px + 50 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-glow {
     font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item blockquote,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item blockquote,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item blockquote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item blockquote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item blockquote,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-quote {
   font-family: 'ProximaNovaBold';
   font-size: 30px;
   letter-spacing: normal;
@@ -16795,9 +16972,15 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-quote {
     font-size: calc(30px + 10 * ((100vw - 320px) / 880));
   }
 }
@@ -16805,81 +16988,132 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-quote {
     font-size: 40px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a {
-  color: #8e7234;
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item a,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item a,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item a {
+  color: #bf9c50;
   text-decoration: none;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item a:focus,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item a:focus,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a:focus {
-  color: #bf9c50;
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item a:focus {
+  color: #8e7234;
   text-decoration: none;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item pre,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item pre,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item pre,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item pre,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item address,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item address,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item address,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item address,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item address,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item address,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item i,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item i,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item i,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item i,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item i,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item i,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item em,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item em,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item em,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item em,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item em,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item em {
   font-family: 'ProximaNovaLight';
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item strong,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item strong,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item strong,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item strong,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item b,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item b,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item b,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item b,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item b,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item b {
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item mark,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item mark,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item mark,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item mark,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item mark,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item mark {
   background-color: #ff0;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item hr,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item hr,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item hr {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item hr,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item hr,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item hr,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item hr {
   border: 0;
   border-bottom: 2px solid #bf9c50;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item ol,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item ol,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item ol {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item ol,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item ol,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item ol,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item ol {
   padding-left: 20px;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .table-responsive,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .table-responsive,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .table-responsive {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .table-responsive,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .table-responsive,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .table-responsive {
   padding: 0 15px;
   border: 1px solid #c9c9c9;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .table-responsive table,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .table-responsive table,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .table-responsive table {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .table-responsive table,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive table,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .table-responsive table,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .table-responsive table {
   min-width: 540px;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item img,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item img,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item img {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item img,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item img {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -16890,15 +17124,27 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item embed,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item embed,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item embed,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item embed,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item video,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item video,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item video,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item video,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item video,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item video,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item audio,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item audio,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item audio,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item audio,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item iframe,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item iframe,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item iframe {
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -16911,10 +17157,16 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 0 auto 15px;
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
+  margin: 0 auto 20px;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image,
@@ -17739,7 +17991,7 @@ form.confirmation .form-actions button.form-submit.active {
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
-  line-height: 1.4;
+  line-height: 1;
   text-align: left;
   color: #bf9c50;
   text-align: center;

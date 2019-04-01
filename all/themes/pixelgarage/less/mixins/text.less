@@ -189,17 +189,17 @@
   // WYSIWYG text definition
   .wysiwyg() {
     h1, h2, .pxl-title {
-      margin: 0 auto 30px;
+      margin: @field-title-margin;
       .title();
     }
 
     h3, .pxl-subtitle {
-      margin: 15px auto;
+      margin: @field-title-margin;
       .subtitle();
     }
 
     h4, h5, h6, .pxl-headline {
-      margin: 8px auto;
+      margin: @field-margin;
       font-family: @pxl-text-font-bold;
     }
 
