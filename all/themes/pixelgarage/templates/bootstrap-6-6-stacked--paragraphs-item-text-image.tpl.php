@@ -23,17 +23,12 @@ $full_width = $field_full_width_paragraph[0]['value'] == '1' ? 'full-width ' : '
     <div class="row">
       <<?php print $left_wrapper; ?> class="col-sm-6 left <?php print $switch; print $left_classes; ?>">
         <?php print $left; ?>
+        <div class="field-text-extra left"><?php print $bottom; ?></div>
       </<?php print $left_wrapper; ?>>
       <<?php print $right_wrapper; ?> class="col-sm-6 right <?php print $switch; print $right_classes; ?>">
         <?php print $right; ?>
+        <div class="field-text-extra right"><?php print $bottom; ?></div>
       </<?php print $right_wrapper; ?>>
-    </div>
-  <?php endif; ?>
-  <?php if ($bottom): ?>
-    <div class="row">
-      <<?php print $bottom_wrapper; ?> class="col-sm-12 <?php print $bottom_classes; ?>">
-        <?php print $bottom; ?>
-      </<?php print $bottom_wrapper; ?>>
     </div>
   <?php endif; ?>
 </<?php print $layout_wrapper ?>>

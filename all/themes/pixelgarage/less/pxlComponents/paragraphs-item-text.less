@@ -29,7 +29,7 @@
         .field-item {
           #pxl-mixins.wysiwyg-body();
           h3, .pxl-subtitle {
-            margin: -4px 0 1.5rem;
+            margin-top: -4px;
           }
           //#pxl-mixins.hyphenate;
         }
@@ -45,19 +45,30 @@
           margin: @field-margin;
           width: 100%;
 
-          @media @tablet {
-            width: auto;
-          }
-
           .field-item {
             display: inline-block;
-            margin: 0 5px 1rem;
+            margin: 0 0 1rem;
+            width: 100%;
 
             a {
               #pxl-mixins.button-main();
               margin: 0;
+              width: 100%;
             }
           }
+
+          @media @tablet {
+            width: auto;
+
+            .field-item {
+              margin: 0 5px 1rem;
+              width: auto;
+              a {
+                width: auto;
+              }
+            }
+          }
+
         }
 
       }

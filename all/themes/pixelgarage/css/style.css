@@ -9072,7 +9072,7 @@ form .form-actions .form-submit .icon {
   padding-bottom: 30px;
 }
 .panel-display .panel-col .panel-pane .pane-title {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -10962,7 +10962,7 @@ body.page-blog h1.page-header {
   line-height: 1.2;
   text-align: left;
   color: #222222;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   color: #bf9c50;
 }
 @media screen and (min-width: 320px) {
@@ -11369,7 +11369,7 @@ body.page-blog h1.page-header {
   width: 100%;
 }
 .node.node-intro .row div.col-sm-12 .field-name-title h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11627,7 +11627,7 @@ body.page-blog h1.page-header {
   width: 100%;
 }
 .node-page > .row > div.col-sm-12 > .field-name-title h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12236,7 +12236,7 @@ body.page-blog h1.page-header {
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-title h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12692,7 +12692,7 @@ body.page-blog h1.page-header {
   height: auto;
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaRegular';
   font-size: 18px;
   letter-spacing: normal;
@@ -12958,7 +12958,7 @@ body.page-blog h1.page-header {
   line-height: 1;
   text-align: center;
   color: #222222;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
 }
 @media screen and (min-width: 320px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
@@ -13410,7 +13410,7 @@ body.page-blog h1.page-header {
   z-index: 10;
 }
 .node.node-spenden .row .col-sm-12 .field-name-title h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -14440,7 +14440,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   z-index: 10;
 }
 .node.node-offline-donation .row .col-sm-12 .field-name-title h2 {
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -14896,14 +14896,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   margin: 0 0 1rem;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links {
-    width: auto;
-  }
-}
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links .field-item {
   display: inline-block;
-  margin: 0 5px 1rem;
+  margin: 0 0 1rem;
+  width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links .field-item a {
   display: inline-block;
@@ -14923,6 +14919,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #fff;
   background: #222;
   margin: 0;
+  width: 100%;
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links .field-item a {
@@ -14938,6 +14935,18 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links .field-item a.active {
   color: #bf9c50;
   background: #222;
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links {
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links .field-item {
+    margin: 0 5px 1rem;
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-links .field-item a {
+    width: auto;
+  }
 }
 /*
  *  Text paragraph component
@@ -15181,7 +15190,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
-  margin: -4px 0 1.5rem;
+  margin-top: -4px;
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text {
@@ -15192,14 +15201,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   margin: 0 0 1rem;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links {
-    width: auto;
-  }
-}
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links .field-item {
   display: inline-block;
-  margin: 0 5px 1rem;
+  margin: 0 0 1rem;
+  width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links .field-item a {
   display: inline-block;
@@ -15219,6 +15224,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #fff;
   background: #222;
   margin: 0;
+  width: 100%;
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links .field-item a {
@@ -15234,6 +15240,18 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links .field-item a.active {
   color: #bf9c50;
   background: #222;
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links {
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links .field-item {
+    margin: 0 5px 1rem;
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-name-field-links .field-item a {
+    width: auto;
+  }
 }
 /*
  *  Text-50-25-25 paragraph component
@@ -15810,7 +15828,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
-  margin: -4px 0 1.5rem;
+  margin-top: -4px;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item ol,
@@ -15828,7 +15846,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image4,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image4 {
-  margin: 0 -7.5px 30px;
+  margin: 0 -7.5px 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-image1 .field-item,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-image1 .field-item,
@@ -15875,325 +15893,6 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 /*
- *  Image-Text-image paragraph component
- * --------------------------------------------------*/
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 {
-  margin: 0 0 1rem;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
-  font-family: 'ProximaNovaLight';
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 1.4;
-  text-align: left;
-  color: #222222;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
-    font-size: 24px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-  margin: 0 auto 20px;
-  font-family: 'ProximaNovaBold';
-  font-size: 24px;
-  letter-spacing: 1.2px;
-  line-height: 1;
-  text-align: center;
-  color: #222222;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-    font-size: calc(24px + 8 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-    font-size: 32px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 20px;
-  font-family: 'ProximaNovaRegular';
-  font-size: 22px;
-  letter-spacing: normal;
-  line-height: 1;
-  text-align: left;
-  color: #bf9c50;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-    font-size: calc(22px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-    font-size: 28px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-headline {
-  margin: 0 0 0.75rem;
-  font-family: 'ProximaNovaBold';
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
-  margin: 0 0 0.5rem;
-  font-family: 'ProximaNovaRegular';
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 1.4;
-  text-align: left;
-  color: #222222;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
-    font-size: 24px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
-  margin: 0 0 0.5rem;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-  font-family: 'ProximaNovaLight';
-  font-size: 14px;
-  letter-spacing: normal;
-  line-height: 1.2;
-  text-align: left;
-  color: #222222;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
-    font-size: 20px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
-  font-family: 'ProximaNovaLight';
-  font-size: 50px;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  text-align: center;
-  text-transform: uppercase;
-  color: #222222;
-  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
-    font-size: calc(50px + 50 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
-    font-size: 100px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
-  font-family: 'ProximaNovaBold';
-  font-size: 30px;
-  letter-spacing: normal;
-  line-height: 1.4;
-  color: #222222;
-  text-align: center;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
-    font-size: calc(30px + 10 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
-    font-size: 40px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
-  color: #bf9c50;
-  text-decoration: none;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:focus {
-  color: #8e7234;
-  text-decoration: none;
-  background: none;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item pre,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
-  font-family: 'ProximaNovaLight';
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
-  font-family: 'ProximaNovaBold';
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
-  background-color: #ff0;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item hr {
-  border: 0;
-  border-bottom: 2px solid #bf9c50;
-  background: none;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
-  padding-left: 20px;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive {
-  padding: 0 15px;
-  border: 1px solid #c9c9c9;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive table {
-  min-width: 540px;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item img {
-  display: block;
-  overflow: hidden;
-  margin: 20px auto;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item embed,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item video,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item audio,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item iframe {
-  display: block;
-  overflow: hidden;
-  margin: 20px auto;
-  padding: 15px;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  min-height: 350px;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: -4px 0 1.5rem;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
-  padding-left: 20px;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-video {
-  margin: 0 0 1rem;
-  width: 100%;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-video .field-item {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-video .field-item iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner {
-  padding: 10px;
-  text-align: center;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image1,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image2 {
-  display: none;
-  margin: 0 0 1rem;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image1 .field-item img,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image2 .field-item img {
-  max-width: 100%;
-  height: auto;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 {
-  margin: 0 0 1rem;
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
-  font-family: 'ProximaNovaLight';
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 1.4;
-  text-align: left;
-  color: #222222;
-  font-family: 'ProximaNovaBold';
-  text-align: center;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-1 .field-item,
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner .field-name-field-image-title-2 .field-item {
-    font-size: 24px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner a.button-survey {
-  display: inline-block;
-  margin: 1em auto;
-  padding: 0.5em 2em;
-  font-family: 'ProximaNovaRegular';
-  font-size: 18px;
-  letter-spacing: normal;
-  line-height: 1;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  color: #bf9c50 !important;
-  background: #fff !important;
-}
-@media screen and (min-width: 320px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner a.button-survey {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
-  }
-}
-@media screen and (min-width: 1200px) {
-  .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner a.button-survey {
-    font-size: 24px;
-  }
-}
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner a.button-survey:hover,
-.entity-paragraphs-item.paragraphs-item-image-text-image .row .col-xxs-6-sm-3 .col-inner a.button-survey.active {
-  color: #bf9c50 !important;
-  background: rgba(255, 255, 255, 0.7) !important;
-}
-/*
  *  Text-image paragraph component
  * --------------------------------------------------*/
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-12 .field-name-field-title .field-item {
@@ -16215,26 +15914,34 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
     font-size: 28px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra.left {
+  display: none;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra.right {
+  display: block;
+}
 @media screen and (min-width: 768px) {
-  .field-item.even .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.left:not(.switch) {
+  .field-item .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.left .field-text-extra {
+    display: block;
+  }
+  .field-item .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.right .field-text-extra {
+    display: none;
+  }
+  .field-item .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.left.switch {
     left: 50%;
   }
-  .field-item.even .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.right:not(.switch) {
-    right: 50%;
-  }
-  .field-item.odd .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.left.switch {
-    left: 50%;
-  }
-  .field-item.odd .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.right.switch {
+  .field-item .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6.right.switch {
     right: 50%;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra {
   margin: 0 0 1rem;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 18px;
   letter-spacing: normal;
@@ -16244,22 +15951,27 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item {
     font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item {
     font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-title {
   margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
@@ -16271,27 +15983,35 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-title {
     font-size: calc(24px + 8 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h1,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h2,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-title {
     font-size: 32px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtitle {
   margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
@@ -16303,32 +16023,41 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtitle {
     font-size: calc(22px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h3,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtitle {
     font-size: 28px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h4,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h4,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h4,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h5,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h5,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h6,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h6,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h6,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-headline,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-headline {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-headline,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-headline {
   margin: 0 0 0.75rem;
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-leadtext {
   margin: 0 0 0.5rem;
   font-family: 'ProximaNovaRegular';
   font-size: 18px;
@@ -16339,24 +16068,29 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-leadtext {
     font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-leadtext,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-leadtext,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-leadtext {
     font-size: 24px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item p,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item p,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item p {
   margin: 0 0 0.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item small,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtext {
   font-family: 'ProximaNovaLight';
   font-size: 14px;
   letter-spacing: normal;
@@ -16367,21 +16101,26 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtext {
     font-size: calc(14px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item small,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item small,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtext,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtext,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtext {
     font-size: 20px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-glow {
   font-family: 'ProximaNovaLight';
   font-size: 50px;
   letter-spacing: 0.2em;
@@ -16393,20 +16132,24 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-glow {
     font-size: calc(50px + 50 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-glow,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-glow,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-glow {
     font-size: 100px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item blockquote,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item blockquote,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-quote {
   font-family: 'ProximaNovaBold';
   font-size: 30px;
   letter-spacing: normal;
@@ -16417,73 +16160,92 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-quote {
     font-size: calc(30px + 10 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item blockquote,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item blockquote,
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-quote,
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-quote,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-quote {
     font-size: 40px;
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item a,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item a {
   color: #bf9c50;
   text-decoration: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:hover,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item a:hover,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item a:focus,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:focus {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item a:focus,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item a:focus {
   color: #8e7234;
   text-decoration: none;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item pre,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item pre,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item pre,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item address,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item address,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item i,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item i,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item em,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item em,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item em {
   font-family: 'ProximaNovaLight';
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item strong,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item strong,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item b,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item b,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item b {
   font-family: 'ProximaNovaBold';
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item mark,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item mark,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item mark {
   background-color: #ff0;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item hr,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item hr {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item hr,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item hr {
   border: 0;
   border-bottom: 2px solid #bf9c50;
   background: none;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item ol,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item ol {
   padding-left: 20px;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .table-responsive,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .table-responsive {
   padding: 0 15px;
   border: 1px solid #c9c9c9;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .table-responsive table,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive table {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .table-responsive table,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .table-responsive table {
   min-width: 540px;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item img,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item img {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item img,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item img {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -16493,12 +16255,16 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item embed,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item embed,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item embed,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item video,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item video,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item video,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item audio,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item audio,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item audio,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item iframe,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item iframe {
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item iframe,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -16510,12 +16276,14 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
-.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: -4px 0 1.5rem;
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item .pxl-subtitle {
+  margin-top: -4px;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-image {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-image .field-item img {
   max-width: 100%;
@@ -16542,14 +16310,10 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   margin: 0 0 1rem;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links {
-    width: auto;
-  }
-}
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links .field-item {
   display: inline-block;
-  margin: 0 5px 1rem;
+  margin: 0 0 1rem;
+  width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links .field-item a {
   display: inline-block;
@@ -16569,6 +16333,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #fff;
   background: #222;
   margin: 0;
+  width: 100%;
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links .field-item a {
@@ -16584,6 +16349,18 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links .field-item a.active {
   color: #bf9c50;
   background: #222;
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links {
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links .field-item {
+    margin: 0 5px 1rem;
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-links .field-item a {
+    width: auto;
+  }
 }
 /*
  *  Image33-Text66 paragraph component
@@ -16607,27 +16384,47 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
     font-size: 28px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-text-extra.left,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-text-extra.left,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-text-extra.left {
+  display: none;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-text-extra.right,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-text-extra.right,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-text-extra.right {
+  display: block;
+}
 @media screen and (min-width: 768px) {
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left.switch {
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left .field-text-extra,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left .field-text-extra,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left .field-text-extra {
+    display: block;
+  }
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right .field-text-extra,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right .field-text-extra,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right .field-text-extra {
+    display: none;
+  }
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left.switch {
     left: 50%;
   }
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right.switch {
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right.switch {
     right: 50%;
   }
 }
 @media screen and (min-width: 992px) {
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left.switch {
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.left.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.left.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.left.switch {
     left: 66.666666%;
   }
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right.switch,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right.switch {
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6.right.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4.right.switch,
+  .field-item .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8.right.switch {
     right: 33.333333%;
   }
 }
@@ -17166,12 +16963,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: -4px 0 1.5rem;
+  margin-top: -4px;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-image {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image .field-item,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image .field-item,
@@ -17221,18 +17018,12 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   margin: 0 0 1rem;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-links,
-  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-links {
-    width: auto;
-  }
-}
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links .field-item,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-links .field-item,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-links .field-item {
   display: inline-block;
-  margin: 0 5px 1rem;
+  margin: 0 0 1rem;
+  width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links .field-item a,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-links .field-item a,
@@ -17254,6 +17045,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   color: #fff;
   background: #222;
   margin: 0;
+  width: 100%;
 }
 @media screen and (min-width: 320px) {
   .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links .field-item a,
@@ -17277,6 +17069,24 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-links .field-item a.active {
   color: #bf9c50;
   background: #222;
+}
+@media screen and (min-width: 768px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-links,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-links {
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-links .field-item,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-links .field-item {
+    margin: 0 5px 1rem;
+    width: auto;
+  }
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-links .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-links .field-item a,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-links .field-item a {
+    width: auto;
+  }
 }
 /*
  *  Login form component
@@ -18368,7 +18178,7 @@ body .main-container .container-fluid .row section h1.page-header {
   text-align: center;
   color: #222222;
   text-align: left;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 0.75rem;
   padding: 0;
   border: none;
 }
