@@ -10397,7 +10397,7 @@ body.page-blog h1.page-header {
 .view.view-donations .view-header h1,
 .view.view-donations .view-header h2,
 .view.view-donations .view-header .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -10421,7 +10421,7 @@ body.page-blog h1.page-header {
 }
 .view.view-donations .view-header h3,
 .view.view-donations .view-header .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -11133,7 +11133,7 @@ body.page-blog h1.page-header {
 .node.node-block .row .col-sm-12 .field-name-body h1,
 .node.node-block .row .col-sm-12 .field-name-body h2,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11157,7 +11157,7 @@ body.page-blog h1.page-header {
 }
 .node.node-block .row .col-sm-12 .field-name-body h3,
 .node.node-block .row .col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -11425,7 +11425,7 @@ body.page-blog h1.page-header {
 .node.node-intro .row div.col-sm-12 .field-name-body h1,
 .node.node-intro .row div.col-sm-12 .field-name-body h2,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11449,7 +11449,7 @@ body.page-blog h1.page-header {
 }
 .node.node-intro .row div.col-sm-12 .field-name-body h3,
 .node.node-intro .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -11668,7 +11668,7 @@ body.page-blog h1.page-header {
 .node-page > .row > div.col-sm-12 > .field-name-body h1,
 .node-page > .row > div.col-sm-12 > .field-name-body h2,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -11692,7 +11692,7 @@ body.page-blog h1.page-header {
 }
 .node-page > .row > div.col-sm-12 > .field-name-body h3,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -11989,7 +11989,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12013,7 +12013,7 @@ body.page-blog h1.page-header {
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -12372,7 +12372,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h2,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-title,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12404,7 +12404,7 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body h3,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtitle,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -12733,7 +12733,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h1,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h2,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -12757,7 +12757,7 @@ body.page-blog h1.page-header {
 }
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body h3,
 .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -13035,7 +13035,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h2,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-title,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -13067,7 +13067,7 @@ body.page-blog h1.page-header {
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body h3,
 .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body .pxl-subtitle,
 .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -13480,7 +13480,7 @@ body.page-blog h1.page-header {
 .node.node-spenden .row .col-sm-12 .field-name-body h1,
 .node.node-spenden .row .col-sm-12 .field-name-body h2,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -13504,7 +13504,7 @@ body.page-blog h1.page-header {
 }
 .node.node-spenden .row .col-sm-12 .field-name-body h3,
 .node.node-spenden .row .col-sm-12 .field-name-body .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -14551,7 +14551,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h1,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h2,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -14575,7 +14575,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item h3,
 .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -14985,7 +14985,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h1,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -15009,7 +15009,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -15181,7 +15181,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
-  margin: 0 auto 20px;
+  margin: -4px 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text {
@@ -15334,7 +15334,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -15398,7 +15398,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -15810,7 +15810,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item .pxl-subtitle {
-  margin: 0 auto 20px;
+  margin: -4px 0 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item ol,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item ol,
@@ -15901,7 +15901,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h1,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -15925,7 +15925,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -16097,7 +16097,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 20px;
+  margin: -4px 0 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-image-text-image .row .col-sm-6 .field-name-field-text-50 .field-item ol {
   padding-left: 20px;
@@ -16260,7 +16260,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h2,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -16292,7 +16292,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -16512,7 +16512,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 20px;
+  margin: -4px 0 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-image {
   margin: 0 0 1rem;
@@ -16690,7 +16690,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-title,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-title {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaBold';
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -16754,7 +16754,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: -4px auto 1.5rem;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 22px;
   letter-spacing: normal;
@@ -17166,7 +17166,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item .pxl-subtitle,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item .pxl-subtitle {
-  margin: 0 auto 20px;
+  margin: -4px 0 1.5rem;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-image,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-image,
