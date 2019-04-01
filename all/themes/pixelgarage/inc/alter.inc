@@ -98,3 +98,25 @@ function pixelgarage_stripe_button_fee_select_feedback_alter(&$feedbacks, $fee_b
   }
 }
 
+
+/* =============================================================================
+ *    Follow alter hooks implementation
+ * ========================================================================== */
+/**
+ * Alter the available networks to the Follow module.
+ *
+ * @param $networks
+ *   Associative array of networks that are available.
+ * @param $uid
+ *   The User ID of the networks to be displayed. If 0 is provided, will be the
+ *   networks for the website rather then an individual user.
+ */
+function pixelgarage_follow_networks_alter(&$networks, $uid = 0) {
+  // Add a network.
+  unset($networks[$uid]['googleplus']);
+  $networks[$uid]['instagram'] = array(
+    'title' => t('Instagram'),
+    'domain' => 'instagram.com',
+  );
+}
+

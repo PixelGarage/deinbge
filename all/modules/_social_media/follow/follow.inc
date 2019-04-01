@@ -199,6 +199,7 @@ function follow_parse_url($url) {
  * Validates the url field to verify it's actually a url.
  */
 function follow_url_validate($form) {
+  return true;
   $url = trim($form['#value']);
   $networks = follow_networks_load($form['#follow_uid']);
   $info = $networks[$form['#follow_network']];
