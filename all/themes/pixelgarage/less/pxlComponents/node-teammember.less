@@ -13,11 +13,11 @@
 
 // General settings
 // -------------------------
-.node.node-teammember {
+.node.node-teammember.view-mode-teaser {
   .row {
     div.col-sm-12 {
       margin: 0;
-      padding: 15px;
+      padding: @grid-gutter-width/2;
       width: 100%;
 
       .field-name-title {
@@ -27,7 +27,8 @@
           display:inline-block;
           margin: 0;
           #pxl-mixins.text();
-          font-family: @pxl-text-font-bold;
+          //font-family: @pxl-text-font-medium;
+          color: @pxl-color-main;
         }
       }
 
@@ -42,6 +43,18 @@
             width: 180px;
             height: auto;
           }
+        }
+      }
+
+      .field-name-body {
+        margin: @field-margin;
+
+        .field-item {
+          #pxl-mixins.wysiwyg-body();
+          h3, .pxl-subtitle {
+            margin-top: -4px;
+          }
+          //#pxl-mixins.hyphenate;
         }
       }
 
@@ -72,6 +85,67 @@
               background: none;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.node.node-teammember.view-mode-full,
+.node.node-teammember.view-mode-default {
+  .row {
+    div.col-sm-12 {
+      position: relative;
+      margin: 0;
+      padding: @grid-gutter-width/2;
+      width: 100%;
+
+      .field-name-title {
+        h2 {
+          #pxl-mixins.title();
+          margin: @field-title-margin;
+          color: @pxl-color-main;
+        }
+      }
+
+      .field-name-field-image {
+        margin: @field-margin;
+
+        .field-item {
+          display:inline-block;
+          img {
+            max-width: 100%;
+            width: 180px;
+            height: auto;
+          }
+        }
+      }
+
+      .field-name-body {
+        margin: @field-margin;
+
+        .field-item {
+          #pxl-mixins.wysiwyg-teaser();
+          h3, .pxl-subtitle {
+            margin-top: -4px;
+          }
+          //#pxl-mixins.hyphenate;
+        }
+      }
+
+      .field-name-field-t-tigkeiten {
+        margin: @field-margin;
+
+        .field-item {
+          #pxl-mixins.subtext();
+        }
+      }
+
+      .field-name-field-email {
+        margin: @field-margin;
+
+        .field-item {
+          #pxl-mixins.subtext();
         }
       }
     }

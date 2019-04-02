@@ -13,8 +13,80 @@
 // -------------------------
 #pxl-mixins {
   //
-  // masonry for small screens
-  .masonry-small() {
+  // define grid item
+  .pe-grid-item {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 0 (2 * @masonry-gutter-dist) !important;
+    opacity: 1.0;
+    //#pxl-mixins.transition(opacity 1s);
+
+    @media @narrow {
+      margin: 0 0 @masonry-gutter-dist !important;
+    }
+
+    &.shown {
+      opacity: 1.0;
+    }
+
+    &.pe-item-ajax, &.pe-item-no-ajax, &.pe-item-linked {
+      cursor: pointer;
+      // see nodes styling (posts, testimonials, SoMe etc.)
+    }
+
+  }
+
+  //
+  // masonry with two columns
+  .masonry-two() {
+    > .pe-container {
+
+      .grid-sizer, .pe-item {
+        width: 100%;
+      }
+
+      .gutter-sizer {
+        width: 0;
+      }
+
+      @media @tablet {
+        .grid-sizer, .pe-item {
+          width: (50% - @masonry-gutter-dist/2);
+        }
+
+        .gutter-sizer {
+          width: @masonry-gutter-dist;
+        }
+      }
+
+      .pe-item {
+        .pe-grid-item();
+      }
+
+      // modal dialog
+      .modal {
+        #pxl-mixins.modal();
+      }
+
+      // ajax loader
+      #proximity-ajax-loader {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        img {
+          display: inline-block;
+          max-height: 15px;
+        }
+      }
+    }
+  }
+
+  //
+  // masonry with three columns
+  .masonry-three() {
     > .pe-container {
 
       .grid-sizer, .pe-item {
@@ -42,24 +114,7 @@
       }
 
       .pe-item {
-        display: inline-block;
-        overflow: hidden;
-        margin: 0 0 (2 * @masonry-gutter-dist) !important;
-        opacity: 1.0;
-        //#pxl-mixins.transition(opacity 1s);
-
-        @media @narrow {
-          margin: 0 0 @masonry-gutter-dist !important;
-        }
-
-        &.shown {
-          opacity: 1.0;
-        }
-
-        &.pe-item-ajax, &.pe-item-no-ajax, &.pe-item-linked {
-          cursor: pointer;
-          // see nodes styling (posts, testimonials, SoMe etc.)
-        }
+        .pe-grid-item();
       }
 
       // modal dialog
@@ -85,7 +140,7 @@
 
   //
   // masonry for large screens
-  .masonry() {
+  .masonry-four() {
     > .pe-container {
 
       .grid-sizer, .pe-item {
@@ -123,24 +178,7 @@
       }
 
       .pe-item {
-        display: inline-block;
-        overflow: hidden;
-        margin: 0 0 (2 * @masonry-gutter-dist) !important;
-        opacity: 1.0;
-        //#pxl-mixins.transition(opacity 1s);
-
-        @media @narrow {
-          margin: 0 0 @masonry-gutter-dist !important;
-        }
-
-        &.shown {
-          opacity: 1.0;
-        }
-
-        &.pe-item-ajax, &.pe-item-no-ajax, &.pe-item-linked, &.pe-item-no-link {
-          cursor: pointer;
-          // see nodes styling (posts, testimonials, SoMe etc.)
-        }
+        .pe-grid-item();
       }
 
       // modal dialog
