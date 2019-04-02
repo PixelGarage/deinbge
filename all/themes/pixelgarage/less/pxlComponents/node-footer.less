@@ -33,7 +33,14 @@
           }
 
           p {
-            margin: @field-margin-small;
+            display: inline-block;
+            margin: @field-margin;
+            width: 49%;
+
+            @media @normal {
+              width: 100%;
+            }
+
             // logo
             img {
               width: 3rem;
@@ -55,6 +62,15 @@
           }
         }
       }
+      .field-name-field-medienkontakt {
+        .field-item {
+          p {
+            margin: @field-margin;
+            width: 100%;
+          }
+        }
+      }
+
       .field-name-follow-site {
         margin: 0 0 18px;
 
@@ -63,7 +79,6 @@
           // see block-socials.less
         }
       }
-
       .field-name-language-field {
         .field-item {
           ul.language-switcher-locale-url {

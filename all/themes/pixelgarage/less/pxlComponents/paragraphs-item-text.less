@@ -40,38 +40,37 @@
             //.content-columns(2, 24px);
           }
         }
+      }
 
-        .field-name-field-links {
-          margin: @field-margin;
+      .field-name-field-links {
+        margin: @field-margin;
+        width: 100%;
+
+        .field-item {
+          display: inline-block;
+          margin: 0 0 1rem;
           width: 100%;
 
-          .field-item {
-            display: inline-block;
-            margin: 0 0 1rem;
+          a {
+            #pxl-mixins.button-main();
+            margin: 0;
             width: 100%;
-
-            a {
-              #pxl-mixins.button-main();
-              margin: 0;
-              width: 100%;
-            }
           }
-
-          @media @tablet {
-            width: auto;
-
-            .field-item {
-              margin: 0 5px 1rem;
-              width: auto;
-              a {
-                width: auto;
-              }
-            }
-          }
-
         }
 
+        @media @tablet {
+          width: auto;
+
+          .field-item {
+            margin: 0 10px 1rem 0;
+            width: auto;
+            a {
+              width: auto;
+            }
+          }
+        }
       }
+
     }
   }
 

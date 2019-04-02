@@ -4,6 +4,9 @@
  * Bootstrap 4-4-4 Stacked template for Display Suite.
  */
 $full_width = $field_full_width_paragraph[0]['value'] == '1' ? 'full-width ' : '';
+if (isset($field_anchor[0]['value'])) {
+  $layout_attributes .= ' id="' . $field_anchor[0]['value'] . '"';
+}
 ?>
 
 
