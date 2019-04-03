@@ -1,0 +1,130 @@
+/*
+ *  Node instagram component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+// General settings
+// -------------------------
+.node.node-instagram.view-mode-teaser {
+  margin: 0;
+  background-color: @pxl-color-masonry-item-bg;
+
+  >.row {
+    margin: 0;
+
+    >div.col-sm-12 {
+      position: relative;
+      padding: @grid-gutter-width / 2;
+      width: 100%;
+
+      >.field-name-field-picture {
+        margin: -@grid-gutter-width/2 -@grid-gutter-width/2 @grid-gutter-width/2;
+
+        .field-item {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .field-name-title {
+        h2 {
+          margin: @field-title-margin;
+          #pxl-mixins.leadtext();
+          line-height: 1.2;
+        }
+      }
+
+      .field-name-field-created-time {
+        margin-right: -20px;
+        padding: 10px;
+        width: 100%;
+
+        .field-item {
+          font-family: @pxl-text-font;
+          font-size: 10px;
+          text-align: right;
+          color: @pxl-color-masonry-item;
+
+          &:after {
+            content: '\f16d';
+            font-family: @pxl-icon-font;
+            font-size: @font-size-base;
+            margin-left: 10px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.node.node-instagram.view-mode-default,
+.node.node-instagram.view-mode-full {
+  margin: 0;
+
+  >.row {
+    >div.col-sm-12 {
+      width: 100%;
+
+      .field-name-title {
+        h2 {
+          margin: @field-title-margin;
+          #pxl-mixins.title();
+          text-align: center;
+        }
+      }
+
+      .field-name-field-created-time {
+        margin: @field-margin;
+        width: 100%;
+
+        .field-item {
+          font-family: @pxl-text-font;
+          font-size: 12px;
+          text-align: center;
+          line-height: 1;
+          color: @pxl-color-masonry-item;
+
+          &:before {
+            content: '\f16d';
+            font-family: @pxl-icon-font;
+            font-size: @font-size-base;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .field-name-field-picture {
+        margin: @field-margin;
+
+        .field-item {
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .field-name-body {
+        margin: @field-margin;
+        #pxl-mixins.wysiwyg-body();
+
+        @media @tablet {
+          //.content-columns(2);
+        }
+      }
+
+    }
+  }
+}

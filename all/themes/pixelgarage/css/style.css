@@ -11982,14 +11982,18 @@ body.page-blog h1.page-header {
  *  Node facebook component
  * --------------------------------------------------*/
 .node.node-facebook-post.view-mode-teaser {
-  padding: 20px;
   background-color: #fff;
 }
+.node.node-facebook-post.view-mode-teaser .row {
+  margin: 0;
+}
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 {
+  position: relative;
+  padding: 15px;
   width: 100%;
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-field-picture {
-  margin: -20px -20px 20px;
+  margin: -15px -15px 15px;
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-field-picture .field-item img {
   width: 100%;
@@ -11999,25 +12003,27 @@ body.page-blog h1.page-header {
   display: none;
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
-  margin: 0 auto 20px;
+  margin: 0 0 0.75rem;
   font-family: 'ProximaNovaRegular';
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: normal;
-  line-height: 1;
+  line-height: 1.4;
   text-align: left;
-  color: #bf9c50;
+  color: #222222;
+  line-height: 1.2;
 }
 @media screen and (min-width: 320px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
-    font-size: calc(22px + 6 * ((100vw - 320px) / 880));
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
   }
 }
 @media screen and (min-width: 1200px) {
   .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-title h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body {
+  margin: 0 0 1rem;
   font-family: 'ProximaNovaLight';
   font-size: 14px;
   letter-spacing: normal;
@@ -12306,60 +12312,6 @@ body.page-blog h1.page-header {
     font-size: 40px;
   }
 }
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-name-from {
-  display: none;
-  padding: 0 0 10px;
-  width: 100%;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from .field-item,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-name-from .field-item {
-  font-family: 'ProximaNovaLight';
-  font-size: 14px;
-  text-align: left;
-  color: #222222;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time {
-  margin: 10px 0 20px;
-  width: 100%;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item {
-  font-family: 'ProximaNovaLight';
-  font-size: 12px;
-  text-align: right;
-  line-height: 1;
-  color: #929295;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item:before,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item:before {
-  content: '\f09a';
-  font-family: 'fontawesome';
-  font-size: 20px;
-  margin-right: 10px;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count {
-  margin: -34px 0 0;
-  padding: 0;
-  width: 100%;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count .field-item {
-  font-family: 'ProximaNovaLight';
-  font-size: 12px;
-  text-align: left;
-  line-height: 1;
-  color: #222222;
-}
-.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item:after,
-.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count .field-item:after {
-  content: 'Likes';
-  font-family: 'ProximaNovaLight';
-  font-size: 12px;
-  margin-left: 10px;
-}
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-picture,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-picture {
   margin: 0 0 1rem;
@@ -12369,7 +12321,6 @@ body.page-blog h1.page-header {
   display: block;
   margin: 0 auto;
   max-width: 100%;
-  min-width: 30%;
   height: auto;
 }
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-video-embedded,
@@ -12661,6 +12612,459 @@ body.page-blog h1.page-header {
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body audio,
 .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body iframe,
 .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body iframe {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 350px;
+}
+@media screen and (min-width: 768px) {
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-name-from {
+  display: none;
+  padding: 0 0 10px;
+  width: 100%;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-name-from .field-item,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-name-from .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 14px;
+  text-align: left;
+  color: #222222;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time {
+  margin: 0 0 1rem;
+  width: 100%;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  text-align: right;
+  line-height: 1;
+  color: #929295;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item:before,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item:before {
+  content: '\f09a';
+  font-family: 'fontawesome';
+  font-size: 20px;
+  margin-right: 10px;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count {
+  margin: -34px 0 0;
+  padding: 0;
+  width: 100%;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  text-align: left;
+  line-height: 1;
+  color: #222222;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-field-likes-count .field-item:after,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-field-likes-count .field-item:after {
+  content: 'Likes';
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  margin-left: 10px;
+}
+/*
+ *  Node instagram component
+ * --------------------------------------------------*/
+.node.node-instagram.view-mode-teaser {
+  margin: 0;
+  background-color: #fff;
+}
+.node.node-instagram.view-mode-teaser > .row {
+  margin: 0;
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 {
+  position: relative;
+  padding: 15px;
+  width: 100%;
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 > .field-name-field-picture {
+  margin: -15px -15px 15px;
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 > .field-name-field-picture .field-item img {
+  width: 100%;
+  height: auto;
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
+  margin: 0 0 0.75rem;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  line-height: 1.2;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-teaser > .row > div.col-sm-12 .field-name-title h2 {
+    font-size: 24px;
+  }
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 .field-name-field-created-time {
+  margin-right: -20px;
+  padding: 10px;
+  width: 100%;
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 .field-name-field-created-time .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 10px;
+  text-align: right;
+  color: #929295;
+}
+.node.node-instagram.view-mode-teaser > .row > div.col-sm-12 .field-name-field-created-time .field-item:after {
+  content: '\f16d';
+  font-family: 'fontawesome';
+  font-size: 20px;
+  margin-left: 10px;
+}
+.node.node-instagram.view-mode-default,
+.node.node-instagram.view-mode-full {
+  margin: 0;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 {
+  width: 100%;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-title h2,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-title h2 {
+  margin: 0 0 0.75rem;
+  font-family: 'ProximaNovaRegular';
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-align: left;
+  color: #bf9c50;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-title h2,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-title h2 {
+    font-size: calc(32px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-title h2,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-title h2 {
+    font-size: 40px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-field-created-time,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-field-created-time {
+  margin: 0 0 1rem;
+  width: 100%;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-field-created-time .field-item,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-field-created-time .field-item {
+  font-family: 'ProximaNovaLight';
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
+  color: #929295;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-field-created-time .field-item:before,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-field-created-time .field-item:before {
+  content: '\f16d';
+  font-family: 'fontawesome';
+  font-size: 20px;
+  margin-right: 10px;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-field-picture,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-field-picture {
+  margin: 0 0 1rem;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-field-picture .field-item img,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-field-picture .field-item img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body {
+  margin: 0 0 1rem;
+  font-family: 'ProximaNovaLight';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body {
+    font-size: 24px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h1,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h1,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h2,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h2,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-title,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-title {
+  margin: 0 auto 20px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 32px;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-align: left;
+  color: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h1,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h1,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h2,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h2,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-title,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-title {
+    font-size: calc(32px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h1,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h1,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h2,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h2,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-title,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-title {
+    font-size: 40px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h3,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h3,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-subtitle,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-subtitle {
+  margin: 0 auto 20px;
+  font-family: 'ProximaNovaRegular';
+  font-size: 22px;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: left;
+  color: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h3,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h3,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-subtitle,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-subtitle {
+    font-size: calc(22px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h3,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h3,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-subtitle,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-subtitle {
+    font-size: 28px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h4,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h4,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h5,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h5,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body h6,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body h6,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-headline,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-headline {
+  margin: 0 0 0.75rem;
+  font-family: 'ProximaNovaBold';
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-leadtext,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-leadtext {
+  margin: 0 0 0.5rem;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-leadtext,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-leadtext {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-leadtext,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-leadtext {
+    font-size: 24px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body p,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body p {
+  margin: 0 0 0.5rem;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body small,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body small,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-subtext,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-subtext {
+  font-family: 'ProximaNovaLight';
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-align: left;
+  color: #222222;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body small,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body small,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-subtext,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-subtext {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body small,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body small,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-subtext,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-subtext {
+    font-size: 20px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-glow,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-glow {
+  font-family: 'ProximaNovaLight';
+  font-size: 50px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  text-shadow: 0 0 10px #40856D, 0 0 10px #40856D, 0 0 10px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 20px #40856D, 0 0 30px #40856D;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-glow,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-glow {
+    font-size: calc(50px + 50 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-glow,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-glow {
+    font-size: 100px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body blockquote,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body blockquote,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-quote,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-quote {
+  font-family: 'ProximaNovaBold';
+  font-size: 30px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  color: #222222;
+  text-align: center;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body blockquote,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body blockquote,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-quote,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-quote {
+    font-size: calc(30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body blockquote,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body blockquote,
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .pxl-quote,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .pxl-quote {
+    font-size: 40px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body a,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body a {
+  color: #bf9c50;
+  text-decoration: none;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body a:hover,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body a:hover,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body a:focus,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body a:focus {
+  color: #8e7234;
+  text-decoration: none;
+  background: none;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body pre,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body pre,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body address,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body address,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body i,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body i,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body em,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body em {
+  font-family: 'ProximaNovaLight';
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body strong,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body strong,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body b,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body b {
+  font-family: 'ProximaNovaBold';
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body mark,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body mark {
+  background-color: #ff0;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body hr,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body hr {
+  border: 0;
+  border-bottom: 2px solid #bf9c50;
+  background: none;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body ol,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body ol {
+  padding-left: 20px;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .table-responsive,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .table-responsive {
+  padding: 0 15px;
+  border: 1px solid #c9c9c9;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body .table-responsive table,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body .table-responsive table {
+  min-width: 540px;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body img,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body img {
+  display: block;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body embed,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body embed,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body video,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body video,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body audio,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body audio,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body iframe,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body iframe {
   display: block;
   overflow: hidden;
   margin: 20px auto;
@@ -12979,17 +13383,17 @@ body.page-blog h1.page-header {
 }
 @media screen and (min-width: 768px) {
 }
-.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-post-date {
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-created-time {
   margin: 0 0 1rem;
   width: 100%;
 }
-.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-post-date .field-item {
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-created-time .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 10px;
   text-align: right;
   color: #929295;
 }
-.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-post-date .field-item:after {
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-field-created-time .field-item:after {
   content: '\f0e7';
   font-family: 'fontawesome';
   font-size: 20px;
@@ -13028,20 +13432,20 @@ body.page-blog h1.page-header {
   display: block;
   text-align: center;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date,
-.node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-created-time,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-created-time {
   margin: 0 0 1rem;
   width: 100%;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item,
-.node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date .field-item {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item {
   font-family: 'ProximaNovaLight';
   font-size: 12px;
   text-align: center;
   color: #929295;
 }
-.node.node-article.view-mode-full .row div.col-sm-12 .field-name-post-date .field-item:before,
-.node.node-article.view-mode-default .row div.col-sm-12 .field-name-post-date .field-item:before {
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-field-created-time .field-item:before,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-field-created-time .field-item:before {
   content: '\f0e7';
   font-family: 'fontawesome';
   font-size: 20px;

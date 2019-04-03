@@ -14,15 +14,18 @@
 // General settings
 // -------------------------
 .node.node-facebook-post.view-mode-teaser {
-  padding: 20px;
   background-color: @pxl-color-masonry-item-bg;
 
   .row {
+    margin: 0;
+
     div.col-sm-12 {
+      position: relative;
+      padding: @grid-gutter-width / 2;
       width: 100%;
 
       .field-name-field-picture {
-        margin: -20px -20px 20px;
+        margin: -@grid-gutter-width/2 -@grid-gutter-width/2 @grid-gutter-width/2;
 
         .field-item {
           img {
@@ -35,14 +38,15 @@
       .field-name-title {
         display: none;
         h2 {
-          margin: 0 auto 20px;
-          #pxl-mixins.subtitle();
+          margin: @field-title-margin;
+          #pxl-mixins.leadtext();
+          line-height: 1.2;
         }
       }
 
       .field-name-body {
+        margin: @field-margin;
         #pxl-mixins.wysiwyg-teaser();
-        color: @text-color;
 
         @media @tablet {
           //.content-columns(2);
@@ -119,6 +123,50 @@
         }
       }
 
+      .field-name-field-picture {
+        margin: @field-margin;
+
+        .field-item {
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .field-name-field-video-embedded {
+        margin: @field-margin;
+
+        .embedded-video {
+          position: relative;
+          overflow: hidden;
+          padding-top: 56.25%;
+          margin: 0 auto;
+          width: 90%;
+          max-width: 90%;
+
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+          }
+        }
+      }
+
+      .field-name-body {
+        margin: @field-margin;
+        #pxl-mixins.wysiwyg-body();
+
+        @media @tablet {
+          //.content-columns(2);
+        }
+      }
+
       .field-name-field-name-from {
         display: none;
         padding: 0 0 10px;
@@ -133,7 +181,7 @@
       }
 
       .field-name-field-created-time {
-        margin: 10px 0 20px;
+        margin: @field-margin;
         width: 100%;
 
         .field-item {
@@ -173,50 +221,6 @@
         }
       }
 
-      .field-name-field-picture {
-        margin: @field-margin;
-
-        .field-item {
-          img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            min-width: 30%;
-            height: auto;
-          }
-        }
-      }
-
-      .field-name-field-video-embedded {
-        margin: @field-margin;
-
-        .embedded-video {
-          position: relative;
-          overflow: hidden;
-          padding-top: 56.25%;
-          margin: 0 auto;
-          width: 90%;
-          max-width: 90%;
-
-          iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-          }
-        }
-      }
-
-      .field-name-body {
-        margin: @field-margin;
-        #pxl-mixins.wysiwyg-body();
-
-        @media @tablet {
-          //.content-columns(2);
-        }
-      }
     }
   }
 }
