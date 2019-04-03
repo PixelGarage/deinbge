@@ -10392,11 +10392,23 @@ body.page-blog h1.page-header {
   width: 100%;
 }
 #block-views-donations-block .block-title {
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
   font-family: 'ProximaNovaRegular';
   font-size: 32px;
-  text-align: center;
-  color: #222222;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  text-align: left;
+  color: #bf9c50;
+}
+@media screen and (min-width: 320px) {
+  #block-views-donations-block .block-title {
+    font-size: calc(32px + 8 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  #block-views-donations-block .block-title {
+    font-size: 40px;
+  }
 }
 .view.view-donations .view-header {
   margin-bottom: 64px;
@@ -11659,7 +11671,8 @@ body.page-blog h1.page-header {
  *  Node page component
  * --------------------------------------------------*/
 .node-page > .row > div.col-sm-12 {
-  margin: 20px 0 50px;
+  margin: 0;
+  padding-top: 30px;
   width: 100%;
 }
 .node-page > .row > div.col-sm-12 > .field-name-title h2 {
@@ -11921,7 +11934,7 @@ body.page-blog h1.page-header {
   padding-bottom: 30px;
   background-color: #bf9c50;
 }
-.page-node-950 .node-page > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item .entity-paragraphs-item.full-width {
+.page-node-958 .node-page > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item .entity-paragraphs-item.full-width {
   background-color: #efefef;
 }
 .node-page > .row > div.col-sm-12 > .paragraphs-items > .field-name-field-paragraphs > .field-items > .field-item .entity-paragraphs-item.full-width .field-name-field-title .field-item,
@@ -12279,6 +12292,7 @@ body.page-blog h1.page-header {
   line-height: 1;
   text-align: left;
   color: #bf9c50;
+  text-align: center;
 }
 @media screen and (min-width: 320px) {
   .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-title h2,
@@ -12995,6 +13009,7 @@ body.page-blog h1.page-header {
   text-align: left;
   color: #bf9c50;
   margin: 0 0 0.75rem;
+  text-align: center;
 }
 @media screen and (min-width: 320px) {
   .node.node-article.view-mode-full .row div.col-sm-12 .field-name-title h2,
@@ -15524,6 +15539,9 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
     font-size: 40px;
   }
 }
+.entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-images {
+  margin: 0 0 1.5rem;
+}
 .entity-paragraphs-item.paragraphs-item-image-paragraph .row .col-sm-12 .field-name-field-images .field-item img {
   max-width: 100%;
   height: auto;
@@ -15607,6 +15625,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   }
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text {
+  margin: 0 0 1rem;
   width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item {
@@ -16926,7 +16945,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   height: auto;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-video {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-video .field-item {
@@ -17628,7 +17647,7 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-video,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-video,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-video {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   width: 100%;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-video .field-item,
@@ -18713,7 +18732,7 @@ body {
 }
 @media screen and (min-width: 992px) {
   body {
-    padding-bottom: 380px;
+    padding-bottom: 400px;
   }
 }
 body .main-container {
@@ -18884,7 +18903,7 @@ body footer.footer {
 }
 @media screen and (min-width: 992px) {
   body footer.footer {
-    height: 380px;
+    height: 400px;
   }
 }
 body footer.footer .container,

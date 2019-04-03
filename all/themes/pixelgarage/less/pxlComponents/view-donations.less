@@ -20,11 +20,9 @@
   width: 100%;
 
   .block-title {
-    margin: 0 0 20px;
-    font-family: @pxl-title-font;
-    font-size: @font-size-pane-title;
-    text-align: center;
-    color: @text-color;
+    margin: @paragraph-title-margin;
+    #pxl-mixins.title();
+    color: @pxl-color-main;
   }
 }
 
