@@ -8803,6 +8803,9 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   cursor: pointer;
 }
 /*
+ *  Form mailchimp component
+ * --------------------------------------------------*/
+/*
  *  Bootstrap accordion mixin
  * --------------------------------------------------*/
 /*
@@ -10626,6 +10629,74 @@ body.page-blog h1.page-header {
   height: auto;
   min-height: 350px;
 }
+.view.view-donations .view-header #mc_embed_signup form {
+  text-align: left;
+}
+.view.view-donations .view-header #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .view.view-donations .view-header #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .view.view-donations .view-header #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.view.view-donations .view-header #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.view.view-donations .view-header #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.view.view-donations .view-header #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.view.view-donations .view-header #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.view.view-donations .view-header #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.view.view-donations .view-header #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.view.view-donations .view-header #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
+}
 .view.view-donations .view-header h3,
 .view.view-donations .view-header .pxl-subtitle {
   margin: 0 auto 20px;
@@ -11375,6 +11446,74 @@ body.page-blog h1.page-header {
   height: auto;
   min-height: 350px;
 }
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-block .row .col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
+}
 @media screen and (min-width: 768px) {
 }
 .node.node-block .row .col-sm-12 a.block-button {
@@ -11667,6 +11806,74 @@ body.page-blog h1.page-header {
   height: auto;
   min-height: 350px;
 }
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-intro .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
+}
 /*
  *  Node page component
  * --------------------------------------------------*/
@@ -11910,6 +12117,74 @@ body.page-blog h1.page-header {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node-page > .row > div.col-sm-12 > .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .node-page > .row > div.col-sm-12 > .field-name-body h3,
 .node-page > .row > div.col-sm-12 > .field-name-body .pxl-subtitle {
@@ -12237,6 +12512,74 @@ body.page-blog h1.page-header {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-facebook-post.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 @media screen and (min-width: 768px) {
 }
@@ -12620,6 +12963,85 @@ body.page-blog h1.page-header {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+  .node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-facebook-post.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active,
+.node.node-facebook-post.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 @media screen and (min-width: 768px) {
 }
@@ -13074,6 +13496,85 @@ body.page-blog h1.page-header {
   height: auto;
   min-height: 350px;
 }
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+  .node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-instagram.view-mode-default > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active,
+.node.node-instagram.view-mode-full > .row > div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
+}
 @media screen and (min-width: 768px) {
 }
 /*
@@ -13380,6 +13881,74 @@ body.page-blog h1.page-header {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-article.view-mode-teaser .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 @media screen and (min-width: 768px) {
 }
@@ -13737,6 +14306,85 @@ body.page-blog h1.page-header {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email,
+  .node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-article.view-mode-full .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active,
+.node.node-article.view-mode-default .row div.col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 @media screen and (min-width: 768px) {
 }
@@ -14128,6 +14776,74 @@ body.page-blog h1.page-header {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-spenden .row .col-sm-12 .field-name-body #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .node.node-spenden .row .col-sm-12 .field-name-field-spenden-predefined,
 .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden-predefined {
@@ -15200,6 +15916,74 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   height: auto;
   min-height: 350px;
 }
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-offline-donation .row .col-sm-12 .group-tabs .horizontal-tabs-panes .horizontal-tabs-pane .panel-body .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
+}
 /*
  *  Node teammember component
  * --------------------------------------------------*/
@@ -15461,6 +16245,74 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item h3,
 .node.node-teammember.view-mode-teaser .row div.col-sm-12 .field-name-body .field-item .pxl-subtitle {
@@ -15842,6 +16694,85 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email,
+  .node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email,
+  .node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email:focus,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .node.node-teammember.view-mode-full .row div.col-sm-12 .field-name-body .field-item h3,
 .node.node-teammember.view-mode-default .row div.col-sm-12 .field-name-body .field-item h3,
@@ -16246,6 +17177,74 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-paragraph .row .col-sm-12 .field-name-field-text .field-item .pxl-subtitle {
@@ -16875,6 +17874,129 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   height: auto;
   min-height: 350px;
 }
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-1 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-2 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-25-2 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
+}
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-md-4 .field-name-field-text-50 .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-50-25-25 .row .col-sm-6 .field-name-field-text-25-1 .field-item h3,
@@ -17332,6 +18454,96 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-text-extra .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-text-image .row .col-sm-6 .field-name-field-text-50 .field-item h3,
@@ -18009,6 +19221,129 @@ body.front .node.node-spenden .row .col-sm-12 .field-name-field-recurr-spenden .
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form {
+  text-align: left;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email {
+  height: 38px;
+  border: 1px solid #c9c9c9;
+  background-color: white !important;
+  outline: none;
+  font-family: 'ProximaNovaRegular';
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  text-align: left;
+  color: #222222;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+@media screen and (min-width: 320px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 880));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email,
+  .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email {
+    font-size: 24px;
+  }
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-moz-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-moz-placeholder {
+  text-align: left;
+  color: #999;
+  opacity: 1;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:-ms-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:-ms-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email::-webkit-input-placeholder {
+  text-align: left;
+  color: #999;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:focus,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input.email:focus {
+  -webkit-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  -moz-box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  box-shadow: 0 1px 1px rgba(171, 147, 94, 0.075) inset, 0 0 8px rgba(171, 147, 94, 0.6);
+  border: 1px solid #bf9c50;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background: #222;
+  margin: 0;
+  height: 38px;
+  line-height: normal;
+}
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe:hover,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active,
+.entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-8 .field-name-field-text-50 .field-item #mc_embed_signup form input#mc-embedded-subscribe.active {
+  color: #bf9c50;
+  background: #222;
 }
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-sm-6 .field-name-field-text .field-item h3,
 .entity-paragraphs-item.paragraphs-item-image33-text66 .row .col-md-4 .field-name-field-text .field-item h3,

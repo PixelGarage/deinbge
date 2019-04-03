@@ -1,0 +1,55 @@
+/*
+ *  Form mailchimp component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@pxl-mailchimp-height: 38px;
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+//
+// horizontal form without title
+
+#pxl-mixins {
+
+  .mailchimp_horizontal() {
+    #mc_embed_signup {
+      form {
+        text-align: left;
+
+        // email field
+        input.email {
+          height: @pxl-mailchimp-height;
+          border: 1px solid @pxl-color-border;
+          background-color: white !important;
+          outline: none;
+          #pxl-mixins.leadtext();
+          #pxl-mixins.placeholder();
+          #pxl-mixins.border-radius(0);
+
+          &:focus {
+            #pxl-mixins.box-shadow(0 1px 1px rgba(171, 147, 94, 0.075) inset);
+            #pxl-mixins.box-shadow(0 0 8px rgba(171, 147, 94, 0.6));
+            border: 1px solid @pxl-color-main;
+          }
+        }
+
+        // submit button
+        input#mc-embedded-subscribe {
+          #pxl-mixins.button-main-small();
+          margin: 0;
+          height: @pxl-mailchimp-height;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+}
+
