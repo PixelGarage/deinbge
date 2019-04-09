@@ -17,7 +17,7 @@ if (typeof(CKEDITOR) !== 'undefined') {
       // "Format" drop-down list in the toolbar, maintaining the same features.
       {name: 'Title', element: 'h2', attributes: {'class': 'pxl-title'}},
       {name: 'Subtitle', element: 'h3', attributes: {'class': 'pxl-subtitle'}},
-      {name: 'Headline', element: 'h4', attributes: {'class': 'pxl-headline', 'style': 'font-weight: bold'}},
+      {name: 'Headline', element: 'h4', attributes: {'class': 'pxl-headline'}},
 
       /* Custom styles */
       {

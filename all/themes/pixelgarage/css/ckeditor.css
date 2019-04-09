@@ -1406,11 +1406,12 @@
   }
 }
 .pxl-headline {
-  font-family: 'ProximaNovaRegular';
+  font-family: 'ProximaNovaLight';
   font-size: 18px;
   letter-spacing: normal;
   line-height: 1.4;
   text-align: left;
+  font-family: 'ProximaNovaRegular';
   color: #222222;
 }
 @media screen and (min-width: 320px) {
