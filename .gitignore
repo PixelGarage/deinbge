@@ -5,6 +5,7 @@ default/settings*.php
 default/files/
 default/files_private/backup_migrate/scheduled
 
-# ignore project settings and
+# ignore project settings and apple files
 .idea/
 **/.DS_Store
+__*
