@@ -44,7 +44,7 @@ function pixelgarage_preprocess_page(&$vars) {
       break;
     case 'de':
     default:
-      //$vars['logo'] = str_replace('.jpg', '.svg', $vars['logo']);
+      $vars['logo'] = str_replace('.png', '.svg', $vars['logo']);
       break;
   }
 }

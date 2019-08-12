@@ -1,0 +1,41 @@
+/*
+ *  Language block component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+#block-locale-language {
+  display:inline-block;
+  margin: 0 0 0 20px;
+
+  ul.language-switcher-locale-url {
+    @include pxl-no-list-style;
+
+    >li {
+      @include pxl-no-list-style;
+      display:inline-block;
+      margin: 0;
+      line-height: 1;
+
+      a.language-link {
+        display: inline-block;
+        padding: 0 0 0 5px;
+        @include pxl-text();
+        font-weight: bold;
+        @include pxl-link-underline-off;
+      }
+
+      span.locale-untranslated {
+        color: $text-color-disabled;
+      }
+    }
+  }
+}

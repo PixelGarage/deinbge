@@ -1,0 +1,84 @@
+/*
+ *  Node teaser component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.view-mode-teaser {
+  >.row {
+    margin: 0;
+    @include pxl-html-element-maxwidth($teaser: true);
+
+    > [class*="col-"] {
+      position: relative;
+      padding: $grid-gutter-width / 2;
+
+      // typography
+      @include pxl-html-element-typo(true);
+
+      // teaser fields
+      @include teaser-field-picture;
+      @include teaser-field-created-time;
+      @include teaser-field-name-from;
+      @include teaser-field-likes_count;
+      @include teaser-field-decoration;
+      @include teaser-field-email;
+
+    }
+  }
+
+}
+
+.node.node-teammember.view-mode-teaser {
+  >.row {
+    margin: 0;
+
+    > [class*="col-"] {
+      position: relative;
+      padding: 0;
+
+      // teaser fields
+      @include teaser-field-portrait;
+      @include teaser-field-email;
+
+    }
+  }
+}
+
+.node.node-article.view-mode-teaser {
+  >.row > [class*="col-"] {
+    .field-name-field-created-time {
+      .field-item:after {
+        content: $fa-var-bolt;
+      }
+    }
+  }
+}
+
+.node.node-facebook-post.view-mode-teaser {
+  >.row > [class*="col-"] {
+    .field-name-field-created-time {
+      .field-item:after {
+        content: $fa-var-facebook;
+      }
+    }
+  }
+}
+
+.node.node-instagram.view-mode-teaser {
+  >.row > [class*="col-"] {
+    .field-name-field-created-time {
+      .field-item:after {
+        content: $fa-var-instagram;
+      }
+    }
+  }
+}

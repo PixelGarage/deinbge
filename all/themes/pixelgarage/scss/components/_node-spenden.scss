@@ -1,0 +1,27 @@
+/*
+ *  Node donation component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-spenden {
+  > .row {
+    > [class*="col-"] {
+      //
+      // fields
+      @include field-images(true);
+      @include field-donation-button-fixed;
+      @include field-donation-button-custom;
+      @include field-donation-button-fee;
+    }
+  }
+}
+

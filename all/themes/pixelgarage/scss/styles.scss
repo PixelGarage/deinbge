@@ -15,14 +15,14 @@
  * -----------------------------------------------------------------------------*/
 
 /* import mixins and functions and fonts */
-@import "custom";
+@import "variables";
 @import "fonts";
+
+/* normalize HTML elements (bootstrap) */
+@import "../bootstrap/scss/bootstrap-reboot";
 
 /* import bootstrap utility rules */
 @import "../bootstrap/scss/utilities";
-
-/* normalize HTML elements (bootstrap) */
-@import "../bootstrap/scss/reboot";
 
 /* Specific bootstrap rules */
 @import "../bootstrap/scss/alert";
@@ -32,6 +32,9 @@
 @import "../bootstrap/scss/images";
 @import "../bootstrap/scss/modal";
 
+/* PXL mixins and functions */
+@import "functions";
+@import "mixins";
 
 /* import specific Pixelgarage rules */
 @import "grid";
@@ -42,38 +45,3 @@
 
 /* import Drupal specific components */
 @import "components";
-
-//
-//  Pixelgarage CSS rules
-//
-/* Html */
-html {
-  height: 100%;
-  font-size: $global-font-size;
-}
-
-/* Body */
-body {
-  position: relative;
-  min-height: 100%;
-  // font smoothing
-  @include pxl-sharp-fonts;
-
-	//Trennung Manuell mit &shy;
-  @include pxl-hyphenate(manual);
-
-  // text font
-  @include pxl-font-plain-style();
-
-  *:focus {
-    outline: none;
-    box-shadow: none;
-  }
-}
-
-//
-// Images
-//
-img {
- @include img-fluid;
-}

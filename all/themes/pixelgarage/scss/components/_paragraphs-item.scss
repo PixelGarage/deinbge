@@ -1,0 +1,52 @@
+/*
+ *  Paragraphs item component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.entity-paragraphs-item {
+  @include pxl-spacey(py, s1, section);
+
+  &.full-width {
+    @include theme-lightgray-black;
+  }
+
+  // paragraph columns
+  >.row {
+    @include pxl-html-element-maxwidth;
+
+    > [class*="col-"]  {
+      @include pxl-spacey(py, s1, column);
+
+
+      // reset top margin of first field item content
+      .field:first-child > .field-items > .field-item:first-child,
+      .field:first-child > .field-items > .field-item:first-child > *:first-child {
+        margin-top: 0;
+      }
+      // reset bottom margin of last field item content
+      .field:last-child > .field-items > .field-item:last-child,
+      .field:last-child > .field-items > .field-item:last-child > *:last-child {
+        margin-bottom: 0;
+      }
+
+      //
+      // fields
+      @include field-title;
+      @include field-video;
+      @include field-file;
+      @include field-image;
+      @include field-links;
+      @include field-social-links;
+
+    }
+  }
+}

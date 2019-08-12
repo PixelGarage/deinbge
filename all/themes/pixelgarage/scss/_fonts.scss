@@ -14,6 +14,13 @@
 //@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
 //
+//  icon font
+$fa-font-path: '../fonts/font-awesome/fonts'; // override fa font path (lazy loading)
+@import '../fonts/font-awesome/scss/font-awesome.scss';
+// icon font
+$pxl-icon-font: 'FontAwesome';
+
+//
 // Define customer specific fonts
 $pxl-font-path: '../fonts';
 

@@ -6,7 +6,9 @@
 //
 /* define typography for html elements */
 @include pxl-html-element-typo();
-@include pxl-html-element-maxwidth();
+
+/* define typography for buttons */
+@include pxl-all-buttons;
 
 /* define typography for form elements */
 @include pxl-form-input();
@@ -15,5 +17,3 @@
 @include pxl-form-select();
 @include pxl-form-button();
 @include pxl-form-range();
-
-

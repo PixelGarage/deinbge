@@ -1,0 +1,309 @@
+/*
+ *  Drupal field components
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+//
+// Inner title
+@mixin field-title($hide: false) {
+  .field-name-field-title {
+    @if ($hide) {
+      display: none;
+    }
+    .field-item {
+      @include pxl-subtitle();
+      font-weight: bold;
+    }
+  }
+}
+
+//
+// image field
+@mixin field-image(){
+  .field-name-field-image {
+    .field-item {
+      @include pxl-spacey(mb, s1);
+
+      img {
+        @include img-fluid;
+      }
+    }
+  }
+}
+
+@mixin field-images($hide: false) {
+  .field-name-field-images {
+    @if ($hide) {
+      display: none;
+    }
+    .field-item {
+      @include pxl-spacey(mb, s1);
+
+      @include bs-carousel(true, true);
+    }
+  }
+}
+
+//
+// links field
+@mixin field-links() {
+  .field-name-field-links {
+    > .field-items {
+      display: flex;
+      justify-content: flex-start;
+
+      > .field-item {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          @include pxl-button;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+@mixin field-links-theme($color, $background-color, $hover-color, $border-color) {
+  // field links buttons
+  .field-name-field-links > .field-items > .field-item a {
+    @include pxl-button-theme($color: $color, $background-color: $background-color, $hover-color: $hover-color, $border-color: $border-color);
+  }
+}
+
+//
+// video field
+@mixin field-video() {
+  .field-name-field-video {
+    @include pxl-spacey(mb, s1);
+
+    text-align: center;
+
+    .field-items {
+      width: 100%;
+      max-width: 720px;
+
+      .field-item {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+//
+// file field
+@mixin field-file() {
+  .field-name-field-file {
+    .field-item {
+      @include pxl-spacey(mb, s1);
+
+      .file {
+        img {}
+
+        a {
+          @include pxl-hyphenate;
+        }
+      }
+    }
+  }
+}
+
+@mixin field-email() {
+  .field-name-field-email {
+    .field-item {
+      a {
+        @include pxl-link-underline-on();
+      }
+    }
+  }
+}
+
+//
+// name from field
+@mixin field-name-from() {
+  .field-name-field-name-from {
+    display: none;
+  }
+}
+
+//
+// created time field
+@mixin field-created-time() {
+  .field-name-field-created-time {
+    margin-right: -20px;
+    padding: 10px;
+    width: 100%;
+
+    .field-item {
+      @include pxl-legend;
+      text-align: center !important;
+
+      &:after {
+        content: $fa-var-bolt;
+        font-family: $pxl-icon-font;
+        font-size: $font-size-base + 1.0;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+//
+// likes count field
+@mixin field-likes_count() {
+  .field-name-field-likes_count {
+    margin: -34px 0 0;
+    padding: 0;
+    width: 100%;
+
+    .field-item {
+      @include pxl-legend;
+
+      &:after {
+        content: 'Likes';
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+//
+// tags field
+@mixin field-tags() {
+  .field-name-field-tags {
+    .field-item {
+      display: inline-block;
+      vertical-align: baseline;
+      @include pxl-legend;
+
+      &:before {
+        content: '#';
+      }
+      &:not(:last-child):after {
+        content: ',';
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+//
+// social links field
+@mixin field-social-links() {
+  .a2a_kit.addtoany_list {
+    display: block;
+    text-align: center;
+  }
+}
+
+//
+// author field
+@mixin field-author() {
+  .field-name-field-author {
+    margin: 0 auto;
+    width: 80%;
+
+    .field-item {
+      text-align: right;
+    }
+  }
+}
+
+//
+// SPECIAL Fields:
+// donation buttons
+@mixin field-donation-button-fixed() {
+  .field-name-field-spenden-predefined,
+  .field-name-field-recurr-spenden-predefined {
+    // stripe buttons
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+    .field-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+
+      .field-item {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 0;
+
+        @include media-breakpoint-up(md) {
+          width: 50%;
+          padding: 0 10px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          width: 33.333333%;
+        }
+
+        @include stripe-button();
+      }
+    }
+  }
+}
+
+@mixin field-donation-button-custom() {
+  .field-name-field-spenden,
+  .field-name-field-recurr-spenden {
+    // stripe buttons
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+    .field-items {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+
+      .field-item {
+        display: inline-block;
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 0;
+
+        @include media-breakpoint-up(md) {
+          width: auto;
+          padding: 0 10px;
+        }
+
+        @include stripe-button();
+      }
+    }
+  }
+}
+
+@mixin field-donation-button-fee() {
+  .field-name-field-spenden-fee-percentage,
+  .field-name-field-recurr-spenden-fee-percent {
+    .field-items {
+      .field-item {
+        @include stripe-button-fee-percentages;
+      }
+    }
+  }
+}
+
+

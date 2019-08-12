@@ -29,10 +29,10 @@
 	a, .link {
 		@include pxl-link-theme($color: $nearcolor, $color-hover: $palecolor);
 	}
-	.link-underline-on {
+  .navbar-collapse a, .link-underline-on {
 		@include pxl-link-underline-on-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
 	}
-	.link-underline-off {
+	.navbar-collapse a, .link-underline-off {
 		@include pxl-link-underline-off-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
   }
 
@@ -47,10 +47,16 @@
 			@include pxl-link-underline-on-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);//, $line-height: 2px, $line-dist: -4px);
 		}
 	}
+
+  // links in fields
+  @include teaser-field-email-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
+
+  // headlines
 	h1.headline, h2.headline, p.headline, .h1.headline, .h2.headline, .p.headline {
 		@include pxl-headline-theme($background: $theme-headline-background, $typo: $theme-headline-typo)
   }
-  
+
+
   // form elements
 	@include pxl-form-input-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
 	@include pxl-form-checkbox-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
@@ -58,7 +64,16 @@
 	@include pxl-form-select-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
 	@include pxl-form-button-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
   @include pxl-form-range-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
-  
+
+  // components
+  @include pxl-all-buttons-theme ($theme-color: $theme-color, $color: $color, $nearcolor: $nearcolor, $middlecolor: $middlecolor, $palecolor: $palecolor, $svgcolor: $theme-svg-color);
+  @include view-pager-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include field-links-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include view-tabs-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include stripe-button-fee-percentages-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include bs-carousel-theme($color: $nearcolor, $background-color: $theme-color, $border-color: $color);
+  @include pxl-datepicker-theme($color: $nearcolor, $background-color: $theme-color, $border-color: $nearcolor);
+
 }
 
 

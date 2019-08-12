@@ -15,9 +15,10 @@ if (typeof(CKEDITOR) !== 'undefined') {
       // These styles are already available in the "Format" drop-down list, so they are
       // not needed here by default. You may enable them to avoid placing the
       // "Format" drop-down list in the toolbar, maintaining the same features.
-      {name: 'Title', element: 'h2', attributes: {'class': 'pxl-title'}},
-      {name: 'Subtitle', element: 'h3', attributes: {'class': 'pxl-subtitle'}},
-      {name: 'Headline', element: 'h4', attributes: {'class': 'pxl-headline'}},
+      {name: 'Title', element: 'h1', attributes: {'class': 'pxl-title'}},
+      {name: 'Subtitle', element: 'h2', attributes: {'class': 'pxl-subtitle'}},
+      {name: 'Headline Title', element: 'h1', attributes: {'class': 'pxl-title headline'}},
+      {name: 'Headline Subtitle', element: 'h2', attributes: {'class': 'pxl-subtitle headline'}},
 
       /* Custom styles */
       {
@@ -31,14 +32,21 @@ if (typeof(CKEDITOR) !== 'undefined') {
         name: 'Normal',
         element: 'p',
         attributes: {
-          'class': 'pxl-normal'
+          'class': 'pxl-text'
         }
       },
       {
         name: 'Normal (div)',
         element: 'div',
         attributes: {
-          'class': 'pxl-normal'
+          'class': 'pxl-text'
+        }
+      },
+      {
+        name: 'Headline',
+        element: 'p',
+        attributes: {
+          'class': 'pxl-text headline'
         }
       },
       {
@@ -46,6 +54,13 @@ if (typeof(CKEDITOR) !== 'undefined') {
         element: 'p',
         attributes: {
           'class': 'pxl-subtext'
+        }
+      },
+      {
+        name: 'Legend',
+        element: 'p',
+        attributes: {
+          'class': 'pxl-legend'
         }
       },
       {

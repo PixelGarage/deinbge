@@ -2,6 +2,24 @@
  * Pixelgarage components
  * --------------------------------------------------*/
 @import "components/header";
-@import "components/content";
+@import "components/document";
 
-@import "components/view-social-masonry";
+// blocks
+@import "components/_block_language";
+@import "components/block_socials";
+
+// nodes
+@import "components/node-full";
+@import "components/node-teaser";
+@import "components/node-spenden";
+
+// paragraphs
+@import "components/paragraphs-item";
+
+// views
+@import "components/view";
+
+
+// components
+@include pxl-datepicker;
+

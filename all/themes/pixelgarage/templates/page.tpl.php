@@ -73,7 +73,7 @@
  * @ingroup themeable
  */
 ?>
-<header role="banner" class="header">
+<header role="banner" class="header theme-white-black">
   <div class="<?php print $container_class; ?>">
     <nav class="navbar navbar-expand-xl">
       <?php if ($logo): ?>
@@ -88,7 +88,7 @@
 
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
           <!--span class="sr-only">Toggle navigation</span-->
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -114,7 +114,7 @@
   </div>
 </header>
 
-<div class="main-container">
+<div class="main-container theme-white-black">
   <div class="<?php print $container_class; ?>">
     <div class="row">
 

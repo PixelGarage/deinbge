@@ -16,8 +16,8 @@ $expand-breakpoint: xl;
 // -------------------------
 @mixin main-menu() {
   ul.navbar-nav {
-    margin-top: 30px;
-    align-items: center;
+    margin-top: 0;
+    align-items: flex-end;
 
     li {
       margin-left: 0;
@@ -27,17 +27,17 @@ $expand-breakpoint: xl;
         padding: 0;
         @include pxl-text();
         font-weight: bold;
+        @include pxl-link-underline-off;
       }
     }
   }
 
   @include media-breakpoint-up($expand-breakpoint) {
     ul.navbar-nav {
-      margin: 0;
       justify-content: flex-end;
 
       li {
-        margin-left: 40px;
+        margin-left: 30px;
         margin-bottom: 0;
 
         &.first {
@@ -65,7 +65,7 @@ $expand-breakpoint: xl;
     ul.menu {
       @include pxl-no-list-style;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-end;
 
       li {
         @include pxl-no-list-style;
@@ -73,6 +73,7 @@ $expand-breakpoint: xl;
         margin-bottom: 20px;
 
         a {
+          @include pxl-link-underline-off;
           padding: 0;
           @include pxl-text();
           font-weight: bold;
@@ -88,14 +89,12 @@ $expand-breakpoint: xl;
 
   @include media-breakpoint-up($expand-breakpoint) {
     .region-navigation {
-      margin: 0;
-
       ul.menu {
         flex-direction: row;
         justify-content: flex-end;
 
         li {
-          margin-left: 40px;
+          margin-left: 30px;
           margin-bottom: 0;
 
           &.first {
@@ -104,7 +103,7 @@ $expand-breakpoint: xl;
 
           a {
             padding: 0;
-            @include pxl-font-plain-style(subtext);
+            @include pxl-font-plain-style(legend);
             font-weight: bold;
             text-align: left;
           }
@@ -132,25 +131,26 @@ header {
 
       a.logo {
         display: inline-block;
-        position: relative;
-        left: -50px;
         margin: 0;
         padding: 0;
-        z-index: 10;
 
         img {
           display: block;
-          max-height: 46px;
+          height: auto;
+          width: 220px;
         }
 
         @include media-breakpoint-up(md) {
           left: 0;
           img {
-            max-height: 70px;
+            width: 350px;
           }
         }
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           left: 0;
+          img {
+            width: 400px;
+          }
         }
       }
 
@@ -170,9 +170,15 @@ header {
         .navbar-toggler-icon {
           display: inline-block;
           width: 35px;
-          height: 23px;
           @include border-radius(0);
-          background: #fff url("../images/navi_burger.svg") no-repeat left top/contain;
+        }
+        & .navbar-toggler-icon {
+          height: 35px;
+          background: transparent url("../images/icon_close_dark.svg") no-repeat left top/contain;
+        }
+        &.collapsed .navbar-toggler-icon {
+          height: 23px;
+          background: transparent url("../images/navi_burger.svg") no-repeat left top/contain;
         }
       }
     }
@@ -182,6 +188,11 @@ header {
       position: relative;
       justify-content: flex-end;
       border: 0;
+      @include pxl-spacey(pt, s1, section);
+
+      @include media-breakpoint-up($expand-breakpoint) {
+        padding: 0;
+      }
 
       .navbar-toggler-2 {
         // navbar toggle with arrow

@@ -1,0 +1,100 @@
+/*
+ *  Node full component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+//
+// Drupal specific markup
+// Columns in nodes (except page)
+.node.view-mode-full:not(.node-page),
+.node.view-mode-default:not(.node-page){
+  @include pxl-spacey(py, s1, section);
+
+  > .row {
+    @include pxl-html-element-maxwidth;
+
+    > [class*="col-"] {
+      position: relative;
+      @include pxl-spacey(py, s1, column);
+
+      // reset top margin of first field item content
+      .field:first-child > .field-items > .field-item:first-child,
+      .field:first-child > .field-items > .field-item:first-child > *:first-child {
+        margin-top: 0;
+      }
+      // reset bottom margin of last field item content
+      .field:last-child > .field-items > .field-item:last-child,
+      .field:last-child > .field-items > .field-item:last-child > *:last-child {
+        margin-bottom: 0;
+      }
+
+      //
+      // fields
+      @include field-video;
+      @include field-file;
+      @include field-image;
+      @include field-images;
+      @include field-links;
+      @include field-social-links;
+      @include field-name-from;
+      @include field-created-time;
+      @include field-tags;
+      @include field-likes_count;
+      @include field-author;
+      @include field-email;
+
+    }
+  }
+}
+
+.node.node-page.view-mode-full,
+.node.node-page.view-mode-default {
+  .row {
+    > [class*="col-"] {
+      position: relative;
+    }
+  }
+}
+
+.node.node-article.view-mode-full,
+.node.node-article.view-mode-default {
+  >.row > [class*="col-"] {
+    .field-name-field-created-time {
+      .field-item:after {
+        content: $fa-var-bolt;
+      }
+    }
+  }
+}
+
+.node.node-facebook-post.view-mode-full,
+.node.node-facebook-post.view-mode-default {
+  >.row > [class*="col-"] {
+    .field-name-field-created-time {
+      .field-item:after {
+        content: $fa-var-facebook;
+      }
+    }
+  }
+}
+
+.node.node-instagram.view-mode-full,
+.node.node-instagram.view-mode-default {
+  >.row > [class*="col-"] {
+    .field-name-field-created-time {
+      .field-item:after {
+        content: $fa-var-instagram;
+      }
+    }
+  }
+}
+
