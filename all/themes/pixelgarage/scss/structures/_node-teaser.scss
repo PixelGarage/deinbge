@@ -22,7 +22,7 @@
       padding: $grid-gutter-width / 2;
 
       // typography
-      @include pxl-html-element-typo(true);
+      @include pxl-html-element-typo($teaser: true);
 
       // teaser fields
       @include teaser-field-picture;
@@ -37,7 +37,7 @@
 
 }
 
-.node.node-teammember.view-mode-teaser {
+.node-teammember.view-mode-teaser {
   >.row {
     margin: 0;
 
@@ -53,7 +53,7 @@
   }
 }
 
-.node.node-article.view-mode-teaser {
+.node-article.view-mode-teaser {
   >.row > [class*="col-"] {
     .field-name-field-created-time {
       .field-item:after {
@@ -63,7 +63,7 @@
   }
 }
 
-.node.node-facebook-post.view-mode-teaser {
+.node-facebook-post.view-mode-teaser {
   >.row > [class*="col-"] {
     .field-name-field-created-time {
       .field-item:after {
@@ -73,7 +73,7 @@
   }
 }
 
-.node.node-instagram.view-mode-teaser {
+.node-instagram.view-mode-teaser {
   >.row > [class*="col-"] {
     .field-name-field-created-time {
       .field-item:after {

@@ -21,8 +21,6 @@
 
   // paragraph columns
   >.row {
-    @include pxl-html-element-maxwidth;
-
     > [class*="col-"]  {
       @include pxl-spacey(py, s1, column);
 

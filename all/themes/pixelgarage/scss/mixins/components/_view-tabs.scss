@@ -11,7 +11,7 @@
 //
 @mixin view-tabs() {
   .views-bootstrap-tab-plugin-style {
-    @include pxl-spacey(my, s1, section);
+    @include pxl-spacey(mt, s1, section);
 
     //
     // tabs

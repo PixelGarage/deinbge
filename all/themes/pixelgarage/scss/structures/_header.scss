@@ -12,112 +12,6 @@ $expand-breakpoint: xl;
 
 
 
-// Rules
-// -------------------------
-@mixin main-menu() {
-  ul.navbar-nav {
-    margin-top: 0;
-    align-items: flex-end;
-
-    li {
-      margin-left: 0;
-      margin-bottom: 20px;
-
-      a {
-        padding: 0;
-        @include pxl-text();
-        font-weight: bold;
-        @include pxl-link-underline-off;
-      }
-    }
-  }
-
-  @include media-breakpoint-up($expand-breakpoint) {
-    ul.navbar-nav {
-      justify-content: flex-end;
-
-      li {
-        margin-left: 30px;
-        margin-bottom: 0;
-
-        &.first {
-          margin-left: 0;
-        }
-
-        a {
-          padding: 0;
-          @include pxl-font-plain-style(subtext);
-          font-weight: bold;
-          text-align: left;
-        }
-      }
-    }
-  }
-
-}
-
-@mixin sub-menu() {
-  .region-navigation {
-    margin: 0;
-
-    //
-    // user login menu
-    ul.menu {
-      @include pxl-no-list-style;
-      flex-direction: column;
-      align-items: flex-end;
-
-      li {
-        @include pxl-no-list-style;
-        margin-left: 0;
-        margin-bottom: 20px;
-
-        a {
-          @include pxl-link-underline-off;
-          padding: 0;
-          @include pxl-text();
-          font-weight: bold;
-        }
-      }
-    }
-
-    .block-locale {
-      display: none;
-      // see block-language.less
-    }
-  }
-
-  @include media-breakpoint-up($expand-breakpoint) {
-    .region-navigation {
-      ul.menu {
-        flex-direction: row;
-        justify-content: flex-end;
-
-        li {
-          margin-left: 30px;
-          margin-bottom: 0;
-
-          &.first {
-            margin-left: 0;
-          }
-
-          a {
-            padding: 0;
-            @include pxl-font-plain-style(legend);
-            font-weight: bold;
-            text-align: left;
-          }
-        }
-      }
-
-      .block-locale {
-        display: inline-block;
-        // see block-language.less
-      }
-    }
-  }
-}
-
 // Main settings
 // -------------------------
 header {
@@ -158,8 +52,8 @@ header {
         display: none;
       }
 
+      // navbar toggle with burger
       .navbar-toggler {
-        // navbar toggle with burger
         padding: 0;
         margin: 0;
         height: 23px;
@@ -194,8 +88,17 @@ header {
         padding: 0;
       }
 
+      // menues
+      nav {
+        // main menu
+        @include main-menu();
+
+        // sub navigation
+        @include sub-menu();
+      }
+
+      // navbar toggle with arrow
       .navbar-toggler-2 {
-        // navbar toggle with arrow
         display: none;
         margin: 10px auto;
         padding: 5px 10px;
@@ -216,14 +119,6 @@ header {
         .navbar-toggler-2 {
           display: block;
         }
-      }
-
-      nav {
-        // main menu
-        @include main-menu();
-
-        // sub navigation
-        @include sub-menu();
       }
     }
   }

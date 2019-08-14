@@ -8,26 +8,11 @@
 /**
  * Returns HTML for a form element label and required marker.
  *
- * Form element labels include the #title and a #required marker. The label is
- * associated with the element itself by the element #id. Labels may appear
- * before or after elements, depending on theme_form_element() and
- * #title_display.
+ * Adapts the checkbox and radio buttons in such a way, that the styling can be
+ * completely overridden.
  *
- * This function will not be called for elements with no labels, depending on
- * #title_display. For elements that have an empty #title and are not required,
- * this function will output no label (''). For required elements that have an
- * empty #title, this will output the required marker alone within the label.
- * The label will use the #id to associate the marker with the field that is
- * required. That is especially important for screenreader users to know
- * which field is required.
- *
- * @param array $variables
- *   An associative array containing:
- *   - element: An associative array containing the properties of the element.
- *     Properties used: #required, #title, #id, #value, #description.
- *
- * @return string
- *   The constructed HTML.
+ * - classes for label added: checkbox-container, radio-container
+ * - Adds a checkmark span element at the end of the checkbox- or radio-container
  *
  * @see theme_form_element_label()
  *

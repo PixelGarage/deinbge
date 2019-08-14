@@ -29,10 +29,10 @@
 	a, .link {
 		@include pxl-link-theme($color: $nearcolor, $color-hover: $palecolor);
 	}
-  .navbar-collapse a, .link-underline-on {
+  .link-underline-on {
 		@include pxl-link-underline-on-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
 	}
-	.navbar-collapse a, .link-underline-off {
+	.link-underline-off {
 		@include pxl-link-underline-off-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
   }
 
@@ -48,14 +48,10 @@
 		}
 	}
 
-  // links in fields
-  @include teaser-field-email-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
-
   // headlines
 	h1.headline, h2.headline, p.headline, .h1.headline, .h2.headline, .p.headline {
 		@include pxl-headline-theme($background: $theme-headline-background, $typo: $theme-headline-typo)
   }
-
 
   // form elements
 	@include pxl-form-input-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
@@ -65,14 +61,27 @@
 	@include pxl-form-button-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
   @include pxl-form-range-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
 
-  // components
+  // fields
   @include pxl-all-buttons-theme ($theme-color: $theme-color, $color: $color, $nearcolor: $nearcolor, $middlecolor: $middlecolor, $palecolor: $palecolor, $svgcolor: $theme-svg-color);
-  @include view-pager-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include teaser-field-email-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
   @include field-links-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
-  @include view-tabs-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include odometer-theme ($digit-color: $theme-color, $digit-bg: $color);
   @include stripe-button-fee-percentages-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
-  @include bs-carousel-theme($color: $nearcolor, $background-color: $theme-color, $border-color: $color);
+  @include fieldset-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
+  // components
   @include pxl-datepicker-theme($color: $nearcolor, $background-color: $theme-color, $border-color: $nearcolor);
+  @include block-follow-links-theme($color: $nearcolor, $hover-color: $pxl-color-main);
+  @include block-a2a-social-buttons-theme($color: $pxl-color-main);
+  @include block-locale-language-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor, $color-disabled: $palecolor);
+  // structured components
+  @include main-menues-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
+  @include view-tabs-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include view-pager-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include pe-grid-item-theme($color: $nearcolor);
+
+  // structures
+  @include bs-carousel-theme($color: $nearcolor, $background-color: $theme-color, $border-color: $color);
+  @include bs-accordion-theme($color: $nearcolor, $background: transparent);
 
 }
 

@@ -1,0 +1,68 @@
+/*
+ *  Fieldset component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+@mixin fieldset() {
+  fieldset {
+    @include pxl-spacey(mb, s1);
+    padding: 0;
+    border: none;
+    background: none;
+
+    legend {
+      span.fieldset-legend {
+        a {
+          @include pxl-font-plain-style(text);
+          font-weight: bold;
+          @include pxl-link-underline-off;
+
+          span.fieldset-legend-prefix {}
+        }
+      }
+    }
+
+    .fieldset-wrapper, .panel-body {
+      padding: 0 $grid-gutter-width/2 $grid-gutter-width/2;
+      background: none;
+
+      // form element container
+      .form-wrapper {
+        @include pxl-spacey(mb, s1);
+
+        .form-item {
+          label {
+            @include pxl-font-plain-style(form);
+            span.form-required {}
+          }
+
+          .help-block {
+            @include pxl-font-style(legend);
+          }
+        }
+      }
+    }
+
+    span.summary {}
+  }
+}
+
+@mixin fieldset-theme($color, $color-hover, $line-color) {
+  fieldset {
+    &.collapsed {
+      border: 1px solid $line-color;
+    }
+
+    legend {
+      span.fieldset-legend {
+        a {
+          @include pxl-link-underline-off-theme($color, $color-hover, $line-color);
+        }
+      }
+    }
+  }
+}

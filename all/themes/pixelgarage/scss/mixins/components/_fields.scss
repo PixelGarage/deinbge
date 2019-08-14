@@ -54,6 +54,7 @@
   .field-name-field-links {
     > .field-items {
       display: flex;
+      flex-wrap: wrap;
       justify-content: flex-start;
 
       > .field-item {
@@ -208,10 +209,7 @@
 //
 // social links field
 @mixin field-social-links() {
-  .a2a_kit.addtoany_list {
-    display: block;
-    text-align: center;
-  }
+  @include block-a2a-social-buttons;
 }
 
 //

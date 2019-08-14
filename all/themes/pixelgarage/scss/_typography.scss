@@ -7,9 +7,6 @@
 /* define typography for html elements */
 @include pxl-html-element-typo();
 
-/* define typography for buttons */
-@include pxl-all-buttons;
-
 /* define typography for form elements */
 @include pxl-form-input();
 @include pxl-form-checkbox();

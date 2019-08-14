@@ -25,6 +25,7 @@
   .view-content {
     @include view-tabs();
     @include masonry-three();
+    @include bs-carousel(false, true);
   }
 
   @include view-pager;
@@ -38,7 +39,7 @@ body.page-blog {
   }
 }
 
-.view.view-blog {
+.view-blog {
   .view-content {
     @include masonry-three();
 

@@ -42,9 +42,9 @@ function pxlraffle_module_implements_alter(&$implementations, $hook){
  */
 function pxlraffle_form_user_login_alter(&$form, &$form_state, $form_id) {
   $form['name']['#prefix']  = '<div id="' . $form_id . '_form">';
-  $form['name']['#prefix'] .= '<h1>' . t('Login') . '</h1>';
+  $form['name']['#prefix'] .= '<h2>' . t('Login') . '</h2>';
   $form['pass']['#suffix']  = '<div class="form-actions-wrapper">';
-  $form['pass']['#suffix'] .= l(t('Forgot your password?'), 'user/password', array('attributes' => array('class' => array('login-password'), 'title' => t('Get a new password'))));
+  $form['pass']['#suffix'] .= l(t('Forgot your password?'), 'user/password', array('attributes' => array('class' => array('forgot-password', 'link-underline-on'), 'title' => t('Get a new password'))));
   $form['actions']['#suffix']  = '</div></div>';
 
   // add the registration form on the right side, if applicable
@@ -56,7 +56,7 @@ function pxlraffle_form_user_login_alter(&$form, &$form_state, $form_id) {
     $form['actions']['#suffix'] .= "\n<h2>" . t('I don\'t have an account') . "</h2>";
     $form['actions']['#suffix'] .= "\n<div class='create-account-description'><p>" . $account_descr . "</p>";
     $form['actions']['#suffix'] .= "\n<p>" . t("After successful subscription you will receive a verification email. ") . $registration_descr . "</p></div>";
-    $form['actions']['#suffix'] .= "\n<div class='form-actions-wrapper'>" . l(t('Become a member'), 'user/register', array('attributes' => array('class' => array('login-register'), 'title' => t('Create new account'))));
+    $form['actions']['#suffix'] .= "\n<div class='form-actions-wrapper'>" . l(t('Become a member'), 'user/register', array('attributes' => array('class' => array('button login-register'), 'title' => t('Create new account'))));
     $form['actions']['#suffix'] .= '</div></div>';
   }
 }
@@ -78,7 +78,7 @@ function pxlraffle_form_user_register_form_alter (&$form, &$form_state, $form_id
   // add a checkbox with link to participation conditions
   $form['condition_checkbox'] = array(
     '#type' => 'checkbox',
-    '#title' => t('I confirm that I have read the <a href="/node/126" target="_blank">Participation Conditions</a>'),
+    '#title' => t('I confirm that I have read the <a href="/node/126" class="link-underline-on" target="_blank">Participation Conditions</a>'),
     '#return_value' => 1,
     '#default_value' => 0,
     '#required' => false,
@@ -88,8 +88,8 @@ function pxlraffle_form_user_register_form_alter (&$form, &$form_state, $form_id
   //
   // create surrounding div for registration form and back link
   $form['account']['name']['#prefix'] = '<div id="' . $form_id . '">';
-  $form['account']['name']['#prefix'] .= '<h1>' . t('Register') . '</h1>';
-  $form['actions']['submit']['#suffix'] = '<div class="back-to-login clearfix">' . l(t('Back to login'), 'user/login', array('attributes' => array('class' => array('login-account'), 'title' => t('Sign in')))) . '</div>';
+  $form['account']['name']['#prefix'] .= '<h2>' . t('Register') . '</h2>';
+  $form['actions']['submit']['#suffix'] = '<div class="back-to-login clearfix">' . l(t('Back to login'), 'user/login', array('attributes' => array('class' => array('login-account', 'link-underline-on'), 'title' => t('Sign in')))) . '</div>';
   $form['actions']['submit']['#suffix'] .= '</div>';
 }
 
@@ -103,8 +103,8 @@ function pxlraffle_form_user_pass_alter (&$form, &$form_state, $form_id) {
   //
   // create surrounding div with back link
   $form['name']['#prefix'] = '<div id="' . $form_id . '_form">';
-  $form['name']['#prefix'] .= '<h1>' . t('Request a new password') . '</h1>';
-  $form['actions']['submit']['#suffix'] = '<div class="back-to-login clearfix">' . l(t('Back to login'), 'user/login', array('attributes' => array('class' => array('login-account'), 'title' => t('Sign in')))) . '</div>';
+  $form['name']['#prefix'] .= '<h2>' . t('Request a new password') . '</h2>';
+  $form['actions']['submit']['#suffix'] = '<div class="back-to-login clearfix">' . l(t('Back to login'), 'user/login', array('attributes' => array('class' => array('login-account', 'link-underline-on'), 'title' => t('Sign in')))) . '</div>';
   $form['actions']['submit']['#suffix'] .= '</div>';
 }
 

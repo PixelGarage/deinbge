@@ -1,0 +1,59 @@
+/*
+ *  User profile page component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+// Mixins
+// -------------------------
+
+
+// General settings
+// -------------------------
+body.page-user {
+  .main-container {
+    .container {
+      .row {
+        .col-sm-12 {
+          ul.tabs--primary {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+form#user-profile-form {
+  @include pxl-spacey(py, s1, section);
+
+  .ds-form {
+    .row {
+      .col-sm-12 {
+        // fields
+        @include fieldset();
+
+      }
+    }
+
+  }
+
+  .form-item-condition-checkbox {
+    display: none;
+  }
+
+  .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+
+    .form-submit {
+      .icon {
+        display: none;
+      }
+    }
+
+  }
+}

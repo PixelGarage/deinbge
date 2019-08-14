@@ -1,9 +1,10 @@
 /*
  * Typography mixins
  */
-// Import fixed or responsive font
+// Import fixed or responsive font and headline style
 //@import "text-resp";
 @import "text-fix";
+@import "text-headline";
 
 
 // Variables
@@ -146,21 +147,17 @@ $pxl-color-glow: #40856D;
     font-weight: bold;
   }
 
-  // lead text in paragraphs
-  p.pxl-leadtext {
-    margin-bottom: $line-height;
-    font-weight: 500;
-    font-style: normal;
-  }
-
   //
   // paragraphs, form, blockquote and small text
   p, .pxl-text, .pxl-normal {
     @include pxl-text($teaser);
   }
 
-  form, .form {
-    @include pxl-formtext($teaser);
+  // lead text in paragraphs
+  p.pxl-leadtext {
+    margin-bottom: $line-height;
+    font-weight: 500;
+    font-style: normal;
   }
 
   blockquote, .pxl-quote {
@@ -186,13 +183,13 @@ $pxl-color-glow: #40856D;
     }
   }
   h1.headline, .pxl-title.headline {
-    @include pxl-headline-style(h1);
+    @include pxl-headline-style(h1, $teaser);
   }
   h2.headline, .pxl-subtitle.headline {
-    @include pxl-headline-style(h2);
+    @include pxl-headline-style(h2, $teaser);
   }
   p.headline, .pxl-text.headline, .pxl-normal.headline{
-    @include pxl-headline-style(p);
+    @include pxl-headline-style(p, $teaser);
   }
 
   //
@@ -209,11 +206,23 @@ $pxl-color-glow: #40856D;
     }
   }
 
+  //
+  // buttons
+  // standard button
+  button, .button {
+    @include pxl-button($teaser);
+  }
+
+  // more button
+  .button-more {
+    @include pxl-button-more($teaser);
+  }
+
 
   //
   // links
   a, .link {
-    @include pxl-link();
+    @include pxl-link;
   }
   .link-underline-off {
     @include pxl-link-underline-off;
@@ -342,9 +351,29 @@ $pxl-color-glow: #40856D;
 }
 
 
+//
+// Maximum width of HTML elements
+//
 @mixin pxl-html-element-maxwidth($teaser: false) {
+  //
+  // set all text elements full width per default
+  [class*="col-"] {
+    //
+    // set global max-width for all styled elements
+    h1, .pxl-title,
+    h2, .pxl-subtitle,
+    p, .pxl-text, .pxl-normal, p.pxl-leadtext,
+    p.headline, .pxl-text.headline, .pxl-normal.headline,
+    small, .marginal, .pxl-subtext, .legend,
+    blockquote, .pxl-quote {
+      max-width: 100%;
+    }
+  }
+
   @if ($teaser) {
-    [class*="col-"] {
+    //
+    // set all text elements full width in teaser mode
+    .node.view-mode-full & [class*="col-"] {
       //
       // set global max-width for all styled elements
       h1, .pxl-title,
@@ -359,7 +388,9 @@ $pxl-color-glow: #40856D;
   }
   @else {
     //
-    // set specific element max-width for large column widths (11, 12)
+    // full view mode
+    //
+    // set text element max-width for large column widths (11, 12)
     .col-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xl-11,
     .col-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xl-12
     {

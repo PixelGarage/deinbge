@@ -218,14 +218,13 @@ $typo-styles: (
 
 // Variables for font mixin
 // -------------------------
-$teaser-factor: 0.6;
-$weight:				normal;
-$style:         normal;
-$weight-bold:		bold;
 $fontsize:			map-get(map-get(map-get($typo-styles, text), md), size);
 $line-height:		map-get(map-get(map-get($typo-styles, text), md), lh);
 $letter-space:	map-get(map-get(map-get($typo-styles, text), md), ls);
 $align:         map-get(map-get(map-get($typo-styles, text), md), align);
+$style:         normal;
+$weight:				normal;
+$weight-bold:		bold;
 
 
 

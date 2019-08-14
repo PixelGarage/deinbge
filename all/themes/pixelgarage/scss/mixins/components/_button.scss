@@ -24,16 +24,22 @@ $svg-more-arrow-3-hover:	';stroke-miterlimit:10;stroke-width:2px"/></svg>';
 // -------------------------
 //
 // Button
-@mixin pxl-button {
+@mixin pxl-button($teaser: false) {
+  // teaser shrink factor
+  $factor: if($teaser, $teaser-factor, 1);
+  $py: $factor * 5px;
+  $px: $factor * 15px;
+  $mr: $factor * 10px;
+
   -webkit-appearance: none;
   display: inline-block;
-  @include pxl-formtext();
-  margin-right: 10px !important;
-  padding: 5px 15px;
+  @include pxl-formtext($teaser);
+  margin-right: $mr !important;
+  padding: $py $px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border: $button-line solid;
+  //border: $button-line solid;
   -webkit-border-radius: 0;
   border-radius: 0;
   cursor: pointer;
@@ -47,11 +53,11 @@ $svg-more-arrow-3-hover:	';stroke-miterlimit:10;stroke-width:2px"/></svg>';
 }
 
 @mixin pxl-button-theme($color, $background-color, $hover-color, $border-color) {
-  border-color: $border-color;
+  border: $button-line solid $border-color;
   color: $color;
   background-color: transparent;
 
-  &:hover {
+  &:focus, &:hover {
     color: $background-color;
     background-color: $hover-color;
   }
@@ -60,10 +66,13 @@ $svg-more-arrow-3-hover:	';stroke-miterlimit:10;stroke-width:2px"/></svg>';
 
 //
 // more button
-@mixin pxl-button-more {
+@mixin pxl-button-more($teaser: false) {
+  // teaser shrink factor
+  $factor: if($teaser, $teaser-factor, 1);
+
   -webkit-appearance: none;
   display: inline-block;
-  @include pxl-formtext();
+  @include pxl-formtext($teaser);
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
@@ -73,24 +82,24 @@ $svg-more-arrow-3-hover:	';stroke-miterlimit:10;stroke-width:2px"/></svg>';
     position: relative;
     vertical-align: middle;
     margin-left: 15px;
-    width: 30px;
-    height: 15px;
+    width: 30px * $factor;
+    height: 15px * $factor;
 
     @include media-breakpoint-up(sm) {
-      width: 34px;
-      height: 17px;
+      width: 34px * $factor;
+      height: 17px * $factor;
     }
     @include media-breakpoint-up(md) {
-      width: 40px;
-      height: 20px;
+      width: 40px * $factor;
+      height: 20px * $factor;
     }
     @include media-breakpoint-up(lg) {
-      width: 44px;
-      height: 22px;
+      width: 44px * $factor;
+      height: 22px * $factor;
     }
     @include media-breakpoint-up(xl) {
-      width: 50px;
-      height: 25px;
+      width: 50px * $factor;
+      height: 25px * $factor;
     }
   }
 }
@@ -107,20 +116,8 @@ $svg-more-arrow-3-hover:	';stroke-miterlimit:10;stroke-width:2px"/></svg>';
 }
 
 //
-// All defined buttons
+// buttons theming
 //
-@mixin pxl-all-buttons {
-  // standard button
-  button, .button {
-    @include pxl-button;
-  }
-
-  // more button
-  .button-more {
-    @include pxl-button-more;
-  }
-}
-
 @mixin pxl-all-buttons-theme ($theme-color, $color, $nearcolor, $middlecolor, $palecolor, $svgcolor) {
   // standard button
   button, .button {

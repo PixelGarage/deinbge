@@ -1787,6 +1787,9 @@
  * Typography mixins
  */
 /* Fixed text mixins */
+/*
+ * Special typography: Text headline
+ */
 .pxl-title {
   margin: 20px auto;
   font-family: "PxlFont", "Verdana", sans-serif;

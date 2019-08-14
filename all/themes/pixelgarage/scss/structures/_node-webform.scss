@@ -1,5 +1,5 @@
 /*
- *  Node donation component
+ *  Node webform component
  * --------------------------------------------------*/
 
 // Variables
@@ -9,18 +9,15 @@
 // -------------------------
 
 
-
 // General settings
 // -------------------------
-.node.node-spenden {
+.node-webform {
   > .row {
     > [class*="col-"] {
+      position: relative;
+
       //
       // fields
-      @include field-images(true);
-      @include field-donation-button-fixed;
-      @include field-donation-button-custom;
-      @include field-donation-button-fee;
     }
   }
 }
