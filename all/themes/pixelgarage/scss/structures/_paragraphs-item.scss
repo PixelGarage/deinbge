@@ -15,8 +15,17 @@
 .entity-paragraphs-item {
   @include pxl-spacey(py, s1, section);
 
+  // full width mode
   &.full-width {
     @include theme-lightgray-black;
+  }
+
+  // paragraph structure
+  &.paragraphs-item-text-image {
+    @include paragraph-50-50;
+  }
+  &.paragraphs-item-image33-text66 {
+    @include paragraph-33-66;
   }
 
   // paragraph columns
@@ -41,6 +50,7 @@
       @include field-title;
       @include field-video;
       @include field-file;
+      @include field-triple-image;
       @include field-image;
       @include field-links;
       @include field-social-links;

@@ -11,40 +11,30 @@
   fieldset {
     @include pxl-spacey(mb, s1);
     padding: 0;
-    border: none;
+    //border: none;
     background: none;
 
     legend {
-      span.fieldset-legend {
-        a {
-          @include pxl-font-plain-style(text);
-          font-weight: bold;
-          @include pxl-link-underline-off;
+      display: inline-block;
+      width: auto;
+      padding: 0 0 0 $grid-gutter-width/2;
+      @include pxl-font-plain-style(form);
+      font-weight: normal;
 
-          span.fieldset-legend-prefix {}
-        }
+      a {
+        @include pxl-link-underline-off;
+
+        span.fieldset-legend-prefix {}
       }
+
+      span.fieldset-legend {}
     }
 
     .fieldset-wrapper, .panel-body {
-      padding: 0 $grid-gutter-width/2 $grid-gutter-width/2;
+      padding: $grid-gutter-width/2;
       background: none;
 
-      // form element container
-      .form-wrapper {
-        @include pxl-spacey(mb, s1);
-
-        .form-item {
-          label {
-            @include pxl-font-plain-style(form);
-            span.form-required {}
-          }
-
-          .help-block {
-            @include pxl-font-style(legend);
-          }
-        }
-      }
+      // see form element wrapper
     }
 
     span.summary {}
@@ -54,14 +44,16 @@
 @mixin fieldset-theme($color, $color-hover, $line-color) {
   fieldset {
     &.collapsed {
-      border: 1px solid $line-color;
+      border: none;
     }
+    border-left: 1px solid $line-color;
 
     legend {
+      a {
+        @include pxl-link-underline-off-theme($color, $color-hover, $line-color);
+      }
       span.fieldset-legend {
-        a {
-          @include pxl-link-underline-off-theme($color, $color-hover, $line-color);
-        }
+        color: $color;
       }
     }
   }

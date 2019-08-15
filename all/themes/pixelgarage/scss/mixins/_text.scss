@@ -168,7 +168,7 @@ $pxl-color-glow: #40856D;
     @include pxl-subtext($teaser);
   }
 
-  .legend {
+  .legend, .pxl-legend {
     @include pxl-legend($teaser);
   }
 
@@ -365,7 +365,8 @@ $pxl-color-glow: #40856D;
     p, .pxl-text, .pxl-normal, p.pxl-leadtext,
     p.headline, .pxl-text.headline, .pxl-normal.headline,
     small, .marginal, .pxl-subtext, .legend,
-    blockquote, .pxl-quote {
+    blockquote, .pxl-quote,
+    .form-item {
       max-width: 100%;
     }
   }
@@ -381,7 +382,8 @@ $pxl-color-glow: #40856D;
       p, .pxl-text, .pxl-normal, p.pxl-leadtext,
       p.headline, .pxl-text.headline, .pxl-normal.headline,
       small, .marginal, .pxl-subtext, .legend,
-      blockquote, .pxl-quote {
+      blockquote, .pxl-quote,
+      .form-item {
         max-width: 100%;
       }
     }
@@ -430,6 +432,17 @@ $pxl-color-glow: #40856D;
           max-width: 70%;
         }
       }
+      .form-item {
+        @include media-breakpoint-up(md) {
+          max-width: 80%;
+        }
+        @include media-breakpoint-up(lg) {
+          max-width: 70%;
+        }
+        @include media-breakpoint-up(xl) {
+          max-width: 60%;
+        }
+      }
     }
 
     //
@@ -452,7 +465,8 @@ $pxl-color-glow: #40856D;
       p, .pxl-text, .pxl-normal, p.pxl-leadtext,
       p.headline, .pxl-text.headline, .pxl-normal.headline,
       small, .marginal, .pxl-subtext, .legend,
-      blockquote, .pxl-quote {
+      blockquote, .pxl-quote,
+      .form-item {
         max-width: 100%;
       }
     }

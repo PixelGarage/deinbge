@@ -67,7 +67,9 @@
   @include field-links-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
   @include odometer-theme ($digit-color: $theme-color, $digit-bg: $color);
   @include stripe-button-fee-percentages-theme($color: $nearcolor, $background-color: $theme-color, $hover-color: $color, $border-color: $color);
+  @include field-footer-menu-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
   @include fieldset-theme($color: $nearcolor, $color-hover: $nearcolor, $line-color: $middlecolor);
+  @include form-field-wrapper-theme($form-theme-color: $theme-color, $form-color: $color, $form-nearcolor: $nearcolor, $form-middlecolor: $middlecolor, $form-palecolor: $palecolor, $form-svgcolor: $theme-svg-color);
   // components
   @include pxl-datepicker-theme($color: $nearcolor, $background-color: $theme-color, $border-color: $nearcolor);
   @include block-follow-links-theme($color: $nearcolor, $hover-color: $pxl-color-main);

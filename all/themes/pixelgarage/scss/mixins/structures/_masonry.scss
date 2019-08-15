@@ -78,7 +78,7 @@ $horiz-grid-row-height: 240px;
       width: 0;
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       .grid-sizer, .pe-item {
         width: (50% - $masonry-gutter-dist/2);
       }
@@ -117,7 +117,7 @@ $horiz-grid-row-height: 240px;
       width: 0;
     }
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       .grid-sizer, .pe-item {
         width: (50% - $masonry-gutter-dist/2);
       }
@@ -127,7 +127,7 @@ $horiz-grid-row-height: 240px;
       }
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       .grid-sizer, .pe-item {
         width: (33.333333% - $masonry-gutter-dist*2/3);
       }
@@ -160,7 +160,7 @@ $horiz-grid-row-height: 240px;
       width: 0;
     }
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       // 2 columns
       .grid-sizer, .pe-item {
         width: (50% - $masonry-gutter-dist/2);
@@ -171,7 +171,7 @@ $horiz-grid-row-height: 240px;
       }
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       // 3 columns
       .grid-sizer, .pe-item {
         width: (33.333333% - $masonry-gutter-dist*2/3);

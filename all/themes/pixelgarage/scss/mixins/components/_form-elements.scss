@@ -95,6 +95,31 @@ $svg-select-arrow-2:		';stroke-miterlimit:10;stroke-width:1px"/></svg>';
 
 
 //
+// Buttons
+@mixin pxl-form-button () {
+  //
+  // submit button
+  input[type='button'],
+  input[type='submit'],
+  input[type='reset'] {
+    @include pxl-button;
+  }
+}
+
+//
+// Theme buttons
+@mixin pxl-form-button-theme ($form-theme-color, $form-color, $form-nearcolor, $form-middlecolor, $form-palecolor, $form-svgcolor) {
+  //
+  // submit button
+  input[type='button'],
+  input[type='submit'],
+  input[type='reset'] {
+    @include pxl-button-theme($color: $form-nearcolor, $background-color: $form-theme-color, $border-color: $form-color, $hover-color: $form-color);
+  }
+
+}
+
+//
 // Form input fields
 @mixin pxl-form-input () {
 	input[type='date'],
@@ -110,6 +135,7 @@ $svg-select-arrow-2:		';stroke-miterlimit:10;stroke-width:1px"/></svg>';
 	input[type='time'],
 	input[type='url'],
 	input[type='week'],
+  input[type='file'],
 	input:not([type]),
 	textarea {
     @include pxl-formtext();
@@ -162,6 +188,7 @@ $svg-select-arrow-2:		';stroke-miterlimit:10;stroke-width:1px"/></svg>';
   input[type='time'],
   input[type='url'],
   input[type='week'],
+  input[type='file'],
   input:not([type]),
   textarea {
     color: $form-nearcolor;
@@ -527,31 +554,6 @@ $svg-select-arrow-2:		';stroke-miterlimit:10;stroke-width:1px"/></svg>';
   // define select arrow
   .select-container::before {
     content: unquote($svg-url-start) + unquote($svg-select-arrow-1) + $form-svgcolor + unquote($svg-select-arrow-2) + unquote($svg-url-end);
-  }
-
-}
-
-//
-// Buttons
-@mixin pxl-form-button () {
-  //
-  // submit button
-	input[type='button'],
-	input[type='submit'],
-	input[type='reset'] {
-    @include pxl-button;
-	}
-}
-
-//
-// Theme buttons
-@mixin pxl-form-button-theme ($form-theme-color, $form-color, $form-nearcolor, $form-middlecolor, $form-palecolor, $form-svgcolor) {
-  //
-  // submit button
-  input[type='button'],
-  input[type='submit'],
-  input[type='reset'] {
-    @include pxl-button-theme($color: $form-nearcolor, $background-color: $form-theme-color, $border-color: $form-color, $hover-color: $form-color);
   }
 
 }

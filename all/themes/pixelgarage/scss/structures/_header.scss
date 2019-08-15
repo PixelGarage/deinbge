@@ -15,6 +15,7 @@ $expand-breakpoint: xl;
 // Main settings
 // -------------------------
 header {
+  @include pxl-spacey(pt, s1, default);
   border-bottom: none;
 
   .container, .container-fluid {

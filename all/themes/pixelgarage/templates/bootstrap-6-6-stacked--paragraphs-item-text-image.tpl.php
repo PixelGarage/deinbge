@@ -24,11 +24,11 @@ if (isset($field_anchor[0]['value'])) {
   <?php endif; ?>
   <?php if ($left || $right): ?>
     <div class="row">
-      <<?php print $left_wrapper; ?> class="col-sm-6 left <?php print $switch; print $left_classes; ?>">
+      <<?php print $left_wrapper; ?> class="col-lg-6 left <?php print $switch; print $left_classes; ?>">
         <?php print $left; ?>
         <div class="field-text-extra left"><?php print $bottom; ?></div>
       </<?php print $left_wrapper; ?>>
-      <<?php print $right_wrapper; ?> class="col-sm-6 right <?php print $switch; print $right_classes; ?>">
+      <<?php print $right_wrapper; ?> class="col-lg-6 right <?php print $switch; print $right_classes; ?>">
         <?php print $right; ?>
         <div class="field-text-extra right"><?php print $bottom; ?></div>
       </<?php print $right_wrapper; ?>>

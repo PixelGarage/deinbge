@@ -135,9 +135,7 @@ body {
   //
   // Footer at bottom
   footer {
-    display: flex;
     position: relative;
-    align-items: center;
     min-height: $pxl-footer-min-height;
     margin-top: (-1 * $pxl-footer-min-height);
 

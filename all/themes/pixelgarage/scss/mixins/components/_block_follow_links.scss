@@ -12,12 +12,17 @@ $pxl-follow-icon-size: 35px;
 @mixin block-follow-links() {
   .follow-links {
     position: relative;
-    left: -10px;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     .follow-link-wrapper {
-      display: inline-block;
-      margin: 0 20px 0 0;
+      margin-right: $pxl-follow-icon-size;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       a.follow-link {
         display: inline-block;
@@ -26,7 +31,7 @@ $pxl-follow-icon-size: 35px;
         width: $pxl-follow-icon-size;
         line-height: $pxl-follow-icon-size;
         font-family: $pxl-icon-font;
-        font-size: 1.5rem;
+        font-size: 3rem;
         text-decoration: none;
         text-align: center;
         opacity: 1.0;

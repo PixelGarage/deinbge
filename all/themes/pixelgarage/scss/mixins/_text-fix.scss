@@ -234,7 +234,7 @@ $weight-bold:		bold;
 //
 // font definition
 @mixin font-def($size: $fontsize, $lh: $line-height, $ls: $letter-space, $al: $align, $mt: $lh, $mb: $lh) {
-  font-size: $size;
+  font-size: max($size, $min-font-size);
   line-height: $lh;
   letter-spacing: $ls;
   text-align: $al;

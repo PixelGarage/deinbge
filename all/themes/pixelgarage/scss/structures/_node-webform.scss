@@ -18,6 +18,9 @@
 
       //
       // fields
+      @include fieldset();
+      @include form-field-wrapper;
+
     }
   }
 }

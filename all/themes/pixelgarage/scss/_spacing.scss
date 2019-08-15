@@ -12,18 +12,6 @@
 }
 
 //
-// Header, Footer
-//
-header {
-  @include pxl-spacey(pt, s1, default);
-}
-
-footer {
-  @include pxl-spacey(pt, s1, default);
-}
-
-
-//
 // Top-level blocks: Main, Article, ASide, Section
 //
 main, article, section, aside {

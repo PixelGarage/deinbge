@@ -8,9 +8,9 @@
 @include pxl-html-element-typo();
 
 /* define typography for form elements */
+@include pxl-form-button();
 @include pxl-form-input();
 @include pxl-form-checkbox();
 @include pxl-form-radio();
 @include pxl-form-select();
-@include pxl-form-button();
 @include pxl-form-range();
