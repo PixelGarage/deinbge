@@ -34302,7 +34302,38 @@ body .node.view-mode-teaser > .row [class*=col-] .form-item {
   }
 }
 .view .view-filters {
-  padding: 0 0 30px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+@media (min-width: 36em) {
+  .view .view-filters {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 48em) {
+  .view .view-filters {
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+  }
+}
+@media (min-width: 62em) {
+  .view .view-filters {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .view .view-filters {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 105em) {
+  .view .view-filters {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
 }
 .view .view-filters form {
   margin: 0;
@@ -34324,6 +34355,9 @@ body .node.view-mode-teaser > .row [class*=col-] .form-item {
 .view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget {
   position: relative;
 }
+.view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item {
+  max-width: 100%;
+}
 .view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios {
   display: flex;
   flex-wrap: wrap;
@@ -34332,8 +34366,8 @@ body .node.view-mode-teaser > .row [class*=col-] .form-item {
 .view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-radios .radio {
   margin: 0 15px;
 }
-.view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-control, .view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-submit {
-  margin: 0;
+.view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-control, .view .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .form-submit {
+  margin: 0 !important;
 }
 .view .view-content .views-bootstrap-tab-plugin-style {
   margin-top: 4.5rem;

@@ -10,7 +10,7 @@
 // -------------------------
 //
 @mixin view-filter-definition {
-  padding: 0 0 30px;
+  @include pxl-spacey(py, s1, column);
 
   form {
     margin: 0;
@@ -35,6 +35,10 @@
         .views-widget {
           position: relative;
 
+          .form-item {
+            max-width: 100%;
+          }
+
           .form-radios {
             display: flex;
             flex-wrap: wrap;
@@ -44,12 +48,11 @@
               margin: 0 $grid-gutter-width/2;
             }
           }
-
-          .form-control, .form-submit {
-            margin: 0;
-          }
         }
 
+        .form-control, .form-submit {
+          margin: 0 !important;
+        }
       }
     }
   }
