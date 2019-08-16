@@ -20,8 +20,6 @@
   @include pxl-spacey(py, s1, section);
 
   > .row {
-    @include pxl-html-element-maxwidth;
-
     > [class*="col-"] {
       position: relative;
       @include pxl-spacey(py, s1, column);
@@ -59,8 +57,6 @@
 .node-page.view-mode-full,
 .node-page.view-mode-default {
   > .row {
-    @include pxl-html-element-maxwidth;
-
     > [class*="col-"] {
       position: relative;
     }

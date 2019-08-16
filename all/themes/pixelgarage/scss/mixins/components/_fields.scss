@@ -383,23 +383,27 @@
 
 @mixin field-footer-menu() {
   .field-name-body {
-    display: flex;
-    flex-wrap: wrap;
+    .field-item {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
 
-    p {
-      margin: 0 !important;
-      flex-basis: 100%;
-
-      @include media-breakpoint-up(sm) {
-        flex-basis: 50%;
-      }
-      @include media-breakpoint-up(lg) {
+      p {
+        display: inline-block;
+        margin: 0 !important;
         flex-basis: 100%;
-      }
 
-      a {
-        @include pxl-font-plain-style(subtext);
-        @include pxl-link-underline-off();
+        @include media-breakpoint-up(sm) {
+          flex-basis: 50%;
+        }
+        @include media-breakpoint-up(lg) {
+          flex-basis: 100%;
+        }
+
+        a {
+          @include pxl-font-plain-style(subtext);
+          @include pxl-link-underline-off();
+        }
       }
     }
   }

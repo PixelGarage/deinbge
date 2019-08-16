@@ -30,8 +30,6 @@ body.page-user {
 form#user-profile-form {
   .ds-form {
     .row {
-      @include pxl-html-element-maxwidth;
-
       .col-sm-12 {
         //
         // fields

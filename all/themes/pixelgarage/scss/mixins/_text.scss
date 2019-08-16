@@ -374,7 +374,7 @@ $pxl-color-glow: #40856D;
   @if ($teaser) {
     //
     // set all text elements full width in teaser mode
-    .node.view-mode-full & [class*="col-"] {
+    body & [class*="col-"] {
       //
       // set global max-width for all styled elements
       h1, .pxl-title,

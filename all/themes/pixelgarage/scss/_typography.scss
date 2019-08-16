@@ -6,6 +6,7 @@
 //
 /* define typography for html elements */
 @include pxl-html-element-typo();
+@include pxl-html-element-maxwidth;
 
 /* define typography for form elements */
 @include pxl-form-button();

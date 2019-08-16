@@ -20,6 +20,12 @@
       justify-content: center;
 
       li {
+        margin-right: $grid-gutter-width/2;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
         a {
           @include pxl-button;
         }
