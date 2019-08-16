@@ -23,13 +23,13 @@ if (isset($field_anchor[0]['value'])) {
   <?php endif; ?>
   <?php if ($left || $central || $right): ?>
     <div class="row">
-      <<?php print $left_wrapper; ?> class="col col-md-12 col-lg-4 <?php print $left_classes; ?>">
+      <<?php print $left_wrapper; ?> class="col-12 col-md-12 col-lg-4 <?php print $left_classes; ?>">
         <?php print $left; ?>
       </<?php print $left_wrapper; ?>>
-      <<?php print $central_wrapper; ?> class="col col-md-6 col-lg-4 <?php print $central_classes; ?>">
+      <<?php print $central_wrapper; ?> class="col-12 col-md-6 col-lg-4 <?php print $central_classes; ?>">
         <?php print $central; ?>
       </<?php print $central_wrapper; ?>>
-      <<?php print $right_wrapper; ?> class="col col-md-6 col-lg-4 <?php print $right_classes; ?>">
+      <<?php print $right_wrapper; ?> class="col-12 col-md-6 col-lg-4 <?php print $right_classes; ?>">
         <?php print $right; ?>
       </<?php print $right_wrapper; ?>>
     </div>
