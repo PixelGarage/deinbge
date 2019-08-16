@@ -28505,12 +28505,10 @@ header .container .navbar .navbar-toggler, header .container-fluid .navbar .navb
 }
 header .container .navbar .navbar-toggler .navbar-toggler-icon, header .container-fluid .navbar .navbar-toggler .navbar-toggler-icon {
   display: inline-block;
-  width: 35px;
-  border-radius: 0;
-}
-header .container .navbar .navbar-toggler .navbar-toggler-icon, header .container-fluid .navbar .navbar-toggler .navbar-toggler-icon {
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background: transparent url("../images/icon_close_dark.svg") no-repeat left top/contain;
+  border-radius: 0;
 }
 header .container .navbar .navbar-toggler.collapsed .navbar-toggler-icon, header .container-fluid .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
   height: 23px;
@@ -30843,6 +30841,46 @@ form#user-profile-form .form-actions .form-submit .icon {
 .node-page.view-mode-default > .row > [class*=col-] {
   position: relative;
 }
+.node-page.view-mode-full > .row > [class*=col-] > .field-name-body,
+.node-page.view-mode-default > .row > [class*=col-] > .field-name-body {
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
+}
+@media (min-width: 36em) {
+  .node-page.view-mode-full > .row > [class*=col-] > .field-name-body,
+.node-page.view-mode-default > .row > [class*=col-] > .field-name-body {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+}
+@media (min-width: 48em) {
+  .node-page.view-mode-full > .row > [class*=col-] > .field-name-body,
+.node-page.view-mode-default > .row > [class*=col-] > .field-name-body {
+    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+  }
+}
+@media (min-width: 62em) {
+  .node-page.view-mode-full > .row > [class*=col-] > .field-name-body,
+.node-page.view-mode-default > .row > [class*=col-] > .field-name-body {
+    padding-bottom: 7.5rem;
+    padding-top: 7.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .node-page.view-mode-full > .row > [class*=col-] > .field-name-body,
+.node-page.view-mode-default > .row > [class*=col-] > .field-name-body {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+}
+@media (min-width: 105em) {
+  .node-page.view-mode-full > .row > [class*=col-] > .field-name-body,
+.node-page.view-mode-default > .row > [class*=col-] > .field-name-body {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+}
 
 .node-article.view-mode-full > .row > [class*=col-] .field-name-field-created-time .field-item:after,
 .node-article.view-mode-default > .row > [class*=col-] .field-name-field-created-time .field-item:after {
@@ -33092,7 +33130,7 @@ body .node.view-mode-teaser > .row [class*=col-] .form-item {
 .node-spenden > .row > [class*=col-] .field-name-field-recurr-spenden-fee-percent .field-items .field-item .stripe-button-fee-percentages .fee-radios-wrapper {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: flex-end;
   margin-bottom: 20px;
 }
 .node-spenden > .row > [class*=col-] .field-name-field-spenden-fee-percentage .field-items .field-item .stripe-button-fee-percentages .fee-radios-wrapper .fee-radio,

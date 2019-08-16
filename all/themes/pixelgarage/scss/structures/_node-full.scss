@@ -59,6 +59,12 @@
   > .row {
     > [class*="col-"] {
       position: relative;
+
+      //
+      // top body field, if any
+      > .field-name-body {
+        @include pxl-spacey(py, s1, section);
+      }
     }
   }
 }

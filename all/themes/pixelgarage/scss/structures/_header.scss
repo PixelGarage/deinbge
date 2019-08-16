@@ -64,12 +64,10 @@ header {
 
         .navbar-toggler-icon {
           display: inline-block;
-          width: 35px;
-          @include border-radius(0);
-        }
-        & .navbar-toggler-icon {
-          height: 35px;
+          width: 30px;
+          height: 30px;
           background: transparent url("../images/icon_close_dark.svg") no-repeat left top/contain;
+          @include border-radius(0);
         }
         &.collapsed .navbar-toggler-icon {
           height: 23px;
