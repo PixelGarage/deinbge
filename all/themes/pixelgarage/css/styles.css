@@ -29412,7 +29412,7 @@ footer .panel-collapse {
 }
 @media (min-width: 62em) {
   footer .container .node-footer .row > [class*=col-].col-menu, footer .container .node-footer .row > [class*=col-].col-lang, footer .container-fluid .node-footer .row > [class*=col-].col-menu, footer .container-fluid .node-footer .row > [class*=col-].col-lang {
-    margin-top: 41px;
+    margin-top: 36px;
   }
 }
 footer .container .node-footer .row > [class*=col-] .footer-logo, footer .container-fluid .node-footer .row > [class*=col-] .footer-logo {
