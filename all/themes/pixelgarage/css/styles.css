@@ -28496,9 +28496,11 @@ header .container .navbar a.navbar-brand, header .container-fluid .navbar a.navb
   display: none;
 }
 header .container .navbar .navbar-toggler, header .container-fluid .navbar .navbar-toggler {
+  position: relative;
+  vertical-align: middle;
   padding: 0;
   margin: 0;
-  height: 23px;
+  height: 30px;
   border: none;
   border-radius: 0;
   background: none;
@@ -28510,8 +28512,10 @@ header .container .navbar .navbar-toggler .navbar-toggler-icon, header .containe
   background: transparent url("../images/icon_close_dark.svg") no-repeat left top/contain;
   border-radius: 0;
 }
-header .container .navbar .navbar-toggler.collapsed .navbar-toggler-icon, header .container-fluid .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+header .container .navbar .navbar-toggler.collapsed, header .container-fluid .navbar .navbar-toggler.collapsed {
   height: 23px;
+}
+header .container .navbar .navbar-toggler.collapsed .navbar-toggler-icon, header .container-fluid .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
   background: transparent url("../images/navi_burger.svg") no-repeat left top/contain;
 }
 header .container .navbar-collapse, header .container-fluid .navbar-collapse {
@@ -33130,6 +33134,7 @@ body .node.view-mode-teaser > .row [class*=col-] .form-item {
 .node-spenden > .row > [class*=col-] .field-name-field-recurr-spenden-fee-percent .field-items .field-item .stripe-button-fee-percentages .fee-radios-wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: flex-end;
   margin-bottom: 20px;
 }
