@@ -21,6 +21,15 @@
   }
 }
 
+@mixin block-title() {
+  .field-name-field-block {
+    .block-title {
+      @include pxl-subtitle();
+      font-weight: bold;
+    }
+  }
+}
+
 //
 // image fields
 @mixin field-image(){

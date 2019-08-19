@@ -48,6 +48,7 @@
       //
       // fields
       @include field-title;
+      @include block-title;
       @include field-video;
       @include field-file;
       @include field-triple-image;

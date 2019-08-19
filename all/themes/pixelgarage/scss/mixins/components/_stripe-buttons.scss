@@ -86,7 +86,7 @@ $form-control-height: 38px;
     padding: 20px;
     text-align: center;
     @include border-radius(0);
-    background-color: transparent;
+    background-color: white;
     @include box-shadow($pxl-box-shadow);
 
     .stripe-button-title {
