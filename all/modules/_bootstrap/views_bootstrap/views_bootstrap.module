@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Bootstrap integration.
@@ -14,18 +15,21 @@ function views_bootstrap_views_api() {
 /**
  * Distribute items in rows/columns as required for horizontal alignment.
  *
- * @param array $rows The rendered views result rows.
- * @param int $nb_columns The desired number of columns per row.
+ * @param array $rows
+ *   The rendered views result rows.
+ * @param int $nb_columns
+ *   The desired number of columns per row.
  *
- * @return array A multi-dimensional array with the calculated rows and columns.
+ * @return array
+ *   A multi-dimensional array with the calculated rows and columns.
  */
-function _views_bootstrap_split_rows_horizontal($results, $nb_columns) {
+function _views_bootstrap_split_rows_horizontal(array $rows, $nb_columns) {
   $col = 0;
   $row = 0;
   $items = array();
 
   // Iterate over each rendered views result row.
-  foreach ($results as $item) {
+  foreach ($rows as $item) {
     // Add the item.
     $items[$row]['content'][$col]['content'] = $item;
 
@@ -47,12 +51,15 @@ function _views_bootstrap_split_rows_horizontal($results, $nb_columns) {
 /**
  * Distribute items in columns as required for vertical alignment.
  *
- * @param array $rows The rendered views result rows.
- * @param int $nb_columns The desired number of columns per row.
+ * @param array $rows
+ *   The rendered views result rows.
+ * @param int $nb_columns
+ *   The desired number of columns per row.
  *
- * @return array A multi-dimensional array with the calculated columns.
+ * @return array
+ *   A multi-dimensional array with the calculated columns.
  */
-function _views_bootstrap_split_rows_vertical($rows, $nb_columns) {
+function _views_bootstrap_split_rows_vertical(array $rows, $nb_columns) {
   $col = 0;
   $row = 0;
   $items = array();
@@ -90,8 +97,8 @@ function _views_bootstrap_split_rows_vertical($rows, $nb_columns) {
  *
  * Used by the Bootstrap Grid and Bootstrap Thumbnail plugins.
  *
- * @see template_preprocess_views_bootstrap_grid_plugin_style().
- * @see template_preprocess_views_bootstrap_thumbnail_plugin_style().
+ * @see template_preprocess_views_bootstrap_grid_plugin_style()
+ * @see template_preprocess_views_bootstrap_thumbnail_plugin_style()
  */
 function _views_bootstrap_preprocess_views_style_plugin_prepare_grid(&$vars) {
   $options = $vars['view']->style_plugin->options;
@@ -104,7 +111,7 @@ function _views_bootstrap_preprocess_views_style_plugin_prepare_grid(&$vars) {
       $col_classes[] = 'col-' . $size . '-' . $options["columns_$size"];
     }
   }
-  $vars['col_classes'] = join(' ', $col_classes);
+  $vars['col_classes'] = implode(' ', $col_classes);
 
   if ($options['alignment'] === 'horizontal') {
     _views_bootstrap_preprocess_views_style_plugin_prepare_grid_horizontal($vars);
@@ -116,7 +123,8 @@ function _views_bootstrap_preprocess_views_style_plugin_prepare_grid(&$vars) {
 
 /**
  * Further preprocessing for horizontal alignment.
- * @see _views_bootstrap_preprocess_views_style_plugin_prepare_grid().
+ *
+ * @see _views_bootstrap_preprocess_views_style_plugin_prepare_grid()
  */
 function _views_bootstrap_preprocess_views_style_plugin_prepare_grid_horizontal(&$vars) {
   $options = $vars['view']->style_plugin->options;
@@ -154,7 +162,8 @@ function _views_bootstrap_preprocess_views_style_plugin_prepare_grid_horizontal(
 
 /**
  * Further preprocessing for vertical alignment.
- * @see _views_bootstrap_preprocess_views_style_plugin_prepare_grid().
+ *
+ * @see _views_bootstrap_preprocess_views_style_plugin_prepare_grid()
  */
 function _views_bootstrap_preprocess_views_style_plugin_prepare_grid_vertical(&$vars) {
   $options = $vars['view']->style_plugin->options;

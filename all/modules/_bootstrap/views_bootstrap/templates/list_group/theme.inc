@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Preprocessors and helper functions for list group theming.
+ */
+
+/**
  * Implementation of template preprocess for the view.
  */
 function template_preprocess_views_bootstrap_list_group_plugin_style(&$vars) {

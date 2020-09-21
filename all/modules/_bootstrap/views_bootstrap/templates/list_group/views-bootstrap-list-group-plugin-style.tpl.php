@@ -1,6 +1,9 @@
 <?php
+
 /**
- * @file views-bootstrap-list-group-plugin-style.tpl.php
+ * @file
+ * views-bootstrap-list-group-plugin-style.tpl.php
+ *
  * Default simple view template to display Bootstrap List Group.
  *
  * @ingroup views_templates
