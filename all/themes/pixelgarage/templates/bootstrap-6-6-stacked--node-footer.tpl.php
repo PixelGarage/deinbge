@@ -6,7 +6,7 @@
 
 global $language;
 $path = drupal_get_path('theme', 'pixelgarage') . '/images/';
-$logo = file_create_url($path . 'deinbge_logo_d.svg');
+$logo = file_create_url($path . 'verein-grundeinkommen_logo_d.svg');
 
 switch ($language->language) {
   case 'en':

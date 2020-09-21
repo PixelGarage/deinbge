@@ -31,7 +31,7 @@ $pxl-follow-icon-size: 35px;
         width: $pxl-follow-icon-size;
         line-height: $pxl-follow-icon-size;
         font-family: $pxl-icon-font;
-        font-size: 3rem;
+        font-size: 0;
         text-decoration: none;
         text-align: center;
         opacity: 1.0;
@@ -39,25 +39,32 @@ $pxl-follow-icon-size: 35px;
 
         &.follow-link-facebook:before {
           content: "\f09a";
+          font-size: 3rem;
         }
         &.follow-link-twitter:before {
           content: "\f099";
+          font-size: 3rem;
         }
-        &.follow-link-googleplus:before {
+        &.follow-link-instagram:before {
           // instagram icon
           content: "\f16d";
+          font-size: 3rem;
         }
         &.follow-link-youtube:before {
           content: "\f167";
+          font-size: 3rem;
         }
         &.follow-link-xing:before {
           content: "\f168";
+          font-size: 3rem;
         }
         &.follow-link-linkedin:before {
           content: "\f0e1";
+          font-size: 3rem;
         }
         &.follow-link-this-site:before {
           content: "\f09e";
+          font-size: 3rem;
         }
 
       }

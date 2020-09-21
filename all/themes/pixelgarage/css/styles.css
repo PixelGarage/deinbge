@@ -30068,7 +30068,7 @@ footer .container .node-footer .row > [class*=col-] .field-name-follow-site .fie
   width: 35px;
   line-height: 35px;
   font-family: "FontAwesome";
-  font-size: 3rem;
+  font-size: 0;
   text-decoration: none;
   text-align: center;
   opacity: 1;
@@ -30076,24 +30076,31 @@ footer .container .node-footer .row > [class*=col-] .field-name-follow-site .fie
 }
 footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-facebook:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-facebook:before {
   content: "";
+  font-size: 3rem;
 }
 footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-twitter:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-twitter:before {
   content: "";
+  font-size: 3rem;
 }
-footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-googleplus:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-googleplus:before {
+footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-instagram:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-instagram:before {
   content: "";
+  font-size: 3rem;
 }
 footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-youtube:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-youtube:before {
   content: "";
+  font-size: 3rem;
 }
 footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-xing:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-xing:before {
   content: "";
+  font-size: 3rem;
 }
 footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-linkedin:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-linkedin:before {
   content: "";
+  font-size: 3rem;
 }
 footer .container .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-this-site:before, footer .container-fluid .node-footer .row > [class*=col-] .field-name-follow-site .field-item .follow-links .follow-link-wrapper a.follow-link.follow-link-this-site:before {
   content: "";
+  font-size: 3rem;
 }
 
 /*

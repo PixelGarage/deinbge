@@ -31,6 +31,9 @@ function pixelgarage_preprocess_page(&$vars) {
 
   // replace logo with .svg and make it language dependant
   global $language;
+  $path = drupal_get_path('theme', 'pixelgarage') . '/images/';
+  $logo = file_create_url($path . 'verein-grundeinkommen_logo_d.svg');
+  $vars['logo'] = $logo;
 
   switch ($language->language) {
     case 'en':
