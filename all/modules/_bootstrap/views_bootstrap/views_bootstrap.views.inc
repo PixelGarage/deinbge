@@ -26,7 +26,6 @@ function views_bootstrap_views_plugins() {
         'uses grouping' => TRUE,
         'uses options' => TRUE,
         'type' => 'normal',
-        // @TODO:  'uses row plugin' => FALSE, 'uses fields' => TRUE,
       ),
       'views_bootstrap_thumbnail_plugin_style' => array(
         'title' => t('Bootstrap Thumbnails'),
@@ -40,6 +39,21 @@ function views_bootstrap_views_plugins() {
         'uses row plugin' => TRUE,
         'uses grouping' => TRUE,
         'uses options' => TRUE,
+        'type' => 'normal',
+      ),
+      'views_bootstrap_dropdown_plugin_style' => array(
+        'title' => t('Bootstrap Dropdown'),
+        'help' => t('Displays rows in a Bootstrap Dropdown'),
+        'path' => $module_path . '/plugins/dropdown',
+        'handler' => 'ViewsBootstrapDropdownPluginStyle',
+        'parent' => 'default',
+        'theme' => 'views_bootstrap_dropdown_plugin_style',
+        'theme path' => $module_path . '/templates/dropdown',
+        'theme file' => 'theme.inc',
+        'uses row plugin' => TRUE,
+        'uses grouping' => FALSE,
+        'uses options' => TRUE,
+        'uses fields' => TRUE,
         'type' => 'normal',
       ),
       'views_bootstrap_grid_plugin_style' => array(
@@ -69,10 +83,9 @@ function views_bootstrap_views_plugins() {
         'uses grouping' => TRUE,
         'uses options' => TRUE,
         'type' => 'normal',
-        // @TODO:  'uses row plugin' => FALSE, 'uses fields' => TRUE,
       ),
       'views_bootstrap_panel_plugin_style' => array(
-        'title' => t('Bootstrap Panel'),
+        'title' => t('Bootstrap Panels'),
         'help' => t('Bootstrap Panel Style'),
         'path' => $module_path . '/plugins/panel',
         'handler' => 'ViewsBootstrapPanelPluginStyle',
@@ -98,7 +111,6 @@ function views_bootstrap_views_plugins() {
         'uses grouping' => TRUE,
         'uses options' => TRUE,
         'type' => 'normal',
-        // @TODO:  'uses row plugin' => FALSE, 'uses fields' => TRUE,
       ),
       'views_bootstrap_media_plugin_style' => array(
         'title' => t('Bootstrap Media Object'),
@@ -142,7 +154,6 @@ function views_bootstrap_views_plugins() {
         'uses grouping' => TRUE,
         'uses options' => TRUE,
         'type' => 'normal',
-        // @TODO:  'uses row plugin' => FALSE, 'uses fields' => TRUE,
       ),
     ),
     'row' => array(

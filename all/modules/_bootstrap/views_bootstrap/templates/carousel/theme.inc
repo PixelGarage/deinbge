@@ -9,23 +9,6 @@
  * Implementation of template preprocess for the view.
  */
 function template_preprocess_views_bootstrap_carousel_plugin_style(&$vars) {
-  drupal_add_js(array(
-    'viewsBootstrap' => array(
-      'carousel' => array(
-        $vars['id'] => array(
-          'id' => $vars['id'],
-          'name' => $vars['view']->name,
-          'attributes' => array(
-            'interval' => $vars['options']['interval'] ? (int) $vars['options']['interval'] : FALSE,
-            'pause' => $vars['options']['pause'] ? 'hover' : FALSE,
-            'wrap' => (bool) $vars['options']['wrap'] ? TRUE : FALSE,
-          ),
-        ),
-      ),
-    ),
-  ), 'setting');
-
-  drupal_add_js(drupal_get_path('module', 'views_bootstrap') . '/js/views-bootstrap-carousel.js');
 
   if ($vars['options']['items_per_slide'] > 1) {
     $rows = array();
@@ -44,13 +27,21 @@ function template_preprocess_views_bootstrap_carousel_plugin_style(&$vars) {
   }
 
   $vars['classes_array'][] = 'carousel slide';
-  $vars['attributes_array']['data-ride'] = 'carousel';
 
-  $vars['attributes_array']['data-wrap'] = (bool) $vars['options']['wrap'] ? 'true' : 'false';
-
-  $vars['navigation'] = (bool) $vars['options']['navigation'];
-  $vars['indicators'] = (bool) $vars['options']['indicators'];
-
+  $vars['attributes_array'] = array(
+    'data-ride' => 'carousel',
+    'data-interval' => $vars['options']['interval'] ? (int) $vars['options']['interval'] : 'false',
+    'data-pause' => $vars['options']['pause'] ? 'hover' : 'false',
+    'data-wrap' => (bool) $vars['options']['wrap'] ? 'true' : 'false',
+  );
+  if (count($vars['rows']) > 1) {
+    $vars['navigation'] = (bool) $vars['options']['navigation'];
+    $vars['indicators'] = (bool) $vars['options']['indicators'];
+  }
+  else {
+    $vars['navigation'] = FALSE;
+    $vars['indicators'] = FALSE;
+  }
   $keys = array_keys($vars['rows']);
   $vars['first_key'] = reset($keys);
 }

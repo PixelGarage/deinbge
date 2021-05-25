@@ -30,6 +30,11 @@ class ViewsBootstrapCarouselPluginStyle extends views_plugin_style {
   public function options_form(&$form, &$form_state) {
     parent::options_form($form, $form_state);
 
+    $form['help'] = array(
+      '#markup' => t('The Bootstrap carousel displays content as a slideshow (<a href="!docs">see documentation</a>).', ['!docs' => 'https://www.drupal.org/docs/7/modules/views-bootstrap/carousel']),
+      '#weight' => -99,
+    );
+
     $form['interval'] = array(
       '#type' => 'textfield',
       '#required' => TRUE,
@@ -67,7 +72,7 @@ class ViewsBootstrapCarouselPluginStyle extends views_plugin_style {
     $form['items_per_slide'] = array(
       '#type' => 'textfield',
       '#title' => t('Item per slide'),
-      '#description' => t('How many items show per slide.'),
+      '#description' => t('How many items shown per slide.'),
       '#default_value' => $this->options['items_per_slide'],
     );
   }

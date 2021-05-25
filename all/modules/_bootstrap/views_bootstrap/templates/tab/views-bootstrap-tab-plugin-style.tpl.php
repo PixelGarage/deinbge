@@ -8,7 +8,7 @@ if (!empty($title)): ?>
   <h3><?php print $title ?></h3>
 <?php endif ?>
 <?php
-  $wrapper_classes = '';
+  $wrapper_classes = ' views-bootstrap-tabs';
   $option_classes = 'nav nav-' . $tab_type;
   if ($tab_position == 'justified' || $tab_position == 'stacked') {
     $option_classes .= ' nav-' . $tab_position;
